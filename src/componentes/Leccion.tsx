@@ -1,0 +1,179 @@
+import { useCallback, useEffect, useRef, useState, type ComponentType } from 'react';
+import type { EjercicioC } from '../contenido/cargar';
+import type { EjercicioT } from '../contenido/esquema';
+import type { Resultado } from '../lib/corregir';
+import { sonar } from '../lib/sonido';
+import { callar, hablar } from '../lib/voz';
+import Elegir from './ejercicios/Elegir';
+import Escribir from './ejercicios/Escribir';
+import Ordenar from './ejercicios/Ordenar';
+import Recuerda from './ejercicios/Recuerda';
+import type { PropsEjercicio } from './ejercicios/tipos';
+import Unir from './ejercicios/Unir';
+import { BotonSonido, Texto } from './piezas';
+
+export type Modo = 'leccion' | 'examen' | 'repaso';
+
+export interface Contestado {
+  ejercicio: EjercicioC;
+  resultado: Resultado;
+}
+
+export interface Resumen {
+  /** Lo contestado la primera vez que salió cada ejercicio (sin las tarjetas de «Recuerda»). */
+  primeros: Contestado[];
+}
+
+const COMPONENTES: { [T in EjercicioT['tipo']]: ComponentType<PropsEjercicio<Extract<EjercicioT, { tipo: T }>>> } = {
+  elegir: Elegir,
+  ordenar: Ordenar,
+  escribir: Escribir,
+  unir: Unir,
+  recuerda: Recuerda,
+};
+
+const BIEN = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!', '¡Bravo!', '¡Lo has clavado!'];
+/** Las veces que vuelve a salir al final un ejercicio fallado (en las lecciones; en el examen, ninguna). */
+const REINTENTOS = 2;
+
+interface Props {
+  titulo: string;
+  ejercicios: EjercicioC[];
+  modo: Modo;
+  onSalir: () => void;
+  onTerminar: (r: Resumen) => void;
+}
+
+export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar }: Props) {
+  const [cola, setCola] = useState(() => ejercicios.map((ejercicio) => ({ ejercicio, vez: 0 })));
+  const [pos, setPos] = useState(0);
+  const [resultado, setResultado] = useState<Resultado | null>(null);
+  const [comprobar, setComprobar] = useState<(() => Resultado) | null>(null);
+  const [hechos, setHechos] = useState<Set<string>>(new Set());
+  const [salir, setSalir] = useState(false);
+  const primeros = useRef(new Map<string, Contestado>());
+  const [frase, setFrase] = useState('');
+
+  const actual = cola[pos];
+  const e = actual.ejercicio;
+  const total = ejercicios.length;
+
+  const registrar = useCallback((f: (() => Resultado) | null) => setComprobar(() => f), []);
+
+  const responder = useCallback(
+    (r: Resultado) => {
+      setResultado(r);
+      setFrase(BIEN[Math.floor(Math.random() * BIEN.length)]);
+      sonar(r.bien ? 'acierto' : 'fallo');
+      if (r.voz) {
+        const voz = r.voz;
+        setTimeout(() => hablar(voz, { auto: true }), r.bien ? 450 : 700);
+      }
+      if (!primeros.current.has(e.id)) primeros.current.set(e.id, { ejercicio: e, resultado: r });
+      const otraVez = !r.bien && modo !== 'examen' && actual.vez < REINTENTOS;
+      if (otraVez) setCola((c) => [...c, { ejercicio: e, vez: actual.vez + 1 }]);
+      else setHechos((h) => new Set(h).add(e.id));
+    },
+    [e, actual.vez, modo],
+  );
+
+  const seguir = useCallback(() => {
+    callar();
+    if (e.tipo === 'recuerda') setHechos((h) => new Set(h).add(e.id));
+    if (pos + 1 >= cola.length) {
+      onTerminar({ primeros: [...primeros.current.values()] });
+      return;
+    }
+    setPos(pos + 1);
+    setResultado(null);
+    setComprobar(null);
+  }, [e, pos, cola.length, onTerminar]);
+
+  // Enter hace siempre lo del botón grande de abajo: comprobar o continuar.
+  useEffect(() => {
+    const tecla = (ev: KeyboardEvent) => {
+      if (ev.key !== 'Enter' || salir) return;
+      ev.preventDefault();
+      if (resultado || e.tipo === 'recuerda') seguir();
+      else if (comprobar) responder(comprobar());
+    };
+    window.addEventListener('keydown', tecla);
+    return () => window.removeEventListener('keydown', tecla);
+  }, [resultado, comprobar, e, salir, seguir, responder]);
+
+  const Componente = COMPONENTES[e.tipo] as ComponentType<PropsEjercicio<EjercicioT>>;
+  const avance = Math.round((hechos.size / total) * 100);
+
+  return (
+    <div className="leccion">
+      <header className="leccion__arriba">
+        <button type="button" className="cerrar" aria-label="Salir de la lección" onClick={() => setSalir(true)}>
+          ✕
+        </button>
+        <div className="barra-avance" role="progressbar" aria-label={titulo} aria-valuenow={avance} aria-valuemin={0} aria-valuemax={100}>
+          <div className="barra-avance__relleno" style={{ width: `${Math.max(avance, 3)}%` }} />
+        </div>
+        {modo === 'examen' && (
+          <span className="leccion__contador">
+            {Math.min(pos + 1, total)}/{total}
+          </span>
+        )}
+        <BotonSonido />
+      </header>
+
+      <main className="leccion__centro">
+        {actual.vez > 0 && <p className="otra-vez">🔁 Vamos a intentarlo otra vez</p>}
+        <Componente key={`${pos}-${e.id}`} ejercicio={e} resultado={resultado} registrar={registrar} onResultado={responder} />
+      </main>
+
+      <footer className={`pie${resultado ? (resultado.bien ? ' pie--bien' : ' pie--mal') : ''}`}>
+        <div className="pie__dentro">
+          {resultado ? (
+            <div className="pie__mensaje" role="status">
+              <p className="pie__titulo">{resultado.bien ? `✔ ${frase}` : '✘ ¡Casi!'}</p>
+              {!resultado.bien && resultado.solucion && (
+                <p className="pie__solucion">
+                  Lo correcto es: <strong lang="en">{resultado.solucion}</strong>
+                </p>
+              )}
+              {resultado.feedback && (
+                <p className="pie__feedback">
+                  <Texto>{resultado.feedback}</Texto>
+                </p>
+              )}
+            </div>
+          ) : (
+            <div className="pie__mensaje" />
+          )}
+          {resultado || e.tipo === 'recuerda' ? (
+            <button type="button" className={`boton ${resultado && !resultado.bien ? 'boton--coral' : 'boton--verde'}`} onClick={seguir}>
+              {e.tipo === 'recuerda' ? '¡Entendido!' : 'Continuar'}
+            </button>
+          ) : e.tipo === 'unir' ? (
+            <span />
+          ) : (
+            <button type="button" className="boton boton--verde" disabled={!comprobar} onClick={() => comprobar && responder(comprobar())}>
+              Comprobar
+            </button>
+          )}
+        </div>
+      </footer>
+
+      {salir && (
+        <div className="aviso-fondo" role="dialog" aria-modal="true" aria-labelledby="aviso-titulo">
+          <div className="aviso">
+            <p className="aviso__emoji">🥺</p>
+            <h2 id="aviso-titulo">¿Seguro que quieres salir?</h2>
+            <p>Si sales ahora, perderás lo que llevas de esta lección.</p>
+            <button type="button" className="boton boton--verde" autoFocus onClick={() => setSalir(false)}>
+              Seguir practicando
+            </button>
+            <button type="button" className="boton-texto" onClick={onSalir}>
+              Salir
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

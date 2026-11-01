@@ -1,0 +1,110 @@
+# Las 9 frases de la ficha «Adverbs of frequency», tal cual, y otras parecidas.
+titulo: Put the words in order
+subtitulo: ¿Dónde va always?
+emoji: 🧩
+ejercicios:
+  - tipo: recuerda
+    titulo: ¿Dónde va cada palabra?
+    texto: |
+      **always**, **usually**, **sometimes** y **never** van justo **antes del verbo**.
+      **once**, **twice**, **three times** y **every day** van **al final** de la frase.
+    ejemplos:
+      - I always brush my teeth in the morning.
+      - He brushes his teeth twice a day.
+
+  - tipo: ordenar
+    piezas: always / I / my teeth / brush / in the morning
+    solucion: I always brush my teeth in the morning.
+    explicacion: '*always* va justo antes del verbo: *I always brush…*'
+
+  - tipo: ordenar
+    piezas: has / She / a shower / every day
+    solucion: She has a shower every day.
+    tambien: [Every day she has a shower.]
+    explicacion: '*every day* va al final de la frase.'
+
+  - tipo: ordenar
+    piezas: never / to bed / late / I / go
+    solucion: I never go to bed late.
+    explicacion: '*never* va justo antes del verbo: *I never go…*'
+
+  - tipo: ordenar
+    piezas: sometimes / We / do exercise / after school
+    solucion: We sometimes do exercise after school.
+    explicacion: '*sometimes* va justo antes del verbo: *We sometimes do…*'
+
+  - tipo: ordenar
+    piezas: twice a day / brushes / He / his teeth
+    solucion: He brushes his teeth twice a day.
+    explicacion: '*twice a day* va al final de la frase.'
+
+  - tipo: ordenar
+    piezas: my bed / sometimes / make / I
+    solucion: I sometimes make my bed.
+    explicacion: '*sometimes* va justo antes del verbo: *I sometimes make…*'
+
+  - tipo: ordenar
+    piezas: early / goes / My sister / to bed / always
+    solucion: My sister always goes to bed early.
+    explicacion: '*always* va justo antes del verbo: *My sister always goes…*'
+
+  - tipo: ordenar
+    piezas: healthy snacks / eat / We / twice a day
+    solucion: We eat healthy snacks twice a day.
+    explicacion: '*twice a day* va al final de la frase.'
+
+  - tipo: ordenar
+    piezas: sweets / never / My brother / eats
+    solucion: My brother never eats sweets.
+    explicacion: '*never* va justo antes del verbo: *My brother never eats…*'
+
+  - tipo: elegir
+    enunciado: ¿Qué frase está bien?
+    correcta: I usually have a shower in the evening.
+    incorrectas:
+      - texto: I have usually a shower in the evening.
+        feedback: '*usually* va **antes** del verbo: *I usually have…*'
+      - texto: Usually I a shower have in the evening.
+        feedback: El verbo (*have*) va justo después de *usually*.
+
+  - tipo: ordenar
+    piezas: usually / My dad / fizzy drinks / drinks / never
+    sobran: [usually]
+    solucion: My dad never drinks fizzy drinks.
+    enunciado: Ordena las palabras. ¡Cuidado, sobra una!
+    explicacion: '*never* va justo antes del verbo: *My dad never drinks…*'
+
+  - tipo: ordenar
+    piezas: usually / They / exercise / do / on Saturdays
+    solucion: They usually do exercise on Saturdays.
+    explicacion: '*usually* va justo antes del verbo: *They usually do…*'
+
+  - tipo: elegir
+    enunciado: ¿Qué frase está bien?
+    correcta: She never eats sweets.
+    incorrectas:
+      - texto: She eats never sweets.
+        feedback: '*never* va **antes** del verbo: *She never eats…*'
+      - texto: Never she eats sweets.
+        feedback: '*never* va después de *she* y antes del verbo: *She never eats…*'
+
+  - tipo: ordenar
+    piezas: three times a week / Tom / his bed / makes
+    solucion: Tom makes his bed three times a week.
+    explicacion: '*three times a week* va al final de la frase.'
+
+  - tipo: elegir
+    enunciado: ¿Qué frase está bien?
+    correcta: We eat healthy snacks every day.
+    incorrectas:
+      - texto: We every day eat healthy snacks.
+        feedback: '*every day* va **al final** de la frase.'
+      - texto: Every day eat we healthy snacks.
+        feedback: Primero va quién (*We*) y después el verbo (*eat*).
+
+  - tipo: ordenar
+    enunciado: Escucha y ordena las palabras.
+    escuchar: true
+    piezas: always / Anna / her teeth / brushes / at night
+    solucion: Anna always brushes her teeth at night.
+    explicacion: '*always* va justo antes del verbo: *Anna always brushes…*'

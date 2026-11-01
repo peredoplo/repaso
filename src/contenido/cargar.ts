@@ -1,0 +1,142 @@
+/**
+ * Lee y comprueba el contenido. Lo usan la web (con los archivos que mete Vite) y los scripts (con los del disco).
+ * Las rutas son relativas a la carpeta del proyecto: «contenido/ingles/unit-1/tema.yaml».
+ */
+import { parse } from 'yaml';
+import type { z } from 'zod';
+import { HUECO, normalizar, partirPiezas } from '../lib/normalizar';
+import { Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema';
+
+export type EjercicioC = EjercicioT & { id: string };
+
+export interface LeccionC {
+  id: string;
+  /** «ingles/unit-1/habitos»: la clave del progreso. */
+  ruta: string;
+  titulo: string;
+  subtitulo?: string;
+  emoji: string;
+  ejercicios: EjercicioC[];
+  examen?: { de: string[]; preguntas: number };
+}
+
+export interface TemaC {
+  id: string;
+  asignatura: string;
+  titulo: string;
+  descripcion?: string;
+  lecciones: LeccionC[];
+}
+
+export interface Contenido {
+  perfiles: Perfil[];
+  temas: Map<string, TemaC>;
+  /** Todos los ejercicios por id, para repasar los fallos. */
+  ejercicios: Map<string, EjercicioC>;
+  errores: string[];
+}
+
+function leer<T>(esquema: z.ZodType<T>, texto: string, archivo: string, errores: string[]): T | null {
+  let datos: unknown;
+  try {
+    datos = parse(texto);
+  } catch (e) {
+    errores.push(`${archivo}: YAML mal escrito (${e instanceof Error ? e.message : e})`);
+    return null;
+  }
+  const r = esquema.safeParse(datos);
+  if (!r.success) {
+    for (const i of r.error.issues) errores.push(`${archivo}: ${i.path.join('.') || '(raíz)'}: ${i.message}`);
+    return null;
+  }
+  return r.data;
+}
+
+const multiconjunto = (t: string) => normalizar(t).split(' ').sort().join(' ');
+
+function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): void {
+  switch (e.tipo) {
+    case 'ordenar': {
+      const piezas = partirPiezas(e.piezas);
+      const sobran = new Set((e.sobran ?? []).map(normalizar));
+      const usadas = piezas.filter((p) => !sobran.has(normalizar(p))).join(' ');
+      for (const s of [e.solucion, ...(e.tambien ?? [])]) {
+        if (multiconjunto(usadas) !== multiconjunto(s)) errores.push(`${donde}: las piezas no forman «${s}»`);
+      }
+      for (const s of e.sobran ?? []) {
+        if (!piezas.some((p) => normalizar(p) === normalizar(s))) errores.push(`${donde}: «${s}» está en sobran pero no en piezas`);
+      }
+      break;
+    }
+    case 'elegir': {
+      const textos = e.incorrectas.map((o) => normalizar(typeof o === 'string' ? o : o.texto));
+      if (textos.includes(normalizar(e.correcta))) errores.push(`${donde}: la correcta está también entre las incorrectas`);
+      if (new Set(textos).size !== textos.length) errores.push(`${donde}: opciones repetidas`);
+      if (e.pregunta?.includes(HUECO) === false && e.pregunta.includes('__')) errores.push(`${donde}: el hueco se escribe «___»`);
+      break;
+    }
+    case 'escribir': {
+      if (e.plantilla && e.plantilla.split(HUECO).length !== 2) errores.push(`${donde}: la plantilla necesita un hueco «___» (y solo uno)`);
+      break;
+    }
+    case 'unir': {
+      const izq = e.pares.map((p) => p[0]);
+      const der = e.pares.map((p) => normalizar(p[1]));
+      if (new Set(izq).size !== izq.length || new Set(der).size !== der.length) errores.push(`${donde}: parejas repetidas`);
+      break;
+    }
+    case 'recuerda':
+      break;
+  }
+}
+
+/** `archivos`: ruta → texto. */
+export function cargarContenido(archivos: Record<string, string>): Contenido {
+  const errores: string[] = [];
+  const temas = new Map<string, TemaC>();
+  const ejercicios = new Map<string, EjercicioC>();
+
+  const rutas = Object.keys(archivos).sort();
+  for (const archivoTema of rutas.filter((r) => r.endsWith('/tema.yaml'))) {
+    const carpeta = archivoTema.slice(0, -'/tema.yaml'.length);
+    const id = carpeta.replace(/^contenido\//, '');
+    const tema = leer(Tema, archivos[archivoTema], archivoTema, errores);
+    if (!tema) continue;
+    const lecciones: LeccionC[] = [];
+    for (const lid of tema.lecciones) {
+      const archivo = `${carpeta}/${lid}.yaml`;
+      if (!(archivo in archivos)) {
+        errores.push(`${archivoTema}: no existe ${archivo}`);
+        continue;
+      }
+      const l = leer(Leccion, archivos[archivo], archivo, errores);
+      if (!l) continue;
+      const ruta = `${id}/${lid}`;
+      const conId = l.ejercicios.map((e, i) => {
+        comprobarEjercicio(e, `${archivo} (ejercicio ${i + 1})`, errores);
+        const c = { ...e, id: `${ruta}#${i + 1}` } as EjercicioC;
+        ejercicios.set(c.id, c);
+        return c;
+      });
+      if (!l.examen && !conId.some((e) => e.tipo !== 'recuerda')) errores.push(`${archivo}: no tiene ejercicios`);
+      for (const d of l.examen?.de ?? []) {
+        if (!tema.lecciones.includes(d)) errores.push(`${archivo}: el examen usa «${d}», que no está en el tema`);
+      }
+      lecciones.push({ id: lid, ruta, titulo: l.titulo, subtitulo: l.subtitulo, emoji: l.emoji, ejercicios: conId, examen: l.examen });
+    }
+    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, lecciones });
+  }
+
+  let perfiles: Perfil[] = [];
+  const archivoPerfiles = 'contenido/perfiles.yaml';
+  if (archivoPerfiles in archivos) {
+    perfiles = leer(Perfiles, archivos[archivoPerfiles], archivoPerfiles, errores)?.perfiles ?? [];
+    for (const p of perfiles) {
+      for (const t of p.temas) if (!temas.has(t)) errores.push(`${archivoPerfiles}: ${p.nombre} tiene el tema «${t}», que no existe`);
+    }
+  } else {
+    errores.push(`Falta ${archivoPerfiles}`);
+  }
+
+  return { perfiles, temas, ejercicios, errores };
+}

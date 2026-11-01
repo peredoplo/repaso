@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Web estática: Cloudflare sirve dist/ (lo que sale de `npm run build`). Sin servidor.
+  "name": "repaso",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // Cualquier dirección (/ingles/unit-1/) devuelve index.html, y la web decide qué enseñar.
+    "not_found_handling": "single-page-application"
+  }
+}

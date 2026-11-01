@@ -1,0 +1,116 @@
+titulo: Healthy habits
+subtitulo: Los hábitos de la unidad
+emoji: 🍎
+ejercicios:
+  - tipo: recuerda
+    titulo: Healthy habits
+    texto: Estas son las frases de la unidad. Toca el altavoz para oírlas.
+    tabla:
+      - ['🪥', brush my teeth]
+      - ['🚿', have a shower]
+      - ['🛏️', make my bed]
+      - ['🤸', do exercise]
+      - ['🍎', eat healthy snacks]
+      - ['🍭', eat sweets]
+      - ['🥤', drink fizzy drinks]
+
+  - tipo: unir
+    enunciado: Une cada dibujo con su frase.
+    pares:
+      - ['🪥', brush my teeth]
+      - ['🚿', have a shower]
+      - ['🤸', do exercise]
+      - ['🍭', eat sweets]
+
+  - tipo: elegir
+    enunciado: ¿Qué está haciendo?
+    dibujo: 🥤
+    correcta: drink fizzy drinks
+    incorrectas:
+      - eat sweets
+      - texto: eat fizzy drinks
+        feedback: 'Las bebidas no se comen, se beben. *Drink* es «beber»: **drink fizzy drinks**.'
+
+  - tipo: elegir
+    enunciado: ¿Qué está haciendo?
+    dibujo: 🍎
+    correcta: eat healthy snacks
+    incorrectas:
+      - eat sweets
+      - drink fizzy drinks
+
+  - tipo: recuerda
+    titulo: Early y late
+    texto: |
+      **early** = temprano
+      **late** = tarde
+    tabla:
+      - ['😴 20:30', go to bed early]
+      - ['😴 23:30', go to bed late]
+
+  - tipo: elegir
+    enunciado: ¿Qué hace?
+    dibujo: 😴
+    hora: '23:30'
+    correcta: go to bed late
+    incorrectas:
+      - texto: go to bed early
+        feedback: A las 23:30 es muy tarde. Tarde se dice **late**.
+      - have a shower
+
+  - tipo: elegir
+    enunciado: ¿Qué hace?
+    dibujo: 😴
+    hora: '20:30'
+    correcta: go to bed early
+    incorrectas:
+      - texto: go to bed late
+        feedback: A las 20:30 es pronto. Temprano se dice **early**.
+      - make my bed
+
+  - tipo: unir
+    enunciado: Une cada dibujo con su frase.
+    pares:
+      - ['🛏️', make my bed]
+      - ['🍎', eat healthy snacks]
+      - ['🥤', drink fizzy drinks]
+      - ['😴', go to bed]
+
+  - tipo: elegir
+    enunciado: Escucha y elige el dibujo.
+    escuchar: have a shower
+    correcta: 🚿
+    incorrectas: ['🪥', '🛏️']
+
+  - tipo: elegir
+    enunciado: Escucha y elige el dibujo.
+    escuchar: eat sweets
+    correcta: 🍭
+    incorrectas: ['🍎', '🥤']
+
+  - tipo: elegir
+    enunciado: Escucha y elige el dibujo.
+    escuchar: do exercise
+    correcta: 🤸
+    incorrectas: ['🚿', '😴']
+
+  - tipo: elegir
+    enunciado: ¿Cuál es un hábito sano (*healthy*)?
+    correcta: eat healthy snacks
+    incorrectas:
+      - texto: eat sweets
+        feedback: Los dulces (*sweets*) no son muy sanos. Lo sano es **eat healthy snacks**.
+      - texto: drink fizzy drinks
+        feedback: Los refrescos (*fizzy drinks*) no son muy sanos. Lo sano es **eat healthy snacks**.
+
+  - tipo: ordenar
+    enunciado: Ordena las palabras.
+    dibujo: 🪥
+    piezas: teeth / brush / my
+    solucion: brush my teeth
+
+  - tipo: ordenar
+    enunciado: Ordena las palabras.
+    dibujo: 😴
+    piezas: early / bed / to / go
+    solucion: go to bed early

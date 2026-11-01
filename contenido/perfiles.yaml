@@ -1,0 +1,8 @@
+# Quién usa la web. Con un solo perfil, se entra directamente; con varios, sale «¿Quién va a practicar?».
+perfiles:
+  - id: julia
+    nombre: Julia
+    curso: 3.º de Primaria
+    avatar: 🦄
+    temas:
+      - ingles/unit-1

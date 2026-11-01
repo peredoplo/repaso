@@ -1,0 +1,141 @@
+titulo: How many times?
+subtitulo: once, twice, three times
+emoji: 🔢
+ejercicios:
+  - tipo: recuerda
+    titulo: ¿Cuántas veces?
+    texto: |
+      Para decir cuántas veces hacemos algo, en inglés hay palabras especiales para 1 y 2.
+    tabla:
+      - ['0', never]
+      - ['1 vez', once]
+      - ['2 veces', twice]
+      - ['3 veces', three times]
+      - ['4 veces', four times]
+
+  - tipo: recuerda
+    titulo: a day, a week
+    texto: |
+      **a day** = al día
+      **a week** = a la semana
+      **every day** = todos los días
+    ejemplos:
+      - twice a day
+      - once a week
+      - three times a week
+
+  - tipo: unir
+    enunciado: Une cada número con su palabra.
+    pares:
+      - ['0', never]
+      - ['1', once]
+      - ['2', twice]
+      - ['3', three times]
+
+  - tipo: elegir
+    enunciado: ¿Cómo se dice?
+    tarjeta: { dibujo: '🔁', texto: '2 veces a la semana', veces: 2/week }
+    correcta: twice a week
+    incorrectas:
+      - texto: two times a week
+        feedback: Para 2 veces se usa una palabra especial, **twice**.
+      - texto: twice a day
+        feedback: '*a day* es «al día». A la semana es **a week**.'
+
+  - tipo: elegir
+    enunciado: ¿Cómo se dice?
+    tarjeta: { dibujo: '🔁', texto: '1 vez al día', veces: 1/day }
+    correcta: once a day
+    incorrectas:
+      - texto: one time a day
+        feedback: Para 1 vez se usa una palabra especial, **once**.
+      - texto: once a week
+        feedback: '*a week* es «a la semana». Al día es **a day**.'
+
+  - tipo: elegir
+    enunciado: ¿Cómo se dice?
+    tarjeta: { dibujo: '🔁', texto: '3 veces a la semana', veces: 3/week }
+    correcta: three times a week
+    incorrectas:
+      - texto: three time a week
+        feedback: Con 3, **times** lleva -s, porque son varias veces.
+      - texto: twice a week
+        feedback: '*twice* son 2 veces. Para 3 se dice **three times**.'
+
+  - tipo: unir
+    enunciado: Une las parejas.
+    pares:
+      - [1/week, once a week]
+      - [2/day, twice a day]
+      - [3/week, three times a week]
+      - [2/week, twice a week]
+
+  - tipo: escribir
+    enunciado: Escribe cuántas veces, en inglés.
+    tarjeta: { dibujo: '🔁', texto: '2 veces al día', veces: 2/day }
+    plantilla: ___ a day
+    respuestas: [twice]
+    explicacion: Para 2 veces se dice **twice**.
+
+  - tipo: escribir
+    enunciado: Escribe cuántas veces, en inglés.
+    tarjeta: { dibujo: '🔁', texto: '1 vez a la semana', veces: 1/week }
+    plantilla: ___ a week
+    respuestas: [once]
+    explicacion: Para 1 vez se dice **once**.
+
+  - tipo: escribir
+    enunciado: Escribe cuántas veces, en inglés.
+    tarjeta: { dibujo: '🔁', texto: '3 veces al día', veces: 3/day }
+    plantilla: ___ a day
+    respuestas: [three times]
+    explicacion: Para 3 veces se dice **three times**.
+
+  - tipo: elegir
+    enunciado: Escucha y elige.
+    escuchar: twice a week
+    correcta: 2/week
+    incorrectas: [2/day, 1/week]
+
+  - tipo: elegir
+    enunciado: Escucha y elige.
+    escuchar: once a day
+    correcta: 1/day
+    incorrectas: [1/week, 2/day]
+
+  - tipo: elegir
+    enunciado: Escucha y elige.
+    escuchar: three times a week
+    correcta: 3/week
+    incorrectas: [2/week, 3/day]
+
+  - tipo: recuerda
+    titulo: always, usually, sometimes, never
+    texto: Estas palabras dicen **con qué frecuencia** hacemos algo, sin decir un número.
+    tabla:
+      - ['🟩🟩🟩🟩', always]
+      - ['🟩🟩🟩⬜', usually]
+      - ['🟩🟩⬜⬜', sometimes]
+      - ['⬜⬜⬜⬜', never]
+
+  - tipo: unir
+    enunciado: Une cada palabra con lo que significa.
+    pares:
+      - [always, siempre]
+      - [usually, normalmente]
+      - [sometimes, a veces]
+      - [never, nunca]
+
+  - tipo: elegir
+    enunciado: ¿Qué palabra va con el dibujo?
+    dibujo: 🟩🟩🟩⬜
+    correcta: usually
+    incorrectas:
+      - texto: always
+        feedback: '*always* es siempre (las 4 en verde). Casi siempre es **usually**.'
+      - sometimes
+
+  - tipo: ordenar
+    enunciado: Ordena de **más** veces a **menos** veces.
+    piezas: sometimes / always / never / usually
+    solucion: always usually sometimes never
