@@ -15,6 +15,7 @@ ejercicios:
   - tipo: ordenar
     piezas: always / I / my teeth / brush / in the morning
     solucion: I always brush my teeth in the morning.
+    tambien: [In the morning I always brush my teeth.]
     explicacion: '*always* va justo antes del verbo: *I always brush…*'
 
   - tipo: ordenar
@@ -31,6 +32,7 @@ ejercicios:
   - tipo: ordenar
     piezas: sometimes / We / do exercise / after school
     solucion: We sometimes do exercise after school.
+    tambien: [After school we sometimes do exercise.]
     explicacion: '*sometimes* va justo antes del verbo: *We sometimes do…*'
 
   - tipo: ordenar
@@ -67,16 +69,18 @@ ejercicios:
       - texto: Usually I a shower have in the evening.
         feedback: El verbo (*have*) va justo después de *usually*.
 
+  # Lo que sobra no puede formar otra frase correcta («usually» sí la formaba: My dad usually drinks…).
   - tipo: ordenar
-    piezas: usually / My dad / fizzy drinks / drinks / never
-    sobran: [usually]
+    piezas: drink / My dad / fizzy drinks / drinks / never
+    sobran: [drink]
     solucion: My dad never drinks fizzy drinks.
     enunciado: Ordena las palabras. ¡Cuidado, sobra una!
-    explicacion: '*never* va justo antes del verbo: *My dad never drinks…*'
+    explicacion: '*never* va justo antes del verbo, y con *my dad* (*he*) el verbo lleva -s: *My dad never drinks…*'
 
   - tipo: ordenar
     piezas: usually / They / exercise / do / on Saturdays
     solucion: They usually do exercise on Saturdays.
+    tambien: [On Saturdays they usually do exercise.]
     explicacion: '*usually* va justo antes del verbo: *They usually do…*'
 
   - tipo: elegir
@@ -107,4 +111,5 @@ ejercicios:
     escuchar: true
     piezas: always / Anna / her teeth / brushes / at night
     solucion: Anna always brushes her teeth at night.
+    tambien: [At night Anna always brushes her teeth.]
     explicacion: '*always* va justo antes del verbo: *Anna always brushes…*'

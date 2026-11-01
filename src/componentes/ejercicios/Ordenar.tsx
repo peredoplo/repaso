@@ -27,9 +27,7 @@ export default function Ordenar({ ejercicio: e, resultado, registrar }: PropsEje
   }, [puestas, e, registrar]);
 
   useEffect(() => {
-    if (!e.escuchar) return;
-    const t = setTimeout(() => hablar(e.solucion), 400);
-    return () => clearTimeout(t);
+    if (e.escuchar) hablar(e.solucion, { retraso: 150 });
   }, [e]);
 
   useEffect(() => {

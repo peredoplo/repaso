@@ -29,6 +29,8 @@ scripts/                                    ← validar y voces
 
 ## Reglas
 - **Idiomas:** las instrucciones, las explicaciones y el feedback, en español; las frases que se practican, en inglés. Las opciones incorrectas no se leen en voz alta (no se oye inglés mal dicho).
+- **Sin pistas en inglés:** si el ejercicio es pasar algo al inglés, el dato va en español («1 vez al día», no «1/day», que ya dice *day*). Las abreviaturas «2/week» solo donde las usa la ficha del cole («Look and complete»). Y si hay que escribir con letras, el enunciado lo dice.
+- **Una frase de ordenar no puede tener otra solución correcta sin aceptarla:** si el cuándo puede ir delante («In the morning I always…»), va en `tambien`; y la ficha que `sobra` no puede formar otra frase buena (en *My dad never drinks…* sobraba *usually*, y *My dad usually drinks…* también es correcta: revisión del autor, 1 de noviembre de 2026).
 - **Todo fallo lleva su explicación**, concreta (`feedback` en la opción, `errores` en escribir o `explicacion`). `src/lib/pistas.ts` detecta los fallos típicos (*two times*, *does she eats*, la -s de *he/she*, dónde va *always*).
 - **Sin castigo:** no hay vidas. Lo fallado vuelve al final de la lección (hasta 2 veces) y se guarda en «Repasa tus fallos».
 - **Dibujos = emojis**, nunca fotos del libro.

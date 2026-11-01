@@ -2,8 +2,9 @@ import { useCallback, useEffect, useRef, useState, type ComponentType } from 're
 import type { EjercicioC } from '../contenido/cargar';
 import type { EjercicioT } from '../contenido/esquema';
 import type { Resultado } from '../lib/corregir';
+import { frasesInglesas } from '../lib/frases';
 import { sonar } from '../lib/sonido';
-import { callar, hablar } from '../lib/voz';
+import { callar, hablar, precargar } from '../lib/voz';
 import Elegir from './ejercicios/Elegir';
 import Escribir from './ejercicios/Escribir';
 import Ordenar from './ejercicios/Ordenar';
@@ -60,15 +61,19 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
 
   const registrar = useCallback((f: (() => Resultado) | null) => setComprobar(() => f), []);
 
+  // Al empezar, se preparan las voces de toda la lección; al salir, se calla lo que suene.
+  useEffect(() => {
+    precargar(ejercicios.flatMap(frasesInglesas));
+    return callar;
+  }, [ejercicios]);
+
   const responder = useCallback(
     (r: Resultado) => {
       setResultado(r);
       setFrase(BIEN[Math.floor(Math.random() * BIEN.length)]);
       sonar(r.bien ? 'acierto' : 'fallo');
-      if (r.voz) {
-        const voz = r.voz;
-        setTimeout(() => hablar(voz, { auto: true }), r.bien ? 450 : 700);
-      }
+      // La frase, justo detrás del sonido; si se pasa de ejercicio antes, ya no suena.
+      if (r.voz) hablar(r.voz, { auto: true, retraso: r.bien ? 250 : 450 });
       if (!primeros.current.has(e.id)) primeros.current.set(e.id, { ejercicio: e, resultado: r });
       const otraVez = !r.bien && modo !== 'examen' && actual.vez < REINTENTOS;
       if (otraVez) setCola((c) => [...c, { ejercicio: e, vez: actual.vez + 1 }]);

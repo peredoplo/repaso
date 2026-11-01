@@ -34,7 +34,7 @@ ejercicios:
 
   - tipo: elegir
     enunciado: ¿Cómo se dice?
-    tarjeta: { dibujo: '🔁', texto: '2 veces a la semana', veces: 2/week }
+    tarjeta: { dibujo: '🔁', texto: '2 veces a la semana' }
     correcta: twice a week
     incorrectas:
       - texto: two times a week
@@ -44,7 +44,7 @@ ejercicios:
 
   - tipo: elegir
     enunciado: ¿Cómo se dice?
-    tarjeta: { dibujo: '🔁', texto: '1 vez al día', veces: 1/day }
+    tarjeta: { dibujo: '🔁', texto: '1 vez al día' }
     correcta: once a day
     incorrectas:
       - texto: one time a day
@@ -54,7 +54,7 @@ ejercicios:
 
   - tipo: elegir
     enunciado: ¿Cómo se dice?
-    tarjeta: { dibujo: '🔁', texto: '3 veces a la semana', veces: 3/week }
+    tarjeta: { dibujo: '🔁', texto: '3 veces a la semana' }
     correcta: three times a week
     incorrectas:
       - texto: three time a week
@@ -65,28 +65,28 @@ ejercicios:
   - tipo: unir
     enunciado: Une las parejas.
     pares:
-      - [1/week, once a week]
-      - [2/day, twice a day]
-      - [3/week, three times a week]
-      - [2/week, twice a week]
+      - [1 vez a la semana, once a week]
+      - [2 veces al día, twice a day]
+      - [3 veces a la semana, three times a week]
+      - [2 veces a la semana, twice a week]
 
   - tipo: escribir
-    enunciado: Escribe cuántas veces, en inglés.
-    tarjeta: { dibujo: '🔁', texto: '2 veces al día', veces: 2/day }
+    enunciado: Escribe en inglés cuántas veces. Hazlo **con letras**, no con números.
+    tarjeta: { dibujo: '🔁', texto: '2 veces al día' }
     plantilla: ___ a day
     respuestas: [twice]
     explicacion: Para 2 veces se dice **twice**.
 
   - tipo: escribir
-    enunciado: Escribe cuántas veces, en inglés.
-    tarjeta: { dibujo: '🔁', texto: '1 vez a la semana', veces: 1/week }
+    enunciado: Escribe en inglés cuántas veces. Hazlo **con letras**, no con números.
+    tarjeta: { dibujo: '🔁', texto: '1 vez a la semana' }
     plantilla: ___ a week
     respuestas: [once]
     explicacion: Para 1 vez se dice **once**.
 
   - tipo: escribir
-    enunciado: Escribe cuántas veces, en inglés.
-    tarjeta: { dibujo: '🔁', texto: '3 veces al día', veces: 3/day }
+    enunciado: Escribe en inglés cuántas veces. Hazlo **con letras**, no con números.
+    tarjeta: { dibujo: '🔁', texto: '3 veces al día' }
     plantilla: ___ a day
     respuestas: [three times]
     explicacion: Para 3 veces se dice **three times**.
@@ -94,20 +94,20 @@ ejercicios:
   - tipo: elegir
     enunciado: Escucha y elige.
     escuchar: twice a week
-    correcta: 2/week
-    incorrectas: [2/day, 1/week]
+    correcta: 2 veces a la semana
+    incorrectas: [2 veces al día, 1 vez a la semana]
 
   - tipo: elegir
     enunciado: Escucha y elige.
     escuchar: once a day
-    correcta: 1/day
-    incorrectas: [1/week, 2/day]
+    correcta: 1 vez al día
+    incorrectas: [1 vez a la semana, 2 veces al día]
 
   - tipo: elegir
     enunciado: Escucha y elige.
     escuchar: three times a week
-    correcta: 3/week
-    incorrectas: [2/week, 3/day]
+    correcta: 3 veces a la semana
+    incorrectas: [2 veces a la semana, 3 veces al día]
 
   - tipo: recuerda
     titulo: always, usually, sometimes, never

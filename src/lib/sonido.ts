@@ -72,7 +72,8 @@ export function cambiarSonido(activado: boolean): void {
 
 let contexto: AudioContext | null = null;
 
-function obtenerContexto(): AudioContext | null {
+/** El mismo contexto de audio para los sonidos y la voz (src/lib/voz.ts). */
+export function obtenerContexto(): AudioContext | null {
   if (contexto) return contexto;
   const g = globalThis as typeof globalThis & { webkitAudioContext?: typeof AudioContext };
   const Contexto = g.AudioContext ?? g.webkitAudioContext;

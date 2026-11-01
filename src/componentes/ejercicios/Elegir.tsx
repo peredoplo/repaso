@@ -19,9 +19,7 @@ export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjer
 
   // Si es de escuchar, la frase suena al empezar.
   useEffect(() => {
-    if (!e.escuchar) return;
-    const t = setTimeout(() => hablar(e.escuchar!), 400);
-    return () => clearTimeout(t);
+    if (e.escuchar) hablar(e.escuchar, { retraso: 150 });
   }, [e.escuchar]);
 
   const elegir = (o: string) => {
