@@ -15,7 +15,7 @@ interface Props {
 }
 
 // Sin banderas: en Windows salen como letras («GB»).
-const EMOJI_ASIGNATURA: Record<string, string> = { Inglés: '🔤',Matemáticas: '🔢', Lengua: '📖', 'Ciencias Naturales': '🌱', 'Ciencias Sociales': '🌍' };
+const EMOJI_ASIGNATURA: Record<string, string> = { Inglés: '🔤', Matemáticas: '🔢', Lengua: '📖', 'Natural Sciences': '🌱', 'Social Sciences': '🌍' };
 
 /** La portada: los temas que tiene cada uno, por asignatura, con un enlace a cada uno. */
 export default function Portada({ perfil, temas, progreso, fallosPendientes, onRepasar, onCambiarPerfil }: Props) {

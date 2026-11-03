@@ -1,0 +1,63 @@
+titulo: Food and babies
+subtitulo: Comer y reproducirse
+emoji: 🥚
+ejercicios:
+  # Reach higher 1 c) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    pregunta: Why do all living things need food?
+    correcta: To get energy and grow.
+    incorrectas:
+      - texto: To move around.
+        feedback: Las plantas no se mueven y también necesitan alimento. Lo necesitan todos **to get energy and grow**, para tener energía y crecer.
+      - texto: To live in groups.
+        feedback: Vivir en grupo es *interaction*. El alimento sirve **to get energy and grow**, para tener energía y crecer.
+
+  # Reach higher 1 d) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    pregunta: What are two ways that animals reproduce?
+    correcta: They lay eggs or give birth.
+    incorrectas:
+      - texto: They use seeds or spores.
+        feedback: Las semillas y las esporas son de las plantas. Los animales ponen huevos o tienen crías (**they lay eggs or give birth**).
+      - texto: They make food from sunlight.
+        feedback: Fabricar alimento con la luz del sol es la nutrición de las plantas. Los animales **lay eggs or give birth**.
+
+  # Reach higher 1 e) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    pregunta: What are two ways that plants reproduce?
+    correcta: With seeds or spores.
+    incorrectas:
+      - texto: They lay eggs or give birth.
+        feedback: Eso lo hacen los animales. Las plantas se reproducen **with seeds or spores**, con semillas o esporas.
+      - texto: They eat other living things.
+        feedback: Comer otros seres vivos es nutrición, y además no lo hacen las plantas. Se reproducen **with seeds or spores**.
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🌻☀️
+    pregunta: Plants make their own food from the ___.
+    correcta: sunlight
+    incorrectas:
+      - texto: animals
+        feedback: Las plantas no comen animales. Fabrican su alimento con la luz del sol (**sunlight**).
+      - texto: rocks
+        feedback: Las plantas fabrican su alimento con la luz del sol (**sunlight**).
+
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🐦🥚
+    pregunta: Birds give birth to babies.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: Los pájaros no tienen crías así; ponen huevos (*lay eggs*). Es **false**.
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    dibujo: 🌰🌱
+    piezas: seeds or spores / Plants / with / reproduce
+    solucion: Plants reproduce with seeds or spores.
+    explicacion: 'Primero quién (*Plants*), luego qué hacen (*reproduce*) y al final cómo (*with seeds or spores*).'

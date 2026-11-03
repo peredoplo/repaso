@@ -1,0 +1,89 @@
+titulo: Animal and plant cells
+subtitulo: Las partes de la célula
+emoji: 🫧
+ejercicios:
+  - tipo: chat
+    titulo: ¿Qué hay dentro de una célula?
+    mensajes:
+      - de: vega
+        texto: 'Por dentro, las células tienen partes. Empezamos por la célula animal (*animal cell*):'
+        palabras:
+          - [cell membrane, 'membrana: la «piel» que deja entrar y salir las sustancias']
+          - [nucleus, 'núcleo: el «jefe», que controla la célula']
+          - [small vacuoles, vacuolas pequeñas]
+      - de: hugo
+        texto: La célula vegetal (*plant cell*) tiene lo mismo… ¡y alguna cosa más!
+        palabras:
+          - [cell wall, 'pared celular: la hace rígida, dura']
+          - [chloroplasts, 'cloroplastos: tienen clorofila (*chlorophyll*), que es verde']
+          - [large vacuoles, 'vacuolas grandes, con agua']
+      - de: valentina
+        texto: Entonces, ¿las dos tienen núcleo y membrana?
+      - de: vega
+        texto: '¡Eso es! El núcleo (*nucleus*) y la membrana (*cell membrane*) están en las dos. La pared (*cell wall*) y los cloroplastos (*chloroplasts*), solo en la vegetal.'
+      - de: santiago
+        texto: 'Y las vacuolas cambian de tamaño: pequeñas en la animal (*small vacuoles*) y grandes en la vegetal (*large vacuoles*).'
+      - de: hugo
+        texto: Por eso las plantas son verdes y rígidas, ¡por los cloroplastos y la pared!
+        dibujo: 🌿
+
+  # Support 4 de la ficha (rotular la célula animal: a) nucleus, b) small vacuoles, c) cell membrane)
+  - tipo: elegir
+    enunciado: 'Animal cell: choose the correct word.'
+    pregunta: An animal cell has ___ vacuoles.
+    correcta: small
+    incorrectas:
+      - texto: large
+        feedback: Las vacuolas grandes (*large*) son de la célula vegetal. La animal las tiene pequeñas (**small**).
+
+  - tipo: elegir
+    enunciado: 'Animal cell: choose the correct word.'
+    pregunta: In an animal cell, the ___ is all around the outside.
+    correcta: cell membrane
+    incorrectas:
+      - texto: cell wall
+        feedback: La célula animal no tiene pared (*cell wall*). Por fuera tiene la membrana (**cell membrane**).
+      - texto: nucleus
+        feedback: El núcleo (*nucleus*) está dentro. Por fuera está la membrana (**cell membrane**).
+
+  - tipo: elegir
+    enunciado: Which one is NOT in an animal cell?
+    correcta: cell wall
+    incorrectas:
+      - texto: nucleus
+        feedback: El núcleo está en todas las células. La que no tiene la célula animal es la pared (**cell wall**).
+      - texto: cell membrane
+        feedback: La membrana está en todas las células. La que no tiene la célula animal es la pared (**cell wall**).
+
+  # Support 3 d) de la ficha
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    pregunta: The ___ controls cell functions.
+    correcta: nucleus
+    incorrectas:
+      - texto: cell membrane
+        feedback: La membrana controla lo que entra y sale. El «jefe» de la célula es el núcleo (**nucleus**).
+      - texto: chloroplasts
+        feedback: Los cloroplastos tienen la clorofila. El «jefe» de la célula es el núcleo (**nucleus**).
+
+  # Reach higher 5 de la ficha: las partes que tienen las dos (nucleus y cell membrane)
+  - tipo: elegir
+    enunciado: Which part is in both animal cells and plant cells?
+    correcta: nucleus
+    incorrectas:
+      - texto: cell wall
+        feedback: La pared (*cell wall*) solo la tiene la célula vegetal. Las dos tienen núcleo (**nucleus**).
+      - texto: chloroplasts
+        feedback: Los cloroplastos solo los tiene la célula vegetal. Las dos tienen núcleo (**nucleus**).
+      - texto: large vacuoles
+        feedback: Las vacuolas grandes son de la célula vegetal. Las dos tienen núcleo (**nucleus**).
+
+  # Reach higher 5 de la ficha
+  - tipo: elegir
+    enunciado: Which part is in both animal cells and plant cells?
+    correcta: cell membrane
+    incorrectas:
+      - texto: small vacuoles
+        feedback: Las vacuolas pequeñas son de la célula animal; la vegetal las tiene grandes. Las dos tienen membrana (**cell membrane**).
+      - texto: chloroplasts
+        feedback: Los cloroplastos solo los tiene la célula vegetal. Las dos tienen membrana (**cell membrane**).

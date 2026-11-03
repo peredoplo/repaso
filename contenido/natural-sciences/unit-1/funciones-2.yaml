@@ -1,0 +1,64 @@
+titulo: What is it?
+subtitulo: Las funciones vitales, en frases
+emoji: 🐟
+ejercicios:
+  # Reach higher 2 a) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🐦🪺
+    pregunta: Birds lay eggs in nests and look after them.
+    correcta: reproduction
+    incorrectas: [nutrition, interaction]
+    explicacion: Poner huevos y cuidarlos es **reproduction**.
+
+  # Reach higher 2 b) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🦁🦁🦁
+    pregunta: Lions live in extended families in Africa.
+    correcta: interaction
+    incorrectas: [nutrition, reproduction]
+    explicacion: Vivir en grupo, con otros de su especie, es relacionarse con ellos, y eso es **interaction**.
+
+  # Reach higher 2 c) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🐟🐠🐟🐠
+    pregunta: Fish of different species sometimes live in extremely large groups.
+    correcta: interaction
+    incorrectas: [nutrition, reproduction]
+    explicacion: Los peces que nadan en grupo se relacionan con otros. Es **interaction**.
+
+  # Reach higher 2 d) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🌷☀️
+    pregunta: Plants make their own food from the sunlight.
+    correcta: nutrition
+    incorrectas: [interaction, reproduction]
+    explicacion: Fabricar su alimento es la forma de alimentarse de las plantas, así que es **nutrition**.
+
+  # Reach higher 2 e) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🦠🍂
+    pregunta: Some monera feed on dead plants and animals.
+    correcta: nutrition
+    incorrectas: [interaction, reproduction]
+    explicacion: '*Feed on* quiere decir «alimentarse de». Alimentarse es **nutrition**.'
+
+  # Reach higher 2 f) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🤰👶
+    pregunta: Humans usually give birth after nine months of pregnancy.
+    correcta: reproduction
+    incorrectas: [nutrition, interaction]
+    explicacion: '*Give birth* es «dar a luz», tener un bebé. Eso es **reproduction**.'
+
+  - tipo: unir
+    enunciado: Match.
+    pares:
+      - [nutrition, eating food]
+      - [interaction, living in groups]
+      - [reproduction, laying eggs]

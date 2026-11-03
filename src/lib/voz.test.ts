@@ -27,6 +27,11 @@ describe('voz', () => {
     expect(dichas).toEqual([]);
   });
 
+  it('un mensaje del chat sin grabar lo lee el navegador en español, sin las marcas', () => {
+    hablar('Un ser vivo (*living thing*) nace y **crece**.', { quien: 'vega' });
+    expect(dichas).toEqual(['Un ser vivo (living thing) nace y crece.']);
+  });
+
   it('solo suena la última frase pedida', () => {
     hablar('frase de prueba uno', { retraso: 300 });
     hablar('frase de prueba dos');

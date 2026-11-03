@@ -1,0 +1,106 @@
+titulo: The five kingdoms
+subtitulo: Animales, plantas, hongos…
+emoji: 🍄
+ejercicios:
+  - tipo: chat
+    titulo: Los cinco reinos
+    mensajes:
+      - de: santiago
+        texto: 'Los seres vivos se clasifican en cinco reinos (*five kingdoms*). ¡Cinco, como los dedos de una mano!'
+        dibujo: 🖐️
+      - de: vega
+        texto: 'Los animales (*animals*) son pluricelulares, comen otros seres vivos y se mueven. Ponen huevos o tienen crías.'
+        dibujo: 🐦 🐶 🐟
+      - de: hugo
+        texto: 'Las plantas (*plants*) son pluricelulares, fabrican su alimento con la luz del sol y no se mueven de sitio. Se reproducen con semillas o esporas.'
+        dibujo: 🌳 🌷 🌾
+      - de: valentina
+        texto: ¿Y las setas? ¿Son plantas?
+      - de: vega
+        texto: '¡No! Las setas, el moho y la levadura son hongos (*fungi*). Pueden ser pluricelulares o unicelulares, suelen vivir en sitios oscuros y se reproducen con esporas.'
+        dibujo: 🍄
+      - de: santiago
+        texto: 'Los protistas (*protists*) son unicelulares y suelen vivir en el agua o cerca, como las algas. Algunos se reproducen partiéndose en dos células.'
+        dibujo: 💧🔬
+      - de: valentina
+        texto: 'Y las moneras (*monera*), como las bacterias, son unicelulares. Viven en la tierra, en el agua, en el aire… ¡y hasta dentro de otros seres vivos! Algunas se alimentan de plantas y animales muertos.'
+        dibujo: 🦠
+      - de: hugo
+        texto: '¡Ya están los cinco!'
+        palabras:
+          - [animals, animales]
+          - [plants, plantas]
+          - [fungi, hongos]
+          - [protists, protistas]
+          - [monera, moneras]
+
+  # Support 1 a) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: Living things are classified into five kingdoms.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: 'Son cinco: *animals*, *plants*, *fungi*, *protists* y *monera*. Es **true**.'
+
+  # Reach higher 1 a) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    pregunta: What are the names of the five kingdoms?
+    correcta: animals, plants, fungi, protists and monera
+    incorrectas:
+      - texto: animals, plants, insects, fish and birds
+        feedback: 'Los insectos, los peces y los pájaros son animales. Los cinco reinos son **animals, plants, fungi, protists and monera**.'
+      - texto: animals, plants, rocks, water and fungi
+        feedback: 'Las piedras y el agua no son seres vivos. Los cinco reinos son **animals, plants, fungi, protists and monera**.'
+
+  # Support 6 c) de la ficha
+  - tipo: elegir
+    enunciado: Which kingdom is it?
+    pregunta: They cannot move around and produce seeds or spores to reproduce.
+    correcta: plants
+    incorrectas:
+      - texto: fungi
+        feedback: Los hongos solo tienen esporas, nunca semillas (*seeds*). Las que tienen semillas o esporas son las plantas (**plants**).
+
+  # Support 6 e) de la ficha
+  - tipo: elegir
+    enunciado: Which kingdom is it?
+    pregunta: They are multicellular and eat other living things. They lay eggs or have babies.
+    correcta: animals
+    incorrectas:
+      - texto: plants
+        feedback: Las plantas no comen otros seres vivos ni ponen huevos. Son los animales (**animals**).
+
+  # Reach higher 4 de la ficha: living things with many cells that can move around
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🐦 🐶
+    pregunta: 'Living things with many cells that can move around: birds and ___.'
+    correcta: dogs
+    incorrectas:
+      - texto: trees
+        feedback: Los árboles tienen muchas células, pero no se mueven de sitio. Los perros (**dogs**) sí.
+      - texto: rocks
+        feedback: Las piedras no son seres vivos. Los perros (**dogs**) sí, y se mueven.
+
+  # Reach higher 4 de la ficha: living things with many cells that cannot move around
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🌳 🌷
+    pregunta: 'Living things with many cells that cannot move around: trees and ___.'
+    correcta: flowers
+    incorrectas:
+      - texto: cats
+        feedback: Los gatos se mueven. Las flores (**flowers**), como los árboles, son plantas y no se mueven de sitio.
+      - texto: bacteria
+        feedback: Las bacterias tienen una sola célula. Las flores (**flowers**) tienen muchas y no se mueven de sitio.
+
+  # Reach higher 6 e) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: Monera are unicellular organisms that can live in water.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Las moneras (como las bacterias) tienen una sola célula y viven en la tierra, en el agua y en el aire. Es **true**.

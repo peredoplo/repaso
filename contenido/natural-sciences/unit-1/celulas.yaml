@@ -1,0 +1,83 @@
+titulo: Cells
+subtitulo: Unicelulares y pluricelulares
+emoji: 🔬
+ejercicios:
+  - tipo: chat
+    titulo: ¿De qué están hechos los seres vivos?
+    mensajes:
+      - de: valentina
+        texto: ¿De qué estamos hechos los seres vivos?
+      - de: vega
+        texto: '¡De células (*cells*)! Una célula es la unidad viva más pequeña (*the smallest living unit*).'
+      - de: hugo
+        texto: ¿Y se ven a simple vista?
+      - de: vega
+        texto: 'Casi nunca: son tan pequeñas que hace falta un microscopio (*microscope*).'
+        dibujo: 🔬
+        palabras:
+          - [cell, célula]
+          - [microscope, microscopio]
+      - de: santiago
+        texto: 'Algunos seres vivos tienen una sola célula: son unicelulares (*unicellular*), como las bacterias o las algas. Otros tienen muchísimas: son pluricelulares (*multicellular*), como las personas, los perros o los árboles.'
+        palabras:
+          - [unicellular, unicelular (una sola célula)]
+          - [multicellular, pluricelular (muchas células)]
+      - de: santiago
+        texto: 'En los pluricelulares, cada célula tiene un trabajo distinto, una función diferente (*a different function*).'
+      - de: valentina
+        texto: 'Y se juntan como las piezas de un Lego, de pequeño a grande. Las células que hacen el mismo trabajo forman un tejido (*tissue*). Varios tejidos forman un órgano (*organ*), como una hoja o el corazón. Los órganos que trabajan juntos forman un aparato (*organ system*). Y todo junto forma el ser vivo completo (*organism*).'
+        dibujo: 🟢 ➜ 🟩 ➜ 🍃 ➜ 🌳
+        palabras:
+          - [tissue, tejido]
+          - [organ, órgano]
+          - [organ system, aparato o sistema]
+          - [organism, ser vivo (organismo)]
+
+  # Reach higher 3 a) de la ficha
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    pregunta: 'There are two types of living organisms: ___ and unicellular.'
+    correcta: multicellular
+    incorrectas:
+      - texto: extracellular
+        feedback: 'Los dos tipos son **multicellular** (muchas células) y *unicellular* (una sola célula).'
+
+  # Reach higher 3 b) de la ficha
+  - tipo: elegir
+    enunciado: Choose the correct words.
+    pregunta: Unicellular organisms have ___.
+    correcta: one cell
+    incorrectas:
+      - texto: a variety of cells
+        feedback: '*Uni-* quiere decir «uno»: los unicelulares tienen **one cell**, una sola célula.'
+
+  # Reach higher 3 e) de la ficha
+  - tipo: elegir
+    enunciado: Choose the correct words.
+    dibujo: 🔬
+    pregunta: Unicellular organisms are so small that we need ___ to see them.
+    correcta: a microscope
+    incorrectas:
+      - texto: special glasses
+        feedback: Son tan pequeños que ni con gafas se ven. Hace falta un microscopio (**a microscope**).
+
+  # Support 5 a) de la ficha
+  - tipo: escribir
+    enunciado: 'Unscramble the letters: **lecl**'
+    plantilla: A ___ is the smallest living unit.
+    respuestas: [cell]
+    explicacion: Con las letras *l e c l* se escribe **cell**, célula.
+
+  # Support 5 b) de la ficha
+  - tipo: escribir
+    enunciado: 'Unscramble the letters: **tsesui**'
+    plantilla: When cells have the same function, they form ___.
+    respuestas: [tissues]
+    explicacion: Con las letras *t s e s u i* se escribe **tissues**, tejidos.
+
+  # Support 5 c) de la ficha
+  - tipo: escribir
+    enunciado: 'Unscramble the letters: **norag**'
+    plantilla: Tissues group together to form an ___, like a leaf or a heart.
+    respuestas: [organ]
+    explicacion: Con las letras *n o r a g* se escribe **organ**, órgano.

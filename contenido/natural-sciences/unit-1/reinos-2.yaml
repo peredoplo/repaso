@@ -1,0 +1,79 @@
+titulo: Fungi, protists and monera
+subtitulo: Los reinos más pequeños
+emoji: 🦠
+ejercicios:
+  # Support 6 a) de la ficha
+  - tipo: elegir
+    enunciado: Which kingdom is it?
+    pregunta: They are unicellular and usually live in or near water.
+    correcta: protists
+    incorrectas:
+      - texto: animals
+        feedback: Los animales tienen muchas células. Los unicelulares que viven en el agua o cerca son los protistas (**protists**).
+
+  # Support 6 b) de la ficha
+  - tipo: elegir
+    enunciado: Which kingdom is it?
+    pregunta: They can be multicellular or unicellular and reproduce using spores.
+    correcta: fungi
+    incorrectas:
+      - texto: plants
+        feedback: Las plantas son siempre pluricelulares. Los que pueden ser de una o de muchas células son los hongos (**fungi**).
+
+  # Support 6 d) de la ficha
+  - tipo: elegir
+    enunciado: Which kingdom is it?
+    pregunta: They are unicellular and can live on land, in water or in the air and even inside other living things.
+    correcta: monera
+    incorrectas:
+      - texto: plants
+        feedback: Las plantas tienen muchas células. Las que tienen una y viven en todas partes, hasta dentro de otros seres vivos, son las moneras (**monera**).
+
+  # Support 1 d) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🍄
+    pregunta: Fungi are usually in dark places.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Las setas y el moho suelen crecer en sitios oscuros y húmedos. Es **true**.
+
+  # Support 1 e) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 💧
+    pregunta: We can find both monera and protists in water.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Los protistas viven en el agua o cerca, y las moneras, en la tierra, en el agua y en el aire. Es **true**.
+
+  # Reach higher 6 d) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: Plants, animals and fungi are all multicellular.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: Las plantas y los animales sí, pero los hongos pueden ser unicelulares, como la levadura. Es **false**.
+
+  # Reach higher 6 f) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: Some protists divide into two cells to reproduce.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Algunos protistas se reproducen partiéndose en dos. Es **true**.
+
+  # Reach higher 4 de la ficha: kingdoms with only one cell
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    pregunta: 'Kingdoms with only one cell: monera and ___.'
+    correcta: protists
+    incorrectas:
+      - texto: animals
+        feedback: Los animales tienen muchas células. Los reinos de una sola célula son las moneras y los protistas (**protists**).
+      - texto: plants
+        feedback: Las plantas tienen muchas células. Los reinos de una sola célula son las moneras y los protistas (**protists**).

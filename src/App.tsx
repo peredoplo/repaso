@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import type { EjercicioC, LeccionC, TemaC } from './contenido/cargar';
-import type { Perfil } from './contenido/esquema';
+import { esTeoria, type Perfil } from './contenido/esquema';
 import { contenido } from './contenido';
 import Final, { type DatosFinal } from './componentes/Final';
 import Leccion, { type Modo, type Resumen } from './componentes/Leccion';
@@ -21,7 +21,7 @@ type Pantalla =
   | { tipo: 'jugar'; titulo: string; ruta: string; modo: Modo; ejercicios: EjercicioC[] }
   | { tipo: 'final'; datos: DatosFinal };
 
-const puntuable = (e: EjercicioC) => e.tipo !== 'recuerda';
+const puntuable = (e: EjercicioC) => !esTeoria(e);
 
 function perfilGuardado(): Perfil | null {
   const { perfiles } = contenido;

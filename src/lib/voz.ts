@@ -1,6 +1,8 @@
 /**
  * La voz en inglés. Las frases grabadas con `npm run voces` (Azure, voz británica) están en public/voz/ y su índice
  * en src/voces.json; las que aún no se han grabado las lee el navegador con su voz inglesa.
+ * Los mensajes del chat, en español, los dice cada personaje con su voz (`quien`); sin grabar, los lee el navegador
+ * en español.
  *
  * Para que suene enseguida: al empezar una lección se descargan y decodifican todas sus frases (`precargar`), se
  * reproducen con Web Audio (sin esperar a cargar nada) y se salta el silencio con el que empieza cada grabación.
@@ -8,9 +10,10 @@
  * o esperando su turno, así que al pasar de ejercicio nunca se oye lo del anterior.
  */
 import indice from '../voces.json';
+import { claveMensaje, sinMarcas } from './frases';
 import { obtenerContexto, sonidoActivado } from './sonido';
 
-const frases = indice.frases as Record<string, string>;
+const frases = { ...indice.frases, ...indice.mensajes } as Record<string, string>;
 
 interface Grabacion {
   buffer: AudioBuffer;
@@ -68,14 +71,14 @@ export function precargar(textos: string[]): void {
   for (const t of new Set(textos)) cargar(t);
 }
 
-function sintetizar(texto: string, lenta: boolean): void {
+function decirEnNavegador(texto: string, lenta: boolean, idioma = 'en-GB'): void {
   const s = globalThis.speechSynthesis;
   if (!s || typeof SpeechSynthesisUtterance === 'undefined') return;
   s.cancel();
   const u = new SpeechSynthesisUtterance(texto);
-  u.lang = 'en-GB';
+  u.lang = idioma;
   u.rate = lenta ? 0.6 : 0.9;
-  const voz = s.getVoices().find((v) => v.lang === 'en-GB') ?? s.getVoices().find((v) => v.lang.startsWith('en'));
+  const voz = s.getVoices().find((v) => v.lang === idioma) ?? s.getVoices().find((v) => v.lang.startsWith(idioma.slice(0, 2)));
   if (voz) u.voice = voz;
   s.speak(u);
 }
@@ -99,23 +102,26 @@ function reproducir(g: Grabacion, lenta: boolean): void {
 /**
  * Dice la frase. `auto`: la dice la web sola (tras contestar), y respeta el botón de silencio; si la pide el alumno
  * tocando el altavoz, suena siempre. `lenta`: más despacio. `retraso`: milisegundos de espera (cancelable).
+ * `quien`: es un mensaje del chat, en español, y lo dice ese personaje.
  */
-export function hablar(texto: string, { auto = false, lenta = false, retraso = 0 } = {}): void {
+export function hablar(texto: string, { auto = false, lenta = false, retraso = 0, quien = '' } = {}): void {
   if (auto && !sonidoActivado()) return;
   callar();
   const mio = turno;
-  const t = texto.trim();
+  const t = quien ? claveMensaje(quien, texto) : texto.trim();
+  // Sin grabación, la voz del navegador: en español para los mensajes del chat.
+  const enNavegador = () => (quien ? decirEnNavegador(sinMarcas(texto), lenta, 'es-ES') : decirEnNavegador(t, lenta));
   const empezar = () => {
     espera = null;
     const p = cargar(t);
     if (!p) {
-      sintetizar(t, lenta);
+      enNavegador();
       return;
     }
     void p.then((g) => {
       if (mio !== turno) return; // mientras cargaba se pidió otra cosa (o se pasó de ejercicio)
       if (g) reproducir(g, lenta);
-      else sintetizar(t, lenta);
+      else enNavegador();
     });
   };
   if (retraso > 0) espera = setTimeout(empezar, retraso);

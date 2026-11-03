@@ -8,4 +8,6 @@ export interface PropsEjercicio<E> {
   registrar: (comprobar: (() => Resultado) | null) => void;
   /** Para los que se corrigen solos (unir). */
   onResultado: (r: Resultado) => void;
+  /** El chat dice si aún le quedan mensajes: entonces el botón de abajo es «Seguir» y hace esto. */
+  registrarSeguir: (seguir: (() => void) | null) => void;
 }

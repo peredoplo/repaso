@@ -1,0 +1,61 @@
+titulo: From cells to organisms
+subtitulo: Célula, tejido, órgano…
+emoji: 🧩
+ejercicios:
+  # Support 5 d) de la ficha
+  - tipo: escribir
+    enunciado: 'Unscramble the letters: **tsseym**'
+    plantilla: Organs work together to form organ ___.
+    respuestas: [system, systems]
+    explicacion: Con las letras *t s s e y m* se escribe **system**. Los órganos que trabajan juntos forman un aparato (*organ system*).
+
+  # Support 5 e) de la ficha
+  - tipo: escribir
+    enunciado: 'Unscramble the letters: **gomranis**'
+    plantilla: All of these together form a complete living ___.
+    respuestas: [organism]
+    explicacion: Con las letras *g o m r a n i s* se escribe **organism**, el ser vivo completo.
+
+  # Reach higher 3 c) de la ficha
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    pregunta: ___ are unicellular organisms.
+    correcta: Algae
+    incorrectas:
+      - texto: Insects
+        feedback: Los insectos tienen muchísimas células (son *multicellular*). Las algas (**algae**) que estudiamos son unicelulares.
+
+  # Reach higher 3 d) de la ficha
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    pregunta: In multicellular organisms, each cell has a different ___.
+    correcta: function
+    incorrectas:
+      - texto: colour
+        feedback: 'Lo que cambia es el trabajo de cada célula: tiene una **function** distinta.'
+
+  # Reach higher 6 a) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: A cell is the smallest living unit that makes up a living thing.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: 'La célula es lo más pequeño que está vivo: es **true**.'
+
+  # Reach higher 6 c) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: Tissues are made of several cells that perform the same function.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Un tejido (*tissue*) son muchas células que hacen el mismo trabajo. Es **true**.
+
+  - tipo: unir
+    enunciado: Match.
+    pares:
+      - [cell, the smallest living unit]
+      - [tissue, cells with the same function]
+      - [organ, a leaf or a heart]
+      - [organism, a complete living thing]

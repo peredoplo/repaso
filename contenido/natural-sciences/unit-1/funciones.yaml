@@ -1,0 +1,88 @@
+titulo: Vital functions
+subtitulo: Nutrition, interaction y reproduction
+emoji: 🦁
+ejercicios:
+  - tipo: chat
+    titulo: Las tres funciones vitales
+    mensajes:
+      - de: santiago
+        texto: 'Vamos con las tres funciones vitales, una a una. La primera es la nutrición (*nutrition*): los seres vivos toman alimento (*food*) para tener energía y crecer.'
+      - de: santiago
+        texto: 'Los animales comen otros seres vivos. Las plantas fabrican su propio alimento con la luz del sol (*sunlight*).'
+        dibujo: 🐑🌱 ☀️🌻
+        palabras:
+          - [nutrition, nutrición]
+          - [food, alimento]
+          - [sunlight, luz del sol]
+      - de: valentina
+        texto: 'La segunda es la relación (*interaction*): los seres vivos notan lo que pasa a su alrededor y reaccionan. Y se relacionan con otros: los leones viven en familia y muchos peces nadan en grupos enormes.'
+        dibujo: 🦁🦁 🐟🐟🐟
+      - de: hugo
+        texto: ¿Y el girasol, que se gira hacia el sol?
+      - de: valentina
+        texto: '¡También es relación (*interaction*)! Nota la luz y reacciona.'
+        palabras:
+          - [interaction, relación]
+      - de: vega
+        texto: 'La tercera es la reproducción (*reproduction*): tener descendientes. Los animales ponen huevos o tienen crías, y las cuidan. Las plantas se reproducen con semillas o esporas.'
+        dibujo: 🐣 🌰
+        palabras:
+          - [reproduction, reproducción]
+          - [lay eggs, poner huevos]
+          - [give birth, tener crías (dar a luz)]
+          - [seeds, semillas]
+          - [spores, esporas]
+
+  # Support 2 a) de la ficha (la foto, con emoji)
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🐑🌱
+    pregunta: The sheep is eating grass.
+    correcta: nutrition
+    incorrectas: [interaction, reproduction]
+    explicacion: La oveja está comiendo, y tomar alimento es **nutrition**.
+
+  # Support 2 b) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🐣🥚
+    pregunta: The chicks are coming out of their eggs.
+    correcta: reproduction
+    incorrectas: [nutrition, interaction]
+    explicacion: Los pollitos nacen de los huevos que puso su madre. Tener crías es **reproduction**.
+
+  # Support 2 c) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🦎🦗
+    pregunta: The chameleon is catching an insect.
+    correcta: nutrition
+    incorrectas: [interaction, reproduction]
+    explicacion: El camaleón caza el insecto para comérselo, y comer es **nutrition**.
+
+  # Support 2 d) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 👶🎶
+    pregunta: The baby is playing the xylophone.
+    correcta: interaction
+    incorrectas: [nutrition, reproduction]
+    explicacion: El bebé oye los sonidos y reacciona tocando. Notar lo que pasa y reaccionar es **interaction**.
+
+  # Support 2 e) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🌻☀️
+    pregunta: The sunflower turns to face the sun.
+    correcta: interaction
+    incorrectas: [nutrition, reproduction]
+    explicacion: El girasol nota la luz y se gira hacia ella. Reaccionar es **interaction**.
+
+  # Support 2 f) de la ficha
+  - tipo: elegir
+    enunciado: Nutrition, interaction or reproduction?
+    dibujo: 🦁🐾
+    pregunta: The lioness is looking after her cub.
+    correcta: reproduction
+    incorrectas: [nutrition, interaction]
+    explicacion: 'Tener crías y cuidarlas es **reproduction**, como los pájaros que cuidan sus huevos.'

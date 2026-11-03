@@ -1,4 +1,5 @@
 /** Comprueba el contenido (npm run validar; también antes de cada build). */
+import { esTeoria } from '../src/contenido/esquema';
 import { leerContenido } from './leer';
 
 const c = leerContenido();
@@ -7,7 +8,7 @@ if (c.errores.length) {
   process.exit(1);
 }
 for (const t of c.temas.values()) {
-  const n = t.lecciones.reduce((s, l) => s + l.ejercicios.filter((e) => e.tipo !== 'recuerda').length, 0);
+  const n = t.lecciones.reduce((s, l) => s + l.ejercicios.filter((e) => !esTeoria(e)).length, 0);
   console.log(`${t.id}: ${t.lecciones.length} lecciones, ${n} ejercicios.`);
 }
 console.log('Contenido correcto.');

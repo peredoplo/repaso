@@ -1,0 +1,66 @@
+titulo: The plant cell
+subtitulo: Pared, cloroplastos y vacuolas
+emoji: 🌿
+ejercicios:
+  # Support 3 a) de la ficha (con las palabras de la caja: cell membrane, cell wall, small, chloroplasts, large, nucleus)
+  - tipo: elegir
+    enunciado: 'Plant cell: complete the sentence.'
+    dibujo: 🌿
+    pregunta: Plants are rigid because of the ___.
+    correcta: cell wall
+    incorrectas:
+      - texto: cell membrane
+        feedback: La membrana es fina y la tienen todas las células. Lo que hace rígida a la planta es la pared (**cell wall**).
+      - texto: nucleus
+        feedback: El núcleo controla la célula. Lo que hace rígida a la planta es la pared (**cell wall**).
+
+  # Support 3 b) de la ficha
+  - tipo: elegir
+    enunciado: 'Plant cell: complete the sentence.'
+    dibujo: 🌿
+    pregunta: Their ___ contain a green substance called chlorophyll.
+    correcta: chloroplasts
+    incorrectas:
+      - texto: nucleus
+        feedback: La clorofila (*chlorophyll*), que es verde, está en los cloroplastos (**chloroplasts**).
+      - texto: cell wall
+        feedback: La clorofila (*chlorophyll*), que es verde, está en los cloroplastos (**chloroplasts**).
+
+  # Support 3 c) de la ficha
+  - tipo: elegir
+    enunciado: 'Plant cell: complete the sentence.'
+    dibujo: 🌿
+    pregunta: It has a ___ that controls all the substances entering and leaving the cell.
+    correcta: cell membrane
+    incorrectas:
+      - texto: cell wall
+        feedback: La pared hace rígida la célula. La que controla lo que entra y sale es la membrana (**cell membrane**).
+      - texto: chloroplasts
+        feedback: Los cloroplastos tienen la clorofila. La que controla lo que entra y sale es la membrana (**cell membrane**).
+
+  # Support 3 e) de la ficha
+  - tipo: elegir
+    enunciado: 'Plant cell: complete the sentence.'
+    dibujo: 🌿💧
+    pregunta: There is water in the ___ vacuoles.
+    correcta: large
+    incorrectas:
+      - texto: small
+        feedback: Las vacuolas pequeñas (*small*) son de la célula animal. La vegetal las tiene grandes (**large**), llenas de agua.
+
+  # Reach higher 6 b) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: All cells in animals and plants have a cell wall.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: La pared (*cell wall*) solo la tienen las células de las plantas, no las de los animales. Es **false**.
+
+  - tipo: unir
+    enunciado: Match.
+    pares:
+      - [cell wall, makes the plant cell rigid]
+      - [chloroplasts, contain chlorophyll]
+      - [nucleus, controls the cell]
+      - [cell membrane, lets substances in and out]

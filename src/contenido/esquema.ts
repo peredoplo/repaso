@@ -1,7 +1,7 @@
 /**
  * El formato del contenido (YAML en contenido/). Regla de idiomas: `enunciado`, `feedback`, `explicacion` y los textos
- * de `recuerda` van en español; `pregunta`, `opciones`, `solucion`, `respuestas`, `debajo` y los `ejemplos`, en inglés
- * (son lo que se oye con la voz). Los dibujos son emojis, nunca imágenes del libro.
+ * de `recuerda` y `chat` van en español; `pregunta`, `opciones`, `solucion`, `respuestas`, `debajo`, los `ejemplos` y
+ * las `palabras` del chat, en inglés (son lo que se oye con la voz). Los dibujos son emojis, nunca imágenes del libro.
  */
 import { z } from 'zod';
 
@@ -103,7 +103,33 @@ export const Recuerda = z
   })
   .strict();
 
-export const Ejercicio = z.discriminatedUnion('tipo', [Elegir, Ordenar, Escribir, Unir, Recuerda]);
+/** Los personajes del chat (los de Numeritis, con sus caras en public/personajes/). */
+export const PERSONAJES = { vega: 'Vega', hugo: 'Hugo', valentina: 'Valentina', santiago: 'Santiago' } as const;
+
+const Mensaje = z
+  .object({
+    de: z.enum(Object.keys(PERSONAJES) as [keyof typeof PERSONAJES, ...(keyof typeof PERSONAJES)[]]),
+    /** En español; el vocabulario en inglés, en *cursiva*. */
+    texto: z.string(),
+    dibujo: z.string().optional(),
+    /** El vocabulario nuevo: [inglés, español]. El inglés se oye al tocarlo. */
+    palabras: z.array(z.tuple([z.string(), z.string()])).optional(),
+  })
+  .strict();
+
+/** La teoría contada por los personajes, como en Numeritis: los mensajes llegan de uno en uno. No se corrige. */
+export const Chat = z
+  .object({
+    tipo: z.literal('chat'),
+    titulo: z.string(),
+    mensajes: z.array(Mensaje).min(1),
+  })
+  .strict();
+
+export const Ejercicio = z.discriminatedUnion('tipo', [Elegir, Ordenar, Escribir, Unir, Recuerda, Chat]);
+
+/** Las pantallas de teoría (no se corrigen ni cuentan para la nota). */
+export const esTeoria = (e: { tipo: string }) => e.tipo === 'recuerda' || e.tipo === 'chat';
 
 export const Leccion = z
   .object({
@@ -149,5 +175,6 @@ export type OrdenarT = z.infer<typeof Ordenar>;
 export type EscribirT = z.infer<typeof Escribir>;
 export type UnirT = z.infer<typeof Unir>;
 export type RecuerdaT = z.infer<typeof Recuerda>;
+export type ChatT = z.infer<typeof Chat>;
 export type EjercicioT = z.infer<typeof Ejercicio>;
 export type Perfil = z.infer<typeof Perfiles>['perfiles'][number];

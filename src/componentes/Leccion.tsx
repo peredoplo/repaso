@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useRef, useState, type ComponentType } from 'react';
 import type { EjercicioC } from '../contenido/cargar';
-import type { EjercicioT } from '../contenido/esquema';
+import { esTeoria, type EjercicioT } from '../contenido/esquema';
 import type { Resultado } from '../lib/corregir';
-import { frasesInglesas } from '../lib/frases';
+import { todoLoQueSeOye } from '../lib/frases';
 import { sonar } from '../lib/sonido';
 import { callar, hablar, precargar } from '../lib/voz';
+import Chat from './ejercicios/Chat';
 import Elegir from './ejercicios/Elegir';
 import Escribir from './ejercicios/Escribir';
 import Ordenar from './ejercicios/Ordenar';
@@ -21,7 +22,7 @@ export interface Contestado {
 }
 
 export interface Resumen {
-  /** Lo contestado la primera vez que salió cada ejercicio (sin las tarjetas de «Recuerda»). */
+  /** Lo contestado la primera vez que salió cada ejercicio (sin la teoría: «Recuerda» y el chat). */
   primeros: Contestado[];
 }
 
@@ -31,6 +32,7 @@ const COMPONENTES: { [T in EjercicioT['tipo']]: ComponentType<PropsEjercicio<Ext
   escribir: Escribir,
   unir: Unir,
   recuerda: Recuerda,
+  chat: Chat,
 };
 
 const BIEN = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!', '¡Bravo!', '¡Lo has clavado!'];
@@ -50,6 +52,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
   const [pos, setPos] = useState(0);
   const [resultado, setResultado] = useState<Resultado | null>(null);
   const [comprobar, setComprobar] = useState<(() => Resultado) | null>(null);
+  const [masChat, setMasChat] = useState<(() => void) | null>(null);
   const [hechos, setHechos] = useState<Set<string>>(new Set());
   const [salir, setSalir] = useState(false);
   const primeros = useRef(new Map<string, Contestado>());
@@ -60,10 +63,12 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
   const total = ejercicios.length;
 
   const registrar = useCallback((f: (() => Resultado) | null) => setComprobar(() => f), []);
+  const registrarSeguir = useCallback((f: (() => void) | null) => setMasChat(() => f), []);
+  const teoria = esTeoria(e);
 
   // Al empezar, se preparan las voces de toda la lección; al salir, se calla lo que suene.
   useEffect(() => {
-    precargar(ejercicios.flatMap(frasesInglesas));
+    precargar(ejercicios.flatMap(todoLoQueSeOye));
     return callar;
   }, [ejercicios]);
 
@@ -84,7 +89,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
 
   const seguir = useCallback(() => {
     callar();
-    if (e.tipo === 'recuerda') setHechos((h) => new Set(h).add(e.id));
+    if (teoria) setHechos((h) => new Set(h).add(e.id));
     if (pos + 1 >= cola.length) {
       onTerminar({ primeros: [...primeros.current.values()] });
       return;
@@ -92,19 +97,21 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
     setPos(pos + 1);
     setResultado(null);
     setComprobar(null);
-  }, [e, pos, cola.length, onTerminar]);
+    setMasChat(null);
+  }, [e, teoria, pos, cola.length, onTerminar]);
 
   // Enter hace siempre lo del botón grande de abajo: comprobar o continuar.
   useEffect(() => {
     const tecla = (ev: KeyboardEvent) => {
       if (ev.key !== 'Enter' || salir) return;
       ev.preventDefault();
-      if (resultado || e.tipo === 'recuerda') seguir();
+      if (masChat) masChat();
+      else if (resultado || teoria) seguir();
       else if (comprobar) responder(comprobar());
     };
     window.addEventListener('keydown', tecla);
     return () => window.removeEventListener('keydown', tecla);
-  }, [resultado, comprobar, e, salir, seguir, responder]);
+  }, [resultado, comprobar, masChat, teoria, salir, seguir, responder]);
 
   const Componente = COMPONENTES[e.tipo] as ComponentType<PropsEjercicio<EjercicioT>>;
   const avance = Math.round((hechos.size / total) * 100);
@@ -128,7 +135,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
 
       <main className="leccion__centro">
         {actual.vez > 0 && <p className="otra-vez">🔁 Vamos a intentarlo otra vez</p>}
-        <Componente key={`${pos}-${e.id}`} ejercicio={e} resultado={resultado} registrar={registrar} onResultado={responder} />
+        <Componente key={`${pos}-${e.id}`} ejercicio={e} resultado={resultado} registrar={registrar} onResultado={responder} registrarSeguir={registrarSeguir} />
       </main>
 
       <footer className={`pie${resultado ? (resultado.bien ? ' pie--bien' : ' pie--mal') : ''}`}>
@@ -150,9 +157,13 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
           ) : (
             <div className="pie__mensaje" />
           )}
-          {resultado || e.tipo === 'recuerda' ? (
+          {masChat ? (
+            <button type="button" className="boton boton--cielo" onClick={masChat}>
+              Seguir
+            </button>
+          ) : resultado || teoria ? (
             <button type="button" className={`boton ${resultado && !resultado.bien ? 'boton--coral' : 'boton--verde'}`} onClick={seguir}>
-              {e.tipo === 'recuerda' ? '¡Entendido!' : 'Continuar'}
+              {teoria ? '¡Entendido!' : 'Continuar'}
             </button>
           ) : e.tipo === 'unir' ? (
             <span />

@@ -1,0 +1,90 @@
+titulo: Living things
+subtitulo: Seres vivos y no vivos
+emoji: 🌱
+ejercicios:
+  - tipo: chat
+    titulo: ¿Qué es un ser vivo?
+    mensajes:
+      - de: vega
+        texto: '¡Hola! Vamos a repasar la unidad 1 de Natu: los seres vivos (*living organisms*).'
+      - de: hugo
+        texto: 'Eso es fácil: mi perro está vivo y mi balón, no.'
+        dibujo: 🐶 ⚽
+      - de: valentina
+        texto: ¿Y un árbol? No se mueve de sitio… ¿está vivo?
+      - de: vega
+        texto: '¡Sí! Un ser vivo (*living thing*) nace, crece, se reproduce y muere. Los árboles también, aunque no anden.'
+      - de: vega
+        texto: 'Lo que no está vivo es un ser no vivo (*non-living thing*). Puede ser natural, como una piedra o el agua, o artificial, hecho por las personas, como un lápiz o un coche.'
+        palabras:
+          - [living things, seres vivos]
+          - [non-living things, seres no vivos]
+          - [natural, natural (de la naturaleza)]
+          - [artificial, artificial (lo hacen las personas)]
+      - de: santiago
+        texto: 'Todos los seres vivos hacen tres cosas: las funciones vitales (*vital functions*).'
+        palabras:
+          - [nutrition, 'nutrición: tomar alimento']
+          - [interaction, 'relación: darse cuenta de lo que pasa y reaccionar']
+          - [reproduction, 'reproducción: tener crías o semillas']
+      - de: hugo
+        texto: '¡Tres! Nutrición (*nutrition*), relación (*interaction*) y reproducción (*reproduction*). Esto cae seguro en el examen.'
+
+  # Reach higher 4 de la ficha: natural non-living things
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🪨 💧
+    pregunta: 'Natural non-living things: rocks and ___.'
+    correcta: water
+    incorrectas:
+      - texto: pencils
+        feedback: Los lápices (*pencils*) los hacen las personas, así que son artificiales (*artificial*). El agua (**water**) es natural.
+      - texto: trees
+        feedback: Los árboles (*trees*) son seres vivos. Un ser no vivo natural es el agua (**water**).
+
+  # Reach higher 4 de la ficha: artificial non-living things
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🚗 ✏️
+    pregunta: 'Artificial non-living things: cars and ___.'
+    correcta: pencils
+    incorrectas:
+      - texto: rocks
+        feedback: Las piedras (*rocks*) no las hace nadie, son naturales (*natural*). Los lápices (**pencils**) sí los hacen las personas.
+      - texto: dogs
+        feedback: Los perros (*dogs*) son seres vivos. Un ser no vivo artificial es un lápiz (**pencil**).
+
+  # Reach higher 1 b) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    pregunta: How many vital functions do living things perform?
+    correcta: three
+    incorrectas:
+      - texto: five
+        feedback: 'Cinco son los reinos (*kingdoms*). Funciones vitales hay **three**: *nutrition*, *interaction* y *reproduction*.'
+      - texto: two
+        feedback: 'Son **three**: *nutrition*, *interaction* y *reproduction*.'
+
+  # Support 1 b) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: All living things need nutrition to grow.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Todos los seres vivos necesitan alimento para tener energía y crecer, también las plantas. Es **true**.
+
+  # Support 1 c) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: All living things can move around.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: Las plantas son seres vivos y no se mueven de un sitio a otro. Es **false**.
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: and die / Living things / grow, / are born, / reproduce
+    solucion: Living things are born, grow, reproduce and die.
+    explicacion: 'Primero nacen, luego crecen, se reproducen y, al final, mueren: *Living things are born, grow, reproduce and die.*'

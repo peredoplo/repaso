@@ -22,12 +22,12 @@ export function Texto({ children }: { children: string }) {
   );
 }
 
-/** Altavoz: la primera vez dice la frase; si se vuelve a tocar enseguida, más despacio. */
-export function BotonVoz({ texto, grande = false, etiqueta = 'Escuchar' }: { texto: string; grande?: boolean; etiqueta?: string }) {
+/** Altavoz: la primera vez dice la frase; si se vuelve a tocar enseguida, más despacio. Con `quien`, un mensaje del chat. */
+export function BotonVoz({ texto, grande = false, etiqueta = 'Escuchar', quien }: { texto: string; grande?: boolean; etiqueta?: string; quien?: string }) {
   const ultimo = useRef(0);
   const decir = () => {
     const ahora = Date.now();
-    hablar(texto, { lenta: ahora - ultimo.current < 3000 });
+    hablar(texto, { lenta: ahora - ultimo.current < 3000, quien });
     ultimo.current = ahora;
   };
   return (

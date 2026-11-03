@@ -5,12 +5,14 @@
 import { parse } from 'yaml';
 import type { z } from 'zod';
 import { HUECO, normalizar, partirPiezas } from '../lib/normalizar';
-import { Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema';
+import { esTeoria, Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema';
 
 export type EjercicioC = EjercicioT & { id: string };
 
-/** Pantallas como mucho en una lección (las tarjetas de «Recuerda» cuentan). */
+/** Pantallas como mucho en una lección (la teoría, «Recuerda» y el chat, cuenta). */
 export const MAX_PANTALLAS = 8;
+/** Mensajes como mucho en un chat de teoría: si hay más que contar, mejor otra lección. */
+export const MAX_MENSAJES = 10;
 
 export interface LeccionC {
   id: string;
@@ -90,6 +92,16 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
     }
     case 'recuerda':
       break;
+    case 'chat':
+      if (e.mensajes.length > MAX_MENSAJES) errores.push(`${donde}: el chat tiene ${e.mensajes.length} mensajes; como mucho ${MAX_MENSAJES}`);
+      // Primero en español y luego, entre paréntesis, en inglés: «nutrición (*nutrition*)». Si no, la voz dice el inglés
+      // seguido, y una «y» suelta entre dos palabras en inglés la leía «y griega» (revisión del autor, 3 de noviembre de 2026).
+      for (const m of e.mensajes) {
+        if (m.texto.replace(/\(\*[^*]+\*\)/g, '').includes('*')) {
+          errores.push(`${donde}: «${m.texto.slice(0, 40)}…»: el inglés va entre paréntesis detrás del español, «nutrición (*nutrition*)»`);
+        }
+      }
+      break;
   }
 }
 
@@ -121,7 +133,7 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
         ejercicios.set(c.id, c);
         return c;
       });
-      if (!l.examen && !conId.some((e) => e.tipo !== 'recuerda')) errores.push(`${archivo}: no tiene ejercicios`);
+      if (!l.examen && conId.every(esTeoria)) errores.push(`${archivo}: no tiene ejercicios`);
       // Lecciones cortas (a Julia se le hacían pesadas las de 15): como mucho 8 pantallas.
       if (conId.length > MAX_PANTALLAS) errores.push(`${archivo}: tiene ${conId.length} pantallas; como mucho ${MAX_PANTALLAS} (pártela en dos)`);
       for (const d of l.examen?.de ?? []) {

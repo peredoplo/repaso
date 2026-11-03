@@ -1,0 +1,18 @@
+# Fichas del cole: «Living organisms · Unit 1 Support» y «Unit 1 Reach higher» (Outside the Box, Primary 3; 3 de noviembre de 2026).
+# La teoría, en español, la cuentan los personajes en el chat (con el vocabulario en inglés); los ejercicios, en inglés.
+# Lecciones cortas (como mucho 8 pantallas): cada dos, un cofre.
+asignatura: Natural Sciences
+titulo: Unit 1 · Living organisms
+descripcion: Seres vivos, funciones vitales, células y los cinco reinos.
+lecciones:
+  - seres-vivos
+  - funciones
+  - funciones-2
+  - alimento-y-crias
+  - celulas
+  - celulas-2
+  - partes-celula
+  - celula-vegetal
+  - reinos
+  - reinos-2
+  - examen

@@ -1,15 +1,17 @@
 /**
- * Graba la voz en inglés de todas las frases del contenido con Azure Speech (adaptado de Numeritis).
+ * Graba la voz en inglés de todas las frases del contenido con Azure Speech (adaptado de Numeritis), y los mensajes
+ * del chat, en español, cada uno con la voz de su personaje.
  * Uso: npm run voces              → graba solo las frases nuevas o cambiadas y borra los audios que sobran.
  *      npm run voces -- --lista   → solo enseña las frases, sin grabar nada.
  *      npm run voces -- --rehacer "texto"  → vuelve a grabar las frases que contienen ese texto.
  * Necesita AZURE_SPEECH_KEY y AZURE_SPEECH_REGION en .env (no se sube al repositorio).
- * Escribe public/voz/<hash>.mp3 y src/voces.json (el índice: frase → archivo).
+ * Escribe public/voz/<hash>.mp3 y src/voces.json (el índice: frase → archivo; los mensajes, «personaje|texto» → archivo).
  */
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { frasesInglesas } from '../src/lib/frases';
+import { PERSONAJES } from '../src/contenido/esquema';
+import { claveMensaje, frasesInglesas, mensajesHablados } from '../src/lib/frases';
 import { leerContenido } from './leer';
 
 /** Voz británica, como la del cole; un poco más lenta para niños de 8 años. */
@@ -17,13 +19,79 @@ const VOZ = 'en-GB-SoniaNeural';
 const VELOCIDAD = '-12%';
 const FORMATO = 'audio-24khz-48kbitrate-mono-mp3';
 
+/**
+ * Una voz distinta para cada personaje del chat, algo infantil (petición del autor, 3 de noviembre de 2026). En español
+ * no hay voces de niño: son las voces de adulto de tono natural más alto, con el tono algo subido. Subirlo mucho (+45 %)
+ * sonaba artificial (revisión del autor, el mismo día): como mucho, +20 %, y Vega, sin subir. Medido: unos 262 Hz Vega, 250 Valentina,
+ * 195 Hugo y 180 Santiago, que es el más alto.
+ */
+const VOCES: Record<keyof typeof PERSONAJES, { voz: string; tono: string }> = {
+  vega: { voz: 'es-ES-IreneNeural', tono: '+0%' },
+  valentina: { voz: 'es-ES-XimenaNeural', tono: '+6%' },
+  hugo: { voz: 'es-ES-EliasNeural', tono: '+20%' },
+  santiago: { voz: 'es-ES-DarioNeural', tono: '+15%' },
+};
+/**
+ * Lo que va en *cursiva* (el vocabulario en inglés) lo dice la misma voz que las palabras y los ejercicios, a su
+ * velocidad (revisión del autor: la de hombre grave no era agradable de oír).
+ */
+const VOZ_INGLES = { voz: VOZ, tono: '+0%', velocidad: VELOCIDAD };
+/** Silencio antes del inglés y, algo más largo, al volver al español. */
+const PAUSA_ANTES = '150ms';
+const PAUSA_DESPUES = '300ms';
+const VELOCIDAD_CHAT = '-5%';
+
 const raiz = process.cwd();
 const carpetaVoz = join(raiz, 'public/voz');
 const indiceVoces = join(raiz, 'src/voces.json');
 
 const esperar = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const escaparXml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const hash = (frase: string) => createHash('sha1').update(`${VOZ}|${VELOCIDAD}|${frase}`).digest('hex').slice(0, 12);
+const hash = (frase: string, voz = VOZ, velocidad = VELOCIDAD) =>
+  createHash('sha1').update(`${voz}|${velocidad}|${frase}`).digest('hex').slice(0, 12);
+
+const ssmlFrase = (frase: string) =>
+  `<speak version='1.0' xml:lang='en-GB'><voice name='${VOZ}'><prosody rate='${VELOCIDAD}'>${escaparXml(frase)}</prosody></voice></speak>`;
+
+type Voz = { voz: string; tono: string };
+
+/**
+ * Lo que va en *cursiva* es inglés (el vocabulario) y lo dice la voz del inglés; lo demás, el personaje. Lo que no
+ * tiene letras («, », «).») va con el trozo de antes, para que «*Nutrition*, *interaction*» lo diga seguido una voz.
+ */
+function trozosMensaje(texto: string): { ingles: boolean; texto: string }[] {
+  const trozos: { ingles: boolean; texto: string }[] = [];
+  for (const t of texto.trim().split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g)) {
+    if (!t) continue;
+    const ingles = /^\*[^*]/.test(t);
+    const limpio = t.replace(/\*/g, '');
+    const anterior = trozos.at(-1);
+    if (anterior && (anterior.ingles === ingles || !/\p{L}/u.test(limpio))) anterior.texto += limpio;
+    else trozos.push({ ingles, texto: limpio });
+  }
+  return trozos;
+}
+
+function ssmlMensaje(texto: string, personaje: Voz): string {
+  const trozos = trozosMensaje(texto);
+  const partes = trozos.map((t, i) => {
+    const { voz, tono, velocidad } = t.ingles ? VOZ_INGLES : { ...personaje, velocidad: VELOCIDAD_CHAT };
+    const antes = !t.ingles && i > 0 ? `<break time='${PAUSA_DESPUES}'/>` : '';
+    const despues = !t.ingles && trozos[i + 1]?.ingles ? `<break time='${PAUSA_ANTES}'/>` : '';
+    return `<voice name='${voz}'>${SIN_RELLENO}${antes}<prosody rate='${velocidad}' pitch='${tono}'>${escaparXml(t.texto.trim())}</prosody>${despues}</voice>`;
+  });
+  return `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='es-ES'>${partes.join('')}</speak>`;
+}
+
+/**
+ * Azure pone más de un segundo de silencio al principio y al final de cada voz, y al cambiar de voz se notaba un
+ * parón: se quita, para que solo queden las pausas de arriba (medido: unos 0,3-0,4 s).
+ */
+const SIN_RELLENO = `<mstts:silence type='Leading-exact' value='0ms'/><mstts:silence type='Tailing-exact' value='0ms'/>`;
+
+/** Para el nombre del audio: si cambia una voz, su tono o las pausas, se vuelve a grabar. */
+const firmaMensaje = (v: Voz) =>
+  `${v.voz}${v.tono}+${VOZ_INGLES.voz}${VOZ_INGLES.tono}${VOZ_INGLES.velocidad}+${PAUSA_ANTES}${PAUSA_DESPUES}+exacto`;
 
 function entorno() {
   if (existsSync(join(raiz, '.env'))) process.loadEnvFile(join(raiz, '.env'));
@@ -45,8 +113,7 @@ async function pedir(url: string, init: RequestInit, intentos = 6): Promise<Resp
   }
 }
 
-async function grabar(frase: string, { clave, region }: { clave: string; region: string }): Promise<Buffer> {
-  const ssml = `<speak version='1.0' xml:lang='en-GB'><voice name='${VOZ}'><prosody rate='${VELOCIDAD}'>${escaparXml(frase)}</prosody></voice></speak>`;
+async function grabar(ssml: string, { clave, region }: { clave: string; region: string }): Promise<Buffer> {
   const r = await pedir(`https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`, {
     method: 'POST',
     headers: {
@@ -69,31 +136,50 @@ async function main() {
   }
   const todas = new Set<string>();
   for (const e of c.ejercicios.values()) frasesInglesas(e).forEach((f) => todas.add(f));
+  // Los mensajes del chat: «vega|texto» → lo que se graba con la voz de Vega.
+  const mensajes = new Map<string, { voz: Voz; texto: string }>();
+  for (const e of c.ejercicios.values()) {
+    for (const m of mensajesHablados(e)) {
+      mensajes.set(claveMensaje(m.de, m.texto), { voz: VOCES[m.de as keyof typeof VOCES], texto: m.texto.trim() });
+    }
+  }
+  const archivoMensaje = (m: { voz: Voz; texto: string }) => `${hash(m.texto, firmaMensaje(m.voz), VELOCIDAD_CHAT)}.mp3`;
 
   if (process.argv.includes('--lista')) {
     [...todas].sort().forEach((f) => console.log(f));
-    console.log(`\n${todas.size} frases, ${[...todas].reduce((s, f) => s + f.length, 0)} caracteres.`);
+    [...mensajes.keys()].sort().forEach((k) => console.log(k));
+    console.log(`\n${todas.size} frases y ${mensajes.size} mensajes del chat.`);
     return;
   }
 
   const rehacer = process.argv.flatMap((a, i) => (a === '--rehacer' && process.argv[i + 1] ? [process.argv[i + 1]] : []));
   mkdirSync(carpetaVoz, { recursive: true });
-  const pendientes = [...todas].filter((f) => rehacer.some((r) => f.includes(r)) || !existsSync(join(carpetaVoz, `${hash(f)}.mp3`)));
-  console.log(`${todas.size} frases; ${pendientes.length} por grabar (${pendientes.reduce((s, f) => s + f.length, 0)} caracteres).`);
+  const toca = (texto: string, archivo: string) => rehacer.some((r) => texto.includes(r)) || !existsSync(join(carpetaVoz, archivo));
+  const pendientes = [
+    ...[...todas].filter((f) => toca(f, `${hash(f)}.mp3`)).map((f) => ({ archivo: `${hash(f)}.mp3`, ssml: ssmlFrase(f), que: f })),
+    ...[...mensajes]
+      .filter(([, m]) => toca(m.texto, archivoMensaje(m)))
+      .map(([k, m]) => ({ archivo: archivoMensaje(m), ssml: ssmlMensaje(m.texto, m.voz), que: k })),
+  ];
+  console.log(`${todas.size} frases y ${mensajes.size} mensajes del chat; ${pendientes.length} por grabar.`);
 
   const credenciales = pendientes.length ? entorno() : null;
-  for (const [k, frase] of pendientes.entries()) {
-    writeFileSync(join(carpetaVoz, `${hash(frase)}.mp3`), await grabar(frase, credenciales!));
-    console.log(`[${k + 1}/${pendientes.length}] ${frase}`);
+  for (const [k, p] of pendientes.entries()) {
+    writeFileSync(join(carpetaVoz, p.archivo), await grabar(p.ssml, credenciales!));
+    console.log(`[${k + 1}/${pendientes.length}] ${p.que}`);
     await esperar(300);
   }
 
-  const vigentes = new Set([...todas].map((f) => `${hash(f)}.mp3`));
+  const vigentes = new Set([...[...todas].map((f) => `${hash(f)}.mp3`), ...[...mensajes.values()].map(archivoMensaje)]);
   const sobran = readdirSync(carpetaVoz).filter((a) => a.endsWith('.mp3') && !vigentes.has(a));
   sobran.forEach((a) => unlinkSync(join(carpetaVoz, a)));
 
   // Generado por `npm run voces`: no se edita a mano.
-  const indice = { voz: VOZ, frases: Object.fromEntries([...todas].sort().map((f) => [f, hash(f)])) };
+  const indice = {
+    voz: VOZ,
+    frases: Object.fromEntries([...todas].sort().map((f) => [f, hash(f)])),
+    mensajes: Object.fromEntries([...mensajes].sort(([a], [b]) => a.localeCompare(b)).map(([k, m]) => [k, archivoMensaje(m).slice(0, -4)])),
+  };
   writeFileSync(indiceVoces, `${JSON.stringify(indice, null, 1)}\n`);
   console.log(`Hecho. ${sobran.length ? `Borrados ${sobran.length} audios que sobraban. ` : ''}Índice: src/voces.json`);
 }
