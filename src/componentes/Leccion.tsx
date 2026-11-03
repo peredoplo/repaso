@@ -34,8 +34,8 @@ const COMPONENTES: { [T in EjercicioT['tipo']]: ComponentType<PropsEjercicio<Ext
 };
 
 const BIEN = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!', '¡Bravo!', '¡Lo has clavado!'];
-/** Las veces que vuelve a salir al final un ejercicio fallado (en las lecciones; en el examen, ninguna). */
-const REINTENTOS = 2;
+/** Las veces que vuelve a salir al final un ejercicio fallado (en las lecciones; en el examen, ninguna). Una sola, para que no se haga pesado. */
+const REINTENTOS = 1;
 
 interface Props {
   titulo: string;

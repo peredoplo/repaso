@@ -32,7 +32,7 @@ ejercicios:
     correcta: brushes
     incorrectas:
       - texto: brush
-        feedback: 'Con *he*, el verbo lleva -s. *brush* termina en -sh, así que lleva **-es**: **brushes**.'
+        feedback: Con *he*, el verbo lleva -s. *brush* termina en -sh, así que lleva **-es**, es decir, **brushes**.
       - texto: brushs
         feedback: 'Los verbos que terminan en -sh llevan **-es**: **brushes**.'
 
@@ -85,50 +85,3 @@ ejercicios:
         feedback: '*My brother* es *he*: el verbo lleva -s: **eats**.'
       - texto: eates
         feedback: '*eat* solo lleva **-s**: **eats**.'
-
-  - tipo: elegir
-    enunciado: Elige la palabra que falta.
-    pregunta: I sometimes ___ my bed.
-    correcta: make
-    incorrectas:
-      - texto: makes
-        feedback: 'Con *I*, el verbo va tal cual, sin -s: **make**.'
-      - texto: do
-        feedback: '«Hacer la cama» es **make my bed**.'
-
-  - tipo: escribir
-    enunciado: Escribe el verbo **go** como va en esta frase.
-    plantilla: He ___ to bed late.
-    respuestas: [goes]
-    explicacion: 'Con *he*, *go* lleva **-es**: **goes**.'
-
-  - tipo: escribir
-    enunciado: Escribe el verbo **brush** como va en esta frase.
-    plantilla: She ___ her teeth every day.
-    respuestas: [brushes]
-    explicacion: 'Con *she*, *brush* lleva **-es**: **brushes**.'
-
-  - tipo: escribir
-    enunciado: Escribe el verbo **have** como va en esta frase.
-    plantilla: My dad ___ a shower in the morning.
-    respuestas: [has]
-    explicacion: Con *he* (*my dad*), *have* cambia a **has**.
-
-  - tipo: escribir
-    enunciado: Escribe el verbo **do** como va en esta frase.
-    plantilla: Lucy ___ exercise after school.
-    respuestas: [does]
-    explicacion: 'Con *she* (*Lucy*), *do* lleva **-es**: **does**.'
-
-  - tipo: escribir
-    enunciado: Escribe el verbo **drink** como va en esta frase.
-    plantilla: Max ___ fizzy drinks once a week.
-    respuestas: [drinks]
-    explicacion: 'Con *he* (*Max*), el verbo lleva **-s**: **drinks**.'
-
-  - tipo: ordenar
-    enunciado: Escucha y ordena las palabras.
-    escuchar: true
-    piezas: usually / My mum / her bed / makes / make
-    sobran: [make]
-    solucion: My mum usually makes her bed.

@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import type { Premio } from '../lib/premios';
 import { sonar } from '../lib/sonido';
 import type { Contestado, Modo } from './Leccion';
 import { Confeti, Estrellas } from './piezas';
+import Recompensa from './Recompensa';
 
 export interface DatosFinal {
   titulo: string;
@@ -10,9 +12,11 @@ export interface DatosFinal {
   total: number;
   estrellas: number;
   nota?: number;
-  xp: number;
+  gemas: number;
   racha: number;
   falladas: Contestado[];
+  /** Si esta lección ha dejado un cofre listo para abrir. */
+  cofre?: string;
 }
 
 const nota1 = (n: number) => n.toLocaleString('es-ES', { maximumFractionDigits: 1 });
@@ -24,21 +28,30 @@ function mensajeNota(n: number): string {
   return 'Todavía hay que practicar un poco. ¡Repasa las lecciones y vuelve a probar!';
 }
 
-export default function Final({ datos, onSeguir }: { datos: DatosFinal; onSeguir: () => void }) {
+interface Props {
+  datos: DatosFinal;
+  onSeguir: () => void;
+  onAbrirCofre: (id: string) => Premio;
+}
+
+export default function Final({ datos, onSeguir, onAbrirCofre }: Props) {
+  // Mientras haya un cofre sin abrir, Enter lo abre (es el botón que tiene el foco), no pasa de pantalla.
+  const [cofrePendiente, setCofrePendiente] = useState(!!datos.cofre);
+
   useEffect(() => {
     sonar('final');
   }, []);
 
   useEffect(() => {
     const tecla = (ev: KeyboardEvent) => {
-      if (ev.key === 'Enter') {
+      if (ev.key === 'Enter' && !cofrePendiente) {
         ev.preventDefault();
         onSeguir();
       }
     };
     window.addEventListener('keydown', tecla);
     return () => window.removeEventListener('keydown', tecla);
-  }, [onSeguir]);
+  }, [onSeguir, cofrePendiente]);
 
   const examen = datos.modo === 'examen' && datos.nota !== undefined;
 
@@ -68,9 +81,9 @@ export default function Final({ datos, onSeguir }: { datos: DatosFinal; onSeguir
             {datos.aciertos}/{datos.total}
           </span>
         </div>
-        <div className="dato dato--sol">
-          <span className="dato__etiqueta">Puntos</span>
-          <span className="dato__valor">+{datos.xp} ⭐</span>
+        <div className="dato dato--cielo">
+          <span className="dato__etiqueta">Gemas</span>
+          <span className="dato__valor">+{datos.gemas} 💎</span>
         </div>
         <div className="dato dato--coral">
           <span className="dato__etiqueta">Racha</span>
@@ -79,6 +92,19 @@ export default function Final({ datos, onSeguir }: { datos: DatosFinal; onSeguir
           </span>
         </div>
       </div>
+
+      {datos.cofre && (
+        <section className="final__cofre">
+          <h2>¡Has desbloqueado un cofre!</h2>
+          <Recompensa
+            tipo="cofre"
+            onAbrir={() => {
+              setCofrePendiente(false);
+              return onAbrirCofre(datos.cofre!);
+            }}
+          />
+        </section>
+      )}
 
       {datos.falladas.length > 0 && (
         <section className="final__fallos">
@@ -104,9 +130,11 @@ export default function Final({ datos, onSeguir }: { datos: DatosFinal; onSeguir
         </section>
       )}
 
-      <button type="button" className="boton boton--verde final__boton" onClick={onSeguir} autoFocus>
-        Continuar
-      </button>
+      {!cofrePendiente && (
+        <button type="button" className="boton boton--verde final__boton" onClick={onSeguir} autoFocus>
+          Continuar
+        </button>
+      )}
     </div>
   );
 }

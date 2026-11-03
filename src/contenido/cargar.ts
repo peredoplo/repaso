@@ -9,6 +9,9 @@ import { Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema
 
 export type EjercicioC = EjercicioT & { id: string };
 
+/** Pantallas como mucho en una lección (las tarjetas de «Recuerda» cuentan). */
+export const MAX_PANTALLAS = 8;
+
 export interface LeccionC {
   id: string;
   /** «ingles/unit-1/habitos»: la clave del progreso. */
@@ -119,6 +122,8 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
         return c;
       });
       if (!l.examen && !conId.some((e) => e.tipo !== 'recuerda')) errores.push(`${archivo}: no tiene ejercicios`);
+      // Lecciones cortas (a Julia se le hacían pesadas las de 15): como mucho 8 pantallas.
+      if (conId.length > MAX_PANTALLAS) errores.push(`${archivo}: tiene ${conId.length} pantallas; como mucho ${MAX_PANTALLAS} (pártela en dos)`);
       for (const d of l.examen?.de ?? []) {
         if (!tema.lecciones.includes(d)) errores.push(`${archivo}: el examen usa «${d}», que no está en el tema`);
       }

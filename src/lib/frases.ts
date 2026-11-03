@@ -15,6 +15,9 @@ export function frasesInglesas(e: EjercicioT): string[] {
       break;
     }
     case 'ordenar':
+      if (e.pregunta) f.push(e.pregunta);
+      if (e.debajo) f.push(e.debajo);
+      if (e.tarjeta) f.push(e.tarjeta.texto);
       f.push(e.solucion);
       break;
     case 'escribir':

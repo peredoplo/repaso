@@ -1,0 +1,56 @@
+titulo: Early or late?
+subtitulo: Escucha y elige
+emoji: 😴
+ejercicios:
+  - tipo: recuerda
+    titulo: Early y late
+    texto: |
+      **early** = temprano
+      **late** = tarde
+    tabla:
+      - ['😴 20:30', go to bed early]
+      - ['😴 23:30', go to bed late]
+
+  - tipo: elegir
+    enunciado: ¿Qué hace?
+    dibujo: 😴
+    hora: '23:30'
+    correcta: go to bed late
+    incorrectas:
+      - texto: go to bed early
+        feedback: A las 23:30 es muy tarde. Tarde se dice **late**.
+      - have a shower
+
+  - tipo: elegir
+    enunciado: ¿Qué hace?
+    dibujo: 😴
+    hora: '20:30'
+    correcta: go to bed early
+    incorrectas:
+      - texto: go to bed late
+        feedback: A las 20:30 es pronto. Temprano se dice **early**.
+      - make my bed
+
+  - tipo: elegir
+    enunciado: Escucha y elige el dibujo.
+    escuchar: have a shower
+    correcta: 🚿
+    incorrectas: ['🪥', '🛏️']
+
+  - tipo: elegir
+    enunciado: Escucha y elige el dibujo.
+    escuchar: eat sweets
+    correcta: 🍭
+    incorrectas: ['🍎', '🥤']
+
+  - tipo: elegir
+    enunciado: Escucha y elige el dibujo.
+    escuchar: do exercise
+    correcta: 🤸
+    incorrectas: ['🚿', '😴']
+
+  - tipo: ordenar
+    enunciado: Ordena las palabras.
+    dibujo: 😴
+    piezas: early / bed / to / go
+    solucion: go to bed early

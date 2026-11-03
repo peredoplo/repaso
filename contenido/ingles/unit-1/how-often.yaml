@@ -1,6 +1,7 @@
-# Los 6 de la ficha «Unit 1. Review – Look and complete», tal cual (a-f), y otros parecidos.
+# Los 6 de la ficha «Unit 1. Review – Look and complete» (a-f). Las frases enteras se hacen con fichas
+# (a Julia se le hacía pesado escribir tanto); los huecos cortos, escribiendo, como en la ficha.
 titulo: How often…?
-subtitulo: Preguntar y contestar
+subtitulo: Look and complete
 emoji: ❓
 ejercicios:
   - tipo: recuerda
@@ -16,13 +17,14 @@ ejercicios:
       - She eats sweets twice a day.
 
   # a) de la ficha
-  - tipo: escribir
-    enunciado: Mira la tarjeta y contesta con una frase entera.
+  - tipo: ordenar
+    enunciado: Mira la tarjeta y contesta. ¡Sobra una ficha!
     tarjeta: { quien: he, dibujo: '😴', hora: '20:30', texto: go to bed early, veces: 2/week }
     pregunta: How often does he go to bed early?
-    respuestas: [He goes to bed early twice a week.]
-    errores:
-      - { contiene: two times, feedback: 'Para 2 veces se dice **twice**: *twice a week*.' }
+    piezas: He / go / goes / to bed early / twice a week
+    sobran: [go]
+    solucion: He goes to bed early twice a week.
+    explicacion: 'Con *he*, el verbo lleva -es (*goes*), y *twice a week* va al final.'
 
   # b) de la ficha
   - tipo: escribir
@@ -36,15 +38,14 @@ ejercicios:
       - { contiene: goes never, feedback: '*never* va **antes** del verbo: *He never goes…*' }
 
   # c) de la ficha
-  - tipo: escribir
-    enunciado: Mira la respuesta y escribe la pregunta.
+  - tipo: ordenar
+    enunciado: Mira la respuesta y forma la pregunta. ¡Sobra una ficha!
     tarjeta: { quien: she, dibujo: '🍭', texto: eat sweets, veces: 2/day }
-    plantilla: ___?
+    piezas: eat / How often / eats / she / does / sweets
+    sobran: [eats]
+    solucion: How often does she eat sweets?
     debajo: She eats sweets twice a day.
-    respuestas: [How often does she eat sweets]
-    errores:
-      - { contiene: does she eats, feedback: 'Después de **does**, el verbo va sin -s: *does she* **eat**.' }
-      - { contiene: do she, feedback: 'Con *she* se pregunta con **does**: *How often does she…?*' }
+    explicacion: 'Después de **does**, el verbo va sin -s: *How often does she* **eat** *sweets?*'
 
   # d) de la ficha
   - tipo: escribir
@@ -55,14 +56,14 @@ ejercicios:
     respuestas: [twice a week]
 
   # e) de la ficha
-  - tipo: escribir
-    enunciado: Mira la respuesta y completa la pregunta.
+  - tipo: ordenar
+    enunciado: Mira la respuesta y forma la pregunta. ¡Sobra una ficha!
     tarjeta: { quien: she, dibujo: '🍎', texto: eat healthy snacks, veces: 1/week }
-    plantilla: ___ snacks?
+    piezas: does / healthy snacks / How often / do / eat / she
+    sobran: [do]
+    solucion: How often does she eat healthy snacks?
     debajo: She eats healthy snacks once a week.
-    respuestas: [How often does she eat healthy]
-    errores:
-      - { contiene: does she eats, feedback: 'Después de **does**, el verbo va sin -s: *does she* **eat**.' }
+    explicacion: 'Con *she* se pregunta con **does**: *How often does she eat…?*'
 
   # f) de la ficha
   - tipo: escribir
@@ -83,72 +84,3 @@ ejercicios:
         feedback: Con *she* se pregunta con **does**.
       - texto: is
         feedback: Para preguntar *How often…?* con *she* se usa **does**.
-
-  - tipo: elegir
-    enunciado: Elige la palabra que falta.
-    pregunta: How often ___ you brush your teeth?
-    correcta: do
-    incorrectas:
-      - texto: does
-        feedback: Con *you* se pregunta con **do**.
-      - texto: are
-        feedback: Para preguntar *How often…?* con *you* se usa **do**.
-
-  - tipo: elegir
-    enunciado: Elige la palabra que falta.
-    pregunta: How often does he ___ exercise?
-    correcta: do
-    incorrectas:
-      - texto: does
-        feedback: 'Después de *does he*, el verbo va tal cual: **do**.'
-      - texto: doing
-        feedback: 'Después de *does he*, el verbo va tal cual: **do**.'
-
-  - tipo: ordenar
-    piezas: does / How often / he / brush / his teeth
-    solucion: How often does he brush his teeth?
-    explicacion: 'Primero *How often*, después *does*, quién (*he*) y el verbo: *How often does he brush…?*'
-
-  - tipo: ordenar
-    piezas: they / How often / do / eat / sweets
-    solucion: How often do they eat sweets?
-    explicacion: 'Primero *How often*, después *do*, quién (*they*) y el verbo: *How often do they eat…?*'
-
-  - tipo: escribir
-    enunciado: Mira la tarjeta y contesta con una frase entera.
-    tarjeta: { quien: she, dibujo: '🚿', texto: have a shower, veces: 1/day }
-    pregunta: How often does she have a shower?
-    respuestas: [She has a shower once a day.]
-    errores:
-      - { contiene: she have, feedback: 'Con *she*, *have* cambia a **has**: *She has a shower…*' }
-
-  - tipo: escribir
-    enunciado: Mira la tarjeta y completa la respuesta.
-    tarjeta: { quien: he, dibujo: '🪥', texto: brush his teeth, veces: 2/day }
-    pregunta: How often does he brush his teeth?
-    plantilla: He ___ his teeth twice a day.
-    respuestas: [brushes]
-
-  - tipo: escribir
-    enunciado: Mira la tarjeta y completa la respuesta.
-    tarjeta: { quien: they, dibujo: '🥤', texto: drink fizzy drinks, veces: 1/week }
-    pregunta: How often do they drink fizzy drinks?
-    plantilla: They drink fizzy drinks ___.
-    respuestas: [once a week]
-
-  - tipo: escribir
-    enunciado: Mira la tarjeta y contesta con una frase entera.
-    tarjeta: { quien: she, dibujo: '🛏️', texto: make her bed, veces: '0' }
-    pregunta: How often does she make her bed?
-    respuestas: [She never makes her bed.]
-    errores:
-      - { contiene: never make her, feedback: 'Con *she*, el verbo lleva -s: *She never* **makes**.' }
-
-  - tipo: escribir
-    enunciado: Mira la respuesta y escribe la pregunta.
-    tarjeta: { quien: he, dibujo: '🤸', texto: do exercise, veces: 3/week }
-    plantilla: ___?
-    debajo: He does exercise three times a week.
-    respuestas: [How often does he do exercise]
-    errores:
-      - { contiene: does he does, feedback: 'Después de **does**, el verbo va tal cual: *does he* **do** *exercise*.' }

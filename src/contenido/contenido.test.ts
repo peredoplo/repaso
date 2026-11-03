@@ -20,10 +20,18 @@ describe('contenido', () => {
   });
 
   it('lleva las 9 frases de la ficha de ordenar y los 6 de «Look and complete»', () => {
-    const adverbios = c.temas.get('ingles/unit-1')!.lecciones.find((l) => l.id === 'adverbios')!;
-    expect(adverbios.ejercicios.filter((e) => e.tipo === 'ordenar').length).toBeGreaterThanOrEqual(9);
-    const howOften = c.temas.get('ingles/unit-1')!.lecciones.find((l) => l.id === 'how-often')!;
-    expect(howOften.ejercicios.filter((e) => e.tipo === 'escribir').length).toBeGreaterThanOrEqual(6);
+    const tema = c.temas.get('ingles/unit-1')!;
+    const de = (...ids: string[]) => tema.lecciones.filter((l) => ids.includes(l.id)).flatMap((l) => l.ejercicios);
+    const ordenar = de('adverbios', 'adverbios-2').flatMap((e) => (e.tipo === 'ordenar' ? [e.solucion] : []));
+    for (const f of ['I always brush my teeth in the morning.', 'She has a shower every day.', 'I never go to bed late.', 'We sometimes do exercise after school.', 'He brushes his teeth twice a day.', 'I sometimes make my bed.', 'My sister always goes to bed early.', 'We eat healthy snacks twice a day.', 'My brother never eats sweets.']) {
+      expect(ordenar).toContain(f);
+    }
+    // a-f: con tarjeta, en la primera lección de How often
+    expect(de('how-often').filter((e) => 'tarjeta' in e && e.tarjeta).length).toBe(6);
+  });
+
+  it('ninguna lección pasa de 8 pantallas', () => {
+    for (const l of c.temas.get('ingles/unit-1')!.lecciones) expect(l.ejercicios.length, l.id).toBeLessThanOrEqual(8);
   });
 
   it('detecta piezas que no forman la frase', () => {

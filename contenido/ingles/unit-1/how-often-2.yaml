@@ -1,0 +1,69 @@
+titulo: Ask and answer
+subtitulo: Pregunta y contesta
+emoji: 💬
+ejercicios:
+  - tipo: elegir
+    enunciado: Elige la palabra que falta.
+    pregunta: How often ___ you brush your teeth?
+    correcta: do
+    incorrectas:
+      - texto: does
+        feedback: Con *you* se pregunta con **do**.
+      - texto: are
+        feedback: Para preguntar *How often…?* con *you* se usa **do**.
+
+  - tipo: elegir
+    enunciado: Elige la palabra que falta.
+    pregunta: How often does he ___ exercise?
+    correcta: do
+    incorrectas:
+      - texto: does
+        feedback: 'Después de *does he*, el verbo va tal cual: **do**.'
+      - texto: doing
+        feedback: 'Después de *does he*, el verbo va tal cual: **do**.'
+
+  - tipo: ordenar
+    piezas: does / How often / he / brush / his teeth
+    solucion: How often does he brush his teeth?
+    explicacion: 'Primero *How often*, después *does*, quién (*he*) y el verbo: *How often does he brush…?*'
+
+  - tipo: ordenar
+    piezas: they / How often / do / eat / sweets
+    solucion: How often do they eat sweets?
+    explicacion: 'Primero *How often*, después *do*, quién (*they*) y el verbo: *How often do they eat…?*'
+
+  - tipo: ordenar
+    enunciado: Mira la tarjeta y contesta. ¡Sobra una ficha!
+    tarjeta: { quien: she, dibujo: '🚿', texto: have a shower, veces: 1/day }
+    pregunta: How often does she have a shower?
+    piezas: She / have / has / a shower / once a day
+    sobran: [have]
+    solucion: She has a shower once a day.
+    explicacion: 'Con *she*, *have* cambia a **has**: *She has a shower…*'
+
+  - tipo: escribir
+    enunciado: Mira la tarjeta y completa la respuesta.
+    tarjeta: { quien: he, dibujo: '🪥', texto: brush his teeth, veces: 2/day }
+    pregunta: How often does he brush his teeth?
+    plantilla: He ___ his teeth twice a day.
+    respuestas: [brushes]
+
+  - tipo: elegir
+    enunciado: Mira la tarjeta y elige la respuesta.
+    tarjeta: { quien: they, dibujo: '🥤', texto: drink fizzy drinks, veces: 1/week }
+    pregunta: How often do they drink fizzy drinks?
+    correcta: They drink fizzy drinks once a week.
+    incorrectas:
+      - texto: They drinks fizzy drinks once a week.
+        feedback: 'Con *they*, el verbo va sin -s: *They* **drink**.'
+      - texto: They drink fizzy drinks one time a week.
+        feedback: 'Para 1 vez se dice **once**: *once a week*.'
+
+  - tipo: ordenar
+    enunciado: Mira la tarjeta y contesta. ¡Sobra una ficha!
+    tarjeta: { quien: she, dibujo: '🛏️', texto: make her bed, veces: '0' }
+    pregunta: How often does she make her bed?
+    piezas: never / She / make / her bed / makes
+    sobran: [make]
+    solucion: She never makes her bed.
+    explicacion: '*never* va antes del verbo, y con *she* el verbo lleva -s: *She never makes…*'

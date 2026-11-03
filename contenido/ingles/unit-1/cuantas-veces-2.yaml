@@ -1,0 +1,48 @@
+titulo: Twice a day
+subtitulo: Al día y a la semana
+emoji: 📅
+ejercicios:
+  - tipo: unir
+    enunciado: Une las parejas.
+    pares:
+      - [1 vez a la semana, once a week]
+      - [2 veces al día, twice a day]
+      - [3 veces a la semana, three times a week]
+      - [2 veces a la semana, twice a week]
+
+  - tipo: escribir
+    enunciado: Escribe en inglés cuántas veces. Hazlo **con letras**, no con números.
+    tarjeta: { dibujo: '🔁', texto: '2 veces al día' }
+    plantilla: ___ a day
+    respuestas: [twice]
+    explicacion: Para 2 veces se dice **twice**.
+
+  - tipo: escribir
+    enunciado: Escribe en inglés cuántas veces. Hazlo **con letras**, no con números.
+    tarjeta: { dibujo: '🔁', texto: '1 vez a la semana' }
+    plantilla: ___ a week
+    respuestas: [once]
+    explicacion: Para 1 vez se dice **once**.
+
+  - tipo: elegir
+    enunciado: Escucha y elige.
+    escuchar: twice a week
+    correcta: 2 veces a la semana
+    incorrectas: [2 veces al día, 1 vez a la semana]
+
+  - tipo: elegir
+    enunciado: Escucha y elige.
+    escuchar: once a day
+    correcta: 1 vez al día
+    incorrectas: [1 vez a la semana, 2 veces al día]
+
+  - tipo: elegir
+    enunciado: Escucha y elige.
+    escuchar: three times a week
+    correcta: 3 veces a la semana
+    incorrectas: [2 veces a la semana, 3 veces al día]
+
+  - tipo: ordenar
+    enunciado: Ordena las palabras para decir «3 veces al día».
+    piezas: a / times / day / three
+    solucion: three times a day

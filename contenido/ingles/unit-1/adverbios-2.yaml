@@ -1,0 +1,53 @@
+# Las frases 6-9 de la ficha «Adverbs of frequency», tal cual, y otras parecidas.
+titulo: Words in order 2
+subtitulo: Más frases para ordenar
+emoji: 🧱
+ejercicios:
+  # 6 de la ficha
+  - tipo: ordenar
+    piezas: my bed / sometimes / make / I
+    solucion: I sometimes make my bed.
+    explicacion: '*sometimes* va justo antes del verbo: *I sometimes make…*'
+
+  # 7 de la ficha
+  - tipo: ordenar
+    piezas: early / goes / My sister / to bed / always
+    solucion: My sister always goes to bed early.
+    explicacion: '*always* va justo antes del verbo: *My sister always goes…*'
+
+  # 8 de la ficha
+  - tipo: ordenar
+    piezas: healthy snacks / eat / We / twice a day
+    solucion: We eat healthy snacks twice a day.
+    explicacion: '*twice a day* va al final de la frase.'
+
+  # 9 de la ficha
+  - tipo: ordenar
+    piezas: sweets / never / My brother / eats
+    solucion: My brother never eats sweets.
+    explicacion: '*never* va justo antes del verbo: *My brother never eats…*'
+
+  # Lo que sobra no puede formar otra frase correcta («usually» sí la formaba: My dad usually drinks…).
+  - tipo: ordenar
+    piezas: drink / My dad / fizzy drinks / drinks / never
+    sobran: [drink]
+    solucion: My dad never drinks fizzy drinks.
+    enunciado: Ordena las palabras. ¡Cuidado, sobra una!
+    explicacion: '*never* va justo antes del verbo, y con *my dad* (*he*) el verbo lleva -s: *My dad never drinks…*'
+
+  - tipo: elegir
+    enunciado: ¿Qué frase está bien?
+    correcta: She never eats sweets.
+    incorrectas:
+      - texto: She eats never sweets.
+        feedback: '*never* va **antes** del verbo: *She never eats…*'
+      - texto: Never she eats sweets.
+        feedback: '*never* va después de *she* y antes del verbo: *She never eats…*'
+
+  - tipo: ordenar
+    enunciado: Escucha y ordena las palabras.
+    escuchar: true
+    piezas: always / Anna / her teeth / brushes / at night
+    solucion: Anna always brushes her teeth at night.
+    tambien: [At night Anna always brushes her teeth.]
+    explicacion: '*always* va justo antes del verbo: *Anna always brushes…*'

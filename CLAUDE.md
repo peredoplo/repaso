@@ -32,7 +32,9 @@ scripts/                                    ← validar y voces
 - **Sin pistas en inglés:** si el ejercicio es pasar algo al inglés, el dato va en español («1 vez al día», no «1/day», que ya dice *day*). Las abreviaturas «2/week» solo donde las usa la ficha del cole («Look and complete»). Y si hay que escribir con letras, el enunciado lo dice.
 - **Una frase de ordenar no puede tener otra solución correcta sin aceptarla:** si el cuándo puede ir delante («In the morning I always…»), va en `tambien`; y la ficha que `sobra` no puede formar otra frase buena (en *My dad never drinks…* sobraba *usually*, y *My dad usually drinks…* también es correcta: revisión del autor, 1 de noviembre de 2026).
 - **Todo fallo lleva su explicación**, concreta (`feedback` en la opción, `errores` en escribir o `explicacion`). `src/lib/pistas.ts` detecta los fallos típicos (*two times*, *does she eats*, la -s de *he/she*, dónde va *always*).
-- **Sin castigo:** no hay vidas. Lo fallado vuelve al final de la lección (hasta 2 veces) y se guarda en «Repasa tus fallos».
+- **Sin castigo:** no hay vidas. Lo fallado vuelve al final de la lección (una vez) y se guarda en «Repasa tus fallos».
+- **Lecciones cortas y con poco que escribir** (a Julia se le hacían pesadas, 2 de noviembre de 2026): como mucho **8 pantallas** (lo comprueba el validador); mejor dos lecciones que una larga. Las frases enteras se forman con fichas (`ordenar`, que admite `tarjeta`, `pregunta` y `debajo`); escribiendo, solo huecos cortos.
+- **Premios:** cada lección da gemas (5 + estrellas; en el examen, 5 + nota). Cada dos lecciones hay un cofre en el camino (y otro tras el examen) con gemas y una pegatina; con 25 gemas se compra un sobre. El álbum, en `/pegatinas/` (`src/lib/premios.ts`); los nombres de las pegatinas, en inglés.
 - **Dibujos = emojis**, nunca fotos del libro.
 - **Nunca se asigna género** en los textos de la web (se usará también con Miguel).
 - El progreso se guarda en el navegador (localStorage); no hay servidor ni cuentas.

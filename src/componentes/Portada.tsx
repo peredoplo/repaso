@@ -1,5 +1,6 @@
 import type { TemaC } from '../contenido/cargar';
 import type { Perfil } from '../contenido/esquema';
+import { PEGATINAS } from '../lib/premios';
 import type { Progreso } from '../lib/progreso';
 import { alPulsarEnlace, rutaTema } from '../lib/rutas';
 import { BotonRepasar, Cabecera } from './Mapa';
@@ -19,6 +20,7 @@ const EMOJI_ASIGNATURA: Record<string, string> = { Inglés: '🔤',Matemáticas:
 /** La portada: los temas que tiene cada uno, por asignatura, con un enlace a cada uno. */
 export default function Portada({ perfil, temas, progreso, fallosPendientes, onRepasar, onCambiarPerfil }: Props) {
   const asignaturas = [...new Set(temas.map((t) => t.asignatura))];
+  const tengo = PEGATINAS.filter((p) => progreso.pegatinas[p.id]).length;
   return (
     <div className="mapa">
       <Cabecera perfil={perfil} progreso={progreso} onCambiarPerfil={onCambiarPerfil} />
@@ -58,6 +60,18 @@ export default function Portada({ perfil, temas, progreso, fallosPendientes, onR
           </ul>
         </section>
       ))}
+
+      <a className="tarjeta-album" href="/pegatinas/" onClick={alPulsarEnlace}>
+        <span className="tarjeta-album__emoji" aria-hidden="true">
+          📒
+        </span>
+        <span className="tarjeta-tema__textos">
+          <span className="tarjeta-tema__titulo">Mis pegatinas</span>
+          <span>
+            Tienes {tengo} de {PEGATINAS.length}. Consigue más en los cofres o con tus gemas.
+          </span>
+        </span>
+      </a>
     </div>
   );
 }

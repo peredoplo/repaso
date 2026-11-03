@@ -5,7 +5,7 @@ import { corregirOrdenar } from '../../lib/corregir';
 import { normalizar, partirPiezas } from '../../lib/normalizar';
 import { sonar } from '../../lib/sonido';
 import { hablar } from '../../lib/voz';
-import { BotonVoz, Dibujo, Texto } from '../piezas';
+import { BotonVoz, Dibujo, Frase, Tarjeta, Texto } from '../piezas';
 import type { PropsEjercicio } from './tipos';
 
 /**
@@ -53,7 +53,9 @@ export default function Ordenar({ ejercicio: e, resultado, registrar }: PropsEje
       <h2 className="enunciado">
         <Texto>{e.enunciado}</Texto>
       </h2>
+      {e.tarjeta && <Tarjeta t={e.tarjeta} />}
       {e.dibujo && <Dibujo dibujo={e.dibujo} />}
+      {e.pregunta && <Frase texto={e.pregunta} />}
       {e.escuchar && (
         <div className="escuchar">
           <BotonVoz texto={e.solucion} grande etiqueta="Escuchar otra vez" />
@@ -67,6 +69,7 @@ export default function Ordenar({ ejercicio: e, resultado, registrar }: PropsEje
           </button>
         ))}
       </div>
+      {e.debajo && <Frase texto={e.debajo} />}
       <div className="banco" aria-label="Fichas" lang="en">
         {piezas.map((p) => {
           const usada = puestas.includes(p.id);

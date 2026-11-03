@@ -6,9 +6,11 @@ import Final, { type DatosFinal } from './componentes/Final';
 import Leccion, { type Modo, type Resumen } from './componentes/Leccion';
 import Mapa from './componentes/Mapa';
 import Portada from './componentes/Portada';
+import Pegatinas from './componentes/Pegatinas';
 import { barajar } from './lib/barajar';
+import { abrirCofre, cofreListo, type Premio } from './lib/premios';
+import { apuntarPartida, estrellasDe, gemasDe, guardarProgreso, leerProgreso, rachaActual, type Progreso } from './lib/progreso';
 import { useRuta } from './lib/rutas';
-import { apuntarPartida, estrellasDe, guardarProgreso, leerProgreso, rachaActual } from './lib/progreso';
 
 const CLAVE_PERFIL = 'repaso.perfil';
 /** Ejercicios como mucho en un «Repasa tus fallos». */
@@ -57,17 +59,20 @@ export default function App() {
       const total = contados.length;
       const estrellas = estrellasDe(aciertos, total);
       const nota = pantalla.modo === 'examen' && total ? Math.round((aciertos / total) * 100) / 10 : undefined;
-      const xp = 10 + aciertos + (estrellas === 3 ? 5 : 0);
+      const gemas = gemasDe(estrellas, nota);
       const nuevo = apuntarPartida(progreso, {
         ruta: pantalla.modo === 'repaso' ? '' : pantalla.ruta,
         estrellas,
         nota,
-        xp,
+        gemas,
         falladas: contados.filter((c) => !c.resultado.bien).map((c) => c.ejercicio.id),
         acertadas: contados.filter((c) => c.resultado.bien).map((c) => c.ejercicio.id),
       });
       guardarProgreso(perfil.id, nuevo);
       setProgreso(nuevo);
+      // Si con esta lección queda un cofre por abrir en su tema, se ofrece al final.
+      const tema = pantalla.modo === 'repaso' ? undefined : contenido.temas.get(pantalla.ruta.slice(0, pantalla.ruta.lastIndexOf('/')));
+      const cofre = tema ? cofreListo(tema, nuevo)?.id : undefined;
       setPantalla({
         tipo: 'final',
         datos: {
@@ -77,14 +82,33 @@ export default function App() {
           total,
           estrellas,
           nota,
-          xp,
+          gemas,
           racha: rachaActual(nuevo),
           falladas: contados.filter((c) => !c.resultado.bien),
+          cofre,
         },
       });
       window.scrollTo(0, 0);
     },
     [pantalla, perfil, progreso],
+  );
+
+  const actualizar = useCallback(
+    (p: Progreso) => {
+      if (!perfil) return;
+      guardarProgreso(perfil.id, p);
+      setProgreso(p);
+    },
+    [perfil],
+  );
+
+  const alAbrirCofre = useCallback(
+    (id: string): Premio => {
+      const r = abrirCofre(progreso!, id);
+      actualizar(r.progreso);
+      return r.premio;
+    },
+    [progreso, actualizar],
   );
 
   if (contenido.errores.length) {
@@ -133,7 +157,9 @@ export default function App() {
     return <Leccion key={pantalla.ruta + pantalla.modo} titulo={pantalla.titulo} ejercicios={pantalla.ejercicios} modo={pantalla.modo} onSalir={volver} onTerminar={terminar} />;
   }
 
-  if (pantalla.tipo === 'final') return <Final datos={pantalla.datos} onSeguir={volver} />;
+  if (pantalla.tipo === 'final') return <Final datos={pantalla.datos} onSeguir={volver} onAbrirCofre={alAbrirCofre} />;
+
+  if (ruta === 'pegatinas') return <Pegatinas perfil={perfil} progreso={progreso} onCambio={actualizar} />;
 
   const temas = perfil.temas.map((t) => contenido.temas.get(t)!).filter(Boolean);
   // En la página de un tema, solo sus fallos; en la portada, todos.
@@ -166,6 +192,7 @@ export default function App() {
     <Mapa
       {...comunes}
       tema={tema}
+      onAbrirCofre={alAbrirCofre}
       onJugar={(leccion, t) =>
         setPantalla({
           tipo: 'jugar',

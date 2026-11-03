@@ -390,7 +390,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  gap: 40px;
 }
 .camino__paso {
   position: relative;
@@ -1206,6 +1206,357 @@ h3 {
     opacity: 0.9;
     transform: translate(var(--deriva), 105vh) rotate(var(--giro));
   }
+}
+
+/* ── Gemas, cofres y pegatinas ── */
+.contador--gemas {
+  color: var(--cielo-osc);
+  border-color: var(--cielo-claro);
+  text-decoration: none;
+}
+.contador--gemas:hover {
+  background: var(--cielo-claro);
+}
+.boton--sol {
+  background: var(--sol);
+  box-shadow: 0 4px 0 var(--sol-osc);
+  color: #5a3d00;
+}
+.dato--cielo {
+  border-color: var(--cielo);
+  color: var(--cielo-osc);
+}
+.dato--cielo .dato__etiqueta {
+  background: var(--cielo);
+}
+.bocadillo--sol {
+  color: var(--sol-osc);
+}
+
+/* El cofre en el camino */
+.nodo-cofre {
+  position: relative;
+  width: 76px;
+  height: 70px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 40px;
+  background: var(--sol-claro);
+  box-shadow: 0 6px 0 var(--sol);
+  cursor: pointer;
+}
+.nodo-cofre--listo {
+  background: var(--sol);
+  box-shadow: 0 6px 0 var(--sol-osc), 0 0 0 8px var(--sol-claro);
+  animation: menear 1.2s ease-in-out infinite;
+}
+.nodo-cofre--cerrado {
+  filter: grayscale(1);
+  opacity: 0.55;
+  cursor: default;
+}
+.nodo-cofre--abierto {
+  background: var(--linea);
+  box-shadow: 0 6px 0 #c9ccdb;
+  cursor: default;
+}
+.nodo-cofre__candado {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  font-size: 22px;
+}
+@keyframes menear {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform: rotate(8deg);
+  }
+  90% {
+    transform: rotate(-4deg);
+  }
+}
+
+/* Abrir un cofre o un sobre */
+.aviso--premio {
+  max-width: 420px;
+}
+.recompensa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.recompensa__escena {
+  position: relative;
+  min-height: 190px;
+  display: grid;
+  place-items: center;
+}
+.cofre {
+  width: 190px;
+  overflow: visible;
+}
+.recompensa--cerrado .cofre,
+.recompensa--cerrado .sobre {
+  animation: menear 1.4s ease-in-out infinite;
+}
+.recompensa--abriendo .cofre,
+.recompensa--abriendo .sobre {
+  animation: sacudir 0.15s linear infinite;
+}
+@keyframes sacudir {
+  25% {
+    transform: translate(-3px, 1px) rotate(-2deg);
+  }
+  75% {
+    transform: translate(3px, -1px) rotate(2deg);
+  }
+}
+.cofre__madera {
+  fill: #b8662a;
+  stroke: #6e3a12;
+  stroke-width: 3;
+}
+.cofre__madera--clara {
+  fill: #d0823d;
+}
+.cofre__oro {
+  fill: var(--sol);
+  stroke: var(--sol-osc);
+  stroke-width: 1.5;
+}
+.cofre__agujero {
+  fill: #6e3a12;
+}
+.cofre__tapa {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  transition: transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+.cofre--abierto .cofre__tapa {
+  transform: translateY(-34px) rotate(-14deg);
+}
+.cofre--abierto .cofre__cerradura,
+.cofre--abierto .cofre__agujero {
+  opacity: 0;
+}
+.cofre__brillo circle {
+  fill: var(--sol);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.cofre--abierto .cofre__brillo circle {
+  opacity: 0.35;
+  animation: latir 1.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.recompensa--abierto .recompensa__escena {
+  grid-template-areas: 'todo';
+}
+.recompensa--abierto .cofre {
+  width: 150px;
+  opacity: 0.9;
+  /* la tapa y el brillo suben: sitio para que no tapen el título */
+  margin-top: 44px;
+}
+.recompensa__premio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: saltar 0.6s ease-out;
+}
+.recompensa__gemas {
+  margin: 0;
+  font-family: var(--titulos);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--cielo-osc);
+}
+.recompensa__texto {
+  margin: 0;
+  font-weight: 700;
+}
+.sobre {
+  position: relative;
+  width: 130px;
+  height: 180px;
+  border-radius: 14px;
+  background: linear-gradient(150deg, var(--violeta), #b04cff 55%, var(--coral));
+  box-shadow: 0 6px 0 var(--violeta-osc), inset 0 0 0 4px rgb(255 255 255 / 0.35);
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.sobre__texto {
+  font-family: var(--titulos);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+}
+.sobre__signo {
+  font-family: var(--titulos);
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.sobre__brillo {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.final__cofre {
+  width: 100%;
+  background: var(--sol-claro);
+  border: 2px solid var(--sol);
+  border-radius: var(--radio);
+  padding: 4px 16px 18px;
+}
+.final__cofre h2 {
+  color: var(--sol-osc);
+  font-size: 1.3rem;
+}
+
+/* Pegatinas */
+.pegatina {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 116px;
+  min-height: 136px;
+  padding: 10px 6px;
+  border-radius: 18px;
+  background: var(--blanco);
+  border: 3px solid var(--linea);
+  box-shadow: 0 4px 0 var(--linea);
+}
+.pegatina--comun {
+  border-color: #b9c2d6;
+  box-shadow: 0 4px 0 #b9c2d6;
+}
+.pegatina--rara {
+  border-color: var(--cielo);
+  box-shadow: 0 4px 0 var(--cielo-osc);
+}
+.pegatina--epica {
+  border-color: var(--violeta);
+  box-shadow: 0 4px 0 var(--violeta-osc), 0 0 16px rgb(124 92 255 / 0.45);
+  background: linear-gradient(160deg, var(--blanco), var(--violeta-claro));
+}
+.pegatina__emoji {
+  font-size: 56px;
+  line-height: 1.1;
+}
+.pegatina__nombre {
+  font-family: var(--titulos);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.pegatina__rareza {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gris);
+}
+.pegatina--rara .pegatina__rareza {
+  color: var(--cielo-osc);
+}
+.pegatina--epica .pegatina__rareza {
+  color: var(--violeta);
+}
+.pegatina__cuantas {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--coral);
+  color: var(--blanco);
+  font-weight: 800;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.pegatina--nueva {
+  animation: saltar 0.6s ease-out;
+}
+.pegatina--falta {
+  background: var(--fondo);
+  box-shadow: none;
+  border-style: dashed;
+}
+.pegatina--falta .pegatina__emoji {
+  font-family: var(--titulos);
+  font-size: 44px;
+  color: #c6cad8;
+}
+.album {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+  justify-items: center;
+  gap: 16px;
+}
+.album__cuenta {
+  font-size: 1.1rem;
+  color: var(--gris);
+}
+.album__tienda {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--blanco);
+  border: 2px solid var(--linea);
+  border-radius: var(--radio);
+  padding: 14px 18px;
+  margin-bottom: 22px;
+}
+.album__tienda p {
+  margin: 2px 0 0;
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+.album__tienda .album__faltan {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--coral-osc);
+  font-weight: 700;
+}
+.tarjeta-album {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: var(--radio);
+  background: var(--sol-claro);
+  border: 2px solid var(--sol);
+  box-shadow: 0 5px 0 var(--sol);
+  color: var(--tinta);
+  text-decoration: none;
+}
+.tarjeta-album:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+.tarjeta-album__emoji {
+  font-size: 44px;
 }
 
 /* Perfiles y errores */

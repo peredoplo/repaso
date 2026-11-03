@@ -55,6 +55,10 @@ export const Ordenar = z
     /** Primero se oye la frase. */
     escuchar: z.boolean().optional(),
     dibujo: z.string().optional(),
+    /** Como en escribir: para contestar o preguntar con fichas, sin tener que escribir la frase entera. */
+    tarjeta: Tarjeta.optional(),
+    pregunta: z.string().optional(),
+    debajo: z.string().optional(),
     ...comunes,
   })
   .strict();

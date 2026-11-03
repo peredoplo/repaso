@@ -1,0 +1,52 @@
+titulo: Always or never?
+subtitulo: always, usually, sometimes, never
+emoji: 🚦
+ejercicios:
+  - tipo: recuerda
+    titulo: always, usually, sometimes, never
+    texto: Estas palabras dicen **con qué frecuencia** hacemos algo, sin decir un número.
+    tabla:
+      - ['🟩🟩🟩🟩', always]
+      - ['🟩🟩🟩⬜', usually]
+      - ['🟩🟩⬜⬜', sometimes]
+      - ['⬜⬜⬜⬜', never]
+
+  - tipo: unir
+    enunciado: Une cada palabra con lo que significa.
+    pares:
+      - [always, siempre]
+      - [usually, normalmente]
+      - [sometimes, a veces]
+      - [never, nunca]
+
+  - tipo: elegir
+    enunciado: ¿Qué palabra va con el dibujo?
+    dibujo: 🟩🟩🟩⬜
+    correcta: usually
+    incorrectas:
+      - texto: always
+        feedback: '*always* es siempre (las 4 en verde). Casi siempre es **usually**.'
+      - sometimes
+
+  - tipo: elegir
+    enunciado: ¿Qué palabra va con el dibujo?
+    dibujo: 🟩🟩⬜⬜
+    correcta: sometimes
+    incorrectas:
+      - texto: never
+        feedback: '*never* es nunca (ninguna en verde). A veces es **sometimes**.'
+      - usually
+
+  - tipo: elegir
+    enunciado: ¿Cómo se dice «nunca»?
+    correcta: never
+    incorrectas:
+      - texto: always
+        feedback: '*always* es «siempre». Nunca es **never**.'
+      - texto: sometimes
+        feedback: '*sometimes* es «a veces». Nunca es **never**.'
+
+  - tipo: ordenar
+    enunciado: Ordena de **más** veces a **menos** veces.
+    piezas: sometimes / always / never / usually
+    solucion: always usually sometimes never

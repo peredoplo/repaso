@@ -1,7 +1,7 @@
-# Examen de prueba: 15 preguntas al azar de las lecciones, con nota al final. Cada vez sale distinto.
+# Examen de prueba: 10 preguntas al azar de las lecciones, con nota al final. Cada vez sale distinto.
 titulo: Examen de prueba
 subtitulo: Como el del cole, con nota
 emoji: 🏆
 examen:
-  de: [cuantas-veces, adverbios, he-she, how-often]
-  preguntas: 15
+  de: [cuantas-veces, cuantas-veces-2, always-never, adverbios, adverbios-2, he-she, he-she-2, how-often, how-often-2]
+  preguntas: 10
