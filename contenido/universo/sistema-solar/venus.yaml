@@ -1,0 +1,74 @@
+titulo: Venus
+subtitulo: El más caliente
+emoji: 🟡
+ejercicios:
+  - tipo: chat
+    titulo: Venus
+    mensajes:
+      - de: vega
+        texto: 'El segundo planeta es Venus. Es casi igual de grande que la Tierra. ¡Parecen gemelos!'
+        dibujo: 🟡 🌍
+      - de: hugo
+        texto: 'Pero no te gustaría vivir allí. Está tapado por unas nubes muy gordas que no dejan escapar el calor.'
+        dibujo: ☁️ ☁️ ☁️
+      - de: santiago
+        texto: 'Por eso Venus es el planeta más caliente de todos, ¡aunque Mercurio esté más cerca del Sol!'
+        dibujo: 🔥 🌡️
+      - de: valentina
+        texto: 'Y gira al revés que casi todos los planetas. Allí el Sol sale por el otro lado.'
+        dibujo: 🔄
+      - de: vega
+        texto: 'Además, gira tan despacio que un día en Venus dura muchísimo: ¡meses!'
+        dibujo: 🐢
+      - de: hugo
+        texto: 'Se ve muy brillante en el cielo, al amanecer o al atardecer. Después de la Luna, es lo que más brilla de noche. La gente lo llama el lucero.'
+        dibujo: 🌅 ✨
+      - de: santiago
+        texto: 'Y, como Mercurio, no tiene ninguna luna.'
+        dibujo: 🚫 🌙
+
+  - tipo: elegir
+    enunciado: ¿Cuál es el planeta más caliente?
+    dibujo: 🔥 🌡️
+    correcta: 🟡 Venus
+    incorrectas:
+      - texto: ⚪ Mercurio
+        feedback: Mercurio está más cerca del Sol, pero Venus es más caliente, porque sus nubes no dejan escapar el calor.
+      - texto: 🌍 La Tierra
+        feedback: En la Tierra se está bien. El más caliente es Venus, porque sus nubes no dejan escapar el calor.
+
+  - tipo: elegir
+    enunciado: ¿Por qué hace tanto calor en Venus?
+    dibujo: 🟡
+    correcta: ☁️ Sus nubes guardan el calor
+    incorrectas:
+      - texto: 🔥 Hay hogueras
+        feedback: No hay hogueras. Es porque sus nubes, muy gordas, no dejan escapar el calor del Sol.
+      - texto: 🏖️ Siempre es verano
+        feedback: No es por el verano. Es porque sus nubes, muy gordas, no dejan escapar el calor del Sol.
+
+  - tipo: elegir
+    enunciado: ¿A qué se parece Venus en tamaño?
+    dibujo: 🟡
+    correcta: 🌍 A la Tierra
+    incorrectas:
+      - texto: 🌙 A la Luna
+        feedback: Venus es mucho más grande que la Luna. Es casi tan grande como la Tierra. ¡Parecen gemelos!
+      - texto: 🐜 A una hormiga
+        feedback: ¡Ja, ja! Venus es enorme, casi tan grande como la Tierra. ¡Parecen gemelos!
+
+  - tipo: elegir
+    enunciado: ¿Venus gira como los demás planetas?
+    dibujo: 🔄
+    correcta: 🙃 No, gira al revés
+    incorrectas:
+      - texto: 👍 Sí, igual
+        feedback: Venus es especial. Gira al revés que casi todos los planetas, y allí el Sol sale por el otro lado.
+
+  - tipo: elegir
+    enunciado: Venus brilla mucho en el cielo. ¿Cuándo se ve?
+    dibujo: ✨
+    correcta: 🌅 Al amanecer o al atardecer
+    incorrectas:
+      - texto: ☀️ A mediodía
+        feedback: A mediodía, el Sol brilla tanto que no deja verlo. Venus se ve al amanecer o al atardecer.

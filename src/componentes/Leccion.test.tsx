@@ -69,4 +69,34 @@ describe('Leccion', () => {
     await u.click(screen.getByRole('button', { name: 'Continuar' }));
     expect(terminar.mock.calls[0][0].primeros).toHaveLength(1);
   });
+
+  it('sin leer, se oye la opción al tocarla y la explicación al fallar, en español', async () => {
+    // Sin grabación (y sin Web Audio en jsdom), lo dice la voz del navegador: aquí se espía.
+    const dichas: { text: string; lang: string }[] = [];
+    vi.stubGlobal('SpeechSynthesisUtterance', class {
+      lang = '';
+      rate = 1;
+      voice = null;
+      constructor(public text: string) {}
+    });
+    vi.stubGlobal('speechSynthesis', { cancel: vi.fn(), getVoices: () => [], speak: (x: { text: string; lang: string }) => dichas.push(x) });
+    const marte: EjercicioC = {
+      id: 'u/marte#2',
+      sinLeer: true,
+      tipo: 'elegir',
+      enunciado: '¿De qué color es Marte?',
+      correcta: '🔴 Rojo',
+      incorrectas: [{ texto: '🔵 Azul', feedback: 'Azul es la Tierra. Marte es *rojo*.' }],
+    };
+    const u = userEvent.setup();
+    render(<Leccion titulo="Marte" ejercicios={[marte]} modo="leccion" onSalir={() => {}} onTerminar={() => {}} />);
+
+    expect(screen.getByRole('button', { name: 'Escuchar otra vez' })).toBeInTheDocument();
+    await u.click(screen.getByRole('button', { name: /Azul/ }));
+    expect(dichas.at(-1)).toEqual(expect.objectContaining({ text: 'Azul', lang: 'es-ES' }));
+    await u.click(screen.getByRole('button', { name: 'Comprobar' }));
+    await vi.waitFor(() => expect(dichas.at(-1)?.text).toBe('¡Casi! Azul es la Tierra. Marte es rojo.'));
+    expect(dichas.at(-1)?.lang).toBe('es-ES');
+    vi.unstubAllGlobals();
+  });
 });

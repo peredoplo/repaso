@@ -1,0 +1,76 @@
+titulo: La Luna
+subtitulo: Y sus fases
+emoji: 🌙
+ejercicios:
+  - tipo: chat
+    titulo: La Luna y sus fases
+    mensajes:
+      - de: valentina
+        texto: 'La Luna da vueltas alrededor de la Tierra. ¡Es nuestra compañera de viaje!'
+        dibujo: 🌍 🌙
+      - de: hugo
+        texto: 'La Luna no tiene luz propia. Brilla porque el Sol la ilumina, como una linterna a una pelota.'
+        dibujo: 🔦 ⚽
+      - de: vega
+        texto: 'Por eso la vemos con formas distintas: son las fases de la Luna. Tarda casi un mes en pasar por todas.'
+      - de: santiago
+        texto: 'Cuando no se ve nada, es luna nueva.'
+        dibujo: 🌑
+      - de: valentina
+        texto: 'Luego va creciendo y parece media luna: es el cuarto creciente.'
+        dibujo: 🌒 🌓
+      - de: hugo
+        texto: 'Cuando se ve redonda y entera, es luna llena.'
+        dibujo: 🌕
+      - de: vega
+        texto: 'Después se va haciendo pequeñita: es el cuarto menguante. ¡Y vuelta a empezar!'
+        dibujo: 🌗 🌘
+      - de: santiago
+        texto: 'En la Luna no hay aire ni agua. Unos astronautas fueron allí, ¡y sus huellas siguen en el suelo, porque no hay viento que las borre!'
+        dibujo: 🧑‍🚀 👣
+      - de: valentina
+        texto: 'Curiosidad: en la Luna pesas mucho menos que aquí. ¡Podrías dar saltos enormes, como un canguro!'
+        dibujo: 🦘
+
+  - tipo: elegir
+    enunciado: ¿Alrededor de qué da vueltas la Luna?
+    dibujo: 🌙
+    correcta: 🌍 La Tierra
+    incorrectas:
+      - texto: 🪐 Saturno
+        feedback: Saturno tiene sus propias lunas, pero la nuestra da vueltas alrededor de la Tierra.
+      - texto: 🔴 Marte
+        feedback: Marte tiene sus propias lunas, pero la nuestra da vueltas alrededor de la Tierra.
+
+  - tipo: elegir
+    enunciado: ¿La Luna tiene luz propia?
+    dibujo: 🌕
+    correcta: 👎 No
+    incorrectas:
+      - texto: 👍 Sí
+        feedback: No. La Luna brilla porque la ilumina el Sol, como una linterna a una pelota.
+
+  - tipo: elegir
+    enunciado: Cuando no se ve la Luna, ¿cómo se llama?
+    correcta: 🌑 Luna nueva
+    incorrectas:
+      - texto: 🌕 Luna llena
+        feedback: La luna llena se ve redonda y entera. Cuando no se ve nada, es luna nueva.
+      - texto: 🌓 Cuarto creciente
+        feedback: En el cuarto creciente se ve media luna. Cuando no se ve nada, es luna nueva.
+
+  - tipo: ordenar
+    enunciado: Ordena las fases de la Luna. Empieza por la luna nueva.
+    piezas: 🌑 / 🌓 / 🌕 / 🌗
+    solucion: 🌑 🌓 🌕 🌗
+    explicacion: Primero, la luna nueva. Luego, el cuarto creciente. Después, la luna llena. Y al final, el cuarto menguante.
+
+  - tipo: elegir
+    enunciado: ¿Por qué siguen en la Luna las huellas de los astronautas?
+    dibujo: 👣 🌕
+    correcta: 💨 No hay viento
+    incorrectas:
+      - texto: 🧹 Nadie barre
+        feedback: ¡Ja, ja! No es por eso. En la Luna no hay aire ni viento que las borre.
+      - texto: 🧊 Están congeladas
+        feedback: No están congeladas. Siguen ahí porque en la Luna no hay aire ni viento que las borre.

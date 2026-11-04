@@ -1,0 +1,73 @@
+titulo: Nubes y nebulosas
+subtitulo: Las nubes del espacio
+emoji: 🌌
+ejercicios:
+  - tipo: chat
+    titulo: Nubes y nebulosas
+    mensajes:
+      - de: valentina
+        texto: 'Las nubes del cielo están hechas de gotitas de agua muy pequeñas. Cuando se juntan muchas, ¡llueve!'
+        dibujo: ☁️ 🌧️
+      - de: hugo
+        texto: 'En el espacio también hay nubes, pero son distintas: se llaman nebulosas. Son nubes gigantes de gas y polvo.'
+        dibujo: 🌌
+      - de: santiago
+        texto: '¡Son enormes! Muchísimo más grandes que todo el sistema solar.'
+      - de: vega
+        texto: 'Las nebulosas son como guarderías de estrellas, porque dentro nacen estrellas nuevas.'
+        dibujo: ⭐ ✨
+      - de: valentina
+        texto: 'Y algunas se forman al revés: cuando una estrella se hace muy vieja, suelta su gas y deja una nebulosa de colores.'
+        dibujo: 🎨
+      - de: hugo
+        texto: 'Con los telescopios se ven rosas, azules, verdes… Y tienen nombres divertidos: Cabeza de Caballo, Cangrejo, Ojo de Gato.'
+        dibujo: 🐴 🦀 🐱
+      - de: santiago
+        texto: 'Una se puede ver sin telescopio en las noches muy oscuras: la nebulosa de Orión, una manchita borrosa debajo del cinturón del cazador.'
+        dibujo: 🏹
+
+  - tipo: elegir
+    enunciado: ¿De qué están hechas las nubes del cielo?
+    dibujo: ☁️
+    correcta: 💧 Gotitas de agua
+    incorrectas:
+      - texto: 🍭 Algodón de azúcar
+        feedback: Parecen algodón, pero están hechas de gotitas de agua muy pequeñas.
+      - texto: 💨 Humo
+        feedback: No son humo. Están hechas de gotitas de agua muy pequeñas.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman las nubes del espacio?
+    correcta: 🌌 Nebulosas
+    incorrectas:
+      - texto: 🌠 Estrellas fugaces
+        feedback: Las estrellas fugaces son piedrecitas que brillan. Las nubes del espacio se llaman nebulosas.
+      - texto: 🪐 Planetas
+        feedback: Los planetas no son nubes. Las nubes del espacio se llaman nebulosas.
+
+  - tipo: elegir
+    enunciado: ¿Qué nace dentro de las nebulosas?
+    dibujo: 🌌
+    correcta: ⭐ Estrellas
+    incorrectas:
+      - texto: 🐣 Pollitos
+        feedback: ¡Ja, ja! Dentro de las nebulosas nacen estrellas.
+      - texto: 🌧️ Lluvia
+        feedback: La lluvia sale de las nubes de la Tierra. En las nebulosas nacen estrellas.
+
+  - tipo: elegir
+    enunciado: ¿Qué es más grande, una nebulosa o una nube de la Tierra?
+    correcta: 🌌 Una nebulosa
+    incorrectas:
+      - texto: ☁️ Una nube de la Tierra
+        feedback: Las nebulosas son gigantescas, muchísimo más grandes que todo el sistema solar.
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estos es el nombre de una nebulosa?
+    dibujo: 🌌 🔭
+    correcta: 🐴 Cabeza de Caballo
+    incorrectas:
+      - texto: 🐷 Cola de Cerdo
+        feedback: Esa no existe. Hay nebulosas que se llaman Cabeza de Caballo, Cangrejo y Ojo de Gato.
+      - texto: 🐸 Pata de Rana
+        feedback: Esa no existe. Hay nebulosas que se llaman Cabeza de Caballo, Cangrejo y Ojo de Gato.

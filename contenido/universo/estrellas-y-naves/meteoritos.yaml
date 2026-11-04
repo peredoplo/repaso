@@ -1,0 +1,78 @@
+titulo: Meteoritos y cometas
+subtitulo: Y asteroides
+emoji: ☄️
+ejercicios:
+  - tipo: chat
+    titulo: Meteoritos, asteroides y cometas
+    mensajes:
+      - de: hugo
+        texto: 'Por el espacio viajan rocas de todos los tamaños. Las grandes se llaman asteroides.'
+        dibujo: 🪨
+      - de: santiago
+        texto: 'La mayoría están entre Marte y Júpiter, en el cinturón de asteroides.'
+        dibujo: 🔴 🪨 🪨 🪨 🟠
+      - de: valentina
+        texto: 'Los cometas son bolas de hielo y polvo, como bolas de nieve sucias. Cuando se acercan al Sol, se derriten un poco ¡y les sale una cola larguísima y brillante!'
+        dibujo: ☄️
+      - de: vega
+        texto: 'El cometa Halley pasa cerca de la Tierra cada setenta y seis años. Volverá en 2061.'
+        dibujo: ☄️ 🌍
+      - de: hugo
+        texto: 'Cuando una piedrecita del espacio entra en el aire, se calienta y brilla. Es una estrella fugaz.'
+        dibujo: 🌠
+      - de: santiago
+        texto: 'Si un trozo llega al suelo, se llama meteorito. ¡En los museos hay meteoritos de verdad!'
+        dibujo: 🪨 🏛️
+      - de: valentina
+        texto: 'Hace muchísimo tiempo cayó un asteroide gigante. Los científicos creen que por eso desaparecieron los dinosaurios.'
+        dibujo: 🦖 💥
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene un cometa cuando se acerca al Sol?
+    dibujo: ☄️
+    correcta: ✨ Una cola brillante
+    incorrectas:
+      - texto: 🎩 Un sombrero
+        feedback: Los cometas no llevan sombrero. Les sale una cola larga y brillante.
+      - texto: 🦶 Patas
+        feedback: Los cometas no tienen patas. Les sale una cola larga y brillante.
+
+  - tipo: elegir
+    enunciado: ¿De qué está hecho un cometa?
+    dibujo: ☄️
+    correcta: 🧊 Hielo y polvo
+    incorrectas:
+      - texto: 🍦 Helado
+        feedback: Se parece, pero no. Es hielo y polvo, como una bola de nieve sucia.
+      - texto: 🔥 Fuego
+        feedback: No es fuego. Es hielo y polvo, como una bola de nieve sucia.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama una piedra del espacio que llega al suelo?
+    dibujo: 🌍
+    correcta: 🪨 Meteorito
+    incorrectas:
+      - texto: 🌠 Estrella fugaz
+        feedback: Mientras brilla en el cielo, es una estrella fugaz. Si llega al suelo, se llama meteorito.
+      - texto: 🪐 Planeta
+        feedback: Los planetas son enormes y no se caen. Una piedra del espacio que llega al suelo es un meteorito.
+
+  - tipo: elegir
+    enunciado: ¿Dónde hay muchísimos asteroides?
+    dibujo: 🪨
+    correcta: 🔴🟠 Entre Marte y Júpiter
+    incorrectas:
+      - texto: 🌊 En el mar
+        feedback: Los asteroides están en el espacio. La mayoría, entre Marte y Júpiter.
+      - texto: 🏫 En el cole
+        feedback: ¡Ja, ja! Los asteroides están en el espacio. La mayoría, entre Marte y Júpiter.
+
+  - tipo: elegir
+    enunciado: Hace muchísimo tiempo cayó un asteroide gigante. ¿Qué animales desaparecieron?
+    dibujo: 💥
+    correcta: 🦖 Los dinosaurios
+    incorrectas:
+      - texto: 🐱 Los gatos
+        feedback: Los gatos siguen aquí. Los científicos creen que el asteroide hizo desaparecer a los dinosaurios.
+      - texto: 🐶 Los perros
+        feedback: Los perros siguen aquí. Los científicos creen que el asteroide hizo desaparecer a los dinosaurios.

@@ -1,0 +1,76 @@
+titulo: Los satélites
+subtitulo: Máquinas que dan vueltas
+emoji: 🛰️
+ejercicios:
+  - tipo: chat
+    titulo: Los satélites
+    mensajes:
+      - de: santiago
+        texto: 'Un satélite es algo que da vueltas alrededor de un planeta.'
+        dibujo: 🛰️ 🌍
+      - de: vega
+        texto: 'La Luna es un satélite natural, porque nadie la ha fabricado.'
+        dibujo: 🌙
+      - de: hugo
+        texto: 'Y los satélites artificiales son máquinas que fabrican las personas. Suben al espacio en cohetes.'
+        dibujo: 🛰️ 🚀
+      - de: valentina
+        texto: '¡Nos ayudan muchísimo! Gracias a ellos vemos la tele, sabemos qué tiempo va a hacer y los mapas del móvil saben dónde estamos.'
+        dibujo: 📺 ⛅ 🗺️
+      - de: santiago
+        texto: 'Tienen unas alas que son paneles solares: recogen la luz del Sol para tener energía.'
+        dibujo: ☀️ 🔋
+      - de: hugo
+        texto: 'Hay miles de satélites dando vueltas a la Tierra. El primero se llamó Sputnik, y era como una pelota con antenas.'
+        dibujo: 📡
+      - de: vega
+        texto: 'Algunos hacen fotos de la Tierra desde arriba. ¡Se ven los bosques, los mares y hasta las ciudades!'
+        dibujo: 📸 🌍
+
+  - tipo: elegir
+    enunciado: ¿Qué hace un satélite?
+    dibujo: 🛰️
+    correcta: 🔄 Da vueltas a un planeta
+    incorrectas:
+      - texto: 🍳 Cocina
+        feedback: Los satélites no cocinan. Un satélite da vueltas alrededor de un planeta, como la Luna alrededor de la Tierra.
+      - texto: 🏊 Nada en el mar
+        feedback: Los satélites están en el espacio. Dan vueltas alrededor de un planeta, como la Luna alrededor de la Tierra.
+
+  - tipo: elegir
+    enunciado: ¿La Luna es un satélite?
+    dibujo: 🌙
+    correcta: 👍 Sí
+    incorrectas:
+      - texto: 👎 No
+        feedback: ¡Sí! La Luna es un satélite natural. Da vueltas a la Tierra y nadie la ha fabricado.
+
+  - tipo: elegir
+    enunciado: ¿Para qué nos ayudan los satélites?
+    dibujo: 🛰️
+    correcta: 📺 Para ver la tele
+    incorrectas:
+      - texto: 🦷 Para lavarnos los dientes
+        feedback: Para eso no. Los satélites nos ayudan a ver la tele, a saber qué tiempo hará y a usar los mapas.
+      - texto: 😴 Para dormir
+        feedback: Para eso no. Los satélites nos ayudan a ver la tele, a saber qué tiempo hará y a usar los mapas.
+
+  - tipo: elegir
+    enunciado: ¿Cómo consiguen energía los satélites?
+    dibujo: 🛰️
+    correcta: ☀️ Con la luz del Sol
+    incorrectas:
+      - texto: 🔌 Con un enchufe
+        feedback: En el espacio no hay enchufes. Tienen paneles solares que recogen la luz del Sol.
+      - texto: 🍎 Comiendo fruta
+        feedback: ¡Ja, ja! Los satélites no comen. Tienen paneles solares que recogen la luz del Sol.
+
+  - tipo: elegir
+    enunciado: ¿Cómo suben los satélites al espacio?
+    dibujo: 🛰️
+    correcta: 🚀 En un cohete
+    incorrectas:
+      - texto: 🎈 Con globos
+        feedback: Con globos no llegarían. Suben al espacio en cohetes.
+      - texto: 🪜 Por una escalera
+        feedback: No hay escaleras tan largas. Suben al espacio en cohetes.

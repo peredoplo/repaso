@@ -1,0 +1,74 @@
+titulo: El Sol
+subtitulo: Nuestra estrella
+emoji: ☀️
+ejercicios:
+  - tipo: chat
+    titulo: El Sol
+    mensajes:
+      - de: santiago
+        texto: 'El Sol es una estrella. ¡Es la estrella que tenemos más cerca!'
+        dibujo: ☀️ ⭐
+      - de: valentina
+        texto: '¿Una estrella? Pero si las estrellas son puntitos pequeños…'
+        dibujo: ✨
+      - de: santiago
+        texto: 'Se ven pequeñas porque están lejísimos. El Sol está mucho más cerca, por eso lo vemos grande y brillante.'
+      - de: hugo
+        texto: 'El Sol es una bola gigante de gas muy, muy caliente. Por eso nos da luz y calor.'
+        dibujo: 🔥
+      - de: vega
+        texto: '¡Y es enorme! Dentro del Sol cabría más de un millón de Tierras.'
+        dibujo: 🌍 🌍 🌍 🌍
+      - de: hugo
+        texto: 'Todos los planetas dan vueltas a su alrededor. Por eso se llama sistema solar: es la familia del Sol.'
+        dibujo: ☀️ 🪐
+      - de: valentina
+        texto: 'Sin el Sol no habría vida. Las plantas lo necesitan para crecer, y a todos nos da luz y calor.'
+        dibujo: 🌻
+      - de: vega
+        texto: '¡Ojo! Nunca hay que mirar el Sol directamente: hace daño a los ojos. Ni siquiera con gafas de sol.'
+        dibujo: 🙈
+
+  - tipo: elegir
+    enunciado: ¿Qué es el Sol?
+    dibujo: ☀️
+    correcta: ⭐ Una estrella
+    incorrectas:
+      - texto: 🌍 Un planeta
+        feedback: La Tierra es un planeta, pero el Sol es una estrella, la que tenemos más cerca.
+      - texto: 🌙 Una luna
+        feedback: El Sol no es una luna. Es una estrella, la que tenemos más cerca.
+
+  - tipo: elegir
+    enunciado: ¿Qué nos da el Sol?
+    dibujo: ☀️
+    correcta: 🌞 Luz y calor
+    incorrectas:
+      - texto: 🧊 Frío
+        feedback: ¡Al revés! El Sol es muy caliente, y nos da luz y calor.
+      - texto: 🌧️ Lluvia
+        feedback: La lluvia cae de las nubes. El Sol nos da luz y calor.
+
+  - tipo: elegir
+    enunciado: ¿Qué es más grande, el Sol o la Tierra?
+    correcta: ☀️ El Sol
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: El Sol parece pequeño porque está lejos, pero es enorme. Dentro cabría más de un millón de Tierras.
+
+  - tipo: elegir
+    enunciado: ¿Se puede mirar el Sol directamente?
+    dibujo: 👀 ☀️
+    correcta: 👎 No
+    incorrectas:
+      - texto: 👍 Sí
+        feedback: ¡No! Mirar el Sol hace daño a los ojos, aunque sea con gafas de sol.
+
+  - tipo: elegir
+    enunciado: ¿Quién necesita la luz del Sol para crecer?
+    correcta: 🌻 Las plantas
+    incorrectas:
+      - texto: 🪨 Las piedras
+        feedback: Las piedras no crecen. Las plantas sí, y necesitan la luz del Sol.
+      - texto: 🧸 Los peluches
+        feedback: Los peluches no crecen. Las plantas sí, y necesitan la luz del Sol.

@@ -1,9 +1,14 @@
 /** Las frases en inglés de cada ejercicio: las que graba `npm run voces` y las que la web puede decir. */
-import type { EjercicioT } from '../contenido/esquema';
+import type { ElegirT, EjercicioT } from '../contenido/esquema';
 import { corregirElegir, fraseEscribir } from './corregir';
-import { HUECO, seLee } from './normalizar';
+import { HUECO, partirPiezas, seLee } from './normalizar';
 
-export function frasesInglesas(e: EjercicioT): string[] {
+/** Un ejercicio y si es de un tema sin leer (EjercicioC, sin traer aquí la carga del contenido). */
+type ConTema = EjercicioT & { sinLeer?: boolean };
+
+export function frasesInglesas(e: ConTema): string[] {
+  // Sin leer, todo va en español: no hay nada que decir en inglés.
+  if (e.sinLeer) return [];
   const f: string[] = [];
   switch (e.tipo) {
     case 'elegir': {
@@ -91,10 +96,49 @@ export function mensajesHablados(e: EjercicioT): { de: string; texto: string }[]
 /** Con qué se busca la grabación de un mensaje: el mismo texto puede decirlo otro personaje, con otra voz. */
 export const claveMensaje = (de: string, texto: string) => `${de}|${texto.trim()}`;
 
+/* ── Para quien aún no lee (temas con `sinLeer`: Miguel) ── */
+
+/** Lo que se dice al acertar (uno al azar). */
+export const BIEN = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!', '¡Bravo!', '¡Lo has clavado!'];
+/** Lo que se dice al fallar, delante de la explicación. */
+export const CASI = '¡Casi!';
+
+export const opcionesDe = (e: ElegirT) => [e.correcta, ...e.incorrectas.map((o) => (typeof o === 'string' ? o : o.texto))];
+
+/** «🔴 Marte» → el dibujo («🔴»), que se ve grande, y el nombre («Marte»), que se dice al tocarla. */
+export function partirOpcion(o: string): { dibujo: string; nombre: string } {
+  const limpio = (t: string) => t.replace(/\s+/g, ' ').trim();
+  return { dibujo: limpio(o.replace(/[\p{L}\p{N}¿?¡!,.'-]/gu, '')), nombre: limpio(o.replace(/[^\p{L}\p{N}\s¿?¡!,.'-]/gu, '')) };
+}
+
+/** Con qué se busca la grabación del nombre de una opción o una ficha. */
+export const claveOpcion = (o: string) => `opcion|${partirOpcion(o).nombre}`;
+
+/** Lo que se oye al contestar: el ánimo o, al fallar, «¡Casi!» y la explicación. */
+export const textoRespuesta = (bien: boolean, animo: string, feedback?: string) =>
+  bien ? animo : `${CASI} ${feedback ? sinMarcas(feedback) : ''}`.trim();
+export const claveRespuesta = (texto: string) => `respuesta|${texto}`;
+
+/** Lo que se dice en español en un ejercicio sin leer, además de la orden: sus opciones (o fichas) y las respuestas. */
+export function dichoSinLeer(e: ConTema): string[] {
+  if (!e.sinLeer) return [];
+  let toques: string[];
+  let fallos: (string | undefined)[];
+  if (e.tipo === 'elegir') {
+    toques = opcionesDe(e);
+    fallos = e.incorrectas.map((o) => (typeof o === 'string' ? undefined : o.feedback) ?? e.explicacion);
+  } else if (e.tipo === 'ordenar') {
+    toques = partirPiezas(e.piezas);
+    fallos = [e.explicacion];
+  } else return [];
+  const respuestas = [...BIEN.map((b) => textoRespuesta(true, b)), ...fallos.map((f) => textoRespuesta(false, '', f))];
+  return [...toques.filter((t) => partirOpcion(t).nombre).map(claveOpcion), ...respuestas.map(claveRespuesta)];
+}
+
 /** Todo lo que se oye en un ejercicio, para precargarlo. */
-export const todoLoQueSeOye = (e: EjercicioT) => {
+export const todoLoQueSeOye = (e: ConTema) => {
   const inicio = alEmpezar(e);
-  return [...frasesInglesas(e), ...mensajesHablados(e).map((m) => claveMensaje(m.de, m.texto)), ...(inicio ? [claveInicio(inicio)] : [])];
+  return [...frasesInglesas(e), ...mensajesHablados(e).map((m) => claveMensaje(m.de, m.texto)), ...(inicio ? [claveInicio(inicio)] : []), ...dichoSinLeer(e)];
 };
 
 /** El texto tal como se dice: sin las marcas de la negrita y la cursiva. */

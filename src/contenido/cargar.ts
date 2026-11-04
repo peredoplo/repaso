@@ -4,10 +4,12 @@
  */
 import { parse } from 'yaml';
 import type { z } from 'zod';
+import { opcionesDe, partirOpcion } from '../lib/frases';
 import { HUECO, normalizar, partirPiezas } from '../lib/normalizar';
 import { esTeoria, Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema';
 
-export type EjercicioC = EjercicioT & { id: string };
+/** `sinLeer`: es de un tema para quien aún no lee (va con el ejercicio también a «Repasa tus fallos»). */
+export type EjercicioC = EjercicioT & { id: string; sinLeer?: boolean };
 
 /** Pantallas como mucho en una lección (la teoría, «Recuerda» y el chat, cuenta). */
 export const MAX_PANTALLAS = 8;
@@ -31,6 +33,7 @@ export interface TemaC {
   titulo: string;
   descripcion?: string;
   enunciados: 'es' | 'en';
+  sinLeer: boolean;
   lecciones: LeccionC[];
 }
 
@@ -111,6 +114,27 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
   }
 }
 
+/**
+ * Para quien aún no lee: solo chat, elegir y ordenar; cada opción con su dibujo (o un número) y algo que decir, y
+ * cada fallo con una explicación, que es lo que se oye.
+ */
+function comprobarSinLeer(e: EjercicioT, donde: string, errores: string[]): void {
+  if (e.tipo !== 'chat' && e.tipo !== 'elegir' && e.tipo !== 'ordenar') {
+    errores.push(`${donde}: en un tema sin leer solo hay chat, elegir y ordenar`);
+    return;
+  }
+  if (e.tipo === 'elegir') {
+    for (const o of opcionesDe(e)) {
+      const { dibujo, nombre } = partirOpcion(o);
+      if (!dibujo && !/^\d+$/.test(nombre)) errores.push(`${donde}: «${o}» necesita un dibujo (emoji), que aún no se lee`);
+      if (!nombre) errores.push(`${donde}: «${o}» necesita una palabra, para decirla al tocarla`);
+    }
+    if (!e.explicacion && e.incorrectas.some((o) => typeof o === 'string')) errores.push(`${donde}: cada opción incorrecta necesita su feedback (o una explicacion)`);
+  }
+  if (e.tipo === 'ordenar' && !e.explicacion) errores.push(`${donde}: falta la explicacion, que se oye al fallar`);
+  if (e.tipo === 'chat' && e.mensajes.some((m) => m.palabras)) errores.push(`${donde}: sin palabras en inglés en un tema sin leer`);
+}
+
 /** `archivos`: ruta → texto. */
 export function cargarContenido(archivos: Record<string, string>): Contenido {
   const errores: string[] = [];
@@ -135,7 +159,8 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
       const ruta = `${id}/${lid}`;
       const conId = l.ejercicios.map((e, i) => {
         comprobarEjercicio(e, `${archivo} (ejercicio ${i + 1})`, errores);
-        const c = { ...e, id: `${ruta}#${i + 1}` } as EjercicioC;
+        if (tema.sinLeer) comprobarSinLeer(e, `${archivo} (ejercicio ${i + 1})`, errores);
+        const c = { ...e, id: `${ruta}#${i + 1}`, ...(tema.sinLeer && { sinLeer: true }) } as EjercicioC;
         ejercicios.set(c.id, c);
         return c;
       });
@@ -147,7 +172,7 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
       }
       lecciones.push({ id: lid, ruta, titulo: l.titulo, subtitulo: l.subtitulo, emoji: l.emoji, ejercicios: conId, examen: l.examen });
     }
-    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, enunciados: tema.enunciados, lecciones });
+    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, enunciados: tema.enunciados, sinLeer: tema.sinLeer, lecciones });
   }
 
   let perfiles: Perfil[] = [];

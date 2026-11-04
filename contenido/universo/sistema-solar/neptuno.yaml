@@ -1,0 +1,75 @@
+titulo: Neptuno
+subtitulo: El más lejano
+emoji: 🔵
+ejercicios:
+  - tipo: chat
+    titulo: Neptuno
+    mensajes:
+      - de: santiago
+        texto: 'Neptuno es el último planeta: el que está más lejos del Sol.'
+        dibujo: ☀️ … 🔵
+      - de: valentina
+        texto: 'Es azul oscuro y, como Urano, es un gigante de hielo. ¡Allí hace un frío tremendo!'
+        dibujo: 🧊
+      - de: hugo
+        texto: 'Es el planeta con más viento. ¡Sopla mucho más fuerte que el peor huracán de la Tierra!'
+        dibujo: 💨 🌪️
+      - de: vega
+        texto: 'Curiosidad: antes de verlo, unos científicos ya sabían que estaba ahí haciendo cuentas. ¡Lo descubrieron con las matemáticas!'
+        dibujo: ✏️ ➕
+      - de: hugo
+        texto: 'Tarda muchísimo en dar la vuelta al Sol: ¡ciento sesenta y cinco años!'
+        dibujo: 🐢
+      - de: santiago
+        texto: 'Solo una nave lo ha visitado, la Voyager 2, y le hizo fotos al pasar.'
+        dibujo: 🛰️ 📸
+      - de: valentina
+        texto: '¡Ya conocemos los ocho planetas! Mercurio, Venus, la Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.'
+        dibujo: ⚪ 🟡 🌍 🔴 🟠 🪐 🧊 🔵
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta está más lejos del Sol?
+    dibujo: ☀️
+    correcta: 🔵 Neptuno
+    incorrectas:
+      - texto: 🟠 Júpiter
+        feedback: Júpiter es el más grande, pero el más lejano es Neptuno.
+      - texto: ⚪ Mercurio
+        feedback: Mercurio es el más cercano. El más lejano es Neptuno.
+
+  - tipo: elegir
+    enunciado: ¿Qué hay muchísimo en Neptuno?
+    dibujo: 🔵
+    correcta: 💨 Viento
+    incorrectas:
+      - texto: 🌳 Árboles
+        feedback: En Neptuno no hay árboles, porque hace un frío tremendo. Lo que hay es muchísimo viento.
+      - texto: 🏖️ Playas
+        feedback: No hay playas. Neptuno es un gigante de hielo con muchísimo viento.
+
+  - tipo: elegir
+    enunciado: ¿Cómo descubrieron Neptuno?
+    dibujo: 🔵
+    correcta: ➕ Haciendo cuentas
+    incorrectas:
+      - texto: 🎣 Pescando
+        feedback: ¡Ja, ja! Lo descubrieron haciendo cuentas. Supieron que estaba ahí antes de verlo.
+      - texto: 🔦 Con una linterna
+        feedback: Con una linterna no se ve tan lejos. Lo descubrieron haciendo cuentas, antes de verlo.
+
+  - tipo: elegir
+    enunciado: ¿Cuántos planetas hay en el sistema solar?
+    dibujo: ☀️ 🪐
+    correcta: '8'
+    incorrectas:
+      - texto: '3'
+        feedback: Hay más. Son ocho, de Mercurio a Neptuno.
+      - texto: '100'
+        feedback: Muchos menos. Son ocho, de Mercurio a Neptuno.
+
+  - tipo: ordenar
+    enunciado: Ordena estos planetas, del más cercano al Sol al más lejano.
+    dibujo: ☀️
+    piezas: ⚪ Mercurio / 🌍 Tierra / 🪐 Saturno / 🔵 Neptuno
+    solucion: ⚪ Mercurio 🌍 Tierra 🪐 Saturno 🔵 Neptuno
+    explicacion: El más cercano al Sol es Mercurio. Luego, la Tierra. Más lejos, Saturno. Y el último, Neptuno.

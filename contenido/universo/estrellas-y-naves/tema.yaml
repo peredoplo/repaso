@@ -1,0 +1,16 @@
+# Proyecto Universo de la clase de Miguel (3.º de Infantil), segunda parte: las exposiciones de noviembre, en el mismo
+# orden que en clase (4 de noviembre de 2026). Sin leer: todo se oye.
+asignatura: El universo
+titulo: Estrellas y viajes al espacio
+descripcion: Estrellas, constelaciones, astronautas, cohetes y satélites.
+sinLeer: true
+lecciones:
+  - estrellas
+  - constelaciones
+  - nebulosas
+  - astronautas
+  - misiones
+  - estacion-espacial
+  - meteoritos
+  - satelites
+  - basura-espacial

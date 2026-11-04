@@ -22,12 +22,29 @@ export function Texto({ children }: { children: string }) {
   );
 }
 
-/** Altavoz: la primera vez dice la frase; si se vuelve a tocar enseguida, más despacio. Con `quien`, un mensaje del chat. */
-export function BotonVoz({ texto, grande = false, etiqueta = 'Escuchar', quien }: { texto: string; grande?: boolean; etiqueta?: string; quien?: string }) {
+/**
+ * Altavoz: la primera vez dice la frase; si se vuelve a tocar enseguida, más despacio (solo el inglés: el español
+ * despacio sonaba demasiado lento). Con `quien`, un mensaje del chat; con `clave` y `es`, la orden de un ejercicio sin leer.
+ */
+export function BotonVoz({
+  texto,
+  grande = false,
+  etiqueta = 'Escuchar',
+  quien,
+  clave,
+  es,
+}: {
+  texto: string;
+  grande?: boolean;
+  etiqueta?: string;
+  quien?: string;
+  clave?: string;
+  es?: boolean;
+}) {
   const ultimo = useRef(0);
   const decir = () => {
     const ahora = Date.now();
-    hablar(texto, { lenta: ahora - ultimo.current < 3000, quien });
+    hablar(texto, { lenta: !quien && !es && ahora - ultimo.current < 3000, quien, clave, es });
     ultimo.current = ahora;
   };
   return (

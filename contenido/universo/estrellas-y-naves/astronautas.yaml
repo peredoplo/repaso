@@ -1,0 +1,74 @@
+titulo: Astronautas y cohetes
+subtitulo: ¡3, 2, 1, despegue!
+emoji: 🚀
+ejercicios:
+  - tipo: chat
+    titulo: Astronautas y cohetes
+    mensajes:
+      - de: santiago
+        texto: 'Las personas que viajan al espacio se llaman astronautas.'
+        dibujo: 🧑‍🚀
+      - de: vega
+        texto: 'Para llegar hace falta un cohete. Quema muchísimo combustible: el fuego empuja hacia abajo ¡y el cohete sube!'
+        dibujo: 🚀 🔥
+      - de: hugo
+        texto: 'Antes de despegar se hace la cuenta atrás: tres, dos, uno… ¡despegue!'
+        dibujo: 3… 2… 1… 🚀
+      - de: valentina
+        texto: 'Por el camino, el cohete va soltando las partes que ya han gastado su combustible. Así pesa menos y sube mejor.'
+      - de: santiago
+        texto: 'El traje de astronauta es como una nave pequeñita: les da aire para respirar y los protege del frío y del calor.'
+        dibujo: 🧑‍🚀
+      - de: vega
+        texto: 'En el espacio, los astronautas flotan. Para practicar, se entrenan dentro de una piscina enorme.'
+        dibujo: 🏊
+      - de: valentina
+        texto: '¡Me llamo como la primera mujer que viajó al espacio, Valentina Tereshkova!'
+        dibujo: 👩‍🚀
+      - de: hugo
+        texto: 'España también tiene astronautas. Pedro Duque viajó al espacio dos veces.'
+        dibujo: 🧑‍🚀 🚀
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman las personas que viajan al espacio?
+    dibujo: 🚀
+    correcta: 🧑‍🚀 Astronautas
+    incorrectas:
+      - texto: 🧑‍🍳 Cocineros
+        feedback: Los cocineros hacen la comida. Las personas que viajan al espacio se llaman astronautas.
+      - texto: 🧑‍🚒 Bomberos
+        feedback: Los bomberos apagan fuegos. Las personas que viajan al espacio se llaman astronautas.
+
+  - tipo: ordenar
+    enunciado: Ordena la cuenta atrás para que despegue el cohete.
+    piezas: 3 / 2 / 1 / 🚀
+    solucion: 3 2 1 🚀
+    explicacion: La cuenta atrás va hacia abajo. Tres, dos, uno… ¡y despegue!
+
+  - tipo: elegir
+    enunciado: ¿Qué hace subir al cohete?
+    dibujo: 🚀
+    correcta: 🔥 El fuego que lo empuja
+    incorrectas:
+      - texto: 🎈 Unos globos
+        feedback: Los globos no podrían con un cohete tan pesado. Lo que lo empuja hacia arriba es el fuego de su combustible.
+      - texto: 🧲 Un imán
+        feedback: No hay ningún imán. Lo que lo empuja hacia arriba es el fuego de su combustible.
+
+  - tipo: elegir
+    enunciado: ¿Para qué sirve el traje de astronauta?
+    dibujo: 🧑‍🚀
+    correcta: 💨 Para respirar y no pasar frío
+    incorrectas:
+      - texto: 🎉 Para ir a una fiesta
+        feedback: No es un disfraz. El traje les da aire para respirar y los protege del frío y del calor.
+
+  - tipo: elegir
+    enunciado: ¿Dónde se entrenan los astronautas para flotar?
+    dibujo: 🧑‍🚀
+    correcta: 🏊 En una piscina
+    incorrectas:
+      - texto: 🛝 En un tobogán
+        feedback: Se entrenan en una piscina enorme, porque en el agua se flota casi como en el espacio.
+      - texto: 🛏️ En la cama
+        feedback: Se entrenan en una piscina enorme, porque en el agua se flota casi como en el espacio.

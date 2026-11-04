@@ -1,0 +1,77 @@
+titulo: La Estación Espacial
+subtitulo: Una casa en el espacio
+emoji: 🏠
+ejercicios:
+  - tipo: chat
+    titulo: La Estación Espacial Internacional
+    mensajes:
+      - de: vega
+        texto: 'La Estación Espacial Internacional es una casa enorme que da vueltas alrededor de la Tierra.'
+        dibujo: 🏠 🌍
+      - de: santiago
+        texto: 'La construyeron entre muchos países, pieza a pieza, como un juego de construcción. ¡Es tan grande como un campo de fútbol!'
+        dibujo: 🧱 ⚽
+      - de: valentina
+        texto: 'Allí viven astronautas durante meses, y hacen experimentos.'
+        dibujo: 🧑‍🚀 🧪
+      - de: hugo
+        texto: 'Da una vuelta a la Tierra en hora y media. ¡Por eso allí ven amanecer unas dieciséis veces cada día!'
+        dibujo: 🌅
+      - de: vega
+        texto: 'Todo flota. Duermen en sacos de dormir atados a la pared, para no irse flotando de un lado a otro.'
+        dibujo: 😴
+      - de: santiago
+        texto: 'El agua no cae: hace bolitas que flotan. ¡Y el váter aspira, como una aspiradora!'
+        dibujo: 💧 🚽
+      - de: valentina
+        texto: 'Hacen ejercicio todos los días, porque al flotar tanto, los músculos y los huesos se debilitan.'
+        dibujo: 💪
+      - de: hugo
+        texto: 'Desde la Tierra se puede ver de noche: es un puntito brillante que cruza el cielo deprisa, sin parpadear.'
+        dibujo: ✨
+
+  - tipo: elegir
+    enunciado: ¿Qué es la Estación Espacial Internacional?
+    dibujo: 🌍
+    correcta: 🏠 Una casa en el espacio
+    incorrectas:
+      - texto: 🚂 Una estación de tren
+        feedback: No es de trenes. Es una casa enorme que da vueltas a la Tierra, donde viven astronautas.
+      - texto: 🌙 Una luna
+        feedback: No es una luna. Es una casa enorme que da vueltas a la Tierra, donde viven astronautas.
+
+  - tipo: elegir
+    enunciado: ¿Cómo duermen los astronautas en la estación?
+    dibujo: 🏠
+    correcta: 😴 En sacos atados a la pared
+    incorrectas:
+      - texto: 🛏️ En una cama normal
+        feedback: En una cama se irían flotando. Duermen en sacos de dormir atados a la pared.
+      - texto: 🦇 Colgados como murciélagos
+        feedback: ¡Ja, ja! No. Duermen en sacos de dormir atados a la pared, para no irse flotando.
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasa al agua en la estación espacial?
+    dibujo: 💧
+    correcta: 🫧 Flota en bolitas
+    incorrectas:
+      - texto: 💦 Cae al suelo
+        feedback: Allí no cae nada. El agua flota haciendo bolitas.
+
+  - tipo: elegir
+    enunciado: ¿Por qué hacen ejercicio todos los días?
+    dibujo: 🧑‍🚀
+    correcta: 💪 Para tener fuertes los músculos
+    incorrectas:
+      - texto: 🏆 Para ganar una carrera
+        feedback: No es para ganar. Al flotar tanto, los músculos y los huesos se debilitan, y el ejercicio los mantiene fuertes.
+
+  - tipo: elegir
+    enunciado: ¿Quién construyó la estación espacial?
+    dibujo: 🏠
+    correcta: 🤝 Muchos países juntos
+    incorrectas:
+      - texto: 🧙 Un mago
+        feedback: No fue magia. La construyeron muchos países juntos, pieza a pieza.
+      - texto: 🐜 Unas hormigas
+        feedback: ¡Ja, ja! La construyeron muchos países juntos, pieza a pieza.

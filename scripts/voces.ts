@@ -1,6 +1,7 @@
 /**
  * Graba la voz en inglés de todas las frases del contenido con Azure Speech (adaptado de Numeritis), y los mensajes
- * del chat, en español, cada uno con la voz de su personaje.
+ * del chat, en español, cada uno con la voz de su personaje. En los temas sin leer (Miguel), todo en español: la orden,
+ * las opciones y lo que se oye al contestar, con la voz del narrador.
  * Uso: npm run voces              → graba solo las frases nuevas o cambiadas y borra los audios que sobran.
  *      npm run voces -- --lista   → solo enseña las frases, sin grabar nada.
  *      npm run voces -- --rehacer "texto"  → vuelve a grabar las frases que contienen ese texto.
@@ -11,7 +12,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PERSONAJES } from '../src/contenido/esquema';
-import { alEmpezar, claveInicio, claveMensaje, frasesInglesas, mensajesHablados, type Inicio } from '../src/lib/frases';
+import { alEmpezar, claveInicio, claveMensaje, dichoSinLeer, frasesInglesas, mensajesHablados, sinMarcas, type Inicio } from '../src/lib/frases';
 import { HUECO } from '../src/lib/normalizar';
 import { leerContenido } from './leer';
 
@@ -99,7 +100,15 @@ const NARRADOR = { voz: 'es-ES-ElviraNeural', tono: '+0%', velocidad: VELOCIDAD_
 const PAUSA_FRASE = '400ms';
 const PAUSA_HUECO = '700ms';
 
-function ssmlInicio(i: Inicio, ordenEnIngles: boolean): string {
+/** La voz del narrador sola, en español (lo de los temas sin leer). */
+const ssmlNarrador = (xml: string) =>
+  `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='es-ES'><voice name='${NARRADOR.voz}'>${SIN_RELLENO}<prosody rate='${NARRADOR.velocidad}' pitch='${NARRADOR.tono}'>${xml}</prosody></voice></speak>`;
+
+function ssmlInicio(i: Inicio, ordenEnIngles: boolean, sinLeer = false): string {
+  if (sinLeer) {
+    const conHueco = (t: string) => escaparXml(sinMarcas(t)).split(HUECO).join(`<break time='${PAUSA_HUECO}'/>`);
+    return ssmlNarrador([i.enunciado, ...i.frases].map(conHueco).join(`<break time='${PAUSA_FRASE}'/>`));
+  }
   const trozos = ordenEnIngles
     ? [{ ingles: true, xml: escaparXml(i.enunciado).replace(/\*\*([^*]+)\*\*/g, "<say-as interpret-as='characters'>$1</say-as>").replace(/\*/g, '') }]
     : trozosMensaje(i.enunciado).map((t) => ({ ingles: t.ingles, xml: escaparXml(t.texto.trim()) }));
@@ -118,8 +127,9 @@ function ssmlInicio(i: Inicio, ordenEnIngles: boolean): string {
   return `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='${ordenEnIngles ? 'en-GB' : 'es-ES'}'>${partes.join('')}</speak>`;
 }
 
-const firmaInicio = (ordenEnIngles: boolean) =>
-  `${ordenEnIngles ? 'en' : NARRADOR.voz + NARRADOR.velocidad}+${VOZ_INGLES.voz}${VOZ_INGLES.velocidad}+${PAUSA_FRASE}${PAUSA_HUECO}${PAUSA_ANTES}${PAUSA_DESPUES}+inicio`;
+const firmaInicio = (ordenEnIngles: boolean, sinLeer: boolean) =>
+  `${ordenEnIngles ? 'en' : NARRADOR.voz + NARRADOR.velocidad}+${VOZ_INGLES.voz}${VOZ_INGLES.velocidad}+${PAUSA_FRASE}${PAUSA_HUECO}${PAUSA_ANTES}${PAUSA_DESPUES}+inicio${sinLeer ? '+sinleer' : ''}`;
+const FIRMA_SIN_LEER = `${NARRADOR.voz}${NARRADOR.velocidad}${NARRADOR.tono}+sinleer`;
 
 /** Para el nombre del audio: si cambia una voz, su tono o las pausas, se vuelve a grabar. */
 const firmaMensaje = (v: Voz) =>
@@ -177,24 +187,29 @@ async function main() {
   }
   const archivoMensaje = (m: { voz: Voz; texto: string }) => `${hash(m.texto, firmaMensaje(m.voz), VELOCIDAD_CHAT)}.mp3`;
   // El principio de cada ejercicio: la orden (en el idioma de su tema) y sus frases.
-  const inicios = new Map<string, { inicio: Inicio; enIngles: boolean }>();
+  const inicios = new Map<string, { inicio: Inicio; enIngles: boolean; sinLeer: boolean }>();
   for (const [id, e] of c.ejercicios) {
     const inicio = alEmpezar(e);
     if (!inicio) continue;
     const tema = c.temas.get(id.split('#')[0].split('/').slice(0, -1).join('/'));
-    inicios.set(claveInicio(inicio), { inicio, enIngles: tema?.enunciados === 'en' });
+    inicios.set(claveInicio(inicio), { inicio, enIngles: tema?.enunciados === 'en', sinLeer: !!e.sinLeer });
   }
-  const archivoInicio = (clave: string, enIngles: boolean) => `${hash(clave, firmaInicio(enIngles))}.mp3`;
+  const archivoInicio = (clave: string, v: { enIngles: boolean; sinLeer: boolean }) => `${hash(clave, firmaInicio(v.enIngles, v.sinLeer))}.mp3`;
+  // Sin leer: «opcion|Marte» y «respuesta|¡Casi! …» → lo que va detrás de la primera «|».
+  const sinLeer = new Set([...c.ejercicios.values()].flatMap(dichoSinLeer));
+  const textoSinLeer = (clave: string) => clave.slice(clave.indexOf('|') + 1);
+  const archivoSinLeer = (clave: string) => `${hash(clave, FIRMA_SIN_LEER)}.mp3`;
 
   if (process.argv.includes('--lista')) {
     [...todas].sort().forEach((f) => console.log(f));
     [...mensajes.keys()].sort().forEach((k) => console.log(k));
     [...inicios.keys()].sort().forEach((k) => console.log(k));
-    console.log(`\n${todas.size} frases, ${mensajes.size} mensajes del chat y ${inicios.size} principios de ejercicio.`);
+    [...sinLeer].sort().forEach((k) => console.log(k));
+    console.log(`\n${todas.size} frases, ${mensajes.size} mensajes del chat, ${inicios.size} principios de ejercicio y ${sinLeer.size} cosas sin leer.`);
     return;
   }
   if (process.argv.includes('--ssml')) {
-    for (const [k, v] of inicios) if (process.argv.some((a) => a !== '--ssml' && k.includes(a))) console.log(ssmlInicio(v.inicio, v.enIngles));
+    for (const [k, v] of inicios) if (process.argv.some((a) => a !== '--ssml' && k.includes(a))) console.log(ssmlInicio(v.inicio, v.enIngles, v.sinLeer));
     return;
   }
 
@@ -207,10 +222,15 @@ async function main() {
       .filter(([, m]) => toca(m.texto, archivoMensaje(m)))
       .map(([k, m]) => ({ archivo: archivoMensaje(m), ssml: ssmlMensaje(m.texto, m.voz), que: k })),
     ...[...inicios]
-      .filter(([k, v]) => toca(k, archivoInicio(k, v.enIngles)))
-      .map(([k, v]) => ({ archivo: archivoInicio(k, v.enIngles), ssml: ssmlInicio(v.inicio, v.enIngles), que: k })),
+      .filter(([k, v]) => toca(k, archivoInicio(k, v)))
+      .map(([k, v]) => ({ archivo: archivoInicio(k, v), ssml: ssmlInicio(v.inicio, v.enIngles, v.sinLeer), que: k })),
+    ...[...sinLeer]
+      .filter((k) => toca(k, archivoSinLeer(k)))
+      .map((k) => ({ archivo: archivoSinLeer(k), ssml: ssmlNarrador(escaparXml(textoSinLeer(k))), que: k })),
   ];
-  console.log(`${todas.size} frases, ${mensajes.size} mensajes del chat y ${inicios.size} principios de ejercicio; ${pendientes.length} por grabar.`);
+  console.log(
+    `${todas.size} frases, ${mensajes.size} mensajes del chat, ${inicios.size} principios de ejercicio y ${sinLeer.size} cosas sin leer; ${pendientes.length} por grabar.`,
+  );
 
   const credenciales = pendientes.length ? entorno() : null;
   for (const [k, p] of pendientes.entries()) {
@@ -222,7 +242,8 @@ async function main() {
   const vigentes = new Set([
     ...[...todas].map((f) => `${hash(f)}.mp3`),
     ...[...mensajes.values()].map(archivoMensaje),
-    ...[...inicios].map(([k, v]) => archivoInicio(k, v.enIngles)),
+    ...[...inicios].map(([k, v]) => archivoInicio(k, v)),
+    ...[...sinLeer].map(archivoSinLeer),
   ]);
   const sobran = readdirSync(carpetaVoz).filter((a) => a.endsWith('.mp3') && !vigentes.has(a));
   sobran.forEach((a) => unlinkSync(join(carpetaVoz, a)));
@@ -232,7 +253,8 @@ async function main() {
     voz: VOZ,
     frases: Object.fromEntries([...todas].sort().map((f) => [f, hash(f)])),
     mensajes: Object.fromEntries([...mensajes].sort(([a], [b]) => a.localeCompare(b)).map(([k, m]) => [k, archivoMensaje(m).slice(0, -4)])),
-    inicios: Object.fromEntries([...inicios].sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => [k, archivoInicio(k, v.enIngles).slice(0, -4)])),
+    inicios: Object.fromEntries([...inicios].sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => [k, archivoInicio(k, v).slice(0, -4)])),
+    sinLeer: Object.fromEntries([...sinLeer].sort().map((k) => [k, archivoSinLeer(k).slice(0, -4)])),
   };
   writeFileSync(indiceVoces, `${JSON.stringify(indice, null, 1)}\n`);
   console.log(`Hecho. ${sobran.length ? `Borrados ${sobran.length} audios que sobraban. ` : ''}Índice: src/voces.json`);

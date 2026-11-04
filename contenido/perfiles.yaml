@@ -7,3 +7,11 @@ perfiles:
     temas:
       - ingles/unit-1
       - natural-sciences/unit-1
+  # Aún no lee: sus temas son sin leer (todo se oye).
+  - id: miguel
+    nombre: Miguel
+    curso: 3.º de Infantil
+    avatar: 🚀
+    temas:
+      - universo/sistema-solar
+      - universo/estrellas-y-naves

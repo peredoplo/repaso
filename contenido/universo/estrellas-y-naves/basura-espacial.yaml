@@ -1,0 +1,79 @@
+titulo: La basura espacial
+subtitulo: Hay que limpiar el espacio
+emoji: 🗑️
+ejercicios:
+  - tipo: chat
+    titulo: La basura espacial
+    mensajes:
+      - de: valentina
+        texto: 'En el espacio también hay basura. Se llama basura espacial.'
+        dibujo: 🗑️
+      - de: hugo
+        texto: 'Son satélites viejos que ya no funcionan, trozos de cohetes… ¡y hasta un guante y una bolsa de herramientas que se les escaparon a unos astronautas!'
+        dibujo: 🛰️ 🧤 🧰
+      - de: santiago
+        texto: 'Va rapidísimo, mucho más que una bala. Por eso hasta un trocito pequeño puede romper un satélite.'
+        dibujo: 💥
+      - de: vega
+        texto: 'A veces la Estación Espacial tiene que moverse para esquivar la basura. ¡Como cuando esquivas una pelota!'
+        dibujo: 🏠 ⚽
+      - de: valentina
+        texto: 'Hay científicos que vigilan los trozos grandes con telescopios y radares, para saber siempre dónde están.'
+        dibujo: 📡 🔭
+      - de: hugo
+        texto: 'Y se inventan formas de limpiarla: con redes, con imanes o con brazos robóticos que la atrapan.'
+        dibujo: 🥅 🧲 🦾
+      - de: santiago
+        texto: 'Algunos trozos caen hacia la Tierra, pero casi todos se queman en el aire antes de llegar al suelo.'
+        dibujo: 🔥
+      - de: vega
+        texto: 'Como en casa: si no ensuciamos, no hay que limpiar. Por eso los satélites nuevos se hacen para no dejar basura.'
+        dibujo: ♻️
+
+  - tipo: elegir
+    enunciado: ¿Qué es la basura espacial?
+    dibujo: 🗑️
+    correcta: 🛰️ Satélites viejos y trozos de cohetes
+    incorrectas:
+      - texto: 🍌 Pieles de plátano
+        feedback: En el espacio no hay plátanos. La basura espacial son satélites viejos, trozos de cohetes y cosas que se perdieron.
+      - texto: ⭐ Estrellas apagadas
+        feedback: No son estrellas. La basura espacial son satélites viejos, trozos de cohetes y cosas que se perdieron.
+
+  - tipo: elegir
+    enunciado: ¿Qué se les escapó a unos astronautas?
+    dibujo: 🧑‍🚀
+    correcta: 🧤 Un guante
+    incorrectas:
+      - texto: 🐶 Un perro
+        feedback: No se perdió ningún perro. Se les escaparon un guante y una bolsa de herramientas.
+      - texto: 🚲 Una bici
+        feedback: En el espacio no hay bicis. Se les escaparon un guante y una bolsa de herramientas.
+
+  - tipo: elegir
+    enunciado: ¿Por qué es peligrosa la basura espacial?
+    dibujo: 🗑️
+    correcta: 💨 Va rapidísimo y puede romper cosas
+    incorrectas:
+      - texto: 🦷 Muerde
+        feedback: La basura no muerde. Es peligrosa porque va rapidísimo, y hasta un trocito puede romper un satélite.
+      - texto: 🦨 Huele mal
+        feedback: No es por el olor. Es peligrosa porque va rapidísimo, y hasta un trocito puede romper un satélite.
+
+  - tipo: elegir
+    enunciado: ¿Con qué quieren limpiar la basura espacial?
+    dibujo: 🗑️ 🛰️
+    correcta: 🥅 Con redes e imanes
+    incorrectas:
+      - texto: 🧽 Con una esponja
+        feedback: Con una esponja no se puede. Quieren atraparla con redes, imanes y brazos robóticos.
+      - texto: 🌬️ Soplando
+        feedback: Soplando no se puede, porque en el espacio no hay aire. Quieren atraparla con redes, imanes y brazos robóticos.
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasa a casi toda la basura que cae hacia la Tierra?
+    dibujo: 🌍
+    correcta: 🔥 Se quema en el aire
+    incorrectas:
+      - texto: 🏠 Cae en las casas
+        feedback: Casi nunca. Casi toda se quema en el aire antes de llegar al suelo.

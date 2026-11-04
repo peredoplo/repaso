@@ -1,0 +1,74 @@
+titulo: Mercurio
+subtitulo: El más cercano al Sol
+emoji: ⚪
+ejercicios:
+  - tipo: chat
+    titulo: Mercurio
+    mensajes:
+      - de: hugo
+        texto: 'Empezamos el viaje por los planetas. El primero es Mercurio, el más cercano al Sol.'
+        dibujo: ☀️ ⚪
+      - de: valentina
+        texto: 'Es el planeta más pequeño de todos. Solo un poco más grande que nuestra Luna.'
+        dibujo: 🐜
+      - de: santiago
+        texto: 'Es gris y está lleno de agujeros, que se llaman cráteres. Los hicieron rocas que chocaron contra él. ¡Se parece mucho a la Luna!'
+        dibujo: 🕳️ 🪨
+      - de: vega
+        texto: 'Como está tan cerca del Sol, de día hace muchísimo calor. ¡Más que dentro de un horno!'
+        dibujo: 🔥 🥵
+      - de: hugo
+        texto: 'Pero de noche hace un frío terrible, porque no tiene aire que guarde el calor.'
+        dibujo: 🧊 🥶
+      - de: valentina
+        texto: 'Es el más rápido en dar la vuelta al Sol: tarda menos de tres meses. ¡Si vivieras allí, cumplirías años cuatro veces en un año nuestro!'
+        dibujo: 🎂 🎂 🎂 🎂
+      - de: santiago
+        texto: 'Y no tiene ninguna luna.'
+        dibujo: 🚫 🌙
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta está más cerca del Sol?
+    dibujo: ☀️
+    correcta: ⚪ Mercurio
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La Tierra es el tercer planeta. El más cercano al Sol es Mercurio.
+      - texto: 🪐 Saturno
+        feedback: Saturno está muy lejos. El más cercano al Sol es Mercurio.
+
+  - tipo: elegir
+    enunciado: ¿Mercurio es grande o pequeño?
+    dibujo: ⚪
+    correcta: 🐜 Pequeño
+    incorrectas:
+      - texto: 🐘 Grande
+        feedback: Mercurio es el planeta más pequeño de todos, solo un poco más grande que la Luna.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman los agujeros que tiene Mercurio?
+    dibujo: ⚪ 🕳️
+    correcta: 🕳️ Cráteres
+    incorrectas:
+      - texto: 🏊 Piscinas
+        feedback: No son piscinas, porque allí no hay agua. Son cráteres, los agujeros que hacen las rocas al chocar.
+      - texto: 🏠 Casas
+        feedback: Allí no vive nadie. Son cráteres, los agujeros que hacen las rocas al chocar.
+
+  - tipo: elegir
+    enunciado: ¿Qué tiempo hace en Mercurio?
+    correcta: 🔥🧊 Calor de día y frío de noche
+    incorrectas:
+      - texto: 🌧️ Llueve siempre
+        feedback: En Mercurio no llueve, porque no hay agua ni aire. De día hace muchísimo calor, y de noche, mucho frío.
+      - texto: 🌤️ Se está muy a gusto
+        feedback: ¡Qué va! De día hace más calor que en un horno, y de noche, un frío terrible.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas lunas tiene Mercurio?
+    correcta: 🚫 Ninguna
+    incorrectas:
+      - texto: 🌙 Una
+        feedback: Una luna tiene la Tierra. Mercurio no tiene ninguna.
+      - texto: 🌙🌙 Dos
+        feedback: Dos lunas tiene Marte. Mercurio no tiene ninguna.

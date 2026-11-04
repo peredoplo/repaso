@@ -1,0 +1,76 @@
+titulo: Las estrellas
+subtitulo: Cómo nacen, fugaces y la polar
+emoji: 🌠
+ejercicios:
+  - tipo: chat
+    titulo: Las estrellas
+    mensajes:
+      - de: vega
+        texto: 'Las estrellas son bolas enormes de gas muy caliente, como el Sol. ¡Porque el Sol también es una estrella!'
+        dibujo: ⭐ ☀️
+      - de: hugo
+        texto: '¿Y cómo nacen? En unas nubes gigantes de gas y polvo. El gas y el polvo se juntan, se aprietan, se calientan… ¡y se enciende una estrella nueva!'
+        dibujo: ☁️ ✨
+      - de: valentina
+        texto: 'Hay estrellas de colores. Las azules son las más calientes, y las rojas, las que menos.'
+        dibujo: 🔵 🟡 🔴
+      - de: santiago
+        texto: 'De día también hay estrellas en el cielo, pero no las vemos porque el Sol brilla muchísimo.'
+        dibujo: ☀️
+      - de: vega
+        texto: '¿Y las estrellas fugaces? ¡No son estrellas! Son piedrecitas del espacio que entran en el aire, se calientan y dejan una raya de luz.'
+        dibujo: 🌠
+      - de: hugo
+        texto: 'Dicen que, cuando ves una, puedes pedir un deseo.'
+        dibujo: 🤞
+      - de: valentina
+        texto: 'La estrella polar está siempre en el mismo sitio del cielo y señala el norte. Los marineros la usaban para no perderse de noche.'
+        dibujo: ⭐ 🧭 ⛵
+
+  - tipo: elegir
+    enunciado: ¿Dónde nacen las estrellas?
+    dibujo: ⭐
+    correcta: ☁️ En nubes de gas y polvo
+    incorrectas:
+      - texto: 🥚 En huevos
+        feedback: ¡Ja, ja! Las estrellas no salen de huevos. Nacen en nubes gigantes de gas y polvo.
+      - texto: 🌊 En el mar
+        feedback: En el mar no nacen estrellas. Nacen en nubes gigantes de gas y polvo, en el espacio.
+
+  - tipo: elegir
+    enunciado: Una estrella fugaz, ¿qué es de verdad?
+    dibujo: 🌠
+    correcta: 🪨 Una piedrecita que se calienta
+    incorrectas:
+      - texto: ⭐ Una estrella que se cae
+        feedback: Las estrellas no se caen. Una estrella fugaz es una piedrecita del espacio que se calienta al entrar en el aire.
+      - texto: 🎆 Un fuego artificial
+        feedback: No la tira nadie. Es una piedrecita del espacio que se calienta al entrar en el aire.
+
+  - tipo: elegir
+    enunciado: ¿Para qué usaban los marineros la estrella polar?
+    dibujo: ⛵ ⭐
+    correcta: 🧭 Para no perderse
+    incorrectas:
+      - texto: 💡 Para leer
+        feedback: Para leer da muy poca luz. La usaban para no perderse, porque siempre señala el norte.
+      - texto: 🎣 Para pescar
+        feedback: No era para pescar. La usaban para no perderse, porque siempre señala el norte.
+
+  - tipo: elegir
+    enunciado: ¿Por qué no vemos las estrellas de día?
+    dibujo: ☀️
+    correcta: ☀️ El Sol brilla mucho
+    incorrectas:
+      - texto: 😴 Se van a dormir
+        feedback: Las estrellas no duermen. Siguen ahí de día, pero el Sol brilla tanto que no deja verlas.
+      - texto: 🙈 Se esconden
+        feedback: No se esconden. Siguen ahí de día, pero el Sol brilla tanto que no deja verlas.
+
+  - tipo: elegir
+    enunciado: ¿Qué estrellas son las más calientes?
+    dibujo: ⭐
+    correcta: 🔵 Las azules
+    incorrectas:
+      - texto: 🔴 Las rojas
+        feedback: ¡Es al revés! Las azules son las más calientes, y las rojas, las que menos.

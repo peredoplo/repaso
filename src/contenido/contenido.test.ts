@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { leerContenido } from '../../scripts/leer';
 import { corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
-import { alEmpezar, claveInicio } from '../lib/frases';
+import { alEmpezar, claveInicio, dichoSinLeer, frasesInglesas, partirOpcion } from '../lib/frases';
 import voces from '../voces.json';
 import { esTeoria } from './esquema';
 import { partirPiezas } from '../lib/normalizar';
@@ -93,5 +93,34 @@ describe('contenido', () => {
     });
     expect(letras.errores.join()).toMatch(/no forman «tissues»/);
     expect(partirPiezas('a / b c / d')).toEqual(['a', 'b c', 'd']);
+  });
+
+  it('sin leer: las opciones llevan dibujo y palabra, y cada fallo, su explicación', () => {
+    const sinLeer = (ejercicios: string) =>
+      cargarContenido({
+        'contenido/perfiles.yaml': 'perfiles: [{ id: a, nombre: A, curso: x, avatar: x, temas: [t] }]',
+        'contenido/t/tema.yaml': 'asignatura: x\ntitulo: x\nsinLeer: true\nlecciones: [l]',
+        'contenido/t/l.yaml': `titulo: x\nemoji: x\nejercicios:\n${ejercicios}`,
+      }).errores.join('\n');
+    expect(sinLeer("  - { tipo: elegir, enunciado: '¿Color?', correcta: Rojo, incorrectas: [{ texto: '🔵 Azul', feedback: x }] }")).toMatch(/«Rojo» necesita un dibujo/);
+    expect(sinLeer("  - { tipo: elegir, enunciado: '¿Color?', correcta: '🔴', incorrectas: [{ texto: '🔵 Azul', feedback: x }] }")).toMatch(/necesita una palabra/);
+    expect(sinLeer("  - { tipo: elegir, enunciado: '¿Color?', correcta: '🔴 Rojo', incorrectas: ['🔵 Azul'] }")).toMatch(/su feedback/);
+    expect(sinLeer("  - { tipo: escribir, enunciado: x, respuestas: [x] }")).toMatch(/solo hay chat, elegir y ordenar/);
+    expect(sinLeer("  - { tipo: elegir, enunciado: '¿Cuántos?', correcta: '8', incorrectas: [{ texto: '3', feedback: Son ocho. }] }")).toBe('');
+    expect(partirOpcion('🔴🟠 Entre Marte y Júpiter')).toEqual({ dibujo: '🔴🟠', nombre: 'Entre Marte y Júpiter' });
+  });
+
+  it('el universo de Miguel: una lección por exposición, que empieza por el chat, y todo grabado en español', () => {
+    const temas = ['universo/sistema-solar', 'universo/estrellas-y-naves'].map((t) => c.temas.get(t)!);
+    expect(temas.flatMap((t) => t.lecciones).length).toBe(19);
+    const grabado = new Set(Object.keys((voces as { sinLeer?: object }).sinLeer ?? {}));
+    for (const l of temas.flatMap((t) => t.lecciones)) {
+      expect(l.ejercicios[0].tipo, l.ruta).toBe('chat');
+      for (const e of l.ejercicios) {
+        expect(e.sinLeer, e.id).toBe(true);
+        expect(frasesInglesas(e), e.id).toEqual([]);
+        for (const clave of dichoSinLeer(e)) expect(grabado, clave).toContain(clave);
+      }
+    }
   });
 });

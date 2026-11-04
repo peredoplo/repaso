@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState, type ComponentType } from 're
 import type { EjercicioC } from '../contenido/cargar';
 import { esTeoria, type EjercicioT } from '../contenido/esquema';
 import type { Resultado } from '../lib/corregir';
-import { alEmpezar, claveInicio, textoInicio, todoLoQueSeOye } from '../lib/frases';
+import { alEmpezar, BIEN, claveInicio, claveRespuesta, textoInicio, textoRespuesta, todoLoQueSeOye } from '../lib/frases';
 import { sonar } from '../lib/sonido';
 import { callar, hablar, precargar } from '../lib/voz';
 import Chat from './ejercicios/Chat';
@@ -12,7 +12,7 @@ import Ordenar from './ejercicios/Ordenar';
 import Recuerda from './ejercicios/Recuerda';
 import type { PropsEjercicio } from './ejercicios/tipos';
 import Unir from './ejercicios/Unir';
-import { BotonSonido, Texto } from './piezas';
+import { BotonSonido, BotonVoz, Texto } from './piezas';
 
 export type Modo = 'leccion' | 'examen' | 'repaso';
 
@@ -35,7 +35,6 @@ const COMPONENTES: { [T in EjercicioT['tipo']]: ComponentType<PropsEjercicio<Ext
   chat: Chat,
 };
 
-const BIEN = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!', '¡Bravo!', '¡Lo has clavado!'];
 /** Las veces que vuelve a salir al final un ejercicio fallado (en las lecciones; en el examen, ninguna). Una sola, para que no se haga pesado. */
 const REINTENTOS = 1;
 
@@ -61,6 +60,8 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
   const actual = cola[pos];
   const e = actual.ejercicio;
   const total = ejercicios.length;
+  const sinLeer = !!e.sinLeer;
+  const inicio = alEmpezar(e);
 
   const registrar = useCallback((f: (() => Resultado) | null) => setComprobar(() => f), []);
   const registrarSeguir = useCallback((f: (() => void) | null) => setMasChat(() => f), []);
@@ -75,16 +76,21 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
   // Al llegar a cada ejercicio se oyen la orden y sus frases, sin tener que tocar nada.
   useEffect(() => {
     const i = alEmpezar(e);
-    if (i) hablar(textoInicio(i), { clave: claveInicio(i), auto: !i.siempre, retraso: 300 });
+    if (i) hablar(textoInicio(i), { clave: claveInicio(i), auto: !i.siempre, retraso: 300, es: !!e.sinLeer });
   }, [pos, e]);
 
   const responder = useCallback(
     (r: Resultado) => {
+      const animo = BIEN[Math.floor(Math.random() * BIEN.length)];
       setResultado(r);
-      setFrase(BIEN[Math.floor(Math.random() * BIEN.length)]);
+      setFrase(animo);
       sonar(r.bien ? 'acierto' : 'fallo');
-      // La frase, justo detrás del sonido; si se pasa de ejercicio antes, ya no suena.
-      if (r.voz) hablar(r.voz, { auto: true, retraso: r.bien ? 250 : 450 });
+      // La frase, justo detrás del sonido; si se pasa de ejercicio antes, ya no suena. Sin leer, lo que pone abajo.
+      const retraso = r.bien ? 250 : 450;
+      if (e.sinLeer) {
+        const t = textoRespuesta(r.bien, animo, r.feedback);
+        hablar(t, { clave: claveRespuesta(t), auto: true, retraso, es: true });
+      } else if (r.voz) hablar(r.voz, { auto: true, retraso });
       if (!primeros.current.has(e.id)) primeros.current.set(e.id, { ejercicio: e, resultado: r });
       const otraVez = !r.bien && modo !== 'examen' && actual.vez < REINTENTOS;
       if (otraVez) setCola((c) => [...c, { ejercicio: e, vez: actual.vez + 1 }]);
@@ -141,7 +147,20 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
 
       <main className="leccion__centro">
         {actual.vez > 0 && <p className="otra-vez">🔁 Vamos a intentarlo otra vez</p>}
-        <Componente key={`${pos}-${e.id}`} ejercicio={e} resultado={resultado} registrar={registrar} onResultado={responder} registrarSeguir={registrarSeguir} />
+        {sinLeer && inicio && (
+          <div className="escuchar">
+            <BotonVoz texto={textoInicio(inicio)} clave={claveInicio(inicio)} es grande etiqueta="Escuchar otra vez" />
+          </div>
+        )}
+        <Componente
+          key={`${pos}-${e.id}`}
+          ejercicio={e}
+          resultado={resultado}
+          registrar={registrar}
+          onResultado={responder}
+          registrarSeguir={registrarSeguir}
+          sinLeer={sinLeer}
+        />
       </main>
 
       <footer className={`pie${resultado ? (resultado.bien ? ' pie--bien' : ' pie--mal') : ''}`}>

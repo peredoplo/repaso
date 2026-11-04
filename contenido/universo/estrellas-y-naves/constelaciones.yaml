@@ -1,0 +1,75 @@
+titulo: Las constelaciones
+subtitulo: Dibujos con estrellas
+emoji: ✨
+ejercicios:
+  - tipo: chat
+    titulo: Las constelaciones
+    mensajes:
+      - de: hugo
+        texto: 'Mira el cielo de noche. Si unes unas estrellas con líneas imaginarias, salen dibujos. ¡Eso es una constelación!'
+        dibujo: ✨ ✏️
+      - de: santiago
+        texto: 'Hace muchísimo tiempo, la gente les puso nombres de animales y de personajes de cuentos.'
+        dibujo: 🐻 🦁 🦂
+      - de: vega
+        texto: 'Hay ochenta y ocho constelaciones. Una muy famosa es la Osa Mayor, que tiene forma de osa.'
+        dibujo: 🐻
+      - de: valentina
+        texto: 'Siete estrellas de la Osa Mayor parecen un cazo, y nos ayudan a encontrar la estrella polar.'
+        dibujo: 🥄 ⭐
+      - de: hugo
+        texto: 'Otra es Orión, el cazador. Tiene tres estrellas en fila que forman su cinturón.'
+        dibujo: 🏹 ⭐⭐⭐
+      - de: santiago
+        texto: 'También está Leo, que es un león, y Escorpio, un escorpión.'
+        dibujo: 🦁 🦂
+      - de: vega
+        texto: 'Según la época del año, se ven unas constelaciones u otras. ¡El cielo de invierno no es igual que el de verano!'
+        dibujo: ❄️ ☀️
+
+  - tipo: elegir
+    enunciado: ¿Qué es una constelación?
+    dibujo: ✨
+    correcta: ✨ Estrellas que forman un dibujo
+    incorrectas:
+      - texto: 🌙 Una luna
+        feedback: Una constelación es un grupo de estrellas que, si las unes con líneas, forman un dibujo.
+      - texto: 🪐 Un planeta
+        feedback: Una constelación es un grupo de estrellas que, si las unes con líneas, forman un dibujo.
+
+  - tipo: elegir
+    enunciado: ¿Qué animal es la Osa Mayor?
+    dibujo: ✨
+    correcta: 🐻 Una osa
+    incorrectas:
+      - texto: 🐟 Un pez
+        feedback: La Osa Mayor es una osa, como dice su nombre.
+      - texto: 🐦 Un pájaro
+        feedback: La Osa Mayor es una osa, como dice su nombre.
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene Orión, el cazador, en el cinturón?
+    dibujo: 🏹
+    correcta: ⭐⭐⭐ Tres estrellas en fila
+    incorrectas:
+      - texto: 🔑 Una llave
+        feedback: Orión, el cazador, tiene tres estrellas en fila en el cinturón.
+      - texto: 🌙 Una luna
+        feedback: Orión, el cazador, tiene tres estrellas en fila en el cinturón.
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estas es una constelación?
+    correcta: 🦁 Leo, el león
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La Tierra es un planeta. Leo, el león, es una constelación.
+      - texto: ☀️ El Sol
+        feedback: El Sol es una estrella sola. Leo, el león, es una constelación, un dibujo de muchas estrellas.
+
+  - tipo: elegir
+    enunciado: ¿Se ven las mismas constelaciones en invierno y en verano?
+    dibujo: ❄️ ☀️
+    correcta: 👎 No
+    incorrectas:
+      - texto: 👍 Sí
+        feedback: No. Según la época del año, se ven unas constelaciones u otras.

@@ -689,6 +689,33 @@ h3 {
   font-size: 64px;
   line-height: 1.1;
 }
+/* Sin leer (Miguel): un dibujo grande con su nombre debajo, que se oye al tocarlo. */
+.opciones--oir {
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+.opciones--oir .opcion {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+  padding: 16px 10px 12px;
+}
+.opciones--oir .opcion__tecla {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  font-size: 0.75rem;
+}
+.opcion__dibujo {
+  font-size: 56px;
+  line-height: 1.1;
+}
+.opciones--oir .opcion__texto {
+  font-size: 1.05rem;
+}
 .opcion:hover:not(:disabled) {
   background: #fafaff;
 }
@@ -781,6 +808,16 @@ h3 {
 }
 .ficha:disabled {
   cursor: default;
+}
+.banco--dibujos .ficha,
+.linea-respuesta--dibujos .ficha {
+  font-size: 2.4rem;
+  padding: 6px 14px;
+}
+.linea-respuesta--dibujos {
+  min-height: 90px;
+  background-image: none;
+  border-bottom: 2px solid var(--linea);
 }
 .ficha--hueco {
   background: var(--linea);

@@ -1,0 +1,78 @@
+titulo: La Tierra
+subtitulo: El planeta azul
+emoji: 🌍
+ejercicios:
+  - tipo: chat
+    titulo: Nuestra casa, la Tierra
+    mensajes:
+      - de: vega
+        texto: '¡Hola! Hoy empezamos un viaje por el espacio. Y empezamos por nuestra casa: el planeta Tierra.'
+        dibujo: 🚀 🌍
+      - de: hugo
+        texto: 'Desde el espacio, la Tierra se ve azul. ¿Sabes por qué? ¡Porque casi toda está cubierta de agua: mares y océanos!'
+        dibujo: 🌊
+      - de: valentina
+        texto: 'Por eso la llaman el planeta azul. Lo verde y lo marrón es la tierra: montañas, bosques y desiertos.'
+        dibujo: 🏔️ 🌳 🏜️
+      - de: santiago
+        texto: 'La Tierra es el único planeta donde sabemos que hay vida: plantas, animales… ¡y personas!'
+        dibujo: 🌻 🐘 🐟
+      - de: vega
+        texto: 'Tiene aire para respirar y agua para beber, y el Sol le da luz y calor: ni demasiado frío, ni demasiado calor.'
+        dibujo: 💨 💧 ☀️
+      - de: hugo
+        texto: 'Es redonda como una pelota y no para de girar. Cuando nuestro lado mira al Sol, es de día. Cuando mira hacia el otro lado, es de noche.'
+        dibujo: 🌞 🌜
+      - de: valentina
+        texto: 'Además, la Tierra da vueltas alrededor del Sol, y tarda un año en dar una vuelta entera. ¡Cada vez que cumples años, ha dado una vuelta más!'
+        dibujo: 🎂
+      - de: santiago
+        texto: 'Curiosidad: la Tierra gira más deprisa que un avión… ¡y no nos damos ni cuenta!'
+        dibujo: ✈️
+
+  - tipo: elegir
+    enunciado: ¿De qué color se ve la Tierra desde el espacio?
+    dibujo: 🚀
+    correcta: 🔵 Azul
+    incorrectas:
+      - texto: 🔴 Roja
+        feedback: Roja se ve Marte. La Tierra se ve azul, porque tiene mucha agua.
+      - texto: 🟡 Amarilla
+        feedback: Amarillo es el Sol. La Tierra se ve azul, por sus mares y océanos.
+
+  - tipo: elegir
+    enunciado: ¿Qué cubre casi toda la Tierra?
+    dibujo: 🌍
+    correcta: 🌊 Agua
+    incorrectas:
+      - texto: 🏜️ Arena
+        feedback: Hay desiertos de arena, pero casi toda la Tierra está cubierta de agua, de mares y océanos.
+      - texto: 🍫 Chocolate
+        feedback: ¡Ojalá! Pero no. Casi toda la Tierra está cubierta de agua.
+
+  - tipo: elegir
+    enunciado: ¿Qué forma tiene la Tierra?
+    correcta: ⚽ Redonda
+    incorrectas:
+      - texto: 📦 Cuadrada
+        feedback: La Tierra no tiene esquinas. Es redonda, como una pelota.
+      - texto: 🥞 Plana
+        feedback: La Tierra no es plana como una tortita. Es redonda, como una pelota.
+
+  - tipo: elegir
+    enunciado: Cuando nuestro lado de la Tierra mira al Sol, ¿es de día o de noche?
+    dibujo: ☀️ 🌍
+    correcta: 🌞 De día
+    incorrectas:
+      - texto: 🌜 De noche
+        feedback: Si nuestro lado mira al Sol, nos llega su luz y es de día. Es de noche cuando mira hacia el otro lado.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto tarda la Tierra en dar una vuelta entera alrededor del Sol?
+    dibujo: 🌍 ☀️
+    correcta: 🎂 Un año
+    incorrectas:
+      - texto: ⏱️ Un minuto
+        feedback: Un minuto es muy poquito. La Tierra tarda un año, de un cumpleaños al siguiente.
+      - texto: 🌙 Una noche
+        feedback: En una noche no le da tiempo. La Tierra tarda un año, de un cumpleaños al siguiente.

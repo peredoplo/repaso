@@ -1,0 +1,76 @@
+titulo: Misiones espaciales
+subtitulo: Los viajes más importantes
+emoji: 👣
+ejercicios:
+  - tipo: chat
+    titulo: Misiones espaciales importantes
+    mensajes:
+      - de: hugo
+        texto: 'Una misión espacial es un viaje al espacio para descubrir cosas. ¡Te cuento las más importantes!'
+        dibujo: 🚀
+      - de: valentina
+        texto: 'Lo primero que se mandó fue un satélite, el Sputnik, una bola con antenas. Después viajó una perrita que se llamaba Laika.'
+        dibujo: 📡 🐕
+      - de: santiago
+        texto: 'Luego, Yuri Gagarin fue la primera persona que viajó al espacio.'
+        dibujo: 🧑‍🚀
+      - de: vega
+        texto: '¡Y en 1969 llegaron a la Luna! Neil Armstrong fue la primera persona que la pisó.'
+        dibujo: 🌕 👣
+      - de: hugo
+        texto: 'La nave Voyager 1 lleva casi cincuenta años viajando. ¡Es lo que más lejos ha llegado de todo lo que han hecho las personas!'
+        dibujo: 🛰️
+      - de: valentina
+        texto: 'Lleva un disco de oro con música, saludos y sonidos de la Tierra, por si algún día lo encuentran unos extraterrestres.'
+        dibujo: 💿 👽
+      - de: santiago
+        texto: 'Y hay telescopios en el espacio, como el Hubble y el James Webb, que hacen fotos de estrellas y galaxias lejanísimas.'
+        dibujo: 🔭 📸
+
+  - tipo: elegir
+    enunciado: ¿Qué animal viajó al espacio?
+    dibujo: 🚀
+    correcta: 🐕 Una perrita, Laika
+    incorrectas:
+      - texto: 🐘 Un elefante
+        feedback: Un elefante pesaría demasiado. Fue una perrita que se llamaba Laika.
+      - texto: 🦒 Una jirafa
+        feedback: ¡No cabría en la nave! Fue una perrita que se llamaba Laika.
+
+  - tipo: elegir
+    enunciado: ¿Quién fue la primera persona que viajó al espacio?
+    dibujo: 🚀
+    correcta: 🧑‍🚀 Yuri Gagarin
+    incorrectas:
+      - texto: 🦸 Un superhéroe
+        feedback: Los superhéroes son de cuento. La primera persona que viajó al espacio fue Yuri Gagarin.
+
+  - tipo: elegir
+    enunciado: ¿Adónde llegaron los astronautas en 1969?
+    dibujo: 👣
+    correcta: 🌕 A la Luna
+    incorrectas:
+      - texto: ☀️ Al Sol
+        feedback: Al Sol no se puede ir, porque quema muchísimo. En 1969 llegaron a la Luna.
+      - texto: 🔴 A Marte
+        feedback: A Marte aún no ha ido ninguna persona. En 1969 llegaron a la Luna.
+
+  - tipo: elegir
+    enunciado: ¿Qué lleva la nave Voyager, por si la encuentran unos extraterrestres?
+    dibujo: 🛰️ 👽
+    correcta: 💿 Un disco con música
+    incorrectas:
+      - texto: 🍕 Una pizza
+        feedback: ¡Se habría puesto malísima! Lleva un disco de oro con música, saludos y sonidos de la Tierra.
+      - texto: 🧸 Un peluche
+        feedback: No lleva peluches. Lleva un disco de oro con música, saludos y sonidos de la Tierra.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacen los telescopios del espacio, como el Hubble?
+    dibujo: 🔭
+    correcta: 📸 Fotos de estrellas y galaxias
+    incorrectas:
+      - texto: 🍳 Comida para astronautas
+        feedback: No cocinan. Hacen fotos de estrellas y galaxias lejanísimas.
+      - texto: 🧹 Limpiar el espacio
+        feedback: No limpian. Hacen fotos de estrellas y galaxias lejanísimas.

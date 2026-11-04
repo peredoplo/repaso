@@ -1,0 +1,18 @@
+# Proyecto Universo de la clase de Miguel (3.º de Infantil): una lección por cada exposición, en el mismo orden que
+# en clase (4 de noviembre de 2026). No es para un examen: para aprender y divertirse.
+# Sin leer: todo se oye. Primero lo cuentan los personajes en el chat; luego, preguntas con dibujos.
+asignatura: El universo
+titulo: El sistema solar
+descripcion: La Tierra, el Sol, la Luna y los ocho planetas.
+sinLeer: true
+lecciones:
+  - tierra
+  - sol
+  - luna
+  - mercurio
+  - venus
+  - marte
+  - jupiter
+  - saturno
+  - urano
+  - neptuno

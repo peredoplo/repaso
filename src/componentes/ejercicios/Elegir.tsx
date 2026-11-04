@@ -2,11 +2,14 @@ import { useEffect, useMemo, useState } from 'react';
 import type { ElegirT } from '../../contenido/esquema';
 import { barajar } from '../../lib/barajar';
 import { corregirElegir } from '../../lib/corregir';
+import { claveOpcion, partirOpcion } from '../../lib/frases';
 import { normalizar, tieneLetras } from '../../lib/normalizar';
+import { hablar } from '../../lib/voz';
 import { BotonVoz, ConHueco, Dibujo, Tarjeta, Texto } from '../piezas';
 import type { PropsEjercicio } from './tipos';
 
-export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjercicio<ElegirT>) {
+/** Sin leer (Miguel), cada opción es un dibujo grande con su nombre debajo, y al tocarla se oye el nombre. */
+export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer }: PropsEjercicio<ElegirT>) {
   const opciones = useMemo(() => barajar([e.correcta, ...e.incorrectas.map((o) => (typeof o === 'string' ? o : o.texto))]), [e]);
   const [elegida, setElegida] = useState<string | null>(null);
   const conHueco = !!e.pregunta?.includes('___');
@@ -19,6 +22,8 @@ export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjer
   const elegir = (o: string) => {
     if (resultado) return;
     setElegida(o);
+    const { nombre } = partirOpcion(o);
+    if (sinLeer && nombre) hablar(nombre, { clave: claveOpcion(o), es: true });
   };
 
   // En el ordenador, las teclas 1, 2, 3 y 4 eligen.
@@ -59,6 +64,8 @@ export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjer
               relleno={resultado ? (resultado.bien ? (elegida ?? '') : e.correcta) : (elegida ?? '')}
               estado={resultado ? 'bien' : undefined}
             />
+          ) : sinLeer ? (
+            <Texto>{e.pregunta}</Texto>
           ) : (
             <>
               <BotonVoz texto={e.pregunta} />
@@ -67,7 +74,7 @@ export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjer
           )}
         </p>
       )}
-      <div className={soloDibujos ? 'opciones opciones--dibujos' : 'opciones'} role="group" aria-label="Opciones">
+      <div className={sinLeer ? 'opciones opciones--oir' : soloDibujos ? 'opciones opciones--dibujos' : 'opciones'} role="group" aria-label="Opciones">
         {opciones.map((o, i) => (
           <button
             key={o}
@@ -80,12 +87,30 @@ export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjer
             <span className="opcion__tecla" aria-hidden="true">
               {i + 1}
             </span>
-            <span className="opcion__texto" lang="en">
-              {o}
-            </span>
+            {sinLeer ? (
+              <OpcionDibujo o={o} />
+            ) : (
+              <span className="opcion__texto" lang="en">
+                {o}
+              </span>
+            )}
           </button>
         ))}
       </div>
     </div>
+  );
+}
+
+function OpcionDibujo({ o }: { o: string }) {
+  const { dibujo, nombre } = partirOpcion(o);
+  return dibujo ? (
+    <>
+      <span className="opcion__dibujo" aria-hidden="true">
+        {dibujo}
+      </span>
+      <span className="opcion__texto">{nombre}</span>
+    </>
+  ) : (
+    <span className="opcion__dibujo">{nombre}</span>
   );
 }

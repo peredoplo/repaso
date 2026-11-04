@@ -149,6 +149,11 @@ export const Tema = z
     descripcion: z.string().optional(),
     /** En qué idioma van las órdenes de los ejercicios (para la voz que las lee): en Natural Sciences, en inglés. */
     enunciados: z.enum(['es', 'en']).default('es'),
+    /**
+     * Para quien aún no lee (Miguel, 3.º de Infantil): todo va en español y todo se oye: la orden y la pregunta al
+     * empezar, cada opción o ficha al tocarla y el ánimo o la explicación al contestar. Las opciones llevan dibujo.
+     */
+    sinLeer: z.boolean().default(false),
     lecciones: z.array(z.string()).min(1),
   })
   .strict();

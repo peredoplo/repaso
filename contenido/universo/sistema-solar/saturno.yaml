@@ -1,0 +1,71 @@
+titulo: Saturno
+subtitulo: El de los anillos
+emoji: 🪐
+ejercicios:
+  - tipo: chat
+    titulo: Saturno
+    mensajes:
+      - de: valentina
+        texto: 'Este es Saturno, el planeta de los anillos.'
+        dibujo: 🪐
+      - de: santiago
+        texto: 'Sus anillos no son de una pieza. Están hechos de millones de trozos de hielo y roca dando vueltas: unos son como granos de arena y otros, ¡grandes como una casa!'
+        dibujo: 🧊 🪨 🏠
+      - de: hugo
+        texto: 'Es el segundo planeta más grande, después de Júpiter. Y también es de gas.'
+      - de: vega
+        texto: 'Curiosidad: Saturno pesa tan poco para lo grande que es que, en una bañera gigante, ¡flotaría como un patito de goma!'
+        dibujo: 🛁 🦆
+      - de: valentina
+        texto: 'Es el planeta con más lunas: ¡tiene más de cien!'
+        dibujo: 🌙 🌙 🌙 🌙
+      - de: santiago
+        texto: 'Su luna más grande, Titán, tiene nubes, lluvia y lagos. ¡Pero no son de agua!'
+        dibujo: 🌧️
+      - de: hugo
+        texto: 'Júpiter, Urano y Neptuno también tienen anillos, pero muy finitos. Los más grandes y bonitos son los de Saturno.'
+        dibujo: 💍
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta tiene unos anillos enormes?
+    correcta: 🪐 Saturno
+    incorrectas:
+      - texto: 🔴 Marte
+        feedback: Marte no tiene anillos. Los anillos más grandes y bonitos son los de Saturno.
+      - texto: 🌍 La Tierra
+        feedback: La Tierra no tiene anillos. Los anillos más grandes y bonitos son los de Saturno.
+
+  - tipo: elegir
+    enunciado: ¿De qué están hechos los anillos de Saturno?
+    dibujo: 🪐
+    correcta: 🧊🪨 Hielo y roca
+    incorrectas:
+      - texto: 🍬 Caramelos
+        feedback: ¡Qué rico sería! Pero no. Son millones de trozos de hielo y roca.
+      - texto: 💍 Oro
+        feedback: No son de oro. Son millones de trozos de hielo y roca.
+
+  - tipo: elegir
+    enunciado: Si pusiéramos Saturno en una bañera gigante, ¿qué pasaría?
+    dibujo: 🪐 🛁
+    correcta: 🦆 Flotaría
+    incorrectas:
+      - texto: ⚓ Se hundiría
+        feedback: ¡No! Saturno pesa tan poco para lo grande que es que flotaría, como un patito de goma.
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta tiene más lunas?
+    correcta: 🪐 Saturno
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La Tierra solo tiene una. El que más tiene es Saturno. ¡Más de cien!
+      - texto: ⚪ Mercurio
+        feedback: Mercurio no tiene ninguna. El que más tiene es Saturno. ¡Más de cien!
+
+  - tipo: elegir
+    enunciado: ¿Saturno es el único planeta con anillos?
+    dibujo: 💍
+    correcta: 👎 No
+    incorrectas:
+      - texto: 👍 Sí
+        feedback: No. Júpiter, Urano y Neptuno también tienen anillos, pero muy finitos.

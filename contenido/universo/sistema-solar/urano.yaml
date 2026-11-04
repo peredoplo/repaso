@@ -1,0 +1,71 @@
+titulo: Urano
+subtitulo: El que gira tumbado
+emoji: 🧊
+ejercicios:
+  - tipo: chat
+    titulo: Urano
+    mensajes:
+      - de: vega
+        texto: 'Seguimos lejos, muy lejos, y llegamos a Urano. Es de color azul verdoso.'
+        dibujo: 🔵 🟢
+      - de: hugo
+        texto: 'Es un gigante de hielo, muy, muy frío. ¡Es el planeta con el aire más frío de todos!'
+        dibujo: 🧊 🥶
+      - de: santiago
+        texto: 'Lo más raro: gira tumbado, de lado, como una pelota que rueda por el suelo.'
+        dibujo: ⚽
+      - de: valentina
+        texto: 'Los científicos creen que, hace muchísimo tiempo, chocó contra él algo enorme y lo dejó tumbado.'
+        dibujo: 💥
+      - de: vega
+        texto: 'Está tan lejos que no se ve sin telescopio. Fue el primer planeta que se descubrió con un telescopio.'
+        dibujo: 🔭
+      - de: hugo
+        texto: 'Tarda muchísimo en dar la vuelta al Sol: ochenta y cuatro años. ¡Toda una vida!'
+        dibujo: 🐢
+      - de: santiago
+        texto: 'También tiene anillos finitos y muchas lunas.'
+        dibujo: 💍 🌙
+
+  - tipo: elegir
+    enunciado: ¿Cómo gira Urano?
+    dibujo: 🧊
+    correcta: ⚽ Tumbado, de lado
+    incorrectas:
+      - texto: 🧍 De pie, como los demás
+        feedback: Urano es el raro. Gira tumbado, de lado, como una pelota que rueda.
+
+  - tipo: elegir
+    enunciado: ¿Hace frío o calor en Urano?
+    correcta: 🥶 Mucho frío
+    incorrectas:
+      - texto: 🥵 Mucho calor
+        feedback: Urano está lejísimos del Sol. Es un gigante de hielo, muy, muy frío.
+
+  - tipo: elegir
+    enunciado: ¿Con qué se descubrió Urano?
+    correcta: 🔭 Con un telescopio
+    incorrectas:
+      - texto: 👀 Con los ojos
+        feedback: Urano está tan lejos que no se ve sin telescopio. Fue el primer planeta descubierto con uno.
+      - texto: 🔦 Con una linterna
+        feedback: Con una linterna no se ve tan lejos. Urano se descubrió con un telescopio.
+
+  - tipo: elegir
+    enunciado: ¿De qué color es Urano?
+    correcta: 🔵🟢 Azul verdoso
+    incorrectas:
+      - texto: 🔴 Rojo
+        feedback: Rojo es Marte. Urano es azul verdoso.
+      - texto: 🟡 Amarillo
+        feedback: Urano no es amarillo. Es azul verdoso.
+
+  - tipo: elegir
+    enunciado: ¿Por qué creen los científicos que Urano está tumbado?
+    dibujo: 🧊
+    correcta: 💥 Chocó contra algo enorme
+    incorrectas:
+      - texto: 😴 Tiene sueño
+        feedback: ¡Ja, ja! Los planetas no duermen. Los científicos creen que algo enorme chocó contra él.
+      - texto: 🌬️ Lo tumbó el viento
+        feedback: El viento no puede tumbar un planeta. Los científicos creen que algo enorme chocó contra él.

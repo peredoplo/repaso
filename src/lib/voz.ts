@@ -2,7 +2,7 @@
  * La voz en inglés. Las frases grabadas con `npm run voces` (Azure, voz británica) están en public/voz/ y su índice
  * en src/voces.json; las que aún no se han grabado las lee el navegador con su voz inglesa.
  * Los mensajes del chat, en español, los dice cada personaje con su voz (`quien`); sin grabar, los lee el navegador
- * en español.
+ * en español. En los temas sin leer (`es`), todo es español: la orden, las opciones y lo que se oye al contestar.
  *
  * Para que suene enseguida: al empezar una lección se descargan y decodifican todas sus frases (`precargar`), se
  * reproducen con Web Audio (sin esperar a cargar nada) y se salta el silencio con el que empieza cada grabación.
@@ -13,7 +13,8 @@ import indice from '../voces.json';
 import { claveMensaje, sinMarcas } from './frases';
 import { obtenerContexto, sonidoActivado } from './sonido';
 
-const frases = { ...indice.frases, ...indice.mensajes, ...indice.inicios } as Record<string, string>;
+// `sinLeer` aparece cuando `npm run voces` graba un tema sin leer.
+const frases = { ...indice.frases, ...indice.mensajes, ...indice.inicios, ...(indice as { sinLeer?: object }).sinLeer } as Record<string, string>;
 
 interface Grabacion {
   buffer: AudioBuffer;
@@ -103,15 +104,15 @@ function reproducir(g: Grabacion, lenta: boolean): void {
  * Dice la frase. `auto`: la dice la web sola (tras contestar), y respeta el botón de silencio; si la pide el alumno
  * tocando el altavoz, suena siempre. `lenta`: más despacio. `retraso`: milisegundos de espera (cancelable).
  * `quien`: es un mensaje del chat, en español, y lo dice ese personaje. `clave`: con qué se busca la grabación, si no
- * es el texto (la orden y las frases del principio de un ejercicio).
+ * es el texto (la orden y las frases del principio de un ejercicio). `es`: va en español (un tema sin leer).
  */
-export function hablar(texto: string, { auto = false, lenta = false, retraso = 0, quien = '', clave = '' } = {}): void {
+export function hablar(texto: string, { auto = false, lenta = false, retraso = 0, quien = '', clave = '', es = false } = {}): void {
   if (auto && !sonidoActivado()) return;
   callar();
   const mio = turno;
   const t = clave || (quien ? claveMensaje(quien, texto) : texto.trim());
-  // Sin grabación, la voz del navegador: en español para los mensajes del chat.
-  const enNavegador = () => (quien ? decirEnNavegador(sinMarcas(texto), lenta, 'es-ES') : decirEnNavegador(clave ? texto : t, lenta));
+  // Sin grabación, la voz del navegador: en español para los mensajes del chat y los temas sin leer.
+  const enNavegador = () => (quien || es ? decirEnNavegador(sinMarcas(texto), lenta, 'es-ES') : decirEnNavegador(clave ? texto : t, lenta));
   const empezar = () => {
     espera = null;
     const p = cargar(t);

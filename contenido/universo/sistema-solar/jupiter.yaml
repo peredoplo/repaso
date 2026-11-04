@@ -1,0 +1,69 @@
+titulo: Júpiter
+subtitulo: El más grande
+emoji: 🟠
+ejercicios:
+  - tipo: chat
+    titulo: Júpiter
+    mensajes:
+      - de: hugo
+        texto: '¡Júpiter es el planeta más grande de todos! Dentro cabrían más de mil Tierras.'
+        dibujo: 🟠 🌍
+      - de: vega
+        texto: 'Es un gigante de gas: no tiene suelo. ¡Una nave no podría aterrizar en él!'
+        dibujo: ☁️ 🚀
+      - de: santiago
+        texto: 'Tiene rayas de colores, que son nubes, y una mancha roja gigante.'
+        dibujo: 🟠
+      - de: valentina
+        texto: 'Esa mancha es una tormenta más grande que toda la Tierra. ¡Y lleva cientos de años soplando!'
+        dibujo: 🌪️
+      - de: hugo
+        texto: 'Tiene muchísimas lunas: ¡más de noventa! Una de ellas, Ganímedes, es la luna más grande de todo el sistema solar.'
+        dibujo: 🌙 🌙 🌙
+      - de: vega
+        texto: 'Y aunque es tan grande, gira muy deprisa: allí un día dura solo unas diez horas.'
+        dibujo: ⏰
+
+  - tipo: elegir
+    enunciado: ¿Cuál es el planeta más grande?
+    correcta: 🟠 Júpiter
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La Tierra es mucho más pequeña. El más grande es Júpiter. ¡Dentro cabrían más de mil Tierras!
+      - texto: ⚪ Mercurio
+        feedback: Mercurio es el más pequeño. El más grande es Júpiter.
+
+  - tipo: elegir
+    enunciado: ¿Podría aterrizar una nave en Júpiter?
+    dibujo: 🚀 🟠
+    correcta: 👎 No
+    incorrectas:
+      - texto: 👍 Sí
+        feedback: No, porque Júpiter es de gas y no tiene suelo donde aterrizar.
+
+  - tipo: elegir
+    enunciado: ¿Qué es la gran mancha roja de Júpiter?
+    dibujo: 🟠
+    correcta: 🌪️ Una tormenta
+    incorrectas:
+      - texto: 🍓 Una fresa
+        feedback: ¡Ja, ja! Sería una fresa enorme. La mancha roja es una tormenta gigante.
+      - texto: 🌋 Un volcán
+        feedback: El volcán gigante está en Marte. La mancha roja de Júpiter es una tormenta.
+
+  - tipo: elegir
+    enunciado: ¿Qué es más grande, la mancha roja de Júpiter o la Tierra?
+    correcta: 🌪️ La mancha roja
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La tormenta de la mancha roja es más grande que toda la Tierra.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas lunas tiene Júpiter?
+    dibujo: 🟠
+    correcta: 🌙🌙🌙 Muchísimas
+    incorrectas:
+      - texto: 🚫 Ninguna
+        feedback: Júpiter tiene muchísimas lunas. ¡Más de noventa!
+      - texto: 🌙 Una
+        feedback: Una tiene la Tierra. Júpiter tiene muchísimas. ¡Más de noventa!

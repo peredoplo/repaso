@@ -10,4 +10,6 @@ export interface PropsEjercicio<E> {
   onResultado: (r: Resultado) => void;
   /** El chat dice si aún le quedan mensajes: entonces el botón de abajo es «Seguir» y hace esto. */
   registrarSeguir: (seguir: (() => void) | null) => void;
+  /** De un tema para quien aún no lee: al tocar una opción o una ficha, se dice en español. */
+  sinLeer?: boolean;
 }

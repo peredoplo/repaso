@@ -1,0 +1,77 @@
+titulo: Marte
+subtitulo: El planeta rojo
+emoji: 🔴
+ejercicios:
+  - tipo: chat
+    titulo: Marte
+    mensajes:
+      - de: santiago
+        texto: '¡Llegamos a Marte, el planeta rojo!'
+        dibujo: 🔴
+      - de: valentina
+        texto: '¿Por qué es rojo? Porque su suelo está oxidado, como un clavo viejo que se pone de color rojizo.'
+        dibujo: 🔩
+      - de: hugo
+        texto: 'En Marte está el volcán más grande de todo el sistema solar. ¡Es más del doble de alto que la montaña más alta de la Tierra!'
+        dibujo: 🌋 🏔️
+      - de: vega
+        texto: 'Allí hace mucho frío y hay tormentas de polvo enormes, que a veces tapan todo el planeta.'
+        dibujo: 🥶 🌪️
+      - de: santiago
+        texto: 'Tiene dos lunas pequeñitas con forma de patata. Se llaman Fobos y Deimos.'
+        dibujo: 🥔 🥔
+      - de: valentina
+        texto: 'En Marte no vive nadie, pero hay robots que lo exploran: van sobre ruedas, hacen fotos y estudian las rocas.'
+        dibujo: 🤖 📸
+      - de: hugo
+        texto: 'Un día en Marte dura casi lo mismo que en la Tierra. ¡Y algún día irán personas a visitarlo!'
+        dibujo: 🧑‍🚀 🚀
+
+  - tipo: elegir
+    enunciado: ¿De qué color es Marte?
+    correcta: 🔴 Rojo
+    incorrectas:
+      - texto: 🔵 Azul
+        feedback: Azul es la Tierra. Marte es rojo, porque su suelo está oxidado.
+      - texto: 🟢 Verde
+        feedback: Marte no es verde. Es rojo, porque su suelo está oxidado.
+
+  - tipo: elegir
+    enunciado: ¿Por qué es rojo Marte?
+    dibujo: 🔴
+    correcta: 🔩 Su suelo está oxidado
+    incorrectas:
+      - texto: 🍅 Tiene tomates
+        feedback: ¡Ja, ja! No hay tomates. Es rojo porque su suelo está oxidado, como un clavo viejo.
+      - texto: 🔥 Está ardiendo
+        feedback: No está ardiendo; de hecho, hace mucho frío. Es rojo porque su suelo está oxidado.
+
+  - tipo: elegir
+    enunciado: En Marte está el más grande de todo el sistema solar. ¿Qué es?
+    dibujo: 🔴
+    correcta: 🌋 Un volcán
+    incorrectas:
+      - texto: 🏰 Un castillo
+        feedback: En Marte no hay castillos. Lo que hay es el volcán más grande de todo el sistema solar.
+      - texto: 🌊 Un mar
+        feedback: En Marte no hay mares. Lo que hay es el volcán más grande de todo el sistema solar.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas lunas tiene Marte?
+    dibujo: 🔴
+    correcta: 🥔🥔 Dos
+    incorrectas:
+      - texto: 🚫 Ninguna
+        feedback: Marte tiene dos lunas pequeñitas con forma de patata, Fobos y Deimos.
+      - texto: 🌙 Una
+        feedback: Una luna tiene la Tierra. Marte tiene dos, con forma de patata.
+
+  - tipo: elegir
+    enunciado: ¿Quién explora Marte ahora?
+    dibujo: 🔴 🔍
+    correcta: 🤖 Robots
+    incorrectas:
+      - texto: 🧑‍🚀 Astronautas
+        feedback: Todavía no ha ido ninguna persona a Marte. Lo exploran robots que van sobre ruedas.
+      - texto: 👽 Marcianos
+        feedback: Los marcianos son de cuento. A Marte lo exploran robots que van sobre ruedas.
