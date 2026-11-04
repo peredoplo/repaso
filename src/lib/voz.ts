@@ -13,7 +13,7 @@ import indice from '../voces.json';
 import { claveMensaje, sinMarcas } from './frases';
 import { obtenerContexto, sonidoActivado } from './sonido';
 
-const frases = { ...indice.frases, ...indice.mensajes } as Record<string, string>;
+const frases = { ...indice.frases, ...indice.mensajes, ...indice.inicios } as Record<string, string>;
 
 interface Grabacion {
   buffer: AudioBuffer;
@@ -102,15 +102,16 @@ function reproducir(g: Grabacion, lenta: boolean): void {
 /**
  * Dice la frase. `auto`: la dice la web sola (tras contestar), y respeta el botón de silencio; si la pide el alumno
  * tocando el altavoz, suena siempre. `lenta`: más despacio. `retraso`: milisegundos de espera (cancelable).
- * `quien`: es un mensaje del chat, en español, y lo dice ese personaje.
+ * `quien`: es un mensaje del chat, en español, y lo dice ese personaje. `clave`: con qué se busca la grabación, si no
+ * es el texto (la orden y las frases del principio de un ejercicio).
  */
-export function hablar(texto: string, { auto = false, lenta = false, retraso = 0, quien = '' } = {}): void {
+export function hablar(texto: string, { auto = false, lenta = false, retraso = 0, quien = '', clave = '' } = {}): void {
   if (auto && !sonidoActivado()) return;
   callar();
   const mio = turno;
-  const t = quien ? claveMensaje(quien, texto) : texto.trim();
+  const t = clave || (quien ? claveMensaje(quien, texto) : texto.trim());
   // Sin grabación, la voz del navegador: en español para los mensajes del chat.
-  const enNavegador = () => (quien ? decirEnNavegador(sinMarcas(texto), lenta, 'es-ES') : decirEnNavegador(t, lenta));
+  const enNavegador = () => (quien ? decirEnNavegador(sinMarcas(texto), lenta, 'es-ES') : decirEnNavegador(clave ? texto : t, lenta));
   const empezar = () => {
     espera = null;
     const p = cargar(t);

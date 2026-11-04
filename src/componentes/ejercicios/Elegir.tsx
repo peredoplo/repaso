@@ -3,7 +3,6 @@ import type { ElegirT } from '../../contenido/esquema';
 import { barajar } from '../../lib/barajar';
 import { corregirElegir } from '../../lib/corregir';
 import { normalizar, tieneLetras } from '../../lib/normalizar';
-import { hablar } from '../../lib/voz';
 import { BotonVoz, ConHueco, Dibujo, Tarjeta, Texto } from '../piezas';
 import type { PropsEjercicio } from './tipos';
 
@@ -16,11 +15,6 @@ export default function Elegir({ ejercicio: e, resultado, registrar }: PropsEjer
   useEffect(() => {
     registrar(elegida === null ? null : () => corregirElegir(e, elegida));
   }, [elegida, e, registrar]);
-
-  // Si es de escuchar, la frase suena al empezar.
-  useEffect(() => {
-    if (e.escuchar) hablar(e.escuchar, { retraso: 150 });
-  }, [e.escuchar]);
 
   const elegir = (o: string) => {
     if (resultado) return;

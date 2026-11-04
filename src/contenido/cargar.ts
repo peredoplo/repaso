@@ -30,6 +30,7 @@ export interface TemaC {
   asignatura: string;
   titulo: string;
   descripcion?: string;
+  enunciados: 'es' | 'en';
   lecciones: LeccionC[];
 }
 
@@ -58,6 +59,7 @@ function leer<T>(esquema: z.ZodType<T>, texto: string, archivo: string, errores:
 }
 
 const multiconjunto = (t: string) => normalizar(t).split(' ').sort().join(' ');
+const soloLetras = (t: string) => [...t.toLowerCase().replace(/[^a-z]/g, '')].sort().join('');
 
 function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): void {
   switch (e.tipo) {
@@ -82,6 +84,10 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
     }
     case 'escribir': {
       if (e.plantilla && e.plantilla.split(HUECO).length !== 2) errores.push(`${donde}: la plantilla necesita un hueco «___» (y solo uno)`);
+      // Las letras desordenadas tienen que ser justo las de la respuesta (en la ficha, a «tsesui» le faltaba una s).
+      for (const letras of [e.enunciado.match(/letters: \*\*([^*]+)\*\*/)?.[1], e.explicacion?.match(/letras \*([^*]+)\*/)?.[1]]) {
+        if (letras && soloLetras(letras) !== soloLetras(e.respuestas[0])) errores.push(`${donde}: las letras «${letras}» no forman «${e.respuestas[0]}»`);
+      }
       break;
     }
     case 'unir': {
@@ -141,7 +147,7 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
       }
       lecciones.push({ id: lid, ruta, titulo: l.titulo, subtitulo: l.subtitulo, emoji: l.emoji, ejercicios: conId, examen: l.examen });
     }
-    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, lecciones });
+    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, enunciados: tema.enunciados, lecciones });
   }
 
   let perfiles: Perfil[] = [];

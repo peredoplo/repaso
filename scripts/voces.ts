@@ -11,7 +11,8 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PERSONAJES } from '../src/contenido/esquema';
-import { claveMensaje, frasesInglesas, mensajesHablados } from '../src/lib/frases';
+import { alEmpezar, claveInicio, claveMensaje, frasesInglesas, mensajesHablados, type Inicio } from '../src/lib/frases';
+import { HUECO } from '../src/lib/normalizar';
 import { leerContenido } from './leer';
 
 /** Voz británica, como la del cole; un poco más lenta para niños de 8 años. */
@@ -89,6 +90,37 @@ function ssmlMensaje(texto: string, personaje: Voz): string {
  */
 const SIN_RELLENO = `<mstts:silence type='Leading-exact' value='0ms'/><mstts:silence type='Tailing-exact' value='0ms'/>`;
 
+/**
+ * La orden y las frases del principio de cada ejercicio, seguidas (petición del autor, 4 de noviembre de 2026). La orden
+ * en español la dice una voz de adulto que no es de ningún personaje; en inglés, la voz de las frases. Lo que va en
+ * **negrita** en una orden en inglés son letras desordenadas («Unscramble the letters: **lecl**»): se deletrean.
+ */
+const NARRADOR = { voz: 'es-ES-ElviraNeural', tono: '+0%', velocidad: VELOCIDAD_CHAT };
+const PAUSA_FRASE = '400ms';
+const PAUSA_HUECO = '700ms';
+
+function ssmlInicio(i: Inicio, ordenEnIngles: boolean): string {
+  const trozos = ordenEnIngles
+    ? [{ ingles: true, xml: escaparXml(i.enunciado).replace(/\*\*([^*]+)\*\*/g, "<say-as interpret-as='characters'>$1</say-as>").replace(/\*/g, '') }]
+    : trozosMensaje(i.enunciado).map((t) => ({ ingles: t.ingles, xml: escaparXml(t.texto.trim()) }));
+  for (const f of i.frases) {
+    const xml = `<break time='${PAUSA_FRASE}'/>${escaparXml(f).split(HUECO).join(`<break time='${PAUSA_HUECO}'/>`)}`;
+    const anterior = trozos.at(-1)!;
+    if (anterior.ingles) anterior.xml += ` ${xml}`;
+    else trozos.push({ ingles: true, xml });
+  }
+  const partes = trozos.map((t, k) => {
+    const { voz, tono, velocidad } = t.ingles ? VOZ_INGLES : NARRADOR;
+    const antes = !t.ingles && k > 0 ? `<break time='${PAUSA_DESPUES}'/>` : '';
+    const despues = !t.ingles && trozos[k + 1]?.ingles ? `<break time='${PAUSA_ANTES}'/>` : '';
+    return `<voice name='${voz}'>${SIN_RELLENO}${antes}<prosody rate='${velocidad}' pitch='${tono}'>${t.xml}</prosody>${despues}</voice>`;
+  });
+  return `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='${ordenEnIngles ? 'en-GB' : 'es-ES'}'>${partes.join('')}</speak>`;
+}
+
+const firmaInicio = (ordenEnIngles: boolean) =>
+  `${ordenEnIngles ? 'en' : NARRADOR.voz + NARRADOR.velocidad}+${VOZ_INGLES.voz}${VOZ_INGLES.velocidad}+${PAUSA_FRASE}${PAUSA_HUECO}${PAUSA_ANTES}${PAUSA_DESPUES}+inicio`;
+
 /** Para el nombre del audio: si cambia una voz, su tono o las pausas, se vuelve a grabar. */
 const firmaMensaje = (v: Voz) =>
   `${v.voz}${v.tono}+${VOZ_INGLES.voz}${VOZ_INGLES.tono}${VOZ_INGLES.velocidad}+${PAUSA_ANTES}${PAUSA_DESPUES}+exacto`;
@@ -144,11 +176,25 @@ async function main() {
     }
   }
   const archivoMensaje = (m: { voz: Voz; texto: string }) => `${hash(m.texto, firmaMensaje(m.voz), VELOCIDAD_CHAT)}.mp3`;
+  // El principio de cada ejercicio: la orden (en el idioma de su tema) y sus frases.
+  const inicios = new Map<string, { inicio: Inicio; enIngles: boolean }>();
+  for (const [id, e] of c.ejercicios) {
+    const inicio = alEmpezar(e);
+    if (!inicio) continue;
+    const tema = c.temas.get(id.split('#')[0].split('/').slice(0, -1).join('/'));
+    inicios.set(claveInicio(inicio), { inicio, enIngles: tema?.enunciados === 'en' });
+  }
+  const archivoInicio = (clave: string, enIngles: boolean) => `${hash(clave, firmaInicio(enIngles))}.mp3`;
 
   if (process.argv.includes('--lista')) {
     [...todas].sort().forEach((f) => console.log(f));
     [...mensajes.keys()].sort().forEach((k) => console.log(k));
-    console.log(`\n${todas.size} frases y ${mensajes.size} mensajes del chat.`);
+    [...inicios.keys()].sort().forEach((k) => console.log(k));
+    console.log(`\n${todas.size} frases, ${mensajes.size} mensajes del chat y ${inicios.size} principios de ejercicio.`);
+    return;
+  }
+  if (process.argv.includes('--ssml')) {
+    for (const [k, v] of inicios) if (process.argv.some((a) => a !== '--ssml' && k.includes(a))) console.log(ssmlInicio(v.inicio, v.enIngles));
     return;
   }
 
@@ -160,8 +206,11 @@ async function main() {
     ...[...mensajes]
       .filter(([, m]) => toca(m.texto, archivoMensaje(m)))
       .map(([k, m]) => ({ archivo: archivoMensaje(m), ssml: ssmlMensaje(m.texto, m.voz), que: k })),
+    ...[...inicios]
+      .filter(([k, v]) => toca(k, archivoInicio(k, v.enIngles)))
+      .map(([k, v]) => ({ archivo: archivoInicio(k, v.enIngles), ssml: ssmlInicio(v.inicio, v.enIngles), que: k })),
   ];
-  console.log(`${todas.size} frases y ${mensajes.size} mensajes del chat; ${pendientes.length} por grabar.`);
+  console.log(`${todas.size} frases, ${mensajes.size} mensajes del chat y ${inicios.size} principios de ejercicio; ${pendientes.length} por grabar.`);
 
   const credenciales = pendientes.length ? entorno() : null;
   for (const [k, p] of pendientes.entries()) {
@@ -170,7 +219,11 @@ async function main() {
     await esperar(300);
   }
 
-  const vigentes = new Set([...[...todas].map((f) => `${hash(f)}.mp3`), ...[...mensajes.values()].map(archivoMensaje)]);
+  const vigentes = new Set([
+    ...[...todas].map((f) => `${hash(f)}.mp3`),
+    ...[...mensajes.values()].map(archivoMensaje),
+    ...[...inicios].map(([k, v]) => archivoInicio(k, v.enIngles)),
+  ]);
   const sobran = readdirSync(carpetaVoz).filter((a) => a.endsWith('.mp3') && !vigentes.has(a));
   sobran.forEach((a) => unlinkSync(join(carpetaVoz, a)));
 
@@ -179,6 +232,7 @@ async function main() {
     voz: VOZ,
     frases: Object.fromEntries([...todas].sort().map((f) => [f, hash(f)])),
     mensajes: Object.fromEntries([...mensajes].sort(([a], [b]) => a.localeCompare(b)).map(([k, m]) => [k, archivoMensaje(m).slice(0, -4)])),
+    inicios: Object.fromEntries([...inicios].sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => [k, archivoInicio(k, v.enIngles).slice(0, -4)])),
   };
   writeFileSync(indiceVoces, `${JSON.stringify(indice, null, 1)}\n`);
   console.log(`Hecho. ${sobran.length ? `Borrados ${sobran.length} audios que sobraban. ` : ''}Índice: src/voces.json`);

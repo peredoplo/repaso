@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { leerContenido } from '../../scripts/leer';
 import { corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
+import { alEmpezar, claveInicio } from '../lib/frases';
+import voces from '../voces.json';
+import { esTeoria } from './esquema';
 import { partirPiezas } from '../lib/normalizar';
 import { cargarContenido } from './cargar';
 
@@ -28,6 +31,16 @@ describe('contenido', () => {
     }
     // a-f: con tarjeta, en la primera lección de How often
     expect(de('how-often').filter((e) => 'tarjeta' in e && e.tarjeta).length).toBe(6);
+  });
+
+  it('al empezar cada ejercicio se oyen la orden y sus frases, y está grabado', () => {
+    for (const e of c.ejercicios.values()) {
+      const i = alEmpezar(e);
+      if (esTeoria(e)) expect(i).toBeNull();
+      else expect(Object.keys(voces.inicios), e.id).toContain(claveInicio(i!));
+    }
+    const lecl = [...c.ejercicios.values()].find((e) => 'enunciado' in e && e.enunciado.includes('lecl'))!;
+    expect(alEmpezar(lecl)!.frases).toEqual(['A ___ is the smallest living unit.']);
   });
 
   it('ninguna lección pasa de 8 pantallas', () => {
@@ -73,6 +86,12 @@ describe('contenido', () => {
       'contenido/t/l.yaml': "titulo: x\nemoji: x\nejercicios:\n  - { tipo: chat, titulo: x, mensajes: [{ de: hugo, texto: '*Nutrition* y *interaction*.' }] }\n  - { tipo: unir, pares: [[a, b], [c, d]] }",
     });
     expect(chat.errores.join()).toMatch(/entre paréntesis/);
+    const letras = cargarContenido({
+      'contenido/perfiles.yaml': 'perfiles: [{ id: a, nombre: A, curso: x, avatar: x, temas: [t] }]',
+      'contenido/t/tema.yaml': 'asignatura: x\ntitulo: x\nlecciones: [l]',
+      'contenido/t/l.yaml': "titulo: x\nemoji: x\nejercicios:\n  - { tipo: escribir, enunciado: 'Unscramble the letters: **tsesui**', plantilla: 'they form ___.', respuestas: [tissues] }",
+    });
+    expect(letras.errores.join()).toMatch(/no forman «tissues»/);
     expect(partirPiezas('a / b c / d')).toEqual(['a', 'b c', 'd']);
   });
 });

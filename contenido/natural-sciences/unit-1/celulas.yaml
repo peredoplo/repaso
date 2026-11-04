@@ -68,12 +68,12 @@ ejercicios:
     respuestas: [cell]
     explicacion: Con las letras *l e c l* se escribe **cell**, célula.
 
-  # Support 5 b) de la ficha
+  # Support 5 b) de la ficha (en la ficha pone «tsesui», con una s de menos: se añade)
   - tipo: escribir
-    enunciado: 'Unscramble the letters: **tsesui**'
+    enunciado: 'Unscramble the letters: **tsessui**'
     plantilla: When cells have the same function, they form ___.
     respuestas: [tissues]
-    explicacion: Con las letras *t s e s u i* se escribe **tissues**, tejidos.
+    explicacion: Con las letras *t s e s s u i* se escribe **tissues**, tejidos.
 
   # Support 5 c) de la ficha
   - tipo: escribir

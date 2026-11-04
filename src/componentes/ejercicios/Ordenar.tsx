@@ -4,7 +4,6 @@ import { barajar } from '../../lib/barajar';
 import { corregirOrdenar } from '../../lib/corregir';
 import { normalizar, partirPiezas } from '../../lib/normalizar';
 import { sonar } from '../../lib/sonido';
-import { hablar } from '../../lib/voz';
 import { BotonVoz, Dibujo, Frase, Tarjeta, Texto } from '../piezas';
 import type { PropsEjercicio } from './tipos';
 
@@ -25,10 +24,6 @@ export default function Ordenar({ ejercicio: e, resultado, registrar }: PropsEje
     registrar(puestas.length === 0 ? null : () => corregirOrdenar(e, puestas.map(texto).join(' ')));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [puestas, e, registrar]);
-
-  useEffect(() => {
-    if (e.escuchar) hablar(e.solucion, { retraso: 150 });
-  }, [e]);
 
   useEffect(() => {
     const tecla = (ev: KeyboardEvent) => {

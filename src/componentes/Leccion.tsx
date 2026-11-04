@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState, type ComponentType } from 're
 import type { EjercicioC } from '../contenido/cargar';
 import { esTeoria, type EjercicioT } from '../contenido/esquema';
 import type { Resultado } from '../lib/corregir';
-import { todoLoQueSeOye } from '../lib/frases';
+import { alEmpezar, claveInicio, textoInicio, todoLoQueSeOye } from '../lib/frases';
 import { sonar } from '../lib/sonido';
 import { callar, hablar, precargar } from '../lib/voz';
 import Chat from './ejercicios/Chat';
@@ -71,6 +71,12 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
     precargar(ejercicios.flatMap(todoLoQueSeOye));
     return callar;
   }, [ejercicios]);
+
+  // Al llegar a cada ejercicio se oyen la orden y sus frases, sin tener que tocar nada.
+  useEffect(() => {
+    const i = alEmpezar(e);
+    if (i) hablar(textoInicio(i), { clave: claveInicio(i), auto: !i.siempre, retraso: 300 });
+  }, [pos, e]);
 
   const responder = useCallback(
     (r: Resultado) => {

@@ -147,6 +147,8 @@ export const Tema = z
     asignatura: z.string(),
     titulo: z.string(),
     descripcion: z.string().optional(),
+    /** En qué idioma van las órdenes de los ejercicios (para la voz que las lee): en Natural Sciences, en inglés. */
+    enunciados: z.enum(['es', 'en']).default('es'),
     lecciones: z.array(z.string()).min(1),
   })
   .strict();

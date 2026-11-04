@@ -13,13 +13,13 @@ ejercicios:
         feedback: '«Hacer la cama» es **make my bed**.'
 
   - tipo: escribir
-    enunciado: Escribe el verbo **go** como va en esta frase.
+    enunciado: Escribe el verbo *go* como va en esta frase.
     plantilla: He ___ to bed late.
     respuestas: [goes]
     explicacion: 'Con *he*, *go* lleva **-es**: **goes**.'
 
   - tipo: escribir
-    enunciado: Escribe el verbo **have** como va en esta frase.
+    enunciado: Escribe el verbo *have* como va en esta frase.
     plantilla: My dad ___ a shower in the morning.
     respuestas: [has]
     explicacion: Con *he* (*my dad*), *have* cambia a **has**.
