@@ -1,0 +1,103 @@
+titulo: Un laboratorio en órbita
+subtitulo: Experimentos que aquí no salen
+emoji: 🧪
+ejercicios:
+  - tipo: chat
+    titulo: La ciencia del flotar
+    mensajes:
+      - de: vega
+        texto: 'La Estación no es un hotel. Es un laboratorio. Hay cientos de experimentos que solo salen allí, porque no se nota el peso.'
+        dibujo: 🧪 🏠
+      - de: santiago
+        texto: 'Por ejemplo, el fuego. En el espacio, una llama no sube: forma una bolita azul. Eso ayuda a entender cómo arden las cosas.'
+        dibujo: 🔥 🔵
+      - de: hugo
+        texto: 'El agua también es rara. Sin peso, una gota forma una esfera perfecta y se pega a la piel. Y las burbujas no suben.'
+        dibujo: 💧 🫧
+      - de: valentina
+        texto: 'Se cultivan plantas. En 2015, los astronautas comieron por primera vez lechuga cultivada en el espacio. Será muy útil para ir a Marte.'
+        dibujo: 🥬 🌱
+      - de: vega
+        texto: 'Las raíces no saben hacia dónde crecer, así que crecen en todas direcciones. También se han llevado arañas, para ver cómo tejen.'
+        dibujo: 🕷️ 🕸️
+      - de: santiago
+        texto: 'Allí se forman cristales muy perfectos de sustancias del cuerpo. Eso ayuda a preparar medicinas contra enfermedades como el cáncer.'
+        dibujo: 💎 💊
+      - de: hugo
+        texto: 'Los astronautas también son el experimento. El gemelo Scott Kelly pasó casi un año allí, y su hermano Mark se quedó aquí, para comparar.'
+        dibujo: 👯 🔬
+      - de: valentina
+        texto: 'Casi todo volvió a la normalidad después. Era importantísimo saberlo antes de viajes muy largos.'
+        dibujo: ✅
+
+  - tipo: elegir
+    enunciado: ¿Cómo es una llama de fuego en el espacio?
+    dibujo: 🔥
+    correcta: 🔵 Una bolita azul
+    incorrectas:
+      - texto: 🔺 Alta y puntiaguda
+        feedback: Así es en la Tierra, porque el aire caliente sube. En el espacio es una bolita azul.
+      - texto: ⬛ Negra
+        feedback: No. En el espacio es una bolita azul.
+
+  - tipo: elegir
+    enunciado: ¿Qué comieron por primera vez en 2015 en la Estación?
+    dibujo: 🌱
+    correcta: 🥬 Lechuga cultivada allí
+    incorrectas:
+      - texto: 🍕 Una pizza
+        feedback: ¡Ja, ja! No. Comieron lechuga cultivada allí mismo.
+      - texto: 🍦 Un helado
+        feedback: No. Comieron lechuga cultivada allí mismo.
+
+  - tipo: elegir
+    enunciado: ¿Por qué mandaron a Scott Kelly al espacio y dejaron a su gemelo aquí?
+    dibujo: 👯
+    correcta: 🔬 Para comparar sus cuerpos
+    incorrectas:
+      - texto: 🎭 Para gastar una broma
+        feedback: ¡Ja, ja! No. Era para comparar sus cuerpos y ver cómo cambia el espacio a las personas.
+      - texto: 🏆 Para ver quién ganaba
+        feedback: No. Era para comparar sus cuerpos y ver cómo cambia el espacio a las personas.
+
+  - tipo: chat
+    titulo: Llegan y se van
+    mensajes:
+      - de: hugo
+        texto: 'Las naves de carga llegan cada pocos meses. Traen comida, ropa, experimentos y paquetes de la familia.'
+        dibujo: 📦 🚀
+      - de: valentina
+        texto: 'Algunas se llevan la basura y se queman al bajar por la atmósfera. La ropa sucia también: allí no hay lavadora.'
+        dibujo: 🧦 🔥
+      - de: santiago
+        texto: 'Las naves con personas se quedan enganchadas a la Estación. Siempre hay una lista, por si hay que salir rápido.'
+        dibujo: 🚀 🆘
+      - de: vega
+        texto: 'A veces, hay que apartar la Estación, para que no choque con trozos de basura espacial. En esos casos, encienden motores.'
+        dibujo: 💥 ↗️
+      - de: hugo
+        texto: 'Los astronautas también tienen robots ayudantes, con forma de cubo, que flotan por dentro haciendo tareas.'
+        dibujo: 🤖 📦
+      - de: valentina
+        texto: 'Y hablan con la Tierra todos los días. Hasta hablan con colegios por radio. Puedes preparar preguntas y hablar con ellos en directo.'
+        dibujo: 🎙️ 🏫
+
+  - tipo: elegir
+    enunciado: ¿Qué hacen los astronautas con la ropa sucia?
+    dibujo: 🧦
+    correcta: 🔥 Se quema con la basura al bajar
+    incorrectas:
+      - texto: 🧺 La meten en la lavadora
+        feedback: Allí no hay lavadora. La mandan con la basura, que se quema en la atmósfera.
+      - texto: 🌍 La mandan a casa a lavar
+        feedback: ¡Ja, ja! No. La mandan con la basura, que se quema en la atmósfera.
+
+  - tipo: elegir
+    enunciado: ¿Por qué apartan a veces la Estación?
+    dibujo: 🏠 ↗️
+    correcta: 🗑️ Para no chocar con basura espacial
+    incorrectas:
+      - texto: 🌙 Para dejar pasar la Luna
+        feedback: ¡Ja, ja! No. Se aparta para no chocar con trozos de basura espacial.
+      - texto: 🌅 Para ver mejor el amanecer
+        feedback: No. Se aparta para no chocar con trozos de basura espacial.

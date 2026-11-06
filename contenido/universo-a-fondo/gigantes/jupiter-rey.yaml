@@ -1,0 +1,96 @@
+titulo: Júpiter, el rey
+subtitulo: Casi una estrella
+emoji: 👑
+ejercicios:
+  - tipo: chat
+    titulo: El más grande de todos
+    mensajes:
+      - de: hugo
+        texto: 'Júpiter es el planeta más grande. Dentro cabrían más de mil trescientas Tierras.'
+        dibujo: 🟠 🌍
+      - de: santiago
+        texto: 'Pesa más del doble que todos los demás planetas juntos. Por eso lo llamaron como al rey de los dioses romanos.'
+        dibujo: 👑 ⚖️
+      - de: valentina
+        texto: 'No tiene suelo. Es un gigante gaseoso, casi todo hidrógeno y helio. Si bajaras, solo habría gas cada vez más espeso.'
+        dibujo: 🌫️ ⬇️
+      - de: vega
+        texto: 'Más abajo, la presión convierte el hidrógeno en líquido, y después en una especie de metal líquido. Eso solo existe en sitios así.'
+        dibujo: 🗜️ 💧
+      - de: hugo
+        texto: 'Ese metal líquido crea el campo magnético más fuerte de los planetas. Si se viera, sería más grande en el cielo que la Luna llena.'
+        dibujo: 🧲
+      - de: santiago
+        texto: 'Es el planeta que gira más rápido: un día dura unas diez horas. Tan rápido, que se aplasta y queda más ancho por el centro.'
+        dibujo: 🌀
+      - de: valentina
+        texto: 'Tarda casi doce años en dar la vuelta al Sol. Si vivieras allí, aún no habrías cumplido uno.'
+        dibujo: 🎂
+      - de: vega
+        texto: 'Es tan grande, que suelta más calor del que recibe del Sol. Le faltó peso para ser una estrella, pero mucho: tendría que pesar unas ochenta veces más.'
+        dibujo: ⭐ ❌
+
+  - tipo: elegir
+    enunciado: ¿Por qué no podrías pisar Júpiter?
+    dibujo: 🟠 🥾
+    correcta: 🌫️ Porque es de gas y no tiene suelo
+    incorrectas:
+      - texto: 🐊 Por los cocodrilos
+        feedback: ¡Ja, ja! No. Júpiter es de gas y no tiene suelo que pisar.
+      - texto: 🚧 Porque está prohibido
+        feedback: No es por eso. Júpiter es de gas y no tiene suelo que pisar.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto dura un día en Júpiter?
+    dibujo: 🌀
+    correcta: ⏰ Unas diez horas
+    incorrectas:
+      - texto: 📅 Un año
+        feedback: Mucho menos. Es el planeta que gira más rápido, en unas diez horas.
+      - texto: 🌍 Veinticuatro horas
+        feedback: Eso es en la Tierra. Júpiter gira en unas diez horas.
+
+  - tipo: chat
+    titulo: El gran protector
+    mensajes:
+      - de: santiago
+        texto: 'Tan grande, que su gravedad afecta a todo el sistema solar.'
+        dibujo: 🟠 🧲
+      - de: vega
+        texto: 'A veces atrae cometas y rocas. En 1994, el cometa Shoemaker-Levy nueve se rompió en más de veinte trozos que chocaron contra Júpiter.'
+        dibujo: ☄️ 💥
+      - de: valentina
+        texto: 'Las marcas fueron enormes, más grandes que la Tierra. Y durante meses se vieron con telescopio.'
+        dibujo: 🔭
+      - de: hugo
+        texto: 'Por eso hay quien dice que nos protege. Aunque también desvía algunas rocas hacia nosotros. Hace de portero y también de lanzador.'
+        dibujo: 🧤 ⚽
+      - de: santiago
+        texto: 'Delante y detrás de Júpiter viajan miles de asteroides, llamados troyanos, que siguen su órbita como si fueran un séquito.'
+        dibujo: 🪨 🪨 🪨
+      - de: vega
+        texto: 'Entre Marte y Júpiter está el cinturón de asteroides. Su gravedad no dejó que esas rocas se juntaran en un planeta.'
+        dibujo: 🪨 🌀
+      - de: valentina
+        texto: 'Júpiter también tiene anillos, muy finos, y se descubrieron en 1979 con la nave Voyager uno.'
+        dibujo: 💍
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasó al cometa Shoemaker-Levy nueve en 1994?
+    dibujo: ☄️
+    correcta: 💥 Chocó contra Júpiter
+    incorrectas:
+      - texto: 🌍 Chocó contra la Tierra
+        feedback: Por suerte, no. Se rompió en trozos que chocaron contra Júpiter.
+      - texto: 🌙 Se convirtió en luna
+        feedback: No. Se rompió en trozos que chocaron contra Júpiter.
+
+  - tipo: elegir
+    enunciado: ¿Qué hay entre Marte y Júpiter?
+    dibujo: 🔴 🟠
+    correcta: 🪨 El cinturón de asteroides
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La Tierra está antes de Marte. Entre Marte y Júpiter está el cinturón de asteroides.
+      - texto: ☀️ El Sol
+        feedback: El Sol está en el centro. Entre Marte y Júpiter está el cinturón de asteroides.

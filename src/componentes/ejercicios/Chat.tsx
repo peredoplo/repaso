@@ -14,7 +14,8 @@ export default function Chat({ ejercicio: e, registrarSeguir }: PropsEjercicio<C
   const ultimo = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
-    registrarSeguir(vistos < e.mensajes.length ? () => setVistos((n) => n + 1) : null);
+    // Con tope: dos toques muy seguidos en «Seguir» llegan antes de que se quite el botón.
+    registrarSeguir(vistos < e.mensajes.length ? () => setVistos((n) => Math.min(n + 1, e.mensajes.length)) : null);
   }, [vistos, e, registrarSeguir]);
 
   // Cada mensaje, al llegar, lo dice su personaje con su voz (si el sonido está puesto).

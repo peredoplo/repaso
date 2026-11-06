@@ -1,0 +1,101 @@
+titulo: Las misiones que vienen
+subtitulo: Y para qué sirve ir al espacio
+emoji: 🔮
+ejercicios:
+  - tipo: chat
+    titulo: Muchos países en el espacio
+    mensajes:
+      - de: vega
+        texto: 'Antes, solo Estados Unidos y la Unión Soviética iban al espacio. Hoy van muchos más países y hasta empresas.'
+        dibujo: 🌍 🚀
+      - de: santiago
+        texto: 'En 2019, China posó la primera nave en la cara oculta de la Luna. En 2024 trajo a la Tierra rocas de esa cara.'
+        dibujo: 🌚 🪨
+      - de: hugo
+        texto: 'En 2023, India consiguió aterrizar cerca del polo sur de la Luna. Fue una gran noticia, y costó menos que algunas películas.'
+        dibujo: 🌕 🎬
+      - de: valentina
+        texto: 'China tiene además su propia estación espacial, llamada Tiangong, que significa palacio celestial.'
+        dibujo: 🏠 ☁️
+      - de: vega
+        texto: 'Y en 2022, la misión DART hizo algo nunca visto: chocó adrede contra un asteroide y cambió su camino. Una prueba por si algún día viene alguno.'
+        dibujo: 💥 🪨
+      - de: santiago
+        texto: 'La nave europea Hera va ahora hacia ese asteroide, a ver cómo quedó. Es como un detective que llega después del golpe.'
+        dibujo: 🕵️ 🛰️
+      - de: hugo
+        texto: 'Y hay misiones para buscar vida en lunas heladas, como Europa, y traer rocas de Marte. Siempre hay preguntas nuevas.'
+        dibujo: 🧊 🔎
+
+  - tipo: elegir
+    enunciado: ¿Qué hizo la misión DART en 2022?
+    dibujo: 💥
+    correcta: 🪨 Desvió un asteroide con un choque
+    incorrectas:
+      - texto: 🌕 Llegó a la Luna
+        feedback: No. DART chocó adrede contra un asteroide y le cambió el camino.
+      - texto: 🐕 Llevó un perro
+        feedback: No. DART chocó adrede contra un asteroide y le cambió el camino.
+
+  - tipo: elegir
+    enunciado: ¿Qué país llevó primero una nave a la cara oculta de la Luna?
+    dibujo: 🌚
+    correcta: 🐉 China
+    incorrectas:
+      - texto: 🗽 Estados Unidos
+        feedback: Llegaron a la Luna primero, pero no a la cara oculta. Eso lo hizo China, en 2019.
+      - texto: 🥘 España
+        feedback: No. Lo hizo China, en 2019.
+
+  - tipo: chat
+    titulo: ¿Para qué sirve?
+    mensajes:
+      - de: hugo
+        texto: 'Alguna gente pregunta: ¿para qué gastar dinero en el espacio, con todo lo que hay por hacer aquí?'
+        dibujo: 💶 ❓
+      - de: santiago
+        texto: 'Primero, porque lo que se inventa para el espacio acaba en casa. Las cámaras de los teléfonos usan una técnica desarrollada para naves.'
+        dibujo: 📱 🛰️
+      - de: vega
+        texto: 'También las espumas de algunos colchones, los filtros de agua y algunos aparatos de hospital tienen que ver con la investigación espacial.'
+        dibujo: 🛏️ 🏥
+      - de: valentina
+        texto: 'Segundo, los satélites nos avisan de huracanes y vigilan el clima. Sin ellos, muchas personas no recibirían el aviso a tiempo.'
+        dibujo: 🌀 🛰️
+      - de: hugo
+        texto: 'Tercero, para protegernos. Si un día viene un asteroide peligroso, solo podremos desviarlo con lo que aprendamos ahora.'
+        dibujo: 🛡️ ☄️
+      - de: santiago
+        texto: 'Y cuarto, porque somos curiosos. Queremos saber de dónde venimos y si estamos solos. Eso también es ser persona.'
+        dibujo: 🧒 ❓
+      - de: vega
+        texto: 'Lo importante es no romper este planeta. Marte no sería un plan B: es muchísimo más difícil vivir allí que cuidar la Tierra.'
+        dibujo: 🌍 💙
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estas cosas tiene que ver con la investigación espacial?
+    dibujo: 🛰️ 🏠
+    correcta: 📱 La cámara del teléfono
+    incorrectas:
+      - texto: 🥄 La cuchara
+        feedback: La cuchara es mucho más antigua. Las cámaras de los teléfonos usan una técnica desarrollada para naves.
+      - texto: 🪑 La silla
+        feedback: La silla es mucho más antigua. Las cámaras de los teléfonos usan una técnica desarrollada para naves.
+
+  - tipo: elegir
+    enunciado: ¿Por qué nos conviene saber desviar asteroides?
+    dibujo: ☄️ 🌍
+    correcta: 🛡️ Para protegernos de uno peligroso
+    incorrectas:
+      - texto: ⚽ Para jugar al fútbol
+        feedback: ¡Ja, ja! No. Es para protegernos si alguna vez viene uno peligroso.
+      - texto: 🖼️ Para colgarlos en casa
+        feedback: ¡Ja, ja! No. Es para protegernos si alguna vez viene uno peligroso.
+
+  - tipo: elegir
+    enunciado: ¿Es más fácil vivir en Marte o cuidar la Tierra?
+    dibujo: 🌍 🔴
+    correcta: 🌍 Cuidar la Tierra
+    incorrectas:
+      - texto: 🔴 Vivir en Marte
+        feedback: ¡Qué va! Allí no hay aire que respirar, ni agua líquida. Es mucho más fácil cuidar la Tierra.

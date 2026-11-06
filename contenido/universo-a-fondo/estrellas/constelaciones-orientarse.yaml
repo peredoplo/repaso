@@ -1,0 +1,103 @@
+titulo: Orientarse con las estrellas
+subtitulo: La brújula del cielo
+emoji: 🧭
+ejercicios:
+  - tipo: chat
+    titulo: La estrella que no se mueve
+    mensajes:
+      - de: hugo
+        texto: 'El cielo parece dar vueltas cada noche, porque la Tierra gira. Pero hay una estrella que casi no se mueve: la Estrella Polar.'
+        dibujo: ⭐ 🌀
+      - de: valentina
+        texto: 'Está justo encima del polo norte. Por eso, todas las demás parecen girar alrededor de ella. Si miras hacia ella, miras al norte.'
+        dibujo: 🧭 ⬆️
+      - de: santiago
+        texto: 'Para encontrarla, se busca la Osa Mayor, que parece un gran cazo. Las dos estrellas del borde apuntan a la Polar.'
+        dibujo: 🥄 ⭐
+      - de: vega
+        texto: 'Si prolongas esa línea unas cinco veces, llegas a la Estrella Polar. No es la más brillante del cielo, como mucha gente cree. Se ve más bien normal.'
+        dibujo: 📏
+      - de: hugo
+        texto: 'Durante miles de años, marineros y viajeros usaron la Polar. Cuanto más alta se veía, más al norte estaban. Sin ningún GPS.'
+        dibujo: ⛵ 🌊
+      - de: valentina
+        texto: 'Con unos aparatos llamados astrolabio y sextante, medían la altura de las estrellas para saber dónde estaban en el mar.'
+        dibujo: 🧭 📐
+      - de: santiago
+        texto: 'En el hemisferio sur no se ve la Polar. Allí usan la Cruz del Sur para encontrar el sur.'
+        dibujo: ✝️ ⬇️
+
+  - tipo: elegir
+    enunciado: ¿Qué estrella señala el norte?
+    dibujo: 🧭
+    correcta: ⭐ La Estrella Polar
+    incorrectas:
+      - texto: ☀️ El Sol
+        feedback: El Sol es una estrella, pero se mueve por el cielo. La que señala el norte es la Polar.
+      - texto: 🐕 Sirio
+        feedback: Sirio es la más brillante, pero la que señala el norte es la Polar.
+
+  - tipo: elegir
+    enunciado: ¿Por qué las estrellas parecen girar por la noche?
+    dibujo: 🌌 🌀
+    correcta: 🌍 Porque la Tierra gira
+    incorrectas:
+      - texto: 🌬️ Porque las mueve el viento
+        feedback: El viento no llega a las estrellas. Parece que giran porque la Tierra gira.
+      - texto: 🏃 Porque se van corriendo
+        feedback: ¡Ja, ja! No. Parece que giran porque la Tierra gira.
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación sirve para encontrar la Estrella Polar?
+    dibujo: ⭐
+    correcta: 🐻 La Osa Mayor
+    incorrectas:
+      - texto: 🏹 Orión
+        feedback: Orión es muy bonita, pero la Polar se busca con la Osa Mayor.
+      - texto: 🦁 Leo
+        feedback: No. La Polar se busca con la Osa Mayor.
+
+  - tipo: chat
+    titulo: El cielo como calendario
+    mensajes:
+      - de: vega
+        texto: 'Las estrellas no solo sirven de brújula. También sirven de calendario. Según la época del año, salen unas u otras.'
+        dibujo: 📅 ⭐
+      - de: santiago
+        texto: 'Como la Tierra da la vuelta al Sol, por la noche miramos hacia partes distintas del espacio. Por eso Orión se ve en invierno y Escorpio en verano.'
+        dibujo: 🌍 ☀️
+      - de: hugo
+        texto: 'En el antiguo Egipto, cuando Sirio volvía a salir antes del amanecer, sabían que el río Nilo iba a crecer. Y esa crecida daba fuerza a sus cultivos.'
+        dibujo: 🏺 🌾
+      - de: valentina
+        texto: 'Los agricultores miraban el cielo para saber cuándo sembrar y cuándo recoger.'
+        dibujo: 🚜 🌱
+      - de: vega
+        texto: 'Y hay animales que también usan las estrellas. Muchos pájaros que viajan de noche se orientan con ellas.'
+        dibujo: 🐦 🌌
+      - de: santiago
+        texto: 'Incluso unos escarabajos que hacen bolas de estiércol usan la Vía Láctea para andar en línea recta. En serio: se ha comprobado.'
+        dibujo: 🪲 🌌
+      - de: hugo
+        texto: 'Un truco: los planetas no parpadean como las estrellas. Si ves un punto muy brillante y fijo, seguramente sea Venus o Júpiter.'
+        dibujo: 🟡 ✨
+
+  - tipo: elegir
+    enunciado: ¿Qué sabían los egipcios cuando volvía a salir la estrella Sirio?
+    dibujo: 🏺 ⭐
+    correcta: 🌊 Que iba a crecer el río Nilo
+    incorrectas:
+      - texto: ❄️ Que iba a nevar
+        feedback: En Egipto casi nunca nieva. Sabían que iba a crecer el río Nilo.
+      - texto: 🎂 Que era su cumpleaños
+        feedback: ¡Ja, ja! No. Sabían que iba a crecer el río Nilo.
+
+  - tipo: elegir
+    enunciado: ¿Qué animal usa la Vía Láctea para andar recto?
+    dibujo: 🌌
+    correcta: 🪲 Un escarabajo
+    incorrectas:
+      - texto: 🐘 El elefante
+        feedback: Parece increíble, pero es un escarabajo, el que hace bolas de estiércol.
+      - texto: 🐟 La sardina
+        feedback: Parece increíble, pero es un escarabajo, el que hace bolas de estiércol.

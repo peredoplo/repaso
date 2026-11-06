@@ -1,0 +1,93 @@
+titulo: Venus, un horno gigante
+subtitulo: Lo que pasa con demasiada manta
+emoji: 🔥
+ejercicios:
+  - tipo: chat
+    titulo: El planeta más caliente
+    mensajes:
+      - de: vega
+        texto: 'Venus está más lejos del Sol que Mercurio, y aun así es el planeta más caliente de todos.'
+        dibujo: 🟡 🌡️
+      - de: santiago
+        texto: 'Su suelo está a unos cuatrocientos sesenta y cinco grados, de día y de noche, en el polo y en el ecuador. Siempre.'
+        dibujo: 🔥
+      - de: hugo
+        texto: 'El plomo se derrite allí. Un horno de cocina, al máximo, llega a unos doscientos cincuenta grados. Venus casi lo dobla.'
+        dibujo: 🍕 🔥
+      - de: valentina
+        texto: 'La culpa es de su atmósfera, muy gruesa, casi toda de dióxido de carbono. Es el gas de las burbujas de los refrescos.'
+        dibujo: 🥤
+      - de: vega
+        texto: 'Ese gas deja entrar la luz, pero no deja salir el calor. Es el efecto invernadero, exagerado.'
+        dibujo: 🏠 🛌
+      - de: santiago
+        texto: 'Mercurio no tiene manta. La Tierra tiene una justa. Venus tiene un montón de mantas, en verano y sin poder quitárselas.'
+        dibujo: 🛌 🛌 🛌
+      - de: hugo
+        texto: 'Y sus nubes no son de agua: son de ácido sulfúrico, un líquido que quema. Además, huele a azufre, a huevos podridos.'
+        dibujo: ☁️ 🥚
+      - de: valentina
+        texto: 'La presión es brutal: noventa veces la de aquí. Es como estar a novecientos metros bajo el mar. Te aplastaría.'
+        dibujo: 🗜️ 🌊
+
+  - tipo: elegir
+    enunciado: ¿Cuál es el planeta más caliente?
+    dibujo: 🌡️
+    correcta: 🟡 Venus
+    incorrectas:
+      - texto: ⚪ Mercurio
+        feedback: Parece que sí, por estar más cerca del Sol. Pero el más caliente es Venus, por su atmósfera.
+      - texto: 🔴 Marte
+        feedback: Marte parece de fuego, pero es muy frío. El más caliente es Venus.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Venus está más caliente que Mercurio, si está más lejos del Sol?
+    dibujo: 🟡 ⚪
+    correcta: 🛌 Porque su atmósfera guarda el calor
+    incorrectas:
+      - texto: 🌋 Porque es un volcán entero
+        feedback: Tiene volcanes, pero no es por eso. Su atmósfera gruesa no deja salir el calor.
+      - texto: ☀️ Porque tiene su propio sol
+        feedback: Solo hay un Sol. Es que su atmósfera gruesa no deja salir el calor.
+
+  - tipo: chat
+    titulo: Gemelo de la Tierra, pero malvado
+    mensajes:
+      - de: santiago
+        texto: 'Venus tiene casi el mismo tamaño que la Tierra. Por eso lo llaman el gemelo de la Tierra.'
+        dibujo: 🟡 🌍
+      - de: vega
+        texto: 'Los científicos creen que, hace mucho, Venus pudo tener mares. Pero estaba más cerca del Sol y el agua se empezó a evaporar.'
+        dibujo: 🌊 💨
+      - de: hugo
+        texto: 'El vapor de agua también guarda calor. Cuanto más calor, más vapor; y cuanto más vapor, más calor. Un círculo sin freno.'
+        dibujo: 🔁 🌡️
+      - de: valentina
+        texto: 'Los mares desaparecieron. Por eso los científicos estudian Venus: para entender qué le puede pasar a un planeta.'
+        dibujo: 🔬
+      - de: vega
+        texto: 'Eso sí, muy arriba, a unos cincuenta kilómetros del suelo, la temperatura y la presión se parecen a las de aquí.'
+        dibujo: ☁️ 🎈
+      - de: santiago
+        texto: 'Por eso hay quien imagina futuras bases flotando en globos sobre las nubes de Venus. Quizá algún día.'
+        dibujo: 🎈 🏕️
+
+  - tipo: elegir
+    enunciado: ¿Por qué llaman a Venus el gemelo de la Tierra?
+    dibujo: 🟡 🌍
+    correcta: 📏 Porque es casi igual de grande
+    incorrectas:
+      - texto: 🌳 Porque tiene bosques
+        feedback: No tiene bosques. Lo llaman gemelo porque es casi igual de grande.
+      - texto: 🌊 Porque tiene mares
+        feedback: Hoy no los tiene. Lo llaman gemelo porque es casi igual de grande.
+
+  - tipo: elegir
+    enunciado: ¿De qué están hechas las nubes de Venus?
+    dibujo: ☁️ 🟡
+    correcta: 🧪 De ácido
+    incorrectas:
+      - texto: 💧 De agua
+        feedback: Las de la Tierra sí. Las de Venus son de ácido sulfúrico, que quema.
+      - texto: 🍭 De algodón de azúcar
+        feedback: ¡Ja, ja! No. Son de ácido sulfúrico, que quema.

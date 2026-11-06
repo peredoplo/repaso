@@ -1,0 +1,96 @@
+titulo: Cómo vuela un cohete
+subtitulo: Acción, reacción y fases
+emoji: 🚀
+ejercicios:
+  - tipo: chat
+    titulo: Como un globo que se suelta
+    mensajes:
+      - de: santiago
+        texto: 'Si inflas un globo y lo sueltas, sale disparado. El aire va hacia atrás, y el globo va hacia delante. Un cohete hace lo mismo.'
+        dibujo: 🎈 🚀
+      - de: vega
+        texto: 'Es una ley de la física, de Isaac Newton: a toda acción, una reacción igual y contraria. Los gases salen hacia abajo, y el cohete sube.'
+        dibujo: ⬇️ ⬆️
+      - de: hugo
+        texto: 'El cohete quema su combustible con mucha fuerza, y los gases salen a una velocidad tremenda. En el espacio funciona igual, sin aire al que agarrarse.'
+        dibujo: 🔥 💨
+      - de: valentina
+        texto: 'Pero como no hay aire, tiene que llevar también oxígeno, para poder quemar el combustible. Casi todo lo que pesa un cohete es eso.'
+        dibujo: ⛽ ⚖️
+      - de: santiago
+        texto: 'Por eso va por fases, o etapas. Es un cohete encima de otro. Cuando una fase gasta su combustible, se suelta, y el cohete pesa menos.'
+        dibujo: 🧱 ⬇️
+      - de: vega
+        texto: 'Para dar vueltas a la Tierra sin caer, hay que llegar a unos veintiocho mil kilómetros por hora. Eso son ocho kilómetros cada segundo.'
+        dibujo: 💨 ⏱️
+      - de: hugo
+        texto: 'El gran combustible no es solo gasolina. Muchos usan hidrógeno y oxígeno líquidos, muy fríos. Al arder, su humo es casi solo vapor de agua.'
+        dibujo: 💧 🧊
+
+  - tipo: elegir
+    enunciado: ¿Qué hace subir a un cohete?
+    dibujo: 🚀
+    correcta: ⬇️ Los gases que empuja hacia abajo
+    incorrectas:
+      - texto: 🪽 Sus alas
+        feedback: No vuela con alas. Echa gases hacia abajo, y por eso sube, como el globo que se suelta.
+      - texto: 🧲 Un imán del espacio
+        feedback: No. Echa gases hacia abajo, y por eso sube, como el globo que se suelta.
+
+  - tipo: elegir
+    enunciado: ¿Por qué un cohete tiene que llevar oxígeno?
+    dibujo: 🚀 ⛽
+    correcta: 🔥 Porque sin aire no se puede quemar
+    incorrectas:
+      - texto: 😮‍💨 Para que respire el motor
+        feedback: Casi. Para arder hace falta oxígeno, y en el espacio no lo hay.
+      - texto: 🎈 Para inflar globos
+        feedback: ¡Ja, ja! No. Para arder hace falta oxígeno, y en el espacio no lo hay.
+
+  - tipo: elegir
+    enunciado: ¿Por qué un cohete se va soltando trozos?
+    dibujo: 🚀 🧱
+    correcta: ⚖️ Para pesar menos
+    incorrectas:
+      - texto: 🛠️ Porque se rompe
+        feedback: No se rompe. Suelta las partes vacías a propósito, para pesar menos.
+      - texto: 🎁 Para dejar regalos
+        feedback: ¡Ja, ja! No. Suelta las partes vacías a propósito, para pesar menos.
+
+  - tipo: chat
+    titulo: Los pioneros de los cohetes
+    mensajes:
+      - de: valentina
+        texto: 'Los chinos inventaron los primeros cohetes, con pólvora, hace unos ochocientos años.'
+        dibujo: 🎆
+      - de: hugo
+        texto: 'Hace más de cien años, Konstantín Tsiolkovski, un profesor ruso casi sordo, calculó cómo llegar al espacio. Nunca vio un cohete de verdad.'
+        dibujo: 📐 🧮
+      - de: santiago
+        texto: 'En 1926, Robert Goddard, de Estados Unidos, lanzó el primer cohete de combustible líquido. Subió doce metros y le pareció un éxito. Lo era.'
+        dibujo: 🚀
+      - de: vega
+        texto: 'El gran salto fue el cuatro de octubre de 1957: el satélite Sputnik fue lo primero hecho por personas que dio vueltas a la Tierra.'
+        dibujo: 🛰️
+      - de: valentina
+        texto: 'Hoy los cohetes se pueden reutilizar. Algunos, como el Falcon nueve, vuelven solos y aterrizan de pie. Eso ahorra muchísimo dinero.'
+        dibujo: ♻️ 🚀
+      - de: hugo
+        texto: 'Los grandes lanzamientos se hacen desde sitios cerca del ecuador, porque la Tierra gira más rápido ahí y da un empujón extra.'
+        dibujo: 🌍 🌀
+      - de: santiago
+        texto: 'En España, una empresa de Elche, PLD Space, lanzó en 2023 el Miura uno, un cohete pequeño hecho aquí.'
+        dibujo: 🚀 ⭐
+      - de: vega
+        texto: 'Es una aventura que empezó con cuentas en un papel, y ha llegado hasta Neptuno. Y lo siguiente quizá lo diseñe alguien de tu cole.'
+        dibujo: ✏️ 🚀
+
+  - tipo: elegir
+    enunciado: ¿Qué fue lo primero hecho por personas que dio vueltas a la Tierra?
+    dibujo: 🌍
+    correcta: 🛰️ El satélite Sputnik
+    incorrectas:
+      - texto: 🧑‍🚀 Yuri Gagarin
+        feedback: Gagarin fue la primera persona, en 1961. Antes, en 1957, fue el satélite Sputnik.
+      - texto: 🚙 El rover lunar
+        feedback: Ese estuvo en la Luna. Lo primero fue el satélite Sputnik, en 1957.

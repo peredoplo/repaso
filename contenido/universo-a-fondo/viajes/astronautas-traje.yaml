@@ -1,0 +1,96 @@
+titulo: El traje espacial
+subtitulo: Una nave a tu medida
+emoji: 👨‍🚀
+ejercicios:
+  - tipo: chat
+    titulo: Una nave en forma de persona
+    mensajes:
+      - de: santiago
+        texto: 'Un traje espacial no es ropa. Es una pequeña nave con forma de persona. Sin él, en el espacio no durarías ni dos minutos.'
+        dibujo: 🧑‍🚀 🛰️
+      - de: hugo
+        texto: 'Fuera no hay aire que respirar, y tampoco presión. Sin presión, la sangre y el cuerpo no funcionan.'
+        dibujo: 🚫 💨
+      - de: vega
+        texto: 'Al sol, la temperatura sube a más de cien grados. A la sombra, baja a más de cien bajo cero. El traje protege de los dos.'
+        dibujo: 🔥 🧊
+      - de: valentina
+        texto: 'Lleva unas catorce capas de tela especial, para frenar el calor, el frío y los granitos de polvo que van más rápido que una bala.'
+        dibujo: 🧅 🛡️
+      - de: santiago
+        texto: 'En la mochila lleva oxígeno, ventilador y radio. Por dentro van unos tubitos de agua fría, que refrescan el cuerpo como una nevera.'
+        dibujo: 🎒 💧
+      - de: hugo
+        texto: 'El casco tiene un visor con una capa finísima de oro, para frenar los rayos del Sol. Y dentro hay una bolsa de agua con pajita.'
+        dibujo: 🪖 🟡
+      - de: vega
+        texto: 'En la Tierra, un traje de estos pesa más de cien kilos. En el espacio no pesa, pero cuesta moverlo: es como una armadura inflada.'
+        dibujo: ⚖️ 🤖
+      - de: valentina
+        texto: 'Las salidas duran hasta unas ocho horas. Y como no hay baño, llevan debajo un pañal para mayores.'
+        dibujo: 🚽 ❌
+
+  - tipo: elegir
+    enunciado: ¿Por qué el traje espacial es como una nave?
+    dibujo: 🧑‍🚀
+    correcta: 🫁 Porque da aire y protege del espacio
+    incorrectas:
+      - texto: 🚀 Porque tiene motores gigantes
+        feedback: No tiene. Es como una nave porque da aire, presión y protección.
+      - texto: 🎽 Porque es de moda
+        feedback: ¡Ja, ja! No. Es como una nave porque da aire, presión y protección.
+
+  - tipo: elegir
+    enunciado: ¿Para qué sirve el oro del casco?
+    dibujo: 🪖 🟡
+    correcta: ☀️ Para frenar los rayos del Sol
+    incorrectas:
+      - texto: 👑 Para parecer un rey
+        feedback: ¡Ja, ja! No. La capa de oro frena los rayos del Sol.
+      - texto: 🔦 Para ver de noche
+        feedback: No. La capa de oro frena los rayos del Sol.
+
+  - tipo: elegir
+    enunciado: ¿Qué llevan por dentro del traje para no pasar calor?
+    dibujo: 💧 🧑‍🚀
+    correcta: 💧 Tubitos de agua fría
+    incorrectas:
+      - texto: 🪭 Un abanico
+        feedback: ¡Ja, ja! No. Llevan tubitos de agua fría por dentro.
+      - texto: 🧊 Cubitos de hielo
+        feedback: No. Llevan tubitos de agua fría por dentro.
+
+  - tipo: chat
+    titulo: Paseos por el espacio
+    mensajes:
+      - de: hugo
+        texto: 'Salir de la nave se llama paseo espacial. Se hace atado con cables, para arreglar cosas por fuera.'
+        dibujo: 🧗 🛰️
+      - de: valentina
+        texto: 'El primero fue Alexéi Leonov, de la Unión Soviética, en 1965. Lo pasó fatal: el traje se le hinchó y casi no pudo volver a entrar.'
+        dibujo: 🎈 😱
+      - de: santiago
+        texto: 'Tuvo que soltar parte del aire del traje, con mucho riesgo. Después fue también un gran pintor, y pintó el espacio.'
+        dibujo: 🎨 🌌
+      - de: vega
+        texto: 'En 1984, Svetlana Savítskaya fue la primera mujer en salir al espacio. Ese mismo año, Bruce McCandless flotó sin cable, con una mochila con motores.'
+        dibujo: 👩‍🚀 🎒
+      - de: hugo
+        texto: 'Si alguien se suelta, hoy lleva un pequeño motor de emergencia, para volver. Se usa con un mando. Por suerte, nunca hizo falta.'
+        dibujo: 🕹️ 🆘
+      - de: valentina
+        texto: 'En el espacio no se oye nada. Dentro del casco solo se oye la respiración, y la radio.'
+        dibujo: 🔇
+      - de: santiago
+        texto: 'A veces la gente que sale se queda mirando la Tierra, y se emociona. Ver lo pequeña y lo frágil que es les cambia para siempre.'
+        dibujo: 🌍 🥹
+
+  - tipo: elegir
+    enunciado: ¿Quién hizo el primer paseo espacial?
+    dibujo: 🧗 🛰️
+    correcta: 🧑‍🚀 Alexéi Leonov
+    incorrectas:
+      - texto: 👣 Neil Armstrong
+        feedback: Armstrong pisó la Luna. El primer paseo espacial lo hizo Alexéi Leonov, en 1965.
+      - texto: 🔭 Galileo
+        feedback: Galileo vivió mucho antes. El primer paseo espacial lo hizo Alexéi Leonov, en 1965.

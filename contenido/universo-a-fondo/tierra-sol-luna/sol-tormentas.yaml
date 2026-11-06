@@ -1,0 +1,103 @@
+titulo: Las tormentas del Sol
+subtitulo: Manchas, llamaradas y viento
+emoji: 🌞
+ejercicios:
+  - tipo: chat
+    titulo: Un Sol que nunca está quieto
+    mensajes:
+      - de: hugo
+        texto: 'El Sol parece siempre igual, pero tiene muchísima actividad. Su superficie burbujea como una olla hirviendo.'
+        dibujo: ☀️ 🍲
+      - de: valentina
+        texto: 'A veces le salen manchas oscuras, las manchas solares. Algunas son más grandes que la Tierra.'
+        dibujo: ⚫ 🌍
+      - de: santiago
+        texto: 'No están apagadas. Solo son un poco menos calientes que lo de alrededor. Por eso, a nuestro lado, parecen negras.'
+        dibujo: 🌡️
+      - de: vega
+        texto: 'Galileo las estudió hace más de cuatrocientos años y vio que se movían. Así descubrió que el Sol también gira sobre sí mismo.'
+        dibujo: 🔭
+      - de: hugo
+        texto: 'El Sol da una vuelta en casi un mes, pero no todo a la vez: por el centro gira más deprisa que cerca de los polos. Es lo que tiene ser de gas.'
+        dibujo: 🌀
+      - de: valentina
+        texto: 'Cada once años, más o menos, el Sol pasa de tranquilo a muy activo y vuelve otra vez. Es el ciclo solar.'
+        dibujo: 🔁 📅
+      - de: santiago
+        texto: 'En el Sol también hay protuberancias: enormes arcos de gas que suben y bajan, tan altos que cabrían varias Tierras debajo.'
+        dibujo: 🌈 🔥
+
+  - tipo: elegir
+    enunciado: ¿Por qué las manchas solares se ven oscuras?
+    dibujo: ⚫ ☀️
+    correcta: 🌡️ Porque están menos calientes
+    incorrectas:
+      - texto: 💡 Porque están apagadas
+        feedback: No están apagadas. Están un poco menos calientes que lo de alrededor, y por eso parecen oscuras.
+      - texto: 🐦 Porque son pájaros
+        feedback: ¡Ja, ja! No. Son zonas un poco menos calientes, y por eso parecen oscuras.
+
+  - tipo: chat
+    titulo: Cuando el Sol estornuda
+    mensajes:
+      - de: vega
+        texto: 'A veces, cerca de las manchas, hay una explosión de luz gigantesca: una llamarada solar.'
+        dibujo: 💥 ☀️
+      - de: santiago
+        texto: 'Y el Sol también lanza al espacio nubes enormes de partículas. Además, siempre sale de él un chorro suave de partículas: el viento solar.'
+        dibujo: 💨
+      - de: valentina
+        texto: 'Cuando una de esas nubes llega a la Tierra, se forma una tormenta solar. Tarda de uno a tres días en llegar.'
+        dibujo: ☀️ ➡️ 🌍
+      - de: hugo
+        texto: 'A nosotros no nos hace daño: nos protegen la atmósfera y el campo magnético. Pero las auroras se ven mucho más, a veces hasta en España.'
+        dibujo: 🛡️ 🌌
+      - de: vega
+        texto: 'Las tormentas fuertes sí pueden estropear satélites, confundir el GPS y hasta cortar la luz. En 1989, una dejó sin electricidad a Quebec, en Canadá, durante horas.'
+        dibujo: 🛰️ 🔌
+      - de: santiago
+        texto: 'Por eso hay científicos que vigilan el Sol todos los días. Son los meteorólogos del espacio.'
+        dibujo: 🔭 📡
+      - de: valentina
+        texto: 'En 2024, la sonda Parker pasó por dentro de la capa más externa del Sol, la corona. ¡Es lo más cerca que ha llegado nada hecho por personas!'
+        dibujo: 🛸 ☀️
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama el chorro de partículas que sale siempre del Sol?
+    dibujo: ☀️ 💨
+    correcta: 💨 Viento solar
+    incorrectas:
+      - texto: 🌪️ Tornado
+        feedback: Los tornados son de la Tierra. El chorro de partículas del Sol es el viento solar.
+      - texto: 🌧️ Lluvia de sol
+        feedback: Casi, ¡pero no! Se llama viento solar.
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estas cosas puede estropear una tormenta solar fuerte?
+    dibujo: 💥 🌍
+    correcta: 🛰️ Los satélites
+    incorrectas:
+      - texto: 🍎 Los manzanos
+        feedback: A los árboles no les pasa nada. Las tormentas solares fuertes afectan a los satélites y a la electricidad.
+      - texto: 🐟 Los peces
+        feedback: A los peces no les pasa nada. Las tormentas solares fuertes afectan a los satélites y a la electricidad.
+
+  - tipo: elegir
+    enunciado: ¿Cada cuántos años, más o menos, se repite el ciclo del Sol?
+    dibujo: 🔁
+    correcta: '11'
+    incorrectas:
+      - texto: '2'
+        feedback: Es bastante más. El ciclo dura unos once años.
+      - texto: '100'
+        feedback: Es bastante menos. El ciclo dura unos once años.
+
+  - tipo: elegir
+    enunciado: ¿Qué nos protege de las tormentas solares?
+    dibujo: 🌍 ☀️
+    correcta: 🛡️ La atmósfera y el campo magnético
+    incorrectas:
+      - texto: ☁️ Solo las nubes
+        feedback: Las nubes no sirven. Nos protegen la atmósfera y el campo magnético.
+      - texto: 🌙 La Luna
+        feedback: La Luna no nos tapa. Nos protegen la atmósfera y el campo magnético.

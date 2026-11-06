@@ -1,0 +1,96 @@
+titulo: El agua de Marte
+subtitulo: ¿Hubo vida allí?
+emoji: 💧
+ejercicios:
+  - tipo: chat
+    titulo: Un planeta que fue azul
+    mensajes:
+      - de: vega
+        texto: 'Hoy Marte es un desierto helado. Pero hace más de tres mil millones de años tuvo ríos, lagos y quizás un océano.'
+        dibujo: 🏜️ 🌊
+      - de: hugo
+        texto: '¿Cómo se sabe? Hay cauces secos de ríos, deltas donde desembocaban y piedras redondeadas por el agua.'
+        dibujo: 🪨 🏞️
+      - de: valentina
+        texto: 'También hay minerales que solo se forman con agua, como las arcillas. Son pistas guardadas en las rocas.'
+        dibujo: 🔎
+      - de: santiago
+        texto: '¿Y qué pasó? Marte es pequeño y su interior se enfrió pronto. Al enfriarse, perdió su campo magnético, su escudo.'
+        dibujo: 🧲 ❌
+      - de: vega
+        texto: 'Sin escudo, el viento solar fue arrancando su atmósfera poco a poco. Sin atmósfera, el agua se congeló o se escapó al espacio.'
+        dibujo: ☀️ 💨
+      - de: hugo
+        texto: 'Hoy, si pusieras un vaso de agua en Marte, herviría y se congelaría casi a la vez, por la poca presión.'
+        dibujo: 🥛 🫧
+      - de: valentina
+        texto: 'Aún queda hielo en Marte. Sus polos son blancos, de hielo de agua y de dióxido de carbono congelado, que es hielo seco. Y hay más bajo el suelo.'
+        dibujo: 🧊 ⚪
+
+  - tipo: ordenar
+    enunciado: Ordena qué le pasó a Marte.
+    piezas: 🏜️ Desierto / 🧲 Pierde el escudo / 🌊 Con agua / 💨 Se va la atmósfera
+    solucion: 🌊 Con agua 🧲 Pierde el escudo 💨 Se va la atmósfera 🏜️ Desierto
+    explicacion: Primero tenía agua. Después perdió su campo magnético, el viento solar se llevó la atmósfera, y quedó un desierto.
+
+  - tipo: elegir
+    enunciado: ¿Dónde hay agua hoy en Marte?
+    dibujo: 🔴 💧
+    correcta: 🧊 En forma de hielo
+    incorrectas:
+      - texto: 🌊 En mares
+        feedback: Los mares se fueron hace mucho. Hoy queda hielo, en los polos y bajo el suelo.
+      - texto: 🚰 En fuentes
+        feedback: ¡Ja, ja! No hay fuentes. Hoy queda hielo, en los polos y bajo el suelo.
+
+  - tipo: chat
+    titulo: La gran pregunta
+    mensajes:
+      - de: santiago
+        texto: 'Si en Marte hubo agua durante millones de años, ¿pudo haber vida? No hablamos de marcianos verdes, sino de seres diminutos, como las bacterias.'
+        dibujo: 👽 ❌ 🦠
+      - de: vega
+        texto: 'En la Tierra, la vida empezó con bacterias, en el agua. Por eso los científicos buscan restos de seres diminutos en las rocas de Marte, en los antiguos lagos.'
+        dibujo: 🔬 🪨
+      - de: hugo
+        texto: 'Los restos de seres antiguos se llaman fósiles. Por ahora no se ha encontrado ninguno en Marte. Hay algunas pistas curiosas, pero nada seguro.'
+        dibujo: 🦴 ❓
+      - de: valentina
+        texto: 'Hace poco más de cien años, un astrónomo creyó ver canales hechos por marcianos. Eran un error del ojo, y de los telescopios de entonces.'
+        dibujo: 🔭
+      - de: santiago
+        texto: 'Y si hay vida hoy, sería bajo el suelo. Arriba hay demasiada radiación, unos rayos del Sol y del espacio que dañan a los seres vivos.'
+        dibujo: ☢️
+      - de: vega
+        texto: 'Por eso sería tan importante encontrar vida allí: querría decir que no estamos solos en el universo.'
+        dibujo: 🌌 🤝
+
+  - tipo: elegir
+    enunciado: ¿Cómo sería la vida que se busca en Marte?
+    dibujo: 🔎
+    correcta: 🦠 Seres diminutos
+    incorrectas:
+      - texto: 👽 Marcianos verdes
+        feedback: Eso es de las películas. Se buscan seres diminutos, como las bacterias.
+      - texto: 🐘 Animales grandes
+        feedback: No. Se buscan seres diminutos, como las bacterias.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman los restos de seres vivos antiguos?
+    dibujo: 🪨
+    correcta: 🦴 Fósiles
+    incorrectas:
+      - texto: ☄️ Meteoritos
+        feedback: Los meteoritos son rocas del espacio. Los restos de seres antiguos son los fósiles.
+      - texto: 🧩 Placas
+        feedback: Las placas son trozos de corteza. Los restos de seres antiguos son los fósiles.
+
+  - tipo: elegir
+    enunciado: ¿Se ha encontrado vida en Marte?
+    dibujo: 🔴 👀
+    correcta: 🔍 Todavía no, se sigue buscando
+    incorrectas:
+      - texto: 👽 Sí, marcianos
+        feedback: No. Se sigue buscando. Por ahora, no hay pruebas seguras.
+      - texto: 🐕 Sí, perros
+        feedback: ¡Ja, ja! No. Se sigue buscando. Por ahora, no hay pruebas seguras.

@@ -1,0 +1,97 @@
+titulo: Construir una casa en órbita
+subtitulo: El mayor objeto en el espacio
+emoji: 🏗️
+ejercicios:
+  - tipo: chat
+    titulo: Un Lego gigante
+    mensajes:
+      - de: valentina
+        texto: 'La Estación Espacial Internacional es lo más grande que hemos puesto en el espacio. Es casi tan larga como un campo de fútbol.'
+        dibujo: 🏠 ⚽
+      - de: hugo
+        texto: 'Pesa unas cuatrocientas veinte toneladas, como unos trescientos coches. Por dentro tiene tanto espacio como un avión grande de pasajeros.'
+        dibujo: 🚗 ✈️
+      - de: santiago
+        texto: 'No cabía en ningún cohete. Por eso se construyó por piezas: la primera subió en 1998. Se tardaron trece años y más de cuarenta viajes.'
+        dibujo: 🧱 🚀
+      - de: vega
+        texto: 'Las piezas se llaman módulos, y se unieron en el espacio, con astronautas por fuera y un gran brazo robótico canadiense.'
+        dibujo: 🦾 🧑‍🚀
+      - de: valentina
+        texto: 'La hicieron juntos Estados Unidos, Rusia, Europa, Japón y Canadá, aunque hubieran sido rivales. Es uno de los mayores proyectos de paz del mundo.'
+        dibujo: 🤝 🕊️
+      - de: hugo
+        texto: 'Desde noviembre del año 2000 siempre ha vivido gente allí. Hay personas que no han conocido un mundo sin nadie en el espacio.'
+        dibujo: 📅 🧑‍🚀
+      - de: santiago
+        texto: 'Su energía sale de ocho alas de paneles solares enormes, que giran para mirar siempre al Sol.'
+        dibujo: ☀️ 🔋
+      - de: vega
+        texto: 'Tiene una ventana con siete cristales, la Cúpula. Desde ahí, los astronautas ven la Tierra y las auroras, y hacen fotos.'
+        dibujo: 🪟 🌍
+
+  - tipo: elegir
+    enunciado: ¿Cómo se construyó la Estación Espacial?
+    dibujo: 🏠 🧱
+    correcta: 🧱 Por piezas, en el espacio
+    incorrectas:
+      - texto: 🚀 Entera, en un cohete
+        feedback: No cabía en ningún cohete. Subió por piezas y se unió allí arriba.
+      - texto: 🪄 Con magia
+        feedback: ¡Ja, ja! No. Subió por piezas y se unió allí arriba.
+
+  - tipo: elegir
+    enunciado: ¿Quiénes la construyeron?
+    dibujo: 🤝
+    correcta: 🌍 Muchos países juntos
+    incorrectas:
+      - texto: 🗽 Solo Estados Unidos
+        feedback: Puso mucho, pero no fue solo. La hicieron Estados Unidos, Rusia, Europa, Japón y Canadá.
+      - texto: 🧑‍🏫 Unos profesores
+        feedback: ¡Ja, ja! No. La hicieron Estados Unidos, Rusia, Europa, Japón y Canadá.
+
+  - tipo: chat
+    titulo: A toda velocidad
+    mensajes:
+      - de: hugo
+        texto: 'La Estación va a unos cuatrocientos kilómetros de altura. Es como de Madrid a Valencia, pero hacia arriba.'
+        dibujo: 📏 ⬆️
+      - de: santiago
+        texto: 'Viaja a unos veintiocho mil kilómetros por hora. Da una vuelta a la Tierra en hora y media, y eso son dieciséis vueltas al día.'
+        dibujo: 💨 🌍
+      - de: valentina
+        texto: 'A esa velocidad, se cruza el Atlántico en un cuarto de hora.'
+        dibujo: 🌊 ⏱️
+      - de: vega
+        texto: 'Allí arriba aún queda un poquito de aire, que la va frenando y hace que baje. Por eso, de vez en cuando encienden motores para subirla.'
+        dibujo: 🔼 🔥
+      - de: hugo
+        texto: 'Se puede ver desde casa sin telescopio. Parece una estrella muy brillante que cruza el cielo en unos minutos, y sin parpadear.'
+        dibujo: ✨ 🏠
+      - de: santiago
+        texto: 'Hay webs de la NASA y de la Agencia Espacial Europea que dicen cuándo pasa por encima de ti.'
+        dibujo: 🌐 ⏰
+      - de: valentina
+        texto: 'Se planea dejar de usarla hacia 2030 o poco después. La harán bajar para que se queme en la atmósfera y caiga en una zona vacía del océano.'
+        dibujo: 🔥 🌊
+      - de: vega
+        texto: 'Después se espera que la sustituyan estaciones nuevas, algunas de empresas. Y otras, cerca de la Luna, quizá.'
+        dibujo: 🏗️ 🌕
+
+  - tipo: elegir
+    enunciado: ¿Cada cuánto da una vuelta a la Tierra la Estación Espacial?
+    dibujo: 🌍 🏠
+    correcta: ⏱️ Cada hora y media
+    incorrectas:
+      - texto: 📅 Cada año
+        feedback: Eso tarda la Tierra alrededor del Sol. La Estación tarda hora y media.
+      - texto: ⏰ Cada día
+        feedback: Va mucho más rápido. Da dieciséis vueltas al día, una cada hora y media.
+
+  - tipo: elegir
+    enunciado: ¿Se puede ver la Estación Espacial desde casa?
+    dibujo: 🏠 ✨
+    correcta: 👍 Sí, como una estrella que cruza el cielo
+    incorrectas:
+      - texto: 👎 No, nunca
+        feedback: Sí se puede. Parece una estrella brillante que cruza el cielo sin parpadear.

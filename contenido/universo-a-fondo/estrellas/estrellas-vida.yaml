@@ -1,0 +1,102 @@
+titulo: La vida de las estrellas
+subtitulo: Nacen, viven y explotan
+emoji: 💥
+ejercicios:
+  - tipo: chat
+    titulo: Cuanto más grande, antes acaba
+    mensajes:
+      - de: hugo
+        texto: 'Las estrellas nacen, viven y mueren. Pero su vida dura millones o miles de millones de años.'
+        dibujo: 🌱 ⏳
+      - de: valentina
+        texto: 'Lo que decide su vida es cuánto gas tienen, su masa. Las pequeñas gastan muy poco a poco, y las grandes, a toda prisa.'
+        dibujo: ⚖️ ⛽
+      - de: santiago
+        texto: 'Las enanas rojas, las más pequeñas, viven billones de años. Ninguna ha muerto todavía: el universo aún no tiene edad suficiente.'
+        dibujo: 🔴 ⏳
+      - de: vega
+        texto: 'Las estrellas gigantes azules, en cambio, viven solo unos millones de años. Brillan muchísimo y se acaban pronto.'
+        dibujo: 🔵 ⚡
+      - de: hugo
+        texto: 'Las medianas, como el Sol, acaban hinchándose como gigantes rojas, y se apagan poco a poco como enanas blancas.'
+        dibujo: 🔴 ⚪
+      - de: valentina
+        texto: 'Pero las muy grandes tienen un final espectacular: una explosión, la supernova.'
+        dibujo: 💥
+      - de: santiago
+        texto: 'Durante unas semanas, una supernova puede brillar más que toda una galaxia.'
+        dibujo: ✨ 🌌
+      - de: vega
+        texto: 'En 1054, unos astrónomos chinos vieron una, tan brillante que se veía de día. Sus restos forman hoy la nebulosa del Cangrejo.'
+        dibujo: 🦀 📜
+
+  - tipo: elegir
+    enunciado: ¿Qué estrellas viven más tiempo?
+    dibujo: ⏳ ⭐
+    correcta: 🔴 Las pequeñas, enanas rojas
+    incorrectas:
+      - texto: 🔵 Las gigantes azules
+        feedback: Parece que sí, ¡pero no! Gastan a toda prisa y viven poco. Las que más viven son las enanas rojas.
+      - texto: ☀️ El Sol
+        feedback: El Sol vive mucho, pero las enanas rojas gastan todavía más despacio y viven mucho más.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama la gran explosión de una estrella enorme?
+    dibujo: 💥 ⭐
+    correcta: 💥 Supernova
+    incorrectas:
+      - texto: 🌋 Volcán
+        feedback: Los volcanes están en los planetas. La explosión de una estrella es una supernova.
+      - texto: 🌪️ Tormenta solar
+        feedback: La tormenta solar es mucho más pequeña. La gran explosión es una supernova.
+
+  - tipo: chat
+    titulo: Agujeros negros y polvo de estrellas
+    mensajes:
+      - de: valentina
+        texto: 'Después de una supernova, el centro de la estrella se aplasta. Según su tamaño, queda una estrella de neutrones o un agujero negro.'
+        dibujo: ⚫ 🗜️
+      - de: hugo
+        texto: 'Una estrella de neutrones es del tamaño de una ciudad, pero pesa más que el Sol. Una cucharilla pesaría miles de millones de toneladas.'
+        dibujo: 🏙️ 🥄
+      - de: santiago
+        texto: 'Algunas giran rapidísimo y mandan rayos como un faro. Se llaman púlsares. Una estudiante, Jocelyn Bell, los descubrió en 1967.'
+        dibujo: 🗼 💡
+      - de: vega
+        texto: 'Un agujero negro tiene una gravedad tan enorme, que ni la luz puede escapar. Por eso se ve negro. No es un agujero, sino muchísima materia apretada.'
+        dibujo: ⚫ 🌀
+      - de: valentina
+        texto: 'En 2019 se vio la primera imagen de uno. Y en el centro de nuestra galaxia hay uno gigante, llamado Sagitario A estrella.'
+        dibujo: 📷 ⚫
+      - de: hugo
+        texto: 'Y ahora, lo más bonito. El hierro de tu sangre, el calcio de tus huesos, el oxígeno que respiras: todo se fabricó dentro de estrellas.'
+        dibujo: 🩸 🦴
+      - de: santiago
+        texto: 'Las supernovas lanzaron esos átomos al espacio, y con ellos se formó la Tierra, y también tú. Eres, de verdad, polvo de estrellas.'
+        dibujo: ✨ 🧒
+
+  - tipo: ordenar
+    enunciado: Ordena la vida de una estrella muy grande, de principio a fin.
+    piezas: ⚫ Agujero negro / ☁️ Nebulosa / 💥 Supernova / 🔵 Gigante azul
+    solucion: ☁️ Nebulosa 🔵 Gigante azul 💥 Supernova ⚫ Agujero negro
+    explicacion: Nace de una nebulosa. Vive como gigante azul. Explota en una supernova. Y puede quedar un agujero negro.
+
+  - tipo: elegir
+    enunciado: ¿Por qué un agujero negro se ve negro?
+    dibujo: ⚫
+    correcta: 🌀 Porque ni la luz puede escapar
+    incorrectas:
+      - texto: 🎨 Porque está pintado
+        feedback: ¡Ja, ja! No. Su gravedad es tan enorme que ni la luz puede escapar.
+      - texto: 🌙 Porque es de noche
+        feedback: No. Su gravedad es tan enorme que ni la luz puede escapar.
+
+  - tipo: elegir
+    enunciado: ¿Dónde se fabricó el hierro de tu sangre?
+    dibujo: 🩸
+    correcta: ⭐ Dentro de una estrella
+    incorrectas:
+      - texto: 🏭 En una fábrica
+        feedback: No. Se fabricó dentro de estrellas, hace muchísimo tiempo. ¡Eres polvo de estrellas!
+      - texto: 🥕 En una zanahoria
+        feedback: Comemos hierro, pero se fabricó dentro de estrellas, hace muchísimo tiempo.

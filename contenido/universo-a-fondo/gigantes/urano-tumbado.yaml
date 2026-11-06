@@ -1,0 +1,96 @@
+titulo: Urano, el planeta tumbado
+subtitulo: Rodando alrededor del Sol
+emoji: 🛌
+ejercicios:
+  - tipo: chat
+    titulo: Un planeta de lado
+    mensajes:
+      - de: valentina
+        texto: 'Casi todos los planetas giran como peonzas, un poco inclinados. Urano gira tumbado de lado. Va rodando, como una pelota.'
+        dibujo: 🔵 ⚽
+      - de: hugo
+        texto: 'Su eje está inclinado casi noventa y ocho grados. Es decir, más que completamente tumbado.'
+        dibujo: 📐
+      - de: santiago
+        texto: 'Se cree que hace muchísimo tiempo un cuerpo más grande que la Tierra chocó con él y lo dejó así. Quizás no fue un solo choque, sino varios.'
+        dibujo: 💥
+      - de: vega
+        texto: 'Por eso sus estaciones son rarísimas. Urano tarda ochenta y cuatro años en dar la vuelta al Sol.'
+        dibujo: 🎂 📅
+      - de: valentina
+        texto: 'Durante unos cuarenta y dos años, un polo mira al Sol: allí es de día todo el tiempo. El otro polo, cuarenta y dos años de noche.'
+        dibujo: ☀️ 🌑
+      - de: hugo
+        texto: 'Si nacieras en el polo en invierno, podrías estar cuarenta años sin ver un amanecer.'
+        dibujo: 🌅 ❌
+      - de: santiago
+        texto: 'Eso sí, un giro completo dura solo unas diecisiete horas. El día y el año de Urano no tienen nada que ver con lo que conocemos.'
+        dibujo: ⏰
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene de raro Urano?
+    dibujo: 🔵
+    correcta: 🛌 Que gira tumbado de lado
+    incorrectas:
+      - texto: 🟦 Que es cuadrado
+        feedback: ¡Ja, ja! Los planetas son redondos. Urano es raro porque gira tumbado.
+      - texto: ⏹️ Que no gira
+        feedback: Sí gira, pero tumbado de lado, rodando.
+
+  - tipo: elegir
+    enunciado: ¿Por qué se cree que Urano está tumbado?
+    dibujo: 🔵 💥
+    correcta: 💥 Por un gran choque hace mucho
+    incorrectas:
+      - texto: 😴 Porque está cansado
+        feedback: ¡Ja, ja! No. Se cree que un cuerpo enorme chocó con él hace muchísimo tiempo.
+      - texto: 🌬️ Porque lo empujó el viento
+        feedback: No. Se cree que un cuerpo enorme chocó con él hace muchísimo tiempo.
+
+  - tipo: chat
+    titulo: El planeta del músico
+    mensajes:
+      - de: vega
+        texto: 'Mercurio, Venus, Marte, Júpiter y Saturno se ven sin telescopio. Se conocen desde siempre. Urano apenas se ve.'
+        dibujo: 👀
+      - de: santiago
+        texto: 'Lo descubrió William Herschel en 1781. Era músico de profesión, y por las noches construía telescopios y miraba el cielo con su hermana Caroline.'
+        dibujo: 🎵 🔭
+      - de: hugo
+        texto: 'Fue el primer planeta descubierto con telescopio. De golpe, el sistema solar se hizo el doble de grande.'
+        dibujo: 📏
+      - de: valentina
+        texto: 'Herschel quería llamarlo Estrella de Jorge, en honor al rey de Inglaterra. Por suerte, al final le pusieron Urano, el dios griego del cielo.'
+        dibujo: 👑 ⭐
+      - de: vega
+        texto: 'Caroline Herschel también fue astrónoma, y descubrió cometas. Fue una de las primeras mujeres que cobró por hacer ciencia.'
+        dibujo: ☄️ 👩‍🔬
+      - de: santiago
+        texto: 'Solo una nave ha visitado Urano: la Voyager dos, en 1986, y pasó de largo. Todo lo demás lo hemos visto desde lejos.'
+        dibujo: 🛰️
+
+  - tipo: elegir
+    enunciado: ¿Quién descubrió Urano?
+    dibujo: 🔭 🔵
+    correcta: 🎵 William Herschel, un músico
+    incorrectas:
+      - texto: 🧑‍🚀 Neil Armstrong
+        feedback: Armstrong pisó la Luna. Urano lo descubrió William Herschel, en 1781.
+      - texto: 👨‍🔬 Galileo
+        feedback: Galileo vivió antes. Urano lo descubrió William Herschel, en 1781.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas naves han visitado Urano?
+    dibujo: 🛰️
+    correcta: '1'
+    incorrectas:
+      - texto: '0'
+        feedback: Hay una que sí, la Voyager dos, en 1986.
+      - texto: '10'
+        feedback: Muchas menos. Solo una, la Voyager dos, en 1986.
+
+  - tipo: ordenar
+    enunciado: Ordena estas cosas de Urano, de la que dura menos a la que dura más.
+    piezas: 🎂 Un año / 🌅 Un día / 🌑 La noche en el polo
+    solucion: 🌅 Un día 🌑 La noche en el polo 🎂 Un año
+    explicacion: Un día dura unas diecisiete horas. La noche en el polo, cuarenta y dos años. Y un año, ochenta y cuatro.

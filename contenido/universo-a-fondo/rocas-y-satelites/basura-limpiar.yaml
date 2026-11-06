@@ -1,0 +1,96 @@
+titulo: Cómo limpiar el espacio
+subtitulo: Redes, arpones y satélites de madera
+emoji: 🧹
+ejercicios:
+  - tipo: chat
+    titulo: Barrer a veintiocho mil por hora
+    mensajes:
+      - de: santiago
+        texto: 'Limpiar el espacio es muy difícil. No se pueden coger las cosas sin más: hay que igualar su velocidad y no chocar.'
+        dibujo: 🧹 💨
+      - de: vega
+        texto: 'Es como intentar coger una moneda que gira a toda velocidad, desde otra moneda que también gira. Y sin rozarla.'
+        dibujo: 🪙 🌀
+      - de: hugo
+        texto: 'Se han probado muchas ideas. La misión RemoveDEBRIS probó en 2018 a lanzar una red y un arpón para atrapar basura. ¡Como en una pesca!'
+        dibujo: 🥅 🎣
+      - de: valentina
+        texto: 'Una empresa suiza, ClearSpace, prepara un robot con brazos que abraza el trozo y baja con él para quemarse los dos.'
+        dibujo: 🤖 🤗
+      - de: santiago
+        texto: 'Otros, como Astroscale, usan un imán para enganchar satélites que llevan una pieza preparada.'
+        dibujo: 🧲 🛰️
+      - de: vega
+        texto: 'También se estudia usar un láser desde tierra, para frenar poquito a poco los trozos pequeños, hasta que caigan.'
+        dibujo: 🔦 ⬇️
+      - de: hugo
+        texto: 'El problema es quién paga. Limpiar cuesta mucho y es muy lento. Es mejor no ensuciar, igual que en la playa.'
+        dibujo: 💶 🏖️
+
+  - tipo: elegir
+    enunciado: ¿Por qué es tan difícil recoger la basura espacial?
+    dibujo: 🧹 🛰️
+    correcta: 💨 Porque va rapidísimo
+    incorrectas:
+      - texto: 🦷 Porque muerde
+        feedback: ¡Ja, ja! No. Va rapidísimo, y hay que igualar su velocidad sin chocar.
+      - texto: 🌧️ Porque llueve allí arriba
+        feedback: En el espacio no llueve. Va rapidísimo, y hay que igualar su velocidad sin chocar.
+
+  - tipo: elegir
+    enunciado: ¿Con qué se ha probado a atrapar basura espacial?
+    dibujo: 🗑️
+    correcta: 🥅 Con una red y un arpón
+    incorrectas:
+      - texto: 🪣 Con un cubo
+        feedback: ¡Ja, ja! No. La misión RemoveDEBRIS probó una red y un arpón.
+      - texto: 🧤 Con unos guantes
+        feedback: No. La misión RemoveDEBRIS probó una red y un arpón.
+
+  - tipo: elegir
+    enunciado: ¿Qué es mejor que limpiar?
+    dibujo: 🏖️ 🗑️
+    correcta: 🚯 No ensuciar
+    incorrectas:
+      - texto: 🚀 Tirar más
+        feedback: ¡Eso lo empeoraría! Lo mejor es no ensuciar.
+      - texto: 🙈 No mirar
+        feedback: ¡Ja, ja! Eso no arregla nada. Lo mejor es no ensuciar.
+
+  - tipo: chat
+    titulo: Satélites que no ensucien
+    mensajes:
+      - de: valentina
+        texto: 'Lo más importante es no dejar más basura. Hay nuevas normas: al acabar su trabajo, un satélite debe bajar y quemarse en pocos años.'
+        dibujo: 📜 🔥
+      - de: hugo
+        texto: 'Europa se ha puesto un objetivo: basura cero para 2030. Sus misiones no deben dejar nada detrás.'
+        dibujo: 🎯 🌍
+      - de: santiago
+        texto: 'En Japón han probado algo muy curioso: LignoSat, un pequeño satélite de madera, lanzado en 2024. Al caer se quema sin dejar restos de metal.'
+        dibujo: 🪵 🛰️
+      - de: vega
+        texto: 'También se vacían los depósitos de los cohetes para que no revienten, y se diseñan naves para repararlas y rellenarlas, en lugar de tirarlas.'
+        dibujo: 🔧 ⛽
+      - de: valentina
+        texto: 'Es como en casa: reducir, reparar y reutilizar. También vale en el espacio.'
+        dibujo: ♻️ 🏠
+      - de: hugo
+        texto: 'Hay basura hasta en la Luna: casi doscientas toneladas de naves viejas, y hasta noventa y seis bolsas con basura de los astronautas del Apolo.'
+        dibujo: 🌕 🗑️
+      - de: santiago
+        texto: 'El espacio es de todos, y lo que hacemos allí, igual que aquí, deja huella. Por eso hay que cuidarlo.'
+        dibujo: 🌍 💙
+      - de: vega
+        texto: 'Y con esto terminamos el viaje: del centro de la Tierra hasta el borde del universo. Ahora sabes más que mucha gente mayor. ¡Enhorabuena!'
+        dibujo: 🏆 🚀
+
+  - tipo: elegir
+    enunciado: ¿De qué material es el satélite LignoSat?
+    dibujo: 🛰️
+    correcta: 🪵 De madera
+    incorrectas:
+      - texto: 🧀 De queso
+        feedback: ¡Ja, ja! No. Es de madera, y al caer se quema sin dejar metal.
+      - texto: 🧸 De peluche
+        feedback: ¡Ja, ja! No. Es de madera, y al caer se quema sin dejar metal.

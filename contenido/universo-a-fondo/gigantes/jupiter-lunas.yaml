@@ -1,0 +1,100 @@
+titulo: Las lunas de Júpiter
+subtitulo: Volcanes, océanos ocultos y un récord
+emoji: 🌙
+ejercicios:
+  - tipo: chat
+    titulo: Las cuatro lunas de Galileo
+    mensajes:
+      - de: santiago
+        texto: 'Júpiter tiene más de cien lunas. Cuatro son enormes: Ío, Europa, Ganímedes y Calisto.'
+        dibujo: 🌙 🌙 🌙 🌙
+      - de: vega
+        texto: 'Las descubrió Galileo en 1610 con su telescopio. Fue una revolución: demostraban que no todo gira alrededor de la Tierra.'
+        dibujo: 🔭 🤯
+      - de: hugo
+        texto: 'Ío es la más cercana y tiene más de cuatrocientos volcanes activos. Es el lugar con más volcanes del sistema solar.'
+        dibujo: 🌋 🟡
+      - de: valentina
+        texto: '¿Por qué? Júpiter la estira y la aprieta al girar, y eso la calienta. Igual que un alambre se calienta si lo doblas muchas veces.'
+        dibujo: 🌀 🔥
+      - de: santiago
+        texto: 'Ganímedes es la luna más grande de todo el sistema solar. Es mayor que el planeta Mercurio, y tiene su propio campo magnético.'
+        dibujo: 🏆 🌙
+      - de: vega
+        texto: 'Calisto es la que tiene más cráteres de todas. Su superficie apenas ha cambiado en miles de millones de años.'
+        dibujo: 🕳️
+
+  - tipo: elegir
+    enunciado: ¿Quién descubrió las cuatro lunas grandes de Júpiter?
+    dibujo: 🔭 🌙
+    correcta: 👨‍🔬 Galileo
+    incorrectas:
+      - texto: 🧑‍🚀 Neil Armstrong
+        feedback: Armstrong pisó nuestra Luna. Las lunas de Júpiter las descubrió Galileo en 1610.
+      - texto: 🤴 Un rey romano
+        feedback: No. Las descubrió Galileo en 1610, con su telescopio.
+
+  - tipo: elegir
+    enunciado: ¿Cuál es la luna con más volcanes?
+    dibujo: 🌋
+    correcta: 🟡 Ío
+    incorrectas:
+      - texto: 🌕 Nuestra Luna
+        feedback: Nuestra Luna ya no tiene volcanes activos. La que más tiene es Ío.
+      - texto: ⚪ Calisto
+        feedback: Calisto está llena de cráteres. La de los volcanes es Ío.
+
+  - tipo: elegir
+    enunciado: ¿Cuál es la luna más grande del sistema solar?
+    dibujo: 🏆
+    correcta: 🌙 Ganímedes
+    incorrectas:
+      - texto: 🌕 Nuestra Luna
+        feedback: Es grande, pero la mayor del todo es Ganímedes, una luna de Júpiter.
+      - texto: 🟡 Ío
+        feedback: Ío es la de los volcanes. La mayor es Ganímedes.
+
+  - tipo: chat
+    titulo: Un océano bajo el hielo
+    mensajes:
+      - de: valentina
+        texto: 'La luna más emocionante es Europa. Por fuera es una bola de hielo llena de rayas, como una canica rayada.'
+        dibujo: 🧊 🔮
+      - de: hugo
+        texto: 'Pero bajo el hielo hay un océano de agua salada, con más agua que todos los mares de la Tierra juntos.'
+        dibujo: 🌊 🧊
+      - de: santiago
+        texto: '¿Agua líquida tan lejos del Sol? Sí. La misma fuerza de Júpiter que calienta Ío calienta también a Europa por dentro.'
+        dibujo: 🌀 💧
+      - de: vega
+        texto: 'En el fondo de nuestros mares, en lo oscuro, hay animales que viven sin Sol, cerca de fuentes de agua caliente. ¿Y si en Europa también pasa?'
+        dibujo: 🐙 🌋
+      - de: valentina
+        texto: 'Por eso ya van de camino dos naves: Europa Clipper, de Estados Unidos, y Juice, de la Agencia Espacial Europea. Llegarán hacia 2030.'
+        dibujo: 🛰️ 🛰️
+      - de: hugo
+        texto: 'Juice estudiará sobre todo Ganímedes, y será la primera nave que dé vueltas a una luna que no sea la nuestra.'
+        dibujo: 🧃 🛰️
+      - de: santiago
+        texto: 'Y en la Tierra, las lunas de Júpiter se ven con unos simples prismáticos: parecen cuatro puntitos en línea. Puedes verlas como Galileo.'
+        dibujo: 🔭 ✨
+
+  - tipo: elegir
+    enunciado: ¿Qué hay debajo del hielo de Europa?
+    dibujo: 🧊 🌙
+    correcta: 🌊 Un océano de agua salada
+    incorrectas:
+      - texto: 🔥 Un mar de lava
+        feedback: Lava tiene Ío. Debajo del hielo de Europa hay un océano de agua salada.
+      - texto: 🌳 Un bosque
+        feedback: No hay bosques. Debajo del hielo hay un océano de agua salada.
+
+  - tipo: elegir
+    enunciado: ¿Por qué a los científicos les interesa tanto la luna Europa?
+    dibujo: 🌙 🔬
+    correcta: 🐙 Porque podría tener vida
+    incorrectas:
+      - texto: 💎 Porque tiene diamantes
+        feedback: No es por eso. Tiene agua líquida bajo el hielo, y podría tener vida.
+      - texto: 🏖️ Porque tiene playas
+        feedback: No tiene playas. Tiene agua líquida bajo el hielo, y podría tener vida.

@@ -1,0 +1,100 @@
+titulo: Saturno, el planeta que flotaría
+subtitulo: Hexágonos, huracanes y Cassini
+emoji: 🦆
+ejercicios:
+  - tipo: chat
+    titulo: Un gigante muy ligero
+    mensajes:
+      - de: santiago
+        texto: 'Saturno es enorme: cabrían dentro más de setecientas Tierras. Pero está tan poco apretado, que es menos denso que el agua.'
+        dibujo: 🪐 🌍
+      - de: vega
+        texto: 'Densidad quiere decir cuánta materia hay en un espacio. Una piedra tiene mucha y se hunde. Un corcho tiene poca y flota.'
+        dibujo: 🪨 🍾
+      - de: hugo
+        texto: 'Saturno es el único planeta menos denso que el agua. En una piscina gigante flotaría, ¡y dejaría un anillo de suciedad!'
+        dibujo: 🏊 🪐
+      - de: valentina
+        texto: 'Gira muy rápido: su día dura unas diez horas y media. Por eso se ve achatado, como una pelota sobre la que te has sentado un poco.'
+        dibujo: 🏐
+      - de: santiago
+        texto: 'Tarda casi treinta años en dar la vuelta al Sol. Alguien con treinta años habría cumplido uno.'
+        dibujo: 🎂
+      - de: vega
+        texto: 'Sus vientos llegan a los mil ochocientos kilómetros por hora. Los de la Tierra, en un gran huracán, van a unos trescientos.'
+        dibujo: 🌬️
+
+  - tipo: elegir
+    enunciado: ¿Por qué flotaría Saturno en una piscina gigante?
+    dibujo: 🏊 🪐
+    correcta: 🍾 Porque es menos denso que el agua
+    incorrectas:
+      - texto: 🛟 Porque lleva flotador
+        feedback: ¡Ja, ja! Los anillos lo parecen, pero no. Flotaría porque es menos denso que el agua.
+      - texto: 📏 Porque es pequeño
+        feedback: Es enorme. Flotaría porque es menos denso que el agua.
+
+  - tipo: chat
+    titulo: Un hexágono en el polo
+    mensajes:
+      - de: hugo
+        texto: 'En el polo norte de Saturno hay algo increíble: una corriente de viento con forma de hexágono, una figura de seis lados.'
+        dibujo: 🐝 🌀
+      - de: valentina
+        texto: 'Es más ancha que la Tierra. Y lleva décadas ahí. Las abejas hacen hexágonos, pero nadie esperaba uno en un planeta.'
+        dibujo: 🐝
+      - de: santiago
+        texto: 'Se forma por chorros de aire que van a distinta velocidad. Y en el centro hay un huracán, con un ojo gigante.'
+        dibujo: 🌪️ 👁️
+      - de: vega
+        texto: 'Casi todo lo que sabemos se lo debemos a la nave Cassini, de Estados Unidos, Europa e Italia. Llegó a Saturno en 2004.'
+        dibujo: 🛰️
+      - de: hugo
+        texto: 'Pasó trece años dando vueltas, y descubrió lunas, tormentas y mucho más. Se quedó casi sin combustible en 2017.'
+        dibujo: ⛽ 🗓️
+      - de: valentina
+        texto: 'Al final, la lanzaron contra Saturno a propósito, para no contaminar sus lunas. Mandó datos hasta el último momento. Lo llamaron el gran final.'
+        dibujo: 💥 🎬
+      - de: santiago
+        texto: 'Antes de eso hizo algo atrevido: pasó veintidós veces por el hueco entre los anillos y el planeta. Y sacó fotos asombrosas.'
+        dibujo: 📷 🪐
+
+  - tipo: elegir
+    enunciado: ¿Qué forma tiene la corriente de viento del polo norte de Saturno?
+    dibujo: 🌀
+    correcta: 🐝 Un hexágono, de seis lados
+    incorrectas:
+      - texto: 🔺 Un triángulo
+        feedback: Un triángulo tiene tres lados. La de Saturno tiene seis, es un hexágono.
+      - texto: ⭐ Una estrella
+        feedback: No. Es un hexágono, con seis lados, como las celdillas de las abejas.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llamaba la nave que estudió Saturno durante trece años?
+    dibujo: 🛰️ 🪐
+    correcta: 🛰️ Cassini
+    incorrectas:
+      - texto: 🚀 Apolo
+        feedback: Las Apolo fueron a la Luna. La de Saturno fue Cassini.
+      - texto: 🤖 Curiosity
+        feedback: Curiosity está en Marte. La de Saturno fue Cassini.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto dura un año en Saturno?
+    dibujo: 🎂 🪐
+    correcta: 📅 Casi treinta de los nuestros
+    incorrectas:
+      - texto: ⏰ Diez horas
+        feedback: Eso es lo que dura un día. Un año dura casi treinta de los nuestros.
+      - texto: 🌍 Igual que aquí
+        feedback: No. Saturno está muy lejos y tarda casi treinta de los nuestros.
+
+  - tipo: elegir
+    enunciado: Al final, ¿qué hicieron con la nave Cassini?
+    dibujo: 🛰️
+    correcta: 💥 La lanzaron contra Saturno
+    incorrectas:
+      - texto: 🌍 La trajeron a casa
+        feedback: No podía volver. La lanzaron contra Saturno para no contaminar sus lunas.
+      - texto: 🌌 La dejaron por ahí
+        feedback: No. La lanzaron contra Saturno para no contaminar sus lunas.

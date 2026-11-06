@@ -1,0 +1,103 @@
+titulo: Para qué sirven los satélites
+subtitulo: Ojos y oídos de la Tierra
+emoji: 📡
+ejercicios:
+  - tipo: chat
+    titulo: Te ayudan sin que lo sepas
+    mensajes:
+      - de: hugo
+        texto: 'Hoy usas satélites sin darte cuenta. Pongamos un día normal.'
+        dibujo: 🛰️ 👀
+      - de: vega
+        texto: 'El hombre o la mujer del tiempo dice si va a llover gracias a los satélites meteorológicos, que miran las nubes desde arriba.'
+        dibujo: 🌧️ 📺
+      - de: santiago
+        texto: 'Los partidos de fútbol que se ven en directo desde otro país viajan muchas veces por satélite: del estadio, al espacio, y a tu tele.'
+        dibujo: ⚽ 📺
+      - de: valentina
+        texto: 'Hay satélites que llevan internet a pueblos, barcos y aviones, donde no llegan los cables.'
+        dibujo: 🚢 🌐
+      - de: hugo
+        texto: 'Ojo: casi todo internet, en realidad, va por cables bajo el mar, no por satélites. Los satélites llegan donde no llegan los cables.'
+        dibujo: 🌊 🔌
+      - de: vega
+        texto: 'Los bancos, los teléfonos y las centrales eléctricas usan la hora exacta que dan los satélites para ir sincronizados.'
+        dibujo: ⏰ 🏦
+      - de: santiago
+        texto: 'Y hay satélites que escuchan llamadas de socorro de barcos y de excursionistas. Han ayudado a salvar a miles de personas.'
+        dibujo: 🆘 🛟
+
+  - tipo: elegir
+    enunciado: ¿Cómo se sabe si va a llover?
+    dibujo: 🌧️
+    correcta: 🛰️ Con satélites que miran las nubes
+    incorrectas:
+      - texto: 🐸 Preguntando a una rana
+        feedback: ¡Ja, ja! No. Los satélites miran las nubes desde arriba.
+      - texto: 🪄 Con magia
+        feedback: ¡Ja, ja! No. Los satélites miran las nubes desde arriba.
+
+  - tipo: elegir
+    enunciado: ¿Por dónde va casi todo internet?
+    dibujo: 🌐
+    correcta: 🔌 Por cables bajo el mar
+    incorrectas:
+      - texto: 🛰️ Por satélites
+        feedback: ¡Parece que sí! Pero casi todo va por cables bajo el mar. Los satélites llegan donde no hay cables.
+      - texto: 🕊️ Con palomas
+        feedback: ¡Ja, ja! No. Casi todo va por cables bajo el mar.
+
+  - tipo: chat
+    titulo: Vigilar la Tierra
+    mensajes:
+      - de: valentina
+        texto: 'Los satélites también son los médicos de la Tierra. Desde arriba ven lo que está pasando.'
+        dibujo: 🩺 🌍
+      - de: hugo
+        texto: 'Europa tiene los satélites Copernicus, los Sentinel, que observan la Tierra continuamente, y sus fotos las puede usar cualquiera, gratis.'
+        dibujo: 🌍 🛰️
+      - de: santiago
+        texto: 'Detectan incendios en cuanto empiezan y ayudan a los bomberos. También miden inundaciones y volcanes, como el de La Palma en 2021.'
+        dibujo: 🔥 🌋
+      - de: vega
+        texto: 'Miden cuánto hielo se derrite en los polos y cuánto sube el mar. Son mediciones muy exactas, de solo unos centímetros.'
+        dibujo: 🧊 🌊
+      - de: valentina
+        texto: 'Se ve la tala de bosques en la Amazonia, o si un campo necesita agua. Los agricultores ya usan esos datos.'
+        dibujo: 🌳 🚜
+      - de: hugo
+        texto: 'Algunos ven hasta cosas que nuestro ojo no ve, como el calor, o la humedad del suelo. Tienen sensores especiales, parecidos a la visión de otros animales.'
+        dibujo: 🌡️ 👁️
+      - de: santiago
+        texto: 'Gracias a ellos sabemos que el clima está cambiando. La Tierra lleva décadas haciéndose fotos a sí misma.'
+        dibujo: 📷 📅
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estas cosas pueden ver los satélites desde arriba?
+    dibujo: 🛰️ 🌍
+    correcta: 🔥 Un incendio
+    incorrectas:
+      - texto: 🐜 Una hormiga
+        feedback: Tan pequeña no. Pero sí pueden ver un incendio, una inundación o un volcán.
+      - texto: 🧠 Lo que estás pensando
+        feedback: ¡Ja, ja! No. Pero sí pueden ver un incendio, una inundación o un volcán.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman los satélites europeos que vigilan la Tierra?
+    dibujo: 🛰️
+    correcta: 🛰️ Copernicus
+    incorrectas:
+      - texto: 🔭 Hubble
+        feedback: El Hubble mira hacia el espacio. Los que vigilan la Tierra son Copernicus.
+      - texto: 🤖 Curiosity
+        feedback: Curiosity es un rover de Marte. Los que vigilan la Tierra son Copernicus.
+
+  - tipo: elegir
+    enunciado: ¿Qué otra ayuda dan los satélites?
+    dibujo: 🆘
+    correcta: 🛟 Escuchan llamadas de socorro
+    incorrectas:
+      - texto: 🍕 Llevan pizza a casa
+        feedback: ¡Ja, ja! No. Escuchan llamadas de socorro y ayudan a salvar a personas.
+      - texto: 🧹 Limpian la calle
+        feedback: ¡Ja, ja! No. Escuchan llamadas de socorro y ayudan a salvar a personas.

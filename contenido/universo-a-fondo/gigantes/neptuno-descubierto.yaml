@@ -1,0 +1,89 @@
+titulo: Neptuno, descubierto con mates
+subtitulo: El planeta que se encontró con un lápiz
+emoji: 🧮
+ejercicios:
+  - tipo: chat
+    titulo: Algo tiraba de Urano
+    mensajes:
+      - de: santiago
+        texto: 'Neptuno es el planeta más lejano. Y su descubrimiento es una de las historias más bonitas de la ciencia.'
+        dibujo: 🔵 📖
+      - de: vega
+        texto: 'Después de descubrir Urano, los astrónomos vieron algo raro. Urano no iba por donde decían los cálculos. A veces se adelantaba y a veces se retrasaba.'
+        dibujo: 🔵 🤔
+      - de: hugo
+        texto: 'Algunos pensaron: quizás hay otro planeta, más lejos, cuya gravedad tira de Urano.'
+        dibujo: 🧲 ❓
+      - de: valentina
+        texto: 'Un matemático francés, Urbain Le Verrier, hizo muchísimas cuentas a mano, sin ordenador, para calcular dónde tendría que estar ese planeta.'
+        dibujo: ✏️ 🧮
+      - de: santiago
+        texto: 'Mandó su resultado por carta a un observatorio de Berlín. Johann Galle miró por el telescopio esa misma noche, el veintitrés de septiembre de 1846.'
+        dibujo: ✉️ 🔭
+      - de: vega
+        texto: '¡Y allí estaba! Muy cerca del punto que decían las cuentas. Encontró un planeta sin haberlo buscado con los ojos: lo encontró con un lápiz.'
+        dibujo: ✏️ 🎯
+      - de: hugo
+        texto: 'Un inglés, John Couch Adams, había hecho unos cálculos parecidos, casi a la vez. Hoy se reconoce a los dos.'
+        dibujo: 🤝
+
+  - tipo: elegir
+    enunciado: ¿Cómo se supo dónde buscar Neptuno?
+    dibujo: 🔵 🔭
+    correcta: 🧮 Con cálculos matemáticos
+    incorrectas:
+      - texto: 🗺️ Con un mapa del tesoro
+        feedback: ¡Ja, ja! Casi. Le Verrier calculó dónde debía estar, con matemáticas.
+      - texto: 🧑‍🚀 Lo vio un astronauta
+        feedback: Fue en 1846, no había astronautas. Le Verrier calculó dónde debía estar, con matemáticas.
+
+  - tipo: elegir
+    enunciado: ¿Qué pista hizo pensar que había otro planeta?
+    dibujo: 🔵
+    correcta: 🧲 Que algo tiraba de Urano
+    incorrectas:
+      - texto: 💡 Que se veía una luz
+        feedback: No. Urano no iba por donde debía, y algo tenía que tirar de él.
+      - texto: ☄️ Que cayó un cometa
+        feedback: No. Urano no iba por donde debía, y algo tenía que tirar de él.
+
+  - tipo: chat
+    titulo: Tan lejos, tan lejos
+    mensajes:
+      - de: valentina
+        texto: 'Neptuno está tan lejos, que no se ve sin telescopio. Está treinta veces más lejos del Sol que la Tierra.'
+        dibujo: 🔵 📏
+      - de: hugo
+        texto: 'La luz del Sol, que a la Tierra tarda ocho minutos, tarda allí unas cuatro horas.'
+        dibujo: ☀️ ⏱️
+      - de: santiago
+        texto: 'Desde Neptuno, el Sol sería solo una estrella muy brillante. Allí siempre está como en un atardecer oscuro.'
+        dibujo: ✨ 🌆
+      - de: vega
+        texto: 'Su año dura ciento sesenta y cinco años de los nuestros. Desde que se descubrió, solo ha dado una vuelta completa: la acabó en 2011.'
+        dibujo: 🎂 📅
+      - de: valentina
+        texto: 'Si en Neptuno se celebrase, nadie cumpliría ni un año. Un día allí dura solo unas dieciséis horas.'
+        dibujo: ⏰
+      - de: hugo
+        texto: 'Es casi cuatro veces más ancho que la Tierra. Y se llama como el dios romano del mar, por su color azul.'
+        dibujo: 🔱 🌊
+      - de: santiago
+        texto: 'Solo lo ha visitado una nave: la Voyager dos, en 1989. Tardó doce años en llegar, y nos enseñó casi todo lo que sabemos.'
+        dibujo: 🛰️ 📷
+
+  - tipo: ordenar
+    enunciado: Ordena estos planetas del más cercano al Sol al más lejano.
+    piezas: 🔵 Neptuno / 🟠 Júpiter / 🌍 Tierra / 🪐 Saturno
+    solucion: 🌍 Tierra 🟠 Júpiter 🪐 Saturno 🔵 Neptuno
+    explicacion: La Tierra es el tercero. Luego van Marte, Júpiter, Saturno, Urano, y el último es Neptuno.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto dura un año en Neptuno?
+    dibujo: 🎂 🔵
+    correcta: 📅 Unos ciento sesenta y cinco años
+    incorrectas:
+      - texto: ⏰ Dieciséis horas
+        feedback: Eso es lo que dura un día. Un año dura unos ciento sesenta y cinco de los nuestros.
+      - texto: 🌍 Igual que aquí
+        feedback: Muchísimo más. Un año dura unos ciento sesenta y cinco de los nuestros.

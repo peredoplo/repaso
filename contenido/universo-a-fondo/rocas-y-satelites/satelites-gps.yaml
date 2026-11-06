@@ -1,0 +1,96 @@
+titulo: Cómo funciona el GPS
+subtitulo: Relojes muy exactos
+emoji: 📍
+ejercicios:
+  - tipo: chat
+    titulo: ¿Cómo sabe el móvil dónde estás?
+    mensajes:
+      - de: santiago
+        texto: 'Cuando un móvil o un coche usa un mapa, sabe dónde estás gracias a unos satélites.'
+        dibujo: 📱 📍
+      - de: vega
+        texto: 'Es un sistema de unos treinta satélites que giran a unos veinte mil kilómetros, y que están repartidos para que siempre se vean varios.'
+        dibujo: 🛰️ 🌍
+      - de: hugo
+        texto: 'Cada satélite lleva un reloj atómico, tan exacto que apenas se equivoca un segundo en miles de años. Y emite una señal: soy este, y son estas horas.'
+        dibujo: ⏰ 📡
+      - de: valentina
+        texto: 'Tu móvil no envía nada al satélite: solo escucha. Compara la hora de la señal con la suya y calcula cuánto ha tardado en llegar.'
+        dibujo: 👂 📱
+      - de: santiago
+        texto: 'Si sabes cuánto ha tardado la señal, sabes a qué distancia está. Igual que calculas lo lejos que está un rayo al contar hasta el trueno.'
+        dibujo: ⚡ 🔢
+      - de: vega
+        texto: 'Con la distancia a tres satélites se sabe dónde estás, y con un cuarto se corrige el reloj del móvil. Se llama trilateración.'
+        dibujo: 📐 🛰️
+      - de: hugo
+        texto: 'Es como si te dijeran: estás a dos kilómetros del cole, a tres del parque y a uno de la piscina. Solo hay un sitio que cumple las tres cosas.'
+        dibujo: 🏫 🌳 🏊
+
+  - tipo: elegir
+    enunciado: ¿Cuántos satélites hacen falta para saber bien dónde estás?
+    dibujo: 📍
+    correcta: '4'
+    incorrectas:
+      - texto: '1'
+        feedback: Con uno no basta. Hacen falta cuatro, tres para situarte y uno para corregir el reloj.
+      - texto: '100'
+        feedback: Muchos menos. Hacen falta cuatro, tres para situarte y uno para corregir el reloj.
+
+  - tipo: elegir
+    enunciado: ¿Qué lleva cada satélite de GPS, que es tan importante?
+    dibujo: 🛰️
+    correcta: ⏰ Un reloj muy exacto
+    incorrectas:
+      - texto: 🗺️ Un mapa de papel
+        feedback: ¡Ja, ja! No. Lleva un reloj atómico, muy exacto.
+      - texto: 🧭 Una brújula
+        feedback: No. Lleva un reloj atómico, muy exacto.
+
+  - tipo: elegir
+    enunciado: ¿Qué hace tu móvil con las señales de los satélites?
+    dibujo: 📱
+    correcta: 👂 Solo las escucha
+    incorrectas:
+      - texto: 📣 Les contesta a gritos
+        feedback: ¡Ja, ja! No. El móvil solo escucha, y calcula.
+      - texto: 📞 Les llama por teléfono
+        feedback: No. El móvil solo escucha, y calcula.
+
+  - tipo: chat
+    titulo: Un truco de Einstein
+    mensajes:
+      - de: valentina
+        texto: 'Aquí viene lo más alucinante. Los relojes de los satélites no van igual de rápido que los de la Tierra.'
+        dibujo: ⏰ 🤯
+      - de: hugo
+        texto: 'Albert Einstein descubrió que el tiempo pasa distinto según lo rápido que vayas, y lo fuerte que sea la gravedad.'
+        dibujo: 👨‍🔬 ⏳
+      - de: santiago
+        texto: 'Los relojes de los satélites se adelantan unas millonésimas de segundo al día. Parece nada.'
+        dibujo: 🤏 ⏰
+      - de: vega
+        texto: 'Pero la luz recorre mucho en ese tiempo. Si no se corrigiera, el GPS se equivocaría unos diez kilómetros más cada día.'
+        dibujo: 🗺️ ❌
+      - de: valentina
+        texto: 'Por eso, cada vez que un móvil te lleva a casa, está usando la teoría de la relatividad de Einstein.'
+        dibujo: 🏠 ✅
+      - de: hugo
+        texto: 'GPS es de Estados Unidos. Europa tiene el suyo, Galileo, en honor al astrónomo. China tiene BeiDou, y Rusia, Glonass.'
+        dibujo: 🌍 🛰️
+      - de: santiago
+        texto: 'Y no solo lo usan los móviles. Con pequeños aparatos se sigue el viaje de aves como las cigüeñas, tortugas o ballenas.'
+        dibujo: 🐦 🐋
+      - de: vega
+        texto: 'Así, los científicos saben a dónde van los animales cuando migran, y cómo protegerlos.'
+        dibujo: 🗺️ 💙
+
+  - tipo: elegir
+    enunciado: ¿Qué científico explicó por qué los relojes del espacio van distinto?
+    dibujo: ⏰ 🛰️
+    correcta: 👨‍🔬 Albert Einstein
+    incorrectas:
+      - texto: 🔭 Galileo
+        feedback: Galileo fue un gran astrónomo, pero esto lo descubrió Albert Einstein.
+      - texto: 🧑‍🚀 Yuri Gagarin
+        feedback: Gagarin fue al espacio. Esto lo descubrió Albert Einstein.

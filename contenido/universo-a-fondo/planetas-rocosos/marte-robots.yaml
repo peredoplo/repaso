@@ -1,0 +1,96 @@
+titulo: Los robots de Marte
+subtitulo: Y las personas que irán
+emoji: 🤖
+ejercicios:
+  - tipo: chat
+    titulo: Un planeta habitado por robots
+    mensajes:
+      - de: hugo
+        texto: 'Marte es el único planeta habitado solo por robots. Los que tienen ruedas se llaman rovers.'
+        dibujo: 🤖 🔴
+      - de: santiago
+        texto: 'El primero fue Sojourner, en 1997. Era como un coche de juguete, del tamaño de un microondas.'
+        dibujo: 🚗
+      - de: valentina
+        texto: 'Después llegaron los gemelos Spirit y Opportunity, en 2004. Iban a durar tres meses. ¡Opportunity duró más de catorce años!'
+        dibujo: ⏳ 🏆
+      - de: vega
+        texto: 'Curiosity llegó en 2012. Es como un coche grande y lleva un laboratorio, un láser para analizar rocas y hasta se hace fotos a sí mismo.'
+        dibujo: 🔬 🤳
+      - de: hugo
+        texto: 'Perseverance llegó en 2021 a un antiguo lago. Guarda muestras de roca en tubitos, para traerlas a la Tierra algún día.'
+        dibujo: 🧪
+      - de: santiago
+        texto: 'Con él fue Ingenuity, un helicóptero pequeñito. Fue lo primero que voló con motor en otro planeta. Debía hacer cinco vuelos e hizo setenta y dos.'
+        dibujo: 🚁
+      - de: valentina
+        texto: 'Para llegar, la nave pasa de veinte mil kilómetros por hora a cero en siete minutos. Se llaman los siete minutos de terror.'
+        dibujo: 😱 ⏱️
+      - de: vega
+        texto: 'Y nadie la puede controlar, porque un mensaje tarda varios minutos en llegar a Marte. El robot aterriza solo.'
+        dibujo: 📡 🤖
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman los robots con ruedas que exploran Marte?
+    dibujo: 🤖 🔴
+    correcta: 🚙 Rovers
+    incorrectas:
+      - texto: 🚗 Taxis
+        feedback: ¡Ja, ja! No. Se llaman rovers.
+      - texto: 🚁 Drones
+        feedback: Los drones vuelan. Los que tienen ruedas se llaman rovers.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llamaba el helicóptero que voló en Marte?
+    dibujo: 🚁
+    correcta: 🚁 Ingenuity
+    incorrectas:
+      - texto: 🤖 Curiosity
+        feedback: Curiosity es un rover con ruedas. El helicóptero era Ingenuity.
+      - texto: 🚀 Apolo
+        feedback: Las Apolo fueron a la Luna. El helicóptero era Ingenuity.
+
+  - tipo: elegir
+    enunciado: ¿Por qué los robots tienen que aterrizar solos?
+    dibujo: 📡 🤖
+    correcta: ⏱️ Porque los mensajes tardan minutos
+    incorrectas:
+      - texto: 😴 Porque nos dormimos
+        feedback: ¡Ja, ja! No. Los mensajes tardan varios minutos en llegar, y no da tiempo a darles órdenes.
+      - texto: 📵 Porque no hay enchufes
+        feedback: No es por eso. Los mensajes tardan varios minutos en llegar, y no da tiempo a darles órdenes.
+
+  - tipo: chat
+    titulo: Personas en Marte
+    mensajes:
+      - de: valentina
+        texto: 'Algún día irán personas a Marte. Pero es muy difícil.'
+        dibujo: 🧑‍🚀 🔴
+      - de: hugo
+        texto: 'El viaje dura unos seis o siete meses. Y hay que esperar a que Marte y la Tierra se pongan bien, algo que pasa cada veintiséis meses.'
+        dibujo: 🚀 📅
+      - de: santiago
+        texto: 'Entre ir, esperar y volver, se tardarían unos dos años y medio. No hay supermercados por el camino: hay que llevarlo todo.'
+        dibujo: 🥫 🛒
+      - de: vega
+        texto: 'Por la radiación, habría que vivir protegidos, quizás bajo tierra o en cuevas. Y fuera, siempre con traje espacial.'
+        dibujo: ☢️ 🕳️
+      - de: valentina
+        texto: 'Habría que fabricar oxígeno y agua allí. El robot Perseverance ya probó a sacar oxígeno del aire de Marte con un aparato llamado Moxie. ¡Y funcionó!'
+        dibujo: 💨 🫁
+      - de: hugo
+        texto: 'También hay que cultivar comida, en invernaderos, con tierra de Marte tratada. Aquí en la Tierra ya se hacen pruebas.'
+        dibujo: 🥔 🌱
+      - de: santiago
+        texto: 'Para hablar con casa, cada mensaje tardaría hasta unos veinte minutos en llegar. Se acabaron las videollamadas.'
+        dibujo: 📞 ⏳
+
+  - tipo: elegir
+    enunciado: ¿Cuánto dura más o menos el viaje de ida a Marte?
+    dibujo: 🚀 🔴
+    correcta: 📅 Unos siete meses
+    incorrectas:
+      - texto: ⏰ Un día
+        feedback: Eso sería muy rápido. A Marte se tarda unos siete meses.
+      - texto: 🗓️ Diez años
+        feedback: Tampoco tanto. A Marte se tarda unos siete meses.

@@ -1,0 +1,96 @@
+titulo: Urano, gigante de hielo
+subtitulo: Frío, viento y lluvia de diamantes
+emoji: 💎
+ejercicios:
+  - tipo: chat
+    titulo: Gigantes de hielo
+    mensajes:
+      - de: hugo
+        texto: 'Júpiter y Saturno son gigantes de gas. Urano y Neptuno son distintos: se llaman gigantes de hielo.'
+        dibujo: 🧊 🔵
+      - de: santiago
+        texto: 'En su interior no hay tanto hidrógeno y helio. Lo que más hay es agua, metano y amoníaco, en forma de líquido muy caliente y apretado.'
+        dibujo: 💧 🗜️
+      - de: vega
+        texto: 'Los astrónomos llaman hielos a esas sustancias, aunque ahí dentro no estén heladas. Es una forma de hablar.'
+        dibujo: 🧊 ❓
+      - de: valentina
+        texto: 'El metano de arriba absorbe la luz roja del Sol y refleja la azul. Por eso Urano se ve de color azul verdoso, muy pálido.'
+        dibujo: 🔵 🟢
+      - de: hugo
+        texto: 'Aunque Neptuno está más lejos, la atmósfera más fría es la de Urano: llega a unos doscientos veinticuatro grados bajo cero.'
+        dibujo: 🥶 🏆
+      - de: santiago
+        texto: 'No se sabe por qué. Tal vez el golpe que lo tumbó hizo que perdiera mucho de su calor interior.'
+        dibujo: 💥 ❓
+      - de: vega
+        texto: 'Y en sus nubes hay ácido sulfhídrico, el gas de los huevos podridos. Urano huele fatal. Otro motivo para no ir de vacaciones.'
+        dibujo: 🥚 🤢
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta tiene la atmósfera más fría?
+    dibujo: 🥶
+    correcta: 🔵 Urano
+    incorrectas:
+      - texto: 🟦 Neptuno
+        feedback: Parece lo lógico, porque está más lejos. Pero la atmósfera más fría es la de Urano.
+      - texto: ⚪ Mercurio
+        feedback: Mercurio está al lado del Sol. La atmósfera más fría es la de Urano.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Urano se ve azul verdoso?
+    dibujo: 🔵
+    correcta: 🧪 Por el metano
+    incorrectas:
+      - texto: 🌊 Porque está cubierto de mar
+        feedback: No tiene mares. El metano absorbe la luz roja y refleja la azul.
+      - texto: 🎨 Porque está pintado
+        feedback: ¡Ja, ja! No. El metano absorbe la luz roja y refleja la azul.
+
+  - tipo: chat
+    titulo: Lluvia de diamantes
+    mensajes:
+      - de: valentina
+        texto: 'Ahora, algo que parece un cuento: muy adentro de Urano y Neptuno podría llover diamantes.'
+        dibujo: 💎 🌧️
+      - de: vega
+        texto: 'El metano tiene carbono, y el diamante es carbono muy apretado. Con esa presión tan brutal, el carbono se puede convertir en diamante.'
+        dibujo: 🗜️ 💎
+      - de: santiago
+        texto: 'Los científicos lo han comprobado en laboratorios con láseres: han conseguido fabricar diamantes diminutos en condiciones parecidas.'
+        dibujo: 🔦 🔬
+      - de: hugo
+        texto: 'Los diamantes caerían lentamente hacia el centro. Nadie lo ha visto, pero las pruebas apuntan a que podría ser verdad.'
+        dibujo: ⬇️ 💎
+      - de: vega
+        texto: 'Otra cosa rara: el campo magnético de Urano está torcido, no pasa por el centro del planeta. Una brújula allí se volvería loca.'
+        dibujo: 🧭 🫨
+      - de: valentina
+        texto: 'Urano también tiene anillos: trece, muy finos y oscuros, como de carbón. Se descubrieron en 1977, por casualidad, cuando Urano pasó delante de una estrella.'
+        dibujo: 💍 ⬛
+      - de: santiago
+        texto: 'La luz de la estrella parpadeó antes y después de que pasara el planeta. Eso delató los anillos.'
+        dibujo: ✨ 🕵️
+      - de: hugo
+        texto: 'Los científicos piden volver con una nave nueva. Tardaría más de diez años en llegar, por eso hay que planearlo con mucho tiempo.'
+        dibujo: 🚀 📅
+
+  - tipo: elegir
+    enunciado: ¿Qué podría llover dentro de Urano?
+    dibujo: 🌧️ 🔵
+    correcta: 💎 Diamantes
+    incorrectas:
+      - texto: 🐸 Ranas
+        feedback: ¡Ja, ja! No. El carbono del metano, tan apretado, podría formar diamantes.
+      - texto: 💧 Agua normal
+        feedback: No. El carbono del metano, tan apretado, podría formar diamantes.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se descubrieron los anillos de Urano?
+    dibujo: 💍
+    correcta: ✨ Porque tapaban la luz de una estrella
+    incorrectas:
+      - texto: 🧑‍🚀 Fue un astronauta
+        feedback: Nunca ha ido nadie a Urano. Se descubrieron porque tapaban la luz de una estrella.
+      - texto: 🧲 Con una brújula
+        feedback: No. Se descubrieron porque tapaban la luz de una estrella.

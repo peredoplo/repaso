@@ -1,0 +1,99 @@
+titulo: Fases, mareas y eclipses
+subtitulo: La Luna cambia cosas aquí
+emoji: 🌗
+ejercicios:
+  - tipo: chat
+    titulo: Por qué cambia de forma
+    mensajes:
+      - de: valentina
+        texto: 'La Luna no da luz propia. Brilla porque le da el Sol, igual que un espejo.'
+        dibujo: ☀️ 🌕
+      - de: santiago
+        texto: 'Siempre tiene una mitad iluminada. Pero, según vaya dando la vuelta a la Tierra, vemos más o menos de esa mitad. Son las fases.'
+        dibujo: 🌑 🌓 🌕 🌗
+      - de: hugo
+        texto: 'La vuelta completa de fases dura unos veintinueve días y medio. De ahí viene la idea de mes.'
+        dibujo: 📅
+      - de: vega
+        texto: 'Truco para saber si crece: cuando la parte iluminada mira a la derecha, como una letra D, está creciendo aquí en España.'
+        dibujo: 🌓
+      - de: valentina
+        texto: 'Y un misterio: desde la Tierra siempre vemos la misma cara de la Luna.'
+        dibujo: 🌝
+      - de: santiago
+        texto: 'Es porque tarda lo mismo en girar sobre sí misma que en dar la vuelta a la Tierra. Es como dar una vuelta a alguien sin dejar de mirarle.'
+        dibujo: 💃 🕺
+      - de: hugo
+        texto: 'La otra cara se llama cara oculta. No siempre está oscura: le da el Sol igual. Nadie la vio hasta 1959, con una nave soviética.'
+        dibujo: 🌚 🛰️
+
+  - tipo: elegir
+    enunciado: ¿Por qué brilla la Luna?
+    dibujo: 🌕
+    correcta: ☀️ Porque le da la luz del Sol
+    incorrectas:
+      - texto: 💡 Porque tiene luz propia
+        feedback: No tiene luz propia. Brilla porque refleja la luz del Sol, igual que un espejo.
+      - texto: 🔥 Porque arde
+        feedback: La Luna no arde. Brilla porque refleja la luz del Sol.
+
+  - tipo: chat
+    titulo: La Luna mueve el mar
+    mensajes:
+      - de: vega
+        texto: 'La gravedad de la Luna tira del agua de los océanos y la hincha un poco. Por eso sube y baja el mar: son las mareas.'
+        dibujo: 🌊 🌕
+      - de: hugo
+        texto: 'Casi todos los días hay dos mareas altas y dos bajas. Las playas parecen más grandes o más pequeñas según la hora.'
+        dibujo: 🏖️
+      - de: santiago
+        texto: 'Los eclipses suceden cuando la Luna, la Tierra y el Sol se ponen en línea.'
+        dibujo: ☀️ 🌍 🌑
+      - de: valentina
+        texto: 'En un eclipse de Sol, la Luna se pone delante del Sol y lo tapa. Se hace de noche unos minutos y salen las estrellas.'
+        dibujo: 🌑 ☀️
+      - de: vega
+        texto: '¿Cómo puede algo tan pequeño tapar el Sol? El Sol es cuatrocientas veces más ancho, pero también está cuatrocientas veces más lejos. Casualidad perfecta.'
+        dibujo: 🤏 ☀️
+      - de: hugo
+        texto: 'En agosto de 2026 hubo un eclipse total de Sol en España. El dos de agosto de 2027 habrá otro, en el sur.'
+        dibujo: 🕶️ ☀️
+      - de: santiago
+        texto: 'En un eclipse de Luna, es la Tierra la que tapa la luz del Sol. La Luna se pone roja, por la luz que pasa por nuestra atmósfera.'
+        dibujo: 🌍 🔴
+
+  - tipo: ordenar
+    enunciado: Ordena las fases de la Luna desde la luna nueva, y termina otra vez cerca de ella.
+    piezas: 🌖 / 🌒 / 🌑 / 🌘 / 🌔 / 🌕 / 🌓 / 🌗
+    solucion: 🌑 🌒 🌓 🌔 🌕 🌖 🌗 🌘
+    explicacion: Empieza oscura, en luna nueva. Va creciendo hasta la luna llena. Después va menguando hasta quedarse otra vez casi oscura.
+
+  - tipo: elegir
+    enunciado: ¿Qué provoca las mareas del mar?
+    dibujo: 🌊
+    correcta: 🌕 La gravedad de la Luna
+    incorrectas:
+      - texto: 🐋 Las ballenas
+        feedback: ¡Ja, ja! No. La gravedad de la Luna tira del agua.
+      - texto: 🌬️ Solo el viento
+        feedback: El viento hace olas, pero las mareas vienen de la gravedad de la Luna.
+
+  - tipo: elegir
+    enunciado: En un eclipse de Sol, ¿qué se pone delante del Sol?
+    dibujo: 🕶️ ☀️
+    correcta: 🌑 La Luna
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: La Tierra no puede, estamos encima. En un eclipse de Sol, se pone delante la Luna.
+      - texto: ☁️ Una nube gigante
+        feedback: No. En un eclipse de Sol, se pone delante la Luna.
+
+  - tipo: elegir
+    enunciado: ¿Por qué vemos siempre la misma cara de la Luna?
+    dibujo: 🌝
+    correcta: 🔄 Porque gira a la vez que da la vuelta
+    incorrectas:
+      - texto: ⏹️ Porque no gira
+        feedback: Sí gira. Pero tarda lo mismo en girar que en dar la vuelta a la Tierra.
+      - texto: 🕶️ Porque la otra se esconde
+        feedback: No se esconde. Tarda lo mismo en girar que en dar la vuelta a la Tierra.

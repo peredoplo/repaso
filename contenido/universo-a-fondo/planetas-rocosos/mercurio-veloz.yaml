@@ -1,0 +1,79 @@
+titulo: Mercurio, el mensajero
+subtitulo: El planeta más rápido
+emoji: 💨
+ejercicios:
+  - tipo: chat
+    titulo: El más pequeño y el más rápido
+    mensajes:
+      - de: hugo
+        texto: 'Mercurio es el planeta más cercano al Sol y el más pequeño de los ocho. Es solo un poco más grande que nuestra Luna.'
+        dibujo: ⚪ 🌕
+      - de: valentina
+        texto: 'Lleva el nombre de Mercurio, el mensajero de los dioses romanos, que corría con sandalias con alas. Le pega: es el más rápido.'
+        dibujo: 🪽 👟
+      - de: santiago
+        texto: 'Viaja a unos cuarenta y siete kilómetros por segundo. Es mucho más deprisa que la Tierra, porque va cerca del Sol.'
+        dibujo: 💨
+      - de: vega
+        texto: '¿Por qué? Cuanto más cerca del Sol, más fuerte tira su gravedad, y más rápido hay que correr para no caer en él.'
+        dibujo: ☀️ 🏃
+      - de: hugo
+        texto: 'Da la vuelta al Sol en solo ochenta y ocho días. Si vivieras allí, cumplirías años cada tres meses, más o menos.'
+        dibujo: 🎂 🎂 🎂
+      - de: valentina
+        texto: 'Pero gira muy despacio sobre sí mismo. Desde que sale el Sol hasta que vuelve a salir pasan ciento setenta y seis días de los nuestros.'
+        dibujo: 🌅 🐢
+      - de: santiago
+        texto: 'Así que en Mercurio, un día dura más que dos años. Si te levantaras al amanecer, habrías cumplido dos años antes del siguiente amanecer.'
+        dibujo: 🤯
+      - de: vega
+        texto: 'Se ve desde la Tierra sin telescopio, pero es difícil, porque siempre está cerca del Sol. Hay que mirar justo al anochecer o al amanecer.'
+        dibujo: 🌇 👀
+
+  - tipo: elegir
+    enunciado: ¿Cuál es el planeta más pequeño?
+    dibujo: 🔎
+    correcta: ⚪ Mercurio
+    incorrectas:
+      - texto: 🔴 Marte
+        feedback: Marte es pequeño, pero Mercurio lo es más.
+      - texto: 🌍 La Tierra
+        feedback: La Tierra es mucho mayor. El más pequeño de los ocho es Mercurio.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Mercurio corre tanto alrededor del Sol?
+    dibujo: ⚪ ☀️
+    correcta: ☀️ Porque el Sol tira muy fuerte de él
+    incorrectas:
+      - texto: 👟 Porque tiene alas
+        feedback: Eso es el dios de la leyenda. El planeta corre porque está cerca del Sol, y su gravedad tira muy fuerte.
+      - texto: 🌬️ Porque le empuja el viento
+        feedback: No. Corre porque está cerca del Sol, y su gravedad tira muy fuerte.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto dura un año en Mercurio?
+    dibujo: 🎂 ⚪
+    correcta: 📅 Ochenta y ocho días
+    incorrectas:
+      - texto: 🌍 Un año como el nuestro
+        feedback: Mucho menos. En Mercurio un año dura ochenta y ocho días.
+      - texto: 🗓️ Diez años
+        feedback: Mucho menos. En Mercurio un año dura ochenta y ocho días.
+
+  - tipo: elegir
+    enunciado: ¿Qué es más largo en Mercurio?
+    dibujo: 🌅 🎂
+    correcta: 🌅 Un día
+    incorrectas:
+      - texto: 🎂 Un año
+        feedback: ¡Parece imposible, pero no! De amanecer a amanecer pasan dos años de Mercurio.
+
+  - tipo: elegir
+    enunciado: ¿Quién era Mercurio en las leyendas romanas?
+    dibujo: 🏛️
+    correcta: 🪽 El mensajero de los dioses
+    incorrectas:
+      - texto: 🌊 El dios del mar
+        feedback: Ese era Neptuno. Mercurio era el mensajero de los dioses.
+      - texto: ⚔️ El dios de la guerra
+        feedback: Ese era Marte. Mercurio era el mensajero de los dioses.

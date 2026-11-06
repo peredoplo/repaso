@@ -1,0 +1,93 @@
+titulo: Viajar a Venus
+subtitulo: Naves que aguantaron minutos
+emoji: 🛰️
+ejercicios:
+  - tipo: chat
+    titulo: Aterrizar en un horno
+    mensajes:
+      - de: valentina
+        texto: 'Durante mucho tiempo, nadie sabía qué había bajo las nubes de Venus. Algunos imaginaban selvas y mares.'
+        dibujo: 🌴 ☁️
+      - de: hugo
+        texto: 'En 1962, la nave Mariner dos pasó cerca de Venus. Fue la primera vez que una nave llegaba a otro planeta. Y midió el calor.'
+        dibujo: 🛰️ 🌡️
+      - de: santiago
+        texto: 'La Unión Soviética mandó las naves Venera. Las primeras quedaban aplastadas o se rompían al bajar.'
+        dibujo: 🗜️ 💥
+      - de: vega
+        texto: 'En 1970, Venera siete fue la primera nave en aterrizar en otro planeta y mandar datos. Lo hizo durante unos veintitrés minutos.'
+        dibujo: 🛬
+      - de: valentina
+        texto: 'En 1975, Venera nueve envió la primera foto desde el suelo de otro planeta. Se veían piedras planas, con una luz anaranjada.'
+        dibujo: 📷 🪨
+      - de: hugo
+        texto: 'La que más aguantó fue Venera trece: unas dos horas. Luego el calor y la presión la destruyeron.'
+        dibujo: ⏱️ 🔥
+      - de: santiago
+        texto: 'Si a un móvil le pusieras a cuatrocientos sesenta grados, se derretiría al instante. Ninguna nave ha aguantado más de esas dos horas.'
+        dibujo: 📱 🫠
+
+  - tipo: elegir
+    enunciado: ¿Cuánto aguantó la nave que más duró en el suelo de Venus?
+    dibujo: 🛬 🟡
+    correcta: ⏱️ Unas dos horas
+    incorrectas:
+      - texto: 📅 Un año
+        feedback: ¡Imposible! El calor y la presión las destruyen. La que más duró aguantó unas dos horas.
+      - texto: 🗓️ Una semana
+        feedback: Mucho menos. La que más duró aguantó unas dos horas.
+
+  - tipo: elegir
+    enunciado: ¿Qué país mandó las naves Venera a Venus?
+    dibujo: 🛰️
+    correcta: 🚩 La Unión Soviética
+    incorrectas:
+      - texto: 🥘 España
+        feedback: No. Las naves Venera eran de la Unión Soviética.
+      - texto: 🗼 Francia
+        feedback: No. Las naves Venera eran de la Unión Soviética.
+
+  - tipo: chat
+    titulo: Mirar a través de las nubes
+    mensajes:
+      - de: vega
+        texto: 'Las nubes de Venus no dejan ver el suelo desde arriba. Por eso se usa el radar.'
+        dibujo: 📡 ☁️
+      - de: hugo
+        texto: 'El radar manda ondas que atraviesan las nubes, rebotan en el suelo y vuelven. Con eso se dibuja el mapa, igual que un murciélago oye dónde están las cosas.'
+        dibujo: 🦇 📡
+      - de: valentina
+        texto: 'La nave Magallanes, en los años noventa, hizo el mapa de casi todo Venus: volcanes, llanuras de lava y montañas muy altas.'
+        dibujo: 🗺️
+      - de: santiago
+        texto: 'La montaña más alta se llama Maxwell y mide unos once kilómetros, más que el Everest.'
+        dibujo: 🏔️
+      - de: vega
+        texto: 'Hay zonas que parecen un mosaico de grietas, que llaman teselas. Podrían ser los restos de continentes muy antiguos.'
+        dibujo: 🧩
+      - de: hugo
+        texto: 'Casi no quedan cráteres viejos. Eso quiere decir que los volcanes taparon el suelo hace no tanto, y lo dejaron como nuevo.'
+        dibujo: 🌋
+      - de: valentina
+        texto: 'Ahora preparan nuevas misiones a Venus para los próximos años, como la europea EnVision. Quieren saber por qué nuestro gemelo acabó siendo tan distinto.'
+        dibujo: 🚀 ❓
+
+  - tipo: elegir
+    enunciado: ¿Cómo se hace un mapa de Venus con esas nubes?
+    dibujo: 🗺️ ☁️
+    correcta: 📡 Con un radar
+    incorrectas:
+      - texto: 🪁 Con una cometa
+        feedback: No. El radar manda ondas que atraviesan las nubes y rebotan en el suelo.
+      - texto: 🔦 Con una linterna
+        feedback: La luz no pasa bien. El radar manda ondas que atraviesan las nubes y rebotan en el suelo.
+
+  - tipo: elegir
+    enunciado: ¿Qué animal hace algo parecido a un radar?
+    dibujo: 📡
+    correcta: 🦇 El murciélago
+    incorrectas:
+      - texto: 🐢 La tortuga
+        feedback: La tortuga no. El murciélago manda sonidos y oye cómo rebotan.
+      - texto: 🐔 La gallina
+        feedback: La gallina no. El murciélago manda sonidos y oye cómo rebotan.

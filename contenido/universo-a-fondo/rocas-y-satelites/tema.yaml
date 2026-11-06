@@ -1,0 +1,14 @@
+asignatura: El universo a fondo
+titulo: Meteoritos, satélites y basura espacial
+descripcion: Lo que cae del cielo y lo que hemos subido allí.
+sinLeer: true
+lecciones:
+  - meteoritos-nombres
+  - meteoritos-impactos
+  - meteoritos-cometas
+  - satelites-orbitas
+  - satelites-para-que
+  - satelites-gps
+  - basura-que-es
+  - basura-peligro
+  - basura-limpiar

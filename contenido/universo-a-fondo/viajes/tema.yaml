@@ -1,0 +1,14 @@
+asignatura: El universo a fondo
+titulo: Astronautas, misiones y la Estación Espacial
+descripcion: Quién viaja, cómo se llega y cómo se vive allí.
+sinLeer: true
+lecciones:
+  - astronautas-entrenar
+  - astronautas-traje
+  - astronautas-historia
+  - misiones-cohete
+  - misiones-sondas
+  - misiones-futuro
+  - estacion-construir
+  - estacion-vida
+  - estacion-ciencia

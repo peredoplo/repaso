@@ -1,0 +1,106 @@
+titulo: Las pisadas en la Luna
+subtitulo: De Apolo a Artemis
+emoji: 👣
+ejercicios:
+  - tipo: chat
+    titulo: La carrera a la Luna
+    mensajes:
+      - de: hugo
+        texto: 'En los años sesenta, Estados Unidos y la Unión Soviética compitieron por llegar antes a la Luna. Se llamó la carrera espacial.'
+        dibujo: 🏁 🚀
+      - de: vega
+        texto: 'El veinte de julio de 1969, la misión Apolo 11 llegó a la Luna. Neil Armstrong fue la primera persona que la pisó.'
+        dibujo: 🧑‍🚀 👣
+      - de: santiago
+        texto: 'Con él bajó Buzz Aldrin. Michael Collins se quedó dando vueltas a la Luna en la nave, esperándolos para volver.'
+        dibujo: 🌕 🛸
+      - de: valentina
+        texto: 'Cientos de millones de personas lo vieron por televisión. El ordenador de la nave era mucho menos potente que un teléfono de hoy.'
+        dibujo: 📺 📱
+      - de: hugo
+        texto: 'Subieron en un cohete gigante, el Saturno Cinco, alto como un edificio de más de treinta pisos.'
+        dibujo: 🚀 🏢
+      - de: vega
+        texto: 'En total, doce personas han pisado la Luna, entre 1969 y 1972. Todas, en las misiones Apolo.'
+        dibujo: 🌕
+      - de: santiago
+        texto: 'Trajeron casi cuatrocientos kilos de rocas. En las tres últimas misiones llevaron hasta un coche eléctrico, el rover lunar.'
+        dibujo: 🪨 🚙
+      - de: valentina
+        texto: 'Sus huellas siguen allí, porque no hay viento que las borre. Podrían durar millones de años.'
+        dibujo: 👣
+
+  - tipo: elegir
+    enunciado: ¿Quién fue la primera persona que pisó la Luna?
+    dibujo: 👣 🌕
+    correcta: 🧑‍🚀 Neil Armstrong
+    incorrectas:
+      - texto: 🛰️ Yuri Gagarin
+        feedback: Gagarin fue el primero en ir al espacio. El primero en pisar la Luna fue Neil Armstrong.
+      - texto: 🔭 Galileo
+        feedback: Galileo miraba la Luna con su telescopio, siglos antes. La pisó por primera vez Neil Armstrong.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas personas han pisado la Luna?
+    dibujo: 👣
+    correcta: '12'
+    incorrectas:
+      - texto: '1'
+        feedback: Armstrong fue el primero, pero en total fueron doce personas.
+      - texto: '100'
+        feedback: Muchas menos. Han sido doce personas, entre 1969 y 1972.
+
+  - tipo: chat
+    titulo: La vuelta a la Luna
+    mensajes:
+      - de: vega
+        texto: 'Durante más de cincuenta años, nadie volvió a salir tan lejos de la Tierra. Hasta 2026.'
+        dibujo: ⏳
+      - de: santiago
+        texto: 'En abril de 2026, la misión Artemis dos llevó a cuatro astronautas a dar la vuelta a la Luna, y regresaron sanos y salvos.'
+        dibujo: 🧑‍🚀 🌕
+      - de: valentina
+        texto: 'Viajaron en una nave llamada Orión, y volvieron cayendo al mar, frenados con paracaídas.'
+        dibujo: 🌊 🪂
+      - de: hugo
+        texto: 'No se bajaron. El plan es practicar primero y, en los próximos años, volver a pisar la Luna.'
+        dibujo: 📋
+      - de: vega
+        texto: 'Quieren ir al polo sur de la Luna, donde hay hielo. Con ese hielo se podría sacar agua para beber, y oxígeno para respirar.'
+        dibujo: 🧊 💧
+      - de: santiago
+        texto: 'Y también se puede sacar combustible. Por eso la Luna podría servir de gasolinera para llegar más lejos, hasta Marte.'
+        dibujo: ⛽ 🔴
+      - de: valentina
+        texto: 'La persona que pise Marte por primera vez... quizá ya esté en el colegio.'
+        dibujo: 🎒 🚀
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llamó la misión de 2026 que dio la vuelta a la Luna?
+    dibujo: 🌕 🚀
+    correcta: 🏹 Artemis dos
+    incorrectas:
+      - texto: 🌞 Apolo 11
+        feedback: Apolo 11 fue en 1969. La de 2026 se llamó Artemis dos.
+      - texto: 🐶 Laika
+        feedback: Laika fue una perrita que viajó al espacio. La misión de 2026 se llamó Artemis dos.
+
+  - tipo: elegir
+    enunciado: ¿Para qué quieren el hielo de la Luna?
+    dibujo: 🧊 🌕
+    correcta: 💧 Para sacar agua y oxígeno
+    incorrectas:
+      - texto: 🍦 Para hacer helados
+        feedback: ¡Ja, ja! No. Del hielo se puede sacar agua para beber y oxígeno para respirar.
+      - texto: ⛸️ Para patinar
+        feedback: ¡Ja, ja! No. Del hielo se puede sacar agua para beber y oxígeno para respirar.
+
+  - tipo: elegir
+    enunciado: ¿Por qué siguen las huellas de los astronautas en la Luna?
+    dibujo: 👣 🌕
+    correcta: 🌬️ Porque no hay viento que las borre
+    incorrectas:
+      - texto: 🧽 Porque nadie las limpia
+        feedback: Casi. Allí no hay viento ni lluvia que las borre, y por eso duran tanto.
+      - texto: 🧱 Porque son de piedra
+        feedback: No. Son marcas en el polvo, pero allí no hay viento ni lluvia que las borre.

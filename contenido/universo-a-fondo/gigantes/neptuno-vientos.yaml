@@ -1,0 +1,93 @@
+titulo: Los vientos de Neptuno
+subtitulo: Los más rápidos del sistema solar
+emoji: 🌬️
+ejercicios:
+  - tipo: chat
+    titulo: Más rápido que el sonido
+    mensajes:
+      - de: hugo
+        texto: 'Neptuno tiene los vientos más rápidos del sistema solar: llegan a más de dos mil kilómetros por hora.'
+        dibujo: 🌬️ 🏆
+      - de: vega
+        texto: 'Es más rápido que el sonido aquí en la Tierra. Un avión de pasajeros va a unos novecientos. Neptuno lo dobla.'
+        dibujo: ✈️ 🔊
+      - de: santiago
+        texto: 'Lo raro es que allí llega poquísima energía del Sol. ¿De dónde sale tanta fuerza?'
+        dibujo: ❓
+      - de: valentina
+        texto: 'Neptuno guarda calor dentro y suelta más del doble del que recibe del Sol. Ese calor interior mueve la atmósfera.'
+        dibujo: 🔥 🔵
+      - de: hugo
+        texto: 'Además, como no tiene suelo ni montañas, nada frena el viento. Sigue y sigue.'
+        dibujo: ⛰️ ❌
+      - de: vega
+        texto: 'Cuando la Voyager dos pasó en 1989, vio una tormenta enorme, la Gran Mancha Oscura, tan ancha como la Tierra.'
+        dibujo: ⚫ 🌀
+      - de: santiago
+        texto: 'Cinco años después, el telescopio Hubble la buscó y ya no estaba. Las tormentas de Neptuno aparecen y desaparecen en unos años.'
+        dibujo: 🔭 🫥
+      - de: valentina
+        texto: 'También vio unas nubes blancas de metano helado, muy rápidas. Los científicos las llamaron Scooter, porque corrían como un patinete.'
+        dibujo: ☁️ 🛴
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta tiene los vientos más rápidos?
+    dibujo: 🌬️ 🏆
+    correcta: 🔵 Neptuno
+    incorrectas:
+      - texto: 🌍 La Tierra
+        feedback: Aquí tenemos huracanes, pero en Neptuno pasan de dos mil kilómetros por hora.
+      - texto: 🔴 Marte
+        feedback: Marte tiene tormentas de polvo, pero los vientos más rápidos son los de Neptuno.
+
+  - tipo: elegir
+    enunciado: ¿De dónde saca Neptuno la energía de sus vientos?
+    dibujo: 🔵 🌬️
+    correcta: 🔥 De su calor interior
+    incorrectas:
+      - texto: ☀️ Solo del Sol
+        feedback: Allí llega poquísima luz del Sol. La fuerza sale de su calor interior.
+      - texto: 🌙 De sus lunas
+        feedback: No. La fuerza sale de su calor interior.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasó con la Gran Mancha Oscura?
+    dibujo: ⚫ 🔵
+    correcta: 🫥 Desapareció en pocos años
+    incorrectas:
+      - texto: 📏 Sigue igual
+        feedback: No. Cinco años después, el Hubble ya no la vio. Desapareció.
+      - texto: 🌍 Se fue a la Tierra
+        feedback: ¡Ja, ja! No. Cinco años después, el Hubble ya no la vio. Desapareció.
+
+  - tipo: chat
+    titulo: Más allá de Neptuno
+    mensajes:
+      - de: santiago
+        texto: 'Después de Neptuno, los planetas se acaban, pero el sistema solar no.'
+        dibujo: 🔵 ➡️
+      - de: vega
+        texto: 'Allí está el cinturón de Kuiper: una zona con millones de cuerpos helados, como un cinturón de asteroides, pero de hielo y mucho mayor.'
+        dibujo: 🧊 🪨
+      - de: hugo
+        texto: 'Ahí vive Plutón. Durante años fue el noveno planeta. En 2006 pasó a ser un planeta enano, porque en su zona hay muchos cuerpos parecidos.'
+        dibujo: 🟤 🏷️
+      - de: valentina
+        texto: 'En 2015, la nave New Horizons llegó a Plutón y sacó fotos asombrosas. ¡Tiene un gran corazón blanco de hielo!'
+        dibujo: 🤍 📷
+      - de: santiago
+        texto: 'Mucho más lejos estaría la nube de Oort, una bola gigante de cometas alrededor del Sol. Nadie la ha visto todavía.'
+        dibujo: ☄️ ☁️
+      - de: vega
+        texto: 'De allí vienen algunos cometas. Y hay quien cree que por esa zona podría haber un noveno planeta, aún sin descubrir. Se sigue buscando.'
+        dibujo: ❓ 🔭
+
+  - tipo: elegir
+    enunciado: ¿Qué es hoy Plutón?
+    dibujo: 🟤
+    correcta: 🟤 Un planeta enano
+    incorrectas:
+      - texto: ⭐ Una estrella
+        feedback: No es una estrella. Desde 2006 es un planeta enano.
+      - texto: 🌙 Una luna de Neptuno
+        feedback: No. Plutón gira alrededor del Sol. Desde 2006 es un planeta enano.

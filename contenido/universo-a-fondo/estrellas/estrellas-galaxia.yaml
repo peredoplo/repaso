@@ -1,0 +1,99 @@
+titulo: Nuestra galaxia
+subtitulo: La Vía Láctea y el universo
+emoji: 🌌
+ejercicios:
+  - tipo: chat
+    titulo: Una ciudad de estrellas
+    mensajes:
+      - de: santiago
+        texto: 'Las estrellas no están repartidas al azar. Se agrupan en galaxias, como enormes ciudades de estrellas.'
+        dibujo: 🌌 🏙️
+      - de: vega
+        texto: 'La nuestra se llama Vía Láctea. Tiene más de cien mil millones de estrellas. Quizás cuatrocientos mil millones.'
+        dibujo: ⭐ ⭐ ⭐
+      - de: hugo
+        texto: 'Tiene forma de espiral, como un remolino con brazos. La vemos desde dentro, por eso de noche parece una franja blanca en el cielo.'
+        dibujo: 🌀
+      - de: valentina
+        texto: 'Los griegos decían que era leche derramada por la diosa Hera. De ahí viene el nombre: láctea significa de leche.'
+        dibujo: 🥛 🏛️
+      - de: santiago
+        texto: 'Mide unos cien mil años luz de lado a lado. El Sol está en un brazo, lejos del centro, a unos veintiséis mil años luz.'
+        dibujo: 📏 ☀️
+      - de: vega
+        texto: 'Y el Sol también viaja. Da una vuelta a la galaxia en unos doscientos treinta millones de años. La última vez que estuvo aquí, empezaban los dinosaurios.'
+        dibujo: ☀️ 🦕
+      - de: hugo
+        texto: 'Con el centro de la galaxia pasa como con un autobús lleno. Hay un gran agujero negro y muchísimas estrellas apretadas.'
+        dibujo: 🚌 ⚫
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama nuestra galaxia?
+    dibujo: 🌌
+    correcta: 🥛 Vía Láctea
+    incorrectas:
+      - texto: 🍫 Vía de Chocolate
+        feedback: ¡Ja, ja! No. Se llama Vía Láctea, que quiere decir de leche.
+      - texto: ☀️ Sistema solar
+        feedback: El sistema solar es el Sol y sus planetas. La galaxia entera es la Vía Láctea.
+
+  - tipo: elegir
+    enunciado: ¿Qué forma tiene la Vía Láctea?
+    dibujo: 🌌
+    correcta: 🌀 De espiral
+    incorrectas:
+      - texto: 🟦 De cuadrado
+        feedback: No. Tiene forma de espiral, como un remolino con brazos.
+      - texto: 🍌 De plátano
+        feedback: ¡Ja, ja! No. Tiene forma de espiral, como un remolino con brazos.
+
+  - tipo: ordenar
+    enunciado: Ordena de lo más pequeño a lo más grande.
+    piezas: 🌌 Galaxia / 🌍 Planeta / 🪐 Sistema solar / 🌐 Universo
+    solucion: 🌍 Planeta 🪐 Sistema solar 🌌 Galaxia 🌐 Universo
+    explicacion: Un planeta está en un sistema solar. Ese sistema está en una galaxia. Y las galaxias están en el universo.
+
+  - tipo: chat
+    titulo: El universo entero
+    mensajes:
+      - de: valentina
+        texto: 'Hace cien años se creía que la Vía Láctea era todo el universo.'
+        dibujo: 📜
+      - de: hugo
+        texto: 'En los años veinte, Edwin Hubble demostró que unas manchitas del cielo eran otras galaxias, muy lejanas. Una de ellas, Andrómeda.'
+        dibujo: 🔭
+      - de: santiago
+        texto: 'Andrómeda es la galaxia grande más cercana, a unos dos millones y medio de años luz. Se puede ver sin telescopio en un cielo muy oscuro.'
+        dibujo: 🌌 👀
+      - de: vega
+        texto: 'Y es posible que dentro de miles de millones de años choquen las dos galaxias. Las estrellas están tan lejos unas de otras, que casi ninguna se chocaría.'
+        dibujo: 🌌 💥 🌌
+      - de: valentina
+        texto: 'En el universo que vemos hay cientos de miles de millones de galaxias, o más. Hay más estrellas que granos de arena en todas las playas de la Tierra.'
+        dibujo: 🏖️ ⭐
+      - de: hugo
+        texto: 'Hubble también vio que las galaxias se alejan unas de otras. El universo se está haciendo más grande.'
+        dibujo: 🎈
+      - de: santiago
+        texto: 'Si se aleja todo, antes estaba junto. Hace unos trece mil ochocientos millones de años, todo estaba en un punto caliente y apretado. A eso se le llama Big Bang.'
+        dibujo: 💥 ⏳
+
+  - tipo: elegir
+    enunciado: ¿Qué pasa con el universo?
+    dibujo: 🌐
+    correcta: 🎈 Se está haciendo más grande
+    incorrectas:
+      - texto: 🤏 Se está encogiendo
+        feedback: Al revés. Las galaxias se alejan y el universo se hace más grande.
+      - texto: ⏹️ Está quieto
+        feedback: No. Las galaxias se alejan y el universo se hace más grande.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama el comienzo del universo?
+    dibujo: 💥
+    correcta: 💥 Big Bang
+    incorrectas:
+      - texto: 🌋 Gran Volcán
+        feedback: Casi, ¡pero no! Se llama Big Bang.
+      - texto: 🌅 Primer Amanecer
+        feedback: Sería bonito, pero se llama Big Bang.

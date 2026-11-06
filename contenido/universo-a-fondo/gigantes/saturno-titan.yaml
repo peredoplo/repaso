@@ -1,0 +1,96 @@
+titulo: Titán y Encélado
+subtitulo: Lagos raros y géiseres de hielo
+emoji: 🌧️
+ejercicios:
+  - tipo: chat
+    titulo: Titán, un mundo con lagos
+    mensajes:
+      - de: vega
+        texto: 'Saturno es el planeta con más lunas conocidas: casi trescientas. Titán es la mayor, más grande que Mercurio.'
+        dibujo: 🌙 🏆
+      - de: santiago
+        texto: 'Titán es la única luna con una atmósfera gruesa, de color naranja. Casi todo es nitrógeno, como en la Tierra.'
+        dibujo: 🟠 💨
+      - de: hugo
+        texto: 'Y es el único mundo, además de la Tierra, con ríos, lagos y mares en su superficie. Pero no son de agua.'
+        dibujo: 🏞️
+      - de: valentina
+        texto: 'Hace tanto frío, unos ciento ochenta grados bajo cero, que el agua es roca dura. Lo que corre es metano líquido, un gas que aquí se usa en cocinas.'
+        dibujo: 🥶 🔥
+      - de: vega
+        texto: 'Allí llueve metano, muy despacio, en gotas grandes. Las gotas caen como en cámara lenta, porque hay poca gravedad y el aire es espeso.'
+        dibujo: 🌧️ 🐌
+      - de: santiago
+        texto: 'En 2005, la sonda europea Huygens bajó en paracaídas y se posó en Titán. Es lo más lejos que ha aterrizado nada hecho por personas.'
+        dibujo: 🪂 🏆
+      - de: hugo
+        texto: 'Con ese aire tan espeso y esa gravedad, una persona con alas en los brazos podría volar, solo moviéndolas.'
+        dibujo: 🪽 🧍
+      - de: valentina
+        texto: 'Ahora preparan Dragonfly, que significa libélula: un dron que volará por Titán. Debe salir hacia 2028.'
+        dibujo: 🚁 🐉
+
+  - tipo: elegir
+    enunciado: ¿Qué líquido hay en los lagos de Titán?
+    dibujo: 🌙 🏞️
+    correcta: 🔥 Metano
+    incorrectas:
+      - texto: 💧 Agua
+        feedback: Allí el agua es dura como la roca. Lo que hay en los lagos es metano líquido.
+      - texto: 🥛 Leche
+        feedback: ¡Ja, ja! No. Lo que hay en los lagos es metano líquido.
+
+  - tipo: elegir
+    enunciado: ¿Qué nave aterrizó en Titán en 2005?
+    dibujo: 🪂
+    correcta: 🪂 Huygens
+    incorrectas:
+      - texto: 🚙 Curiosity
+        feedback: Curiosity está en Marte. En Titán aterrizó Huygens.
+      - texto: 🐶 Laika
+        feedback: Laika fue una perrita del espacio. En Titán aterrizó Huygens.
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene Titán de especial entre las lunas?
+    dibujo: 🌙
+    correcta: 💨 Una atmósfera gruesa
+    incorrectas:
+      - texto: 💍 Unos anillos
+        feedback: No tiene anillos. Es la única luna con una atmósfera gruesa.
+      - texto: 🌳 Muchos árboles
+        feedback: Allí no hay árboles. Es la única luna con una atmósfera gruesa.
+
+  - tipo: chat
+    titulo: Encélado, la luna que escupe
+    mensajes:
+      - de: hugo
+        texto: 'Encélado es una luna pequeña y blanca, muy brillante, porque está cubierta de hielo limpio.'
+        dibujo: ⚪ ✨
+      - de: valentina
+        texto: 'La nave Cassini descubrió algo espectacular: en su polo sur salen chorros de vapor y hielo, como géiseres gigantes.'
+        dibujo: ⛲ 🧊
+      - de: vega
+        texto: 'Salen por unas grietas llamadas rayas de tigre. Ese hielo que sale forma uno de los anillos de Saturno.'
+        dibujo: 🐯
+      - de: santiago
+        texto: 'Debajo del hielo hay un océano salado. Cassini voló dentro de esos chorros y probó lo que había.'
+        dibujo: 🛰️ 🌊
+      - de: hugo
+        texto: 'Encontró agua salada, hidrógeno y sustancias que necesitan los seres vivos. Uno de los lugares con más posibilidades de tener vida.'
+        dibujo: 🧪 🦠
+      - de: valentina
+        texto: 'Y hay otra luna muy curiosa, Mimas. Tiene un cráter tan grande, que parece la Estrella de la Muerte de una película famosa.'
+        dibujo: 🌑 🎬
+      - de: vega
+        texto: 'Otra, Jápeto, tiene una mitad blanca y otra negra, como una galleta. Y Hiperión parece una esponja gigante.'
+        dibujo: 🍪 🧽
+
+  - tipo: elegir
+    enunciado: ¿Qué sale de las grietas de Encélado?
+    dibujo: ⚪ 🐯
+    correcta: ⛲ Chorros de vapor y hielo
+    incorrectas:
+      - texto: 🔥 Fuego
+        feedback: No sale fuego. Salen chorros de vapor y hielo, como géiseres.
+      - texto: 🍫 Chocolate
+        feedback: ¡Ja, ja! No. Salen chorros de vapor y hielo, como géiseres.

@@ -1,0 +1,14 @@
+asignatura: El universo a fondo
+titulo: Estrellas, constelaciones y nebulosas
+descripcion: Cómo nacen, viven y mueren las estrellas.
+sinLeer: true
+lecciones:
+  - estrellas-que-son
+  - estrellas-vida
+  - estrellas-galaxia
+  - constelaciones-dibujos
+  - constelaciones-orientarse
+  - constelaciones-tiempo
+  - nebulosas-que-son
+  - nebulosas-cuna
+  - nebulosas-telescopios

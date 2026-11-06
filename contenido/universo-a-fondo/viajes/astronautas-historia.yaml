@@ -1,0 +1,92 @@
+titulo: Los primeros en el espacio
+subtitulo: De Laika a Pedro Duque
+emoji: 🐕
+ejercicios:
+  - tipo: chat
+    titulo: Antes de las personas
+    mensajes:
+      - de: valentina
+        texto: '¿Dónde empieza el espacio? Se suele poner el límite a cien kilómetros de altura. Se llama línea de Kármán.'
+        dibujo: 📏 🌌
+      - de: hugo
+        texto: 'Antes de mandar personas, había que saber si un ser vivo podía sobrevivir allí. Por eso los primeros viajeros fueron animales.'
+        dibujo: 🐒 🐕
+      - de: santiago
+        texto: 'En 1957, la perrita Laika fue el primer animal en dar vueltas a la Tierra. Era una perra callejera de Moscú. No volvió, y hoy se la recuerda con cariño.'
+        dibujo: 🐕 🛰️
+      - de: vega
+        texto: 'En 1960, las perras Belka y Strelka fueron al espacio y sí volvieron. Una de sus crías fue regalada a la familia del presidente de Estados Unidos.'
+        dibujo: 🐕 🐕
+      - de: valentina
+        texto: 'En 1961, el chimpancé Ham viajó para Estados Unidos. Había aprendido a apretar palancas, y demostró que se podía trabajar en el espacio.'
+        dibujo: 🐒
+      - de: hugo
+        texto: 'Y el doce de abril de 1961, el ruso Yuri Gagarin fue la primera persona en el espacio. Dio una vuelta a la Tierra en poco más de hora y media.'
+        dibujo: 🧑‍🚀 🌍
+      - de: santiago
+        texto: 'Su nave no se podía manejar bien, y al final saltó en paracaídas. Dijo una frase famosa: la Tierra es azul.'
+        dibujo: 🪂 🔵
+      - de: vega
+        texto: 'Dos años después, en 1963, Valentina Tereshkova fue la primera mujer en el espacio. Había sido trabajadora textil y paracaidista.'
+        dibujo: 👩‍🚀 🪂
+
+  - tipo: elegir
+    enunciado: ¿Quién fue la primera persona en el espacio?
+    dibujo: 🧑‍🚀
+    correcta: 🧑‍🚀 Yuri Gagarin
+    incorrectas:
+      - texto: 👣 Neil Armstrong
+        feedback: Armstrong fue el primero en pisar la Luna. El primero en el espacio fue Yuri Gagarin.
+      - texto: 🚀 Pedro Duque
+        feedback: Pedro Duque fue mucho después. El primero en el espacio fue Yuri Gagarin.
+
+  - tipo: elegir
+    enunciado: ¿Quién fue la primera mujer en el espacio?
+    dibujo: 👩‍🚀
+    correcta: 👩‍🚀 Valentina Tereshkova
+    incorrectas:
+      - texto: 🔭 Caroline Herschel
+        feedback: Caroline Herschel fue una gran astrónoma, mucho antes. La primera en el espacio fue Valentina Tereshkova.
+      - texto: 👩‍🔬 Marie Curie
+        feedback: Marie Curie fue una gran científica, pero no viajó. La primera mujer en el espacio fue Valentina Tereshkova.
+
+  - tipo: ordenar
+    enunciado: Ordena quién fue antes y quién después.
+    piezas: 👩‍🚀 Tereshkova / 🐕 Laika / 👣 Armstrong / 🧑‍🚀 Gagarin
+    solucion: 🐕 Laika 🧑‍🚀 Gagarin 👩‍🚀 Tereshkova 👣 Armstrong
+    explicacion: Primero, la perrita Laika, en 1957. Luego Gagarin, en 1961. Después Tereshkova, en 1963. Y Armstrong pisó la Luna en 1969.
+
+  - tipo: chat
+    titulo: Astronautas de hoy
+    mensajes:
+      - de: hugo
+        texto: 'Desde Gagarin, han ido al espacio más de seiscientas personas, de unos cuarenta países.'
+        dibujo: 🌍 🧑‍🚀
+      - de: valentina
+        texto: 'El primer español fue Pedro Duque, en 1998. Volvió en 2003 y trabajó en la Estación Espacial. Luego fue ministro de Ciencia.'
+        dibujo: 🧑‍🚀 ⭐
+      - de: santiago
+        texto: 'Michael López-Alegría, nacido en Madrid, fue astronauta de Estados Unidos y estuvo más de doscientos días seguidos en el espacio.'
+        dibujo: 🏙️ 🚀
+      - de: vega
+        texto: 'Valeri Polyakov tiene el récord de un viaje: casi cuatrocientos treinta y ocho días seguidos en la estación Mir, hace ya muchos años.'
+        dibujo: 🏆 📅
+      - de: hugo
+        texto: 'Ahora, además de astronautas, viajan turistas, y ha habido una artista, y un actor. Hasta personas con discapacidad se están preparando.'
+        dibujo: 🎟️ 🎨
+      - de: valentina
+        texto: 'El espacio cada vez está al alcance de más personas. Pero sigue siendo peligroso, y ha habido accidentes muy tristes.'
+        dibujo: 🕯️
+      - de: santiago
+        texto: 'A quienes dieron su vida se les recuerda siempre. Gracias a lo que se aprendió, las naves son hoy mucho más seguras.'
+        dibujo: 🛡️ 💙
+
+  - tipo: elegir
+    enunciado: ¿Quién fue el primer español en el espacio?
+    dibujo: 🚀
+    correcta: 🧑‍🚀 Pedro Duque
+    incorrectas:
+      - texto: 🧭 Cristóbal Colón
+        feedback: ¡Ja, ja! Colón cruzó el mar, no el espacio. El primero fue Pedro Duque, en 1998.
+      - texto: 🛰️ Yuri Gagarin
+        feedback: Gagarin era ruso. El primer español fue Pedro Duque, en 1998.

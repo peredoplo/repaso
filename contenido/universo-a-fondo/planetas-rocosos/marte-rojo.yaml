@@ -1,0 +1,96 @@
+titulo: Marte, un mundo de óxido
+subtitulo: El volcán y el cañón más grandes
+emoji: 🔴
+ejercicios:
+  - tipo: chat
+    titulo: ¿Por qué es rojo?
+    mensajes:
+      - de: santiago
+        texto: 'Marte es rojo por el óxido. Su suelo tiene hierro oxidado, como una bici vieja que se queda fuera bajo la lluvia.'
+        dibujo: 🔴 🚲
+      - de: valentina
+        texto: 'Ese polvo rojo está en todas partes, hasta flotando en el aire. Por eso allí el cielo es de color salmón, y los atardeceres son azules.'
+        dibujo: 🌇 🔵
+      - de: vega
+        texto: 'Lo llamaron Marte por el dios romano de la guerra, porque su color recordaba a la sangre.'
+        dibujo: ⚔️ 🏛️
+      - de: hugo
+        texto: 'Es pequeño: la mitad de ancho que la Tierra, más o menos. Su gravedad es poco más de un tercio de la nuestra. Saltarías mucho.'
+        dibujo: 🤸
+      - de: santiago
+        texto: 'Un día allí dura casi igual que aquí: veinticuatro horas y treinta y siete minutos. Lo llaman sol.'
+        dibujo: ⏰
+      - de: valentina
+        texto: 'Está inclinado casi como la Tierra, y tiene estaciones. Pero un año dura casi dos de los nuestros.'
+        dibujo: 📐 🍂
+      - de: vega
+        texto: 'Hace mucho frío: de media, unos sesenta grados bajo cero. Porque su atmósfera es muy fina: una manta rota.'
+        dibujo: 🥶
+
+  - tipo: elegir
+    enunciado: ¿Por qué Marte es rojo?
+    dibujo: 🔴
+    correcta: 🚲 Por el hierro oxidado
+    incorrectas:
+      - texto: 🔥 Porque arde
+        feedback: Marte es muy frío. Es rojo porque su suelo tiene hierro oxidado.
+      - texto: 🍅 Por los tomates
+        feedback: ¡Ja, ja! No. Es rojo porque su suelo tiene hierro oxidado.
+
+  - tipo: elegir
+    enunciado: ¿De qué color son los atardeceres en Marte?
+    dibujo: 🌇
+    correcta: 🔵 Azules
+    incorrectas:
+      - texto: 🟠 Naranjas
+        feedback: Eso es aquí. En Marte, el polvo hace que los atardeceres sean azules.
+      - texto: 🟢 Verdes
+        feedback: No. En Marte, el polvo hace que los atardeceres sean azules.
+
+  - tipo: chat
+    titulo: Los récords de Marte
+    mensajes:
+      - de: hugo
+        texto: 'Marte es más pequeño que la Tierra, pero tiene récords del sistema solar.'
+        dibujo: 🏆
+      - de: valentina
+        texto: 'Allí está el Monte Olimpo, el volcán más grande que se conoce. Mide unos veintidós kilómetros: como dos Everest y medio.'
+        dibujo: 🌋 🏔️
+      - de: santiago
+        texto: 'Es tan ancho que, si estuvieras en su borde, no verías la cima. ¡Ocuparía más de media España!'
+        dibujo: 🗺️
+      - de: vega
+        texto: '¿Por qué tan grande? Porque allí la corteza no se mueve en placas. La lava salió durante millones de años por el mismo sitio y se fue amontonando.'
+        dibujo: 🧩 ❌
+      - de: hugo
+        texto: 'También tiene el mayor cañón: los Valles Marineris. Mide unos cuatro mil kilómetros: como de Lisboa a Moscú, casi.'
+        dibujo: 🏜️
+      - de: valentina
+        texto: 'Y las mayores tormentas de arena. Algunas tapan el planeta entero durante semanas.'
+        dibujo: 🌪️
+      - de: santiago
+        texto: 'Marte tiene dos lunas pequeñas y con forma de patata: Fobos y Deimos. Sus nombres significan miedo y terror.'
+        dibujo: 🥔 🥔
+      - de: vega
+        texto: 'Fobos se acerca poco a poco a Marte. Dentro de millones de años, se romperá o chocará contra él.'
+        dibujo: 💥
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama el volcán más grande del sistema solar?
+    dibujo: 🌋 🔴
+    correcta: 🌋 Monte Olimpo
+    incorrectas:
+      - texto: 🏔️ Everest
+        feedback: El Everest es una montaña de la Tierra, y mucho más baja. El mayor volcán es el Monte Olimpo.
+      - texto: 🌋 Teide
+        feedback: El Teide es un volcán de Canarias. El mayor del sistema solar es el Monte Olimpo.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas lunas tiene Marte?
+    dibujo: 🥔 🔴
+    correcta: '2'
+    incorrectas:
+      - texto: '0'
+        feedback: Sí tiene. Son dos, pequeñas y con forma de patata.
+      - texto: '1'
+        feedback: Una tiene la Tierra. Marte tiene dos, Fobos y Deimos.

@@ -1,0 +1,99 @@
+titulo: La Tierra por dentro
+subtitulo: Capas, placas y volcanes
+emoji: 🌋
+ejercicios:
+  - tipo: chat
+    titulo: Un viaje al centro de la Tierra
+    mensajes:
+      - de: vega
+        texto: 'Si cortáramos la Tierra por la mitad, veríamos capas, como en un melocotón: piel fina, carne y hueso.'
+        dibujo: 🍑 🌍
+      - de: santiago
+        texto: 'La piel es la corteza, la capa dura que pisamos. Es muy fina: debajo del mar tiene unos siete kilómetros, y debajo de los continentes, unos treinta y cinco.'
+        dibujo: 🌊 ⛰️
+      - de: hugo
+        texto: 'El agujero más profundo que se ha hecho está en Rusia y mide doce kilómetros. ¡Ni siquiera atraviesa la corteza del todo!'
+        dibujo: 🕳️
+      - de: valentina
+        texto: 'Debajo está el manto: casi tres mil kilómetros de roca muy caliente, que se mueve lentísimo, como plastilina blanda.'
+        dibujo: 🟠
+      - de: vega
+        texto: 'En el centro está el núcleo, de hierro y níquel, dos metales. Tiene dos partes: la de fuera es líquida y la de dentro, sólida.'
+        dibujo: 🔴 🟡
+      - de: santiago
+        texto: '¿Sólida con tanto calor? Sí: encima tiene tanto peso, que el metal queda apretado y no puede derretirse. Esa fuerza que aprieta se llama presión.'
+        dibujo: 🗜️
+      - de: hugo
+        texto: 'El centro de la Tierra está a unos cinco mil grados. ¡Casi tan caliente como la superficie del Sol!'
+        dibujo: 🔥
+      - de: valentina
+        texto: 'Hasta el centro hay unos seis mil cuatrocientos kilómetros. Yendo en coche por una autopista, serían más de dos días sin parar, si se pudiera.'
+        dibujo: 🚗
+
+  - tipo: ordenar
+    enunciado: Ordena las capas de la Tierra. Empieza por la de fuera, la que pisamos.
+    piezas: 🟡 Núcleo interno / 🟤 Corteza / 🔴 Núcleo externo / 🟠 Manto
+    solucion: 🟤 Corteza 🟠 Manto 🔴 Núcleo externo 🟡 Núcleo interno
+    explicacion: Por fuera, la corteza. Debajo, el manto. Luego, el núcleo externo, que es líquido. Y en el centro, el núcleo interno, que es sólido.
+
+  - tipo: chat
+    titulo: Un puzle que se mueve
+    mensajes:
+      - de: vega
+        texto: 'La corteza no es de una pieza. Está rota en trozos enormes, como un puzle. Son las placas tectónicas.'
+        dibujo: 🧩 🌍
+      - de: hugo
+        texto: 'Las placas flotan sobre el manto y se mueven unos pocos centímetros cada año. Más o menos, lo que te crecen las uñas.'
+        dibujo: 💅 🐌
+      - de: valentina
+        texto: 'Hace unos doscientos cincuenta millones de años, todos los continentes estaban juntos en uno solo, llamado Pangea.'
+        dibujo: 🌎 🦕
+      - de: santiago
+        texto: 'Cuando dos placas chocan, la tierra se arruga y salen montañas. Así nació el Himalaya, donde está la montaña más alta, el Everest.'
+        dibujo: 🏔️
+      - de: vega
+        texto: 'A veces las placas se atascan y, de golpe, se sueltan. Ese golpe hace temblar el suelo: es un terremoto.'
+        dibujo: 💥
+      - de: hugo
+        texto: 'Y por las grietas sube roca derretida. Bajo tierra se llama magma, y cuando sale por un volcán, lava.'
+        dibujo: 🌋
+
+  - tipo: elegir
+    enunciado: ¿Por qué el centro de la Tierra es sólido, con tanto calor?
+    dibujo: 🌍
+    correcta: 🗜️ Por la presión, que lo aprieta
+    incorrectas:
+      - texto: 🧊 Porque tiene hielo
+        feedback: No hay hielo, está a unos cinco mil grados. Es sólido porque el peso de encima lo aprieta muchísimo.
+      - texto: 🌬️ Porque le da el aire
+        feedback: Allí no llega el aire. Es sólido porque el peso de encima lo aprieta muchísimo.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman los trozos en los que está rota la corteza?
+    dibujo: 🧩
+    correcta: 🧩 Placas tectónicas
+    incorrectas:
+      - texto: 🍽️ Platos de roca
+        feedback: Se parece, ¡pero no! Son las placas tectónicas.
+      - texto: 🌋 Volcanes
+        feedback: Los volcanes salen en las grietas. Los trozos de corteza son las placas tectónicas.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman las rocas derretidas cuando salen por un volcán?
+    dibujo: 🌋
+    correcta: 🔥 Lava
+    incorrectas:
+      - texto: 🟠 Magma
+        feedback: Casi. Se llama magma bajo tierra. Cuando sale fuera, se llama lava.
+      - texto: 🪨 Corteza
+        feedback: La corteza es la capa dura. La roca derretida que sale fuera es la lava.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasa cuando dos placas chocan durante millones de años?
+    dibujo: 🧩 💥
+    correcta: 🏔️ Salen montañas
+    incorrectas:
+      - texto: 🌊 Se seca el mar
+        feedback: No. El suelo se arruga y salen montañas, como el Himalaya.
+      - texto: 🌑 Se apaga el día
+        feedback: Eso no tiene que ver. El suelo se arruga y salen montañas, como el Himalaya.

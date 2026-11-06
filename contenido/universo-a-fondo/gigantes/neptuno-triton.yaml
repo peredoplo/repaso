@@ -1,0 +1,93 @@
+titulo: Tritón, la luna rebelde
+subtitulo: Va al revés y acabará mal
+emoji: 🔱
+ejercicios:
+  - tipo: chat
+    titulo: Una luna capturada
+    mensajes:
+      - de: valentina
+        texto: 'Neptuno tiene dieciséis lunas conocidas, y casi todas llevan nombres de dioses del mar. La mayor, con mucho, se llama Tritón.'
+        dibujo: 🌙 🔱
+      - de: hugo
+        texto: 'Tritón se descubrió diecisiete días después que Neptuno. Y tiene un gran secreto: da vueltas al revés de como gira su planeta.'
+        dibujo: 🔄
+      - de: santiago
+        texto: 'Es la única luna grande del sistema solar que hace eso. Eso quiere decir que Tritón no nació allí.'
+        dibujo: 🕵️
+      - de: vega
+        texto: 'Seguramente era un mundo helado del cinturón de Kuiper, como Plutón. Pasó cerca de Neptuno, y su gravedad la atrapó.'
+        dibujo: 🧲 🧊
+      - de: valentina
+        texto: 'Es de los lugares más fríos que conocemos: unos doscientos treinta y cinco grados bajo cero. Tan fría que el nitrógeno, que aquí es aire, allí es hielo.'
+        dibujo: 🥶
+      - de: hugo
+        texto: 'Pero tiene géiseres. La nave Voyager dos vio cómo el nitrógeno salía a chorro y subía ocho kilómetros, dejando manchas oscuras.'
+        dibujo: ⛲ 🌫️
+      - de: santiago
+        texto: 'Una parte de su superficie parece la piel de un melón. Lo llaman terreno de cantalupo. Nadie sabe bien cómo se formó.'
+        dibujo: 🍈
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene de raro Tritón?
+    dibujo: 🌙 🔱
+    correcta: 🔄 Que da vueltas al revés
+    incorrectas:
+      - texto: 💍 Que tiene anillos
+        feedback: No tiene. Lo raro es que da vueltas al revés de como gira Neptuno.
+      - texto: 🌳 Que tiene árboles
+        feedback: ¡Ja, ja! No. Lo raro es que da vueltas al revés de como gira Neptuno.
+
+  - tipo: elegir
+    enunciado: ¿Por qué se cree que Tritón no nació junto a Neptuno?
+    dibujo: 🕵️
+    correcta: 🧲 Porque Neptuno la atrapó
+    incorrectas:
+      - texto: 🚀 Porque la trajo una nave
+        feedback: ¡Ja, ja! No. Pasó cerca, y la gravedad de Neptuno la atrapó.
+      - texto: 🌍 Porque venía de la Tierra
+        feedback: No. Venía del cinturón de Kuiper, y la gravedad de Neptuno la atrapó.
+
+  - tipo: chat
+    titulo: El final de Tritón
+    mensajes:
+      - de: vega
+        texto: 'Tritón va al revés, y eso la frena. Cada año se acerca un poquito a Neptuno.'
+        dibujo: 🌙 ⬇️
+      - de: santiago
+        texto: 'Dentro de miles de millones de años, estará tan cerca, que la gravedad de Neptuno la romperá en pedazos.'
+        dibujo: 💥 🌙
+      - de: hugo
+        texto: 'Con esos pedazos, Neptuno tendrá unos anillos enormes, quizás como los de Saturno.'
+        dibujo: 💍 🔵
+      - de: valentina
+        texto: 'Ya tiene anillos, pero finos y oscuros. Y algo raro: en uno, el polvo no se reparte por igual, sino en grupos, como si fueran arcos.'
+        dibujo: 🌈 ⬛
+      - de: vega
+        texto: 'Y hay una luna de Neptuno, Nereida, que se aleja muchísimo y luego vuelve a acercarse. Tiene el camino más alargado que se conoce entre las lunas.'
+        dibujo: 🥚 🌙
+      - de: santiago
+        texto: 'En 2022, el telescopio Webb sacó nuevas fotos de Neptuno. Sus anillos se vieron como no se veían desde 1989.'
+        dibujo: 🔭 💍
+      - de: hugo
+        texto: 'Así acaba nuestro viaje por los planetas: de Mercurio, abrasado, a Neptuno, helado. Cada uno, un mundo distinto. Y solo uno tiene vida conocida.'
+        dibujo: 🌍 💙
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasará a Tritón dentro de muchísimo tiempo?
+    dibujo: 🌙 🔵
+    correcta: 💥 Se romperá en pedazos
+    incorrectas:
+      - texto: 🚪 Se irá a otro planeta
+        feedback: No. Se acerca a Neptuno, y su gravedad la romperá en pedazos.
+      - texto: ⭐ Se volverá una estrella
+        feedback: No. Se acerca a Neptuno, y su gravedad la romperá en pedazos.
+
+  - tipo: elegir
+    enunciado: ¿Qué podrían formar esos pedazos?
+    dibujo: 💥 🔵
+    correcta: 💍 Unos anillos enormes
+    incorrectas:
+      - texto: 🌍 Otra Tierra
+        feedback: No. Los pedazos darían vueltas a Neptuno, formando unos anillos enormes.
+      - texto: ☀️ Otro Sol
+        feedback: No. Los pedazos darían vueltas a Neptuno, formando unos anillos enormes.

@@ -73,8 +73,10 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
     return callar;
   }, [ejercicios]);
 
-  // Al llegar a cada ejercicio se oyen la orden y sus frases, sin tener que tocar nada.
+  // Al llegar a cada ejercicio se empieza por arriba (tras un chat largo, la página seguía bajada), y se oyen la orden
+  // y sus frases, sin tener que tocar nada.
   useEffect(() => {
+    document.documentElement.scrollTop = 0;
     const i = alEmpezar(e);
     if (i) hablar(textoInicio(i), { clave: claveInicio(i), auto: !i.siempre, retraso: 300, es: !!e.sinLeer });
   }, [pos, e]);

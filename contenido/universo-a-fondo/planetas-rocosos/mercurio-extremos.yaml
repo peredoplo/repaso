@@ -1,0 +1,103 @@
+titulo: Fuego y hielo en Mercurio
+subtitulo: El planeta de los extremos
+emoji: 🌡️
+ejercicios:
+  - tipo: chat
+    titulo: De horno a congelador
+    mensajes:
+      - de: santiago
+        texto: 'Mercurio es el planeta de los extremos. Por el día, el suelo llega a unos cuatrocientos treinta grados. Se derretiría el plomo.'
+        dibujo: 🔥 🌡️
+      - de: vega
+        texto: 'Por la noche baja a unos ciento ochenta grados bajo cero. Mucho más frío que el peor invierno de la Antártida.'
+        dibujo: 🧊 🥶
+      - de: hugo
+        texto: 'Casi seiscientos grados de diferencia entre el día y la noche. Es el mayor cambio de todos los planetas.'
+        dibujo: 📊
+      - de: valentina
+        texto: '¿Por qué tanto? Porque Mercurio casi no tiene atmósfera. Y la atmósfera es la manta de un planeta: guarda el calor.'
+        dibujo: 🛌 ❌
+      - de: santiago
+        texto: 'Sin manta, en cuanto deja de dar el Sol, todo el calor se escapa al espacio.'
+        dibujo: 💨
+      - de: vega
+        texto: 'Es tan pequeño, que su gravedad no sujeta bien los gases. Además, el viento solar se los lleva.'
+        dibujo: ☀️ 💨
+      - de: hugo
+        texto: 'Desde allí, el Sol se ve unas tres veces más grande que desde la Tierra.'
+        dibujo: ☀️ 🔎
+      - de: valentina
+        texto: 'Y el cielo es negro también de día, porque sin aire no se esparce la luz.'
+        dibujo: ⬛
+
+  - tipo: elegir
+    enunciado: ¿Por qué hace tanto frío en Mercurio por la noche, si está al lado del Sol?
+    dibujo: 🌙 🥶
+    correcta: 🛌 Porque no tiene manta de aire
+    incorrectas:
+      - texto: ☀️ Porque el Sol se apaga
+        feedback: El Sol no se apaga. Mercurio casi no tiene atmósfera que guarde el calor, y se escapa.
+      - texto: 🧊 Porque está lejos del Sol
+        feedback: Está muy cerca. Pero casi no tiene atmósfera que guarde el calor, y se escapa.
+
+  - tipo: chat
+    titulo: Hielo en el planeta más cercano al Sol
+    mensajes:
+      - de: valentina
+        texto: 'Ahora, lo más raro: en Mercurio, el planeta más cercano al Sol, ¡hay hielo!'
+        dibujo: 🧊 ☀️
+      - de: santiago
+        texto: 'Está en los polos, en el fondo de unos cráteres muy hondos, en sitios donde jamás llega un rayo de sol.'
+        dibujo: 🕳️
+      - de: vega
+        texto: 'Mercurio gira casi derecho, sin inclinación. Por eso el fondo de esos cráteres está en sombra para siempre.'
+        dibujo: 🌑
+      - de: hugo
+        texto: 'Es lo contrario de la Tierra, que está inclinada. En Mercurio no hay estaciones como las nuestras.'
+        dibujo: 📐 ❌
+      - de: valentina
+        texto: 'El hielo lo trajeron, seguramente, cometas y rocas que chocaron allí hace mucho. Y como allí nunca hace calor, se ha conservado.'
+        dibujo: ☄️
+      - de: santiago
+        texto: 'El gran mensaje de Mercurio es este: estar cerca del Sol no es lo único que importa. La atmósfera es igual de importante.'
+        dibujo: 💡
+
+  - tipo: elegir
+    enunciado: ¿Dónde está el hielo de Mercurio?
+    dibujo: 🧊
+    correcta: 🕳️ En cráteres a la sombra
+    incorrectas:
+      - texto: 🏔️ En las montañas al sol
+        feedback: Al sol se derretiría. Está en el fondo de cráteres a los que nunca llega la luz.
+      - texto: 🌊 En un mar helado
+        feedback: Mercurio no tiene mares. El hielo está en el fondo de cráteres a la sombra.
+
+  - tipo: elegir
+    enunciado: ¿Qué temperatura hay en Mercurio de día?
+    dibujo: 🌡️ ☀️
+    correcta: 🔥 Más de cuatrocientos grados
+    incorrectas:
+      - texto: 🏖️ Como en la playa
+        feedback: ¡Muchísimo más! Se pasa de cuatrocientos grados.
+      - texto: 🧊 Bajo cero
+        feedback: Eso es de noche. De día se pasa de cuatrocientos grados.
+
+  - tipo: elegir
+    enunciado: ¿De qué color es el cielo de Mercurio de día?
+    dibujo: 👀
+    correcta: ⬛ Negro
+    incorrectas:
+      - texto: 🟦 Azul
+        feedback: El azul lo da el aire, y allí casi no hay. Por eso es negro.
+      - texto: 🟧 Naranja
+        feedback: Sin aire no hay color. Por eso el cielo es negro.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Mercurio casi no tiene atmósfera?
+    dibujo: ⚪ 💨
+    correcta: ☀️ Es pequeño y el viento solar la arrastra
+    incorrectas:
+      - texto: 🧹 Porque alguien la barrió
+        feedback: ¡Ja, ja! No. Es pequeño, sujeta poco los gases, y el viento solar se los lleva.
+      - texto: 🌊 Porque se la bebió el mar
+        feedback: Mercurio no tiene mares. Es pequeño, y el viento solar se lleva los gases.

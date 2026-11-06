@@ -1,0 +1,111 @@
+titulo: Venus va al revés
+subtitulo: Días larguísimos y un lucero
+emoji: 🔄
+ejercicios:
+  - tipo: chat
+    titulo: El planeta que gira al revés
+    mensajes:
+      - de: hugo
+        texto: 'Casi todos los planetas giran en el mismo sentido. Venus va al revés. Si pudieras ver el Sol desde allí, saldría por el oeste.'
+        dibujo: 🔄 🌅
+      - de: valentina
+        texto: 'Y gira despacísimo. Tarda doscientos cuarenta y tres días en dar una vuelta sobre sí mismo.'
+        dibujo: 🐢
+      - de: santiago
+        texto: 'Alrededor del Sol tarda doscientos veinticinco días. Por eso, en Venus, girar una vez dura más que un año entero.'
+        dibujo: 🎂 🌀
+      - de: vega
+        texto: 'Es el giro más lento de todos los planetas. Podrías andar a su ritmo, por el ecuador, casi sin correr. Bueno, con un traje muy especial.'
+        dibujo: 🚶
+      - de: hugo
+        texto: '¿Por qué va al revés? No se sabe seguro. Quizás por un choque gigante hace mucho, o porque su atmósfera tan pesada lo fue frenando.'
+        dibujo: ❓ 💥
+      - de: valentina
+        texto: 'Su atmósfera, en cambio, va rapidísima. Los vientos altos dan la vuelta a Venus en solo cuatro días. Se llama superrotación.'
+        dibujo: 🌪️
+      - de: santiago
+        texto: 'Y tiene miles de volcanes, más que ningún otro planeta. Algunos parecen estar en activo todavía.'
+        dibujo: 🌋
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene de raro el giro de Venus?
+    dibujo: 🟡 🌀
+    correcta: 🔄 Que gira al revés
+    incorrectas:
+      - texto: ⏹️ Que no gira
+        feedback: Sí gira, pero muy despacio y al revés que casi todos los planetas.
+      - texto: ⚡ Que gira rapidísimo
+        feedback: Al contrario, es el planeta que gira más despacio. Y además, al revés.
+
+  - tipo: elegir
+    enunciado: Si estuvieras en Venus, ¿por dónde saldría el Sol?
+    dibujo: 🌅
+    correcta: ⬅️ Por el oeste
+    incorrectas:
+      - texto: ➡️ Por el este
+        feedback: Eso es en la Tierra. Como Venus gira al revés, allí saldría por el oeste.
+
+  - tipo: chat
+    titulo: El lucero del alba
+    mensajes:
+      - de: vega
+        texto: 'Venus es, después del Sol y la Luna, lo que más brilla en el cielo. Sus nubes reflejan muchísima luz, como un espejo.'
+        dibujo: ✨ 🪞
+      - de: valentina
+        texto: 'Se ve al anochecer o al amanecer. Por eso la gente lo llamaba lucero del alba o lucero de la tarde. No es una estrella.'
+        dibujo: 🌇 ⭐
+      - de: hugo
+        texto: 'Los griegos antiguos creían que eran dos astros distintos, hasta que se dieron cuenta de que eran el mismo.'
+        dibujo: 🏛️
+      - de: santiago
+        texto: 'Se llama Venus por la diosa romana del amor y la belleza, por lo bonito que brilla. Casi todo lo que hay en él lleva nombre de mujer.'
+        dibujo: 💖
+      - de: vega
+        texto: 'Con un telescopio se ve que Venus tiene fases, como la Luna. Galileo las vio en 1610 y eso ayudó a demostrar que los planetas giran alrededor del Sol.'
+        dibujo: 🔭 🌓
+      - de: hugo
+        texto: 'Como Venus está entre la Tierra y el Sol, a veces pasa por delante del Sol. Se ve como un puntito negro. Es rarísimo: el próximo será en 2117.'
+        dibujo: ⚫ ☀️
+      - de: valentina
+        texto: 'Venus no tiene lunas ni anillos. Va solo, y es el planeta que más se acerca a la Tierra.'
+        dibujo: 🚫 🌙
+
+  - tipo: elegir
+    enunciado: El lucero del alba, ¿qué es en realidad?
+    dibujo: 🌅 ✨
+    correcta: 🟡 El planeta Venus
+    incorrectas:
+      - texto: ⭐ Una estrella
+        feedback: Parece una estrella, pero no lo es. Es el planeta Venus, que refleja la luz del Sol.
+      - texto: 🛰️ Un satélite
+        feedback: No. Es el planeta Venus, que refleja la luz del Sol.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas lunas tiene Venus?
+    dibujo: 🌙
+    correcta: '0'
+    incorrectas:
+      - texto: '1'
+        feedback: Una tiene la Tierra. Venus no tiene ninguna.
+      - texto: '2'
+        feedback: Dos tiene Marte. Venus no tiene ninguna.
+
+  - tipo: elegir
+    enunciado: ¿Por qué brilla tanto Venus?
+    dibujo: 🟡 ✨
+    correcta: ☁️ Porque sus nubes reflejan la luz
+    incorrectas:
+      - texto: 🔥 Porque arde
+        feedback: No arde. Sus nubes reflejan mucha luz del Sol, como un espejo.
+      - texto: 💡 Porque tiene luz propia
+        feedback: Los planetas no tienen luz propia. Sus nubes reflejan la luz del Sol.
+
+  - tipo: elegir
+    enunciado: ¿Qué vio Galileo en Venus con su telescopio?
+    dibujo: 🔭
+    correcta: 🌓 Que tiene fases, como la Luna
+    incorrectas:
+      - texto: 👽 Unos marcianos
+        feedback: ¡Ja, ja! No. Vio que Venus tiene fases, como la Luna.
+      - texto: 💍 Unos anillos
+        feedback: Venus no tiene anillos. Vio que tiene fases, como la Luna.

@@ -1,0 +1,96 @@
+titulo: El Sol por dentro
+subtitulo: Una fábrica de luz
+emoji: ☀️
+ejercicios:
+  - tipo: chat
+    titulo: Una estrella muy cerca
+    mensajes:
+      - de: valentina
+        texto: 'El Sol no es de fuego, como una hoguera. Es una estrella: una bola gigante de gas muy caliente.'
+        dibujo: ☀️
+      - de: hugo
+        texto: 'Casi todo es hidrógeno, el gas más ligero que existe, y helio, el de los globos que suben solos.'
+        dibujo: 🎈
+      - de: vega
+        texto: 'Es enorme. Dentro del Sol cabrían más de un millón de Tierras. Él solo pesa más que todos los planetas juntos: es más del noventa y nueve por ciento del sistema solar.'
+        dibujo: ☀️ 🌍
+      - de: santiago
+        texto: 'La parte que vemos brillar se llama fotosfera y está a unos cinco mil quinientos grados.'
+        dibujo: 🌡️
+      - de: valentina
+        texto: 'Su centro, el núcleo, es mucho peor: ¡unos quince millones de grados! Allí está la fábrica de energía.'
+        dibujo: 🏭 ☀️
+      - de: hugo
+        texto: 'En el núcleo, la presión aprieta tanto el hidrógeno, que sus trocitos se pegan y forman helio. Eso se llama fusión nuclear, y suelta muchísima energía.'
+        dibujo: ⚛️ 💥
+      - de: vega
+        texto: 'Cada segundo, el Sol convierte unos seiscientos millones de toneladas de hidrógeno. Pesa como millones de elefantes, ¡cada segundo! Y aún le queda para miles de millones de años.'
+        dibujo: 🐘 ⏱️
+
+  - tipo: elegir
+    enunciado: ¿De qué está hecho casi todo el Sol?
+    dibujo: ☀️
+    correcta: 🎈 Hidrógeno y helio
+    incorrectas:
+      - texto: 🪵 Madera ardiendo
+        feedback: El Sol no es una hoguera. Es una bola de gas, casi toda de hidrógeno y helio.
+      - texto: 🪨 Roca
+        feedback: La Tierra es de roca, pero el Sol es de gas, casi todo hidrógeno y helio.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasa en el núcleo del Sol para que brille?
+    dibujo: ⚛️
+    correcta: 💥 La fusión nuclear
+    incorrectas:
+      - texto: 🔌 Está enchufado
+        feedback: ¡Ja, ja! No. El hidrógeno se aprieta, forma helio, y eso suelta energía. Es la fusión nuclear.
+      - texto: 🔥 Arde carbón
+        feedback: No. El hidrógeno se aprieta, forma helio, y eso suelta energía. Es la fusión nuclear.
+
+  - tipo: chat
+    titulo: El viaje de la luz
+    mensajes:
+      - de: santiago
+        texto: 'La energía nace en el núcleo y tiene que salir. ¡Y le cuesta muchísimo! Va chocando dentro del Sol y tarda miles de años en llegar a la superficie.'
+        dibujo: 🌀 ⏳
+      - de: vega
+        texto: 'Después sale al espacio como luz, y esa luz va a la mayor velocidad que existe: unos trescientos mil kilómetros por segundo.'
+        dibujo: ⚡
+      - de: hugo
+        texto: 'A esa velocidad, en un segundo darías más de siete vueltas a la Tierra.'
+        dibujo: 🌍 🔁
+      - de: valentina
+        texto: 'La luz del Sol tarda poco más de ocho minutos en llegar. Cuando miras la luz del día, ha salido del Sol hace ocho minutos.'
+        dibujo: ⏱️ 🌍
+      - de: santiago
+        texto: 'Si el Sol se apagara de golpe, tardaríamos ocho minutos en enterarnos. Tranquilidad: eso no va a pasar.'
+        dibujo: 😮
+      - de: vega
+        texto: 'Las plantas usan esa luz para crecer, y nosotros nos comemos las plantas o a quien las come. ¡Casi toda la energía de tu cuerpo vino del Sol!'
+        dibujo: 🌱 🍎
+
+  - tipo: elegir
+    enunciado: ¿Cuánto tarda la luz del Sol en llegar a la Tierra?
+    dibujo: ☀️ ⚡ 🌍
+    correcta: ⏱️ Ocho minutos
+    incorrectas:
+      - texto: ⚡ Nada, llega al momento
+        feedback: Va rapidísimo, pero el Sol está muy lejos. Tarda unos ocho minutos.
+      - texto: 📅 Un año
+        feedback: Eso sería demasiado. La luz tarda unos ocho minutos.
+
+  - tipo: elegir
+    enunciado: ¿Dónde está más caliente el Sol?
+    dibujo: 🌡️
+    correcta: ☀️ En el núcleo
+    incorrectas:
+      - texto: ✨ En la parte que brilla
+        feedback: Esa parte tiene unos cinco mil quinientos grados. El núcleo tiene unos quince millones.
+      - texto: 🌍 Donde mira a la Tierra
+        feedback: No importa hacia dónde mire. Lo más caliente es el núcleo, con unos quince millones de grados.
+
+  - tipo: ordenar
+    enunciado: 'Ordena el viaje de la energía del Sol: desde donde nace hasta donde llega.'
+    piezas: 🌍 La Tierra / ⚛️ El núcleo / 🌌 El espacio / ✨ La superficie
+    solucion: ⚛️ El núcleo ✨ La superficie 🌌 El espacio 🌍 La Tierra
+    explicacion: La energía nace en el núcleo, sube hasta la superficie, sale al espacio como luz y llega a la Tierra.

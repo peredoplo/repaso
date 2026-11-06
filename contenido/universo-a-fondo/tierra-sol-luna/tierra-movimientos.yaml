@@ -1,0 +1,100 @@
+titulo: Cómo se mueve la Tierra
+subtitulo: Días, años y estaciones
+emoji: 🌍
+ejercicios:
+  - tipo: chat
+    titulo: Dos movimientos a la vez
+    mensajes:
+      - de: hugo
+        texto: 'Parece que estamos quietos, pero la Tierra hace dos movimientos a la vez. Y vamos con ella.'
+        dibujo: 🌍 💨
+      - de: vega
+        texto: 'El primero es la rotación: la Tierra gira sobre sí misma, como una peonza. Una vuelta dura veinticuatro horas: un día.'
+        dibujo: 🌀
+      - de: santiago
+        texto: 'Por eso hay día y noche. El lado que mira al Sol tiene luz; el otro, oscuridad. Cuando aquí cenamos, en Australia ya es de día.'
+        dibujo: ☀️ 🌙
+      - de: valentina
+        texto: 'El Sol no se mueve por el cielo: somos nosotros los que giramos. Parece que sale y se esconde, igual que parece que los árboles corren cuando vas en coche.'
+        dibujo: 🌅 🚗
+      - de: hugo
+        texto: 'El segundo es la traslación: la Tierra da una vuelta alrededor del Sol. Tarda trescientos sesenta y cinco días y unas seis horas: un año.'
+        dibujo: 🌍 ☀️
+      - de: vega
+        texto: '¿Y esas seis horas? Se van guardando. Cada cuatro años suman un día más: el veintinueve de febrero. Es el año bisiesto.'
+        dibujo: 📅
+      - de: santiago
+        texto: 'Vamos a unos ciento siete mil kilómetros por hora alrededor del Sol. ¡Y no lo notamos, porque todo va a la misma velocidad que nosotros!'
+        dibujo: 🚀
+
+  - tipo: elegir
+    enunciado: ¿Por qué hay día y noche?
+    dibujo: ☀️ 🌍
+    correcta: 🌀 Porque la Tierra gira sobre sí misma
+    incorrectas:
+      - texto: 💡 Porque el Sol se apaga
+        feedback: El Sol nunca se apaga. Es de noche en el lado de la Tierra que no mira al Sol.
+      - texto: 🌙 Porque la Luna tapa el Sol
+        feedback: Eso sería un eclipse. La noche llega porque la Tierra gira y nuestro lado deja de mirar al Sol.
+
+  - tipo: chat
+    titulo: Una Tierra inclinada
+    mensajes:
+      - de: valentina
+        texto: 'La Tierra gira un poco torcida. Su eje, la línea imaginaria alrededor de la que gira, está inclinado unos veintitrés grados.'
+        dibujo: 🌍 📐
+      - de: vega
+        texto: 'Mucha gente cree que en verano hace calor porque estamos más cerca del Sol. ¡No es verdad! En enero estamos más cerca que en julio.'
+        dibujo: ❌ 📏
+      - de: santiago
+        texto: 'Las estaciones existen por la inclinación. Cuando nuestro lado se inclina hacia el Sol, la luz llega más directa y los días son más largos: es verano.'
+        dibujo: ☀️ 🏖️
+      - de: hugo
+        texto: 'Seis meses después nos inclinamos hacia el otro lado. La luz llega de lado, los días son cortos y hace frío: es invierno.'
+        dibujo: ❄️ ⛄
+      - de: valentina
+        texto: 'Por eso, cuando aquí es Navidad y hace frío, en Argentina y en Australia es verano. Tienen las estaciones al revés.'
+        dibujo: 🎄 🏖️
+      - de: vega
+        texto: 'Si la Tierra no estuviera inclinada, no habría estaciones. Cada día sería igual a los demás durante todo el año.'
+        dibujo: 🗓️
+
+  - tipo: elegir
+    enunciado: ¿Por qué hay estaciones?
+    dibujo: 🍂 ❄️
+    correcta: 📐 Porque la Tierra está inclinada
+    incorrectas:
+      - texto: 📏 Porque nos acercamos al Sol
+        feedback: ¡Eso cree mucha gente! Pero en enero estamos más cerca. Las estaciones existen porque la Tierra está inclinada.
+      - texto: 🌙 Porque cambia la Luna
+        feedback: La Luna no tiene que ver. Las estaciones existen porque la Tierra está inclinada.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto tarda la Tierra en dar una vuelta alrededor del Sol?
+    dibujo: 🌍 ☀️
+    correcta: 📅 Un año
+    incorrectas:
+      - texto: ⏰ Un día
+        feedback: En un día gira sobre sí misma. Alrededor del Sol tarda un año.
+      - texto: 🌙 Un mes
+        feedback: En un mes, más o menos, da la vuelta la Luna a la Tierra. La Tierra al Sol tarda un año.
+
+  - tipo: elegir
+    enunciado: Cuando aquí es invierno, ¿qué estación tienen en Australia?
+    dibujo: 🎄
+    correcta: 🏖️ Verano
+    incorrectas:
+      - texto: ❄️ Invierno
+        feedback: No. Australia está en la otra mitad de la Tierra y tiene las estaciones al revés. Allí es verano.
+      - texto: 🌸 Primavera
+        feedback: Tienen las estaciones justo al revés. Allí es verano.
+
+  - tipo: elegir
+    enunciado: ¿Qué día se añade cada cuatro años?
+    dibujo: 📅
+    correcta: 📅 El 29 de febrero
+    incorrectas:
+      - texto: 🎄 El 25 de diciembre
+        feedback: Ese día está todos los años. El que se añade es el veintinueve de febrero.
+      - texto: 🎃 El 31 de octubre
+        feedback: Ese día está todos los años. El que se añade es el veintinueve de febrero.

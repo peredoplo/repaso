@@ -1,0 +1,100 @@
+titulo: Cómo se llega a astronauta
+subtitulo: Años de entrenamiento
+emoji: 🏋️
+ejercicios:
+  - tipo: chat
+    titulo: Muy pocas plazas
+    mensajes:
+      - de: vega
+        texto: 'Ser astronauta es de los trabajos más difíciles de conseguir. En 2021, a la Agencia Espacial Europea se presentaron más de veintidós mil personas.'
+        dibujo: 🧑‍🚀 📝
+      - de: hugo
+        texto: 'Eligieron a diecisiete. Entre ellas, dos personas de España: Pablo Álvarez, ingeniero, y Sara García, que investiga el cáncer.'
+        dibujo: 🏆 👩‍🔬
+      - de: santiago
+        texto: 'Hay que estudiar ciencias, ingeniería o medicina, y tener experiencia. Y gozar de muy buena salud y de una gran calma.'
+        dibujo: 🎓 🩺
+      - de: valentina
+        texto: 'También hay que saber idiomas. El inglés es imprescindible, y para ir en naves rusas había que aprender ruso.'
+        dibujo: 🗣️
+      - de: vega
+        texto: 'Lo que más se valora es trabajar en equipo y no ponerse nervioso. Allí arriba, un error puede ser muy peligroso.'
+        dibujo: 🤝 😌
+      - de: hugo
+        texto: 'Después de elegidos, pasan años entrenando. Y muchos aún esperan años antes de ir al espacio.'
+        dibujo: ⏳
+
+  - tipo: elegir
+    enunciado: ¿Qué es lo que más se valora en quien quiere ser astronauta?
+    dibujo: 🧑‍🚀
+    correcta: 🤝 Trabajar en equipo y mantener la calma
+    incorrectas:
+      - texto: 🎸 Tocar la guitarra
+        feedback: ¡Estaría bien! Pero lo que más se valora es trabajar en equipo y mantener la calma.
+      - texto: 🏃 Correr muy rápido
+        feedback: Hay que estar en forma, pero lo que más se valora es trabajar en equipo y mantener la calma.
+
+  - tipo: elegir
+    enunciado: ¿Cuántos fueron elegidos entre más de veintidós mil personas?
+    dibujo: 📝
+    correcta: '17'
+    incorrectas:
+      - texto: '5000'
+        feedback: Muchísimos menos. Eligieron a diecisiete.
+      - texto: '1000'
+        feedback: Muchísimos menos. Eligieron a diecisiete.
+
+  - tipo: chat
+    titulo: Una piscina y una lavadora gigante
+    mensajes:
+      - de: valentina
+        texto: '¿Cómo se practica flotar? En una piscina gigante. Con traje espacial y pesos, bajo el agua, se simula moverse sin gravedad.'
+        dibujo: 🏊 🧑‍🚀
+      - de: santiago
+        texto: 'Dentro de esa piscina hay una copia de la Estación Espacial. Por cada hora fuera de la nave, se practican varias horas bajo el agua.'
+        dibujo: 🌊 🏠
+      - de: hugo
+        texto: 'También suben en un avión que sube y baja como una montaña rusa. En cada bajada se flota unos veinte segundos. Lo llaman el cometa del vómito.'
+        dibujo: ✈️ 🤢
+      - de: vega
+        texto: 'Prueban una máquina que da vueltas muy deprisa, la centrifugadora. Así se acostumbran a sentir que pesan varias veces más, como al despegar.'
+        dibujo: 🌀 ⚖️
+      - de: valentina
+        texto: 'Y aprenden a sobrevivir por si la nave aterriza donde no toca: en el mar, en el desierto, o en un bosque helado.'
+        dibujo: 🏕️ ❄️
+      - de: santiago
+        texto: 'También estudian cada botón de la nave, reparaciones, primeros auxilios... Hasta aprenden a sacarse sangre y a arreglar un váter.'
+        dibujo: 🔧 🚽
+      - de: hugo
+        texto: 'Algunos entrenan en cuevas, sin luz del día, durante días, para aprender a convivir en sitios cerrados, oscuros y difíciles.'
+        dibujo: 🕳️ 🔦
+
+  - tipo: elegir
+    enunciado: ¿Dónde se practica moverse como en el espacio?
+    dibujo: 🧑‍🚀
+    correcta: 🏊 En una piscina gigante
+    incorrectas:
+      - texto: 🛝 En un tobogán
+        feedback: ¡Ja, ja! No. Se practica bajo el agua, en una piscina gigante.
+      - texto: 🛏️ En una cama elástica
+        feedback: Sería divertido, pero se practica bajo el agua, en una piscina gigante.
+
+  - tipo: elegir
+    enunciado: ¿Por qué entrenan para sobrevivir en el mar o en la nieve?
+    dibujo: 🏕️
+    correcta: 🛬 Por si aterrizan donde no toca
+    incorrectas:
+      - texto: 🏖️ Para irse de vacaciones
+        feedback: ¡Ja, ja! No. Es por si la nave aterriza en un sitio inesperado.
+      - texto: 🐧 Para hacerse amigos de los pingüinos
+        feedback: ¡Ja, ja! No. Es por si la nave aterriza en un sitio inesperado.
+
+  - tipo: elegir
+    enunciado: ¿Qué sienten en la centrifugadora?
+    dibujo: 🌀
+    correcta: ⚖️ Que pesan varias veces más
+    incorrectas:
+      - texto: 🎈 Que flotan
+        feedback: Eso es en el avión. En la centrifugadora sienten que pesan varias veces más.
+      - texto: 🥶 Mucho frío
+        feedback: No. En la centrifugadora sienten que pesan varias veces más, como al despegar.

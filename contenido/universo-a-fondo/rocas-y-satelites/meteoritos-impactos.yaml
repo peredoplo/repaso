@@ -1,0 +1,93 @@
+titulo: Grandes choques
+subtitulo: De los dinosaurios a hoy
+emoji: 🦖
+ejercicios:
+  - tipo: chat
+    titulo: El fin de los dinosaurios
+    mensajes:
+      - de: hugo
+        texto: 'Hace unos sesenta y seis millones de años, un asteroide de unos diez kilómetros chocó con la Tierra, en lo que hoy es México.'
+        dibujo: ☄️ 🦖
+      - de: santiago
+        texto: 'Dejó un cráter de unos ciento ochenta kilómetros. Se llama Chicxulub. Hoy está enterrado, por eso tardaron mucho en encontrarlo.'
+        dibujo: 🕳️ 🗺️
+      - de: vega
+        texto: 'El golpe levantó polvo y hollín que tapó el Sol durante meses o años. Las plantas murieron, y con ellas los animales que las comían.'
+        dibujo: 🌑 🥀
+      - de: valentina
+        texto: 'Casi todos los dinosaurios desaparecieron, como unas tres cuartas partes de las especies. Pero sobrevivieron los mamíferos pequeños.'
+        dibujo: 🐭
+      - de: hugo
+        texto: 'Y un grupo de dinosaurios sobrevivió: las aves. Un gorrión es, de verdad, un dinosaurio de hoy.'
+        dibujo: 🐦 🦖
+      - de: santiago
+        texto: 'La pista la encontraron en una capa fina de roca de todo el mundo, con mucho iridio, un metal raro en la Tierra y común en los asteroides.'
+        dibujo: 🔎 🪨
+      - de: vega
+        texto: 'Sin ese choque, quizá los mamíferos no habrían crecido. Y nosotros quizá no estaríamos aquí.'
+        dibujo: 🐵 🧒
+
+  - tipo: elegir
+    enunciado: ¿Qué acabó con la mayoría de los dinosaurios?
+    dibujo: 🦖
+    correcta: ☄️ Un asteroide gigante
+    incorrectas:
+      - texto: 🦠 Un catarro
+        feedback: No. Un asteroide gigante tapó el Sol con polvo durante mucho tiempo.
+      - texto: 🦁 Los leones
+        feedback: Los leones no existían. Fue un asteroide gigante, que tapó el Sol con polvo.
+
+  - tipo: elegir
+    enunciado: ¿Qué animales de hoy son descendientes de los dinosaurios?
+    dibujo: 🦖
+    correcta: 🐦 Las aves
+    incorrectas:
+      - texto: 🐟 Los peces
+        feedback: Los peces son más antiguos. Los descendientes de los dinosaurios son las aves.
+      - texto: 🐈 Los gatos
+        feedback: Los gatos son mamíferos. Los descendientes de los dinosaurios son las aves.
+
+  - tipo: elegir
+    enunciado: ¿Por qué murieron tantas plantas tras el choque?
+    dibujo: 🥀
+    correcta: 🌑 Porque el polvo tapó el Sol
+    incorrectas:
+      - texto: 🌊 Porque llovió demasiado
+        feedback: No. El polvo tapó el Sol, y sin luz las plantas no pueden crecer.
+      - texto: 🦖 Porque se las comieron todas
+        feedback: No. El polvo tapó el Sol, y sin luz las plantas no pueden crecer.
+
+  - tipo: chat
+    titulo: Choques recientes
+    mensajes:
+      - de: valentina
+        texto: 'Los grandes choques son rarísimos. Pero la Tierra guarda marcas. En Arizona está el cráter Barringer, de más de un kilómetro, de hace unos cincuenta mil años.'
+        dibujo: 🏜️ 🕳️
+      - de: hugo
+        texto: 'En 1908, en Tunguska, en Rusia, una roca explotó en el aire. Derribó millones de árboles. Por suerte, allí no vivía casi nadie.'
+        dibujo: 🌲 💥
+      - de: santiago
+        texto: 'En 2013, en Cheliábinsk, también en Rusia, una roca de unos veinte metros estalló en el cielo. La onda rompió miles de ventanas.'
+        dibujo: 🪟 💥
+      - de: vega
+        texto: 'Mucha gente se acercó a mirar por la ventana al ver la luz, y luego llegó el golpe. El sonido va más despacio que la luz, igual que en las tormentas.'
+        dibujo: ⚡ 🔊
+      - de: hugo
+        texto: 'En España también caen. En 2004 cayó uno en Villalbeto de la Peña, en Palencia, y hay trozos en museos.'
+        dibujo: 🏛️ 🪨
+      - de: valentina
+        texto: 'El mayor meteorito conocido es el de Hoba, en Namibia. Pesa unas sesenta toneladas, y sigue donde cayó, porque nadie puede moverlo.'
+        dibujo: 🐘 🪨
+      - de: santiago
+        texto: 'Hoy, los astrónomos vigilan el cielo con telescopios para detectar asteroides que se acerquen. Tranquilidad: no se conoce ninguno grande que vaya a chocar.'
+        dibujo: 🔭 ✅
+
+  - tipo: elegir
+    enunciado: En Cheliábinsk, ¿por qué se rompieron las ventanas después del destello?
+    dibujo: 🪟 💥
+    correcta: 🔊 Porque el golpe llegó después de la luz
+    incorrectas:
+      - texto: 🐦 Por los pájaros
+        feedback: No. La luz llega antes y el golpe del aire llega después, como el trueno.
+      - texto: 🪨 Porque cayó una piedra en cada una
+        feedback: No. La luz llega antes y el golpe del aire llega después, como el trueno.

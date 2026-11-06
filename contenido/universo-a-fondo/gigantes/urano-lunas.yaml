@@ -1,0 +1,100 @@
+titulo: Las lunas de Urano
+subtitulo: Con nombres de teatro
+emoji: 🎭
+ejercicios:
+  - tipo: chat
+    titulo: Lunas de teatro
+    mensajes:
+      - de: vega
+        texto: 'Urano tiene casi treinta lunas conocidas, y no tienen nombres de dioses, como las de los demás planetas.'
+        dibujo: 🌙 🌙 🌙
+      - de: santiago
+        texto: 'Llevan nombres de personajes de teatro, de William Shakespeare, y también de un poeta, Alexander Pope.'
+        dibujo: 🎭 📜
+      - de: hugo
+        texto: 'Por eso hay lunas llamadas Julieta, Ofelia, Titania, Oberón y Puck. Mucho más divertidas.'
+        dibujo: 🧚 👑
+      - de: valentina
+        texto: 'Son mundos de hielo y roca. Las mayores son Titania y Oberón, y las descubrió el propio Herschel.'
+        dibujo: 🧊 🪨
+      - de: vega
+        texto: 'Hace poco, el telescopio James Webb encontró otra lunita, diminuta, en 2025. Todavía aparecen lunas nuevas.'
+        dibujo: 🔭 🌙
+      - de: santiago
+        texto: 'Las lunas de Urano también van tumbadas: dan vueltas por el mismo plano en que está tumbado el planeta.'
+        dibujo: 🛌 🌙
+      - de: hugo
+        texto: 'Cuando la Voyager dos pasó en 1986, sacó las únicas fotos de cerca que tenemos. Vio algunas lunas solo por un lado.'
+        dibujo: 📷
+
+  - tipo: elegir
+    enunciado: ¿De dónde vienen los nombres de las lunas de Urano?
+    dibujo: 🎭
+    correcta: 🎭 De personajes de teatro
+    incorrectas:
+      - texto: 🦸 De superhéroes
+        feedback: ¡Ja, ja! Sería genial. Pero son de personajes de teatro, de Shakespeare.
+      - texto: 🐶 De perros famosos
+        feedback: No. Son de personajes de teatro, de Shakespeare.
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estas es una luna de Urano?
+    dibujo: 🌙 🔵
+    correcta: 🧚 Titania
+    incorrectas:
+      - texto: 🟠 Titán
+        feedback: Se parece, ¡pero Titán es de Saturno! La de Urano es Titania.
+      - texto: 🟡 Ío
+        feedback: Ío es de Júpiter. La de Urano es Titania.
+
+  - tipo: chat
+    titulo: Miranda, la luna hecha pedazos
+    mensajes:
+      - de: valentina
+        texto: 'La luna más rara de Urano es Miranda. Parece hecha de trozos pegados: cañones, surcos y terrazas, sin orden.'
+        dibujo: 🧩 🌙
+      - de: hugo
+        texto: 'Allí está Verona, el acantilado más alto del sistema solar. Mide unos veinte kilómetros: el doble que la altura a la que va un avión.'
+        dibujo: 🧗 ✈️
+      - de: santiago
+        texto: 'Miranda tiene tan poca gravedad, que si saltaras de ese acantilado, tardarías unos doce minutos en llegar abajo. Tiempo para pensarlo bien.'
+        dibujo: ⏱️ 🪂
+      - de: vega
+        texto: '¿Cómo se hizo así? Quizás por choques, o porque la gravedad de Urano la calentó, y por dentro se movió, y se arrugó por fuera.'
+        dibujo: 🌀 ❓
+      - de: valentina
+        texto: 'Otra luna, Ariel, tiene grietas enormes y parece que tuvo volcanes de agua y hielo. Se llaman criovolcanes.'
+        dibujo: 🌋 🧊
+      - de: hugo
+        texto: 'Y se cree que en alguna de esas lunas podría haber un océano escondido bajo el hielo. Pero hace falta una nave para comprobarlo.'
+        dibujo: 🌊 🔎
+
+  - tipo: elegir
+    enunciado: ¿Qué luna parece hecha de trozos pegados?
+    dibujo: 🧩
+    correcta: 🌙 Miranda
+    incorrectas:
+      - texto: 🌕 Nuestra Luna
+        feedback: La nuestra tiene cráteres, pero no está así. La de los trozos es Miranda.
+      - texto: 🟠 Titán
+        feedback: Titán tiene lagos. La de los trozos es Miranda.
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene de especial el acantilado de Miranda?
+    dibujo: 🧗
+    correcta: 🏆 Es el más alto del sistema solar
+    incorrectas:
+      - texto: 🍫 Es de chocolate
+        feedback: ¡Ja, ja! No. Es de hielo y roca, y es el más alto del sistema solar.
+      - texto: 🌊 Tiene una cascada
+        feedback: No. Lo especial es que es el más alto del sistema solar.
+
+  - tipo: elegir
+    enunciado: ¿Qué es un criovolcán?
+    dibujo: 🌋 🧊
+    correcta: 🧊 Un volcán de agua y hielo
+    incorrectas:
+      - texto: 🔥 Un volcán de lava
+        feedback: Un criovolcán no echa lava. Echa agua y hielo.
+      - texto: 🍦 Un helado grande
+        feedback: ¡Ja, ja! No. Es un volcán que echa agua y hielo.

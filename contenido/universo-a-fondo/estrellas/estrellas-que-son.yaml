@@ -1,0 +1,106 @@
+titulo: Qué es una estrella
+subtitulo: Colores, tamaños y distancias
+emoji: ⭐
+ejercicios:
+  - tipo: chat
+    titulo: Soles lejanos
+    mensajes:
+      - de: vega
+        texto: 'Cada estrella del cielo es un sol. Una bola enorme de gas que brilla con luz propia, por la fusión nuclear. Nuestro Sol es solo la más cercana.'
+        dibujo: ⭐ ☀️
+      - de: santiago
+        texto: 'Parecen puntitos porque están lejísimos. Tan lejos, que los kilómetros no sirven. Se usa el año luz: lo que recorre la luz en un año.'
+        dibujo: 📏 💡
+      - de: hugo
+        texto: 'Un año luz son unos nueve billones y medio de kilómetros. Un avión tardaría más de un millón de años en recorrerlo.'
+        dibujo: ✈️ ⏳
+      - de: valentina
+        texto: 'La estrella más cercana, después del Sol, es Próxima Centauri, a poco más de cuatro años luz.'
+        dibujo: ⭐
+      - de: vega
+        texto: 'Eso significa que la vemos como era hace más de cuatro años. Mirar al cielo es mirar al pasado.'
+        dibujo: 🔭 ⏪
+      - de: santiago
+        texto: 'Si una estrella se apagara hoy a mil años luz, seguiríamos viéndola durante mil años más.'
+        dibujo: 🕯️
+      - de: hugo
+        texto: 'Las estrellas parpadean porque su luz atraviesa el aire de la Tierra, que se mueve. En el espacio no parpadean.'
+        dibujo: ✨ 💨
+      - de: valentina
+        texto: 'Sin telescopio, en un sitio muy oscuro, se pueden ver unas tres mil estrellas a la vez. En una ciudad, muchas menos, por la luz de las farolas.'
+        dibujo: 🌃 👀
+
+  - tipo: elegir
+    enunciado: ¿Qué es una estrella?
+    dibujo: ⭐
+    correcta: ☀️ Un sol muy lejano
+    incorrectas:
+      - texto: 💎 Un diamante del cielo
+        feedback: Parece un diamante, pero es un sol, una bola enorme de gas que brilla.
+      - texto: 🪨 Una roca que brilla
+        feedback: Las rocas no dan luz. Una estrella es un sol, una bola enorme de gas.
+
+  - tipo: elegir
+    enunciado: ¿Qué mide un año luz?
+    dibujo: 📏 💡
+    correcta: 📏 Una distancia
+    incorrectas:
+      - texto: ⏰ Un tiempo
+        feedback: ¡Parece un tiempo, por lo de año! Pero mide la distancia que recorre la luz en un año.
+      - texto: ⚖️ Un peso
+        feedback: No. Mide la distancia que recorre la luz en un año.
+
+  - tipo: elegir
+    enunciado: ¿Por qué parpadean las estrellas?
+    dibujo: ✨
+    correcta: 💨 Por el aire que se mueve
+    incorrectas:
+      - texto: 👀 Porque nos guiñan el ojo
+        feedback: ¡Ja, ja! No. Su luz atraviesa el aire de la Tierra, que se mueve.
+      - texto: 🔌 Porque se estropean
+        feedback: No. Su luz atraviesa el aire de la Tierra, que se mueve.
+
+  - tipo: chat
+    titulo: Una por una, todas distintas
+    mensajes:
+      - de: santiago
+        texto: 'Las estrellas tienen colores, y el color dice su temperatura. Al revés que en los grifos: las azules son las más calientes.'
+        dibujo: 🔵 🚰
+      - de: vega
+        texto: 'Las blancas y las amarillas, como el Sol, son intermedias. Las rojas son las menos calientes. Igual que el hierro al rojo vivo, que aún no está blanco.'
+        dibujo: 🟡 🔴
+      - de: hugo
+        texto: 'Hay tamaños increíbles. Betelgeuse, una estrella roja de Orión, es tan grande, que si estuviera en lugar del Sol llegaría más allá de Marte.'
+        dibujo: 🔴 🏆
+      - de: valentina
+        texto: 'Y muchas estrellas no van solas. Más o menos, la mitad tienen compañera. Giran una alrededor de la otra. Son estrellas dobles.'
+        dibujo: ⭐ ⭐
+      - de: santiago
+        texto: 'Nuestro Sol va solo. Pero en otros mundos se verían dos soles en el cielo.'
+        dibujo: ☀️ ☀️
+      - de: vega
+        texto: 'La estrella más brillante de la noche es Sirio. Está en la constelación del Perro Mayor, y la llaman la Estrella del Perro.'
+        dibujo: 🐕 ⭐
+      - de: hugo
+        texto: 'Se conocen más de seis mil planetas que giran alrededor de otras estrellas. Se llaman exoplanetas.'
+        dibujo: 🪐 ⭐
+
+  - tipo: elegir
+    enunciado: ¿De qué color son las estrellas más calientes?
+    dibujo: 🌡️ ⭐
+    correcta: 🔵 Azules
+    incorrectas:
+      - texto: 🔴 Rojas
+        feedback: Parece lo lógico, ¡pero es al revés! Las rojas son las menos calientes.
+      - texto: 🟢 Verdes
+        feedback: No hay estrellas verdes. Las más calientes son las azules.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman los planetas de otras estrellas?
+    dibujo: 🪐 ⭐
+    correcta: 🪐 Exoplanetas
+    incorrectas:
+      - texto: 🌙 Lunas
+        feedback: Las lunas giran alrededor de planetas. Los planetas de otras estrellas son exoplanetas.
+      - texto: ☄️ Cometas
+        feedback: No. Los planetas de otras estrellas son exoplanetas.

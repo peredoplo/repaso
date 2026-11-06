@@ -1,0 +1,96 @@
+titulo: Cómo se quedan arriba
+subtitulo: Órbitas altas y bajas
+emoji: 🛰️
+ejercicios:
+  - tipo: chat
+    titulo: Lunas hechas por personas
+    mensajes:
+      - de: valentina
+        texto: 'Un satélite es todo lo que da vueltas a un planeta. La Luna es un satélite natural. Los que fabricamos son satélites artificiales.'
+        dibujo: 🌕 🛰️
+      - de: hugo
+        texto: 'El primero fue el Sputnik, de la Unión Soviética, en 1957. Era una bola de metal de cincuenta y ocho centímetros, con cuatro antenas.'
+        dibujo: ⚪ 📡
+      - de: santiago
+        texto: 'Solo hacía bip, bip por radio. Pero cualquiera con una radio podía escucharlo. El mundo entero se quedó de piedra.'
+        dibujo: 📻 😮
+      - de: vega
+        texto: 'Hoy funcionan más de quince mil. Y cada año suben miles más, sobre todo para internet.'
+        dibujo: 🛰️ 🌐
+      - de: valentina
+        texto: 'Para no caer, tiene que ir muy rápido de lado. Igual que la Estación Espacial, cae alrededor de la Tierra sin parar. Es la órbita.'
+        dibujo: 🌍 🔁
+      - de: hugo
+        texto: 'Casi todos usan paneles solares para tener energía. Por eso parecen pájaros con alas brillantes.'
+        dibujo: ☀️ 🪽
+      - de: santiago
+        texto: 'Se comunican con la Tierra por radio, con antenas parabólicas enormes.'
+        dibujo: 📡
+
+  - tipo: elegir
+    enunciado: ¿Cuál fue el primer satélite artificial?
+    dibujo: 🛰️
+    correcta: ⚪ Sputnik
+    incorrectas:
+      - texto: 🌕 La Luna
+        feedback: La Luna es un satélite natural. El primero fabricado fue el Sputnik.
+      - texto: 🔭 El Hubble
+        feedback: El Hubble es de 1990. El primero fue el Sputnik, en 1957.
+
+  - tipo: elegir
+    enunciado: ¿Por qué no se cae un satélite?
+    dibujo: 🛰️ 🌍
+    correcta: 💨 Porque va muy rápido de lado
+    incorrectas:
+      - texto: 🪝 Porque está colgado de un gancho
+        feedback: ¡Ja, ja! No. Va tan rápido de lado que cae alrededor de la Tierra sin llegar a tocarla.
+      - texto: 🎈 Porque lleva un globo
+        feedback: No. Va tan rápido de lado que cae alrededor de la Tierra sin llegar a tocarla.
+
+  - tipo: elegir
+    enunciado: ¿Cuál de estos es un satélite natural?
+    dibujo: 🌍
+    correcta: 🌕 La Luna
+    incorrectas:
+      - texto: 🛰️ El Sputnik
+        feedback: El Sputnik lo fabricamos, es artificial. El natural es la Luna.
+      - texto: 🏠 La Estación Espacial
+        feedback: La Estación la fabricamos, es artificial. El natural es la Luna.
+
+  - tipo: chat
+    titulo: Tres carreteras en el cielo
+    mensajes:
+      - de: vega
+        texto: 'Los satélites no están todos a la misma altura. Es como si en el cielo hubiera carreteras distintas.'
+        dibujo: 🛣️ 🌍
+      - de: santiago
+        texto: 'La órbita baja está a unos cientos de kilómetros. Aquí están la Estación y casi todos los satélites. Dan una vuelta en hora y media.'
+        dibujo: ⬇️ ⏱️
+      - de: hugo
+        texto: 'La órbita media está a unos veinte mil kilómetros. Es la de los satélites de GPS. Dan dos vueltas al día.'
+        dibujo: 📍
+      - de: valentina
+        texto: 'Y la más curiosa es la órbita geoestacionaria, a unos treinta y seis mil kilómetros. Allí, un satélite tarda un día justo en dar la vuelta.'
+        dibujo: ⏰ 🌍
+      - de: vega
+        texto: 'Eso significa que gira a la vez que la Tierra, y desde abajo parece quieto en el cielo. Por eso las antenas de televisión no se mueven.'
+        dibujo: 📡 📺
+      - de: santiago
+        texto: 'Cuanto más alto, más lento va un satélite. Cuanto más bajo, más rápido. Igual que Mercurio y Neptuno, ¿recuerdas?'
+        dibujo: ⚪ 🔵
+      - de: hugo
+        texto: 'De noche, a veces se ven pasar satélites: son puntitos que avanzan sin parpadear. Brillan porque arriba aún les da el Sol.'
+        dibujo: ✨ 🌃
+      - de: vega
+        texto: 'A veces se ven en fila, como un tren de luces. Son satélites de internet recién lanzados, todavía juntos.'
+        dibujo: 🚆 ✨
+
+  - tipo: elegir
+    enunciado: ¿Qué tiene de especial la órbita geoestacionaria?
+    dibujo: 📡
+    correcta: ⏹️ Que el satélite parece quieto
+    incorrectas:
+      - texto: 🌋 Que pasa por los volcanes
+        feedback: No. El satélite gira a la vez que la Tierra, y parece quieto en el cielo.
+      - texto: 🌙 Que está en la Luna
+        feedback: No. El satélite gira a la vez que la Tierra, y parece quieto en el cielo.

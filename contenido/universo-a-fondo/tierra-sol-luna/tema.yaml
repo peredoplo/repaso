@@ -1,0 +1,17 @@
+# El universo a fondo (6 de noviembre de 2026): Miguel hizo las lecciones de «El universo» en una tarde y las repitió
+# varias veces, y pidió mucha más profundidad, aunque fuera de los últimos cursos de Primaria. Son las mismas 19
+# exposiciones de clase, con tres lecciones cada una. Sigue siendo sin leer: las palabras difíciles se explican al decirlas.
+asignatura: El universo a fondo
+titulo: La Tierra, el Sol y la Luna
+descripcion: Qué hay dentro, cómo se mueven y qué les pasará.
+sinLeer: true
+lecciones:
+  - tierra-capas
+  - tierra-movimientos
+  - tierra-vida
+  - sol-dentro
+  - sol-tormentas
+  - sol-futuro
+  - luna-origen
+  - luna-fases
+  - luna-pisadas

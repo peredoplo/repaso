@@ -1,0 +1,101 @@
+titulo: Dibujos en el cielo
+subtitulo: Héroes, animales y leyendas
+emoji: 🏹
+ejercicios:
+  - tipo: chat
+    titulo: Unir los puntos
+    mensajes:
+      - de: valentina
+        texto: 'Las constelaciones son como un juego de unir puntos. Son dibujos que la gente imaginó uniendo estrellas.'
+        dibujo: ✨ ✏️
+      - de: hugo
+        texto: 'Hoy hay ochenta y ocho constelaciones oficiales. Los astrónomos dividieron todo el cielo en ochenta y ocho zonas, como si fueran países.'
+        dibujo: 🗺️ 🌌
+      - de: santiago
+        texto: 'Muchas nos llegan de griegos y romanos, que a su vez aprendieron de los babilonios. Cuentan historias de héroes y animales.'
+        dibujo: 🏛️ 📖
+      - de: vega
+        texto: 'Las estrellas de una constelación no suelen estar juntas de verdad. Unas están mucho más lejos que otras. Solo parecen juntas desde aquí.'
+        dibujo: 👀 📏
+      - de: valentina
+        texto: 'Es como cuando pones un dedo delante y parece tocar una montaña lejana. Si te movieras muy lejos en el espacio, el dibujo cambiaría.'
+        dibujo: ☝️ ⛰️
+      - de: hugo
+        texto: 'Otros pueblos vieron dibujos distintos en las mismas estrellas. Lo que aquí es Osa Mayor, para unos era un carro, y para otros, un arado.'
+        dibujo: 🐻 🛒
+      - de: santiago
+        texto: 'Las estrellas de cada constelación tienen nombres muy antiguos, muchos de ellos árabes, como Betelgeuse, Rigel, Aldebarán o Altair.'
+        dibujo: 📜 ⭐
+
+  - tipo: elegir
+    enunciado: ¿Qué es una constelación?
+    dibujo: ✨
+    correcta: ✏️ Un dibujo imaginado con estrellas
+    incorrectas:
+      - texto: 🌌 Una galaxia
+        feedback: La galaxia es de verdad. La constelación es un dibujo que imaginamos uniendo estrellas.
+      - texto: 🪐 Un grupo de planetas
+        feedback: No. Es un dibujo que imaginamos uniendo estrellas.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas constelaciones oficiales hay?
+    dibujo: 🗺️ 🌌
+    correcta: '88'
+    incorrectas:
+      - texto: '12'
+        feedback: Doce son las del zodiaco. En total hay ochenta y ocho.
+      - texto: '1000'
+        feedback: Muchas menos. Hay ochenta y ocho.
+
+  - tipo: elegir
+    enunciado: ¿Están de verdad juntas las estrellas de una constelación?
+    dibujo: ✨ 📏
+    correcta: 👀 No, solo lo parecen desde aquí
+    incorrectas:
+      - texto: 🤝 Sí, se tocan
+        feedback: Lo parece, pero no. Unas están mucho más lejos que otras.
+
+  - tipo: chat
+    titulo: Leyendas que brillan
+    mensajes:
+      - de: vega
+        texto: 'La más fácil de encontrar en invierno es Orión, el cazador. Tiene tres estrellas en fila: su cinturón. También se las llama las Tres Marías.'
+        dibujo: 🏹 ⭐
+      - de: santiago
+        texto: 'Según la leyenda, a Orión lo picó un escorpión. Por eso Orión y Escorpio están en lados opuestos del cielo, y nunca se ven a la vez.'
+        dibujo: 🦂 🏹
+      - de: hugo
+        texto: 'Casiopea tiene forma de letra W. Era una reina presumida, y la pusieron en el cielo como castigo, dando vueltas cabeza abajo.'
+        dibujo: 👑 🙃
+      - de: valentina
+        texto: 'Las doce constelaciones del zodiaco son por las que parece pasar el Sol a lo largo del año, como Leo, Tauro y Géminis.'
+        dibujo: 🦁 🐂
+      - de: vega
+        texto: 'Los horóscopos vienen de ahí, pero no son ciencia. Las estrellas no saben qué va a pasarte mañana.'
+        dibujo: 🔮 ❌
+      - de: santiago
+        texto: 'La astronomía es la ciencia que estudia el cielo. La astrología es otra cosa, más parecida a un cuento. No las confundas.'
+        dibujo: 🔭 📖
+      - de: hugo
+        texto: 'En la otra mitad de la Tierra se ven estrellas distintas. Allí está la Cruz del Sur, que sale hasta en la bandera de Australia.'
+        dibujo: ✝️ 🌏
+
+  - tipo: elegir
+    enunciado: ¿Cómo se reconoce la constelación de Orión?
+    dibujo: 🏹
+    correcta: ⭐ Por tres estrellas en fila
+    incorrectas:
+      - texto: 🦂 Por una cola de escorpión
+        feedback: Eso sería Escorpio. Orión tiene tres estrellas en fila, su cinturón.
+      - texto: 🔠 Por una letra W
+        feedback: Esa es Casiopea. Orión tiene tres estrellas en fila, su cinturón.
+
+  - tipo: elegir
+    enunciado: ¿Qué ciencia estudia las estrellas?
+    dibujo: 🔭
+    correcta: 🔭 La astronomía
+    incorrectas:
+      - texto: 🔮 La astrología
+        feedback: La astrología no es ciencia. La ciencia que estudia las estrellas es la astronomía.
+      - texto: 🦕 La paleontología
+        feedback: Esa estudia los dinosaurios y los fósiles. Las estrellas las estudia la astronomía.

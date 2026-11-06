@@ -1,0 +1,106 @@
+titulo: Cometas y asteroides
+subtitulo: Bolas de nieve sucia
+emoji: ☄️
+ejercicios:
+  - tipo: chat
+    titulo: Una bola de nieve sucia
+    mensajes:
+      - de: vega
+        texto: 'Un asteroide es una roca. Un cometa es otra cosa: una bola de hielo, polvo y roca. Por eso se les llama bolas de nieve sucia.'
+        dibujo: 🪨 ☄️
+      - de: valentina
+        texto: 'Los cometas vienen de muy lejos, de más allá de Neptuno, y viajan en caminos muy alargados alrededor del Sol.'
+        dibujo: 🔵 ☄️
+      - de: santiago
+        texto: 'Mientras están lejos, no tienen cola. Pero al acercarse al Sol, el hielo se convierte en gas y hace una nube enorme, que se llama coma.'
+        dibujo: ☀️ ☁️
+      - de: hugo
+        texto: 'Luego aparece la cola. Tienen dos: una de polvo, y otra de gas. Pueden medir millones de kilómetros.'
+        dibujo: ☄️ 📏
+      - de: vega
+        texto: 'Y un dato curioso: la cola no siempre va detrás. El viento solar la empuja, y por eso siempre apunta lejos del Sol. Aunque el cometa se vaya, va delante.'
+        dibujo: ☀️ 🌬️
+      - de: valentina
+        texto: 'El más famoso es el Halley. Vuelve cada setenta y seis años, más o menos. La última vez fue en 1986, y volverá en 2061.'
+        dibujo: ☄️ 📅
+      - de: santiago
+        texto: 'Si tienes unos cinco o seis años, en 2061 tendrás unos cuarenta. Apunta la fecha para mirar al cielo.'
+        dibujo: 🗓️ 👀
+      - de: hugo
+        texto: 'Antes daban miedo: se creía que traían desgracias. Edmond Halley calculó que varios cometas eran el mismo, que volvía. Y acertó.'
+        dibujo: 😱 🧮
+
+  - tipo: elegir
+    enunciado: ¿De qué está hecho un cometa?
+    dibujo: ☄️
+    correcta: 🧊 De hielo, polvo y roca
+    incorrectas:
+      - texto: 🔥 De fuego
+        feedback: Parece de fuego, pero no. Es una bola de hielo, polvo y roca.
+      - texto: 💎 De diamantes
+        feedback: No. Es una bola de hielo, polvo y roca.
+
+  - tipo: elegir
+    enunciado: ¿Hacia dónde apunta la cola de un cometa?
+    dibujo: ☄️ ☀️
+    correcta: 🌬️ Siempre lejos del Sol
+    incorrectas:
+      - texto: ⬅️ Siempre hacia atrás
+        feedback: Parece lógico, ¡pero no! El viento solar la empuja, y por eso apunta siempre lejos del Sol.
+      - texto: ☀️ Siempre hacia el Sol
+        feedback: Al revés. El viento solar la empuja, y por eso apunta siempre lejos del Sol.
+
+  - tipo: elegir
+    enunciado: ¿Cuándo volverá el cometa Halley?
+    dibujo: ☄️ 📅
+    correcta: 📅 En 2061
+    incorrectas:
+      - texto: 🗓️ El año que viene
+        feedback: Falta mucho. Volverá en 2061.
+      - texto: 🚫 Nunca más
+        feedback: Sí que vuelve, cada setenta y seis años. La próxima vez será en 2061.
+
+  - tipo: chat
+    titulo: El cinturón de asteroides
+    mensajes:
+      - de: hugo
+        texto: 'Casi todos los asteroides están entre Marte y Júpiter, en el cinturón de asteroides. Son restos de cuando se formaron los planetas.'
+        dibujo: 🔴 🪨 🟠
+      - de: santiago
+        texto: 'En las películas, las naves los esquivan como en un videojuego. En realidad, están tan separados, que una nave lo cruza sin ver casi nada.'
+        dibujo: 🎮 🛰️
+      - de: valentina
+        texto: 'El mayor es Ceres, tan grande que ya se considera un planeta enano. Tiene manchas brillantes de sal.'
+        dibujo: ⚪ 🧂
+      - de: vega
+        texto: 'Los asteroides son como cápsulas del tiempo: apenas han cambiado desde que nació el sistema solar. Por eso se traen muestras.'
+        dibujo: ⏳ 📦
+      - de: hugo
+        texto: 'En 2023, la cápsula de la nave OSIRIS-REx trajo trozos del asteroide Bennu. Tenían agua y moléculas de las que forman a los seres vivos.'
+        dibujo: 🧪 💧
+      - de: santiago
+        texto: 'Por eso hay quien cree que cometas y asteroides trajeron a la Tierra parte del agua y de los ingredientes de la vida.'
+        dibujo: ☄️ 🌍
+      - de: valentina
+        texto: 'Es posible que el agua de tu vaso sea más antigua que el Sol. Bonito, ¿verdad?'
+        dibujo: 🥛 ✨
+
+  - tipo: elegir
+    enunciado: ¿Dónde está la mayoría de los asteroides?
+    dibujo: 🪨
+    correcta: 🪨 Entre Marte y Júpiter
+    incorrectas:
+      - texto: 🌍 Junto a la Tierra
+        feedback: La mayoría no. Casi todos están en el cinturón, entre Marte y Júpiter.
+      - texto: ☀️ Dentro del Sol
+        feedback: No. Casi todos están en el cinturón, entre Marte y Júpiter.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama el mayor cuerpo del cinturón de asteroides?
+    dibujo: ⚪
+    correcta: ⚪ Ceres
+    incorrectas:
+      - texto: 🟤 Plutón
+        feedback: Plutón está más allá de Neptuno. El mayor del cinturón es Ceres.
+      - texto: 🌕 La Luna
+        feedback: La Luna da vueltas a la Tierra. El mayor del cinturón es Ceres.

@@ -1,0 +1,93 @@
+titulo: Un día en la Estación
+subtitulo: Caer sin parar
+emoji: 🪥
+ejercicios:
+  - tipo: chat
+    titulo: ¿Por qué flotan?
+    mensajes:
+      - de: santiago
+        texto: 'Mucha gente cree que los astronautas flotan porque allí no hay gravedad. No es verdad. A esa altura, la gravedad es casi igual que aquí.'
+        dibujo: ❌ 🧲
+      - de: vega
+        texto: 'Flotan porque están cayendo. La Estación y todo lo de dentro caen hacia la Tierra sin parar.'
+        dibujo: ⬇️ 🏠
+      - de: hugo
+        texto: 'Es como en una atracción de caída libre. Mientras bajas, sientes que flotas, porque todo cae a la vez.'
+        dibujo: 🎢 🎈
+      - de: valentina
+        texto: '¿Y por qué no se estrellan? Porque van tan rápido hacia un lado, que al caer, se pasan la Tierra de largo. Caen alrededor de ella, sin llegar nunca.'
+        dibujo: 🌍 🔁
+      - de: santiago
+        texto: 'Eso es una órbita: caer alrededor. Se llama microgravedad, o ingravidez. Es la misma razón por la que la Luna no se cae.'
+        dibujo: 🌕 🌀
+      - de: vega
+        texto: 'Es una idea muy famosa de Isaac Newton. Imaginó un cañón en una montaña, disparando tan rápido que la bala daba la vuelta a la Tierra.'
+        dibujo: 💣 ⛰️
+
+  - tipo: elegir
+    enunciado: ¿Por qué flotan los astronautas en la Estación?
+    dibujo: 🧑‍🚀 🎈
+    correcta: ⬇️ Porque están cayendo sin parar
+    incorrectas:
+      - texto: ❌ Porque allí no hay gravedad
+        feedback: ¡Eso cree casi todo el mundo! Pero sí hay gravedad. Flotan porque caen, junto con la Estación.
+      - texto: 🎈 Porque llevan globos
+        feedback: ¡Ja, ja! No. Flotan porque caen, junto con la Estación.
+
+  - tipo: elegir
+    enunciado: ¿Qué es una órbita?
+    dibujo: 🌍 🌀
+    correcta: 🔁 Caer alrededor de un planeta
+    incorrectas:
+      - texto: 🛣️ Una carretera del espacio
+        feedback: Casi, pero no hay carreteras. Una órbita es caer alrededor de un planeta, sin llegar a tocarlo.
+      - texto: 🌌 El color del cielo
+        feedback: No. Una órbita es caer alrededor de un planeta, sin llegar a tocarlo.
+
+  - tipo: chat
+    titulo: La vida cotidiana
+    mensajes:
+      - de: valentina
+        texto: 'Por la mañana, el despertador. Duermen en sacos atados a la pared, en cabinas como cabinas de teléfono. Y con antifaz, por los amaneceres.'
+        dibujo: ⏰ 😴
+      - de: hugo
+        texto: 'El agua es tan valiosa, que reciclan casi toda, hasta el sudor y el pipí. Se limpia en una máquina y se la vuelven a beber. Dicen que sabe bien.'
+        dibujo: 💧 ♻️
+      - de: santiago
+        texto: 'Las comidas vienen en bolsas o en latas. No hay pan, porque suelta migas y se meten en las máquinas. Comen con tortitas de maíz.'
+        dibujo: 🌮 🥫
+      - de: vega
+        texto: 'Con el cuerpo flotando, los líquidos suben a la cabeza. Se les hincha la cara y notan la nariz tapada. Por eso les gustan las salsas picantes.'
+        dibujo: 🌶️ 😮‍💨
+      - de: valentina
+        texto: 'No se pueden duchar. Se lavan con toallitas y champú sin agua. Y si lloran, las lágrimas no caen: se quedan pegadas al ojo como una gota.'
+        dibujo: 🧴 💧
+      - de: hugo
+        texto: 'Crecen unos centímetros, porque la columna se estira sin peso. Al volver a la Tierra, se encogen otra vez.'
+        dibujo: 📏 🧍
+      - de: santiago
+        texto: 'Hacen unas dos horas y media de ejercicio al día, porque sin peso los huesos y los músculos se debilitan. Atados a una cinta para correr.'
+        dibujo: 🏃 🦴
+      - de: vega
+        texto: 'Al volver a la Tierra, les cuesta andar y se marean. Hay que recuperarse poco a poco, durante semanas. Lo normal es quedarse allí unos seis meses.'
+        dibujo: 🚶 😵‍💫
+
+  - tipo: elegir
+    enunciado: ¿Por qué comen tortitas y no pan?
+    dibujo: 🌮
+    correcta: 🍞 Porque el pan suelta migas
+    incorrectas:
+      - texto: 🥖 Porque el pan no les gusta
+        feedback: Sí les gusta, pero las migas flotarían y se meterían en las máquinas.
+      - texto: 🧑‍🍳 Porque no hay panadero
+        feedback: ¡Ja, ja! No. Las migas flotarían y se meterían en las máquinas.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacen con el pipí en la Estación?
+    dibujo: 💧 ♻️
+    correcta: ♻️ Lo limpian y lo vuelven a beber
+    incorrectas:
+      - texto: 🪟 Lo tiran por la ventana
+        feedback: ¡Ja, ja! No. El agua es tan valiosa que lo limpian y lo vuelven a beber.
+      - texto: 🌱 Riegan el jardín
+        feedback: No hay jardín. El agua es tan valiosa que lo limpian y lo vuelven a beber.

@@ -1,0 +1,93 @@
+titulo: La Gran Mancha Roja
+subtitulo: Tormentas más grandes que la Tierra
+emoji: 🌪️
+ejercicios:
+  - tipo: chat
+    titulo: Una tormenta de cientos de años
+    mensajes:
+      - de: valentina
+        texto: 'Las rayas de Júpiter no son pintura. Son nubes, llevadas por vientos fortísimos que van en sentidos contrarios.'
+        dibujo: 🟠 🌬️
+      - de: hugo
+        texto: 'Las franjas claras son nubes que suben. Las oscuras son nubes que bajan. Su color viene de gases con amoníaco y otros, que dan olor fuerte.'
+        dibujo: 🎨 🤢
+      - de: santiago
+        texto: 'Y esa mancha roja es una tormenta gigante, la Gran Mancha Roja. Se ha visto desde hace casi doscientos años, y quizá más.'
+        dibujo: 🔴 🌀
+      - de: vega
+        texto: 'Es más ancha que la Tierra. Hace un siglo cabían tres Tierras. Se va encogiendo, y ya es más redonda.'
+        dibujo: 🌍 📏
+      - de: valentina
+        texto: 'Sus vientos van a unos cuatrocientos kilómetros por hora. Un huracán fuerte en la Tierra se queda muy corto.'
+        dibujo: 🌪️
+      - de: hugo
+        texto: 'Las tormentas de la Tierra se apagan al llegar a tierra firme. En Júpiter no hay suelo que las frene. Por eso duran tanto.'
+        dibujo: 🏝️ ❌
+      - de: santiago
+        texto: 'Dentro de Júpiter puede llover helio, y hay rayos muchísimo más potentes que los de aquí.'
+        dibujo: ⚡ 🌧️
+
+  - tipo: elegir
+    enunciado: ¿Qué es la Gran Mancha Roja?
+    dibujo: 🔴 🟠
+    correcta: 🌪️ Una tormenta gigante
+    incorrectas:
+      - texto: 🌋 Un volcán
+        feedback: Júpiter no tiene suelo para volcanes. Es una tormenta gigante.
+      - texto: 🎨 Pintura
+        feedback: ¡Ja, ja! No. Es una tormenta gigante, más ancha que la Tierra.
+
+  - tipo: elegir
+    enunciado: ¿Por qué las tormentas de Júpiter duran tanto?
+    dibujo: 🌪️
+    correcta: 🏝️ Porque no hay suelo que las frene
+    incorrectas:
+      - texto: 🍿 Porque nadie las para
+        feedback: Casi. Lo que las frena en la Tierra es el suelo, y Júpiter no tiene.
+      - texto: 💧 Porque llueve mucho
+        feedback: No es eso. Lo que las frena en la Tierra es el suelo, y Júpiter no tiene.
+
+  - tipo: chat
+    titulo: Espiar a Júpiter
+    mensajes:
+      - de: vega
+        texto: 'Muchas naves han pasado por Júpiter. Las primeras fueron las Pioneer y las Voyager, en los años setenta.'
+        dibujo: 🛰️
+      - de: hugo
+        texto: 'Galileo fue la primera nave que se quedó dando vueltas a Júpiter, desde 1995. Y dejó caer una sonda dentro de sus nubes.'
+        dibujo: 🪂 ☁️
+      - de: valentina
+        texto: 'Esa sonda bajó mandando datos durante una hora, hasta que la presión y el calor la destruyeron.'
+        dibujo: ⏱️ 🗜️
+      - de: santiago
+        texto: 'Al final, Galileo se lanzó contra Júpiter a propósito. Así no había peligro de que cayera en la luna Europa y la manchara de bacterias de la Tierra.'
+        dibujo: 💥 🦠
+      - de: vega
+        texto: 'Desde 2016 está la nave Juno, que pasa muy cerca de los polos. Allí descubrió grupos de ciclones enormes, colocados como en un dibujo.'
+        dibujo: 🌀 🌀 🌀
+      - de: hugo
+        texto: 'Además, en los polos de Júpiter hay auroras gigantes, más grandes que la Tierra, y no paran nunca.'
+        dibujo: 🌌
+      - de: valentina
+        texto: 'Juno lleva unas figuritas de Lego. Son Galileo, y los dioses Júpiter y Juno. Viajaron para animar a los niños a aprender ciencia.'
+        dibujo: 🧱 👨‍🔬
+
+  - tipo: elegir
+    enunciado: ¿Qué hizo la nave Galileo al final de su misión?
+    dibujo: 🛰️ 🟠
+    correcta: 💥 Se lanzó contra Júpiter
+    incorrectas:
+      - texto: 🌍 Volvió a la Tierra
+        feedback: No volvió. Se lanzó contra Júpiter a propósito, para no manchar la luna Europa.
+      - texto: ☀️ Fue hacia el Sol
+        feedback: No. Se lanzó contra Júpiter a propósito, para no manchar la luna Europa.
+
+  - tipo: elegir
+    enunciado: ¿Qué son las rayas de Júpiter?
+    dibujo: 🟠
+    correcta: ☁️ Nubes llevadas por el viento
+    incorrectas:
+      - texto: 🛣️ Carreteras
+        feedback: ¡Ja, ja! No. Son nubes llevadas por vientos fortísimos.
+      - texto: 💍 Anillos
+        feedback: Tiene anillos, pero las rayas son nubes llevadas por vientos fortísimos.

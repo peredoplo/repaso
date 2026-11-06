@@ -1,0 +1,89 @@
+titulo: Qué es la basura espacial
+subtitulo: Tornillos a toda velocidad
+emoji: 🗑️
+ejercicios:
+  - tipo: chat
+    titulo: Un trastero alrededor de la Tierra
+    mensajes:
+      - de: hugo
+        texto: 'Hemos llenado el espacio cercano de cosas que ya no sirven. Eso es la basura espacial.'
+        dibujo: 🗑️ 🌍
+      - de: vega
+        texto: 'Son satélites muertos, partes de cohetes, tornillos, trozos de pintura y restos de explosiones.'
+        dibujo: 🛰️ 🔩
+      - de: santiago
+        texto: 'La Agencia Espacial Europea calcula que hay decenas de miles de trozos más grandes que un balón. Y más de un millón mayores de un centímetro.'
+        dibujo: ⚽ 🧮
+      - de: valentina
+        texto: 'Y de más de un milímetro, cientos de millones. Tan pequeños, que no se pueden seguir con un radar.'
+        dibujo: 🤏 📡
+      - de: hugo
+        texto: 'El problema es la velocidad. Van a unos veintiocho mil kilómetros por hora, más rápido que una bala. Un tornillo pega como una granada.'
+        dibujo: 🔩 💥
+      - de: vega
+        texto: 'Una sola esquirla de pintura hizo un agujerito en una ventana del transbordador espacial. Tuvieron que cambiarla.'
+        dibujo: 🎨 🪟
+      - de: santiago
+        texto: 'Hay objetos raros. En 1965, el astronauta Ed White perdió un guante en un paseo espacial. Dio vueltas a la Tierra durante un mes.'
+        dibujo: 🧤 🌍
+      - de: valentina
+        texto: 'Otra astronauta perdió una bolsa de herramientas. Y otra vez se perdió una cámara de fotos. ¡Y una espátula!'
+        dibujo: 🧰 📷
+
+  - tipo: elegir
+    enunciado: ¿Qué es la basura espacial?
+    dibujo: 🗑️ 🌍
+    correcta: 🔩 Cosas nuestras que ya no sirven
+    incorrectas:
+      - texto: 🍌 Cáscaras de plátano
+        feedback: ¡Ja, ja! No. Son satélites muertos, partes de cohetes y tornillos.
+      - texto: 🪨 Rocas de la Luna
+        feedback: No. Son satélites muertos, partes de cohetes y tornillos.
+
+  - tipo: elegir
+    enunciado: ¿Por qué es peligroso un simple tornillo en el espacio?
+    dibujo: 🔩
+    correcta: 💨 Porque va rapidísimo
+    incorrectas:
+      - texto: ⚖️ Porque pesa mucho
+        feedback: No pesa mucho. Es peligroso porque va rapidísimo, más que una bala.
+      - texto: 🔥 Porque arde
+        feedback: No arde. Es peligroso porque va rapidísimo, más que una bala.
+
+  - tipo: chat
+    titulo: ¿De dónde sale tanta basura?
+    mensajes:
+      - de: santiago
+        texto: 'Casi toda la basura viene de explosiones y choques. Un solo satélite que revienta se convierte en miles de trozos.'
+        dibujo: 💥 🧩
+      - de: vega
+        texto: 'En 2007, China destruyó uno de sus satélites con un misil, como prueba. Dejó más de tres mil trozos que se pueden seguir.'
+        dibujo: 🚀 💥
+      - de: hugo
+        texto: 'En 2021, Rusia hizo algo parecido. Los astronautas de la Estación tuvieron que refugiarse en sus naves por precaución.'
+        dibujo: 🏠 🆘
+      - de: valentina
+        texto: 'En 2009 hubo el primer gran choque entre dos satélites: uno ruso, ya muerto, y uno de teléfonos. Dio dos nubes de escombros.'
+        dibujo: 🛰️ 💥 🛰️
+      - de: santiago
+        texto: 'Además, los depósitos viejos de los cohetes pueden explotar años después, si les queda combustible y se calientan al sol.'
+        dibujo: ⛽ ☀️
+      - de: vega
+        texto: 'Muy arriba, la basura tarda muchísimo en bajar. A mil kilómetros, se queda cientos de años. Abajo, el poco aire la va frenando hasta que cae.'
+        dibujo: ⏳ ⬇️
+
+  - tipo: elegir
+    enunciado: ¿De dónde viene casi toda la basura espacial?
+    dibujo: 🗑️
+    correcta: 💥 De explosiones y choques
+    incorrectas:
+      - texto: 🧑‍🚀 De los astronautas que la tiran
+        feedback: Tiran muy poco. Casi toda viene de explosiones y choques.
+      - texto: 👽 De los extraterrestres
+        feedback: ¡Ja, ja! No. Casi toda viene de explosiones y choques de cosas nuestras.
+
+  - tipo: ordenar
+    enunciado: Ordena estos trozos de basura espacial, de más pequeño a más grande.
+    piezas: 🛰️ Satélite / 🎨 Pintura / ⚽ Balón / 🔩 Tornillo
+    solucion: 🎨 Pintura 🔩 Tornillo ⚽ Balón 🛰️ Satélite
+    explicacion: Lo más pequeño es la pintura. Luego el tornillo, después un trozo como un balón, y lo mayor, un satélite entero.

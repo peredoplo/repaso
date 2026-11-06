@@ -1,0 +1,109 @@
+titulo: La vida del Sol
+subtitulo: Cómo nació y cómo acabará
+emoji: 🌅
+ejercicios:
+  - tipo: chat
+    titulo: Cómo nació el Sol
+    mensajes:
+      - de: santiago
+        texto: 'El Sol no ha estado siempre ahí. Nació hace unos cuatro mil seiscientos millones de años.'
+        dibujo: ⏳ ☀️
+      - de: vega
+        texto: 'Antes solo había una nube enorme de gas y polvo. Una nube así se llama nebulosa.'
+        dibujo: ☁️ ✨
+      - de: hugo
+        texto: 'La gravedad, la fuerza que atrae unas cosas a otras, fue juntando la nube. Casi todo cayó al centro, y allí se encendió el Sol.'
+        dibujo: 🌀 ☀️
+      - de: valentina
+        texto: 'Con lo que sobró alrededor se formaron los planetas, las lunas y los cometas. ¡La Tierra está hecha de las sobras del Sol!'
+        dibujo: 🌍 🪐 ☄️
+      - de: santiago
+        texto: 'Cerca del Sol hacía mucho calor y solo aguantaron las rocas y los metales. Por eso los planetas de dentro son de roca.'
+        dibujo: 🪨
+      - de: vega
+        texto: 'Más lejos hacía frío, y se juntaron mucho gas y hielo. Por eso los planetas de fuera son gigantes.'
+        dibujo: 🧊 🪐
+      - de: hugo
+        texto: 'Por cierto: el Sol no es de las estrellas más grandes. Es una enana amarilla, una estrella normal y corriente. Solo la vemos enorme porque está cerca.'
+        dibujo: 💛
+
+  - tipo: elegir
+    enunciado: ¿De qué nacieron el Sol y los planetas?
+    dibujo: ☀️ 🪐
+    correcta: ☁️ De una nube de gas y polvo
+    incorrectas:
+      - texto: 🥚 De un huevo gigante
+        feedback: ¡Ja, ja! No. La gravedad fue juntando una nube de gas y polvo.
+      - texto: 🌍 De la Tierra
+        feedback: No. El Sol es más antiguo que la Tierra. Todo nació de una nube de gas y polvo.
+
+  - tipo: elegir
+    enunciado: ¿Por qué los planetas más cercanos al Sol son de roca?
+    dibujo: ☀️ 🪨
+    correcta: 🔥 Porque allí hacía mucho calor
+    incorrectas:
+      - texto: 🌊 Porque allí llovía mucho
+        feedback: No. Con tanto calor solo aguantaron las rocas y los metales.
+      - texto: 🪨 Porque alguien las llevó
+        feedback: Nadie las llevó. Con tanto calor solo aguantaron las rocas y los metales.
+
+  - tipo: chat
+    titulo: Cómo acabará el Sol
+    mensajes:
+      - de: valentina
+        texto: 'El Sol está más o menos a la mitad de su vida. Le quedan unos cinco mil millones de años. Hay tiempo de sobra.'
+        dibujo: ⏳
+      - de: santiago
+        texto: 'Cuando se le acabe el hidrógeno del centro, empezará a hincharse mucho. Se convertirá en una gigante roja.'
+        dibujo: 🔴
+      - de: vega
+        texto: 'Crecerá tanto, que se tragará Mercurio y Venus, y quizás la Tierra. La superficie de la Tierra quedaría abrasada.'
+        dibujo: 🔴 🌍
+      - de: hugo
+        texto: 'Después soltará sus capas de fuera, que formarán una nube de colores preciosa, llamada nebulosa planetaria.'
+        dibujo: 🌈 ☁️
+      - de: valentina
+        texto: 'En el centro quedará solo una estrellita muy pequeña y muy pesada, del tamaño de la Tierra: una enana blanca.'
+        dibujo: ⚪
+      - de: santiago
+        texto: 'Se irá enfriando poco a poco, durante muchísimo tiempo. Una cucharada de enana blanca pesaría toneladas.'
+        dibujo: 🥄
+      - de: vega
+        texto: 'Y un aviso importante: nunca mires directamente al Sol, ni con prismáticos. Daña los ojos para siempre. Para los eclipses hay gafas especiales.'
+        dibujo: 🚫 👀
+
+  - tipo: ordenar
+    enunciado: Ordena la vida del Sol, de principio a fin.
+    piezas: ⚪ Enana blanca / ☁️ Nebulosa / 🔴 Gigante roja / ☀️ Enana amarilla
+    solucion: ☁️ Nebulosa ☀️ Enana amarilla 🔴 Gigante roja ⚪ Enana blanca
+    explicacion: Primero fue una nube, la nebulosa. Hoy es una enana amarilla. Después será una gigante roja. Y al final, una enana blanca.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto le queda de vida al Sol?
+    dibujo: ⏳
+    correcta: 🌌 Unos cinco mil millones de años
+    incorrectas:
+      - texto: 📅 Cien años
+        feedback: ¡Muchísimo más! Le quedan unos cinco mil millones de años.
+      - texto: 🗓️ Mil años
+        feedback: ¡Muchísimo más! Le quedan unos cinco mil millones de años.
+
+  - tipo: elegir
+    enunciado: ¿Qué quedará del Sol al final de todo?
+    dibujo: ☀️
+    correcta: ⚪ Una enana blanca
+    incorrectas:
+      - texto: 🕳️ Un agujero negro
+        feedback: Para eso haría falta una estrella muchísimo más grande. Del Sol quedará una enana blanca.
+      - texto: 🌍 Otra Tierra
+        feedback: No. Quedará una estrellita pequeña y muy pesada, una enana blanca.
+
+  - tipo: elegir
+    enunciado: ¿Se puede mirar al Sol directamente?
+    dibujo: ☀️ 👀
+    correcta: 🚫 No, nunca
+    incorrectas:
+      - texto: 👍 Sí, un ratito
+        feedback: ¡No! Aunque sea un ratito, puede dañar los ojos para siempre.
+      - texto: 🔭 Sí, con prismáticos
+        feedback: ¡Eso es todavía peor! Hay que usar gafas especiales para eclipses.

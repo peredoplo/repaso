@@ -1,0 +1,106 @@
+titulo: El cielo también cambia
+subtitulo: Y cómo cuidarlo
+emoji: ⏳
+ejercicios:
+  - tipo: chat
+    titulo: Dibujos que se deforman
+    mensajes:
+      - de: santiago
+        texto: 'Parece que el cielo no cambia nunca. Pero las estrellas se mueven, muy deprisa. Lo que pasa es que están tan lejos, que no se nota.'
+        dibujo: ⭐ 💨
+      - de: vega
+        texto: 'En decenas de miles de años, los dibujos se deformarán. La Osa Mayor ya no parecerá la misma.'
+        dibujo: 🐻 ❓
+      - de: hugo
+        texto: 'Además, la Tierra baila. Su eje da vueltas muy despacio, como una peonza a punto de caerse. Cada vuelta tarda unos veintiséis mil años.'
+        dibujo: 🌀 ⏳
+      - de: valentina
+        texto: 'Por eso la Estrella Polar no será siempre la misma. Cuando se hicieron las pirámides de Egipto, la polar era otra, llamada Thuban.'
+        dibujo: 🔺 ⭐
+      - de: santiago
+        texto: 'Dentro de unos doce mil años, le tocará a Vega, una estrella muy brillante. ¡Sí, como nuestra Vega!'
+        dibujo: ⭐ 😄
+      - de: vega
+        texto: 'Eso sí que es tener una estrella con mi nombre.'
+        dibujo: 😎
+      - de: hugo
+        texto: 'Y alguna estrella desaparecerá. Betelgeuse está al final de su vida. Explotará como supernova, quizás mañana, quizás dentro de cien mil años.'
+        dibujo: 💥 🏹
+      - de: valentina
+        texto: 'Cuando pase, se verá hasta de día durante semanas. Y a Orión le faltará un hombro para siempre.'
+        dibujo: 🌞 ✨
+
+  - tipo: elegir
+    enunciado: ¿Será siempre la Polar la estrella del norte?
+    dibujo: ⭐ 🧭
+    correcta: 🌀 No, porque el eje de la Tierra baila
+    incorrectas:
+      - texto: 👍 Sí, para siempre
+        feedback: No. El eje de la Tierra se mueve muy despacio, y dentro de unos doce mil años será Vega.
+      - texto: 💥 No, porque va a explotar
+        feedback: No es por eso. El eje de la Tierra se mueve muy despacio, y le tocará a otra estrella.
+
+  - tipo: elegir
+    enunciado: ¿Qué estrella de Orión está al final de su vida?
+    dibujo: 🏹 💥
+    correcta: 🔴 Betelgeuse
+    incorrectas:
+      - texto: ☀️ El Sol
+        feedback: El Sol no está en Orión, y le queda mucho. La que está al final de su vida es Betelgeuse.
+      - texto: 🐕 Sirio
+        feedback: Sirio está en el Perro Mayor. La de Orión que está al final de su vida es Betelgeuse.
+
+  - tipo: chat
+    titulo: Un cielo que hay que cuidar
+    mensajes:
+      - de: vega
+        texto: 'Hace cien años, casi cualquier persona veía la Vía Láctea desde su casa. Hoy, mucha gente no la ha visto nunca.'
+        dibujo: 🌌 🏘️
+      - de: hugo
+        texto: 'La culpa es de la luz de las ciudades, que se escapa hacia arriba y tapa las estrellas. Se llama contaminación lumínica.'
+        dibujo: 🌃 💡
+      - de: santiago
+        texto: 'Esa luz también molesta a los animales: confunde a las aves que viajan de noche y a las tortugas recién nacidas, que deben ir hacia el mar.'
+        dibujo: 🐢 🌊
+      - de: valentina
+        texto: 'Se arregla con farolas que apunten hacia abajo y con luces menos intensas. Es fácil, y además se ahorra energía.'
+        dibujo: 💡 ⬇️
+      - de: vega
+        texto: 'En España tenemos cielos muy buenos. En las islas de La Palma y Tenerife hay grandes observatorios, en lo alto, por encima de las nubes.'
+        dibujo: 🏝️ 🔭
+      - de: hugo
+        texto: 'La Palma tiene una ley para proteger su cielo. Allí las luces de la calle son especiales, para que los telescopios funcionen.'
+        dibujo: 📜 🌌
+      - de: santiago
+        texto: 'Si quieres ver bien las estrellas, aléjate de la ciudad, espera veinte minutos a que tus ojos se acostumbren, y usa una luz roja, que no deslumbra.'
+        dibujo: 🔦 👀
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama lo que tapa las estrellas en las ciudades?
+    dibujo: 🌃
+    correcta: 💡 Contaminación lumínica
+    incorrectas:
+      - texto: ☁️ Polvo de estrellas
+        feedback: No. La luz de la ciudad tapa las estrellas. Se llama contaminación lumínica.
+      - texto: 🌫️ Niebla marina
+        feedback: No. La luz de la ciudad tapa las estrellas. Se llama contaminación lumínica.
+
+  - tipo: elegir
+    enunciado: ¿Cómo tienen que ser las farolas para cuidar el cielo?
+    dibujo: 💡
+    correcta: ⬇️ Que apunten hacia abajo
+    incorrectas:
+      - texto: ⬆️ Que apunten hacia arriba
+        feedback: Eso es lo que tapa las estrellas. Deben apuntar hacia abajo.
+      - texto: 🎉 Que cambien de color
+        feedback: No. Deben apuntar hacia abajo y ser menos intensas.
+
+  - tipo: elegir
+    enunciado: ¿Qué animal se confunde con las luces de la playa?
+    dibujo: 🌊 💡
+    correcta: 🐢 Las tortugas recién nacidas
+    incorrectas:
+      - texto: 🐕 Los perros
+        feedback: Los perros no. Son las tortugas recién nacidas, que deben ir hacia el mar.
+      - texto: 🐄 Las vacas
+        feedback: Las vacas no. Son las tortugas recién nacidas, que deben ir hacia el mar.

@@ -1,0 +1,99 @@
+titulo: Estrellas fugaces
+subtitulo: Una roca con tres nombres
+emoji: 🌠
+ejercicios:
+  - tipo: chat
+    titulo: Una roca, tres nombres
+    mensajes:
+      - de: santiago
+        texto: 'Una misma roca del espacio cambia de nombre según dónde esté. Es un poco como un trabalenguas.'
+        dibujo: 🪨 🏷️
+      - de: vega
+        texto: 'Mientras flota por el espacio, si es pequeña, se llama meteoroide. Si es grande, asteroide.'
+        dibujo: 🪨 🌌
+      - de: hugo
+        texto: 'Cuando entra en la atmósfera, se calienta y brilla. Esa luz se llama meteoro, y es lo que llamamos estrella fugaz.'
+        dibujo: 🌠
+      - de: valentina
+        texto: 'Si un trozo llega a tocar el suelo, se llama meteorito.'
+        dibujo: 🪨 🌍
+      - de: santiago
+        texto: 'Las estrellas fugaces no son estrellas. La mayoría son granos diminutos, como de arena, que van a más de cuarenta mil kilómetros por hora.'
+        dibujo: ⏳ 💨
+      - de: vega
+        texto: 'No arden por rozar el aire, sino porque aprietan el aire de delante a una velocidad brutal, que se calienta muchísimo. Pasa a unos cien kilómetros de altura.'
+        dibujo: 🌡️ 🗜️
+      - de: hugo
+        texto: 'Cada día caen a la Tierra toneladas de polvo del espacio. Hay polvo de estrellas en tu tejado, sin que nadie se dé cuenta.'
+        dibujo: 🏠 ✨
+
+  - tipo: ordenar
+    enunciado: Ordena los nombres de la roca, desde el espacio hasta el suelo.
+    piezas: 🪨 Meteorito / 🌌 Meteoroide / 🌠 Meteoro
+    solucion: 🌌 Meteoroide 🌠 Meteoro 🪨 Meteorito
+    explicacion: En el espacio es un meteoroide. Al brillar en el aire, un meteoro. Y si toca el suelo, un meteorito.
+
+  - tipo: elegir
+    enunciado: ¿Qué es en realidad una estrella fugaz?
+    dibujo: 🌠
+    correcta: ⏳ Un grano que se quema en el aire
+    incorrectas:
+      - texto: ⭐ Una estrella que se cae
+        feedback: Las estrellas son enormes y no se caen. Es un grano diminuto, que brilla al entrar en el aire.
+      - texto: 🛰️ Un satélite
+        feedback: No. Es un grano diminuto, que brilla al entrar en el aire.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama la roca que llega a tocar el suelo?
+    dibujo: 🪨 🌍
+    correcta: 🪨 Meteorito
+    incorrectas:
+      - texto: 🌠 Meteoro
+        feedback: El meteoro es la luz en el cielo. La roca que toca el suelo es el meteorito.
+      - texto: ☄️ Cometa
+        feedback: El cometa es de hielo y va por el espacio. La roca que toca el suelo es el meteorito.
+
+  - tipo: chat
+    titulo: Lluvias de estrellas
+    mensajes:
+      - de: valentina
+        texto: 'Los cometas sueltan polvo por donde pasan, como migas de pan. Y la Tierra atraviesa esos caminos cada año, siempre en las mismas fechas.'
+        dibujo: ☄️ 🥖
+      - de: hugo
+        texto: 'Entonces se ven muchas estrellas fugaces juntas: es una lluvia de estrellas.'
+        dibujo: 🌠 🌠 🌠
+      - de: santiago
+        texto: 'La más famosa son las Perseidas, a mediados de agosto. Se llaman lágrimas de San Lorenzo. Vienen de un cometa, el Swift-Tuttle.'
+        dibujo: 😢 🌠
+      - de: vega
+        texto: 'En diciembre están las Gemínidas, con muchas estrellas fugaces. Es de las mejores, pero hace frío.'
+        dibujo: ❄️ 🌠
+      - de: valentina
+        texto: 'Para verlas no hace falta telescopio. Solo hay que tumbarse en un lugar oscuro, mirar al cielo y tener paciencia. Mejor a partir de medianoche.'
+        dibujo: 🛌 🌃
+      - de: hugo
+        texto: 'Se nombran por la constelación de la que parecen salir. Las Perseidas salen de Perseo. Pero no vienen de allí: solo lo parece, por la perspectiva.'
+        dibujo: ✨ 👀
+      - de: santiago
+        texto: 'Cuando una roca es más grande, hace una bola de fuego muy brillante, llamada bólido. Se puede ver de día, y a veces se oye un estallido.'
+        dibujo: 🔥 💥
+
+  - tipo: elegir
+    enunciado: ¿Cuándo se ven las Perseidas?
+    dibujo: 🌠
+    correcta: 🏖️ En agosto
+    incorrectas:
+      - texto: 🎄 En Navidad
+        feedback: En diciembre están las Gemínidas. Las Perseidas se ven en agosto.
+      - texto: 🌸 En primavera
+        feedback: No. Las Perseidas se ven a mediados de agosto.
+
+  - tipo: elegir
+    enunciado: ¿De dónde sale el polvo de las lluvias de estrellas?
+    dibujo: ☄️
+    correcta: ☄️ De los cometas
+    incorrectas:
+      - texto: ☀️ Del Sol
+        feedback: No. Los cometas van soltando polvo por donde pasan.
+      - texto: 🌋 De los volcanes
+        feedback: No. Los cometas van soltando polvo por donde pasan.

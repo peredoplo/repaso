@@ -1,0 +1,101 @@
+titulo: Los anillos de Saturno
+subtitulo: Anchos como un mundo, finos como una hoja
+emoji: 🪐
+ejercicios:
+  - tipo: chat
+    titulo: ¿Qué son los anillos?
+    mensajes:
+      - de: valentina
+        texto: 'Los anillos de Saturno parecen un disco sólido, pero no lo son. Son trozos sueltos, y cada uno da vueltas por su cuenta, como una luna diminuta.'
+        dibujo: 🪐 🧊
+      - de: hugo
+        texto: 'Son casi todo hielo de agua, con algo de roca y polvo. Por eso brillan tanto.'
+        dibujo: 🧊 ✨
+      - de: santiago
+        texto: 'Desde un borde al otro miden unos doscientos ochenta mil kilómetros. Casi la distancia de la Tierra a la Luna.'
+        dibujo: 📏 🌕
+      - de: vega
+        texto: 'Pero son finísimos: en casi todas partes, menos de lo que mide una casa de diez pisos. Si fueran una hoja de papel, serían más anchos que un campo de fútbol.'
+        dibujo: 📄 ⚽
+      - de: valentina
+        texto: 'Por eso, cuando Saturno se pone de canto, los anillos casi desaparecen en el telescopio. Pasó en 2025.'
+        dibujo: 🔭 🫥
+      - de: hugo
+        texto: 'Tienen nombres de letras, y hay huecos entre ellos. El mayor hueco se llama división de Cassini.'
+        dibujo: 🔤
+      - de: santiago
+        texto: 'Algunas lunitas ayudan a ordenar los anillos, como perros pastores que empujan a las ovejas. Las llaman lunas pastoras.'
+        dibujo: 🐕 🐑
+      - de: vega
+        texto: 'Galileo vio algo raro en 1610. Pensó que Saturno tenía orejas. Fue Christiaan Huygens quien, en 1655, se dio cuenta de que era un anillo.'
+        dibujo: 🔭 👂
+
+  - tipo: elegir
+    enunciado: ¿Los anillos de Saturno son un disco sólido?
+    dibujo: 🪐
+    correcta: 🧊 No, son muchísimos trozos sueltos
+    incorrectas:
+      - texto: 💿 Sí, como un disco
+        feedback: Lo parecen, pero no. Son muchísimos trozos de hielo y roca, cada uno girando por su cuenta.
+
+  - tipo: elegir
+    enunciado: ¿De qué son casi todos los trozos de los anillos?
+    dibujo: 🪐
+    correcta: 🧊 De hielo de agua
+    incorrectas:
+      - texto: 🪙 De metal
+        feedback: No. Son casi todos de hielo de agua, y por eso brillan tanto.
+      - texto: 🪵 De madera
+        feedback: ¡Ja, ja! No. Son casi todos de hielo de agua.
+
+  - tipo: chat
+    titulo: Unos anillos que se acaban
+    mensajes:
+      - de: hugo
+        texto: 'Parece que los anillos han estado siempre allí, pero quizás son mucho más jóvenes que Saturno.'
+        dibujo: ⏳ 🪐
+      - de: valentina
+        texto: 'Hay científicos que calculan que tienen menos de mil millones de años. Saturno tiene más de cuatro mil millones.'
+        dibujo: 🧮
+      - de: santiago
+        texto: 'Puede que aparecieran en la época de los dinosaurios. ¡Quizás Saturno pasó casi toda su vida sin anillos!'
+        dibujo: 🦕 🔭
+      - de: vega
+        texto: '¿Cómo se formaron? Puede que una luna o un cometa se acercara demasiado, y la gravedad de Saturno lo rompiera en pedazos.'
+        dibujo: 🌙 💥
+      - de: hugo
+        texto: 'Y están desapareciendo. El hielo cae poco a poco hacia Saturno: es la lluvia de los anillos.'
+        dibujo: 🌧️
+      - de: valentina
+        texto: 'Dentro de cientos de millones de años, Saturno podría quedarse sin ellos. Tenemos suerte de verlos ahora.'
+        dibujo: 🍀
+
+  - tipo: elegir
+    enunciado: ¿Qué pensó Galileo al ver los anillos en 1610?
+    dibujo: 🔭 🪐
+    correcta: 👂 Que Saturno tenía orejas
+    incorrectas:
+      - texto: 🎩 Que tenía sombrero
+        feedback: ¡Qué gracia! Pero pensó que tenía orejas.
+      - texto: 🐘 Que tenía trompa
+        feedback: ¡Ja, ja! No. Pensó que tenía orejas.
+
+  - tipo: elegir
+    enunciado: ¿Qué les está pasando a los anillos de Saturno?
+    dibujo: 🌧️ 🪐
+    correcta: 📉 Van desapareciendo poco a poco
+    incorrectas:
+      - texto: 📈 Cada día crecen más
+        feedback: No. El hielo cae poco a poco hacia Saturno, y los anillos van desapareciendo.
+      - texto: ⏹️ No cambian nunca
+        feedback: Sí cambian. El hielo cae poco a poco hacia Saturno, y los anillos van desapareciendo.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman las lunitas que ordenan los anillos?
+    dibujo: 🐑
+    correcta: 🐕 Lunas pastoras
+    incorrectas:
+      - texto: 🧹 Lunas barrenderas
+        feedback: ¡Muy bien pensado! Pero se llaman lunas pastoras, porque empujan como perros pastores.
+      - texto: 👮 Lunas policías
+        feedback: Casi. Se llaman lunas pastoras, porque empujan como perros pastores.

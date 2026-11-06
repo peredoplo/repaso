@@ -1,0 +1,93 @@
+titulo: Qué es una nebulosa
+subtitulo: Nubes de colores en el espacio
+emoji: 🌈
+ejercicios:
+  - tipo: chat
+    titulo: Nubes gigantes
+    mensajes:
+      - de: valentina
+        texto: 'Nebulosa viene de una palabra latina que significa nube. Son nubes enormes de gas y polvo que flotan entre las estrellas.'
+        dibujo: ☁️ ✨
+      - de: hugo
+        texto: 'Casi todo es hidrógeno y helio. Algunas miden cientos de años luz: la luz tardaría siglos en cruzarlas.'
+        dibujo: 📏 💡
+      - de: santiago
+        texto: 'Parecen muy densas en las fotos, pero son lo contrario. Están más vacías que el mayor vacío que sabemos hacer en un laboratorio.'
+        dibujo: 🫙
+      - de: vega
+        texto: 'Si atravesaras una con una nave, seguramente ni te darías cuenta. Se ven porque son enormes y las miramos desde muy lejos.'
+        dibujo: 🚀 😶
+      - de: valentina
+        texto: 'Durante mucho tiempo, cualquier manchita borrosa del cielo se llamaba nebulosa. Algunas resultaron ser galaxias enteras.'
+        dibujo: 🔭 🌌
+      - de: hugo
+        texto: 'En 1781, el francés Charles Messier hizo una lista de estas manchitas. Quería buscar cometas sin confundirse con ellas.'
+        dibujo: 📝 ☄️
+      - de: santiago
+        texto: 'Por eso muchas tienen números como M cuarenta y dos. Su lista de cosas que molestaban se convirtió en un tesoro de la astronomía.'
+        dibujo: 💎 📝
+
+  - tipo: elegir
+    enunciado: ¿Qué significa la palabra nebulosa?
+    dibujo: ☁️
+    correcta: ☁️ Nube
+    incorrectas:
+      - texto: ⭐ Estrella
+        feedback: No. Viene de una palabra latina que significa nube.
+      - texto: 🌈 Arcoíris
+        feedback: Tienen colores, ¡pero no! Significa nube.
+
+  - tipo: elegir
+    enunciado: ¿De qué están hechas casi todas las nebulosas?
+    dibujo: ☁️ ✨
+    correcta: 🎈 Hidrógeno y helio
+    incorrectas:
+      - texto: 🍭 Azúcar
+        feedback: ¡Ja, ja! No. Son casi todo hidrógeno y helio.
+      - texto: 🌊 Agua
+        feedback: No. Son casi todo hidrógeno y helio, con algo de polvo.
+
+  - tipo: elegir
+    enunciado: ¿Para qué hizo Messier su lista de manchitas?
+    dibujo: 📝
+    correcta: ☄️ Para no confundirlas con cometas
+    incorrectas:
+      - texto: 🎁 Para regalarla a un rey
+        feedback: No. La hizo para no confundirlas con cometas, que era lo que buscaba.
+      - texto: 🏫 Para un examen
+        feedback: ¡Ja, ja! No. La hizo para no confundirlas con cometas.
+
+  - tipo: chat
+    titulo: ¿Por qué tienen colores?
+    mensajes:
+      - de: vega
+        texto: 'Hay varios tipos. Unas brillan solas: las estrellas cercanas calientan su gas, y este da luz. Es como la luz de los tubos de neón.'
+        dibujo: 💡 🌈
+      - de: valentina
+        texto: 'Cada gas da su propio color. El hidrógeno da rojo, el oxígeno da verdoso y el azufre, otro tono. Por el color se sabe de qué está hecha.'
+        dibujo: 🔴 🟢
+      - de: hugo
+        texto: 'Otras no brillan, solo reflejan la luz de las estrellas, y suelen verse azules. Es parecido a por qué el cielo es azul.'
+        dibujo: 🔵
+      - de: santiago
+        texto: 'Y hay nebulosas oscuras, que tapan la luz de detrás. La más famosa es la Cabeza de Caballo, en Orión. Tiene justo esa forma.'
+        dibujo: 🐴 ⬛
+      - de: vega
+        texto: 'La nebulosa de Orión se ve desde casa, con prismáticos, debajo del cinturón de tres estrellas. Es la gran nebulosa más cercana a nosotros.'
+        dibujo: 🏹 🔭
+      - de: valentina
+        texto: 'Un secreto: con el ojo se ven grises. Nuestro ojo no ve colores si hay poca luz. Las cámaras guardan la luz durante horas, y salen esos colores.'
+        dibujo: 👀 📷
+      - de: hugo
+        texto: 'Unas se llaman Ojo de Gato, Cangrejo, Águila, Tarántula o Cono. Cada una por lo que parece. Es como mirar las nubes en la Tierra.'
+        dibujo: 🐱 🦀
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama la nebulosa oscura de Orión con forma de animal?
+    dibujo: ⬛
+    correcta: 🐴 La Cabeza de Caballo
+    incorrectas:
+      - texto: 🐱 Ojo de Gato
+        feedback: Esa existe, pero no es la de Orión. La oscura de Orión es la Cabeza de Caballo.
+      - texto: 🐘 Trompa de Elefante
+        feedback: No. La oscura de Orión es la Cabeza de Caballo.

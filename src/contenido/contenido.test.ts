@@ -110,9 +110,10 @@ describe('contenido', () => {
     expect(partirOpcion('🔴🟠 Entre Marte y Júpiter')).toEqual({ dibujo: '🔴🟠', nombre: 'Entre Marte y Júpiter' });
   });
 
-  it('el universo de Miguel: una lección por exposición, que empieza por el chat, y todo grabado en español', () => {
-    const temas = ['universo/sistema-solar', 'universo/estrellas-y-naves'].map((t) => c.temas.get(t)!);
-    expect(temas.flatMap((t) => t.lecciones).length).toBe(19);
+  it('el universo de Miguel: cada exposición, una lección y tres a fondo, que empiezan por el chat, y todo grabado en español', () => {
+    const temas = [...c.temas.values()].filter((t) => t.sinLeer);
+    expect(temas.filter((t) => t.id.startsWith('universo/')).flatMap((t) => t.lecciones).length).toBe(19);
+    expect(temas.filter((t) => t.id.startsWith('universo-a-fondo/')).flatMap((t) => t.lecciones).length).toBe(57);
     const grabado = new Set(Object.keys((voces as { sinLeer?: object }).sinLeer ?? {}));
     for (const l of temas.flatMap((t) => t.lecciones)) {
       expect(l.ejercicios[0].tipo, l.ruta).toBe('chat');

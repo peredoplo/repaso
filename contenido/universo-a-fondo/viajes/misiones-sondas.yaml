@@ -1,0 +1,96 @@
+titulo: Las sondas más lejanas
+subtitulo: Las Voyager y un cometa
+emoji: 📀
+ejercicios:
+  - tipo: chat
+    titulo: Las Voyager
+    mensajes:
+      - de: hugo
+        texto: 'Una sonda es una nave sin personas, que explora el espacio y manda información a la Tierra.'
+        dibujo: 🛰️ 📡
+      - de: vega
+        texto: 'Las más famosas son las Voyager uno y dos. Salieron en 1977 y aún funcionan, a pesar de tener cerca de cincuenta años.'
+        dibujo: 🛰️ 🎂
+      - de: santiago
+        texto: 'Aprovecharon que los planetas gigantes estaban bien colocados, algo que pasa solo cada ciento setenta y cinco años.'
+        dibujo: 🟠 🪐 🔵
+      - de: valentina
+        texto: 'Usaban la gravedad de cada planeta como una catapulta para ganar velocidad y saltar al siguiente. Eso se llama asistencia gravitatoria.'
+        dibujo: 🏹 🌀
+      - de: hugo
+        texto: 'La Voyager uno es lo más lejano que hemos construido nunca. Ya salió de la burbuja del Sol, al espacio entre las estrellas.'
+        dibujo: 🌌 🏆
+      - de: vega
+        texto: 'Está tan lejos, que una señal de radio tarda casi un día entero en llegar. Y otro día en volver la respuesta.'
+        dibujo: 📡 ⏳
+      - de: santiago
+        texto: 'Su ordenador tiene menos memoria que la llave de un coche moderno. En el espacio frío se alimenta con el calor de un material radiactivo.'
+        dibujo: 🔑 🔋
+      - de: valentina
+        texto: 'En 1990, antes de apagar sus cámaras, se giró y fotografió la Tierra desde lejísimos: era un puntito azul pálido.'
+        dibujo: 🔵 📷
+
+  - tipo: elegir
+    enunciado: ¿Qué es lo más lejano que ha construido la humanidad?
+    dibujo: 🌌
+    correcta: 🛰️ La Voyager uno
+    incorrectas:
+      - texto: 🏠 La Estación Espacial
+        feedback: La Estación está muy cerca, dando vueltas a la Tierra. Lo más lejano es la Voyager uno.
+      - texto: 🚙 Un rover de Marte
+        feedback: Marte está muy cerca, comparado. Lo más lejano es la Voyager uno.
+
+  - tipo: elegir
+    enunciado: ¿Para qué usaban las Voyager la gravedad de los planetas?
+    dibujo: 🏹
+    correcta: 🏹 Para coger velocidad
+    incorrectas:
+      - texto: 😴 Para descansar
+        feedback: No. La gravedad de cada planeta las lanzaba como una catapulta.
+      - texto: ⛽ Para llenar el depósito
+        feedback: No. La gravedad de cada planeta las lanzaba como una catapulta.
+
+  - tipo: chat
+    titulo: Un mensaje en una botella
+    mensajes:
+      - de: valentina
+        texto: 'Cada Voyager lleva un disco de oro, por si alguien lo encuentra algún día. Es un mensaje en una botella lanzado al océano del espacio.'
+        dibujo: 📀 🍾
+      - de: santiago
+        texto: 'Tiene música de todo el mundo, sonidos de la Tierra, como el viento o los pájaros, y saludos en más de cincuenta idiomas.'
+        dibujo: 🎵 🐦
+      - de: hugo
+        texto: 'También lleva dibujos con instrucciones para reproducirlo, y un mapa que dice dónde está la Tierra.'
+        dibujo: 🗺️ 📀
+      - de: vega
+        texto: 'Otras sondas han hecho cosas increíbles. Rosetta, de Europa, siguió un cometa durante dos años. En 2014 soltó sobre él un robotito llamado Philae.'
+        dibujo: ☄️ 🤖
+      - de: valentina
+        texto: 'Philae rebotó dos veces y acabó a la sombra, pero aun así mandó datos. ¡Es como aparcar en una montaña que corre a toda velocidad!'
+        dibujo: 🏔️ 💨
+      - de: santiago
+        texto: 'Otras naves, como Hayabusa dos, de Japón, y OSIRIS-REx, de Estados Unidos, han traído a la Tierra trocitos de asteroides.'
+        dibujo: 🪨 📦
+      - de: hugo
+        texto: 'Y New Horizons, tras pasar por Plutón, sigue su camino hacia lo desconocido, como las Voyager.'
+        dibujo: 🛰️ 🌌
+
+  - tipo: elegir
+    enunciado: ¿Qué lleva cada Voyager por si alguien la encuentra?
+    dibujo: 🛰️
+    correcta: 📀 Un disco de oro
+    incorrectas:
+      - texto: 🗺️ Un tesoro pirata
+        feedback: ¡Ja, ja! No. Lleva un disco de oro, con música, sonidos y saludos de la Tierra.
+      - texto: 🍕 Una pizza
+        feedback: ¡Ja, ja! No. Lleva un disco de oro, con música, sonidos y saludos de la Tierra.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llamaba el robotito que se posó en un cometa?
+    dibujo: ☄️ 🤖
+    correcta: 🤖 Philae
+    incorrectas:
+      - texto: 🚙 Curiosity
+        feedback: Curiosity está en Marte. El robotito del cometa era Philae.
+      - texto: 🐕 Laika
+        feedback: Laika fue una perrita. El robotito del cometa era Philae.

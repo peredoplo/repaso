@@ -1,0 +1,103 @@
+titulo: El peligro de la basura
+subtitulo: Choques en cadena y un cementerio
+emoji: ⚠️
+ejercicios:
+  - tipo: chat
+    titulo: Una reacción en cadena
+    mensajes:
+      - de: valentina
+        texto: 'Un científico de la NASA, Donald Kessler, avisó en 1978 de algo preocupante, y se conoce como síndrome de Kessler.'
+        dibujo: 👨‍🔬 ⚠️
+      - de: hugo
+        texto: 'Cuando dos cosas chocan, salen miles de trozos. Esos trozos pueden chocar con otras cosas, y salen más trozos.'
+        dibujo: 💥 🧩
+      - de: santiago
+        texto: 'Es como una fila de fichas de dominó. Una tira la siguiente, y el problema se hace más y más grande, solo.'
+        dibujo: 💥 💥 💥
+      - de: vega
+        texto: 'Si pasara del todo, algunas órbitas quedarían tan sucias que no podríamos usarlas durante muchos años. Adiós a muchos satélites.'
+        dibujo: 🚫 🛰️
+      - de: valentina
+        texto: 'Por eso, los satélites y la Estación vigilan la basura. Si un trozo se acerca, encienden los motores y se apartan.'
+        dibujo: ↗️ 🔭
+      - de: hugo
+        texto: 'La Estación tiene escudos para los trozos pequeños. Son dos capas: la primera deshace el trozo, y la segunda frena los restos.'
+        dibujo: 🛡️ 🛡️
+      - de: santiago
+        texto: 'La parte buena: los trozos muy bajos caen solos en unos años. Y una vez en la atmósfera, casi todo se quema, como una estrella fugaz.'
+        dibujo: 🌠 🔥
+
+  - tipo: elegir
+    enunciado: ¿Qué es el síndrome de Kessler?
+    dibujo: ⚠️
+    correcta: 💥 Choques en cadena
+    incorrectas:
+      - texto: 🤧 Un resfriado de astronautas
+        feedback: ¡Ja, ja! No. Es cuando los trozos de un choque provocan más choques, como fichas de dominó.
+      - texto: 🐕 Una raza de perro
+        feedback: ¡Ja, ja! No. Es cuando los trozos de un choque provocan más choques, como fichas de dominó.
+
+  - tipo: elegir
+    enunciado: ¿Qué hace la Estación Espacial si se acerca un trozo grande?
+    dibujo: 🏠 ⚠️
+    correcta: ↗️ Enciende los motores y se aparta
+    incorrectas:
+      - texto: 🏏 Lo golpea con un bate
+        feedback: ¡Ja, ja! No. Enciende los motores y se aparta.
+      - texto: 🫣 Cierra los ojos
+        feedback: ¡Ja, ja! No. Enciende los motores y se aparta.
+
+  - tipo: chat
+    titulo: ¿Y lo que cae?
+    mensajes:
+      - de: vega
+        texto: '¿Qué pasa con las cosas grandes? Algunas partes aguantan el calor y llegan al suelo, sobre todo al mar, que cubre la mayor parte de la Tierra.'
+        dibujo: 🌊 🛰️
+      - de: hugo
+        texto: 'Cuando se puede, se dirige la caída hacia un punto del océano Pacífico, el más alejado de cualquier tierra: el punto Nemo.'
+        dibujo: 🌊 📍
+      - de: santiago
+        texto: 'Lo llaman el cementerio de naves. Allí, en el fondo del mar, están restos de más de doscientas naves, entre ellas la estación rusa Mir.'
+        dibujo: 🪦 🛰️
+      - de: valentina
+        texto: 'Se llama Nemo como el capitán de una novela de Julio Verne. Nemo significa nadie, en latín. Y es que por allí no hay nadie.'
+        dibujo: 📖 ⚓
+      - de: vega
+        texto: 'Los más cercanos a ese punto, muchas veces, son los astronautas que pasan por encima.'
+        dibujo: 🧑‍🚀 ⬇️
+      - de: hugo
+        texto: 'Otros satélites, los de muy arriba, no se pueden bajar. Se suben un poco más y se dejan allí. Se llama órbita cementerio.'
+        dibujo: ⬆️ 🪦
+      - de: santiago
+        texto: 'No es cosa de broma, pero nunca nadie ha resultado herido de gravedad por basura espacial que caiga. Es mucho más fácil que te caiga un rayo.'
+        dibujo: ⚡ 🍀
+
+  - tipo: elegir
+    enunciado: ¿Dónde está el cementerio de naves?
+    dibujo: 🪦 🛰️
+    correcta: 🌊 En el océano Pacífico
+    incorrectas:
+      - texto: 🌕 En la Luna
+        feedback: No. Está en el océano Pacífico, en el punto Nemo, el más alejado de tierra.
+      - texto: 🏜️ En el desierto
+        feedback: No. Está en el océano Pacífico, en el punto Nemo, el más alejado de tierra.
+
+  - tipo: elegir
+    enunciado: ¿Qué significa Nemo en latín?
+    dibujo: 🐠
+    correcta: 🫥 Nadie
+    incorrectas:
+      - texto: 🐟 Pez
+        feedback: ¡Te acuerdas de la película! Pero no. En latín significa nadie.
+      - texto: 🌊 Mar
+        feedback: No. En latín significa nadie, y por allí no hay nadie.
+
+  - tipo: elegir
+    enunciado: ¿Por qué casi todo lo que cae no llega al suelo?
+    dibujo: 🔥
+    correcta: 🔥 Porque se quema en la atmósfera
+    incorrectas:
+      - texto: 🐦 Porque lo atrapan los pájaros
+        feedback: ¡Ja, ja! No. Se quema al entrar en la atmósfera, como una estrella fugaz.
+      - texto: ☁️ Porque se queda en las nubes
+        feedback: No. Se quema al entrar en la atmósfera, como una estrella fugaz.

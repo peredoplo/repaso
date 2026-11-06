@@ -1,0 +1,100 @@
+titulo: El planeta de la vida
+subtitulo: Agua, aire y un escudo invisible
+emoji: 🐋
+ejercicios:
+  - tipo: chat
+    titulo: ¿Por qué aquí hay vida?
+    mensajes:
+      - de: santiago
+        texto: 'De todos los lugares que conocemos, la Tierra es el único con vida. ¿Por qué tenemos tanta suerte?'
+        dibujo: 🌍 🐘
+      - de: valentina
+        texto: 'Primero, por la distancia al Sol. Ni muy cerca, donde el agua hierve, ni muy lejos, donde se congela. Ese trozo se llama zona habitable.'
+        dibujo: 🔥 🌍 🧊
+      - de: hugo
+        texto: 'Segundo, por el agua líquida. Cubre casi tres cuartas partes de la Tierra. La vida empezó en el mar hace más de tres mil quinientos millones de años.'
+        dibujo: 🌊 🦠
+      - de: vega
+        texto: 'Tercero, por el aire. Es una capa de gases que se llama atmósfera. Casi todo es nitrógeno, y una quinta parte es oxígeno, el gas que respiramos.'
+        dibujo: 💨
+      - de: santiago
+        texto: 'Al principio casi no había oxígeno. Lo fabricaron unos seres diminutos del mar, usando la luz del Sol, igual que hacen hoy las plantas.'
+        dibujo: 🦠 🌱
+      - de: valentina
+        texto: 'La atmósfera también guarda el calor, como una manta. Sin ella, la Tierra estaría helada. Eso se llama efecto invernadero.'
+        dibujo: 🛌
+      - de: hugo
+        texto: 'Si echamos demasiados gases al quemar gasolina o carbón, la manta se hace más gorda y la Tierra se calienta de más. Es el cambio climático.'
+        dibujo: 🏭 🌡️
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama el trozo donde no hace ni demasiado calor ni demasiado frío para el agua?
+    dibujo: 🔥 🌍 🧊
+    correcta: 🌍 La zona habitable
+    incorrectas:
+      - texto: 🏠 La zona de casa
+        feedback: ¡Casi! Se llama zona habitable, porque allí se podría vivir.
+      - texto: 🌙 La zona de la Luna
+        feedback: No. Se llama zona habitable. Allí el agua puede estar líquida.
+
+  - tipo: chat
+    titulo: Los escudos de la Tierra
+    mensajes:
+      - de: vega
+        texto: 'La atmósfera tiene varias capas. En la más baja, la troposfera, están las nubes y la lluvia. Es la que respiramos.'
+        dibujo: ☁️ 🌧️
+      - de: valentina
+        texto: 'Más arriba está la capa de ozono. Es un gas que para gran parte de los rayos ultravioleta del Sol, que queman la piel. Por eso es un filtro.'
+        dibujo: 🧴 ☀️
+      - de: hugo
+        texto: 'Más arriba todavía, las piedras que llegan del espacio se queman antes de tocar el suelo. La atmósfera nos sirve de paraguas.'
+        dibujo: ☄️ ☂️
+      - de: santiago
+        texto: 'Y hay otro escudo, invisible. El hierro líquido del núcleo convierte la Tierra en un imán gigante. Por eso la brújula señala el norte.'
+        dibujo: 🧲 🧭
+      - de: vega
+        texto: 'Ese imán desvía las partículas que manda el Sol, que podrían dañar el aire y la vida. Se llama campo magnético.'
+        dibujo: 🛡️
+      - de: valentina
+        texto: 'Cerca de los polos, algunas partículas entran y hacen brillar el aire de verde y rosa. Son las auroras. ¡Parecen cortinas de luz en el cielo!'
+        dibujo: 🌌
+
+  - tipo: elegir
+    enunciado: ¿Qué gas de la atmósfera respiramos para vivir?
+    dibujo: 💨
+    correcta: 🫁 Oxígeno
+    incorrectas:
+      - texto: 🧲 Hierro
+        feedback: El hierro es un metal, y no se respira. Respiramos oxígeno.
+      - texto: 🌊 Agua
+        feedback: El agua la bebemos. El gas que respiramos es el oxígeno.
+
+  - tipo: elegir
+    enunciado: ¿Por qué señala el norte una brújula?
+    dibujo: 🧭
+    correcta: 🧲 Porque la Tierra es un imán gigante
+    incorrectas:
+      - texto: ☀️ Porque busca el Sol
+        feedback: La brújula funciona también de noche. Señala el norte porque la Tierra es como un imán gigante.
+      - texto: 🌬️ Porque la empuja el viento
+        feedback: El viento no la mueve. Señala el norte porque la Tierra es como un imán gigante.
+
+  - tipo: elegir
+    enunciado: ¿Qué son las auroras?
+    dibujo: 🌌
+    correcta: ✨ Aire que brilla por partículas del Sol
+    incorrectas:
+      - texto: 🎆 Fuegos artificiales
+        feedback: Lo parecen, ¡pero no! Las partículas del Sol hacen brillar el aire cerca de los polos.
+      - texto: 🌈 Arcoíris de noche
+        feedback: No. Las partículas del Sol hacen brillar el aire cerca de los polos.
+
+  - tipo: elegir
+    enunciado: ¿Para qué sirve la capa de ozono?
+    dibujo: ☀️ 🧴
+    correcta: 🛡️ Para frenar rayos que queman
+    incorrectas:
+      - texto: 🌧️ Para que llueva
+        feedback: La lluvia se forma más abajo. El ozono frena gran parte de los rayos ultravioleta del Sol.
+      - texto: 🌙 Para ver la Luna
+        feedback: No tiene que ver. El ozono frena gran parte de los rayos ultravioleta del Sol.

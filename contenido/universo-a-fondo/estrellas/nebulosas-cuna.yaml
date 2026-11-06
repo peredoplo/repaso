@@ -1,0 +1,102 @@
+titulo: Donde nacen las estrellas
+subtitulo: Pilares, discos y cunas
+emoji: 🍼
+ejercicios:
+  - tipo: chat
+    titulo: La cuna de las estrellas
+    mensajes:
+      - de: hugo
+        texto: 'Las nebulosas son las cunas de las estrellas. Dentro de ellas, ahora mismo, están naciendo miles.'
+        dibujo: ☁️ 👶
+      - de: santiago
+        texto: 'Todo empieza cuando algo le da un empujón a la nube, por ejemplo, la explosión de una supernova cercana.'
+        dibujo: 💥 ☁️
+      - de: vega
+        texto: 'La gravedad empieza a juntar el gas en bolas. Cuanto más se junta, más se aprieta y más se calienta, y la bola gira cada vez más deprisa.'
+        dibujo: 🌀 🌡️
+      - de: valentina
+        texto: 'Es como una patinadora que encoge los brazos y gira más rápido. Lo mismo le pasa al gas.'
+        dibujo: ⛸️
+      - de: hugo
+        texto: 'A esa estrella recién formada, que aún no brilla del todo, se le llama protoestrella. Tarda cientos de miles de años en formarse, o más.'
+        dibujo: 🐣 ⭐
+      - de: santiago
+        texto: 'Cuando el centro llega a unos diez millones de grados, se enciende la fusión nuclear. ¡Ha nacido una estrella!'
+        dibujo: 💡 ⭐
+      - de: vega
+        texto: 'El gas que sobra forma a su alrededor un disco plano que gira. Ahí pueden nacer planetas. Así se formó también nuestro sistema solar.'
+        dibujo: 💿 🪐
+      - de: valentina
+        texto: 'Las estrellas nacen en grupos, como una gran familia. Las Pléyades son un grupo joven que se ve a simple vista, un racimito de estrellas azules.'
+        dibujo: ✨ 👨‍👩‍👧‍👦
+
+  - tipo: ordenar
+    enunciado: Ordena cómo nace una estrella.
+    piezas: ⭐ Estrella / ☁️ Nube de gas / 🐣 Protoestrella / 🌀 Bola que gira
+    solucion: ☁️ Nube de gas 🌀 Bola que gira 🐣 Protoestrella ⭐ Estrella
+    explicacion: Primero hay una nube de gas. La gravedad forma una bola que gira. Se calienta y es una protoestrella. Y al encenderse, es una estrella.
+
+  - tipo: elegir
+    enunciado: ¿Qué fuerza junta el gas para formar una estrella?
+    dibujo: 🌀
+    correcta: 🧲 La gravedad
+    incorrectas:
+      - texto: 🌬️ El viento
+        feedback: No. Es la gravedad, que atrae unas cosas hacia otras.
+      - texto: 💡 La electricidad
+        feedback: No. Es la gravedad, que atrae unas cosas hacia otras.
+
+  - tipo: elegir
+    enunciado: ¿Dónde se forman los planetas?
+    dibujo: 🪐
+    correcta: 💿 En un disco alrededor de la estrella
+    incorrectas:
+      - texto: 🥚 En huevos espaciales
+        feedback: ¡Ja, ja! No. Se forman en el disco de gas y polvo que gira alrededor de una estrella.
+      - texto: ☄️ Dentro de los cometas
+        feedback: No. Se forman en el disco de gas y polvo que gira alrededor de una estrella.
+
+  - tipo: chat
+    titulo: Los Pilares de la Creación
+    mensajes:
+      - de: santiago
+        texto: 'Una de las fotos más famosas de la historia son los Pilares de la Creación, en la nebulosa del Águila.'
+        dibujo: 🦅 📷
+      - de: vega
+        texto: 'Son tres columnas enormes de gas y polvo, de varios años luz de altura. Dentro están naciendo estrellas.'
+        dibujo: 🏛️ ⭐
+      - de: hugo
+        texto: 'Las estrellas ya nacidas soplan con su luz y van deshaciendo las columnas, muy poco a poco, como la arena en la playa.'
+        dibujo: 💨 🏖️
+      - de: valentina
+        texto: 'Están a unos seis mil quinientos años luz. Esa luz salió cuando en la Tierra se empezaba a construir con metal, mucho antes de las pirámides.'
+        dibujo: ⏳
+      - de: santiago
+        texto: 'Otra nebulosa especial es la Tarántula. Está en otra galaxia pequeña, muy cercana, y es la mayor fábrica de estrellas de los alrededores.'
+        dibujo: 🕷️
+      - de: vega
+        texto: 'Y hay nebulosas de muerte, las planetarias. Se forman cuando una estrella como el Sol suelta sus capas. Duran solo unas decenas de miles de años.'
+        dibujo: 🌈 💀
+      - de: hugo
+        texto: 'Con ese gas nacerán nuevas estrellas. Es un ciclo: las estrellas se mueren y dejan materia para las siguientes. Como las hojas en el bosque.'
+        dibujo: 🍂 🌱
+
+  - tipo: elegir
+    enunciado: ¿Qué son los Pilares de la Creación?
+    dibujo: 🏛️ 🦅
+    correcta: ☁️ Columnas de gas donde nacen estrellas
+    incorrectas:
+      - texto: 🏛️ Un templo griego
+        feedback: Lo parece, por el nombre. Son columnas de gas y polvo donde nacen estrellas.
+      - texto: 🪐 Tres planetas
+        feedback: No. Son columnas de gas y polvo donde nacen estrellas.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasa con el gas de una estrella que se muere?
+    dibujo: 🍂 ⭐
+    correcta: 🌱 Sirve para nuevas estrellas
+    incorrectas:
+      - texto: 🗑️ Se tira a la basura
+        feedback: ¡Ja, ja! No. Ese gas se vuelve a usar y salen estrellas nuevas.
+      - texto: 🫥 Desaparece del todo
+        feedback: No desaparece. Ese gas se vuelve a usar y salen estrellas nuevas.

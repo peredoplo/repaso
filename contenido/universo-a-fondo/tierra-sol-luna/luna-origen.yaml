@@ -1,0 +1,103 @@
+titulo: Cómo nació la Luna
+subtitulo: Un choque gigantesco
+emoji: 🌕
+ejercicios:
+  - tipo: chat
+    titulo: El gran choque
+    mensajes:
+      - de: vega
+        texto: 'La Luna no ha estado siempre ahí. La Tierra, de muy joven, no tenía Luna.'
+        dibujo: 🌍
+      - de: hugo
+        texto: 'Los científicos creen que, hace unos cuatro mil quinientos millones de años, un planeta del tamaño de Marte chocó con la Tierra. Lo llaman Tea.'
+        dibujo: 🪐 💥 🌍
+      - de: valentina
+        texto: 'El golpe lanzó al espacio una cantidad enorme de roca derretida, que quedó dando vueltas alrededor de la Tierra.'
+        dibujo: 💥 🪨
+      - de: santiago
+        texto: 'Esa roca se fue juntando y, en poco tiempo, formó la Luna.'
+        dibujo: 🌕
+      - de: vega
+        texto: '¿Cómo lo sabemos? Porque los astronautas trajeron rocas de la Luna, y son muy parecidas a las de la Tierra. ¡Son hermanas!'
+        dibujo: 🪨 🔬
+      - de: hugo
+        texto: 'Al principio, la Luna estaba mucho más cerca y se vería enorme en el cielo. Desde entonces se aleja poco a poco: casi cuatro centímetros cada año.'
+        dibujo: 📏 🌕
+      - de: valentina
+        texto: 'Lo sabemos con exactitud. Los astronautas dejaron espejos en la Luna. Desde la Tierra se les manda un rayo láser, y se mide cuánto tarda en volver.'
+        dibujo: 🪞 🔦
+
+  - tipo: elegir
+    enunciado: ¿Cómo se formó la Luna, según los científicos?
+    dibujo: 🌕
+    correcta: 💥 Por un gran choque con la Tierra
+    incorrectas:
+      - texto: 🧀 Con un queso gigante
+        feedback: ¡Ja, ja! No. Un planeta chocó con la Tierra, y con las rocas que saltaron se formó la Luna.
+      - texto: ☀️ Se desprendió del Sol
+        feedback: No. Un planeta chocó con la Tierra, y con las rocas que saltaron se formó la Luna.
+
+  - tipo: chat
+    titulo: Un mundo sin aire
+    mensajes:
+      - de: santiago
+        texto: 'La Luna está llena de agujeros redondos, los cráteres. Son golpes de rocas que llegaron del espacio.'
+        dibujo: 🕳️ ☄️
+      - de: valentina
+        texto: 'La Tierra también recibió muchos golpes, pero la lluvia, el viento y las plantas borran las marcas. En la Luna no hay nada que las borre.'
+        dibujo: 🌧️ 🌬️
+      - de: hugo
+        texto: 'Las manchas oscuras que vemos son mares, pero sin agua. Son llanuras de lava que se quedó dura hace mucho tiempo.'
+        dibujo: 🌑
+      - de: vega
+        texto: 'La Luna casi no tiene atmósfera. Por eso no hay viento, ni sonido, y el cielo es negro también de día.'
+        dibujo: 🔇 ⬛
+      - de: santiago
+        texto: 'Sin atmósfera que guarde el calor, al sol se pasa de cien grados, y de noche baja de menos cien. Lo que se dice un clima difícil.'
+        dibujo: 🌡️
+      - de: valentina
+        texto: 'Su gravedad es seis veces menor que la de la Tierra. Si allí saltaras, subirías seis veces más alto. Un niño pesaría como un gato grande.'
+        dibujo: 🤸 🐈
+      - de: hugo
+        texto: 'Y en los polos de la Luna, dentro de cráteres donde nunca da el sol, hay hielo. Podría servir de agua para futuras bases.'
+        dibujo: 🧊 🏕️
+
+  - tipo: elegir
+    enunciado: ¿Por qué duran tanto los cráteres de la Luna?
+    dibujo: 🕳️ 🌕
+    correcta: 🌬️ Porque no hay viento ni lluvia
+    incorrectas:
+      - texto: 🔨 Porque alguien los cuida
+        feedback: Nadie los cuida. Allí no hay viento ni lluvia que borre las marcas.
+      - texto: 🧊 Porque están congelados
+        feedback: No es por el frío. Allí no hay viento ni lluvia que borre las marcas.
+
+  - tipo: elegir
+    enunciado: ¿Qué son los mares de la Luna?
+    dibujo: 🌑
+    correcta: 🪨 Llanuras de lava dura
+    incorrectas:
+      - texto: 🌊 Mares de agua
+        feedback: Se llaman mares, pero no tienen agua. Son llanuras de lava que se quedó dura.
+      - texto: 🌳 Bosques
+        feedback: En la Luna no hay bosques. Son llanuras de lava que se quedó dura.
+
+  - tipo: elegir
+    enunciado: Si saltaras en la Luna, ¿qué pasaría?
+    dibujo: 🤸 🌕
+    correcta: ⬆️ Subirías más alto
+    incorrectas:
+      - texto: ⬇️ Subirías menos
+        feedback: Al revés. Allí la gravedad es seis veces menor, y subirías mucho más alto.
+      - texto: 🌌 Te irías al espacio
+        feedback: No tanto. La gravedad te hace bajar, aunque sea seis veces menor que aquí.
+
+  - tipo: elegir
+    enunciado: ¿La Luna se acerca o se aleja de la Tierra?
+    dibujo: 🌍 🌕
+    correcta: ➡️ Se aleja un poquito cada año
+    incorrectas:
+      - texto: ⬅️ Se acerca
+        feedback: Al revés. Se aleja casi cuatro centímetros cada año.
+      - texto: ⏹️ Está siempre igual
+        feedback: No. Se aleja casi cuatro centímetros cada año.

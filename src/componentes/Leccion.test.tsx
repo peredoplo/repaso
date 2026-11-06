@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 import type { EjercicioC } from '../contenido/cargar';
@@ -68,6 +68,16 @@ describe('Leccion', () => {
     await u.click(screen.getByRole('button', { name: 'Comprobar' }));
     await u.click(screen.getByRole('button', { name: 'Continuar' }));
     expect(terminar.mock.calls[0][0].primeros).toHaveLength(1);
+  });
+
+  it('dos toques muy seguidos en «Seguir» no pasan del último mensaje', () => {
+    render(<Leccion titulo="Prueba" ejercicios={[chat, ordenar]} modo="leccion" onSalir={() => {}} onTerminar={() => {}} />);
+    const seguir = screen.getByRole('button', { name: 'Seguir' });
+    act(() => {
+      seguir.click();
+      seguir.click();
+    });
+    expect(screen.getByText(/Una célula/)).toBeInTheDocument();
   });
 
   it('sin leer, se oye la opción al tocarla y la explicación al fallar, en español', async () => {

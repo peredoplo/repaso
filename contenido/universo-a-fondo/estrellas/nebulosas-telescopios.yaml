@@ -1,0 +1,96 @@
+titulo: Telescopios gigantes
+subtitulo: Hubble, Webb y más
+emoji: 🔭
+ejercicios:
+  - tipo: chat
+    titulo: Ojos en el espacio
+    mensajes:
+      - de: vega
+        texto: 'Todo lo que sabemos de nebulosas y galaxias es gracias a los telescopios. Cuanto más grande el espejo, más luz recoge y más se ve.'
+        dibujo: 🔭 🪞
+      - de: santiago
+        texto: 'El aire de la Tierra hace temblar las imágenes. Por eso se puso un telescopio en el espacio, por encima del aire: el Hubble, en 1990.'
+        dibujo: 🛰️ 💨
+      - de: hugo
+        texto: 'Al principio, sus fotos salían borrosas. ¡Su espejo tenía un error, más fino que un pelo! En 1993, unos astronautas subieron a ponerle unas gafas.'
+        dibujo: 👓 🧑‍🚀
+      - de: valentina
+        texto: 'Funcionó, y desde entonces ha sacado las fotos más famosas del universo.'
+        dibujo: 📷 🌌
+      - de: vega
+        texto: 'En 1995 apuntaron el Hubble a un trocito de cielo negro, sin nada, durante diez días. Salieron unas tres mil galaxias.'
+        dibujo: ⬛ 🌌
+      - de: santiago
+        texto: 'Ese trozo era como un grano de arena sujeto con el brazo estirado. Imagina cuánto hay en todo el cielo.'
+        dibujo: 🤏
+      - de: hugo
+        texto: 'Galileo, en 1609, usó uno de los primeros telescopios. Tenía el tamaño de un rodillo de cocina, y aumentaba unas veinte veces.'
+        dibujo: 🔭 👨‍🔬
+
+  - tipo: elegir
+    enunciado: ¿Por qué se puso el Hubble en el espacio?
+    dibujo: 🛰️
+    correcta: 💨 Para que el aire no moviera la imagen
+    incorrectas:
+      - texto: 🌙 Para estar más cerca de la Luna
+        feedback: No. Fuera de la atmósfera, el aire no hace temblar la imagen.
+      - texto: 🏠 Porque no cabía en casa
+        feedback: ¡Ja, ja! No. Fuera de la atmósfera, el aire no hace temblar la imagen.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasó cuando el Hubble miró un trozo de cielo negro?
+    dibujo: ⬛
+    correcta: 🌌 Se vieron miles de galaxias
+    incorrectas:
+      - texto: ⬛ No se vio nada
+        feedback: ¡Eso esperaban! Pero se vieron unas tres mil galaxias.
+      - texto: 👽 Se vio una nave
+        feedback: ¡Ja, ja! No. Se vieron unas tres mil galaxias.
+
+  - tipo: chat
+    titulo: El telescopio dorado
+    mensajes:
+      - de: valentina
+        texto: 'El telescopio más potente en el espacio es el James Webb, que salió en diciembre de 2021.'
+        dibujo: 🛰️ 🏆
+      - de: hugo
+        texto: 'Su espejo mide seis metros y medio, y está hecho de dieciocho hexágonos cubiertos de una capa finísima de oro.'
+        dibujo: 🐝 🟡
+      - de: santiago
+        texto: 'Era tan grande que tuvo que ir plegado, como un origami. Se abrió él solo en el espacio. Tenía más de trescientos puntos que podían fallar.'
+        dibujo: 🦢 😰
+      - de: vega
+        texto: 'Está a un millón y medio de kilómetros de la Tierra, cuatro veces más lejos que la Luna. Allí no se puede arreglar.'
+        dibujo: 🌍 🛰️
+      - de: valentina
+        texto: 'Webb ve la luz infrarroja, que es como calor. Y esa luz atraviesa el polvo de las nebulosas. Así ve las estrellas naciendo dentro de ellas.'
+        dibujo: 🌡️ ☁️
+      - de: hugo
+        texto: 'Tiene que estar muy frío, para que su propio calor no estorbe. Por eso lleva un parasol enorme, grande como una pista de tenis.'
+        dibujo: ⛱️ 🎾
+      - de: santiago
+        texto: 'Como la luz tarda en llegar, Webb ve galaxias como eran hace más de trece mil millones de años. Casi el principio del universo.'
+        dibujo: ⏪ 🌌
+      - de: vega
+        texto: 'En España tenemos un telescopio gigante en La Palma, el Gran Telescopio Canarias, con un espejo de más de diez metros. Uno de los mayores del mundo.'
+        dibujo: 🏝️ 🔭
+
+  - tipo: elegir
+    enunciado: ¿De qué metal está cubierto el espejo del James Webb?
+    dibujo: 🪞
+    correcta: 🟡 De oro
+    incorrectas:
+      - texto: ⚪ De plata
+        feedback: No. Está cubierto de una capa finísima de oro, que refleja muy bien el infrarrojo.
+      - texto: 🟤 De cobre
+        feedback: No. Está cubierto de una capa finísima de oro, que refleja muy bien el infrarrojo.
+
+  - tipo: elegir
+    enunciado: ¿Por qué el James Webb ve dentro de las nebulosas?
+    dibujo: ☁️ 🔭
+    correcta: 🌡️ Porque ve la luz infrarroja
+    incorrectas:
+      - texto: 🔦 Porque lleva una linterna
+        feedback: ¡Ja, ja! No. La luz infrarroja atraviesa el polvo, y él la puede ver.
+      - texto: 🧑‍🚀 Porque va alguien dentro
+        feedback: No va nadie. La luz infrarroja atraviesa el polvo, y él la puede ver.

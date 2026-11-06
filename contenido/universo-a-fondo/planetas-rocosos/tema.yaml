@@ -1,0 +1,14 @@
+asignatura: El universo a fondo
+titulo: Mercurio, Venus y Marte
+descripcion: Tres mundos de roca, muy distintos del nuestro.
+sinLeer: true
+lecciones:
+  - mercurio-veloz
+  - mercurio-extremos
+  - mercurio-secretos
+  - venus-horno
+  - venus-raro
+  - venus-misiones
+  - marte-rojo
+  - marte-agua
+  - marte-robots
