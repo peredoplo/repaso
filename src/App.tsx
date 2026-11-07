@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import type { EjercicioC, LeccionC, TemaC } from './contenido/cargar';
-import { esTeoria, type Perfil } from './contenido/esquema';
+import { esTeoria, seCorrigeSolo, type Perfil } from './contenido/esquema';
 import { contenido } from './contenido';
 import Final, { type DatosFinal } from './componentes/Final';
 import Leccion, { type Modo, type Resumen } from './componentes/Leccion';
@@ -34,12 +34,12 @@ function perfilGuardado(): Perfil | null {
   }
 }
 
-/** El examen: preguntas al azar de las lecciones que dice, más las suyas propias. Sin tarjetas ni parejas. */
+/** El examen: preguntas al azar de las lecciones que dice, más las suyas propias. Sin parejas ni tablas (se corrigen solas). */
 function prepararExamen(leccion: LeccionC, tema: TemaC): EjercicioC[] {
   const { de, preguntas } = leccion.examen!;
   const fuente = tema.lecciones.filter((l) => de.includes(l.id)).flatMap((l) => l.ejercicios);
   const propias = leccion.ejercicios.filter(puntuable);
-  const resto = barajar(fuente.filter((e) => puntuable(e) && e.tipo !== 'unir'));
+  const resto = barajar(fuente.filter((e) => puntuable(e) && !seCorrigeSolo(e)));
   return barajar([...propias, ...resto].slice(0, Math.max(preguntas, propias.length)));
 }
 

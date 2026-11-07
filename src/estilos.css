@@ -20,6 +20,13 @@
   --linea: #e3e5ef;
   --fondo: #f7f6ff;
   --blanco: #ffffff;
+  /* Señales y semáforos (como las de verdad) */
+  --senal-roja: #d62828;
+  --senal-azul: #1d5fc9;
+  --senal-ambar: #ffb000;
+  --senal-verde: #19b45a;
+  --senal-caja: #2b2d42;
+  --senal-apagada: #4a4d63;
   --radio: 16px;
   --titulos: 'Fredoka Variable', 'Fredoka', system-ui, sans-serif;
   --texto: 'Nunito Variable', 'Nunito', system-ui, sans-serif;
@@ -932,6 +939,190 @@ h3 {
   80% {
     transform: translateX(6px);
   }
+}
+
+
+/* Completar (con las palabras del recuadro) */
+.recuadro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  border: 2px solid var(--tinta);
+  border-radius: 12px;
+  background: var(--blanco);
+}
+.completar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.completar__frase {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.2;
+}
+.completar__frase .dibujo__emoji {
+  font-size: 48px;
+}
+.completar__texto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hueco--boton {
+  font: inherit;
+  font-weight: 700;
+  min-height: 1.6em;
+  color: var(--tinta);
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  cursor: pointer;
+}
+.hueco--boton.hueco--lleno {
+  color: var(--violeta);
+}
+.hueco--boton:disabled {
+  cursor: default;
+}
+.hueco--boton.hueco--elegido {
+  border-color: var(--cielo);
+  background: var(--cielo-claro);
+  border-radius: 6px 6px 0 0;
+}
+.hueco--boton.hueco--bien {
+  color: var(--verde-osc);
+  border-color: var(--verde);
+}
+.hueco--boton.hueco--mal {
+  color: var(--coral-osc);
+  border-color: var(--coral);
+  text-decoration: line-through;
+}
+.completar__buena {
+  color: var(--verde-osc);
+  margin-right: 6px;
+}
+
+/* Clasificar (completar la tabla) */
+.clasificar__carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.clasificar__ficha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  background: var(--sol-claro);
+  border: 2px solid var(--sol);
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  animation: aparecer 0.2s ease-out;
+}
+.clasificar__ficha--fin {
+  font-size: 2.4rem;
+  padding: 4px 18px;
+}
+.clasificar__cuantas {
+  color: var(--gris);
+  font-size: 0.85rem;
+}
+.clasificar__porque {
+  margin: 0;
+  text-align: center;
+  color: var(--coral-osc);
+  font-weight: 700;
+}
+.clasificar {
+  display: grid;
+  gap: 12px;
+}
+.clasificar__grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  min-height: 150px;
+  background: var(--blanco);
+  border: 2px solid var(--linea);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 0 var(--linea);
+  padding: 10px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.clasificar__grupo:hover:not(:disabled) {
+  border-color: var(--cielo);
+}
+.clasificar__grupo:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+.clasificar__grupo:disabled {
+  cursor: default;
+}
+.clasificar__grupo--mal {
+  border-color: var(--coral);
+  background: var(--coral-claro);
+  animation: temblar 0.35s;
+}
+.clasificar__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--titulos);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+@media (max-width: 480px) {
+  .clasificar__grupo {
+    padding: 8px 6px;
+  }
+  .clasificar__titulo {
+    font-size: 0.9rem;
+  }
+}
+.clasificar__dibujo {
+  font-size: 40px;
+  line-height: 1.1;
+}
+.clasificar__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.clasificar__puesta {
+  background: var(--verde-claro);
+  color: var(--verde-osc);
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  animation: aparecer 0.2s ease-out;
+}
+
+/* Señales de tráfico dibujadas */
+.senal {
+  flex-shrink: 0;
+  overflow: visible;
 }
 
 /* Recuerda */

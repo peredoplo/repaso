@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
-import type { TarjetaT } from '../contenido/esquema';
+import type { SenalT, TarjetaT } from '../contenido/esquema';
 import { seLee } from '../lib/normalizar';
 import { cambiarSonido, prepararSonido, sonidoActivado } from '../lib/sonido';
 import { hablar } from '../lib/voz';
@@ -94,6 +94,40 @@ export function Dibujo({ dibujo, hora }: { dibujo: string; hora?: string }) {
       <span className="dibujo__emoji">{dibujo}</span>
       {hora && <Reloj hora={hora} />}
     </div>
+  );
+}
+
+const LUCES = { 'semaforo-rojo': 0, 'semaforo-ambar': 1, 'semaforo-verde': 2 } as const;
+const COLOR_LUZ = ['var(--senal-roja)', 'var(--senal-ambar)', 'var(--senal-verde)'];
+
+/** Una señal de tráfico o un semáforo, dibujados (los emojis no tienen las señales de aquí). */
+export function Senal({ s, pequena = false }: { s: SenalT; pequena?: boolean }) {
+  const tam = pequena ? 64 : 120;
+  if (s.forma in LUCES) {
+    const encendida = LUCES[s.forma as keyof typeof LUCES];
+    return (
+      <svg className="senal" width={tam * 0.6} height={tam} viewBox="0 0 60 120" role="img" aria-label="traffic light">
+        <rect x="4" y="2" width="52" height="116" rx="12" fill="var(--senal-caja)" />
+        {[0, 1, 2].map((k) => (
+          <circle key={k} cx="30" cy={22 + k * 38} r="14" fill={k === encendida ? COLOR_LUZ[k] : 'var(--senal-apagada)'} />
+        ))}
+      </svg>
+    );
+  }
+  const azul = s.forma === 'obligacion';
+  return (
+    <svg className="senal" width={tam} height={tam} viewBox="0 0 120 120" role="img" aria-label={`${s.forma === 'aviso' ? 'warning' : azul ? 'mandatory' : 'prohibition'} sign`}>
+      {s.forma === 'aviso' ? (
+        <path d="M60 8 L114 106 H6 Z" fill="var(--blanco)" stroke="var(--senal-roja)" strokeWidth="12" strokeLinejoin="round" />
+      ) : (
+        <circle cx="60" cy="60" r="52" fill={azul ? 'var(--senal-azul)' : 'var(--blanco)'} stroke={azul ? 'var(--blanco)' : 'var(--senal-roja)'} strokeWidth={azul ? 4 : 12} />
+      )}
+      {s.dibujo && (
+        <text x="60" y={s.forma === 'aviso' ? 80 : 62} textAnchor="middle" dominantBaseline="central" fontSize={s.forma === 'aviso' ? 40 : 54} fontWeight="700" fill={azul ? 'var(--blanco)' : 'var(--tinta)'}>
+          {s.dibujo}
+        </text>
+      )}
+    </svg>
   );
 }
 

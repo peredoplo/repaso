@@ -1,0 +1,94 @@
+titulo: Cities and villages
+subtitulo: Completa la tabla
+emoji: 🏙️
+ejercicios:
+  # Reach higher 1 de la ficha: la tabla de Cities y Villages (Streets, Buildings y Traffic)
+  - tipo: clasificar
+    enunciado: Cities or villages? Complete the table.
+    grupos:
+      - nombre: Cities
+        dibujo: 🏙️
+        fichas:
+          - texto: Streets are long and wide.
+            feedback: Las calles largas y anchas (*long and wide*) son de la ciudad (**Cities**).
+          - texto: Buildings are very high.
+            feedback: En la ciudad hay edificios muy altos (*very high*). Va en **Cities**.
+          - texto: There is a lot of traffic.
+            feedback: Mucho tráfico (*a lot of traffic*) hay en la ciudad. Va en **Cities**.
+      - nombre: Villages
+        dibujo: 🏡
+        fichas:
+          - texto: Streets are short and narrow.
+            feedback: Las calles cortas y estrechas (*short and narrow*) son de los pueblos pequeños (**Villages**).
+          - texto: Buildings are not very high.
+            feedback: En un pueblo pequeño las casas no son muy altas (*not very high*). Va en **Villages**.
+          - texto: There is very little traffic.
+            feedback: Muy poco tráfico (*very little traffic*) hay en los pueblos pequeños. Va en **Villages**.
+
+  # Reach higher 1 de la ficha: Jobs y Public transport
+  - tipo: clasificar
+    enunciado: Cities or villages? Complete the table.
+    grupos:
+      - nombre: Cities
+        dibujo: 🏙️
+        fichas:
+          - texto: There are many job opportunities.
+            feedback: En la ciudad hay muchos trabajos (*many job opportunities*). Va en **Cities**.
+          - texto: There are many different types of public transport.
+            feedback: Autobús, metro, tren… muchos tipos de transporte público hay en la ciudad. Va en **Cities**.
+          - texto: It is an urban area.
+            feedback: La zona urbana (*urban area*) es la de las ciudades. Va en **Cities**.
+      - nombre: Villages
+        dibujo: 🏡
+        fichas:
+          - texto: Job opportunities are limited.
+            feedback: En un pueblo pequeño hay pocos trabajos (*limited* quiere decir «pocos, limitados»). Va en **Villages**.
+          - texto: Public transport is limited.
+            feedback: En un pueblo pequeño hay poco transporte público. Va en **Villages**.
+          - texto: It is a rural area.
+            feedback: La zona rural (*rural area*), el campo, es la de los pueblos pequeños. Va en **Villages**.
+
+  - tipo: elegir
+    enunciado: Choose the correct words.
+    dibujo: 🏡
+    pregunta: Villages have ___ streets.
+    correcta: short and narrow
+    incorrectas:
+      - texto: long and wide
+        feedback: Las calles largas y anchas son de la ciudad. Los pueblos pequeños tienen calles cortas y estrechas (**short and narrow**).
+
+  - tipo: elegir
+    enunciado: Choose the correct words.
+    dibujo: 🏙️
+    pregunta: In cities, the buildings are ___.
+    correcta: very high
+    incorrectas:
+      - texto: not very high
+        feedback: Las casas que no son muy altas son de los pueblos pequeños. En la ciudad, los edificios son muy altos (**very high**).
+
+  - tipo: escribir
+    enunciado: Write the missing word.
+    dibujo: 🏙️
+    plantilla: Cities are in ___ areas.
+    respuestas: [urban]
+    errores:
+      - contiene: rural
+        feedback: La zona rural (*rural*) es el campo, la de los pueblos pequeños. Las ciudades están en la zona urbana (**urban**).
+    explicacion: Las ciudades están en la zona urbana (**urban area**).
+
+  - tipo: escribir
+    enunciado: Write the missing word.
+    dibujo: 🌾 🏡
+    plantilla: Villages are in ___ areas.
+    respuestas: [rural]
+    errores:
+      - contiene: urban
+        feedback: La zona urbana (*urban*) es la de las ciudades. Los pueblos pequeños están en la zona rural (**rural**).
+    explicacion: Los pueblos pequeños están en el campo, la zona rural (**rural area**).
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: in cities / There is / of traffic / a lot
+    solucion: There is a lot of traffic in cities.
+    tambien: [In cities there is a lot of traffic.]
+    explicacion: 'Primero *There is* (hay), luego *a lot of traffic* (mucho tráfico) y al final dónde: *in cities*.'

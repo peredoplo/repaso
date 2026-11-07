@@ -1,0 +1,77 @@
+titulo: Road signs
+subtitulo: Aviso, prohibición y obligación
+emoji: ⚠️
+ejercicios:
+  # Reach higher 6 de la ficha («Draw a picture of the following road signs»): aquí, al revés, se dice qué señal es.
+  - tipo: elegir
+    enunciado: What type of road sign is it?
+    senal: { forma: aviso, dibujo: 🧒 }
+    correcta: a warning sign
+    incorrectas:
+      - texto: a prohibition sign
+        feedback: Las de prohibición son círculos rojos. Un triángulo rojo es un aviso (**a warning sign**).
+      - texto: a mandatory sign
+        feedback: Las obligatorias son círculos azules. Un triángulo rojo es un aviso (**a warning sign**).
+
+  - tipo: elegir
+    enunciado: What type of road sign is it?
+    senal: { forma: prohibicion, dibujo: 🚲 }
+    correcta: a prohibition sign
+    incorrectas:
+      - texto: a warning sign
+        feedback: Los avisos son triángulos rojos. Un círculo rojo es una prohibición (**a prohibition sign**). Aquí, no se puede ir en bici.
+      - texto: a mandatory sign
+        feedback: Las obligatorias son círculos azules. Un círculo rojo es una prohibición (**a prohibition sign**).
+
+  - tipo: elegir
+    enunciado: What type of road sign is it?
+    senal: { forma: obligacion, dibujo: ↻ }
+    correcta: a mandatory sign
+    incorrectas:
+      - texto: a prohibition sign
+        feedback: Las de prohibición son círculos rojos. Un círculo azul es obligatorio (**a mandatory sign**). Aquí, hay que dar la vuelta a la rotonda.
+      - texto: a warning sign
+        feedback: Los avisos son triángulos rojos. Un círculo azul es obligatorio (**a mandatory sign**).
+
+  - tipo: elegir
+    enunciado: What type of road sign is it?
+    senal: { forma: obligacion, dibujo: → }
+    correcta: a mandatory sign
+    incorrectas:
+      - texto: a warning sign
+        feedback: Los avisos son triángulos rojos. Un círculo azul es obligatorio (**a mandatory sign**). Aquí, hay que girar a la derecha.
+      - texto: a prohibition sign
+        feedback: Las de prohibición son círculos rojos. Un círculo azul es obligatorio (**a mandatory sign**).
+
+  - tipo: elegir
+    enunciado: What type of road sign is it?
+    senal: { forma: aviso, dibujo: 🐄 }
+    correcta: a warning sign
+    incorrectas:
+      - texto: a mandatory sign
+        feedback: Las obligatorias son círculos azules. Un triángulo rojo es un aviso (**a warning sign**). Aquí, avisa de que puede haber vacas en la carretera.
+      - texto: a prohibition sign
+        feedback: Las de prohibición son círculos rojos. Un triángulo rojo es un aviso (**a warning sign**).
+
+  - tipo: elegir
+    enunciado: What does this sign mean?
+    senal: { forma: prohibicion, dibujo: 🚗 }
+    correcta: Cars are prohibited.
+    incorrectas:
+      - texto: Watch out for cars.
+        feedback: Avisar de un peligro lo hacen los triángulos rojos. Un círculo rojo prohíbe algo. Aquí no pueden entrar coches (**Cars are prohibited.**).
+      - texto: Cars must go this way.
+        feedback: Lo que es obligatorio va en un círculo azul. Un círculo rojo prohíbe algo. Aquí no pueden entrar coches (**Cars are prohibited.**).
+
+  - tipo: unir
+    enunciado: Match the sign and what it does.
+    pares:
+      - [red triangle, It warns of danger.]
+      - [red circle, Something is prohibited.]
+      - [blue circle, It gives a mandatory instruction.]
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: warns / A red triangle sign / of danger
+    solucion: A red triangle sign warns of danger.
+    explicacion: 'Primero qué señal (*A red triangle sign*), luego qué hace (*warns*) y de qué (*of danger*).'

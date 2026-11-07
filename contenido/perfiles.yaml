@@ -7,6 +7,7 @@ perfiles:
     temas:
       - ingles/unit-1
       - natural-sciences/unit-1
+      - social-sciences/unit-1
   # Aún no lee: sus temas son sin leer (todo se oye).
   - id: miguel
     nombre: Miguel

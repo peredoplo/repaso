@@ -1,0 +1,105 @@
+titulo: Public services
+subtitulo: Mantenimiento, servicios sociales y deportes
+emoji: 🧹
+ejercicios:
+  - tipo: chat
+    titulo: Los servicios públicos
+    mensajes:
+      - de: valentina
+        texto: 'El consistorio organiza los servicios públicos (*public services*). Hay tres tipos.'
+      - de: vega
+        texto: 'Los servicios de mantenimiento (*maintenance services*) limpian las calles y los parques, recogen la basura y arreglan las farolas y las aceras.'
+        dibujo: 🧹 🚛 💡
+        palabras:
+          - [maintenance services, servicios de mantenimiento]
+      - de: hugo
+        texto: 'Los servicios sociales (*social services*) ayudan a las personas que lo necesitan (*people in need*): personas mayores que viven solas, familias con problemas…'
+        dibujo: 🤝 👵
+        palabras:
+          - [social services, servicios sociales]
+      - de: santiago
+        texto: 'Y los servicios deportivos y de ocio (*sports and recreation services*) organizan actividades dentro y fuera (*indoors and outdoors*) durante todo el año: piscinas, polideportivos, campamentos, fiestas…'
+        dibujo: 🏊 ⚽ 🎪
+        palabras:
+          - [sports and recreation services, servicios deportivos y de ocio]
+      - de: vega
+        texto: '¿Y quién los organiza? El consistorio (*local council*), que eligen con su voto las personas de más de dieciocho años.'
+
+  # Reach higher 4 a) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    dibujo: 🧹
+    pregunta: What do maintenance services in towns do?
+    correcta: They clean our streets and parks.
+    incorrectas:
+      - texto: They help people in need.
+        feedback: Eso lo hacen los servicios sociales. Los de mantenimiento limpian las calles y los parques (**They clean our streets and parks.**).
+      - texto: They organise sports activities.
+        feedback: Eso lo hacen los servicios deportivos y de ocio. Los de mantenimiento limpian las calles y los parques (**They clean our streets and parks.**).
+
+  # Reach higher 4 b) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    dibujo: 🤝
+    pregunta: If people in need require help or support, which service do they contact?
+    correcta: They contact the social services.
+    incorrectas:
+      - texto: They contact the maintenance services.
+        feedback: Los de mantenimiento limpian y arreglan. A las personas que necesitan ayuda las atienden los servicios sociales (**social services**).
+      - texto: They contact the sports and recreation services.
+        feedback: Esos organizan actividades. A las personas que necesitan ayuda las atienden los servicios sociales (**social services**).
+
+  # Reach higher 4 c) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    dibujo: 🏊 ⚽
+    pregunta: Which services provide activities, indoors and outdoors, all through the year?
+    correcta: The sports and recreation services.
+    incorrectas:
+      - texto: The social services.
+        feedback: Los servicios sociales ayudan a quien lo necesita. Las actividades las organizan los servicios deportivos y de ocio (**sports and recreation services**).
+      - texto: The maintenance services.
+        feedback: Los de mantenimiento limpian y arreglan. Las actividades las organizan los servicios deportivos y de ocio (**sports and recreation services**).
+
+  # Reach higher 4 d) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    dibujo: 🏛️
+    pregunta: Who organises the public services in a town?
+    correcta: The local council.
+    incorrectas:
+      - texto: The volunteers.
+        feedback: Las personas voluntarias ayudan, pero quien organiza los servicios públicos es el consistorio (**The local council.**).
+      - texto: The inhabitants.
+        feedback: Los habitantes los usan y los pagan con sus impuestos, pero quien los organiza es el consistorio (**The local council.**).
+
+  # Reach higher 4 e) de la ficha
+  - tipo: elegir
+    enunciado: Answer the question.
+    dibujo: 🗳️
+    pregunta: Who chooses the members of the local council, and how?
+    correcta: People over 18 vote for them in the elections.
+    incorrectas:
+      - texto: The mayor chooses them alone.
+        feedback: Es al revés. Las personas de más de dieciocho años votan a los miembros del consistorio, y ellos eligen al alcalde o la alcaldesa.
+      - texto: Children vote for them at school.
+        feedback: Para votar hay que tener más de dieciocho años (**People over 18 vote for them in the elections.**).
+
+  - tipo: clasificar
+    enunciado: Which public service is it?
+    grupos:
+      - nombre: Maintenance services
+        dibujo: 🧹
+        fichas:
+          - Cleaning the streets.
+          - Repairing the streetlights.
+      - nombre: Social services
+        dibujo: 🤝
+        fichas:
+          - Helping older people who live alone.
+          - Supporting families in need.
+      - nombre: Sports and recreation services
+        dibujo: ⚽
+        fichas:
+          - Swimming lessons in winter.
+          - Summer camps in the park.

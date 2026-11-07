@@ -1,4 +1,4 @@
-import type { ElegirT, EscribirT, OrdenarT } from '../contenido/esquema';
+import type { CompletarT, ElegirT, EscribirT, OrdenarT } from '../contenido/esquema';
 import { distancia, normalizar, rellenar, seLee } from './normalizar';
 import { pistaDeError } from './pistas';
 
@@ -33,6 +33,19 @@ export function corregirOrdenar(e: OrdenarT, frase: string): Resultado {
   const n = normalizar(frase);
   if ([e.solucion, ...(e.tambien ?? [])].some((s) => normalizar(s) === n)) return { bien: true, tuya: frase, voz: e.solucion };
   return { bien: false, tuya: frase, solucion: e.solucion, feedback: pistaDeError(n) ?? e.explicacion, voz: e.solucion };
+}
+
+/** Las frases de completar, con su palabra en el hueco. */
+export const frasesCompletar = (e: CompletarT) => e.frases.map((f) => rellenar(f.frase, f.respuesta));
+
+/** `puestas`: la palabra de cada hueco, en el orden de las frases. Está bien si lo están todas. */
+export function corregirCompletar(e: CompletarT, puestas: (string | null)[]): Resultado {
+  const mal = e.frases.filter((f, i) => normalizar(puestas[i] ?? '') !== normalizar(f.respuesta));
+  const tuya = e.frases.map((f, i) => rellenar(f.frase, puestas[i] ?? '…')).join(' ');
+  if (!mal.length) return { bien: true, tuya };
+  const feedback = [...new Set(mal.map((f) => f.feedback ?? e.explicacion).filter(Boolean))].join(' ');
+  // Solo las frases falladas, para que no se haga largo.
+  return { bien: false, tuya, solucion: mal.map((f) => rellenar(f.frase, f.respuesta)).join(' '), feedback: feedback || undefined };
 }
 
 /** La frase entera que se enseña y se oye. */

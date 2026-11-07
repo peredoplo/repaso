@@ -122,7 +122,7 @@ export default function Final({ datos, onSeguir, onAbrirCofre }: Props) {
                     ✔ <span lang="en">{resultado.solucion}</span>
                   </p>
                 )}
-                {!resultado.tuya && <p className="final__buena">Unir parejas</p>}
+                {!resultado.tuya && <p className="final__buena">{ejercicio.tipo === 'clasificar' ? 'Completar la tabla' : 'Unir parejas'}</p>}
               </li>
             ))}
           </ul>

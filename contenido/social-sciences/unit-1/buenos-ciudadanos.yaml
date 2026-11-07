@@ -1,0 +1,116 @@
+titulo: Good citizens
+subtitulo: Cómo participar en tu comunidad
+emoji: 🤝
+ejercicios:
+  - tipo: chat
+    titulo: ¿Cómo participamos?
+    mensajes:
+      - de: santiago
+        texto: 'Las personas que viven en una comunidad son sus ciudadanos (*citizens*). Y todas pueden participar (*participate*) para que la comunidad funcione bien.'
+        palabras:
+          - [citizens, ciudadanos y ciudadanas]
+          - [participate, participar]
+      - de: valentina
+        texto: ¿Y cómo se participa?
+      - de: vega
+        texto: 'Lo primero, cumpliendo las leyes (*laws*) y las normas, y respetando (*respect*) a las demás personas, aunque sean diferentes.'
+        dibujo: 📜 🤝
+        palabras:
+          - [law, ley]
+          - [respect, respetar]
+      - de: hugo
+        texto: 'Cada persona tiene sus responsabilidades (*responsibilities*): somos responsables de (*responsible for*) cuidar lo que es de todos, como los parques o las fuentes.'
+        dibujo: 🌳 ⛲
+        palabras:
+          - [responsibility, responsabilidad]
+          - [be responsible for, ser responsable de]
+      - de: vega
+        texto: 'Y de proteger (*protect*) el medio ambiente (*environment*): tirar la basura (*rubbish*) a la papelera, ahorrar agua y no hacer ruido de más.'
+        dibujo: 🗑️ 💧 🌍
+        palabras:
+          - [protect, proteger]
+          - [environment, medio ambiente]
+          - [rubbish, basura]
+      - de: santiago
+        texto: 'Las personas adultas pagan impuestos (*taxes*). Con ese dinero se pagan los servicios públicos, como los colegios o la limpieza de las calles.'
+        dibujo: 💶 🏫
+        palabras:
+          - [taxes, impuestos]
+      - de: valentina
+        texto: 'Y votan (*vote*) en las elecciones (*elections*) para elegir quién gobierna.'
+        dibujo: 🗳️
+        palabras:
+          - [vote, votar]
+          - [elections, elecciones]
+      - de: hugo
+        texto: 'Las personas voluntarias (*volunteers*) ayudan sin cobrar nada: en un comedor social, recogiendo basura de la playa, acompañando a personas mayores…'
+        dibujo: 🙋 🏖️
+        palabras:
+          - [volunteer, voluntario o voluntaria]
+
+  - tipo: clasificar
+    enunciado: What does a good citizen do?
+    grupos:
+      - nombre: Good citizen
+        dibujo: 👍
+        fichas:
+          - Respect other people.
+          - Throw rubbish in the bin.
+          - Take care of the park.
+      - nombre: Not a good citizen
+        dibujo: 👎
+        fichas:
+          - texto: Draw on the walls.
+            feedback: Pintar las paredes estropea lo que es de todos. Eso no lo hace un buen ciudadano (**Not a good citizen**).
+          - texto: Leave rubbish on the beach.
+            feedback: La basura (*rubbish*) se tira a la papelera, nunca en la playa. Va en **Not a good citizen**.
+          - texto: Laugh at people who are different.
+            feedback: A las personas se las respeta (*respect*), aunque sean diferentes. Va en **Not a good citizen**.
+
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 📜
+    pregunta: Good citizens respect the laws.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Cumplir las leyes (*laws*) es una de las responsabilidades de los ciudadanos. Es **true**.
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 💶
+    pregunta: Adults pay ___ to pay for public services.
+    correcta: taxes
+    incorrectas:
+      - texto: elections
+        feedback: Las elecciones (*elections*) son para votar. Con lo que pagan las personas adultas, los impuestos (**taxes**), se pagan los servicios públicos.
+      - texto: rubbish
+        feedback: '*Rubbish* es la basura. Lo que pagan las personas adultas son los impuestos (**taxes**).'
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🙋 🏖️
+    pregunta: People who help without being paid are ___.
+    correcta: volunteers
+    incorrectas:
+      - texto: drivers
+        feedback: Los *drivers* son quienes conducen. Las personas que ayudan sin cobrar son voluntarias (**volunteers**).
+      - texto: inhabitants
+        feedback: Los *inhabitants* son todos los habitantes de un lugar. Las personas que ayudan sin cobrar son voluntarias (**volunteers**).
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🗳️
+    pregunta: In elections, adults ___.
+    correcta: vote
+    incorrectas:
+      - texto: recycle
+        feedback: Reciclar (*recycle*) es separar la basura. En las elecciones, las personas adultas votan (**vote**).
+      - texto: pay taxes
+        feedback: Los impuestos se pagan durante el año. En las elecciones, las personas adultas votan (**vote**).
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: respect / other people / Good citizens
+    solucion: Good citizens respect other people.
+    explicacion: 'Primero quién (*Good citizens*), luego qué hacen (*respect*) y a quién (*other people*).'

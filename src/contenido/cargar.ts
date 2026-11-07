@@ -4,7 +4,7 @@
  */
 import { parse } from 'yaml';
 import type { z } from 'zod';
-import { opcionesDe, partirOpcion } from '../lib/frases';
+import { opcionesDe, partirOpcion, textoFicha } from '../lib/frases';
 import { HUECO, normalizar, partirPiezas } from '../lib/normalizar';
 import { esTeoria, Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema';
 
@@ -97,6 +97,22 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
       const izq = e.pares.map((p) => p[0]);
       const der = e.pares.map((p) => normalizar(p[1]));
       if (new Set(izq).size !== izq.length || new Set(der).size !== der.length) errores.push(`${donde}: parejas repetidas`);
+      break;
+    }
+    case 'completar': {
+      for (const f of e.frases) {
+        if (f.frase.split(HUECO).length !== 2) errores.push(`${donde}: «${f.frase}» necesita un hueco «___» (y solo uno)`);
+      }
+      // Cada palabra del recuadro, una vez: si dos huecos llevaran la misma, daría igual en cuál se pone.
+      const recuadro = [...e.frases.map((f) => f.respuesta), ...(e.sobran ?? [])].map(normalizar);
+      if (new Set(recuadro).size !== recuadro.length) errores.push(`${donde}: palabras repetidas en el recuadro`);
+      // Todo fallo, con su explicación.
+      if (!e.explicacion && e.frases.some((f) => !f.feedback)) errores.push(`${donde}: cada frase necesita su feedback (o una explicacion)`);
+      break;
+    }
+    case 'clasificar': {
+      const textos = e.grupos.flatMap((g) => g.fichas.map((f) => normalizar(textoFicha(f))));
+      if (new Set(textos).size !== textos.length) errores.push(`${donde}: fichas repetidas`);
       break;
     }
     case 'recuerda':

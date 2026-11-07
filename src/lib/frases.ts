@@ -1,6 +1,6 @@
 /** Las frases en inglés de cada ejercicio: las que graba `npm run voces` y las que la web puede decir. */
 import type { ElegirT, EjercicioT } from '../contenido/esquema';
-import { corregirElegir, fraseEscribir } from './corregir';
+import { corregirElegir, fraseEscribir, frasesCompletar } from './corregir';
 import { HUECO, partirPiezas, seLee } from './normalizar';
 
 /** Un ejercicio y si es de un tema sin leer (EjercicioC, sin traer aquí la carga del contenido). */
@@ -33,6 +33,14 @@ export function frasesInglesas(e: ConTema): string[] {
       break;
     case 'unir':
       e.pares.forEach(([a, b]) => f.push(a, b));
+      break;
+    case 'completar':
+      // Las palabras del recuadro no se oyen al tocarlas; al contestar, cada frase con su altavoz.
+      f.push(...frasesCompletar(e));
+      break;
+    case 'clasificar':
+      // «🚲 bicycle» se dice «bicycle».
+      e.grupos.forEach((g) => f.push(g.nombre, ...g.fichas.map((x) => partirOpcion(textoFicha(x)).nombre)));
       break;
     case 'recuerda':
       f.push(...(e.ejemplos ?? []));
@@ -74,7 +82,11 @@ export function alEmpezar(e: EjercicioT): Inicio | null {
     case 'escribir':
       frases = [tarjeta, e.pregunta, e.plantilla, e.debajo];
       break;
+    case 'completar':
+      frases = e.frases.map((x) => x.frase);
+      break;
     case 'unir':
+    case 'clasificar':
       break;
     default:
       return null;
@@ -102,6 +114,9 @@ export const claveMensaje = (de: string, texto: string) => `${de}|${texto.trim()
 export const BIEN = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!', '¡Bravo!', '¡Lo has clavado!'];
 /** Lo que se dice al fallar, delante de la explicación. */
 export const CASI = '¡Casi!';
+
+/** Una ficha de clasificar: «texto» o { texto, feedback }. */
+export const textoFicha = (f: string | { texto: string }) => (typeof f === 'string' ? f : f.texto);
 
 export const opcionesDe = (e: ElegirT) => [e.correcta, ...e.incorrectas.map((o) => (typeof o === 'string' ? o : o.texto))];
 

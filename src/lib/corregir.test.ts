@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import type { ElegirT, EscribirT, OrdenarT } from '../contenido/esquema';
-import { corregirElegir, corregirEscribir, corregirOrdenar } from './corregir';
+import type { CompletarT, ElegirT, EscribirT, OrdenarT } from '../contenido/esquema';
+import { corregirCompletar, corregirElegir, corregirEscribir, corregirOrdenar } from './corregir';
 import { distancia, normalizar } from './normalizar';
 import { pistaDeError } from './pistas';
 
@@ -89,5 +89,26 @@ describe('pistas', () => {
     expect(pistaDeError('how often do she eat sweets')).toMatch(/does/);
     expect(pistaDeError('she never goes to bed late')).toBeNull();
     expect(pistaDeError('my brother never eats sweets')).toBeNull();
+  });
+});
+
+describe('completar', () => {
+  const e: CompletarT = {
+    tipo: 'completar',
+    enunciado: '',
+    frases: [
+      { frase: 'A ___ circle sign gives a mandatory instruction.', respuesta: 'blue', feedback: 'Azul: **blue**.' },
+      { frase: 'Pedestrian crossings are usually ___ and white.', respuesta: 'black', feedback: 'Negro: **black**.' },
+    ],
+  };
+  it('está bien si lo están todos los huecos', () => {
+    expect(corregirCompletar(e, ['Blue', 'black']).bien).toBe(true);
+  });
+  it('al fallar, enseña solo las frases falladas y su explicación', () => {
+    const r = corregirCompletar(e, ['blue', 'red']);
+    expect(r.bien).toBe(false);
+    expect(r.solucion).toBe('Pedestrian crossings are usually black and white.');
+    expect(r.feedback).toBe('Negro: **black**.');
+    expect(r.tuya).toBe('A blue circle sign gives a mandatory instruction. Pedestrian crossings are usually red and white.');
   });
 });

@@ -1,0 +1,87 @@
+titulo: Spanish dishes
+subtitulo: ¿De dónde es cada plato?
+emoji: 🍅
+ejercicios:
+  - tipo: chat
+    titulo: Platos típicos de España
+    mensajes:
+      - de: hugo
+        texto: 'En la ficha hay fotos de platos típicos de España (*traditional Spanish dishes*). Hay que decir de dónde es cada uno.'
+      - de: vega
+        texto: 'El gazpacho, una sopa fría de tomate, es de Andalucía (*Andalusia*).'
+        dibujo: 🍅 🥣
+      - de: santiago
+        texto: 'El bacalao al pil pil, un pescado con una salsa de aceite y ajo, es del País Vasco (*Basque Country*).'
+        dibujo: 🐟
+      - de: valentina
+        texto: 'El jamón curado (*cured ham*) es de Extremadura (*Extremadura*). Y la fabada, un guiso de alubias con chorizo y morcilla, de Asturias (*Asturias*).'
+        dibujo: 🍖 🫘
+      - de: hugo
+        texto: 'Las papas arrugadas con mojo picón, patatas pequeñas con una salsa roja, son de las islas Canarias (*Canary Islands*).'
+        dibujo: 🥔 🌶️
+      - de: vega
+        texto: 'Y la ensaimada, un bollo en forma de espiral con azúcar glas por encima, es de las islas Baleares (*Balearic Islands*).'
+        dibujo: 🌀 🥐
+      - de: santiago
+        texto: 'En la ficha del cole las respuestas van con el nombre en español: País Vasco o Euskadi, Andalucía, Extremadura, Asturias, Canarias e Illes Balears. Aquí, en inglés.'
+        palabras:
+          - [Andalusia, Andalucía]
+          - [Basque Country, País Vasco o Euskadi]
+          - [Extremadura, Extremadura]
+          - [Asturias, Principado de Asturias]
+          - [Canary Islands, Canarias]
+          - [Balearic Islands, Illes Balears]
+
+  # Reach higher 2 a) de la ficha
+  - tipo: elegir
+    enunciado: Where is this traditional Spanish dish from?
+    dibujo: 🐟
+    pregunta: Bacalao al pil pil
+    correcta: Basque Country
+    incorrectas: [Andalusia, Canary Islands]
+    explicacion: El bacalao al pil pil es del País Vasco (**Basque Country**).
+
+  # Reach higher 2 b) de la ficha
+  - tipo: elegir
+    enunciado: Where is this traditional Spanish dish from?
+    dibujo: 🍅 🥣
+    pregunta: Gazpacho
+    correcta: Andalusia
+    incorrectas: [Asturias, Balearic Islands]
+    explicacion: El gazpacho, la sopa fría de tomate, es de Andalucía (**Andalusia**).
+
+  # Reach higher 2 c) de la ficha
+  - tipo: elegir
+    enunciado: Where is this traditional Spanish dish from?
+    dibujo: 🍖
+    pregunta: Cured ham
+    correcta: Extremadura
+    incorrectas: [Basque Country, Canary Islands]
+    explicacion: El jamón curado (*cured ham*) es de Extremadura (**Extremadura**).
+
+  # Reach higher 2 d) de la ficha
+  - tipo: elegir
+    enunciado: Where is this traditional Spanish dish from?
+    dibujo: 🫘
+    pregunta: Fabada
+    correcta: Asturias
+    incorrectas: [Andalusia, Extremadura]
+    explicacion: La fabada, el guiso de alubias, es de Asturias (**Asturias**).
+
+  # Reach higher 2 e) de la ficha
+  - tipo: elegir
+    enunciado: Where is this traditional Spanish dish from?
+    dibujo: 🥔 🌶️
+    pregunta: Papas arrugadas with mojo picón
+    correcta: Canary Islands
+    incorrectas: [Balearic Islands, Basque Country]
+    explicacion: Las papas arrugadas con mojo picón son de las islas Canarias (**Canary Islands**).
+
+  # Reach higher 2 f) de la ficha
+  - tipo: elegir
+    enunciado: Where is this traditional Spanish dish from?
+    dibujo: 🌀 🥐
+    pregunta: Ensaimada
+    correcta: Balearic Islands
+    incorrectas: [Canary Islands, Asturias]
+    explicacion: La ensaimada, el bollo en espiral, es de las islas Baleares (**Balearic Islands**).

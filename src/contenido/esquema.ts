@@ -1,7 +1,8 @@
 /**
  * El formato del contenido (YAML en contenido/). Regla de idiomas: `enunciado`, `feedback`, `explicacion` y los textos
  * de `recuerda` y `chat` van en español; `pregunta`, `opciones`, `solucion`, `respuestas`, `debajo`, los `ejemplos` y
- * las `palabras` del chat, en inglés (son lo que se oye con la voz). Los dibujos son emojis, nunca imágenes del libro.
+ * las `palabras` del chat, las `frases` y `respuesta` de completar y las fichas y grupos de clasificar, en inglés (son lo
+ * que se oye con la voz). Los dibujos son emojis, nunca imágenes del libro.
  */
 import { z } from 'zod';
 
@@ -20,6 +21,18 @@ export const Tarjeta = z
 
 const Opcion = z.union([z.string(), z.object({ texto: z.string(), feedback: z.string() }).strict()]);
 
+/**
+ * Señales de tráfico y semáforos dibujados (no hay emojis de las señales españolas): el triángulo rojo avisa
+ * (*warning*), el círculo rojo prohíbe (*prohibition*) y el círculo azul obliga (*mandatory*). `dibujo` va dentro:
+ * un emoji o, en las azules, un símbolo que se ve en blanco («→», «↻»).
+ */
+export const Senal = z
+  .object({
+    forma: z.enum(['aviso', 'prohibicion', 'obligacion', 'semaforo-rojo', 'semaforo-ambar', 'semaforo-verde']),
+    dibujo: z.string().optional(),
+  })
+  .strict();
+
 const comunes = {
   /** Pista que se ve al fallar si no hay otra más concreta. */
   explicacion: z.string().optional(),
@@ -32,6 +45,7 @@ export const Elegir = z
     /** En inglés. Con «___», al contestar se oye completa. */
     pregunta: z.string().optional(),
     dibujo: z.string().optional(),
+    senal: Senal.optional(),
     hora: z.string().optional(),
     tarjeta: Tarjeta.optional(),
     /** Frase que se oye y no se ve (ejercicio de escuchar). */
@@ -91,6 +105,53 @@ export const Unir = z
   })
   .strict();
 
+/**
+ * Como «Complete the sentences with the words from the box» de las fichas: arriba, el recuadro con las palabras; debajo,
+ * unas frases con su hueco «___». Se toca una palabra y va al primer hueco libre; tocando un hueco, vuelve al recuadro.
+ */
+export const Completar = z
+  .object({
+    tipo: z.literal('completar'),
+    enunciado: z.string().default('Complete the sentences with the words from the box.'),
+    frases: z
+      .array(
+        z
+          .object({
+            /** En inglés, con un hueco «___». */
+            frase: z.string(),
+            respuesta: z.string(),
+            dibujo: z.string().optional(),
+            senal: Senal.optional(),
+            /** Lo que se ve si esta frase está mal. */
+            feedback: z.string().optional(),
+          })
+          .strict(),
+      )
+      .min(2)
+      .max(5),
+    /** Palabras de más en el recuadro. */
+    sobran: z.array(z.string()).optional(),
+    ...comunes,
+  })
+  .strict();
+
+const Ficha = z.union([z.string(), z.object({ texto: z.string(), feedback: z.string() }).strict()]);
+
+/**
+ * Como «Complete the table» de las fichas (*Cities* / *Villages*): las fichas salen de una en una y se tocan las
+ * columnas donde van. Si está bien, entra en su columna; si no, tiembla y se ve su feedback. Se corrige solo al acabar.
+ */
+export const Clasificar = z
+  .object({
+    tipo: z.literal('clasificar'),
+    enunciado: z.string(),
+    grupos: z
+      .array(z.object({ nombre: z.string(), dibujo: z.string().optional(), fichas: z.array(Ficha).min(1) }).strict())
+      .min(2)
+      .max(3),
+  })
+  .strict();
+
 export const Recuerda = z
   .object({
     tipo: z.literal('recuerda'),
@@ -126,7 +187,10 @@ export const Chat = z
   })
   .strict();
 
-export const Ejercicio = z.discriminatedUnion('tipo', [Elegir, Ordenar, Escribir, Unir, Recuerda, Chat]);
+export const Ejercicio = z.discriminatedUnion('tipo', [Elegir, Ordenar, Escribir, Unir, Completar, Clasificar, Recuerda, Chat]);
+
+/** Los que se corrigen solos, toque a toque: no tienen botón «Comprobar» ni salen en el examen. */
+export const seCorrigeSolo = (e: { tipo: string }) => e.tipo === 'unir' || e.tipo === 'clasificar';
 
 /** Las pantallas de teoría (no se corrigen ni cuentan para la nota). */
 export const esTeoria = (e: { tipo: string }) => e.tipo === 'recuerda' || e.tipo === 'chat';
@@ -181,6 +245,9 @@ export type ElegirT = z.infer<typeof Elegir>;
 export type OrdenarT = z.infer<typeof Ordenar>;
 export type EscribirT = z.infer<typeof Escribir>;
 export type UnirT = z.infer<typeof Unir>;
+export type CompletarT = z.infer<typeof Completar>;
+export type ClasificarT = z.infer<typeof Clasificar>;
+export type SenalT = z.infer<typeof Senal>;
 export type RecuerdaT = z.infer<typeof Recuerda>;
 export type ChatT = z.infer<typeof Chat>;
 export type EjercicioT = z.infer<typeof Ejercicio>;

@@ -1,0 +1,116 @@
+titulo: The 5 Rs
+subtitulo: Las 5 R de residuo cero
+emoji: ♻️
+ejercicios:
+  - tipo: chat
+    titulo: Las 5 R
+    mensajes:
+      - de: vega
+        texto: 'Para cuidar el medio ambiente hay una regla muy fácil de recordar: las 5 R de residuo cero (*the 5 Rs of zero waste*).'
+        dibujo: ♻️ 🌍
+      - de: hugo
+        texto: 'La primera es rechazar (*refuse*): decir que no a lo que no necesitas, como una bolsa de plástico. Lleva tu propia bolsa a la compra.'
+        dibujo: 🛍️
+        palabras:
+          - [refuse, rechazar]
+      - de: valentina
+        texto: 'La segunda es reducir (*reduce*): comprar solo lo que de verdad necesitas.'
+        dibujo: 🛒
+        palabras:
+          - [reduce, reducir]
+      - de: santiago
+        texto: 'La tercera es reutilizar (*reuse*): usar las cosas muchas veces, como una botella de agua reutilizable.'
+        dibujo: 🔁 💧
+        palabras:
+          - [reuse, reutilizar]
+      - de: vega
+        texto: 'La cuarta es reciclar (*recycle*): separar la basura y echar cada cosa en su contenedor.'
+        dibujo: 🟦 🟨 🟩 🟫
+        palabras:
+          - [recycle, reciclar]
+      - de: hugo
+        texto: 'Al azul, el papel y el cartón; al amarillo, los plásticos y las latas; al verde, el vidrio; y al marrón, los restos de comida.'
+        dibujo: 📦 🥫 🍾 🍌
+      - de: valentina
+        texto: 'Y la quinta es compostar (*rot*): los restos de comida y de plantas van al cubo del compost (*compost bin*) y se convierten en abono para la tierra.'
+        dibujo: 🍂 🪱 🌱
+        palabras:
+          - [rot, 'compostar, descomponer']
+          - [compost bin, cubo del compost]
+      - de: santiago
+        texto: 'En orden: rechazar, reducir, reutilizar, reciclar y compostar (*refuse, reduce, reuse, recycle, rot*).'
+
+  # Support 3 de la ficha
+  - tipo: unir
+    enunciado: Match the sentence halves about the 5 Rs of zero waste.
+    pares:
+      - ['Refuse: Take your own', bag when you go shopping.]
+      - ['Reduce: Only buy what', you really need.]
+      - ['Reuse: Always use a', reusable water bottle.]
+      - ['Recycle: Separate waste and use', the correct recycling container.]
+      - ['Rot: Put your organic waste', in the compost bin.]
+
+  # Reach higher 3 a) de la ficha
+  - tipo: elegir
+    enunciado: Which of the 5 Rs is it?
+    dibujo: 📰 🟦
+    pregunta: Ruth puts her old newspapers into the blue container.
+    correcta: recycle
+    incorrectas: [reuse, rot]
+    explicacion: Separar el papel y echarlo al contenedor azul es reciclar (**recycle**).
+
+  # Reach higher 3 b) de la ficha
+  - tipo: elegir
+    enunciado: Which of the 5 Rs is it?
+    dibujo: 💧 🏫
+    pregunta: Nick always brings his reusable water bottle to school.
+    correcta: reuse
+    incorrectas: [reduce, recycle]
+    explicacion: Usar muchas veces la misma botella es reutilizar (**reuse**).
+
+  # Reach higher 3 c) de la ficha
+  - tipo: elegir
+    enunciado: Which of the 5 Rs is it?
+    dibujo: 🛍️
+    pregunta: When Bill goes shopping, he takes his own bag.
+    correcta: refuse
+    incorrectas: [reuse, reduce]
+    explicacion: Llevar su propia bolsa es decir que no a las bolsas de plástico de la tienda. Es rechazar (**refuse**), como en la ficha.
+
+  # Reach higher 3 d) de la ficha
+  - tipo: elegir
+    enunciado: Which of the 5 Rs is it?
+    dibujo: 🍂 🪱
+    pregunta: Cathy uses the compost bin for her organic waste.
+    correcta: rot
+    incorrectas: [recycle, refuse]
+    explicacion: Echar los restos de comida al cubo del compost es compostar (**rot**).
+
+  # Reach higher 3 e) de la ficha
+  - tipo: elegir
+    enunciado: Which of the 5 Rs is it?
+    dibujo: 🛒
+    pregunta: Brendan only buys what he really needs.
+    correcta: reduce
+    incorrectas: [refuse, reuse]
+    explicacion: Comprar solo lo que hace falta es reducir (**reduce**).
+
+  - tipo: completar
+    enunciado: Complete the sentences with the words from the box.
+    frases:
+      - frase: Put paper in the ___ container.
+        respuesta: blue
+        dibujo: 📦
+        feedback: El papel y el cartón van al contenedor azul (**blue**).
+      - frase: Put plastic and cans in the ___ container.
+        respuesta: yellow
+        dibujo: 🥫
+        feedback: Los plásticos y las latas van al amarillo (**yellow**).
+      - frase: Put glass in the ___ container.
+        respuesta: green
+        dibujo: 🍾
+        feedback: El vidrio va al verde (**green**).
+      - frase: Put food waste in the ___ container.
+        respuesta: brown
+        dibujo: 🍌
+        feedback: Los restos de comida van al marrón (**brown**).

@@ -5,7 +5,7 @@ import { corregirElegir } from '../../lib/corregir';
 import { claveOpcion, partirOpcion } from '../../lib/frases';
 import { normalizar, tieneLetras } from '../../lib/normalizar';
 import { hablar } from '../../lib/voz';
-import { BotonVoz, ConHueco, Dibujo, Tarjeta, Texto } from '../piezas';
+import { BotonVoz, ConHueco, Dibujo, Senal, Tarjeta, Texto } from '../piezas';
 import type { PropsEjercicio } from './tipos';
 
 /** Sin leer (Miguel), cada opción es un dibujo grande con su nombre debajo, y al tocarla se oye el nombre. */
@@ -50,6 +50,11 @@ export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer }: 
       </h2>
       {e.tarjeta && <Tarjeta t={e.tarjeta} />}
       {e.dibujo && <Dibujo dibujo={e.dibujo} hora={e.hora} />}
+      {e.senal && (
+        <div className="dibujo">
+          <Senal s={e.senal} />
+        </div>
+      )}
       {e.escuchar && (
         <div className="escuchar">
           <BotonVoz texto={e.escuchar} grande etiqueta="Escuchar otra vez" />

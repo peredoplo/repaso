@@ -1,0 +1,103 @@
+titulo: Sustainable transport
+subtitulo: Moverse sin contaminar
+emoji: 🚲
+ejercicios:
+  - tipo: chat
+    titulo: ¿Qué es el transporte sostenible?
+    mensajes:
+      - de: hugo
+        texto: Los coches echan humo y ensucian el aire. ¿Cómo podemos movernos sin estropear el planeta?
+        dibujo: 🚗 💨
+      - de: vega
+        texto: 'Con transporte sostenible (*sustainable transport*), que es ecológico (*eco-friendly*): contamina poco o nada.'
+        dibujo: 🌱
+        palabras:
+          - [sustainable, sostenible]
+          - [eco-friendly, ecológico]
+      - de: valentina
+        texto: 'Lo más sostenible es ir andando (*walking*) o en bici (*cycling*). Los patinetes (*scooters*) tampoco contaminan.'
+        dibujo: 🚶 🚲 🛴
+        palabras:
+          - [walking, ir andando]
+          - [cycling, ir en bici]
+      - de: santiago
+        texto: 'El transporte público (*public transport*) también: en un autobús caben muchas personas, en vez de ir cada una en su coche. Y tiene su carril bus (*bus lane*) para no quedarse en los atascos.'
+        dibujo: 🚌 🚆 🚇
+        palabras:
+          - [public transport, transporte público]
+          - [bus lane, carril bus]
+      - de: vega
+        texto: 'Compartir el coche (*carsharing*) entre varias personas contamina menos que ir cada una en el suyo. Y los coches eléctricos (*electric cars*) no echan humo.'
+        dibujo: 🚗 ⚡
+        palabras:
+          - [carsharing, uso compartido del coche]
+      - de: hugo
+        texto: 'Para el examen, cinco ejemplos: andar, la bici, el autobús, el tren y compartir el coche (*walking, cycling, bus, train, carsharing*).'
+
+  - tipo: clasificar
+    enunciado: Is it sustainable transport?
+    grupos:
+      - nombre: Sustainable
+        dibujo: 🌱
+        fichas:
+          - 🚶 walking
+          - 🚲 cycling
+          - 🚌 going by bus
+          - 🚆 going by train
+          - 🛴 riding a scooter
+      - nombre: Not sustainable
+        dibujo: 💨
+        fichas:
+          - texto: 🚗 one person alone in a big car
+            feedback: Un coche grande para una sola persona echa mucho humo. Mejor compartirlo (*carsharing*) o ir en transporte público. Va en **Not sustainable**.
+          - texto: 🚙 driving to the shop next door
+            feedback: Para ir a la tienda de al lado, mejor andando. Ir en coche no es sostenible (**Not sustainable**).
+
+  # Reach higher 5 de la ficha: «Give five examples of sustainable transport.»
+  - tipo: escribir
+    enunciado: Write one example of sustainable transport.
+    dibujo: 🌱
+    respuestas: [bicycle, bike, cycling, walking, walk, on foot, bus, train, metro, underground, tram, scooter, carsharing, electric car, public transport, by bike, by bus, by train, going by bus, going by train, a bicycle, a bike, the bus, the train, a scooter, an electric car]
+    errores:
+      - contiene: plane
+        feedback: El avión (*plane*) contamina muchísimo. Un ejemplo de transporte sostenible es *bicycle*, *walking*, *bus*, *train* o *carsharing*.
+      - contiene: car
+        feedback: Un coche con una sola persona no es sostenible. Si es eléctrico (*electric car*) o se comparte (*carsharing*), sí.
+    explicacion: 'Vale, por ejemplo: *bicycle*, *walking*, *bus*, *train* o *carsharing*.'
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🚶 🚲
+    pregunta: Walking and cycling are ___ transport.
+    correcta: sustainable
+    incorrectas:
+      - texto: public
+        feedback: El transporte público (*public*) es el autobús, el tren o el metro. Andar e ir en bici es transporte sostenible (**sustainable**).
+      - texto: mandatory
+        feedback: '*Mandatory* quiere decir obligatorio, como las señales azules. Andar e ir en bici es transporte sostenible (**sustainable**).'
+
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🚌
+    pregunta: The bus lane is only for buses.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: El carril bus (*bus lane*) es para los autobuses, y así no se quedan en los atascos. Es **true**.
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🚗 👥
+    pregunta: Sharing a car with other people is called ___.
+    correcta: carsharing
+    incorrectas:
+      - texto: cycling
+        feedback: '*Cycling* es ir en bici. Compartir el coche es *carsharing*.'
+      - texto: recycling
+        feedback: Reciclar (*recycling*) es separar la basura. Compartir el coche es **carsharing**.
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: for the environment / is / Cycling / good
+    solucion: Cycling is good for the environment.
+    explicacion: 'Primero qué (*Cycling*), luego *is good* y al final para qué: *for the environment*.'

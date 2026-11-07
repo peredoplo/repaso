@@ -1,0 +1,100 @@
+titulo: Local government
+subtitulo: El ayuntamiento y las elecciones
+emoji: 🏛️
+ejercicios:
+  - tipo: chat
+    titulo: ¿Quién decide en el pueblo?
+    mensajes:
+      - de: hugo
+        texto: ¿Quién decide si arreglan el parque de mi barrio?
+        dibujo: 🛝
+      - de: vega
+        texto: 'El gobierno local (*local government*): el consistorio (*council*), que se reúne en el ayuntamiento (*hall*), el edificio.'
+        dibujo: 🏛️
+        palabras:
+          - [government, gobierno]
+          - [council, 'consistorio: el grupo que gobierna el pueblo o la ciudad']
+          - [hall, ayuntamiento (el edificio)]
+      - de: valentina
+        texto: 'Al frente está el alcalde o la alcaldesa (*mayor*).'
+        palabras:
+          - [mayor, alcalde o alcaldesa]
+      - de: santiago
+        texto: '¿Y quién los elige? Cada cuatro años (*every four years*) hay elecciones municipales (*local elections*).'
+        dibujo: 🗳️
+        palabras:
+          - [elections, elecciones]
+      - de: vega
+        texto: 'Votan (*vote*) las personas de más de dieciocho años (*over eighteen years old*), y eligen a los miembros del consistorio (*members of the local council*).'
+        palabras:
+          - [vote, votar]
+      - de: hugo
+        texto: Después, los miembros del consistorio eligen al alcalde o la alcaldesa.
+      - de: valentina
+        texto: 'El consistorio decide las normas del pueblo o de la ciudad y organiza los servicios públicos (*public services*), que se pagan con los impuestos (*taxes*).'
+        dibujo: 💶 🧹 🏊
+      - de: santiago
+        texto: 'Eso cae seguro: hay elecciones cada cuatro años, votan los mayores de dieciocho y eligen a los miembros del consistorio.'
+
+  # Support 4 a) de la ficha
+  - tipo: elegir
+    enunciado: Circle the correct answer.
+    dibujo: 🗳️
+    pregunta: How often are local elections?
+    correcta: every 4 years
+    incorrectas:
+      - texto: every 5 years
+        feedback: Las elecciones municipales son cada cuatro años (**every 4 years**).
+
+  # Support 4 b) de la ficha
+  - tipo: elegir
+    enunciado: Circle the correct answer.
+    dibujo: 🗳️
+    pregunta: How old are the participants?
+    correcta: over 18 years old
+    incorrectas:
+      - texto: over 16 years old
+        feedback: Para votar hay que tener más de dieciocho años (**over 18 years old**).
+
+  # Support 4 c) de la ficha
+  - tipo: elegir
+    enunciado: Circle the correct answer.
+    dibujo: 🗳️
+    pregunta: What do the participants do?
+    correcta: vote
+    incorrectas:
+      - texto: make speeches
+        feedback: Los discursos (*speeches*) los dan quienes se presentan. Las personas que participan votan (**vote**).
+
+  # Support 4 d) de la ficha
+  - tipo: elegir
+    enunciado: Circle the correct answer.
+    dibujo: 🏛️
+    pregunta: Who do the participants choose?
+    correcta: members of the local council
+    incorrectas:
+      - texto: the mayor
+        feedback: Se vota a los miembros del consistorio (**members of the local council**), y son ellos quienes eligen después al alcalde o la alcaldesa (*mayor*).
+
+  - tipo: completar
+    enunciado: Complete the sentences with the words from the box.
+    frases:
+      - frase: Local elections are every four ___.
+        respuesta: years
+        feedback: Las elecciones son cada cuatro años (**years**).
+      - frase: People over 18 ___ in the elections.
+        respuesta: vote
+        feedback: En las elecciones, las personas de más de dieciocho años votan (**vote**).
+      - frase: The council meets in the town ___.
+        respuesta: hall
+        feedback: El consistorio se reúne en el ayuntamiento, el *town hall*. Va **hall**.
+      - frase: Public services are paid with ___.
+        respuesta: taxes
+        feedback: Los servicios públicos se pagan con los impuestos (**taxes**).
+    sobran: [rubbish]
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: every four years / are / Local elections
+    solucion: Local elections are every four years.
+    explicacion: 'Primero qué (*Local elections*), luego *are* y al final cada cuánto (*every four years*).'

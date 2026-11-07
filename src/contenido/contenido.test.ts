@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { leerContenido } from '../../scripts/leer';
-import { corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
+import { corregirCompletar, corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
 import { alEmpezar, claveInicio, dichoSinLeer, frasesInglesas, partirOpcion } from '../lib/frases';
 import voces from '../voces.json';
 import { esTeoria } from './esquema';
@@ -19,6 +19,7 @@ describe('contenido', () => {
       if (e.tipo === 'elegir') expect(corregirElegir(e, e.correcta).bien, e.id).toBe(true);
       if (e.tipo === 'ordenar') expect(corregirOrdenar(e, e.solucion).bien, e.id).toBe(true);
       if (e.tipo === 'escribir') for (const r of e.respuestas) expect(corregirEscribir(e, r).bien, e.id).toBe(true);
+      if (e.tipo === 'completar') expect(corregirCompletar(e, e.frases.map((f) => f.respuesta)).bien, e.id).toBe(true);
     }
   });
 
@@ -71,6 +72,52 @@ describe('contenido', () => {
     for (const id of ['seres-vivos', 'funciones', 'celulas', 'partes-celula', 'reinos']) {
       expect(tema.lecciones.find((l) => l.id === id)!.ejercicios[0].tipo, id).toBe('chat');
     }
+  });
+
+it('Social Sciences lleva los ejercicios de las dos fichas, y la teoría en el chat', () => {
+    const tema = c.temas.get('social-sciences/unit-1')!;
+    const todos = tema.lecciones.flatMap((l) => l.ejercicios);
+    const preguntas = todos.flatMap((e) => (e.tipo === 'elegir' && e.pregunta ? [e.pregunta] : []));
+    // Support 1 y 4, Reach higher 2, 3 y 4.
+    for (const f of [
+      'Living in a community means taking care of each other.',
+      'Small communities do not have any public services.',
+      'Cities have narrow streets and few cars and buses.',
+      'How often are local elections?',
+      'Who do the participants choose?',
+      'Ruth puts her old newspapers into the blue container.',
+      'Brendan only buys what he really needs.',
+      'Fabada',
+      'What do maintenance services in towns do?',
+      'Which services provide activities, indoors and outdoors, all through the year?',
+    ]) {
+      expect(preguntas).toContain(f);
+    }
+    // Support 2 y 3: las parejas.
+    const pares = todos.flatMap((e) => (e.tipo === 'unir' ? e.pares.map((p) => p.join(' ')) : []));
+    for (const p of ['spring rolls Chinese culture', 'tajines Maghreb culture', 'Rot: Put your organic waste in the compost bin.']) expect(pares).toContain(p);
+    // Support 5 y 6: completar con las palabras del recuadro.
+    const huecos = todos.flatMap((e) => (e.tipo === 'completar' ? e.frases.map((f) => f.respuesta) : []));
+    for (const r of ['blue', 'black', 'triangle', 'red', 'stop', 'caution', 'go']) expect(huecos).toContain(r);
+    // Reach higher 1: la tabla de Cities y Villages.
+    const fichas = todos.flatMap((e) => (e.tipo === 'clasificar' ? e.grupos.flatMap((g) => g.fichas.map((x) => (typeof x === 'string' ? x : x.texto))) : []));
+    for (const x of ['Streets are short and narrow.', 'Job opportunities are limited.', 'There is very little traffic.']) expect(fichas).toContain(x);
+    for (const id of ['comunidad', 'costumbres', 'platos-de-espana', 'buenos-ciudadanos', 'cinco-erres', 'ayuntamiento', 'servicios', 'transporte', 'seguridad-vial', 'a-salvo']) {
+      expect(tema.lecciones.find((l) => l.id === id)!.ejercicios[0].tipo, id).toBe('chat');
+    }
+  });
+
+  it('completar y clasificar: huecos, palabras repetidas y explicaciones', () => {
+    const errores = (ejercicios: string) =>
+      cargarContenido({
+        'contenido/perfiles.yaml': 'perfiles: [{ id: a, nombre: A, curso: x, avatar: x, temas: [t] }]',
+        'contenido/t/tema.yaml': 'asignatura: x\ntitulo: x\nlecciones: [l]',
+        'contenido/t/l.yaml': `titulo: x\nemoji: x\nejercicios:\n${ejercicios}`,
+      }).errores.join('\n');
+    expect(errores("  - { tipo: completar, frases: [{ frase: 'a b', respuesta: x, feedback: y }, { frase: 'c ___', respuesta: z, feedback: y }] }")).toMatch(/necesita un hueco/);
+    expect(errores("  - { tipo: completar, frases: [{ frase: 'a ___', respuesta: x, feedback: y }, { frase: 'c ___', respuesta: x, feedback: y }] }")).toMatch(/repetidas en el recuadro/);
+    expect(errores("  - { tipo: completar, frases: [{ frase: 'a ___', respuesta: x }, { frase: 'c ___', respuesta: z, feedback: y }] }")).toMatch(/su feedback/);
+    expect(errores("  - { tipo: clasificar, enunciado: x, grupos: [{ nombre: A, fichas: [uno] }, { nombre: B, fichas: [Uno.] }] }")).toMatch(/fichas repetidas/);
   });
 
   it('detecta piezas que no forman la frase', () => {

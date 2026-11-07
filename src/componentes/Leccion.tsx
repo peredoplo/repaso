@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef, useState, type ComponentType } from 'react';
 import type { EjercicioC } from '../contenido/cargar';
-import { esTeoria, type EjercicioT } from '../contenido/esquema';
+import { esTeoria, seCorrigeSolo, type EjercicioT } from '../contenido/esquema';
 import type { Resultado } from '../lib/corregir';
 import { alEmpezar, BIEN, claveInicio, claveRespuesta, textoInicio, textoRespuesta, todoLoQueSeOye } from '../lib/frases';
 import { sonar } from '../lib/sonido';
 import { callar, hablar, precargar } from '../lib/voz';
 import Chat from './ejercicios/Chat';
+import Clasificar from './ejercicios/Clasificar';
+import Completar from './ejercicios/Completar';
 import Elegir from './ejercicios/Elegir';
 import Escribir from './ejercicios/Escribir';
 import Ordenar from './ejercicios/Ordenar';
@@ -31,6 +33,8 @@ const COMPONENTES: { [T in EjercicioT['tipo']]: ComponentType<PropsEjercicio<Ext
   ordenar: Ordenar,
   escribir: Escribir,
   unir: Unir,
+  completar: Completar,
+  clasificar: Clasificar,
   recuerda: Recuerda,
   chat: Chat,
 };
@@ -192,7 +196,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
             <button type="button" className={`boton ${resultado && !resultado.bien ? 'boton--coral' : 'boton--verde'}`} onClick={seguir}>
               {teoria ? '¡Entendido!' : 'Continuar'}
             </button>
-          ) : e.tipo === 'unir' ? (
+          ) : seCorrigeSolo(e) ? (
             <span />
           ) : (
             <button type="button" className="boton boton--verde" disabled={!comprobar} onClick={() => comprobar && responder(comprobar())}>

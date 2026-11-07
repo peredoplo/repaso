@@ -1,0 +1,113 @@
+titulo: Customs and cuisine
+subtitulo: Tradiciones y comidas del mundo
+emoji: 🥘
+ejercicios:
+  - tipo: chat
+    titulo: Tradiciones y comidas
+    mensajes:
+      - de: valentina
+        texto: 'Cada comunidad tiene sus tradiciones (*traditions*) y costumbres (*customs*): sus fiestas, sus bailes, su música, su ropa típica…'
+        dibujo: 🎉 💃 🎶
+        palabras:
+          - [traditions, tradiciones]
+          - [customs, costumbres]
+      - de: hugo
+        texto: Como las fiestas del pueblo de mis abuelos, con verbena y fuegos artificiales.
+        dibujo: 🎆
+      - de: vega
+        texto: 'Y su cocina (*cuisine*): la comida típica de cada sitio. ¡En España cada zona tiene sus platos!'
+        palabras:
+          - [cuisine, cocina (la comida típica)]
+      - de: santiago
+        texto: 'En nuestra comunidad también viven familias de otros países, con sus costumbres y su cocina. Las costumbres de un sitio son diferentes a (*different to*) las de otro, y así aprendemos unos de otros.'
+        dibujo: 🌍
+        palabras:
+          - [be different to, ser diferente a]
+      - de: vega
+        texto: 'La paella (*paella*), con arroz, es de España (*Spain*). Los tamales (*tamales*), de masa de maíz envuelta en hojas, son de Centroamérica (*Central America*).'
+        dibujo: 🥘 🫔
+        palabras:
+          - [paella, paella (España)]
+          - [tamales, tamales (Centroamérica)]
+      - de: hugo
+        texto: 'Los tajines (*tajines*) son guisos de la cultura del Magreb (*Maghreb culture*), en el norte de África, hechos en una cazuela con la tapa en forma de cono.'
+        dibujo: 🍲
+        palabras:
+          - [tajines, tajines (cultura del Magreb)]
+          - [Maghreb culture, 'cultura del Magreb: Marruecos, Argelia y Túnez']
+      - de: valentina
+        texto: 'El korma (*korma*) es un guiso suave con salsa, de la India (*India*). Y los rollitos de primavera (*spring rolls*) son de la cultura china (*Chinese culture*).'
+        dibujo: 🍛 🥢
+        palabras:
+          - [korma, korma (India)]
+          - [spring rolls, rollitos de primavera (cultura china)]
+      - de: santiago
+        texto: 'Para el examen: tamales de Centroamérica, paella de España, tajines del Magreb, korma de la India y rollitos de primavera de la cultura china.'
+
+  # Support 2 de la ficha: la tabla «What food is it? / Where is it typical of?»
+  - tipo: unir
+    enunciado: Match the food and where it is typical of.
+    pares:
+      - [tamales, Central America]
+      - [paella, Spain]
+      - [tajines, Maghreb culture]
+      - [korma, India]
+      - [spring rolls, Chinese culture]
+
+  # Support 2 de la ficha: la foto de los tamales
+  - tipo: elegir
+    enunciado: What food is it?
+    dibujo: 🫔
+    correcta: tamales
+    incorrectas:
+      - texto: spring rolls
+        feedback: Los rollitos de primavera son de masa fina y se fríen. Esto, envuelto en hojas de maíz, son tamales (**tamales**).
+      - texto: korma
+        feedback: El korma es un guiso con salsa. Esto, envuelto en hojas de maíz, son tamales (**tamales**).
+
+  # Support 2 de la ficha: la foto de la paella
+  - tipo: elegir
+    enunciado: What food is it?
+    dibujo: 🥘
+    correcta: paella
+    incorrectas:
+      - texto: tamales
+        feedback: Los tamales van envueltos en hojas de maíz. Esto, arroz en una paellera, es una paella (**paella**).
+      - texto: spring rolls
+        feedback: Los rollitos de primavera son de masa enrollada. Esto, arroz en una paellera, es una paella (**paella**).
+
+  # Support 2 de la ficha
+  - tipo: elegir
+    enunciado: Where is it typical of?
+    dibujo: 🍛
+    pregunta: Korma
+    correcta: India
+    incorrectas:
+      - texto: Maghreb culture
+        feedback: Del Magreb son los tajines. El korma es de la India (**India**).
+      - texto: Spain
+        feedback: De España es la paella. El korma es de la India (**India**).
+
+  # Support 2 de la ficha
+  - tipo: elegir
+    enunciado: Where is it typical of?
+    dibujo: 🍲
+    pregunta: Tajines
+    correcta: Maghreb culture
+    incorrectas:
+      - texto: Chinese culture
+        feedback: De la cultura china son los rollitos de primavera. Los tajines son de la cultura del Magreb (**Maghreb culture**).
+      - texto: Central America
+        feedback: De Centroamérica son los tamales. Los tajines son de la cultura del Magreb (**Maghreb culture**).
+
+  # Support 2 de la ficha
+  - tipo: elegir
+    enunciado: Where is it typical of?
+    dibujo: 🥢
+    pregunta: Spring rolls
+    correcta: Chinese culture
+    incorrectas:
+      - texto: India
+        feedback: De la India es el korma. Los rollitos de primavera son de la cultura china (**Chinese culture**).
+      - texto: Central America
+        feedback: De Centroamérica son los tamales. Los rollitos de primavera son de la cultura china (**Chinese culture**).

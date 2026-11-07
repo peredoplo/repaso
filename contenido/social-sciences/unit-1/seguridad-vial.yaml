@@ -1,0 +1,119 @@
+titulo: Road safety
+subtitulo: Peatones, pasos de cebra y semáforos
+emoji: 🚦
+ejercicios:
+  - tipo: chat
+    titulo: Seguridad vial
+    mensajes:
+      - de: santiago
+        texto: 'En la calle compartimos el sitio: los peatones (*pedestrians*) van andando y las personas que conducen (*drivers*) llevan los coches.'
+        dibujo: 🚶 🚗
+        palabras:
+          - [pedestrians, peatones]
+          - [drivers, las personas que conducen]
+      - de: vega
+        texto: 'Los peatones van por la acera (*pavement*) y cruzan por el paso de cebra (*pedestrian crossing*), que suele ser de rayas blancas y negras (*black and white*).'
+        dibujo: 🚶 🦓
+        palabras:
+          - [pavement, acera]
+          - [pedestrian crossings, pasos de cebra]
+      - de: hugo
+        texto: 'Los semáforos (*traffic lights*) dicen qué hacer. Rojo (*red*) es parar (*stop*); amarillo o ámbar (*yellow*), cuidado (*caution*); y verde (*green*), adelante (*go*).'
+        dibujo: 🚦
+        palabras:
+          - [traffic lights, semáforos]
+          - [stop, parar]
+          - [caution, cuidado]
+          - [go, adelante]
+      - de: valentina
+        texto: Los peatones tienen su propio semáforo, con un muñeco. Con el muñeco verde se puede cruzar, pero mirando antes a los dos lados.
+        dibujo: 🚥 🚶
+      - de: vega
+        texto: 'Las señales de tráfico (*road signs*) se distinguen por la forma y el color, y todas están para que estemos a salvo (*stay safe*).'
+        palabras:
+          - [road signs, señales de tráfico]
+          - [stay safe, mantenerse a salvo]
+      - de: santiago
+        texto: 'Un triángulo rojo (*red triangle*) es un aviso (*warning*): avisa de un peligro, como que hay niños cruzando.'
+        dibujo: ⚠️
+        palabras:
+          - [warning, aviso]
+      - de: hugo
+        texto: 'Un círculo rojo (*red circle*) es una prohibición (*prohibition*): algo que no se puede hacer, como entrar en bici.'
+        dibujo: 🚫 🚲
+        palabras:
+          - [prohibition, prohibición]
+      - de: valentina
+        texto: 'Y un círculo azul (*blue circle*) es obligatorio (*mandatory*): algo que hay que hacer, como seguir la flecha o dar la vuelta a la rotonda.'
+        dibujo: 🔵 ➡️
+        palabras:
+          - [mandatory, obligatorio]
+
+  # Support 6 de la ficha: «Label the photo with the words from the box.»
+  - tipo: completar
+    enunciado: Label the traffic lights with the words from the box.
+    frases:
+      - frase: A red light means ___.
+        respuesta: stop
+        senal: { forma: semaforo-rojo }
+        feedback: Con la luz roja, se para (**stop**).
+      - frase: A yellow light means ___.
+        respuesta: caution
+        senal: { forma: semaforo-ambar }
+        feedback: La luz amarilla o ámbar es para tener cuidado (**caution**), porque va a ponerse en rojo.
+      - frase: A green light means ___.
+        respuesta: go
+        senal: { forma: semaforo-verde }
+        feedback: Con la luz verde se puede seguir (**go**).
+
+  # Support 5 de la ficha
+  - tipo: completar
+    enunciado: Complete the sentences with the words from the box.
+    frases:
+      - frase: A ___ circle sign gives a mandatory instruction.
+        respuesta: blue
+        feedback: Las señales obligatorias (*mandatory*) son círculos azules (**blue**).
+      - frase: Pedestrian crossings are usually ___ and white.
+        respuesta: black
+        feedback: Los pasos de cebra son de rayas blancas y negras (**black**).
+      - frase: A red ___ sign warns the driver of danger.
+        respuesta: triangle
+        feedback: Las señales de aviso (*warning*) son triángulos rojos (**triangle**).
+      - frase: A ___ circle sign means that something is prohibited.
+        respuesta: red
+        feedback: Las señales de prohibición son círculos rojos (**red**).
+
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🚶
+    pregunta: Pedestrians walk on the pavement.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Los peatones (*pedestrians*) van por la acera (*pavement*), y los coches, por la carretera. Es **true**.
+
+  - tipo: elegir
+    enunciado: True or false?
+    senal: { forma: semaforo-rojo }
+    pregunta: Drivers can go when the light is red.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: Con la luz roja hay que parar (*stop*). Es **false**.
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🦓
+    pregunta: We cross the road at the pedestrian ___.
+    correcta: crossing
+    incorrectas:
+      - texto: pavement
+        feedback: Por la acera (*pavement*) se anda. Para cruzar, el paso de cebra (*pedestrian* **crossing**).
+      - texto: lane
+        feedback: El carril (*lane*) es para los coches o los autobuses. Para cruzar, el paso de cebra (*pedestrian* **crossing**).
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: on the pavement / walk / Pedestrians
+    solucion: Pedestrians walk on the pavement.
+    explicacion: 'Primero quién (*Pedestrians*), luego qué hacen (*walk*) y dónde (*on the pavement*).'

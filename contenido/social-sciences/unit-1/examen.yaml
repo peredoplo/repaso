@@ -1,0 +1,7 @@
+# Examen de prueba: 12 preguntas al azar de las lecciones, con nota al final. Cada vez sale distinto.
+titulo: Examen de prueba
+subtitulo: Como el del cole, con nota
+emoji: 🏆
+examen:
+  de: [comunidad, ciudades-y-pueblos, costumbres, platos-de-espana, buenos-ciudadanos, cinco-erres, ayuntamiento, servicios, transporte, seguridad-vial, senales, a-salvo]
+  preguntas: 12

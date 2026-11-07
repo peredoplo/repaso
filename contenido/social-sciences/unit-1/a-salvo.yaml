@@ -1,0 +1,96 @@
+titulo: Stay safe
+subtitulo: En la calle y en internet
+emoji: 🛡️
+ejercicios:
+  - tipo: chat
+    titulo: A salvo en la calle y en internet
+    mensajes:
+      - de: hugo
+        texto: 'Estar a salvo (*stay safe*) no es solo cosa de la calle. ¡También hay que tener cuidado en internet!'
+        dibujo: 🚦 💻
+        palabras:
+          - [stay safe, mantenerse a salvo]
+      - de: vega
+        texto: En la calle, por la acera; cruzando por el paso de cebra y con el muñeco en verde; en la bici, con casco; y en el coche, siempre con el cinturón puesto.
+        dibujo: 🚶 🚲 ⛑️
+      - de: santiago
+        texto: 'En internet, tu contraseña (*password*) es secreta: solo la sabe tu familia, no tus amigos.'
+        dibujo: 🔑 🤫
+        palabras:
+          - [password, contraseña]
+      - de: valentina
+        texto: 'El ciberacoso (*cyber bullying*) es meterse con alguien o insultarle por el móvil o por el ordenador. Si te pasa o lo ves, cuéntaselo enseguida a una persona adulta.'
+        dibujo: 📱 🙅
+        palabras:
+          - [cyber bullying, ciberacoso]
+      - de: hugo
+        texto: Y nunca le des tu nombre, tu dirección ni tus fotos a gente que no conoces.
+
+  - tipo: clasificar
+    enunciado: Safe or not safe?
+    grupos:
+      - nombre: Safe
+        dibujo: 👍
+        fichas:
+          - Wear a helmet on your bike.
+          - Cross at the pedestrian crossing.
+          - Keep your password secret.
+          - Tell an adult about cyber bullying.
+      - nombre: Not safe
+        dibujo: 👎
+        fichas:
+          - texto: Cross when the light is red.
+            feedback: Con el semáforo en rojo, los peatones se paran. Va en **Not safe**.
+          - texto: Play ball on the road.
+            feedback: En la carretera pasan coches. Se juega en el parque. Va en **Not safe**.
+          - texto: Tell your password to a friend.
+            feedback: La contraseña (*password*) es secreta, solo para tu familia. Va en **Not safe**.
+          - texto: Send photos to people you do not know.
+            feedback: Nunca se mandan fotos a gente que no conoces. Va en **Not safe**.
+
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🔑
+    pregunta: You can tell your password to everyone.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: La contraseña (*password*) es secreta. Es **false**.
+
+  - tipo: elegir
+    enunciado: Choose the correct answer.
+    dibujo: 📱
+    pregunta: If you see cyber bullying, you should ___.
+    correcta: tell an adult
+    incorrectas:
+      - texto: say nothing
+        feedback: Callarse no ayuda. Hay que contárselo a una persona adulta (**tell an adult**).
+      - texto: laugh
+        feedback: Reírse hace más daño. Hay que contárselo a una persona adulta (**tell an adult**).
+
+  - tipo: elegir
+    enunciado: What does this sign do?
+    senal: { forma: aviso, dibujo: 🚶 }
+    correcta: It warns the driver of danger.
+    incorrectas:
+      - texto: It gives a mandatory instruction.
+        feedback: Las obligatorias son círculos azules. Un triángulo rojo avisa de un peligro (**It warns the driver of danger.**). Aquí, de que hay peatones.
+      - texto: It means that something is prohibited.
+        feedback: Las de prohibición son círculos rojos. Un triángulo rojo avisa de un peligro (**It warns the driver of danger.**).
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🚗 🔴
+    pregunta: Drivers ___ at the red light.
+    correcta: stop
+    incorrectas:
+      - texto: go
+        feedback: Con la luz verde se sigue (*go*). Con la roja, se para (**stop**).
+      - texto: vote
+        feedback: Votar (*vote*) es en las elecciones. Con la luz roja, se para (**stop**).
+
+  - tipo: ordenar
+    enunciado: Put the words in order.
+    piezas: secret / your password / Keep
+    solucion: Keep your password secret.
+    explicacion: 'Empieza por lo que hay que hacer (*Keep*), luego qué (*your password*) y cómo (*secret*).'

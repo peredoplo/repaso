@@ -109,4 +109,53 @@ describe('Leccion', () => {
     expect(dichas.at(-1)?.lang).toBe('es-ES');
     vi.unstubAllGlobals();
   });
+
+  it('completar: las palabras del recuadro van a los huecos, y se corrige todo junto', async () => {
+    const u = userEvent.setup();
+    const terminar = vi.fn();
+    const completar: EjercicioC = {
+      id: 't/c#1',
+      tipo: 'completar',
+      enunciado: 'Complete the sentences with the words from the box.',
+      frases: [
+        { frase: 'A red light means ___.', respuesta: 'stop', feedback: 'Rojo: **stop**.' },
+        { frase: 'A green light means ___.', respuesta: 'go', feedback: 'Verde: **go**.' },
+      ],
+    };
+    render(<Leccion titulo="Prueba" ejercicios={[completar]} modo="leccion" onSalir={() => {}} onTerminar={terminar} />);
+    const comprobar = screen.getByRole('button', { name: 'Comprobar' });
+    // Al revés: «go» en el primer hueco; tocándolo, vuelve al recuadro.
+    await u.click(screen.getByRole('button', { name: 'go' }));
+    await u.click(screen.getByRole('button', { name: 'Quitar go' }));
+    expect(comprobar).toBeDisabled();
+    await u.click(screen.getByRole('button', { name: 'go' }));
+    await u.click(screen.getByRole('button', { name: 'stop' }));
+    await u.click(comprobar);
+    expect(screen.getByRole('status')).toHaveTextContent('✘');
+    expect(screen.getByRole('status')).toHaveTextContent('Rojo: stop. Verde: go.');
+  });
+
+  it('clasificar: cada ficha va a su columna; un fallo tiembla, se explica y no la deja pasar', async () => {
+    const u = userEvent.setup();
+    const terminar = vi.fn();
+    const tabla: EjercicioC = {
+      id: 't/t#1',
+      tipo: 'clasificar',
+      enunciado: 'Cities or villages?',
+      grupos: [
+        { nombre: 'Cities', fichas: [{ texto: 'Streets are long and wide.', feedback: 'Eso es de la ciudad.' }] },
+        { nombre: 'Villages', fichas: [{ texto: 'Streets are short and narrow.', feedback: 'Eso es del pueblo.' }] },
+      ],
+    };
+    render(<Leccion titulo="Prueba" ejercicios={[tabla]} modo="leccion" onSalir={() => {}} onTerminar={terminar} />);
+    expect(screen.queryByRole('button', { name: 'Comprobar' })).not.toBeInTheDocument();
+    const columna = (n: string) => screen.getByRole('button', { name: new RegExp('^' + n) });
+    const primera = screen.getByText(/Streets are/).textContent!;
+    await u.click(columna(primera.includes('long') ? 'Villages' : 'Cities'));
+    expect(screen.getByText(primera.includes('long') ? 'Eso es de la ciudad.' : 'Eso es del pueblo.')).toBeInTheDocument();
+    await u.click(columna(primera.includes('long') ? 'Cities' : 'Villages'));
+    const segunda = screen.getByText(/Streets are/, { selector: '.clasificar__ficha span' }).textContent!;
+    await u.click(columna(segunda.includes('long') ? 'Cities' : 'Villages'));
+    expect(screen.getByRole('status')).toHaveTextContent('un fallo');
+  });
 });

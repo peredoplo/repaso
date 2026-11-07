@@ -1,0 +1,106 @@
+titulo: Where do you live?
+subtitulo: La comunidad, pueblos y ciudades
+emoji: 🏘️
+ejercicios:
+  - tipo: chat
+    titulo: ¿Dónde vives?
+    mensajes:
+      - de: vega
+        texto: '¡Hola! Vamos a repasar la unidad 1 de Sociales: nuestra comunidad (*our community*).'
+      - de: hugo
+        texto: ¿Y qué es exactamente una comunidad?
+      - de: vega
+        texto: 'Una comunidad (*community*) es un grupo de personas que viven en el mismo sitio y se cuidan unas a otras. Las personas que viven en un lugar son sus habitantes (*inhabitants*).'
+        palabras:
+          - [community, comunidad]
+          - [inhabitants, habitantes]
+      - de: valentina
+        texto: 'Hay comunidades muy grandes y otras pequeñas. La más pequeña es el pueblo pequeño o aldea (*village*); luego viene el pueblo (*town*), y la más grande es la ciudad (*city*).'
+        dibujo: 🏡 🏘️ 🏙️
+        palabras:
+          - [village, 'pueblo pequeño, aldea']
+          - [town, pueblo]
+          - [city, ciudad]
+      - de: santiago
+        texto: 'Los pueblos pequeños están en la zona rural (*rural area*), en el campo. Tienen pocos habitantes, calles cortas y estrechas y casas que no son muy altas.'
+        dibujo: 🌾 🐄 🏡
+        palabras:
+          - [rural area, zona rural (el campo)]
+      - de: hugo
+        texto: 'Y las ciudades están en la zona urbana (*urban area*). Tienen calles largas y anchas, edificios muy altos y muchísimo tráfico (*traffic*).'
+        dibujo: 🏙️ 🚗 🚕 🚌
+        palabras:
+          - [urban area, zona urbana (la ciudad)]
+          - [traffic, tráfico]
+      - de: vega
+        texto: 'En la ciudad hay muchos trabajos (*jobs*) y muchos tipos de transporte público (*public transport*), como el autobús, el metro o el tren. En un pueblo pequeño hay menos trabajos y menos transporte público.'
+        dibujo: 🚌 🚇 🚆
+        palabras:
+          - [jobs, trabajos]
+          - [public transport, transporte público]
+      - de: valentina
+        texto: 'Pero todas las comunidades, también las pequeñas, tienen servicios públicos (*public services*), como el colegio, el médico o la recogida de la basura.'
+        palabras:
+          - [public services, servicios públicos]
+      - de: santiago
+        texto: 'Eso cae seguro en el examen: si dice que las comunidades pequeñas no tienen servicios públicos, es falso (*false*).'
+
+  # Support 1 a) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🤝
+    pregunta: Living in a community means taking care of each other.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Vivir en comunidad es eso, cuidarse unos a otros (*taking care of each other*). Es **true**.
+
+  # Support 1 b) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🏙️ 🏡
+    pregunta: Some communities are very large, and others are small.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Una ciudad (*city*) es una comunidad muy grande y un pueblo pequeño (*village*), una pequeña. Es **true**.
+
+  # Support 1 c) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    pregunta: Small communities do not have any public services.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: Todas las comunidades tienen servicios públicos (*public services*), también las pequeñas, aunque tengan menos. Es **false**.
+
+  # Support 1 d) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🌾 🏡
+    pregunta: Villages are rural areas with few people.
+    correcta: 'true'
+    incorrectas:
+      - texto: 'false'
+        feedback: Los pueblos pequeños (*villages*) están en el campo, la zona rural (*rural area*), y tienen pocos habitantes. Es **true**.
+
+  # Support 1 e) de la ficha
+  - tipo: elegir
+    enunciado: True or false?
+    dibujo: 🏙️
+    pregunta: Cities have narrow streets and few cars and buses.
+    correcta: 'false'
+    incorrectas:
+      - texto: 'true'
+        feedback: Las ciudades tienen calles anchas (*wide*) y muchos coches y autobuses. Las calles estrechas (*narrow*) son de los pueblos pequeños. Es **false**.
+
+  - tipo: elegir
+    enunciado: Choose the correct word.
+    dibujo: 🏙️
+    pregunta: A large community in an urban area is a ___.
+    correcta: city
+    incorrectas:
+      - texto: village
+        feedback: El pueblo pequeño (*village*) es la comunidad más pequeña, en la zona rural. La grande, en la zona urbana, es la ciudad (**city**).
+      - texto: town
+        feedback: El pueblo (*town*) es mediano. La comunidad grande de la zona urbana es la ciudad (**city**).
