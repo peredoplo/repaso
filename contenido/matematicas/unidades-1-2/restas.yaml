@@ -1,0 +1,66 @@
+titulo: Restas con llevadas
+subtitulo: Pedir una decena y llevarse una
+emoji: ➖
+ejercicios:
+  - tipo: chat
+    titulo: Restar en columna
+    mensajes:
+      - de: valentina
+        texto: 'En la resta, arriba va el número del que quitas (el minuendo) y debajo, lo que quitas (el sustraendo). Lo que queda es la diferencia.'
+      - de: santiago
+        texto: 'Vamos con 4.152 − 2.534. En las unidades, a 2 no le puedo quitar 4: pido una decena, 12 − 4 = 8, y me llevo 1.'
+      - de: santiago
+        texto: 'Ese 1 se suma al de abajo en las decenas: 3 + 1 = 4, y 5 − 4 = 1. Y así hasta el final, 1.618.'
+        columnas: { filas: ['4.152', '2.534'], signo: '-', llevadas: ['', '1', '', '1'], resultado: '1.618' }
+      - de: hugo
+        texto: 'Pues a mí me sale 2.422. Cuando arriba hay menos, resto al revés: en las unidades, 4 − 2 = 2.'
+        columnas: { filas: ['4.152', '2.534'], signo: '-', resultado: '2.422', mal: [0, 2] }
+      - de: vega
+        texto: '¡Esa es la trampa más típica! Siempre se quita el de abajo al de arriba. Si el de arriba es más pequeño, se pide una decena y te llevas 1.'
+      - de: valentina
+        texto: 'Para comprobar una resta, haz la prueba: el sustraendo más la diferencia tiene que dar el minuendo. 2.534 + 1.618 = 4.152. ¡Está bien!'
+
+  # Ejercicio 1a de la página 25
+  - tipo: cuenta
+    operacion: 2.415 - 1.673
+
+  # Ejercicio 1b de la página 25
+  - tipo: cuenta
+    operacion: 3.641 - 2.756
+
+  # Ejercicio 1d de la página 25
+  - tipo: cuenta
+    operacion: 8.325 - 754
+
+  # Ejercicio 1c de la página 25 y su prueba
+  - tipo: elegir
+    enunciado: ¿Cuál es la prueba de esta resta?
+    pregunta: 7.456 − 5.675 = 1.781
+    correcta: 5.675 + 1.781 = 7.456
+    incorrectas:
+      - texto: 7.456 + 1.781 = 9.237
+        feedback: 'La prueba suma lo que quitas (5.675) y lo que queda (1.781). Tiene que dar el de arriba, 7.456.'
+      - texto: 7.456 − 1.781 = 5.675
+        feedback: 'Eso es otra resta. La prueba es una suma: 5.675 + 1.781 = 7.456.'
+
+  # Comprueba tu progreso 4 de la unidad 2: el término que falta
+  - tipo: calcula
+    enunciado: Calcula el número que falta.
+    cuentas:
+      - '[85] - 36 = 49'
+      - 93 - [35] = 58
+      - '[649] - 258 = 391'
+      - 607 - [65] = 542
+    explicacion: 'Si falta el de arriba, suma los otros dos: 36 + 49 = 85. Si falta el que quitas, resta: 93 − 58 = 35.'
+
+  # Ejercicio 3a de la página 25
+  - tipo: cuenta
+    problema: Una casa rural tuvo 820 visitantes el año pasado. 225 eran españoles y el resto, de otros países. ¿Cuántos visitantes no eran españoles?
+    dibujo: 🏡
+    operacion: 820 - 225
+
+  # Problema 7 de la página 21
+  - tipo: cuenta
+    problema: En el almacén hay una caja con 72 botellas de zumo de melocotón y necesitan 288 para un pedido. ¿Cuántas botellas les faltan?
+    dibujo: 🧃
+    operacion: 288 - 72

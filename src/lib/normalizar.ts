@@ -3,6 +3,8 @@ export function normalizar(texto: string): string {
   return texto
     .toLowerCase()
     .replace(/[’‘`´]/g, "'")
+    // Los números como en el libro: «8.049» es lo mismo que «8049».
+    .replace(/(\d)[.\s](?=\d{3}(?!\d))/g, '$1')
     .replace(/[.,!?¿¡;:"]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();

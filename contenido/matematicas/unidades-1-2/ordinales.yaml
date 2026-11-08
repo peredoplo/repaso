@@ -1,0 +1,99 @@
+titulo: Números ordinales
+subtitulo: Primero, segundo, tercero…
+emoji: 🏁
+ejercicios:
+  - tipo: chat
+    titulo: El orden y la posición
+    mensajes:
+      - de: valentina
+        texto: 'Los números ordinales dicen el orden o la posición: primero, segundo, tercero… Se escriben con un circulito arriba: 1.º, 2.º, 3.º.'
+        dibujo: 🥇 🥈 🥉
+      - de: hugo
+        texto: 'Del 11.º al 20.º son undécimo, duodécimo, decimotercero, decimocuarto, decimoquinto, decimosexto, decimoséptimo, decimoctavo, decimonoveno y vigésimo.'
+      - de: santiago
+        texto: 'Truco: «decimo» quiere decir diez y algo. Decimoséptimo es diez y siete, el 17.º.'
+      - de: vega
+        texto: 'En una carrera, si delante van 6 personas, tú ocupas el 7.º puesto.'
+        dibujo: 🏃 🏃 🏃 🏃 🏃 🏃 🏃
+      - de: hugo
+        texto: 'Pues si delante van 13 personas, ¡voy en el puesto decimotercero!'
+      - de: valentina
+        texto: '¡Cuidado! Las 13 van antes que tú, así que tú vas en el siguiente, el 14.º. Tu puesto es uno más que las personas que van delante.'
+      - de: santiago
+        texto: 'Y al revés: en el 11.º puesto, delante van 10 personas.'
+
+  # Ejercicio 1 de la página 14
+  - tipo: unir
+    enunciado: Une cada ordinal con su nombre.
+    pares:
+      - ['13.º', Decimotercero]
+      - ['11.º', Undécimo]
+      - ['12.º', Duodécimo]
+      - ['16.º', Decimosexto]
+      - ['19.º', Decimonoveno]
+
+  # Ejercicio 1h de la página 14
+  - tipo: elegir
+    enunciado: ¿Cómo se escribe con números?
+    pregunta: Decimoséptimo
+    correcta: 17.º
+    incorrectas:
+      - texto: 7.º
+        feedback: '7.º es séptimo. Decimoséptimo es diez y siete: 17.º.'
+      - texto: 70.º
+        feedback: '«Decimo» es diez, no setenta. Decimoséptimo es diez y siete: 17.º.'
+
+  # Ejercicio 2b de la página 14: la cola del cine
+  - tipo: elegir
+    enunciado: ¿Verdadero o falso?
+    dibujo: 🎬
+    pregunta: En la cola del cine, la decimoctava persona tiene catorce personas delante.
+    correcta: Falso
+    incorrectas:
+      - texto: Verdadero
+        feedback: 'La decimoctava es la 18.ª: delante tiene una menos, 17 personas, no 14.'
+
+  # Ejercicio 2e de la página 14
+  - tipo: elegir
+    enunciado: ¿Verdadero o falso?
+    dibujo: 🎬
+    pregunta: En la cola del cine, la decimotercera persona tiene trece personas delante.
+    correcta: Falso
+    incorrectas:
+      - texto: Verdadero
+        feedback: 'La decimotercera es la 13.ª: delante tiene una menos, 12 personas.'
+
+  # Ejercicio 4a de la página 15: el aparcamiento
+  - tipo: elegir
+    enunciado: Mira el aparcamiento y contesta.
+    dibujo: 🚗 🅿️
+    pregunta: El coche rojo será el undécimo que entra hoy. ¿Cuántos coches han entrado antes que él?
+    correcta: '10'
+    incorrectas:
+      - texto: '11'
+        feedback: 'Si hubieran entrado 11, el rojo sería el 12.º. Undécimo es el 11.º: antes han entrado 10.'
+      - texto: '12'
+        feedback: 'Undécimo es el 11.º. Antes de él han entrado uno menos: 10.'
+
+  # Ejercicio 5a de la página 15: los pisos
+  - tipo: elegir
+    enunciado: Lee y contesta.
+    dibujo: 🏢
+    pregunta: Ana vive en el piso decimotercero. Fede vive cuatro pisos por debajo. ¿En qué piso vive Fede?
+    correcta: En el noveno
+    incorrectas:
+      - texto: En el decimoséptimo
+        feedback: 'Por debajo es más abajo: hay que restar. 13 − 4 = 9, el noveno piso.'
+      - texto: En el cuarto
+        feedback: 'No es el piso cuarto: está cuatro pisos por debajo del 13.º. 13 − 4 = 9, el noveno.'
+
+  # Ejercicio 3a de la página 15: los meses
+  - tipo: elegir
+    enunciado: ¿Cuál es el quinto mes del año?
+    dibujo: 📅
+    correcta: Mayo
+    incorrectas:
+      - texto: Abril
+        feedback: 'Cuenta desde enero, el 1.º: enero, febrero, marzo, abril (4.º) y mayo, el 5.º.'
+      - texto: Junio
+        feedback: 'Junio es el sexto. Enero, febrero, marzo, abril y mayo: el 5.º es mayo.'

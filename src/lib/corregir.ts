@@ -1,5 +1,6 @@
-import type { CompletarT, ElegirT, EscribirT, OrdenarT } from '../contenido/esquema';
-import { distancia, normalizar, rellenar, seLee } from './normalizar';
+import type { CalculaT, CompletarT, CuentaT, ElegirT, EscribirT, OrdenarT } from '../contenido/esquema';
+import { corregirCuenta as corregirColumnas, cuentaCompleta, escribirNumero, leerNumero, leerOperacion, partirHueco, type Casillas } from './aritmetica';
+import { distancia, normalizar, rellenar, seLee, tieneLetras } from './normalizar';
 import { pistaDeError } from './pistas';
 
 export interface Resultado {
@@ -62,12 +63,33 @@ export function corregirEscribir(e: EscribirT, escrito: string): Resultado {
   const rellena = normalizar(tuya);
   if (validas.includes(n) || validas.includes(rellena)) return { bien: true, tuya, voz: completa };
 
-  const prevista = e.errores?.find((x) => rellena.includes(normalizar(x.contiene)));
-  const cerca = validas.some((v) => v.length > 4 && distancia(v, n) <= 2) || validas.some((v) => distancia(v, rellena) <= 2);
+  const prevista = e.errores?.find((x) => (x.igual !== undefined ? [n, rellena].includes(normalizar(x.igual)) : rellena.includes(normalizar(x.contiene ?? ''))));
+  // «¡Casi!» es para las palabras mal escritas; en un número, una cifra mal es un fallo de verdad.
+  const cerca = tieneLetras(n) && (validas.some((v) => v.length > 4 && distancia(v, n) <= 2) || validas.some((v) => distancia(v, rellena) <= 2));
   const feedback =
     prevista?.feedback ??
     pistaDeError(rellena) ??
     (cerca ? '¡Casi! Fíjate bien en cómo se escribe cada palabra.' : undefined) ??
     e.explicacion;
   return { bien: false, tuya, solucion: completa, feedback, voz: completa };
+}
+
+/** Una suma o una resta en columna: `casillas`, lo escrito en cada casilla del resultado, desde las unidades. */
+export function corregirCuenta(e: CuentaT, casillas: Casillas): Resultado & { columna?: number } {
+  const o = leerOperacion(e.operacion)!;
+  const tuya = casillas.map((c) => c.trim() || ' ').reverse().join('').trim();
+  const c = corregirColumnas(o, casillas);
+  const solucion = escribirNumero(o.resultado);
+  return c.bien ? { bien: true, tuya } : { bien: false, tuya, solucion, feedback: c.feedback ?? e.explicacion, columna: c.columna };
+}
+
+/** Las cuentas de cálculo mental: `escritas`, lo de cada hueco. Está bien si lo están todas. */
+export function corregirCalcula(e: CalculaT, escritas: string[]): Resultado & { bienCada: boolean[] } {
+  const cuentas = e.cuentas.map((c) => (typeof c === 'string' ? { cuenta: c, feedback: undefined } : c));
+  const bienCada = cuentas.map((c, i) => leerNumero(escritas[i] ?? '') === leerNumero(partirHueco(c.cuenta)!.respuesta));
+  const tuya = cuentas.map((c, i) => cuentaCompleta(c.cuenta, escritas[i]?.trim() || '…')).join('   ');
+  if (bienCada.every(Boolean)) return { bien: true, tuya, bienCada };
+  const mal = cuentas.filter((_, i) => !bienCada[i]);
+  const feedback = [...new Set(mal.map((c) => c.feedback ?? e.explicacion).filter(Boolean))].join(' ');
+  return { bien: false, tuya, solucion: mal.map((c) => cuentaCompleta(c.cuenta)).join('   '), feedback: feedback || undefined, bienCada };
 }

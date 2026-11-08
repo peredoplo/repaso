@@ -2,9 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import type { EscribirT } from '../../contenido/esquema';
 import { corregirEscribir } from '../../lib/corregir';
 import { Dibujo, Frase, Tarjeta, Texto } from '../piezas';
+import { Visuales } from '../visuales';
 import type { PropsEjercicio } from './tipos';
 
-export default function Escribir({ ejercicio: e, resultado, registrar }: PropsEjercicio<EscribirT>) {
+export default function Escribir({ ejercicio: e, resultado, registrar, espanol }: PropsEjercicio<EscribirT>) {
+  const numero = e.respuestas.every((r) => /^[\d.]+$/.test(r));
   const [escrito, setEscrito] = useState('');
   const caja = useRef<HTMLInputElement>(null);
 
@@ -26,7 +28,8 @@ export default function Escribir({ ejercicio: e, resultado, registrar }: PropsEj
       onChange={(ev) => setEscrito(ev.target.value)}
       disabled={!!resultado}
       aria-label="Tu respuesta"
-      lang="en"
+      lang={espanol ? 'es' : 'en'}
+      inputMode={numero ? 'numeric' : undefined}
       autoComplete="off"
       autoCorrect="off"
       autoCapitalize="off"
@@ -42,9 +45,10 @@ export default function Escribir({ ejercicio: e, resultado, registrar }: PropsEj
       </h2>
       {e.tarjeta && <Tarjeta t={e.tarjeta} />}
       {e.dibujo && <Dibujo dibujo={e.dibujo} />}
+      <Visuales v={e} />
       <div className="escribir">
-        {e.pregunta && <Frase texto={e.pregunta} />}
-        <p className="escribir__linea" lang="en">
+        {e.pregunta && (espanol ? <p className="pregunta"><Texto>{e.pregunta}</Texto></p> : <Frase texto={e.pregunta} />)}
+        <p className="escribir__linea" lang={espanol ? 'es' : 'en'}>
           {e.plantilla ? (
             <>
               {antes}
@@ -55,7 +59,7 @@ export default function Escribir({ ejercicio: e, resultado, registrar }: PropsEj
             input
           )}
         </p>
-        {e.debajo && <Frase texto={e.debajo} />}
+        {e.debajo && (espanol ? <p className="pregunta"><Texto>{e.debajo}</Texto></p> : <Frase texto={e.debajo} />)}
       </div>
     </div>
   );

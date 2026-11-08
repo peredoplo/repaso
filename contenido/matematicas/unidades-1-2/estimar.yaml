@@ -1,0 +1,106 @@
+titulo: Estimar sumas y restas
+subtitulo: Calcular más o menos
+emoji: 🔮
+ejercicios:
+  - tipo: chat
+    titulo: Más o menos
+    mensajes:
+      - de: santiago
+        texto: 'Estimar es calcular más o menos, sin hacer la cuenta exacta. Para estimar 37 + 52, aproximo los dos: 40 + 50 = 90.'
+        dibujo: 37 + 52 → 40 + 50 = 90
+      - de: valentina
+        texto: 'Con números de dos cifras se aproxima a las decenas; con los de tres, a las centenas.'
+      - de: hugo
+        texto: 'En una resta, igual: 42 − 28 se estima con 40 − 30 = 10. La cuenta exacta da 14. ¡Está cerca!'
+      - de: vega
+        texto: 'Pues yo, para estimar 819 + 690, he hecho la cuenta entera: 1.509.'
+        dibujo: 😅
+      - de: santiago
+        texto: 'Eso no es estimar, es calcular. Estimando, 800 + 700 = 1.500. Es mucho más rápido, y sirve para ver si un resultado tiene sentido.'
+      - de: valentina
+        texto: 'Fíjate en la pregunta: si dice «aproximadamente» o «más o menos», se estima; si quiere el número justo, se calcula exacto.'
+
+  # Ejercicio 1a de la página 28
+  - tipo: elegir
+    enunciado: Estima la suma.
+    pregunta: 12 + 27
+    correcta: '40'
+    incorrectas:
+      - texto: '39'
+        feedback: '39 es la cuenta exacta. Para estimar, aproxima: 12 se aproxima a 10 y 27, a 30. 10 + 30 = 40.'
+      - texto: '30'
+        feedback: 'Aproxima los dos: 12 se aproxima a 10 y 27, a 30 (7 > 5). 10 + 30 = 40.'
+
+  # Ejercicio 1f de la página 28
+  - tipo: elegir
+    enunciado: Estima la suma.
+    pregunta: 689 + 360
+    correcta: '1.100'
+    incorrectas:
+      - texto: '1.049'
+        feedback: '1.049 es la cuenta exacta. Para estimar: 689 se aproxima a 700 y 360, a 400. 700 + 400 = 1.100.'
+      - texto: '1.000'
+        feedback: '360 se aproxima a 400, no a 300: las decenas son un 6, y 6 > 5. 700 + 400 = 1.100.'
+
+  # Ejercicio 1b de la página 29
+  - tipo: elegir
+    enunciado: Estima la resta.
+    pregunta: 73 − 36
+    correcta: '30'
+    incorrectas:
+      - texto: '37'
+        feedback: '37 es la cuenta exacta. Para estimar: 73 se aproxima a 70 y 36, a 40. 70 − 40 = 30.'
+      - texto: '40'
+        feedback: '36 se aproxima a 40 (6 > 5), y 73, a 70. 70 − 40 = 30.'
+
+  # Ejercicio 1e de la página 29
+  - tipo: elegir
+    enunciado: Estima la resta.
+    pregunta: 829 − 596
+    correcta: '200'
+    incorrectas:
+      - texto: '233'
+        feedback: '233 es la cuenta exacta. Para estimar: 829 se aproxima a 800 y 596, a 600. 800 − 600 = 200.'
+      - texto: '300'
+        feedback: '596 se aproxima a 600, no a 500: las decenas son un 9. 800 − 600 = 200.'
+
+  # «Ahora tú» de la página 28: el gorro y la bufanda
+  - tipo: elegir
+    enunciado: ¿Cuánto cuestan, aproximadamente, los dos juntos?
+    pregunta: 'Gorro, 43 € · Bufanda, 18 €'
+    dibujo: 🧢 🧣
+    correcta: Unos 60 €
+    incorrectas:
+      - texto: Unos 50 €
+        feedback: '18 se aproxima a 20 (8 > 5), y 43, a 40. 40 + 20 = 60.'
+      - texto: Justo 61 €
+        feedback: '61 € es el precio exacto. Te preguntan «aproximadamente»: 40 + 20, unos 60 €.'
+
+  # Ejercicio 3 de las páginas 28 y 29: ¿exacto o aproximado?
+  - tipo: clasificar
+    enunciado: ¿Se estima o se calcula exacto?
+    grupos:
+      - nombre: Se estima
+        dibujo: 🔮
+        fichas:
+          - Aproximadamente, ¿cuántos kilos pesa Andrés más que Norma?
+          - Más o menos, ¿cuánto cuestan el balón y el libro?
+          - ¿Cuál es el precio aproximado de la tabla y el teléfono?
+      - nombre: Se calcula exacto
+        dibujo: 🎯
+        fichas:
+          - texto: ¿Cuánto pesan Jon y Norma juntos?
+            feedback: 'No dice «aproximadamente» ni «más o menos»: quiere el peso justo. Se calcula exacto.'
+          - texto: ¿Cuántos kilos pesa Luis más que Jon?
+            feedback: 'No dice «aproximadamente»: quiere el número justo. Se calcula exacto.'
+          - ¿Cuánto dinero me devuelven?
+
+  # Ejercicio 3c de la página 29: el ascensor
+  - tipo: elegir
+    enunciado: El ascensor puede llevar 300 kg. ¿Pueden subir juntos?
+    pregunta: 'Luis, 87 kg · Ana, 64 kg · Andrés, 79 kg · Norma, 38 kg'
+    dibujo: 🛗
+    correcta: Sí, pesan unos 270 kg
+    incorrectas:
+      - texto: No, pesan más de 300 kg
+        feedback: 'Estima: 90 + 60 + 80 + 40 = 270, menos de 300. Pueden subir (la cuenta exacta da 268).'

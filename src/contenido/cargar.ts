@@ -4,12 +4,18 @@
  */
 import { parse } from 'yaml';
 import type { z } from 'zod';
+import { columnasDe, cuentaCierta, leerOperacion } from '../lib/aritmetica';
 import { opcionesDe, partirOpcion, textoFicha } from '../lib/frases';
 import { HUECO, normalizar, partirPiezas } from '../lib/normalizar';
-import { esTeoria, Leccion, Perfiles, Tema, type EjercicioT, type Perfil } from './esquema';
+import { esTeoria, Leccion, Perfiles, Tema, type ColumnasT, type EjercicioT, type GraficoT, type Perfil, type RectaT } from './esquema';
 
-/** `sinLeer`: es de un tema para quien aún no lee (va con el ejercicio también a «Repasa tus fallos»). */
-export type EjercicioC = EjercicioT & { id: string; sinLeer?: boolean };
+type VisualesT = { columnas?: ColumnasT; recta?: RectaT; grafico?: GraficoT };
+
+/**
+ * `sinLeer`: es de un tema para quien aún no lee; `espanol`: de un tema en español (Matemáticas). Van con el ejercicio
+ * también a «Repasa tus fallos».
+ */
+export type EjercicioC = EjercicioT & { id: string; sinLeer?: boolean; espanol?: boolean };
 
 /** Pantallas como mucho en una lección (la teoría, «Recuerda» y el chat, cuenta). */
 export const MAX_PANTALLAS = 8;
@@ -34,6 +40,7 @@ export interface TemaC {
   descripcion?: string;
   enunciados: 'es' | 'en';
   sinLeer: boolean;
+  idioma: 'es' | 'en';
   lecciones: LeccionC[];
 }
 
@@ -64,7 +71,25 @@ function leer<T>(esquema: z.ZodType<T>, texto: string, archivo: string, errores:
 const multiconjunto = (t: string) => normalizar(t).split(' ').sort().join(' ');
 const soloLetras = (t: string) => [...t.toLowerCase().replace(/[^a-z]/g, '')].sort().join('');
 
+/** Los dibujos de Matemáticas: que los números se lean y cuadren. */
+function comprobarVisuales(v: Partial<Pick<VisualesT, 'columnas' | 'recta' | 'grafico'>>, donde: string, errores: string[]): void {
+  if (v.columnas) {
+    const { filas, signo, resultado } = v.columnas;
+    if ([...filas, ...(resultado && resultado !== '?' ? [resultado] : [])].some((f) => !/^[\d.]+$/.test(f))) errores.push(`${donde}: en columnas solo van números`);
+  }
+  if (v.recta) {
+    const { desde, hasta, paso, marcas } = v.recta;
+    if (hasta <= desde || (hasta - desde) / paso > 20 || !Number.isInteger((hasta - desde) / paso)) errores.push(`${donde}: la recta va de ${desde} a ${hasta} de ${paso} en ${paso} (y como mucho 20 rayitas)`);
+    for (const m of marcas) if (m < desde || m > hasta) errores.push(`${donde}: ${m} se sale de la recta`);
+  }
+  if (v.grafico) {
+    for (const s of v.grafico.series) if (s.valores.length !== v.grafico.categorias.length) errores.push(`${donde}: «${s.nombre}» necesita un valor por categoría`);
+  }
+}
+
 function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): void {
+  if (e.tipo === 'elegir' || e.tipo === 'escribir') comprobarVisuales(e, donde, errores);
+  if (e.tipo === 'chat') e.mensajes.forEach((m) => comprobarVisuales(m, donde, errores));
   switch (e.tipo) {
     case 'ordenar': {
       const piezas = partirPiezas(e.piezas);
@@ -86,6 +111,7 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
       break;
     }
     case 'escribir': {
+      if (e.errores?.some((x) => !x.contiene && !x.igual)) errores.push(`${donde}: cada error previsto necesita «contiene» o «igual»`);
       if (e.plantilla && e.plantilla.split(HUECO).length !== 2) errores.push(`${donde}: la plantilla necesita un hueco «___» (y solo uno)`);
       // Las letras desordenadas tienen que ser justo las de la respuesta (en la ficha, a «tsesui» le faltaba una s).
       for (const letras of [e.enunciado.match(/letters: \*\*([^*]+)\*\*/)?.[1], e.explicacion?.match(/letras \*([^*]+)\*/)?.[1]]) {
@@ -115,6 +141,20 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
       if (new Set(textos).size !== textos.length) errores.push(`${donde}: fichas repetidas`);
       break;
     }
+    case 'cuenta': {
+      const o = leerOperacion(e.operacion);
+      if (!o) errores.push(`${donde}: «${e.operacion}» no es una suma o una resta en columna (la resta, del grande el pequeño)`);
+      else if (columnasDe(o) > 5) errores.push(`${donde}: «${e.operacion}» tiene demasiadas cifras`);
+      break;
+    }
+    case 'calcula': {
+      for (const c of e.cuentas) {
+        const t = typeof c === 'string' ? c : c.cuenta;
+        if (!cuentaCierta(t)) errores.push(`${donde}: «${t}» no está bien (la respuesta, entre corchetes: «6 + [4] = 10»)`);
+      }
+      if (!e.explicacion && e.cuentas.some((c) => typeof c === 'string')) errores.push(`${donde}: cada cuenta necesita su feedback (o una explicacion)`);
+      break;
+    }
     case 'recuerda':
       break;
     case 'chat':
@@ -122,7 +162,7 @@ function comprobarEjercicio(e: EjercicioT, donde: string, errores: string[]): vo
       // Primero en español y luego, entre paréntesis, en inglés: «nutrición (*nutrition*)». Si no, la voz dice el inglés
       // seguido, y una «y» suelta entre dos palabras en inglés la leía «y griega» (revisión del autor, 3 de noviembre de 2026).
       for (const m of e.mensajes) {
-        if (m.texto.replace(/\(\*[^*]+\*\)/g, '').includes('*')) {
+        if (m.texto.replace(/\(\*[^*]+\*\)/g, '').replace(/\*\*[^*]+\*\*/g, '').includes('*')) {
           errores.push(`${donde}: «${m.texto.slice(0, 40)}…»: el inglés va entre paréntesis detrás del español, «nutrición (*nutrition*)»`);
         }
       }
@@ -151,6 +191,13 @@ function comprobarSinLeer(e: EjercicioT, donde: string, errores: string[]): void
   if (e.tipo === 'chat' && e.mensajes.some((m) => m.palabras)) errores.push(`${donde}: sin palabras en inglés en un tema sin leer`);
 }
 
+/** En español (Matemáticas): nada en *cursiva*, que es lo que dice la voz inglesa. */
+function comprobarEspanol(e: EjercicioT, donde: string, errores: string[]): void {
+  const textos = e.tipo === 'chat' ? e.mensajes.map((m) => m.texto) : 'enunciado' in e ? [e.enunciado] : [];
+  for (const t of textos) if (/(^|[^*])\*[^*]+\*(?!\*)/.test(t)) errores.push(`${donde}: «${t.slice(0, 40)}…»: en español, sin cursiva (la diría la voz inglesa); para destacar, **negrita**`);
+  if (e.tipo === 'chat' && e.mensajes.some((m) => m.palabras)) errores.push(`${donde}: sin palabras en inglés en un tema en español`);
+}
+
 /** `archivos`: ruta → texto. */
 export function cargarContenido(archivos: Record<string, string>): Contenido {
   const errores: string[] = [];
@@ -176,7 +223,8 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
       const conId = l.ejercicios.map((e, i) => {
         comprobarEjercicio(e, `${archivo} (ejercicio ${i + 1})`, errores);
         if (tema.sinLeer) comprobarSinLeer(e, `${archivo} (ejercicio ${i + 1})`, errores);
-        const c = { ...e, id: `${ruta}#${i + 1}`, ...(tema.sinLeer && { sinLeer: true }) } as EjercicioC;
+        if (tema.idioma === 'es') comprobarEspanol(e, `${archivo} (ejercicio ${i + 1})`, errores);
+        const c = { ...e, id: `${ruta}#${i + 1}`, ...(tema.sinLeer && { sinLeer: true }), ...(tema.idioma === 'es' && { espanol: true }) } as EjercicioC;
         ejercicios.set(c.id, c);
         return c;
       });
@@ -188,7 +236,7 @@ export function cargarContenido(archivos: Record<string, string>): Contenido {
       }
       lecciones.push({ id: lid, ruta, titulo: l.titulo, subtitulo: l.subtitulo, emoji: l.emoji, ejercicios: conId, examen: l.examen });
     }
-    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, enunciados: tema.enunciados, sinLeer: tema.sinLeer, lecciones });
+    temas.set(id, { id, asignatura: tema.asignatura, titulo: tema.titulo, descripcion: tema.descripcion, enunciados: tema.enunciados, sinLeer: tema.sinLeer, idioma: tema.idioma, lecciones });
   }
 
   let perfiles: Perfil[] = [];

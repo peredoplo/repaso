@@ -6,10 +6,11 @@ import { claveOpcion, partirOpcion } from '../../lib/frases';
 import { normalizar, tieneLetras } from '../../lib/normalizar';
 import { hablar } from '../../lib/voz';
 import { BotonVoz, ConHueco, Dibujo, Senal, Tarjeta, Texto } from '../piezas';
+import { Visuales } from '../visuales';
 import type { PropsEjercicio } from './tipos';
 
 /** Sin leer (Miguel), cada opción es un dibujo grande con su nombre debajo, y al tocarla se oye el nombre. */
-export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer }: PropsEjercicio<ElegirT>) {
+export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer, espanol }: PropsEjercicio<ElegirT>) {
   const opciones = useMemo(() => barajar([e.correcta, ...e.incorrectas.map((o) => (typeof o === 'string' ? o : o.texto))]), [e]);
   const [elegida, setElegida] = useState<string | null>(null);
   const conHueco = !!e.pregunta?.includes('___');
@@ -55,6 +56,7 @@ export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer }: 
           <Senal s={e.senal} />
         </div>
       )}
+      <Visuales v={e} />
       {e.escuchar && (
         <div className="escuchar">
           <BotonVoz texto={e.escuchar} grande etiqueta="Escuchar otra vez" />
@@ -69,7 +71,7 @@ export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer }: 
               relleno={resultado ? (resultado.bien ? (elegida ?? '') : e.correcta) : (elegida ?? '')}
               estado={resultado ? 'bien' : undefined}
             />
-          ) : sinLeer ? (
+          ) : sinLeer || espanol ? (
             <Texto>{e.pregunta}</Texto>
           ) : (
             <>
@@ -95,7 +97,7 @@ export default function Elegir({ ejercicio: e, resultado, registrar, sinLeer }: 
             {sinLeer ? (
               <OpcionDibujo o={o} />
             ) : (
-              <span className="opcion__texto" lang="en">
+              <span className="opcion__texto" lang={espanol ? 'es' : 'en'}>
                 {o}
               </span>
             )}

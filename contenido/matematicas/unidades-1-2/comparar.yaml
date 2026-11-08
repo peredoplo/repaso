@@ -1,0 +1,108 @@
+titulo: Comparar y ordenar
+subtitulo: Mayor que y menor que
+emoji: ⚖️
+ejercicios:
+  - tipo: chat
+    titulo: ¿Cuál es mayor?
+    mensajes:
+      - de: vega
+        texto: 'Para comparar números hay dos signos: «es menor que» y «es mayor que». La boca abierta siempre mira al número mayor.'
+        dibujo: 5 < 8   9 > 3
+      - de: hugo
+        texto: 'Primero, cuenta las cifras: el que tiene más cifras es mayor. 1.023 > 862, aunque 862 empiece por 8.'
+      - de: valentina
+        texto: 'Si tienen las mismas cifras, se comparan de izquierda a derecha, una a una, hasta encontrar dos distintas.'
+      - de: santiago
+        texto: '¡Entonces 1.483 es mayor que 1.490, porque al final 3 es mayor que 0!'
+        dibujo: 😎
+      - de: vega
+        texto: '¡No, no! Se empieza por la izquierda. 1 = 1, 4 = 4 y, en las decenas, 8 < 9. Así que 1.483 < 1.490. Las unidades ya no importan.'
+        columnas: { filas: ['1.483', '1.490'], mal: [1] }
+      - de: hugo
+        texto: 'Para ordenar varios números, compáralos así de dos en dos. ¡Y lee bien si te piden de menor a mayor o de mayor a menor!'
+
+  # Ejercicio 4a de la página 13
+  - tipo: elegir
+    enunciado: Elige el signo.
+    pregunta: 5.814 ___ 5.767
+    correcta: '>'
+    incorrectas:
+      - texto: '<'
+        feedback: 'Los millares son iguales (5 = 5); en las centenas, 8 > 7. Así que 5.814 > 5.767.'
+      - texto: '='
+        feedback: 'Solo se pone «=» si los dos números son iguales. Aquí, en las centenas, 8 > 7: 5.814 > 5.767.'
+
+  # Ejercicio 4b de la página 13
+  - tipo: elegir
+    enunciado: Elige el signo.
+    pregunta: 2.899 ___ 3.106
+    correcta: '<'
+    incorrectas:
+      - texto: '>'
+        feedback: 'Se empieza por los millares: 2 < 3. Da igual que 899 parezca grande: 2.899 < 3.106.'
+      - texto: '='
+        feedback: 'Solo se pone «=» si son iguales. En los millares, 2 < 3: 2.899 < 3.106.'
+
+  # Comprueba tu progreso 3c
+  - tipo: elegir
+    enunciado: Elige el signo.
+    pregunta: 862 ___ 1.023
+    correcta: '<'
+    incorrectas:
+      - texto: '>'
+        feedback: '862 tiene tres cifras y 1.023, cuatro. El que tiene más cifras es mayor: 862 < 1.023.'
+      - texto: '='
+        feedback: 'Ni siquiera tienen las mismas cifras: 862 tiene tres y 1.023, cuatro. 862 < 1.023.'
+
+  # Ejercicio 5 de la página 13: Everest, Cho Oyu, Manaslu y Dhaulagiri
+  - tipo: ordenar
+    enunciado: Ordena la altitud de las montañas, en metros, de menor a mayor.
+    dibujo: 🏔️
+    piezas: 8.848 / 8.201 / 8.156 / 8.167
+    solucion: 8.156 8.167 8.201 8.848
+    explicacion: 'Todas empiezan por 8.000: mira las centenas (8, 2, 1 y 1). Las dos con un 1 se desempatan por las decenas: 8.156 < 8.167. Queda 8.156, 8.167, 8.201 y 8.848, el Everest.'
+
+  # Ejercicio 6 de la página 13: las científicas
+  - tipo: elegir
+    enunciado: ¿Cuál de estas científicas nació primero?
+    pregunta: 'Emmy Noether, 1882 · Marie Curie, 1867 · Rachel Carson, 1907 · Lise Meitner, 1878'
+    dibujo: 🔬
+    correcta: Marie Curie
+    incorrectas:
+      - texto: Rachel Carson
+        feedback: 'Nacer primero es el año más pequeño. 1907 es el mayor: Rachel Carson nació la última. La primera, Marie Curie, en 1867.'
+      - texto: Emmy Noether
+        feedback: 'Todas son de mil ochocientos y pico, menos 1907. Entre las demás, mira las decenas: 6 < 7 < 8. La primera, Marie Curie, en 1867.'
+      - texto: Lise Meitner
+        feedback: '1878 es menor que 1882, pero 1867 es aún menor (6 < 7 en las decenas). La primera, Marie Curie.'
+
+  # Comprueba tu progreso 4b: la cifra oculta
+  - tipo: elegir
+    enunciado: ¿Qué cifra puede ir en el hueco?
+    pregunta: 4 UM + ___ C + 5 D < 4.300
+    correcta: '2'
+    incorrectas:
+      - texto: '3'
+        feedback: 'Con un 3 sale 4.350, y 4.350 > 4.300 (en las decenas, 5 > 0). Tiene que ser menor que 3, como el 2: 4.250.'
+      - texto: '5'
+        feedback: 'Con un 5 sale 4.550, mayor que 4.300. Tiene que ser menor que 3, como el 2: 4.250.'
+
+  # Ejercicio 7 de la página 19: las casas prefabricadas
+  - tipo: clasificar
+    enunciado: ¿Cuestan más o menos de 7.900 €?
+    grupos:
+      - nombre: Más de 7.900 €
+        dibujo: ⬆️
+        fichas:
+          - Modelo X37, 7.950 €
+          - Modelo T2L, 8.000 €
+          - texto: Modelo Sol, 7.910 €
+            feedback: 'Mira las decenas: 7.910 tiene 1 y 7.900 tiene 0. 7.910 > 7.900: va en «Más».'
+      - nombre: Menos de 7.900 €
+        dibujo: ⬇️
+        fichas:
+          - Modelo Avi, 7.780 €
+          - texto: Modelo Río, 7.099 €
+            feedback: 'Aunque acabe en 99, en las centenas 0 < 9: 7.099 < 7.900. Va en «Menos».'
+          - texto: Modelo Mar, 7.890 €
+            feedback: 'En las centenas, 8 < 9: 7.890 < 7.900. Va en «Menos».'

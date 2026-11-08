@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { PERSONAJES, type ChatT } from '../../contenido/esquema';
 import { hablar } from '../../lib/voz';
 import { BotonVoz, Texto } from '../piezas';
+import { Visuales } from '../visuales';
 import type { PropsEjercicio } from './tipos';
 
 /**
@@ -51,6 +52,7 @@ export default function Chat({ ejercicio: e, registrarSeguir }: PropsEjercicio<C
                     {m.dibujo}
                   </p>
                 )}
+                <Visuales v={m} />
                 {m.palabras && (
                   <table className="chat__palabras">
                     <tbody>

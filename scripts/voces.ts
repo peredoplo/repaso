@@ -12,7 +12,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PERSONAJES } from '../src/contenido/esquema';
-import { alEmpezar, claveInicio, claveMensaje, dichoSinLeer, frasesInglesas, mensajesHablados, sinMarcas, type Inicio } from '../src/lib/frases';
+import { alEmpezar, claveInicio, claveMensaje, dichoSinLeer, frasesInglesas, mensajesHablados, paraDecir, sinMarcas, type Inicio } from '../src/lib/frases';
 import { HUECO } from '../src/lib/normalizar';
 import { leerContenido } from './leer';
 
@@ -80,7 +80,8 @@ function ssmlMensaje(texto: string, personaje: Voz): string {
     const { voz, tono, velocidad } = t.ingles ? VOZ_INGLES : { ...personaje, velocidad: VELOCIDAD_CHAT };
     const antes = !t.ingles && i > 0 ? `<break time='${PAUSA_DESPUES}'/>` : '';
     const despues = !t.ingles && trozos[i + 1]?.ingles ? `<break time='${PAUSA_ANTES}'/>` : '';
-    return `<voice name='${voz}'>${SIN_RELLENO}${antes}<prosody rate='${velocidad}' pitch='${tono}'>${escaparXml(t.texto.trim())}</prosody>${despues}</voice>`;
+    const dicho = t.ingles ? t.texto.trim() : paraDecir(t.texto.trim());
+    return `<voice name='${voz}'>${SIN_RELLENO}${antes}<prosody rate='${velocidad}' pitch='${tono}'>${escaparXml(dicho)}</prosody>${despues}</voice>`;
   });
   return `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='es-ES'>${partes.join('')}</speak>`;
 }
@@ -106,7 +107,7 @@ const ssmlNarrador = (xml: string) =>
 
 function ssmlInicio(i: Inicio, ordenEnIngles: boolean, sinLeer = false): string {
   if (sinLeer) {
-    const conHueco = (t: string) => escaparXml(sinMarcas(t)).split(HUECO).join(`<break time='${PAUSA_HUECO}'/>`);
+    const conHueco = (t: string) => escaparXml(paraDecir(sinMarcas(t))).split(HUECO).join(`<break time='${PAUSA_HUECO}'/>`);
     return ssmlNarrador([i.enunciado, ...i.frases].map(conHueco).join(`<break time='${PAUSA_FRASE}'/>`));
   }
   const trozos = ordenEnIngles
@@ -192,7 +193,8 @@ async function main() {
     const inicio = alEmpezar(e);
     if (!inicio) continue;
     const tema = c.temas.get(id.split('#')[0].split('/').slice(0, -1).join('/'));
-    inicios.set(claveInicio(inicio), { inicio, enIngles: tema?.enunciados === 'en', sinLeer: !!e.sinLeer });
+    // En español (Matemáticas), como sin leer: todo lo dice el narrador.
+    inicios.set(claveInicio(inicio), { inicio, enIngles: tema?.enunciados === 'en', sinLeer: !!e.sinLeer || !!e.espanol });
   }
   const archivoInicio = (clave: string, v: { enIngles: boolean; sinLeer: boolean }) => `${hash(clave, firmaInicio(v.enIngles, v.sinLeer))}.mp3`;
   // Sin leer: «opcion|Marte» y «respuesta|¡Casi! …» → lo que va detrás de la primera «|».

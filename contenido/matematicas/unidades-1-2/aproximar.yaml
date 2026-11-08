@@ -1,0 +1,107 @@
+titulo: Aproximar
+subtitulo: A las decenas, las centenas y los millares
+emoji: 🎯
+ejercicios:
+  - tipo: chat
+    titulo: El número redondo más cercano
+    mensajes:
+      - de: vega
+        texto: 'Aproximar es buscar el número redondo más cercano. Por ejemplo, 218 está entre 200 y 300.'
+        recta: { desde: 200, hasta: 300, paso: 10, marcas: [218] }
+      - de: hugo
+        texto: 'Está mucho más cerca de 200. Sin dibujar la recta, se sabe mirando la cifra de las decenas: 1 < 5, así que se queda en 200.'
+      - de: valentina
+        texto: 'En 275, la cifra de las decenas es un 7, y 7 > 5: sube a 300.'
+        recta: { desde: 200, hasta: 300, paso: 10, marcas: [275] }
+      - de: santiago
+        texto: '¿Y 250? Está justo en medio… ¡Yo diría que se queda en 200!'
+        recta: { desde: 200, hasta: 300, paso: 10, marcas: [250] }
+      - de: vega
+        texto: 'Casi: cuando la cifra es un 5, se sube. 250 se aproxima a 300. Con 5, 6, 7, 8 o 9, arriba; con 0, 1, 2, 3 o 4, abajo.'
+      - de: hugo
+        texto: 'Para aproximar a las decenas, mira las unidades; a las centenas, las decenas; y a los millares, las centenas. Así, 2.329 se aproxima a 2.000, porque 3 < 5.'
+
+  # Ejercicio 1 de la página 26
+  - tipo: elegir
+    enunciado: Aproxima a la centena más cercana.
+    pregunta: '779'
+    recta: { desde: 700, hasta: 800, paso: 10, marcas: [779] }
+    correcta: '800'
+    incorrectas:
+      - texto: '700'
+        feedback: 'La cifra de las decenas es un 7, y 7 > 5: sube a 800. En la recta, 779 está mucho más cerca de 800.'
+      - texto: '780'
+        feedback: '780 es la decena más cercana. Te piden la centena: 7 > 5, así que 800.'
+
+  # Ejercicio 1 de la página 26
+  - tipo: elegir
+    enunciado: Aproxima a la centena más cercana.
+    pregunta: '290'
+    correcta: '300'
+    incorrectas:
+      - texto: '200'
+        feedback: 'Las decenas son un 9, y 9 > 5: sube a 300. 290 está a solo 10 de 300.'
+      - texto: '290'
+        feedback: '290 no es una centena: las centenas acaban en 00. La más cercana es 300.'
+
+  # «Ahora tú» de la página 26
+  - tipo: elegir
+    enunciado: Aproxima a la decena más cercana.
+    pregunta: '76'
+    correcta: '80'
+    incorrectas:
+      - texto: '70'
+        feedback: 'Mira las unidades: 6 > 5, así que sube a 80.'
+      - texto: '100'
+        feedback: '100 es la centena. La decena más cercana a 76 es 80 (las unidades, 6 > 5).'
+
+  # Ejercicio 3c de la página 27
+  - tipo: elegir
+    enunciado: Aproxima a los millares.
+    pregunta: '4.890'
+    correcta: '5.000'
+    incorrectas:
+      - texto: '4.000'
+        feedback: 'Para los millares se miran las centenas: 8 > 5, así que sube a 5.000.'
+      - texto: '4.900'
+        feedback: '4.900 es la centena más cercana. Te piden el millar: las centenas son 8 > 5, así que 5.000.'
+
+  # Ejercicio 3e de la página 27
+  - tipo: elegir
+    enunciado: Aproxima a los millares.
+    pregunta: '6.321'
+    correcta: '6.000'
+    incorrectas:
+      - texto: '7.000'
+        feedback: 'Las centenas son un 3, y 3 < 5: baja a 6.000.'
+      - texto: '6.300'
+        feedback: '6.300 es la centena más cercana. Te piden el millar: las centenas son 3 < 5, así que 6.000.'
+
+  # Como el ejercicio 2 de la página 26: con la regla del 5
+  - tipo: clasificar
+    enunciado: ¿A qué centena se aproxima?
+    grupos:
+      - nombre: '400'
+        fichas:
+          - '381'
+          - '362'
+          - texto: '449'
+            feedback: 'Se mira solo la cifra de las decenas: un 4, y 4 < 5. Baja a 400, aunque haya un 9 en las unidades.'
+      - nombre: '500'
+        fichas:
+          - '517'
+          - '468'
+          - texto: '450'
+            feedback: 'Con un 5 en las decenas, se sube: 450 se aproxima a 500.'
+
+  # Ejercicio 5 de la página 27: los apartamentos
+  - tipo: elegir
+    enunciado: Tenéis unos 700 € para alquilar un apartamento. ¿Cuáles se ajustan?
+    pregunta: 'Cádiz, 725 € · Lugo, 590 € · Alicante, 860 € · Cáceres, 670 €'
+    dibujo: 🧳
+    correcta: Cádiz y Cáceres
+    incorrectas:
+      - texto: Lugo y Alicante
+        feedback: '590 se aproxima a 600 y 860, a 900. Los que se aproximan a 700 son 725 (Cádiz) y 670 (Cáceres).'
+      - texto: Solo Cádiz
+        feedback: '670 también se aproxima a 700: las decenas son un 7, y 7 > 5. Valen Cádiz y Cáceres.'

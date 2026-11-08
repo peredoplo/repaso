@@ -1,0 +1,105 @@
+titulo: Entender un problema
+subtitulo: Enunciado, pregunta y operación
+emoji: 🕵️
+ejercicios:
+  - tipo: chat
+    titulo: Las partes de un problema
+    mensajes:
+      - de: valentina
+        texto: 'Un problema tiene dos partes: el enunciado, que cuenta lo que pasa y da los datos, y la pregunta, que pide algo que aún no sabemos.'
+      - de: hugo
+        texto: '«Hoy han llegado 2 niños tarde a clase» no es un problema: no pregunta nada.'
+      - de: vega
+        texto: 'Para resolverlo: primero, entiende bien el problema. Después, piensa qué operación hace falta. Luego, calcula. Y al final, mira si la solución tiene sentido.'
+        dibujo: 🧐 🤔 ✏️ ✅
+      - de: santiago
+        texto: '«En mi clase hay 12 chicas y 9 chicos. ¿Cuántas chicas más que chicos hay?» Pone «más»… ¡así que sumo! 12 + 9 = 21.'
+      - de: vega
+        texto: '¡Trampa! «Cuántas más que» compara dos cantidades, y eso se hace restando: 12 − 9 = 3. Hay 3 chicas más que chicos.'
+      - de: valentina
+        texto: 'Por eso hay que leer la pregunta entera, no solo una palabra. «En total» suele ser sumar; «quedan», «faltan» o «cuántos más que», restar.'
+
+  # Taller de problemas, página 17: identificar problemas
+  - tipo: clasificar
+    enunciado: ¿Es un problema?
+    grupos:
+      - nombre: Es un problema
+        dibujo: ❓
+        fichas:
+          - En 3.º hay 86 estudiantes y en 4.º hay 62. ¿Cuántos hay contando los dos cursos?
+          - El año pasado había 186 estudiantes, y este año hay 24 más. ¿Cuántos hay este año?
+      - nombre: No es un problema
+        dibujo: 🚫
+        fichas:
+          - texto: Hoy han llegado 2 niños tarde a clase.
+            feedback: 'No pregunta nada: no hay que averiguar nada. No es un problema.'
+          - texto: Mi colegio tiene un patio muy grande.
+            feedback: 'Solo cuenta algo; no hay pregunta ni operación. No es un problema.'
+          - texto: Este año hay dos clases de cada curso. ¿Cuántas clases hay de 3.º?
+            feedback: 'La respuesta ya está en el enunciado (dos): no hay que hacer ninguna operación. No es un problema.'
+
+  # Taller de problemas, página 17: añade la palabra adecuada (a)
+  - tipo: elegir
+    enunciado: Elige la palabra que completa el problema.
+    dibujo: 🪢
+    pregunta: Una comba cuesta 18 € y en tu hucha tienes 16 €. ¿Cuánto dinero te ___ para comprarla?
+    correcta: falta
+    incorrectas:
+      - texto: sobra
+        feedback: 'Tienes 16 € y cuesta 18 €: tienes menos de lo que cuesta. Te falta dinero.'
+      - texto: ahorras
+        feedback: 'No te ahorras nada: con 16 € no llega para algo de 18 €. Te falta dinero.'
+
+  # Taller de problemas, página 17: añade la palabra adecuada (b)
+  - tipo: elegir
+    enunciado: Elige la palabra que completa el problema.
+    dibujo: 📻
+    pregunta: Una radio cuesta 46 € en internet y 38 € en la tienda de tu barrio. ¿Cuánto dinero te ___ si la compras en tu barrio?
+    correcta: ahorras
+    incorrectas:
+      - texto: falta
+        feedback: 'En tu barrio es más barata: pagas menos que en internet. Lo que no gastas te lo ahorras.'
+
+  # Taller de problemas, página 33: relacionar las partes de un problema
+  - tipo: elegir
+    enunciado: ¿Qué operaciones resuelven el problema?
+    dibujo: 🍽️
+    pregunta: En el comedor se quedan a comer 137 estudiantes de Primaria y 68 de Infantil. El comedor tiene 295 plazas. ¿Cuántas plazas quedan sin ocupar?
+    correcta: 137 + 68 = 205 y 295 − 205 = 90
+    incorrectas:
+      - texto: 137 + 68 = 205
+        feedback: 'Así sabes cuántos comen, pero la pregunta es cuántas plazas quedan: falta quitarlos de las 295. 295 − 205 = 90.'
+      - texto: 137 + 68 = 205 y 295 + 205 = 500
+        feedback: 'Las plazas libres no pueden ser más que las 295 que tiene el comedor. Hay que restar: 295 − 205 = 90.'
+
+  # Taller de problemas, página 33: enunciado y pregunta
+  - tipo: unir
+    enunciado: Une cada enunciado con su pregunta.
+    pares:
+      - [Tenía 137 fotos en el ordenador y hoy he puesto 68 nuevas., ¿Cuántas fotos tengo ahora?]
+      - [Un camión lleva un sofá de 137 kg y un armario de 68 kg., ¿Cuántos kilos lleva en total?]
+      - [El comedor tiene 295 plazas y hoy comen 205 estudiantes., ¿Cuántas plazas quedan libres?]
+
+  # Problemas de dos operaciones, página 30: dar la respuesta y pensar la pregunta (idea de Numeritis)
+  - tipo: elegir
+    enunciado: 'La respuesta es «Nos faltan 278 kilómetros». ¿Cuál era la pregunta?'
+    dibujo: 🚗
+    pregunta: De Oviedo a Almería hay 996 km. Esta mañana hemos recorrido 436 km y por la tarde, 282 km.
+    correcta: ¿Cuántos kilómetros nos faltan para llegar a Almería?
+    incorrectas:
+      - texto: ¿Cuántos kilómetros hay de Oviedo a Almería?
+        feedback: 'Eso ya lo dice el enunciado: 996 km. La respuesta habla de lo que falta.'
+      - texto: ¿Cuántos kilómetros hemos recorrido hoy?
+        feedback: 'Hoy hemos recorrido 436 + 282 = 718 km. La respuesta habla de lo que falta: 996 − 718 = 278.'
+
+  # Lee y comprende, página 32: mi fiesta de cumpleaños
+  - tipo: elegir
+    enunciado: Lee el problema y contesta.
+    dibujo: 🎂
+    pregunta: Para mi cumpleaños he invitado a 3 primos, a 18 compañeros de clase y a 2 amigos del equipo de baloncesto. ¿Cuántos invitados habrá en total?
+    correcta: '23'
+    incorrectas:
+      - texto: '21'
+        feedback: '3 + 18 = 21, pero faltan los 2 amigos del baloncesto: 21 + 2 = 23.'
+      - texto: '18'
+        feedback: '18 son solo los de clase. En total: 3 + 18 + 2 = 23.'

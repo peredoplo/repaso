@@ -1,0 +1,96 @@
+titulo: Descomponer números
+subtitulo: Lo que vale cada cifra
+emoji: 🧩
+ejercicios:
+  - tipo: chat
+    titulo: Lo que vale cada cifra
+    mensajes:
+      - de: santiago
+        texto: 'Descomponer es separar un número en lo que vale cada cifra. En 6.302 hay 6 UM, 3 C, 0 D y 2 U.'
+        columnas: { filas: ['6.302'] }
+      - de: valentina
+        texto: 'Así que 6.302 = 6.000 + 300 + 2. El cero de las decenas no suma nada, y no hace falta escribirlo en la suma.'
+      - de: hugo
+        texto: '¡Ojo! La misma cifra vale distinto según dónde esté. En 2.028, el primer 2 vale 2.000 y el otro, solo 20.'
+        dibujo: 🏅
+      - de: vega
+        texto: 'Y al revés: 9.000 + 200 + 6 es 9.206. Como no hay decenas, va un cero en su casilla.'
+        columnas: { filas: ['9.206'] }
+      - de: santiago
+        texto: 'Si escribes 926, te has comido el cero: ¡y te sale un número de tres cifras!'
+
+  # Ejercicio 2a de la página 12
+  - tipo: escribir
+    enunciado: Descompón el número.
+    plantilla: 1.256 = 1.000 + ___ + 50 + 6
+    respuestas: ['200']
+    errores:
+      - igual: '2'
+        feedback: 'El 2 está en las centenas: vale 2 C, que son 200 unidades.'
+      - igual: '20'
+        feedback: 'El 2 está en las centenas, no en las decenas: vale 200.'
+    explicacion: 'En 1.256 hay 1 UM, 2 C, 5 D y 6 U. Las 2 centenas valen 200.'
+
+  # Comprueba tu progreso 2 (el crucigrama), número 1
+  - tipo: escribir
+    enunciado: Escribe el número.
+    plantilla: 9.000 + 200 + 6 = ___
+    respuestas: ['9.206']
+    errores:
+      - igual: '926'
+        feedback: 'Te falta el cero de las decenas: 9 UM, 2 C, 0 D y 6 U. Es 9.206.'
+      - igual: '9.260'
+        feedback: 'El 6 son unidades: va en la última casilla. No hay decenas, así que va un 0: 9.206.'
+    explicacion: 'Hay 9 UM, 2 C, ninguna decena y 6 U: 9.206.'
+
+  # Comprueba tu progreso 2, número 3
+  - tipo: escribir
+    enunciado: Escribe el número.
+    plantilla: 5 UM + 2 C + 4 D + 7 U = ___
+    respuestas: ['5.247']
+    errores:
+      - igual: '18'
+        feedback: 'No se suman las cifras: cada una va en su casilla. 5 UM, 2 C, 4 D y 7 U forman el 5.247.'
+    explicacion: 'Cada cifra en su casilla: 5 UM, 2 C, 4 D y 7 U forman el 5.247.'
+
+  # Comprueba tu progreso 2, número 4
+  - tipo: escribir
+    enunciado: Escribe el número.
+    plantilla: 6 UM + 8 D + 4 U = ___
+    respuestas: ['6.084']
+    errores:
+      - igual: '684'
+        feedback: 'No hay centenas, pero su casilla no se puede saltar: va un 0. Es 6.084.'
+      - igual: '6.840'
+        feedback: 'Las 8 decenas van en la tercera casilla y las 4 unidades, en la última. Sin centenas: 6.084.'
+    explicacion: 'Hay 6 UM, 0 C, 8 D y 4 U: 6.084.'
+
+  # Como el ejercicio 2 de la página 10: el valor de la cifra 7
+  - tipo: elegir
+    enunciado: ¿En qué número vale 700 la cifra 7?
+    correcta: '4.715'
+    incorrectas:
+      - texto: '7.154'
+        feedback: 'En 7.154, el 7 está en las unidades de millar: vale 7.000. Vale 700 en las centenas, como en 4.715.'
+      - texto: '1.574'
+        feedback: 'En 1.574, el 7 está en las decenas: vale 70. Vale 700 en las centenas, como en 4.715.'
+
+  # Ejercicio 2 de la página 12, al revés
+  - tipo: calcula
+    enunciado: Completa la descomposición.
+    cuentas:
+      - 3.140 = 3.000 + [100] + 40
+      - 7.004 = [7.000] + 4
+      - 2.478 = 2.000 + 400 + [70] + 8
+    explicacion: 'Cada cifra vale según su casilla: una centena vale 100; una decena, 10. En 2.478, el 7 está en las decenas y vale 70.'
+
+  # Repasa lo que sabes (página 37), ejercicio 1
+  - tipo: elegir
+    enunciado: ¿Cuál es el número posterior?
+    pregunta: El que va justo después de 8.999
+    correcta: '9.000'
+    incorrectas:
+      - texto: '8.990'
+        feedback: 'El posterior es uno más, no menos: 8.999 + 1 = 9.000. Las 9 unidades, al sumar 1, forman otra decena… ¡y así hasta el millar!'
+      - texto: '9.999'
+        feedback: 'Eso es mil más. El posterior es solo uno más: 8.999 + 1 = 9.000.'

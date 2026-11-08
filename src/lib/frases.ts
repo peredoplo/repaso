@@ -3,12 +3,12 @@ import type { ElegirT, EjercicioT } from '../contenido/esquema';
 import { corregirElegir, fraseEscribir, frasesCompletar } from './corregir';
 import { HUECO, partirPiezas, seLee } from './normalizar';
 
-/** Un ejercicio y si es de un tema sin leer (EjercicioC, sin traer aquí la carga del contenido). */
-type ConTema = EjercicioT & { sinLeer?: boolean };
+/** Un ejercicio y si es de un tema sin leer o en español (EjercicioC, sin traer aquí la carga del contenido). */
+type ConTema = EjercicioT & { sinLeer?: boolean; espanol?: boolean };
 
 export function frasesInglesas(e: ConTema): string[] {
   // Sin leer, todo va en español: no hay nada que decir en inglés.
-  if (e.sinLeer) return [];
+  if (e.sinLeer || e.espanol) return [];
   const f: string[] = [];
   switch (e.tipo) {
     case 'elegir': {
@@ -66,7 +66,7 @@ export interface Inicio {
  * Petición del autor (4 de noviembre de 2026): al llegar al ejercicio se oye directamente, sin tocar el altavoz, la
  * orden y lo que hay que leer, también las frases con hueco. Las opciones no (las incorrectas no se leen nunca).
  */
-export function alEmpezar(e: EjercicioT): Inicio | null {
+export function alEmpezar(e: ConTema): Inicio | null {
   const tarjeta = 'tarjeta' in e ? e.tarjeta?.texto : undefined;
   let frases: (string | undefined)[] = [];
   let siempre = false;
@@ -85,13 +85,19 @@ export function alEmpezar(e: EjercicioT): Inicio | null {
     case 'completar':
       frases = e.frases.map((x) => x.frase);
       break;
+    case 'cuenta':
+      frases = [e.problema, e.operacion];
+      break;
     case 'unir':
     case 'clasificar':
+    case 'calcula':
       break;
     default:
       return null;
   }
-  return { enunciado: e.enunciado.trim(), frases: frases.filter((f): f is string => !!f && seLee(f)).map((f) => f.trim()), siempre };
+  // En español se dice todo (seLee es para el inglés: no lee el español ni los números).
+  const vale = (f: string) => (e.espanol ? /[\p{L}\p{N}]/u.test(f) : seLee(f));
+  return { enunciado: e.enunciado.trim(), frases: frases.filter((f): f is string => !!f && vale(f)).map((f) => f.trim()), siempre };
 }
 
 /** Con qué se busca su grabación (la hace `npm run voces`, que sabe en qué idioma va la orden). */
@@ -158,3 +164,25 @@ export const todoLoQueSeOye = (e: ConTema) => {
 
 /** El texto tal como se dice: sin las marcas de la negrita y la cursiva. */
 export const sinMarcas = (t: string) => t.replace(/\*\*?([^*]+)\*\*?/g, '$1').trim();
+
+const ORDINALES = ['', 'primero', 'segundo', 'tercero', 'cuarto', 'quinto', 'sexto', 'séptimo', 'octavo', 'noveno', 'décimo', 'undécimo', 'duodécimo', 'decimotercero', 'decimocuarto', 'decimoquinto', 'decimosexto', 'decimoséptimo', 'decimoctavo', 'decimonoveno', 'vigésimo'];
+const COLUMNA: Record<string, [string, string]> = { UM: ['unidad de millar', 'unidades de millar'], C: ['centena', 'centenas'], D: ['decena', 'decenas'], U: ['unidad', 'unidades'] };
+
+/**
+ * Lo que dice la voz española en Matemáticas: los signos y las siglas, con palabras («3 C» → «3 centenas», «13.º» →
+ * «decimotercero», «<» → «es menor que»). Los números con punto («1.342») ya los lee bien la voz.
+ */
+export function paraDecir(t: string): string {
+  return t
+    .replace(/(\d+)\.([ºª])/g, (m, n: string, g: string) => {
+      const o = ORDINALES[Number(n)];
+      return o ? (g === 'ª' ? o.replace(/o$/, 'a') : o) : m;
+    })
+    .replace(/(\d+|___)\s?(UM|C|D|U)\b/g, (_, n: string, c: string) => `${n} ${COLUMNA[c][n === '1' ? 0 : 1]}`)
+    .replace(/\s[−-]\s/g, ' menos ')
+    .replace(/\s\+\s/g, ' más ')
+    .replace(/\s=\s/g, ' es igual a ')
+    .replace(/\s<\s/g, ' es menor que ')
+    .replace(/\s>\s/g, ' es mayor que ')
+    .replace(/\s?→\s?/g, ', ');
+}

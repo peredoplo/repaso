@@ -1,0 +1,69 @@
+titulo: Sumas con llevadas
+subtitulo: Columna a columna, sin olvidar las que te llevas
+emoji: ➕
+ejercicios:
+  - tipo: chat
+    titulo: Sumar en columna
+    mensajes:
+      - de: hugo
+        texto: 'Para sumar en columna, cada cifra va debajo de la de su casilla: unidades con unidades, decenas con decenas… Se empieza siempre por las unidades.'
+      - de: vega
+        texto: 'Vamos con 2.735 + 524. En las unidades, 5 + 4 = 9. En las decenas, 3 + 2 = 5. En las centenas, 7 + 5 = 12: pongo el 2 y me llevo 1.'
+        columnas: { filas: ['2.735', '524'], signo: '+', llevadas: ['', '', '', '1'], resultado: '3.259' }
+      - de: valentina
+        texto: 'Ese 1 que te llevas se suma en la casilla siguiente: 2 + 1 = 3 unidades de millar. Resultado, 3.259.'
+      - de: santiago
+        texto: 'Yo he hecho 5.783 + 2.439 y me sale 7.112. ¿Por qué no está bien?'
+        columnas: { filas: ['5.783', '2.439'], signo: '+', resultado: '7.112', mal: [1, 2, 3] }
+      - de: hugo
+        texto: '¡Te has olvidado de las que te llevas! En las unidades, 3 + 9 = 12: pones 2 y te llevas 1. En las decenas, 8 + 3 = 11, y 1 que te llevabas, 12…'
+      - de: vega
+        texto: 'Con las llevadas sale 8.222. Truco: apunta el 1 arriba, encima de la casilla siguiente, para que no se te olvide.'
+        columnas: { filas: ['5.783', '2.439'], signo: '+', llevadas: ['', '1', '1', '1'], resultado: '8.222' }
+      - de: valentina
+        texto: 'Con tres números se hace igual, columna a columna. Y el orden de los sumandos no cambia el resultado.'
+
+  # Ejercicio 1a de la página 24
+  - tipo: cuenta
+    operacion: 5.783 + 2.439
+
+  # Ejercicio 1b de la página 24
+  - tipo: cuenta
+    operacion: 6.365 + 1.075
+
+  # Ejercicio 1c de la página 24
+  - tipo: cuenta
+    operacion: 1.456 + 635 + 2.930
+
+  # Ejercicio 2 de la página 24
+  - tipo: elegir
+    enunciado: ¿Dan lo mismo estas dos sumas?
+    pregunta: 876 + 2.175   y   2.175 + 876
+    correcta: Sí, el orden no cambia el resultado
+    incorrectas:
+      - texto: No, la primera da más
+        feedback: 'Los dos dan 3.051. Al sumar, el orden de los sumandos no cambia el resultado.'
+      - texto: No, la segunda da más
+        feedback: 'Los dos dan 3.051. Al sumar, el orden de los sumandos no cambia el resultado.'
+
+  # Comprueba tu progreso 2 de la unidad 2: ordenar los sumandos
+  - tipo: calcula
+    enunciado: Junta primero los que forman decenas o centenas, y calcula.
+    cuentas:
+      - 14 + 35 + 6 = [55]
+      - 17 + 52 + 3 = [72]
+      - 120 + 80 + 125 = [325]
+      - 350 + 315 + 50 = [715]
+    explicacion: 'Busca los que juntos dan un número redondo: 14 + 6 = 20, y 20 + 35 = 55. O 350 + 50 = 400, y 400 + 315 = 715.'
+
+  # Ejercicio 3 de la página 24
+  - tipo: cuenta
+    problema: En la recogida solidaria se han juntado 325 kilos de legumbres y 1.475 kilos de pasta. ¿Cuántos kilos se han juntado en total?
+    dibujo: 🥫 🍝
+    operacion: 325 + 1.475
+
+  # Problema 5 de la página 21
+  - tipo: cuenta
+    problema: En un almacén hay una caja con 68 botellas de zumo de naranja, otra con 85 de piña y otra con 72 de melocotón. ¿Cuántas botellas hay en total?
+    dibujo: 🧃
+    operacion: 68 + 85 + 72

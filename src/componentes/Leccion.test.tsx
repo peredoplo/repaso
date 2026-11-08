@@ -158,4 +158,32 @@ describe('Leccion', () => {
     await u.click(columna(segunda.includes('long') ? 'Cities' : 'Villages'));
     expect(screen.getByRole('status')).toHaveTextContent('un fallo');
   });
+
+  it('cuenta: se escribe desde las unidades y, al fallar, dice el fallo típico', async () => {
+    const u = userEvent.setup();
+    const suma: EjercicioC = { id: 'm/s#1', tipo: 'cuenta', enunciado: 'Calcula.', operacion: '5.783 + 2.439', espanol: true };
+    render(<Leccion titulo="Prueba" ejercicios={[suma, { ...suma, id: 'm/s#2' }]} modo="leccion" onSalir={() => {}} onTerminar={() => {}} />);
+    // Al escribir una cifra, el cursor salta a la columna de la izquierda: 7.112 es olvidar las que te llevas.
+    await u.click(screen.getByLabelText('Resultado: unidades'));
+    await u.keyboard('2117');
+    expect(screen.getByLabelText('Resultado: unidades de millar')).toHaveValue('7');
+    await u.click(screen.getByRole('button', { name: 'Comprobar' }));
+    expect(screen.getByRole('status')).toHaveTextContent('las que te llevas');
+    expect(screen.getByRole('status')).toHaveTextContent('8.222');
+    await u.click(screen.getByRole('button', { name: 'Continuar' }));
+    await u.click(screen.getByLabelText('Resultado: unidades'));
+    await u.keyboard('2228{Enter}');
+    expect(screen.getByRole('status')).toHaveTextContent('✔');
+  });
+
+  it('calcula: cada cuenta con su hueco; la mal hecha enseña la buena', async () => {
+    const u = userEvent.setup();
+    const calcula: EjercicioC = { id: 'm/c#1', tipo: 'calcula', enunciado: 'Calcula.', cuentas: ['6 + [4] = 10', '80 + 30 = [110]'], explicacion: 'Piensa en decenas.', espanol: true };
+    render(<Leccion titulo="Prueba" ejercicios={[calcula]} modo="leccion" onSalir={() => {}} onTerminar={() => {}} />);
+    await u.type(screen.getByLabelText('Cuenta 1'), '4');
+    await u.type(screen.getByLabelText('Cuenta 2'), '1.100');
+    await u.click(screen.getByRole('button', { name: 'Comprobar' }));
+    expect(screen.getByRole('status')).toHaveTextContent('80 + 30 = 110');
+    expect(screen.getByRole('status')).toHaveTextContent('Piensa en decenas.');
+  });
 });

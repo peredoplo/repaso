@@ -1,0 +1,7 @@
+# Examen de prueba: 15 preguntas al azar de las lecciones, con nota al final. Cada vez sale distinto.
+titulo: Examen de prueba
+subtitulo: Como el del cole, con nota
+emoji: 🏆
+examen:
+  de: [cuatro-cifras, descomponer, comparar, ordinales, calculo-mental, sumas, restas, aproximar, estimar, problemas, dos-operaciones, graficos]
+  preguntas: 15

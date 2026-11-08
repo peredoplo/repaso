@@ -12,4 +12,6 @@ export interface PropsEjercicio<E> {
   registrarSeguir: (seguir: (() => void) | null) => void;
   /** De un tema para quien aún no lee: al tocar una opción o una ficha, se dice en español. */
   sinLeer?: boolean;
+  /** De un tema en español (Matemáticas): lo que se ve no es inglés y no lleva la voz inglesa. */
+  espanol?: boolean;
 }

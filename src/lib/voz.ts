@@ -10,7 +10,7 @@
  * o esperando su turno, así que al pasar de ejercicio nunca se oye lo del anterior.
  */
 import indice from '../voces.json';
-import { claveMensaje, sinMarcas } from './frases';
+import { claveMensaje, paraDecir, sinMarcas } from './frases';
 import { obtenerContexto, sonidoActivado } from './sonido';
 
 // `sinLeer` aparece cuando `npm run voces` graba un tema sin leer.
@@ -112,7 +112,7 @@ export function hablar(texto: string, { auto = false, lenta = false, retraso = 0
   const mio = turno;
   const t = clave || (quien ? claveMensaje(quien, texto) : texto.trim());
   // Sin grabación, la voz del navegador: en español para los mensajes del chat y los temas sin leer.
-  const enNavegador = () => (quien || es ? decirEnNavegador(sinMarcas(texto), lenta, 'es-ES') : decirEnNavegador(clave ? texto : t, lenta));
+  const enNavegador = () => (quien || es ? decirEnNavegador(paraDecir(sinMarcas(texto)), lenta, 'es-ES') : decirEnNavegador(clave ? texto : t, lenta));
   const empezar = () => {
     espera = null;
     const p = cargar(t);

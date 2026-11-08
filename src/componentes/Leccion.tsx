@@ -5,9 +5,11 @@ import type { Resultado } from '../lib/corregir';
 import { alEmpezar, BIEN, claveInicio, claveRespuesta, textoInicio, textoRespuesta, todoLoQueSeOye } from '../lib/frases';
 import { sonar } from '../lib/sonido';
 import { callar, hablar, precargar } from '../lib/voz';
+import Calcula from './ejercicios/Calcula';
 import Chat from './ejercicios/Chat';
 import Clasificar from './ejercicios/Clasificar';
 import Completar from './ejercicios/Completar';
+import Cuenta from './ejercicios/Cuenta';
 import Elegir from './ejercicios/Elegir';
 import Escribir from './ejercicios/Escribir';
 import Ordenar from './ejercicios/Ordenar';
@@ -35,6 +37,8 @@ const COMPONENTES: { [T in EjercicioT['tipo']]: ComponentType<PropsEjercicio<Ext
   unir: Unir,
   completar: Completar,
   clasificar: Clasificar,
+  cuenta: Cuenta,
+  calcula: Calcula,
   recuerda: Recuerda,
   chat: Chat,
 };
@@ -82,7 +86,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
   useEffect(() => {
     document.documentElement.scrollTop = 0;
     const i = alEmpezar(e);
-    if (i) hablar(textoInicio(i), { clave: claveInicio(i), auto: !i.siempre, retraso: 300, es: !!e.sinLeer });
+    if (i) hablar(textoInicio(i), { clave: claveInicio(i), auto: !i.siempre, retraso: 300, es: !!e.sinLeer || !!e.espanol });
   }, [pos, e]);
 
   const responder = useCallback(
@@ -96,7 +100,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
       if (e.sinLeer) {
         const t = textoRespuesta(r.bien, animo, r.feedback);
         hablar(t, { clave: claveRespuesta(t), auto: true, retraso, es: true });
-      } else if (r.voz) hablar(r.voz, { auto: true, retraso });
+      } else if (r.voz && !e.espanol) hablar(r.voz, { auto: true, retraso });
       if (!primeros.current.has(e.id)) primeros.current.set(e.id, { ejercicio: e, resultado: r });
       const otraVez = !r.bien && modo !== 'examen' && actual.vez < REINTENTOS;
       if (otraVez) setCola((c) => [...c, { ejercicio: e, vez: actual.vez + 1 }]);
@@ -166,6 +170,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
           onResultado={responder}
           registrarSeguir={registrarSeguir}
           sinLeer={sinLeer}
+          espanol={!!e.espanol}
         />
       </main>
 
@@ -176,7 +181,7 @@ export default function Leccion({ titulo, ejercicios, modo, onSalir, onTerminar 
               <p className="pie__titulo">{resultado.bien ? `✔ ${frase}` : '✘ ¡Casi!'}</p>
               {!resultado.bien && resultado.solucion && (
                 <p className="pie__solucion">
-                  Lo correcto es: <strong lang="en">{resultado.solucion}</strong>
+                  Lo correcto es: <strong lang={e.espanol ? 'es' : 'en'}>{resultado.solucion}</strong>
                 </p>
               )}
               {resultado.feedback && (

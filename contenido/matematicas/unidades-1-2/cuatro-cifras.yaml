@@ -1,0 +1,99 @@
+titulo: Números de cuatro cifras
+subtitulo: Unidades de millar, centenas, decenas y unidades
+emoji: 🏠
+ejercicios:
+  - tipo: chat
+    titulo: Más allá del 999
+    mensajes:
+      - de: vega
+        texto: '¡Empezamos con Mates! Hasta ahora usabas números de tres cifras, como 249. Hoy toca subir: números de cuatro cifras, como 1.342.'
+        dibujo: 🏠 🔢
+      - de: hugo
+        texto: 'Diez centenas forman una unidad de millar. Es decir, 1 UM = 10 C = 1.000 U. El 1.000 se lee «mil».'
+      - de: valentina
+        texto: 'Cada cifra va en su casilla. En 1.342 hay 1 unidad de millar, 3 centenas, 4 decenas y 2 unidades.'
+        columnas: { filas: ['1.342'] }
+      - de: santiago
+        texto: 'O sea, 1.342 = 1.000 + 300 + 40 + 2. Se lee «mil trescientos cuarenta y dos».'
+      - de: hugo
+        texto: 'Pues yo he escrito «tres mil cuarenta» así, 300040. ¿Está bien?'
+        dibujo: 🤔
+      - de: vega
+        texto: '¡Uy, no! Tres mil son 3 unidades de millar, y cuarenta, 4 decenas. Donde no hay nada se pone un cero, y queda 3.040.'
+        columnas: { filas: ['3.040'] }
+      - de: valentina
+        texto: 'El cero guarda el sitio. Sin los ceros, 3.040 sería 34, ¡un número muchísimo más pequeño!'
+
+  # «Ahora tú» de la página 12: el año de la Olimpiada de Los Ángeles
+  - tipo: elegir
+    enunciado: ¿Cuál es la cifra de las centenas?
+    dibujo: 🏅
+    pregunta: Olimpiada de Los Ángeles, 2.028
+    columnas: { filas: ['2.028'] }
+    correcta: '0'
+    incorrectas:
+      - texto: '2'
+        feedback: 'Hay dos «2». El primero está en las unidades de millar (vale 2.000) y el otro, en las decenas. Las centenas son la segunda casilla: un 0.'
+      - texto: '8'
+        feedback: 'El 8 está en las unidades, la última casilla. Las centenas son la segunda empezando por la izquierda: un 0.'
+
+  # Ejercicio 3 de la página 12: cómo se leen los números
+  - tipo: elegir
+    enunciado: ¿Cómo se lee este número?
+    pregunta: '4.069'
+    correcta: Cuatro mil sesenta y nueve
+    incorrectas:
+      - texto: Cuatrocientos sesenta y nueve
+        feedback: 'Tiene cuatro cifras: el 4 son unidades de millar, cuatro mil. Se lee «cuatro mil sesenta y nueve».'
+      - texto: Cuatro mil seiscientos nueve
+        feedback: 'El 0 está en las centenas (no hay cientos) y el 6, en las decenas: sesenta. Se lee «cuatro mil sesenta y nueve».'
+
+  # Comprueba tu progreso 1d (la sopa de números)
+  - tipo: escribir
+    enunciado: Escribe el número con cifras.
+    pregunta: Ocho mil cuarenta y nueve.
+    respuestas: ['8.049']
+    errores:
+      - igual: '849'
+        feedback: 'Te falta el cero de las centenas: 8 UM, 0 C, 4 D y 9 U. Es 8.049.'
+      - igual: '80049'
+        feedback: 'Ocho mil se escribe con una sola cifra, el 8 de las unidades de millar: 8.049.'
+      - igual: '8.490'
+        feedback: 'Cuarenta y nueve son 4 decenas y 9 unidades: van al final. 8.049.'
+    explicacion: 'Ocho mil son 8 UM; no hay centenas (0 C); cuarenta, 4 D; y nueve, 9 U. Es 8.049.'
+
+  # Comprueba tu progreso 1f
+  - tipo: escribir
+    enunciado: Escribe el número con cifras.
+    pregunta: Cinco mil setenta.
+    respuestas: ['5.070']
+    errores:
+      - igual: '570'
+        feedback: 'Te faltan los ceros. Cinco mil son 5 UM, no hay centenas, setenta son 7 D y no hay unidades: 5.070.'
+      - igual: '5.700'
+        feedback: 'Eso es cinco mil setecientos. Setenta son 7 decenas, no 7 centenas: 5.070.'
+      - igual: '50070'
+        feedback: 'Cinco mil se escribe con una sola cifra, el 5 de las unidades de millar: 5.070.'
+    explicacion: 'Cinco mil son 5 UM, 0 C, setenta son 7 D y 0 U: 5.070.'
+
+  # Ejercicio 1a de la página 12
+  - tipo: elegir
+    enunciado: ¿Cuántas unidades son?
+    pregunta: 5 unidades de millar
+    correcta: '5.000'
+    incorrectas:
+      - texto: '500'
+        feedback: '500 son 5 centenas. Una unidad de millar son 1.000 unidades: 5 UM son 5.000.'
+      - texto: '50'
+        feedback: '50 son 5 decenas. Una unidad de millar son 1.000 unidades: 5 UM son 5.000.'
+
+  - tipo: elegir
+    enunciado: ¿Qué le ha pasado a Valentina?
+    pregunta: Ha escrito «dos mil siete» así, 2.700.
+    columnas: { filas: ['2.700'] }
+    correcta: El 7 va en las unidades, 2.007
+    incorrectas:
+      - texto: Está bien escrito
+        feedback: '2.700 se lee «dos mil setecientos»: el 7 está en las centenas. Siete son 7 unidades, así que 2.007.'
+      - texto: Se escribe 27
+        feedback: 'Dos mil son 2 unidades de millar: hacen falta cuatro cifras. Con los ceros guardando el sitio, 2.007.'

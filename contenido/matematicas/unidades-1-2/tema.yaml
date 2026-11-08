@@ -1,0 +1,22 @@
+# Fichas del cole: el libro de Matemáticas de 3.º, unidades 1 (Números de cuatro cifras) y 2 (Sumas y restas), con
+# «Trabaja con la información» (gráficos de barras); 7 de noviembre de 2026.
+# Todo en español, también lo que se oye (la voz del narrador). Como en Numeritis: la teoría la cuentan los personajes
+# en el chat, y uno de ellos se equivoca para ver por qué está mal; las cuentas, en columna, dicen dónde está el fallo.
+asignatura: Matemáticas
+titulo: Unidades 1 y 2 · Números, sumas y restas
+descripcion: Números de cuatro cifras, ordinales, sumas y restas con llevadas, aproximar, estimar, problemas y gráficos de barras.
+idioma: es
+lecciones:
+  - cuatro-cifras
+  - descomponer
+  - comparar
+  - ordinales
+  - calculo-mental
+  - sumas
+  - restas
+  - aproximar
+  - estimar
+  - problemas
+  - dos-operaciones
+  - graficos
+  - examen

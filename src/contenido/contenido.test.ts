@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { leerContenido } from '../../scripts/leer';
-import { corregirCompletar, corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
+import { cifras, columnasDe, leerOperacion, partirHueco } from '../lib/aritmetica';
+import { corregirCalcula, corregirCompletar, corregirCuenta, corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
 import { alEmpezar, claveInicio, dichoSinLeer, frasesInglesas, partirOpcion } from '../lib/frases';
 import voces from '../voces.json';
 import { esTeoria } from './esquema';
@@ -20,6 +21,11 @@ describe('contenido', () => {
       if (e.tipo === 'ordenar') expect(corregirOrdenar(e, e.solucion).bien, e.id).toBe(true);
       if (e.tipo === 'escribir') for (const r of e.respuestas) expect(corregirEscribir(e, r).bien, e.id).toBe(true);
       if (e.tipo === 'completar') expect(corregirCompletar(e, e.frases.map((f) => f.respuesta)).bien, e.id).toBe(true);
+      if (e.tipo === 'cuenta') {
+        const o = leerOperacion(e.operacion)!;
+        expect(corregirCuenta(e, cifras(o.resultado, columnasDe(o)).map(String)).bien, e.id).toBe(true);
+      }
+      if (e.tipo === 'calcula') expect(corregirCalcula(e, e.cuentas.map((c) => partirHueco(typeof c === 'string' ? c : c.cuenta)!.respuesta)).bien, e.id).toBe(true);
     }
   });
 
@@ -105,6 +111,39 @@ it('Social Sciences lleva los ejercicios de las dos fichas, y la teoría en el c
     for (const id of ['comunidad', 'costumbres', 'platos-de-espana', 'buenos-ciudadanos', 'cinco-erres', 'ayuntamiento', 'servicios', 'transporte', 'seguridad-vial', 'a-salvo']) {
       expect(tema.lecciones.find((l) => l.id === id)!.ejercicios[0].tipo, id).toBe('chat');
     }
+  });
+
+  it('Matemáticas: todo en español, la teoría en el chat y los ejercicios del libro', () => {
+    const tema = c.temas.get('matematicas/unidades-1-2')!;
+    expect(tema.idioma).toBe('es');
+    const todos = tema.lecciones.flatMap((l) => l.ejercicios);
+    for (const e of todos) {
+      expect(e.espanol, e.id).toBe(true);
+      expect(frasesInglesas(e), e.id).toEqual([]);
+    }
+    for (const l of tema.lecciones.filter((l) => !l.examen)) expect(l.ejercicios[0].tipo, l.ruta).toBe('chat');
+    // Las sumas y restas de las páginas 24 y 25, y los problemas de las páginas 21, 25 y 35.
+    const cuentas = todos.flatMap((e) => (e.tipo === 'cuenta' ? [e.operacion] : []));
+    for (const o of ['5.783 + 2.439', '6.365 + 1.075', '1.456 + 635 + 2.930', '2.415 - 1.673', '3.641 - 2.756', '8.325 - 754', '68 + 85 + 72', '820 - 225', '1.875 - 108']) {
+      expect(cuentas).toContain(o);
+    }
+    // Cada una de las 12 lecciones abre con su chat (el examen no).
+    expect(todos.filter((e) => e.tipo === 'chat').length).toBe(12);
+  });
+
+  it('cuenta y calcula: el validador comprueba las operaciones', () => {
+    const errores = (ejercicios: string) =>
+      cargarContenido({
+        'contenido/perfiles.yaml': 'perfiles: [{ id: a, nombre: A, curso: x, avatar: x, temas: [t] }]',
+        'contenido/t/tema.yaml': 'asignatura: x\ntitulo: x\nidioma: es\nlecciones: [l]',
+        'contenido/t/l.yaml': `titulo: x\nemoji: x\nejercicios:\n${ejercicios}`,
+      }).errores.join('\n');
+    expect(errores("  - { tipo: cuenta, operacion: '2.534 - 4.152' }")).toMatch(/no es una suma o una resta/);
+    expect(errores("  - { tipo: cuenta, operacion: '2.534 + 4.152' }")).toBe('');
+    expect(errores("  - { tipo: calcula, enunciado: x, cuentas: ['6 + [5] = 10'], explicacion: x }")).toMatch(/no está bien/);
+    expect(errores("  - { tipo: calcula, enunciado: x, cuentas: ['6 + [4] = 10'] }")).toMatch(/su feedback/);
+    expect(errores("  - { tipo: elegir, enunciado: '*Hola*', correcta: a, incorrectas: [b] }")).toMatch(/sin cursiva/);
+    expect(errores("  - { tipo: elegir, enunciado: x, recta: { desde: 200, hasta: 300, paso: 10, marcas: [318] }, correcta: a, incorrectas: [b] }")).toMatch(/se sale de la recta/);
   });
 
   it('completar y clasificar: huecos, palabras repetidas y explicaciones', () => {

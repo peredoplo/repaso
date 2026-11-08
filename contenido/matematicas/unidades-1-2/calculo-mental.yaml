@@ -1,0 +1,103 @@
+titulo: Cálculo mental
+subtitulo: Complementarios y decenas
+emoji: 🧠
+ejercicios:
+  - tipo: chat
+    titulo: Trucos para calcular de cabeza
+    mensajes:
+      - de: hugo
+        texto: 'Truco uno, los complementarios: a 6 le faltan 4 para llegar a 10. Y a 60, le faltan 40 para llegar a 100.'
+        dibujo: 6 + 4 = 10   60 + 40 = 100
+      - de: vega
+        texto: 'Truco dos, sumar decenas: 80 + 30 son 8 decenas y 3 decenas, 11 decenas. O sea, 110.'
+      - de: santiago
+        texto: 'Truco tres: en 86 + 30 solo cambian las decenas. 8 + 3 = 11, y las 6 unidades se quedan igual: 116.'
+      - de: valentina
+        texto: 'Pues yo en 86 + 30 he sumado también las unidades: 86 + 30 = 119.'
+        dibujo: 🙃
+      - de: santiago
+        texto: '¡Pero 30 no tiene unidades! Son 3 decenas justas, y 0 unidades. Las 6 unidades de 86 se quedan como están: 116.'
+      - de: hugo
+        texto: 'Para restar decenas, igual: en 67 − 20, 6 − 2 = 4 decenas, y el 7 no se toca. 47.'
+
+  # Calcula mentalmente (página 20): trabajar con complementarios
+  - tipo: calcula
+    enunciado: ¿Cuánto le falta para llegar a 10? ¿Y a 100?
+    cuentas:
+      - 9 + [1] = 10
+      - 3 + [7] = 10
+      - 6 + [4] = 10
+      - 60 + [40] = 100
+      - 30 + [70] = 100
+      - 10 + [90] = 100
+    explicacion: 'Para llegar a 100 con decenas, piensa en el de 10: a 3 le faltan 7, así que a 30 le faltan 70.'
+
+  # Calcula mentalmente (página 20): sumar decenas entre sí
+  - tipo: calcula
+    enunciado: Suma decenas.
+    cuentas:
+      - 40 + 30 = [70]
+      - 60 + 40 = [100]
+      - 70 + 50 = [120]
+      - 90 + 60 = [150]
+      - 50 + 80 = [130]
+    explicacion: 'Suma las decenas como si fueran unidades y pon un cero: 9 + 6 = 15, así que 90 + 60 = 150.'
+
+  # Calcula mentalmente (página 20): sumar decenas a un número de dos cifras
+  - tipo: calcula
+    enunciado: Suma decenas a un número de dos cifras.
+    cuentas:
+      - 59 + 30 = [89]
+      - 37 + 60 = [97]
+      - 46 + 60 = [106]
+      - 73 + 50 = [123]
+      - 87 + 80 = [167]
+    explicacion: 'Solo cambian las decenas; las unidades se quedan igual. En 87 + 80: 8 + 8 = 16 decenas y 7 unidades, 167.'
+
+  # Calcula mentalmente (página 36): restar decenas
+  - tipo: calcula
+    enunciado: Resta decenas.
+    cuentas:
+      - 80 - 50 = [30]
+      - 90 - 50 = [40]
+      - 37 - 10 = [27]
+      - 61 - 40 = [21]
+      - 85 - 30 = [55]
+      - 96 - 80 = [16]
+    explicacion: 'Resta solo las decenas; las unidades no se tocan. En 96 − 80: 9 − 8 = 1 decena y 6 unidades, 16.'
+
+  # Resolver mentalmente (página 20)
+  - tipo: elegir
+    enunciado: Resuelve de cabeza.
+    dibujo: 👨‍👩‍👧‍👦
+    pregunta: Tomás tiene 4 primas más que Lucía. Lucía tiene 12 primas. ¿Cuántas primas tiene Tomás?
+    correcta: '16'
+    incorrectas:
+      - texto: '8'
+        feedback: 'Tomás tiene más que Lucía, así que hay que sumar: 12 + 4 = 16.'
+      - texto: '12'
+        feedback: '12 son las de Lucía. Tomás tiene 4 más: 12 + 4 = 16.'
+
+  # Resolver mentalmente (página 20)
+  - tipo: elegir
+    enunciado: Resuelve de cabeza.
+    dibujo: ✈️
+    pregunta: Laura tiene 15 primos. 3 viven fuera de España. ¿Cuántos primos de Laura viven en España?
+    correcta: '12'
+    incorrectas:
+      - texto: '18'
+        feedback: 'Los 3 de fuera hay que quitarlos, no sumarlos: 15 − 3 = 12.'
+      - texto: '15'
+        feedback: '15 son todos sus primos. Sin los 3 de fuera: 15 − 3 = 12.'
+
+  # Resolver mentalmente (página 36)
+  - tipo: elegir
+    enunciado: Resuelve de cabeza.
+    dibujo: 🏫
+    pregunta: Este año hay 38 estudiantes en 2.º. El año pasado había 6 menos. ¿Cuántos estudiantes había el año pasado?
+    correcta: '32'
+    incorrectas:
+      - texto: '44'
+        feedback: 'Había 6 menos que ahora: hay que restar. 38 − 6 = 32.'
+      - texto: '38'
+        feedback: '38 son los de este año. El año pasado, 6 menos: 38 − 6 = 32.'

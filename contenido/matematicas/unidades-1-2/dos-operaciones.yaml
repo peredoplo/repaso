@@ -1,0 +1,80 @@
+titulo: Problemas de dos operaciones
+subtitulo: ¿Qué calculo primero?
+emoji: 🧮
+ejercicios:
+  - tipo: chat
+    titulo: Dos cuentas, una detrás de otra
+    mensajes:
+      - de: hugo
+        texto: 'Hay problemas que necesitan dos cuentas. Pides un cacao de 4 € y una magdalena de 3 €, y pagas con un billete de 10 €. ¿Cuánto te devuelven?'
+        dibujo: 🥤 🧁 💶
+      - de: valentina
+        texto: '¡Fácil! 10 − 4 = 6. Me devuelven 6 €.'
+      - de: santiago
+        texto: '¡Te has dejado la magdalena! Primero, lo que cuesta todo: 4 + 3 = 7 €. Después, lo que te devuelven: 10 − 7 = 3 €.'
+      - de: vega
+        texto: 'Por eso, antes de calcular, piensa: ¿qué necesito saber primero? ¿Y después? Al final, comprueba que la solución tiene sentido.'
+      - de: hugo
+        texto: 'Y un truco: haz una cuenta en cada paso. Así, si algo sale mal, sabes dónde.'
+
+  # Ejercicio 1 de la página 30: la frutería, paso a paso
+  - tipo: cuenta
+    enunciado: 'Primer paso: calcula.'
+    problema: En una frutería tenían una caja con 50 kg de naranjas. Por la mañana han vendido 21 kg. ¿Cuántos kilos quedaron en la caja?
+    dibujo: 🍊
+    operacion: 50 - 21
+
+  - tipo: cuenta
+    enunciado: 'Segundo paso: calcula.'
+    problema: Por la tarde han añadido 12 kg a los 29 kg que quedaban. ¿Cuántos kilos de naranjas hay ahora en la caja?
+    dibujo: 🍊
+    operacion: 29 + 12
+
+  # Ejercicio 2a de la página 31: el tren
+  - tipo: elegir
+    enunciado: Lee y contesta.
+    dibujo: 🚆
+    pregunta: Al empezar el viaje suben 134 personas al tren. En la parada 1 bajan 27 y suben 54. ¿Cuántas personas viajan al salir de la parada 1?
+    correcta: '161'
+    incorrectas:
+      - texto: '107'
+        feedback: '134 − 27 = 107, pero también suben 54: 107 + 54 = 161.'
+      - texto: '215'
+        feedback: 'Los 27 bajan del tren: hay que restarlos. 134 − 27 = 107, y 107 + 54 = 161.'
+
+  # Ejercicio 2b de la página 31
+  - tipo: elegir
+    enunciado: Lee y contesta.
+    dibujo: 🚆
+    pregunta: Al llegar a la parada 2 viajaban 161 personas. Bajan 59 y suben 18. ¿Cuántas personas viajan al salir de la parada 2?
+    correcta: '120'
+    incorrectas:
+      - texto: '102'
+        feedback: '161 − 59 = 102 son los que quedan, pero luego suben 18: 102 + 18 = 120.'
+      - texto: '238'
+        feedback: 'Los 59 bajan: se restan. 161 − 59 = 102, y con los 18 que suben, 120.'
+
+  # Comprueba tu progreso 6a de la unidad 2
+  - tipo: elegir
+    enunciado: Piensa y resuelve.
+    dibujo: ☎️
+    pregunta: El teléfono móvil se inventó en 1973, y el teléfono fijo, 97 años antes. ¿En qué año se inventó el teléfono fijo?
+    correcta: '1876'
+    incorrectas:
+      - texto: '2070'
+        feedback: '«Antes» es un año más pequeño: hay que restar. 1973 − 97 = 1876.'
+      - texto: '1886'
+        feedback: 'Revisa las decenas de 1973 − 97: al 9 de abajo hay que sumarle la que te llevas de las unidades, 9 + 1 = 10, y 17 − 10 = 7. Sale 1876.'
+
+  # Comprueba tu progreso 6c de la unidad 2, paso a paso
+  - tipo: cuenta
+    enunciado: 'Primer paso: calcula.'
+    problema: María cobra 1.875 € al mes y Raimundo, 108 € menos. ¿Cuánto cobra Raimundo?
+    dibujo: 💶
+    operacion: 1.875 - 108
+
+  - tipo: cuenta
+    enunciado: 'Segundo paso: calcula.'
+    problema: María cobra 1.875 € y Raimundo, 1.767 €. ¿Cuántos euros cobran entre los dos?
+    dibujo: 💶
+    operacion: 1.875 + 1.767

@@ -1,0 +1,136 @@
+titulo: Gráficos de barras
+subtitulo: Trabaja con la información
+emoji: 📊
+ejercicios:
+  - tipo: chat
+    titulo: Leer un gráfico de barras
+    mensajes:
+      - de: vega
+        texto: 'Un gráfico de barras enseña datos con barras: cuanto más larga es la barra, mayor es el número. Este dice cuántos días hizo Carla tenis y yoga cada mes.'
+        grafico:
+          eje: Días
+          categorias: [Ene, Feb, Mar, Abr, May]
+          series:
+            - { nombre: Tenis, valores: [7, 6, 5, 7, 5] }
+            - { nombre: Yoga, valores: [3, 2, 7, 8, 9] }
+      - de: santiago
+        texto: 'Para leerlo, sube con el dedo hasta el final de la barra y mira el número del lado. En mayo, Carla hizo tenis 5 días y yoga, 9.'
+      - de: hugo
+        texto: 'En febrero hizo tenis 7 días: ¡la barra verde es altísima!'
+      - de: valentina
+        texto: '¡Mira bien! Sigue con el dedo la punta de la barra hasta los números: en febrero llega al 6, no al 7. Al 7 llega en enero y en abril.'
+      - de: vega
+        texto: 'Y mira siempre la leyenda: dice qué es cada color. Aquí, el verde es tenis y el rojo, yoga.'
+
+  # Interpretar gráficos de barras, página 38, ejercicio 1a
+  - tipo: elegir
+    enunciado: ¿Cuántos días fue Carla a yoga en enero?
+    grafico:
+      eje: Días
+      categorias: [Ene, Feb, Mar, Abr, May]
+      series:
+        - { nombre: Tenis, valores: [7, 6, 5, 7, 5] }
+        - { nombre: Yoga, valores: [3, 2, 7, 8, 9] }
+    correcta: '3'
+    incorrectas:
+      - texto: '7'
+        feedback: 'El 7 es la barra verde, la del tenis. El yoga es la roja: en enero llega al 3.'
+      - texto: '2'
+        feedback: 'El 2 es el yoga de febrero. En enero, la barra roja llega al 3.'
+
+  # Página 38, ejercicio 1b
+  - tipo: elegir
+    enunciado: ¿Fue más días a tenis en febrero o en marzo?
+    grafico:
+      eje: Días
+      categorias: [Ene, Feb, Mar, Abr, May]
+      series:
+        - { nombre: Tenis, valores: [7, 6, 5, 7, 5] }
+        - { nombre: Yoga, valores: [3, 2, 7, 8, 9] }
+    correcta: En febrero
+    incorrectas:
+      - texto: En marzo
+        feedback: 'En marzo, la barra alta es la roja (yoga, 7). El tenis, la verde: 6 días en febrero y 5 en marzo.'
+
+  # Página 38, ejercicio 1c
+  - tipo: elegir
+    enunciado: En abril, ¿hizo más días tenis o yoga?
+    grafico:
+      eje: Días
+      categorias: [Ene, Feb, Mar, Abr, May]
+      series:
+        - { nombre: Tenis, valores: [7, 6, 5, 7, 5] }
+        - { nombre: Yoga, valores: [3, 2, 7, 8, 9] }
+    correcta: Yoga
+    incorrectas:
+      - texto: Tenis
+        feedback: 'En abril, la barra verde (tenis) llega al 7 y la roja (yoga), al 8. Hizo más yoga.'
+      - texto: Los mismos días
+        feedback: 'En abril las barras no son iguales: tenis, 7, y yoga, 8. Hizo más yoga.'
+
+  # Página 38, ejercicio 1d
+  - tipo: elegir
+    enunciado: ¿En qué meses fue más a tenis que a yoga?
+    grafico:
+      eje: Días
+      categorias: [Ene, Feb, Mar, Abr, May]
+      series:
+        - { nombre: Tenis, valores: [7, 6, 5, 7, 5] }
+        - { nombre: Yoga, valores: [3, 2, 7, 8, 9] }
+    correcta: En enero y en febrero
+    incorrectas:
+      - texto: En marzo, abril y mayo
+        feedback: 'En esos meses la barra más larga es la roja: fue más a yoga. La verde gana en enero (7 y 3) y en febrero (6 y 2).'
+      - texto: Solo en enero
+        feedback: 'En febrero también: tenis 6 y yoga 2. Son enero y febrero.'
+
+  # Representar datos en gráficos de barras, página 39, ejercicio 1a
+  - tipo: elegir
+    enunciado: ¿Cuál es la forma más común de llegar al colegio entre las chicas?
+    grafico:
+      horizontal: true
+      eje: Estudiantes de 3.º
+      categorias: [Andando, Bicicleta, Coche, Autobús]
+      series:
+        - { nombre: Chicas, valores: [14, 17, 12, 12] }
+        - { nombre: Chicos, valores: [16, 15, 14, 17] }
+    correcta: En bicicleta
+    incorrectas:
+      - texto: En autobús
+        feedback: 'La barra larga del autobús es la roja, la de los chicos (17). Las chicas son la verde: la más larga es la de la bicicleta, 17.'
+      - texto: Andando
+        feedback: 'Andando van 14 chicas, pero en bicicleta van 17. La barra verde más larga es la de la bicicleta.'
+
+  # Página 39, ejercicio 1c
+  - tipo: elegir
+    enunciado: ¿Qué formas usan menos de 30 estudiantes en total?
+    grafico:
+      horizontal: true
+      eje: Estudiantes de 3.º
+      categorias: [Andando, Bicicleta, Coche, Autobús]
+      series:
+        - { nombre: Chicas, valores: [14, 17, 12, 12] }
+        - { nombre: Chicos, valores: [16, 15, 14, 17] }
+    correcta: En coche y en autobús
+    incorrectas:
+      - texto: Andando y en coche
+        feedback: 'Andando van 14 + 16 = 30: no son menos de 30. En coche, 12 + 14 = 26, y en autobús, 12 + 17 = 29.'
+      - texto: Solo en coche
+        feedback: 'En autobús van 12 + 17 = 29, que también es menos de 30. Son el coche (26) y el autobús (29).'
+
+  # Página 39, ejercicio 1d
+  - tipo: elegir
+    enunciado: ¿En qué forma de llegar hay más diferencia entre chicas y chicos?
+    grafico:
+      horizontal: true
+      eje: Estudiantes de 3.º
+      categorias: [Andando, Bicicleta, Coche, Autobús]
+      series:
+        - { nombre: Chicas, valores: [14, 17, 12, 12] }
+        - { nombre: Chicos, valores: [16, 15, 14, 17] }
+    correcta: En autobús
+    incorrectas:
+      - texto: En bicicleta
+        feedback: 'En bicicleta, 17 − 15 = 2. En autobús, 17 − 12 = 5: ahí las barras son más distintas.'
+      - texto: Andando
+        feedback: 'Andando, 16 − 14 = 2. En autobús, 17 − 12 = 5: ahí las barras son más distintas.'
