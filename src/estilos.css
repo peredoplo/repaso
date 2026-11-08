@@ -2002,6 +2002,8 @@ h3 {
 }
 .columnas__fila--resultado > .columnas__celda,
 .columnas__fila--resultado > .columnas__signo {
+  /* Las dos de arriba a la misma altura, para que la raya salga seguida también bajo el signo. */
+  align-self: stretch;
   border-top: 3px solid var(--tinta);
   border-radius: 0;
   padding-top: 6px;

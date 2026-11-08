@@ -8,7 +8,8 @@ import type { PropsEjercicio } from './tipos';
 
 /**
  * Una suma o una resta en columna, como en el cuaderno: el resultado se escribe cifra a cifra, empezando por las
- * unidades (al escribir una, se salta a la columna de la izquierda), y encima se pueden apuntar las que te llevas,
+ * unidades (al escribir una, se salta a la columna de la izquierda), y se pueden apuntar las que te llevas (encima en la
+ * suma; en la resta, entre los dos números, porque se suman al de abajo),
  * que no se corrigen. Al fallar, la columna del fallo sale en rojo y el pie dice qué ha pasado en ella.
  */
 export default function Cuenta({ ejercicio: e, resultado, registrar }: PropsEjercicio<CuentaT>) {
@@ -45,8 +46,8 @@ export default function Cuenta({ ejercicio: e, resultado, registrar }: PropsEjer
   const mal = corregida && !corregida.bien && corregida.columna !== undefined ? [corregida.columna] : [];
   const estado = resultado ? (resultado.bien ? ' cuenta__caja--bien' : ' cuenta__caja--mal') : '';
 
-  // Encima de las unidades no se lleva nada.
-  const arriba = llevo.map((l, i) =>
+  // A las unidades no se lleva nada.
+  const llevadas = llevo.map((l, i) =>
     i === 0 ? null : (
       <input
         key={i}
@@ -90,8 +91,8 @@ export default function Cuenta({ ejercicio: e, resultado, registrar }: PropsEjer
         </p>
       )}
       <div className="dibujo cuenta">
-        <Rejilla columnas={columnas} filas={o.numeros.map(String)} signo={o.signo} arriba={arriba} abajo={abajo} mal={mal} />
-        <p className="cuenta__ayuda">Empieza por las unidades. Arriba puedes apuntar las que te llevas.</p>
+        <Rejilla columnas={columnas} filas={o.numeros.map(String)} signo={o.signo} llevadas={llevadas} abajo={abajo} mal={mal} />
+        <p className="cuenta__ayuda">Empieza por las unidades. {o.signo === '-' ? 'Entre los dos números' : 'Arriba'} puedes apuntar las que te llevas.</p>
       </div>
     </div>
   );

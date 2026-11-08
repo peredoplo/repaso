@@ -2,7 +2,7 @@
  * Los dibujos de Matemáticas, hechos con datos (idea de Numeritis): la cuenta en columna con la cabecera UM C D U del
  * libro, la recta numérica para aproximar y el gráfico de barras.
  */
-import type { ReactNode } from 'react';
+import { Fragment, type ReactNode } from 'react';
 import type { ColumnasT, GraficoT, RectaT } from '../contenido/esquema';
 import { escribirNumero, SIGLA_COLUMNA } from '../lib/aritmetica';
 
@@ -18,8 +18,8 @@ interface PropsRejilla {
   columnas: number;
   filas: string[];
   signo?: '+' | '-';
-  /** Lo de encima de cada columna (las que te llevas), desde las unidades. */
-  arriba?: ReactNode[];
+  /** Las que te llevas en cada columna, desde las unidades: encima en la suma, entre los dos números en la resta. */
+  llevadas?: ReactNode[];
   /** La fila del resultado, desde las unidades; sin ella, no hay raya. */
   abajo?: ReactNode[];
   /** Columnas marcadas en rojo (0 = unidades). */
@@ -27,9 +27,21 @@ interface PropsRejilla {
 }
 
 /** La rejilla de una cuenta en columna, como en el cuaderno: cada cifra en su columna, con su letra arriba. */
-export function Rejilla({ columnas, filas, signo, arriba, abajo, mal = [] }: PropsRejilla) {
+export function Rejilla({ columnas, filas, signo, llevadas, abajo, mal = [] }: PropsRejilla) {
   const orden = Array.from({ length: columnas }, (_, k) => columnas - 1 - k); // de la izquierda (UM) a las unidades
   const clase = (i: number) => `columnas__celda columnas__celda--${SIGLA_COLUMNA[i].toLowerCase()}${mal.includes(i) ? ' columnas__celda--mal' : ''}`;
+  // Lo que te llevas: en la suma, encima de los números; en la resta, entre los dos (se suma al de abajo).
+  const filaLlevadas = llevadas && (
+    <div className="columnas__fila" role="row">
+      <span />
+      {orden.map((i) => (
+        <span key={i} className="columnas__llevada">
+          {llevadas[i]}
+        </span>
+      ))}
+    </div>
+  );
+  const posLlevadas = signo === '-' ? 0 : -1;
   return (
     <div className="columnas" style={{ gridTemplateColumns: `1.6rem repeat(${columnas}, 2.6rem)` }} role="table" aria-label="Cuenta en columna">
       <span />
@@ -38,27 +50,21 @@ export function Rejilla({ columnas, filas, signo, arriba, abajo, mal = [] }: Pro
           {SIGLA_COLUMNA[i]}
         </span>
       ))}
-      {arriba && (
-        <>
-          <span />
-          {orden.map((i) => (
-            <span key={i} className="columnas__llevada">
-              {arriba[i]}
-            </span>
-          ))}
-        </>
-      )}
+      {posLlevadas < 0 && filaLlevadas}
       {filas.map((f, k) => {
         const cifras = enColumnas(f, columnas);
         return (
-          <div key={k} className="columnas__fila" role="row">
-            <span className="columnas__signo">{k === filas.length - 1 && signo ? (signo === '-' ? '−' : '+') : ''}</span>
-            {orden.map((i) => (
-              <span key={i} className={clase(i)} role="cell">
-                {cifras[i]}
-              </span>
-            ))}
-          </div>
+          <Fragment key={k}>
+            <div className="columnas__fila" role="row">
+              <span className="columnas__signo">{k === filas.length - 1 && signo ? (signo === '-' ? '−' : '+') : ''}</span>
+              {orden.map((i) => (
+                <span key={i} className={clase(i)} role="cell">
+                  {cifras[i]}
+                </span>
+              ))}
+            </div>
+            {k === posLlevadas && filaLlevadas}
+          </Fragment>
         );
       })}
       {abajo && (
@@ -80,10 +86,10 @@ export function Columnas({ c }: { c: ColumnasT }) {
   const resultado = c.resultado && c.resultado !== '?' ? c.resultado : undefined;
   const columnas = Math.max(...[...c.filas, resultado ?? ''].map((t) => soloCifras(t).length));
   const abajo = c.resultado ? (resultado ? enColumnas(resultado, columnas) : Array.from({ length: columnas }, () => '?')) : undefined;
-  const arriba = c.llevadas ? Array.from({ length: columnas }, (_, i) => c.llevadas![i] ?? '') : undefined;
+  const llevadas = c.llevadas ? Array.from({ length: columnas }, (_, i) => c.llevadas![i] ?? '') : undefined;
   return (
     <div className="dibujo">
-      <Rejilla columnas={columnas} filas={c.filas} signo={c.signo} arriba={arriba} abajo={abajo} mal={c.mal} />
+      <Rejilla columnas={columnas} filas={c.filas} signo={c.signo} llevadas={llevadas} abajo={abajo} mal={c.mal} />
     </div>
   );
 }
