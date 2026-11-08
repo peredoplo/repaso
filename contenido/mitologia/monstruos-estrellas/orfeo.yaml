@@ -1,0 +1,93 @@
+titulo: Orfeo y Eurídice
+subtitulo: No mires atrás
+emoji: 🎶
+ejercicios:
+  - tipo: chat
+    titulo: El mejor músico del mundo
+    mensajes:
+      - de: santiago
+        texto: 'Orfeo era el mejor músico del mundo. Era hijo de una de las Musas, Calíope, y Apolo le regaló una lira.'
+        dibujo: 🎵 🎶
+      - de: vega
+        texto: 'Cuando tocaba, los animales se acercaban a escuchar, los árboles se movían, y hasta las piedras le seguían.'
+        dibujo: 🐻 🌳
+      - de: hugo
+        texto: 'Viajó con los argonautas. Al pasar por la isla de las sirenas, cantó más fuerte y más bonito que ellas, y sus compañeros no se acercaron.'
+        dibujo: ⛵ 🐦
+      - de: valentina
+        texto: 'Se casó con una ninfa, Eurídice. Pero poco después, a ella le picó una serpiente, y murió.'
+        dibujo: 💍 🐍
+      - de: santiago
+        texto: 'Orfeo estaba tan triste, que decidió bajar al inframundo a buscarla.'
+        dibujo: 😢 ⬇️
+
+  - tipo: elegir
+    enunciado: ¿Qué pasaba cuando Orfeo tocaba la lira?
+    dibujo: 🎵
+    correcta: 🐻 Los animales se acercaban a escuchar
+    incorrectas:
+      - texto: 🙉 Todos se tapaban los oídos
+        feedback: ¡Ja, ja! Al revés. Era el mejor músico del mundo, y los animales se acercaban a escuchar.
+      - texto: 🌧️ Se ponía a llover
+        feedback: No. Los animales se acercaban a escuchar, y hasta las piedras le seguían.
+
+  - tipo: elegir
+    enunciado: ¿Cómo ayudó Orfeo a los argonautas?
+    dibujo: ⛵ 🎶
+    correcta: 🎵 Cantando más fuerte que las sirenas
+    incorrectas:
+      - texto: 🚣 Remando más rápido
+        feedback: No. Cantó más fuerte y más bonito que las sirenas.
+      - texto: 🍳 Cocinando
+        feedback: ¡Ja, ja! No. Cantó más fuerte y más bonito que las sirenas.
+
+  - tipo: chat
+    titulo: El camino de vuelta
+    mensajes:
+      - de: vega
+        texto: 'Con su música, convenció a Caronte de que lo cruzara. Y Cerbero se quedó dormido escuchándola.'
+        dibujo: 🛶 🐕
+      - de: hugo
+        texto: 'Hasta Sísifo se sentó en su roca a escuchar.'
+        dibujo: 🪨 👂
+      - de: valentina
+        texto: 'Hades y Perséfone se emocionaron. Le dejaron llevarse a Eurídice, con una condición: ella iría detrás de él, y Orfeo no podía mirar atrás hasta salir a la luz.'
+        dibujo: 🤝 🙈
+      - de: santiago
+        texto: 'Subieron por un camino largo, oscuro y en silencio. Orfeo no oía sus pasos, y empezó a dudar.'
+        dibujo: 🌑 🤔
+      - de: vega
+        texto: 'Justo al llegar a la salida, no pudo aguantar más, y miró hacia atrás. Y Eurídice desapareció para siempre.'
+        dibujo: 👀 💨
+      - de: hugo
+        texto: 'Cuando Orfeo murió, su lira subió al cielo. Es la constelación de la Lira.'
+        dibujo: 🎵 ⭐
+      - de: vega
+        texto: 'Y su estrella más brillante se llama Vega. ¡Como yo! Es de las más brillantes en las noches de verano.'
+        dibujo: ⭐ 😊
+
+  - tipo: elegir
+    enunciado: ¿Qué condición le puso Hades a Orfeo?
+    dibujo: 💀 🤝
+    correcta: 🙈 No mirar atrás
+    incorrectas:
+      - texto: 🔇 No tocar más música
+        feedback: No. Le dijo que no mirara atrás hasta salir a la luz.
+      - texto: 🪙 Pagar mil monedas
+        feedback: No. Le dijo que no mirara atrás hasta salir a la luz.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama la estrella más brillante de la Lira?
+    dibujo: 🎵 ⭐
+    correcta: ⭐ Vega
+    incorrectas:
+      - texto: ☀️ El Sol
+        feedback: El Sol es nuestra estrella. La de la Lira se llama Vega.
+      - texto: 🐕 Sirio
+        feedback: Sirio está en la constelación del Perro. La de la Lira se llama Vega.
+
+  - tipo: ordenar
+    enunciado: Ordena la historia de Orfeo.
+    piezas: 👀 Orfeo mira atrás / 🤝 Hades le deja llevarla / 🐍 Pican a Eurídice / 🎵 Orfeo baja con su lira
+    solucion: 🐍 Pican a Eurídice 🎵 Orfeo baja con su lira 🤝 Hades le deja llevarla 👀 Orfeo mira atrás
+    explicacion: Una serpiente pica a Eurídice. Orfeo baja al inframundo con su lira. Hades le deja llevarla. Pero Orfeo mira atrás.

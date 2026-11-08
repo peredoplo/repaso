@@ -1,0 +1,80 @@
+titulo: Los establos y las aves
+subtitulo: El quinto y el sexto trabajo
+emoji: 🐄
+ejercicios:
+  - tipo: chat
+    titulo: El trabajo más asqueroso
+    mensajes:
+      - de: santiago
+        texto: 'El quinto trabajo era asqueroso: limpiar en un solo día los establos del rey Augías, donde vivían sus vacas.'
+        dibujo: 🐄 🤢
+      - de: vega
+        texto: 'Augías tenía miles de vacas, y los establos llevaban treinta años sin limpiarse. ¡Imagina el olor!'
+        dibujo: 💩 💩
+      - de: hugo
+        texto: 'Heracles le dijo al rey: si lo limpio en un día, me das una de cada diez vacas. El rey se rio, y aceptó.'
+        dibujo: 🤝 😂
+      - de: valentina
+        texto: 'Heracles abrió dos agujeros en las paredes, y desvió dos ríos para que pasaran por dentro.'
+        dibujo: 🌊 🌊
+      - de: santiago
+        texto: '¡El agua se lo llevó todo en un día! Estaba limpísimo.'
+        dibujo: ✨ 🧼
+      - de: vega
+        texto: 'Pero Augías no quiso pagar. Y Euristeo dijo que este tampoco valía, porque Heracles había pedido una paga.'
+        dibujo: 💰 🚫
+
+  - tipo: elegir
+    enunciado: ¿Cómo limpió Heracles los establos?
+    dibujo: 🐄 💩
+    correcta: 🌊 Desviando dos ríos
+    incorrectas:
+      - texto: 🧹 Con una escoba
+        feedback: ¡Habría tardado años! Desvió dos ríos, y el agua se lo llevó todo.
+      - texto: 🧽 Con una esponja
+        feedback: ¡Ja, ja! No. Desvió dos ríos, y el agua se lo llevó todo.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Euristeo dijo que este trabajo no valía?
+    dibujo: 👑 🚫
+    correcta: 💰 Porque Heracles pidió una paga
+    incorrectas:
+      - texto: 💩 Porque quedó sucio
+        feedback: No. Quedó limpísimo. No valía porque Heracles pidió una paga.
+      - texto: 🤝 Porque le ayudó Yolao
+        feedback: Eso fue con la Hidra. Este no valía porque Heracles pidió una paga.
+
+  - tipo: chat
+    titulo: Las aves del lago
+    mensajes:
+      - de: hugo
+        texto: 'El sexto: echar a las aves del lago Estínfalo. Eran muchísimas, y se comían las cosechas. Dicen que tenían plumas de bronce, afiladas como flechas.'
+        dibujo: 🐦 🐦 🐦
+      - de: valentina
+        texto: 'Estaban escondidas en un bosque, junto a un pantano. Heracles no podía entrar: el barro se lo tragaba.'
+        dibujo: 🌳 🟫
+      - de: santiago
+        texto: 'Atenea le dio unas castañuelas de bronce, como platillos, que había hecho Hefesto.'
+        dibujo: 🔔 🦉
+      - de: vega
+        texto: 'Heracles subió a un monte y las hizo sonar. ¡Qué ruido! Las aves salieron volando asustadas, y él las disparó con su arco.'
+        dibujo: 🔊 🏹
+      - de: hugo
+        texto: 'Las que quedaron se fueron muy lejos, a una isla. Allí las encontraron, años después, los argonautas.'
+        dibujo: 🏝️ ⛵
+
+  - tipo: elegir
+    enunciado: ¿Qué usó Heracles para asustar a las aves?
+    dibujo: 🐦 🌳
+    correcta: 🔔 Unas castañuelas de bronce
+    incorrectas:
+      - texto: 🎤 Un micrófono
+        feedback: ¡Ja, ja! No había micrófonos. Usó unas castañuelas de bronce muy ruidosas.
+      - texto: 🍞 Migas de pan
+        feedback: Así las habría llamado, no asustado. Usó unas castañuelas de bronce muy ruidosas.
+
+  - tipo: ordenar
+    enunciado: Ordena los seis primeros trabajos de Heracles.
+    piezas: 🐄 Establos / 🦁 León / 🐦 Aves / 🦌 Cierva / 🐍 Hidra / 🐗 Jabalí
+    solucion: 🦁 León 🐍 Hidra 🦌 Cierva 🐗 Jabalí 🐄 Establos 🐦 Aves
+    explicacion: Primero el león de Nemea, luego la Hidra. Después la cierva y el jabalí. Y luego los establos y las aves.

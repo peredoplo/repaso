@@ -1,0 +1,96 @@
+titulo: La Esfinge y su adivinanza
+subtitulo: Y otras criaturas fantásticas
+emoji: 🦁
+ejercicios:
+  - tipo: chat
+    titulo: La adivinanza más famosa
+    mensajes:
+      - de: santiago
+        texto: 'La Esfinge griega tenía cuerpo de león, alas de águila y cabeza de mujer.'
+        dibujo: 🦁 🦅
+      - de: vega
+        texto: 'Se sentaba en una roca, a la entrada de la ciudad de Tebas. Y a todo el que pasaba le hacía una adivinanza.'
+        dibujo: 🪨 ❓
+      - de: hugo
+        texto: 'Si no la acertabas, ¡te comía! Y como nadie la acertaba, nadie podía entrar ni salir de Tebas.'
+        dibujo: 😋 🚫
+      - de: valentina
+        texto: 'La adivinanza era esta: «¿Qué ser anda a cuatro patas por la mañana, a dos al mediodía, y a tres por la tarde?».'
+        dibujo: 🌅 ☀️ 🌇
+      - de: santiago
+        texto: '¿Lo sabes? Piénsalo un momento, antes de seguir…'
+        dibujo: 🤔
+      - de: vega
+        texto: 'Un joven, Edipo, contestó: el ser humano. De bebé gatea a cuatro patas. De mayor anda con dos. Y de viejo usa bastón, que es como una tercera pata.'
+        dibujo: 👶 🚶 🧓
+      - de: hugo
+        texto: 'La Esfinge, furiosa por haber perdido, se tiró de la roca. Y Edipo fue rey de Tebas.'
+        dibujo: 👑 🎉
+      - de: valentina
+        texto: 'En Egipto hay una Esfinge gigante de piedra, junto a las pirámides. Pero esa tiene cabeza de rey, de faraón, y no tiene alas.'
+        dibujo: 🗿 🔺
+
+  - tipo: ordenar
+    enunciado: Ordena la respuesta de la adivinanza, de la mañana a la tarde.
+    piezas: 🧓 Tres patas / 👶 Cuatro patas / 🚶 Dos patas
+    solucion: 👶 Cuatro patas 🚶 Dos patas 🧓 Tres patas
+    explicacion: Por la mañana de la vida, un bebé gatea a cuatro patas. Luego andamos con dos. Y de viejos, con bastón, son tres.
+
+  - tipo: elegir
+    enunciado: ¿Cuál era la respuesta a la adivinanza de la Esfinge?
+    dibujo: ❓
+    correcta: 🧍 El ser humano
+    incorrectas:
+      - texto: 🐕 El perro
+        feedback: El perro anda siempre a cuatro patas. La respuesta era el ser humano.
+      - texto: 🐛 La oruga
+        feedback: ¡Ja, ja! Tiene muchas más patas. La respuesta era el ser humano.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasaba si no acertabas la adivinanza?
+    dibujo: 🦁 ❓
+    correcta: 😋 La Esfinge te comía
+    incorrectas:
+      - texto: 🎁 Te daba un premio
+        feedback: Al revés. Si no la acertabas, la Esfinge te comía.
+      - texto: 🔁 Te hacía otra
+        feedback: No había segunda oportunidad. Si no la acertabas, te comía.
+
+  - tipo: chat
+    titulo: Más criaturas fantásticas
+    mensajes:
+      - de: santiago
+        texto: 'Los grifos tenían cuerpo de león, y cabeza y alas de águila. Decían que vigilaban el oro en las montañas.'
+        dibujo: 🦁 🦅
+      - de: vega
+        texto: 'Los griegos también hablaban del ave fénix. Cuando se hacía vieja, ardía en llamas, y volvía a nacer de sus cenizas.'
+        dibujo: 🐦 🔥
+      - de: hugo
+        texto: 'Cerbero, la Hidra, la Quimera y la Esfinge eran de la misma familia monstruosa, la de Tifón y Equidna. ¡Vaya familia!'
+        dibujo: 🐕 🐍 🦁
+      - de: valentina
+        texto: 'Algunos científicos creen que ciertos mitos nacieron al encontrar fósiles. Un cráneo de mamut tiene un agujero grande en el centro, el de la trompa, y parece la cabeza de un cíclope.'
+        dibujo: 🦣 👁️
+      - de: santiago
+        texto: 'Y el esqueleto de un dinosaurio con pico, que se encuentra en Asia, se parece mucho a un grifo.'
+        dibujo: 🦖 🦅
+
+  - tipo: elegir
+    enunciado: ¿Qué fósil pudo hacer pensar en los cíclopes?
+    dibujo: 👁️ 💀
+    correcta: 🦣 Un cráneo de mamut
+    incorrectas:
+      - texto: 🐚 Una concha
+        feedback: No. Un cráneo de mamut, con el agujero de la trompa en el centro, parece un cíclope.
+      - texto: 🦷 Un diente de leche
+        feedback: ¡Ja, ja! No. Un cráneo de mamut, con el agujero de la trompa en el centro.
+
+  - tipo: elegir
+    enunciado: ¿Cómo era un grifo?
+    dibujo: 🪙 ⛰️
+    correcta: 🦅 León con cabeza y alas de águila
+    incorrectas:
+      - texto: 🐴 Caballo con alas
+        feedback: Ese era Pegaso. El grifo era un león con cabeza y alas de águila.
+      - texto: 🚰 Un grifo de agua
+        feedback: ¡Ja, ja! Se llama igual. El grifo de los mitos era un león con cabeza y alas de águila.

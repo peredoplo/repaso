@@ -1,0 +1,88 @@
+titulo: Los vientos y la hechicera
+subtitulo: Eolo y Circe
+emoji: 🌬️
+ejercicios:
+  - tipo: chat
+    titulo: El saco de los vientos
+    mensajes:
+      - de: santiago
+        texto: 'Odiseo llegó a la isla de Eolo, el señor de los vientos. Eolo le regaló un saco de piel con todos los vientos malos dentro, bien atado.'
+        dibujo: 🌬️ 👝
+      - de: vega
+        texto: 'Solo dejó fuera un viento suave, que los llevaba a casa. Navegaron nueve días, y ya veían Ítaca.'
+        dibujo: ⛵ 🏝️
+      - de: hugo
+        texto: 'Odiseo, agotado, se durmió. Los marineros pensaron que en el saco había oro, y lo abrieron.'
+        dibujo: 😴 💰
+      - de: valentina
+        texto: '¡Salieron todos los vientos a la vez! La tormenta los mandó lejísimos, otra vez a la isla de Eolo. Y Eolo ya no los quiso ayudar.'
+        dibujo: 🌪️ 😩
+
+  - tipo: elegir
+    enunciado: ¿Qué había en el saco de Eolo?
+    dibujo: 👝
+    correcta: 🌬️ Los vientos
+    incorrectas:
+      - texto: 💰 Oro
+        feedback: Eso creían los marineros. Dentro estaban los vientos malos.
+      - texto: 🧦 Calcetines
+        feedback: ¡Ja, ja! No. Dentro estaban los vientos malos.
+
+  - tipo: elegir
+    enunciado: ¿Por qué abrieron el saco los marineros?
+    dibujo: 👝 😴
+    correcta: 💰 Creían que había oro
+    incorrectas:
+      - texto: 🥶 Tenían frío
+        feedback: No. Creían que dentro había oro.
+      - texto: 🐱 Oían un gato
+        feedback: ¡Ja, ja! No. Creían que dentro había oro.
+
+  - tipo: chat
+    titulo: Circe y los cerdos
+    mensajes:
+      - de: valentina
+        texto: 'Después llegaron a la isla de la hechicera Circe. Algunos marineros fueron a su palacio, rodeado de lobos y leones mansos.'
+        dibujo: 🏰 🐺
+      - de: santiago
+        texto: 'Circe les dio de comer con una poción mágica dentro. Y con un toque de su varita, ¡los convirtió en cerdos!'
+        dibujo: 🪄 🐷
+      - de: vega
+        texto: 'Hermes se le apareció a Odiseo, y le dio una planta mágica, la hierba moly, que lo protegía de las pociones.'
+        dibujo: 🏃 🌿
+      - de: hugo
+        texto: 'Circe intentó convertirlo a él también, pero no pudo. Asombrada, devolvió a los marineros su forma, y se hicieron amigos.'
+        dibujo: 😮 🤝
+      - de: valentina
+        texto: 'Se quedaron con ella un año entero. Al irse, Circe les avisó de los peligros que venían.'
+        dibujo: 📅 ⚠️
+
+  - tipo: elegir
+    enunciado: ¿En qué convirtió Circe a los marineros?
+    dibujo: 🪄
+    correcta: 🐷 En cerdos
+    incorrectas:
+      - texto: 🐸 En ranas
+        feedback: No. Los convirtió en cerdos.
+      - texto: 🗿 En piedra
+        feedback: Eso hacía Medusa. Circe los convirtió en cerdos.
+
+  - tipo: elegir
+    enunciado: ¿Qué protegió a Odiseo de las pociones de Circe?
+    dibujo: 🪄 🛡️
+    correcta: 🌿 La hierba moly
+    incorrectas:
+      - texto: 🧄 Un ajo
+        feedback: ¡Ja, ja! No. Hermes le dio una planta mágica, la hierba moly.
+      - texto: 🪖 El casco de Hades
+        feedback: Ese lo usó Perseo. A Odiseo lo protegió la hierba moly.
+
+  - tipo: elegir
+    enunciado: ¿Quién le dio a Odiseo la hierba mágica?
+    dibujo: 🌿
+    correcta: 🏃 Hermes
+    incorrectas:
+      - texto: 🔱 Poseidón
+        feedback: Poseidón estaba enfadado con él. La hierba se la dio Hermes.
+      - texto: 🐷 Un cerdo
+        feedback: ¡Ja, ja! No. La hierba se la dio Hermes.

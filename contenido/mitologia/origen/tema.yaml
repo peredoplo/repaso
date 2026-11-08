@@ -1,0 +1,17 @@
+# Mitología griega (8 de noviembre de 2026): a Miguel le encanta, y el autor pidió varios bloques para desarrollarla a
+# fondo, como «El universo a fondo». Sin leer: todo se oye. Nivel alto, con las palabras difíciles explicadas al decirlas.
+# Versiones suaves de los mitos (para un niño de Infantil), pero sin inventar: donde hay varias versiones, se dice.
+asignatura: Mitología griega
+titulo: El origen del mundo
+descripcion: Del Caos a los dioses, y el fuego de los humanos.
+sinLeer: true
+lecciones:
+  - caos
+  - cronos
+  - titanomaquia
+  - olimpo
+  - tifon
+  - prometeo
+  - pandora
+  - diluvio
+  - moiras-musas

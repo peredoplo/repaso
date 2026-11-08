@@ -1,0 +1,97 @@
+titulo: Perseo y el encargo imposible
+subtitulo: Los regalos de los dioses
+emoji: 🎁
+ejercicios:
+  - tipo: chat
+    titulo: Un bebé en un cofre
+    mensajes:
+      - de: santiago
+        texto: 'El rey Acrisio tenía una hija, Dánae. Un oráculo le avisó: el hijo de Dánae será tu final.'
+        dibujo: 👑 🔮
+      - de: vega
+        texto: 'Asustado, encerró a Dánae en una habitación de bronce bajo tierra, para que nadie pudiera entrar.'
+        dibujo: 🔒 🟫
+      - de: hugo
+        texto: 'Pero Zeus entró, convertido en una lluvia de oro. Y nació un niño: Perseo.'
+        dibujo: ✨ 👶
+      - de: valentina
+        texto: 'Acrisio metió a Dánae y al bebé en un cofre de madera, y lo echó al mar.'
+        dibujo: 📦 🌊
+      - de: santiago
+        texto: 'El cofre llegó flotando a una isla. Un pescador bueno, Dictis, los rescató y los cuidó.'
+        dibujo: 🎣 🏝️
+      - de: vega
+        texto: 'El rey de la isla, Polidectes, quería casarse con Dánae, aunque ella no quería. Y Perseo, ya mayor, la protegía.'
+        dibujo: 👑 🛡️
+      - de: hugo
+        texto: 'Para librarse de Perseo, Polidectes le pidió un regalo imposible: la cabeza de Medusa.'
+        dibujo: 🐍 😱
+
+  - tipo: elegir
+    enunciado: ¿Cómo llegaron Dánae y el bebé Perseo a la isla?
+    dibujo: 👶 🏝️
+    correcta: 📦 En un cofre, por el mar
+    incorrectas:
+      - texto: 🐬 A lomos de un delfín
+        feedback: No. Llegaron flotando en un cofre de madera, por el mar.
+      - texto: 🎈 En globo
+        feedback: ¡Ja, ja! No. Llegaron flotando en un cofre de madera.
+
+  - tipo: elegir
+    enunciado: ¿Qué le pidió el rey Polidectes a Perseo?
+    dibujo: 👑
+    correcta: 🐍 La cabeza de Medusa
+    incorrectas:
+      - texto: 🍰 Una tarta de cumpleaños
+        feedback: ¡Ja, ja! No. Le pidió algo imposible, la cabeza de Medusa.
+      - texto: 🐎 Un caballo
+        feedback: No. Le pidió algo imposible, la cabeza de Medusa.
+
+  - tipo: chat
+    titulo: Los regalos de los dioses
+    mensajes:
+      - de: valentina
+        texto: 'Medusa era una de las tres Gorgonas. En vez de pelo, tenía serpientes. Y quien la miraba a los ojos se convertía en piedra.'
+        dibujo: 🐍 🗿
+      - de: santiago
+        texto: 'Atenea y Hermes ayudaron a Perseo. Atenea le dio un escudo de bronce, brillante como un espejo. Hermes, una espada curva.'
+        dibujo: 🛡️ 🗡️
+      - de: vega
+        texto: 'Primero tenía que encontrar a las Grayas, tres hermanas viejísimas que solo tenían un ojo y un diente para las tres. ¡Se los iban pasando!'
+        dibujo: 👵 👁️
+      - de: hugo
+        texto: 'Perseo les quitó el ojo justo cuando se lo pasaban. Y no se lo devolvió hasta que le dijeron dónde vivían ciertas ninfas.'
+        dibujo: 👁️ 🤲
+      - de: valentina
+        texto: 'Las ninfas le dieron tres regalos más: unas sandalias con alas para volar, el casco de Hades, que te hace invisible, y una bolsa mágica.'
+        dibujo: 🪶 🪖 👜
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasaba a quien miraba a Medusa?
+    dibujo: 🐍 👀
+    correcta: 🗿 Se convertía en piedra
+    incorrectas:
+      - texto: 😴 Se dormía
+        feedback: No. Se convertía en piedra.
+      - texto: 🤣 Le daba la risa
+        feedback: ¡Ja, ja! No. Se convertía en piedra.
+
+  - tipo: elegir
+    enunciado: ¿Qué compartían las tres Grayas?
+    dibujo: 👵 👵 👵
+    correcta: 👁️ Un ojo y un diente
+    incorrectas:
+      - texto: 🧣 Una bufanda
+        feedback: ¡Ja, ja! No. Compartían un solo ojo y un solo diente.
+      - texto: 🛏️ Una cama
+        feedback: No. Compartían un solo ojo y un solo diente.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacían las sandalias que le dieron a Perseo?
+    dibujo: 🪶
+    correcta: 🕊️ Lo hacían volar
+    incorrectas:
+      - texto: 👻 Lo hacían invisible
+        feedback: Eso lo hacía el casco de Hades. Las sandalias con alas lo hacían volar.
+      - texto: 💃 Lo hacían bailar
+        feedback: ¡Ja, ja! No. Las sandalias con alas lo hacían volar.

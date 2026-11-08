@@ -1,0 +1,90 @@
+titulo: Odiseo y el cíclope
+subtitulo: Me llamo Nadie
+emoji: 👁️
+ejercicios:
+  - tipo: chat
+    titulo: La cueva del gigante
+    mensajes:
+      - de: vega
+        texto: 'Después de la guerra, Odiseo, rey de la isla de Ítaca, quería volver a casa con su esposa, Penélope, y su hijo, Telémaco.'
+        dibujo: 🏝️ 👪
+      - de: hugo
+        texto: 'Pero tardó diez años más. Su viaje lo cuenta otro poema de Homero, la Odisea. Hoy, una odisea es un viaje lleno de problemas.'
+        dibujo: 📜 ⛵
+      - de: valentina
+        texto: 'En una isla entraron en una cueva llena de quesos y corderos. Era la casa del cíclope Polifemo, un gigante de un solo ojo, hijo de Poseidón.'
+        dibujo: 🧀 🐑
+      - de: santiago
+        texto: 'Polifemo volvió y tapó la entrada con una roca que ni veinte carros podrían mover. Y atrapó a los marineros para comérselos.'
+        dibujo: 🪨 😱
+      - de: vega
+        texto: 'Odiseo le dio un vino muy fuerte. Polifemo le preguntó cómo se llamaba, y Odiseo contestó: me llamo Nadie.'
+        dibujo: 🍷 🙅
+
+  - tipo: elegir
+    enunciado: ¿Qué nombre le dijo Odiseo al cíclope?
+    dibujo: 👁️ ❓
+    correcta: 🙅 Nadie
+    incorrectas:
+      - texto: 🧠 Odiseo
+        feedback: Ese era su nombre de verdad, pero le dijo otro. Le dijo que se llamaba Nadie.
+      - texto: 🦸 Superhéroe
+        feedback: ¡Ja, ja! No. Le dijo que se llamaba Nadie.
+
+  - tipo: elegir
+    enunciado: ¿De quién era hijo el cíclope Polifemo?
+    dibujo: 👁️
+    correcta: 🔱 De Poseidón
+    incorrectas:
+      - texto: ⚡ De Zeus
+        feedback: No. Polifemo era hijo de Poseidón, el dios del mar.
+      - texto: 🐑 De una oveja
+        feedback: ¡Ja, ja! No. Era hijo de Poseidón, el dios del mar.
+
+  - tipo: chat
+    titulo: Escapar con las ovejas
+    mensajes:
+      - de: hugo
+        texto: 'Cuando Polifemo se durmió, Odiseo y sus hombres calentaron en el fuego un tronco afilado, y se lo clavaron en el ojo.'
+        dibujo: 🔥 🪵
+      - de: valentina
+        texto: 'Polifemo pidió ayuda a gritos a los otros cíclopes: «¡Nadie me ataca!». Y ellos contestaron: «Si nadie te ataca, déjanos dormir».'
+        dibujo: 📣 😴
+      - de: santiago
+        texto: 'Por la mañana, Polifemo, que ya no veía, apartó la roca para sacar sus ovejas. Les tocaba el lomo, para que nadie escapara montado en ellas.'
+        dibujo: 🐑 ✋
+      - de: vega
+        texto: 'Pero Odiseo ató a cada marinero debajo de la tripa de las ovejas, y él se agarró a la lana del carnero más grande. ¡Escaparon!'
+        dibujo: 🐑 🧍
+      - de: hugo
+        texto: 'Ya en el barco, Odiseo gritó su nombre verdadero, presumiendo. Fue un error. Polifemo le pidió a su padre, Poseidón, que lo castigara.'
+        dibujo: 📣 🔱
+      - de: valentina
+        texto: 'Desde entonces, Poseidón le puso mil problemas en el mar para que no llegara a casa.'
+        dibujo: 🌊 ⛈️
+
+  - tipo: elegir
+    enunciado: ¿Cómo salieron de la cueva?
+    dibujo: 🪨 🚪
+    correcta: 🐑 Agarrados bajo las ovejas
+    incorrectas:
+      - texto: 🕳️ Por un túnel
+        feedback: No. Se agarraron debajo de las ovejas, y el cíclope no los notó.
+      - texto: 🦸 Volando
+        feedback: ¡Ja, ja! No. Se agarraron debajo de las ovejas.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Poseidón castigó a Odiseo?
+    dibujo: 🔱 😠
+    correcta: 👁️ Porque dejó ciego a su hijo
+    incorrectas:
+      - texto: 🐟 Porque pescó en su mar
+        feedback: No. Odiseo había dejado ciego a su hijo, el cíclope Polifemo.
+      - texto: 🧀 Porque se comió los quesos
+        feedback: ¡Ja, ja! No. Odiseo había dejado ciego a su hijo, el cíclope Polifemo.
+
+  - tipo: ordenar
+    enunciado: Ordena la aventura del cíclope.
+    piezas: 🐑 Escapan con las ovejas / 🍷 Odiseo le da vino / 🧀 Entran en la cueva / 🪵 Le clavan el tronco
+    solucion: 🧀 Entran en la cueva 🍷 Odiseo le da vino 🪵 Le clavan el tronco 🐑 Escapan con las ovejas
+    explicacion: Entran en la cueva. Odiseo le da vino al cíclope. Cuando se duerme, le clavan el tronco. Y escapan con las ovejas.

@@ -1,0 +1,93 @@
+titulo: La manzana de la discordia
+subtitulo: Así empezó la guerra de Troya
+emoji: 🍎
+ejercicios:
+  - tipo: chat
+    titulo: Una boda con una invitada enfadada
+    mensajes:
+      - de: santiago
+        texto: 'La guerra de Troya es la historia más famosa de Grecia. La contó Homero, un poeta que, según cuentan, era ciego, en un poema enorme: la Ilíada.'
+        dibujo: 📜 🏛️
+      - de: vega
+        texto: 'Todo empezó en una boda: la de la ninfa del mar Tetis y el rey Peleo. Invitaron a todos los dioses… menos a una.'
+        dibujo: 💒 🎉
+      - de: hugo
+        texto: 'Eris, la diosa de la discordia, que quiere decir de las peleas, no estaba invitada. Y se enfadó muchísimo.'
+        dibujo: 😤 🚫
+      - de: valentina
+        texto: 'Lanzó a la fiesta una manzana de oro que decía: «Para la más bella».'
+        dibujo: 🍎 ✨
+      - de: santiago
+        texto: 'Tres diosas la querían: Hera, Atenea y Afrodita. ¡Y se pusieron a discutir!'
+        dibujo: 🦚 🦉 🌹
+      - de: vega
+        texto: 'Zeus no quiso elegir, menudo lío. Mandó a Hermes a buscar a un joven pastor para que decidiera él. Se llamaba Paris, y en realidad era un príncipe de Troya.'
+        dibujo: 🐑 🧑
+
+  - tipo: elegir
+    enunciado: ¿Quién lanzó la manzana a la boda?
+    dibujo: 🍎 💒
+    correcta: 😤 Eris, la diosa de las peleas
+    incorrectas:
+      - texto: 🌹 Afrodita
+        feedback: Afrodita quería la manzana. La lanzó Eris, la diosa de las peleas, que no estaba invitada.
+      - texto: 🐒 Un mono
+        feedback: ¡Ja, ja! No. La lanzó Eris, la diosa de las peleas, que no estaba invitada.
+
+  - tipo: elegir
+    enunciado: ¿Qué ponía en la manzana de oro?
+    dibujo: 🍎 ✨
+    correcta: 👑 Para la más bella
+    incorrectas:
+      - texto: 😋 Cómeme
+        feedback: ¡Ja, ja! No. Ponía «Para la más bella».
+      - texto: 🎂 Feliz cumpleaños
+        feedback: No era un cumpleaños, era una boda. Ponía «Para la más bella».
+
+  - tipo: chat
+    titulo: El juicio de Paris
+    mensajes:
+      - de: hugo
+        texto: 'Cada diosa le prometió a Paris un regalo si la elegía. Hera, ser el rey más poderoso. Atenea, ganar todas las batallas.'
+        dibujo: 👑 ⚔️
+      - de: valentina
+        texto: 'Y Afrodita le prometió el amor de la mujer más bella del mundo: Helena.'
+        dibujo: 💘 👸
+      - de: santiago
+        texto: 'Paris eligió a Afrodita. Pero Helena ya estaba casada con Menelao, el rey de Esparta.'
+        dibujo: 🌹 💍
+      - de: vega
+        texto: 'Paris viajó a Esparta, y Helena se fue con él a Troya.'
+        dibujo: ⛵ 🏰
+      - de: hugo
+        texto: 'Menelao y su hermano Agamenón reunieron a todos los reyes de Grecia, con más de mil barcos, y fueron a Troya.'
+        dibujo: ⛵ ⛵ ⛵
+      - de: valentina
+        texto: 'La guerra duró diez años. Hoy, cuando algo hace que la gente se pelee, decimos que es la manzana de la discordia.'
+        dibujo: 🔟 🍎
+
+  - tipo: elegir
+    enunciado: ¿A qué diosa eligió Paris?
+    dibujo: 🍎 🧑
+    correcta: 🌹 A Afrodita
+    incorrectas:
+      - texto: 🦚 A Hera
+        feedback: Hera le prometió ser rey, pero Paris eligió a Afrodita.
+      - texto: 🦉 A Atenea
+        feedback: Atenea le prometió ganar batallas, pero Paris eligió a Afrodita.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto duró la guerra de Troya?
+    dibujo: ⚔️
+    correcta: 🔟 Diez años
+    incorrectas:
+      - texto: 🌅 Un día
+        feedback: Muchísimo más. La guerra de Troya duró diez años.
+      - texto: 💯 Cien años
+        feedback: No tanto. La guerra de Troya duró diez años.
+
+  - tipo: ordenar
+    enunciado: Ordena cómo empezó la guerra de Troya.
+    piezas: ⛵ Mil barcos van a Troya / 🍎 Eris lanza la manzana / 💒 La boda de Tetis / 🧑 Paris elige a Afrodita
+    solucion: 💒 La boda de Tetis 🍎 Eris lanza la manzana 🧑 Paris elige a Afrodita ⛵ Mil barcos van a Troya
+    explicacion: Primero la boda de Tetis. Eris lanza la manzana. Paris elige a Afrodita, y se lleva a Helena. Y mil barcos van a Troya.

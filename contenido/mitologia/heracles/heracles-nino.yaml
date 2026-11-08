@@ -1,0 +1,93 @@
+titulo: Heracles de pequeño
+subtitulo: Dos serpientes en la cuna
+emoji: 👶
+ejercicios:
+  - tipo: chat
+    titulo: Un bebé con muchísima fuerza
+    mensajes:
+      - de: hugo
+        texto: 'Heracles era hijo de Zeus y de Alcmena, una mortal. Por eso era un semidiós: mitad dios y mitad humano.'
+        dibujo: ⚡ 🧍
+      - de: valentina
+        texto: 'Su nombre quiere decir gloria de Hera. Qué curioso, ¡porque Hera lo odiaba! Era otro de los hijos de Zeus con otra.'
+        dibujo: 🦚 😠
+      - de: santiago
+        texto: 'Cuando tenía pocos meses, Hera mandó dos serpientes a su cuna.'
+        dibujo: 🐍 🐍
+      - de: vega
+        texto: 'Su hermano gemelo, Ificles, se puso a llorar. Pero Heracles agarró una serpiente con cada mano y las apretó hasta vencerlas. ¡Riéndose!'
+        dibujo: 💪 😄
+      - de: hugo
+        texto: 'Otro mito cuenta que Hermes lo puso a tomar leche de Hera mientras ella dormía, para que se hiciera inmortal.'
+        dibujo: 🍼 😴
+      - de: valentina
+        texto: 'Hera se despertó y lo apartó de golpe, y la leche salpicó el cielo. Así se formó la Vía Láctea, que quiere decir el camino de leche.'
+        dibujo: 🥛 🌌
+      - de: santiago
+        texto: 'Los romanos lo llamaban Hércules.'
+        dibujo: 🦁 💪
+
+  - tipo: elegir
+    enunciado: ¿Qué hizo Heracles bebé con las serpientes?
+    dibujo: 🐍 🐍
+    correcta: 💪 Las venció con las manos
+    incorrectas:
+      - texto: 😭 Ponerse a llorar
+        feedback: Ese fue su hermano Ificles. Heracles las venció con las manos, riéndose.
+      - texto: 🍼 Darles un biberón
+        feedback: ¡Ja, ja! No. Las agarró con las manos y las venció.
+
+  - tipo: elegir
+    enunciado: Según el mito, ¿cómo se formó la Vía Láctea?
+    dibujo: 🌌
+    correcta: 🥛 Con leche de Hera
+    incorrectas:
+      - texto: 🍦 Con un helado
+        feedback: ¡Ja, ja! No. Con la leche de Hera que salpicó el cielo. Por eso se llama el camino de leche.
+      - texto: ⚡ Con los rayos de Zeus
+        feedback: No. Con la leche de Hera que salpicó el cielo.
+
+  - tipo: chat
+    titulo: El castigo de los doce trabajos
+    mensajes:
+      - de: vega
+        texto: 'De joven aprendió de los mejores: a luchar, a tirar con arco y a conducir carros. Pero la música no se le daba nada bien.'
+        dibujo: 🏹 🎵
+      - de: hugo
+        texto: 'Con dieciocho años venció a un león que atacaba los rebaños de un monte.'
+        dibujo: 🦁 🐑
+      - de: valentina
+        texto: 'Pero Hera le hizo perder la cabeza un día. Y en su locura, sin darse cuenta, hizo muchísimo daño a su propia familia.'
+        dibujo: 🌀 😢
+      - de: santiago
+        texto: 'Cuando se le pasó, estaba tristísimo. Preguntó al oráculo de Delfos cómo podía arreglarlo.'
+        dibujo: 🏛️ 🙏
+      - de: vega
+        texto: 'El oráculo le contestó: sirve al rey Euristeo durante doce años, y haz todo lo que te mande.'
+        dibujo: 👑 📜
+      - de: hugo
+        texto: 'Euristeo era un rey miedica y envidioso, y se inventó las tareas más difíciles del mundo: los trabajos de Heracles.'
+        dibujo: 😨 👑
+      - de: valentina
+        texto: 'Al principio iban a ser diez. Pero Euristeo dijo que dos no valían, porque le habían ayudado o le habían pagado. Y añadió dos más: doce.'
+        dibujo: 🔟 ➕
+
+  - tipo: elegir
+    enunciado: ¿Quién le mandaba los trabajos a Heracles?
+    dibujo: 📜
+    correcta: 👑 El rey Euristeo
+    incorrectas:
+      - texto: ⚡ Zeus
+        feedback: Zeus era su padre. Los trabajos se los mandaba el rey Euristeo.
+      - texto: 🐍 Las serpientes
+        feedback: ¡Ja, ja! No. Se los mandaba el rey Euristeo.
+
+  - tipo: elegir
+    enunciado: ¿Cuántos trabajos tuvo que hacer Heracles?
+    dibujo: 💪
+    correcta: 🔢 Doce
+    incorrectas:
+      - texto: 🔟 Diez
+        feedback: Al principio iban a ser diez, pero Euristeo dijo que dos no valían. Al final fueron doce.
+      - texto: 3️⃣ Tres
+        feedback: Muchos más. Fueron doce trabajos.

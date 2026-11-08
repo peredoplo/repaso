@@ -1,0 +1,94 @@
+titulo: Pegaso y la Quimera
+subtitulo: Belerofonte, el jinete del cielo
+emoji: 🐎
+ejercicios:
+  - tipo: chat
+    titulo: El caballo con alas
+    mensajes:
+      - de: hugo
+        texto: 'Pegaso era un caballo blanco con alas. Nació de Medusa, cuando Perseo la venció.'
+        dibujo: 🐎 🪶
+      - de: valentina
+        texto: 'Dicen que, donde golpeó una roca con la pezuña, brotó una fuente de agua: la fuente de las Musas.'
+        dibujo: 💧 🎶
+      - de: santiago
+        texto: 'Muchos querían montarlo, pero nadie lo conseguía. Un joven, Belerofonte, le pidió ayuda a Atenea.'
+        dibujo: 🧑 🙏
+      - de: vega
+        texto: 'Atenea se le apareció en sueños y le dio unas riendas de oro. Al despertar, ¡las tenía en la mano! Con ellas, pudo montar a Pegaso.'
+        dibujo: 💤 ✨
+
+  - tipo: elegir
+    enunciado: ¿Cómo era Pegaso?
+    dibujo: 🐎
+    correcta: 🪶 Un caballo con alas
+    incorrectas:
+      - texto: 🦄 Un caballo con un cuerno
+        feedback: Ese es el unicornio. Pegaso era un caballo con alas.
+      - texto: 🐟 Un caballo con cola de pez
+        feedback: Esos eran los hipocampos de Poseidón. Pegaso era un caballo con alas.
+
+  - tipo: elegir
+    enunciado: ¿Qué le dio Atenea a Belerofonte para montar a Pegaso?
+    dibujo: 🦉 🎁
+    correcta: ✨ Unas riendas de oro
+    incorrectas:
+      - texto: 🥕 Una zanahoria
+        feedback: ¡Ja, ja! No. Le dio unas riendas de oro.
+      - texto: 🪜 Una escalera
+        feedback: No. Le dio unas riendas de oro.
+
+  - tipo: chat
+    titulo: El monstruo que echaba fuego
+    mensajes:
+      - de: valentina
+        texto: 'Un rey mandó a Belerofonte a vencer a la Quimera, un monstruo que echaba fuego por la boca.'
+        dibujo: 👑 🔥
+      - de: santiago
+        texto: 'Tenía cabeza de león, otra cabeza de cabra en el lomo, y una serpiente por cola.'
+        dibujo: 🦁 🐐 🐍
+      - de: vega
+        texto: 'Volando en Pegaso, Belerofonte le disparó flechas desde el aire. Y luego le metió en la boca una lanza con punta de plomo, un metal blando.'
+        dibujo: 🏹 🪶
+      - de: hugo
+        texto: 'El fuego de la Quimera derritió el plomo, ¡y se quemó por dentro! Así la venció.'
+        dibujo: 🔥 💥
+      - de: valentina
+        texto: 'Hoy llamamos quimera a algo que solo existe en la imaginación, algo imposible.'
+        dibujo: 💭 ✨
+      - de: santiago
+        texto: 'Belerofonte se volvió presumido, y quiso subir volando al Olimpo. Zeus mandó un tábano a picar a Pegaso, y Pegaso tiró al jinete.'
+        dibujo: 🪰 🐎
+      - de: vega
+        texto: 'Pegaso siguió hasta el Olimpo, y desde entonces le llevaba los rayos a Zeus. Hoy es una constelación, con un gran cuadrado de estrellas.'
+        dibujo: ⚡ ⭐
+
+  - tipo: elegir
+    enunciado: ¿Cómo era la Quimera?
+    dibujo: 🔥
+    correcta: 🦁 León, cabra y serpiente
+    incorrectas:
+      - texto: 🐶 Un perrito
+        feedback: ¡Ja, ja! No. Tenía cabeza de león, otra de cabra, y una serpiente de cola.
+      - texto: 🐂 Toro y persona
+        feedback: Ese era el Minotauro. La Quimera tenía partes de león, cabra y serpiente.
+
+  - tipo: elegir
+    enunciado: ¿Qué es hoy una quimera?
+    dibujo: 💭
+    correcta: 💭 Algo imposible
+    incorrectas:
+      - texto: 🍲 Una comida
+        feedback: No. Hoy una quimera es algo imposible, que solo existe en la imaginación.
+      - texto: 🚗 Un coche
+        feedback: No. Hoy una quimera es algo imposible, que solo existe en la imaginación.
+
+  - tipo: elegir
+    enunciado: ¿Por qué se cayó Belerofonte de Pegaso?
+    dibujo: 🐎 ⬇️
+    correcta: 🪰 Un tábano picó a Pegaso
+    incorrectas:
+      - texto: 😴 Se quedó dormido
+        feedback: No. Quiso subir al Olimpo, y Zeus mandó un tábano a picar a Pegaso.
+      - texto: 🌬️ Hacía mucho viento
+        feedback: No. Quiso subir al Olimpo, y Zeus mandó un tábano a picar a Pegaso.

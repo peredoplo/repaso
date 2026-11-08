@@ -1,0 +1,102 @@
+titulo: Prometeo y el fuego
+subtitulo: El titán amigo de los humanos
+emoji: 🔥
+ejercicios:
+  - tipo: chat
+    titulo: El que piensa antes
+    mensajes:
+      - de: vega
+        texto: 'Prometeo era un titán muy listo. Su nombre quiere decir el que piensa antes. Su hermano Epimeteo era el que piensa después: un despistado.'
+        dibujo: 🧠 🙃
+      - de: hugo
+        texto: 'Según un mito, Prometeo hizo a los primeros humanos con barro y agua, como una figura de plastilina.'
+        dibujo: 🏺 🧍
+      - de: valentina
+        texto: 'Epimeteo tenía que repartir regalos a los animales: a unos les dio garras, a otros alas, caparazones o pelo para el frío.'
+        dibujo: 🦅 🐢 🐻
+      - de: santiago
+        texto: 'Pero lo repartió todo, y para los humanos no quedó nada. Estaban sin pelo, con frío y sin defensas.'
+        dibujo: 🥶 ❌
+      - de: vega
+        texto: 'Prometeo quiso ayudarlos con un truco. Para decidir qué parte de los animales era para los dioses, preparó dos montones.'
+        dibujo: 🥩 🦴
+      - de: hugo
+        texto: 'En uno, huesos tapados con grasa brillante. En el otro, la carne buena, escondida dentro de una tripa fea. Zeus eligió el bonito… ¡y eran huesos!'
+        dibujo: 🦴 😮
+      - de: valentina
+        texto: 'Desde entonces, la carne era para las personas. Pero Zeus, enfadado por el truco, les quitó el fuego a los humanos.'
+        dibujo: 😠 🔥
+
+  - tipo: elegir
+    enunciado: ¿Qué quiere decir el nombre de Prometeo?
+    dibujo: 🧠
+    correcta: 🧠 El que piensa antes
+    incorrectas:
+      - texto: 🍝 El que come mucho
+        feedback: ¡Ja, ja! No. Prometeo quiere decir el que piensa antes.
+      - texto: 🙃 El que piensa después
+        feedback: Ese era su hermano Epimeteo, el despistado. Prometeo es el que piensa antes.
+
+  - tipo: elegir
+    enunciado: ¿Qué eligió Zeus en el truco de Prometeo?
+    dibujo: 🥩 🦴
+    correcta: 🦴 Huesos tapados con grasa
+    incorrectas:
+      - texto: 🥩 La carne buena
+        feedback: Esa estaba escondida en una tripa fea, y Zeus no la eligió. Se quedó con los huesos tapados con grasa.
+      - texto: 🍰 Un pastel
+        feedback: No había pastel. Zeus eligió huesos tapados con grasa brillante.
+
+  - tipo: chat
+    titulo: El robo del fuego
+    mensajes:
+      - de: santiago
+        texto: 'Sin fuego, los humanos pasaban frío, no podían cocinar ni ver de noche.'
+        dibujo: 🥶 🌑
+      - de: vega
+        texto: 'Prometeo subió al Olimpo a escondidas y robó una chispa de fuego. Unos dicen que del taller de Hefesto, y otros, que del carro del Sol.'
+        dibujo: 🤫 ✨
+      - de: hugo
+        texto: 'La escondió dentro de una caña hueca, el tallo de una planta, y la bajó a la Tierra.'
+        dibujo: 🎋 🔥
+      - de: valentina
+        texto: 'Con el fuego, los humanos aprendieron a cocinar, a calentarse y a fabricar herramientas de metal.'
+        dibujo: 🍲 🔨
+      - de: santiago
+        texto: 'Zeus se puso furioso, y encadenó a Prometeo a una roca en lo alto de unas montañas, las del Cáucaso.'
+        dibujo: ⛓️ ⛰️
+      - de: vega
+        texto: 'Cada día venía un águila a picotearle el hígado, una parte de dentro de la tripa. Y cada noche se le curaba, porque era inmortal.'
+        dibujo: 🦅 🌙
+      - de: hugo
+        texto: 'Muchísimos años después, el héroe Heracles derribó al águila con una flecha y liberó a Prometeo.'
+        dibujo: 🏹 🔓
+      - de: valentina
+        texto: 'La llama de los Juegos Olímpicos recuerda el fuego de Prometeo. Se enciende en Grecia con los rayos del Sol.'
+        dibujo: 🔥 🏅
+
+  - tipo: elegir
+    enunciado: ¿Dónde escondió Prometeo el fuego robado?
+    dibujo: 🔥 🤫
+    correcta: 🎋 Dentro de una caña hueca
+    incorrectas:
+      - texto: 🎒 En una mochila
+        feedback: ¡Ja, ja! No. Lo escondió dentro de una caña hueca.
+      - texto: 👟 En un zapato
+        feedback: ¡Se habría quemado! Lo escondió dentro de una caña hueca.
+
+  - tipo: elegir
+    enunciado: ¿Quién liberó a Prometeo?
+    dibujo: ⛓️
+    correcta: 🏹 Heracles
+    incorrectas:
+      - texto: ⚡ Zeus
+        feedback: Zeus fue quien lo encadenó. Lo liberó el héroe Heracles.
+      - texto: 🦅 El águila
+        feedback: El águila era su castigo. Lo liberó el héroe Heracles, con una flecha.
+
+  - tipo: ordenar
+    enunciado: Ordena la historia de Prometeo.
+    piezas: ⛓️ Zeus lo encadena / 🏹 Heracles lo libera / 🔥 Prometeo roba el fuego
+    solucion: 🔥 Prometeo roba el fuego ⛓️ Zeus lo encadena 🏹 Heracles lo libera
+    explicacion: Primero Prometeo roba el fuego. Zeus, furioso, lo encadena. Y Heracles lo libera.

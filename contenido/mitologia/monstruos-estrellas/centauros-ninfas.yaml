@@ -1,0 +1,94 @@
+titulo: Centauros, sátiros y ninfas
+subtitulo: Pan, Eco y Narciso
+emoji: 🌲
+ejercicios:
+  - tipo: chat
+    titulo: Mitad persona, mitad animal
+    mensajes:
+      - de: vega
+        texto: 'Los centauros tenían la parte de arriba de persona, y el resto, de caballo. Vivían en los bosques y montañas del norte de Grecia.'
+        dibujo: 🐴 🌲
+      - de: hugo
+        texto: 'Casi todos eran salvajes, y se peleaban mucho.'
+        dibujo: 💢 🐴
+      - de: valentina
+        texto: 'Pero Quirón era distinto: sabio, bueno y médico. Fue el maestro de grandes héroes, como Aquiles y Jasón.'
+        dibujo: 📚 🩺
+      - de: santiago
+        texto: 'Los sátiros parecían personas, pero con orejas y cola de caballo o de cabra, y a veces patas de cabra. Les encantaban la música, el baile y las fiestas de Dioniso.'
+        dibujo: 🐐 🎶
+
+  - tipo: elegir
+    enunciado: ¿Qué centauro era sabio y maestro de héroes?
+    dibujo: 🐴 📚
+    correcta: 🐴 Quirón
+    incorrectas:
+      - texto: 🐎 Pegaso
+        feedback: Pegaso era un caballo con alas. El centauro sabio era Quirón.
+      - texto: 🐂 El Minotauro
+        feedback: No. El centauro sabio era Quirón.
+
+  - tipo: elegir
+    enunciado: ¿Qué les gustaba a los sátiros?
+    dibujo: 🐐
+    correcta: 🎶 La música y las fiestas
+    incorrectas:
+      - texto: 📚 Estudiar mucho
+        feedback: ¡Ja, ja! No. Les encantaban la música, el baile y las fiestas.
+      - texto: 🧹 Limpiar
+        feedback: No. Les encantaban la música, el baile y las fiestas.
+
+  - tipo: chat
+    titulo: El dios Pan y la ninfa Eco
+    mensajes:
+      - de: hugo
+        texto: 'Pan era el dios de los pastores y del campo, con patas y cuernos de cabra. Tocaba una flauta de cañas, la flauta de Pan.'
+        dibujo: 🐐 🎵
+      - de: valentina
+        texto: 'A veces Pan daba gritos terribles en el bosque, y los viajeros huían aterrorizados. ¡De ahí viene la palabra pánico!'
+        dibujo: 😱 🌲
+      - de: santiago
+        texto: 'Las ninfas eran espíritus de la naturaleza. Las dríades vivían en los árboles, las náyades en los ríos y las fuentes, y las nereidas en el mar.'
+        dibujo: 🌳 💧 🌊
+      - de: vega
+        texto: 'La ninfa Eco hablaba tanto, que Hera la castigó: solo podía repetir las últimas palabras de los demás.'
+        dibujo: 🗣️ 🔁
+      - de: hugo
+        texto: 'Eco se enamoró de Narciso, un joven que solo se quería a sí mismo. Un día, Narciso vio su reflejo en el agua, y se quedó mirándolo para siempre.'
+        dibujo: 💧 🪞
+      - de: valentina
+        texto: 'Narciso se convirtió en una flor, el narciso. Y Eco se fue apagando, hasta que solo quedó su voz.'
+        dibujo: 🌼 🔊
+      - de: santiago
+        texto: 'Por eso, cuando gritas en las montañas, el eco repite tus últimas palabras.'
+        dibujo: ⛰️ 📣
+
+  - tipo: elegir
+    enunciado: ¿De qué dios viene la palabra pánico?
+    dibujo: 😱
+    correcta: 🐐 De Pan
+    incorrectas:
+      - texto: 🍞 Del pan de comer
+        feedback: ¡Ja, ja! Suena igual, pero no. Viene de Pan, el dios del campo, que daba gritos terribles.
+      - texto: ⚔️ De Ares
+        feedback: De Ares viene fobia, por su hijo Fobos. Pánico viene de Pan.
+
+  - tipo: elegir
+    enunciado: ¿Qué podía decir la ninfa Eco?
+    dibujo: 🗣️
+    correcta: 🔁 Las últimas palabras de los demás
+    incorrectas:
+      - texto: 🤫 Nada de nada
+        feedback: Casi. Solo podía repetir las últimas palabras de los demás.
+      - texto: 🦜 Lo que quisiera
+        feedback: No. Hera la castigó, y solo podía repetir las últimas palabras de los demás.
+
+  - tipo: elegir
+    enunciado: ¿En qué se convirtió Narciso?
+    dibujo: 💧 🪞
+    correcta: 🌼 En una flor
+    incorrectas:
+      - texto: 🐟 En un pez
+        feedback: No. Se convirtió en una flor, el narciso.
+      - texto: 🗿 En piedra
+        feedback: No. Se convirtió en una flor, el narciso.

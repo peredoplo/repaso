@@ -1,0 +1,97 @@
+titulo: Perseo y Andrómeda
+subtitulo: Un monstruo marino y una familia en el cielo
+emoji: 🌌
+ejercicios:
+  - tipo: chat
+    titulo: La princesa en la roca
+    mensajes:
+      - de: vega
+        texto: 'Volando de vuelta, Perseo vio a una princesa encadenada a una roca, junto al mar. Se llamaba Andrómeda.'
+        dibujo: 👸 ⛓️
+      - de: hugo
+        texto: 'Su madre, la reina Casiopea, presumía de ser más guapa que las nereidas, las ninfas del mar.'
+        dibujo: 👑 🪞
+      - de: valentina
+        texto: 'Poseidón se enfadó y mandó un monstruo marino enorme, Ceto, que destrozaba la costa.'
+        dibujo: 🔱 🐋
+      - de: santiago
+        texto: 'El oráculo dijo que solo pararía si le daban a la princesa. Su padre, el rey Cefeo, tuvo que encadenarla.'
+        dibujo: 🔮 😢
+      - de: vega
+        texto: 'Perseo se lanzó desde el aire contra el monstruo y lo venció.'
+        dibujo: 🪶 ⚔️
+      - de: hugo
+        texto: 'Perseo y Andrómeda se casaron y tuvieron muchos hijos. Y un bisnieto suyo, el nieto de un hijo, ¡fue Heracles!'
+        dibujo: 💍 👶
+
+  - tipo: elegir
+    enunciado: ¿Por qué Poseidón mandó al monstruo marino?
+    dibujo: 🔱 🐋
+    correcta: 🪞 Porque Casiopea presumía de guapa
+    incorrectas:
+      - texto: 🌊 Porque tenía hambre
+        feedback: No. Casiopea presumía de ser más guapa que las ninfas del mar, y Poseidón se enfadó.
+      - texto: 🎣 Porque pescaron sus peces
+        feedback: No. Casiopea presumía de ser más guapa que las ninfas del mar, y Poseidón se enfadó.
+
+  - tipo: elegir
+    enunciado: ¿Qué era Heracles de Perseo?
+    dibujo: 🦁 🪶
+    correcta: 👶 Su bisnieto
+    incorrectas:
+      - texto: 👴 Su abuelo
+        feedback: Al revés. Perseo vivió antes. Heracles era su bisnieto.
+      - texto: 🧑 Su hermano
+        feedback: No. Perseo vivió antes. Heracles era su bisnieto.
+
+  - tipo: chat
+    titulo: Toda la familia en el cielo
+    mensajes:
+      - de: valentina
+        texto: 'Los dioses pusieron a todos en el cielo. En las noches de otoño se ven juntos: la historia entera, hecha de estrellas.'
+        dibujo: 🌌 ⭐
+      - de: santiago
+        texto: 'Casiopea tiene forma de uve doble, de cinco estrellas. Dicen que está sentada en su trono, y que a veces queda boca abajo, como castigo por presumir.'
+        dibujo: 👑 🙃
+      - de: vega
+        texto: 'Al lado están el rey Cefeo y la princesa Andrómeda. Y Perseo, junto a ella, con la cabeza de Medusa en la mano.'
+        dibujo: ⭐ ⭐
+      - de: hugo
+        texto: 'Una estrella de esa cabeza, Algol, parpadea: cada tres días brilla menos durante unas horas. Es porque otra estrella pasa por delante.'
+        dibujo: ⭐ 🌑
+      - de: valentina
+        texto: 'Pegaso también está, con un gran cuadrado de estrellas. Y Ceto, el monstruo, al que hoy llamamos la constelación de la Ballena.'
+        dibujo: 🐎 🐋
+      - de: santiago
+        texto: 'Y en Andrómeda está la galaxia de Andrómeda, la galaxia grande más cercana a la nuestra. Aun así, su luz tarda dos millones y medio de años en llegar.'
+        dibujo: 🌌 🔭
+
+  - tipo: elegir
+    enunciado: ¿Qué forma tiene la constelación de Casiopea?
+    dibujo: 👑 ⭐
+    correcta: 〰️ Una uve doble
+    incorrectas:
+      - texto: ⭕ Un círculo
+        feedback: No. Casiopea tiene forma de uve doble, de cinco estrellas.
+      - texto: ➕ Una cruz
+        feedback: No. Casiopea tiene forma de uve doble, de cinco estrellas.
+
+  - tipo: elegir
+    enunciado: ¿Qué galaxia se llama como la princesa?
+    dibujo: 👸 🌌
+    correcta: 🌌 Andrómeda
+    incorrectas:
+      - texto: 🥛 La Vía Láctea
+        feedback: La Vía Láctea es la nuestra. La de la princesa es la galaxia de Andrómeda.
+      - texto: 🐋 La Ballena
+        feedback: La Ballena es la constelación del monstruo Ceto. La galaxia de la princesa es Andrómeda.
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación es el monstruo Ceto?
+    dibujo: 🔱 ⭐
+    correcta: 🐋 La Ballena
+    incorrectas:
+      - texto: 🦀 Cáncer
+        feedback: Cáncer es el cangrejo de la Hidra. Ceto es la constelación de la Ballena.
+      - texto: 🐍 La Hidra
+        feedback: La Hidra es otra. Ceto es la constelación de la Ballena.

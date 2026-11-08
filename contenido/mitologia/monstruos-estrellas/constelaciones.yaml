@@ -1,0 +1,94 @@
+titulo: Mitos en el cielo
+subtitulo: Osas, gemelos y el zodiaco
+emoji: ⭐
+ejercicios:
+  - tipo: chat
+    titulo: Las dos osas
+    mensajes:
+      - de: valentina
+        texto: 'Los griegos pusieron nombre a cuarenta y ocho constelaciones, y muchas cuentan un mito.'
+        dibujo: ⭐ 📜
+      - de: hugo
+        texto: 'Calisto era una ninfa, compañera de Ártemis. Zeus se enamoró de ella, y Hera, celosa, la convirtió en osa.'
+        dibujo: 👧 🐻
+      - de: santiago
+        texto: 'Años después, su hijo Arcas, que era cazador, se encontró con la osa en el bosque, sin saber que era su madre.'
+        dibujo: 🏹 🐻
+      - de: vega
+        texto: 'Antes de que pasara nada malo, Zeus los convirtió a los dos en estrellas: la Osa Mayor y la Osa Menor.'
+        dibujo: ⭐ 🐻
+      - de: valentina
+        texto: 'Hera, enfadada, pidió que nunca las dejaran bañarse en el mar. Por eso, desde Grecia y desde España, las osas casi nunca se esconden: dan vueltas en el cielo toda la noche.'
+        dibujo: 🔄 🌙
+      - de: hugo
+        texto: 'Y en la punta de la cola de la Osa Menor está la estrella Polar, que marca el norte.'
+        dibujo: ⭐ 🧭
+
+  - tipo: elegir
+    enunciado: ¿En qué se convirtió Calisto?
+    dibujo: 👧
+    correcta: 🐻 En una osa
+    incorrectas:
+      - texto: 🦌 En una cierva
+        feedback: No. Se convirtió en una osa, y hoy es la Osa Mayor.
+      - texto: 🌸 En una flor
+        feedback: Ese fue Narciso. Calisto se convirtió en una osa.
+
+  - tipo: elegir
+    enunciado: ¿Qué marca la estrella Polar?
+    dibujo: ⭐
+    correcta: 🧭 El norte
+    incorrectas:
+      - texto: ⏰ La hora del recreo
+        feedback: ¡Ja, ja! No. La estrella Polar marca el norte.
+      - texto: 🌊 Dónde está el mar
+        feedback: No. La estrella Polar marca el norte.
+
+  - tipo: chat
+    titulo: Los gemelos y el zodiaco
+    mensajes:
+      - de: santiago
+        texto: 'Cástor y Pólux eran gemelos, y fueron con los argonautas. Pólux era inmortal, hijo de Zeus, y Cástor, no.'
+        dibujo: 👬 ⛵
+      - de: vega
+        texto: 'Cuando Cástor murió, Pólux no quería vivir sin él. Y Zeus les dejó estar juntos para siempre en el cielo: son la constelación de Géminis, los gemelos.'
+        dibujo: ⭐ ⭐
+      - de: hugo
+        texto: 'El zodiaco son las constelaciones por las que pasa el Sol a lo largo del año. La palabra viene del griego, y quiere decir algo así como el círculo de los animales.'
+        dibujo: ☀️ 🔄
+      - de: valentina
+        texto: 'Y muchas son mitos que ya conoces. Leo, el león de Nemea. Cáncer, el cangrejo de la Hidra. Aries, el carnero del vellocino. Escorpio, el de Orión.'
+        dibujo: ♌ 🦀 🐏
+      - de: santiago
+        texto: 'Tauro es el toro en que se convirtió Zeus para llevarse a Europa. Y Sagitario es un centauro con su arco.'
+        dibujo: 🐂 🏹
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación es el toro en que se convirtió Zeus?
+    dibujo: 🐂 ⭐
+    correcta: ♉ Tauro
+    incorrectas:
+      - texto: ♈ Aries
+        feedback: Aries es el carnero del vellocino. El toro de Zeus es Tauro.
+      - texto: ♌ Leo
+        feedback: Leo es el león de Nemea. El toro de Zeus es Tauro.
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación son los gemelos Cástor y Pólux?
+    dibujo: 👬 ⭐
+    correcta: ♊ Géminis
+    incorrectas:
+      - texto: 🐻 La Osa Mayor
+        feedback: La Osa Mayor es Calisto. Los gemelos son Géminis.
+      - texto: 🏹 Sagitario
+        feedback: Sagitario es un centauro con arco. Los gemelos son Géminis.
+
+  - tipo: elegir
+    enunciado: ¿Qué quiere decir zodiaco?
+    dibujo: ☀️ 🔄
+    correcta: 🦁 Círculo de los animales
+    incorrectas:
+      - texto: 🍕 Pizza redonda
+        feedback: ¡Ja, ja! No. Quiere decir algo así como el círculo de los animales.
+      - texto: 🌙 Casa de la Luna
+        feedback: No. Quiere decir algo así como el círculo de los animales.

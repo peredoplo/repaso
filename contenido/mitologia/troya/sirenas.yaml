@@ -1,0 +1,90 @@
+titulo: Las sirenas, Escila y Caribdis
+subtitulo: Atado al mástil
+emoji: 🐦
+ejercicios:
+  - tipo: chat
+    titulo: El canto de las sirenas
+    mensajes:
+      - de: hugo
+        texto: 'Circe le había avisado: pasaréis por la isla de las sirenas. Cantan tan bonito que los marineros se acercan, chocan con las rocas, y no vuelven nunca.'
+        dibujo: 🎶 🪨
+      - de: valentina
+        texto: 'Las sirenas griegas no tenían cola de pez: ¡eran mitad pájaro, con cabeza de mujer! Las de cola de pez se inventaron mucho después.'
+        dibujo: 🐦 🐟
+      - de: santiago
+        texto: 'Odiseo tapó los oídos de sus marineros con cera de abeja.'
+        dibujo: 🐝 👂
+      - de: vega
+        texto: 'Pero él quería oírlas. Así que pidió que lo ataran al mástil, el palo grande del barco, y que no lo soltaran aunque lo pidiera.'
+        dibujo: ⛵ 🪢
+      - de: hugo
+        texto: 'Al oír el canto, Odiseo les suplicó que lo desataran. Pero los marineros lo ataron todavía más fuerte. ¡Y pasaron!'
+        dibujo: 🙏 💪
+
+  - tipo: elegir
+    enunciado: ¿Cómo eran las sirenas en los mitos griegos?
+    dibujo: 🎶
+    correcta: 🐦 Mitad pájaro
+    incorrectas:
+      - texto: 🐟 Mitad pez
+        feedback: Así son las de los cuentos de ahora. Las griegas eran mitad pájaro.
+      - texto: 🐴 Mitad caballo
+        feedback: Esos eran los centauros. Las sirenas griegas eran mitad pájaro.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se protegieron los marineros del canto?
+    dibujo: 🎶 👂
+    correcta: 🐝 Con cera en los oídos
+    incorrectas:
+      - texto: 🎧 Con cascos de música
+        feedback: ¡Ja, ja! No había. Se taparon los oídos con cera de abeja.
+      - texto: 📣 Gritando muy fuerte
+        feedback: No. Se taparon los oídos con cera de abeja.
+
+  - tipo: chat
+    titulo: Entre dos monstruos
+    mensajes:
+      - de: valentina
+        texto: 'Después venía un estrecho de mar peligrosísimo. A un lado, Escila, un monstruo con seis cabezas en cuellos larguísimos, que atrapaba marineros.'
+        dibujo: 🐉 6️⃣
+      - de: santiago
+        texto: 'Al otro lado, Caribdis, un remolino enorme que se tragaba el mar tres veces al día.'
+        dibujo: 🌀 🌊
+      - de: vega
+        texto: 'Odiseo pasó más cerca de Escila. Mejor perder a seis marineros que el barco entero.'
+        dibujo: ⛵ 😢
+      - de: hugo
+        texto: 'Hoy, estar entre Escila y Caribdis es tener que elegir entre dos cosas malas.'
+        dibujo: 🤷 ⚖️
+      - de: valentina
+        texto: 'Más tarde llegaron a la isla del Sol. Les habían avisado de que no tocaran sus vacas. Pero tenían tanta hambre, que se las comieron.'
+        dibujo: ☀️ 🐄
+      - de: santiago
+        texto: 'Zeus lanzó un rayo contra el barco. Solo se salvó Odiseo, agarrado a un tronco.'
+        dibujo: ⚡ 🪵
+
+  - tipo: elegir
+    enunciado: ¿Qué era Caribdis?
+    dibujo: 🌊
+    correcta: 🌀 Un remolino gigante
+    incorrectas:
+      - texto: 🐉 Un monstruo de seis cabezas
+        feedback: Esa era Escila. Caribdis era un remolino gigante.
+      - texto: 🏖️ Una playa
+        feedback: ¡Ja, ja! Ojalá. Caribdis era un remolino gigante.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasó por comerse las vacas del Sol?
+    dibujo: ☀️ 🐄
+    correcta: ⚡ Zeus hundió el barco
+    incorrectas:
+      - texto: 🤢 Les dolió la tripa
+        feedback: Algo peor. Zeus hundió el barco con un rayo, y solo se salvó Odiseo.
+      - texto: 🐄 Se convirtieron en vacas
+        feedback: No. Zeus hundió el barco con un rayo, y solo se salvó Odiseo.
+
+  - tipo: ordenar
+    enunciado: Ordena el viaje de Odiseo.
+    piezas: 🐦 Las sirenas / 👁️ El cíclope / 🌀 Escila y Caribdis / 🐷 Circe / 🌬️ Eolo
+    solucion: 👁️ El cíclope 🌬️ Eolo 🐷 Circe 🐦 Las sirenas 🌀 Escila y Caribdis
+    explicacion: Primero el cíclope, luego Eolo y sus vientos. Después Circe. Y al final, las sirenas, y Escila y Caribdis.

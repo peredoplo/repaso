@@ -1,0 +1,90 @@
+titulo: El caballo de Troya
+subtitulo: El truco de Odiseo
+emoji: 🐴
+ejercicios:
+  - tipo: chat
+    titulo: Un regalo con sorpresa
+    mensajes:
+      - de: hugo
+        texto: 'Troya tenía murallas altísimas que, según el mito, habían construido Poseidón y Apolo. Nadie podía entrar.'
+        dibujo: 🏰 🧱
+      - de: valentina
+        texto: 'Después de diez años, Odiseo, el griego más listo, tuvo una idea.'
+        dibujo: 🧠 💡
+      - de: santiago
+        texto: 'Construyeron un caballo enorme de madera, hueco por dentro. Y dentro se escondieron los mejores guerreros, con Odiseo.'
+        dibujo: 🐴 🪵
+      - de: vega
+        texto: 'Los demás quemaron su campamento y se fueron en sus barcos, como si se rindieran. Pero se escondieron detrás de una isla cercana.'
+        dibujo: 🔥 ⛵
+      - de: hugo
+        texto: 'Dejaron allí a un griego, Sinón, que contó a los troyanos una mentira: el caballo era un regalo para la diosa Atenea.'
+        dibujo: 🤥 🦉
+
+  - tipo: elegir
+    enunciado: ¿Qué había dentro del caballo de madera?
+    dibujo: 🐴
+    correcta: ⚔️ Guerreros escondidos
+    incorrectas:
+      - texto: 🍬 Caramelos
+        feedback: ¡Ja, ja! No. Dentro se escondían los mejores guerreros griegos.
+      - texto: 🐎 Caballos de verdad
+        feedback: No. Dentro se escondían los mejores guerreros griegos.
+
+  - tipo: elegir
+    enunciado: ¿Quién tuvo la idea del caballo?
+    dibujo: 💡
+    correcta: 🧠 Odiseo
+    incorrectas:
+      - texto: 🛡️ Aquiles
+        feedback: Aquiles era el más fuerte. El más listo era Odiseo, que tuvo la idea.
+      - texto: 🧑 Paris
+        feedback: Paris era troyano. La idea fue de Odiseo, el griego más listo.
+
+  - tipo: chat
+    titulo: Nadie hizo caso
+    mensajes:
+      - de: valentina
+        texto: 'Un sacerdote troyano, Laocoonte, avisó: no os fieis de los griegos, ni siquiera cuando traen regalos. Pero salieron dos serpientes del mar y lo atacaron.'
+        dibujo: 🐍 🐍
+      - de: santiago
+        texto: 'La princesa Casandra también avisó. Pero Apolo la había castigado: decía siempre la verdad, y nadie la creía nunca.'
+        dibujo: 👸 🔮
+      - de: vega
+        texto: 'Los troyanos metieron el caballo en la ciudad, y celebraron una gran fiesta.'
+        dibujo: 🎉 🐴
+      - de: hugo
+        texto: 'Por la noche, los guerreros salieron del caballo y abrieron las puertas. Los barcos volvieron, y así cayó Troya.'
+        dibujo: 🌙 🚪
+      - de: valentina
+        texto: 'Troya existió de verdad. Sus ruinas están en Turquía, y las descubrió Heinrich Schliemann hace unos ciento cincuenta años.'
+        dibujo: 🏛️ ⛏️
+      - de: santiago
+        texto: 'Hoy, un caballo de Troya es un programa de ordenador que parece bueno, pero esconde algo malo dentro.'
+        dibujo: 💻 🐴
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasaba a la princesa Casandra?
+    dibujo: 👸
+    correcta: 🔮 Decía la verdad y nadie la creía
+    incorrectas:
+      - texto: 🤥 Siempre mentía
+        feedback: Al revés. Decía siempre la verdad, pero nadie la creía.
+      - texto: 🔇 No podía hablar
+        feedback: No. Hablaba y decía la verdad, pero nadie la creía.
+
+  - tipo: elegir
+    enunciado: ¿Dónde están las ruinas de Troya?
+    dibujo: 🏛️ ⛏️
+    correcta: 🗺️ En Turquía
+    incorrectas:
+      - texto: 🗻 En Japón
+        feedback: No. Las ruinas de Troya están en Turquía.
+      - texto: 🧊 En el Polo Norte
+        feedback: ¡Ja, ja! No. Las ruinas de Troya están en Turquía.
+
+  - tipo: ordenar
+    enunciado: Ordena el truco del caballo.
+    piezas: 🎉 Los troyanos lo meten en la ciudad / 🐴 Construyen el caballo / 🌙 De noche salen los guerreros / ⛵ Los griegos fingen irse
+    solucion: 🐴 Construyen el caballo ⛵ Los griegos fingen irse 🎉 Los troyanos lo meten en la ciudad 🌙 De noche salen los guerreros
+    explicacion: Construyen el caballo. Los griegos fingen irse. Los troyanos lo meten en la ciudad. Y de noche salen los guerreros.

@@ -1,0 +1,93 @@
+titulo: Cerbero, el perro de tres cabezas
+subtitulo: El último trabajo
+emoji: 🐕
+ejercicios:
+  - tipo: chat
+    titulo: Bajar al mundo de los muertos
+    mensajes:
+      - de: vega
+        texto: 'El último trabajo era el más difícil de todos: bajar al inframundo, el mundo de los muertos, y traer a Cerbero.'
+        dibujo: ⬇️ 💀
+      - de: hugo
+        texto: 'Cerbero era el perro guardián del inframundo. Tenía tres cabezas, cola de serpiente, y serpientes en el lomo.'
+        dibujo: 🐕 🐍
+      - de: valentina
+        texto: 'Dejaba entrar a todo el mundo. Pero no dejaba salir a nadie.'
+        dibujo: 🚪 🚫
+      - de: santiago
+        texto: 'Hermes y Atenea guiaron a Heracles por una cueva muy profunda, hasta el reino de Hades.'
+        dibujo: 🏃 🦉
+      - de: vega
+        texto: 'El barquero Caronte, que cruzaba a los muertos al otro lado de un río, se asustó tanto al verlo que lo llevó sin rechistar.'
+        dibujo: 🛶 😨
+      - de: hugo
+        texto: 'Allí abajo se encontró a su amigo Teseo, atrapado en una silla mágica, y lo liberó.'
+        dibujo: 🪑 🔓
+
+  - tipo: elegir
+    enunciado: ¿Cuántas cabezas tenía Cerbero?
+    dibujo: 🐕
+    correcta: 3️⃣ Tres
+    incorrectas:
+      - texto: 9️⃣ Nueve
+        feedback: Nueve tenía la Hidra. Cerbero tenía tres.
+      - texto: 💯 Cien
+        feedback: Cien tenía el dragón Ladón. Cerbero tenía tres.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacía Cerbero en la puerta del inframundo?
+    dibujo: 🐕 🚪
+    correcta: 🚫 No dejaba salir a nadie
+    incorrectas:
+      - texto: 🎾 Jugar a la pelota
+        feedback: ¡Ja, ja! No. Dejaba entrar a todos, pero no dejaba salir a nadie.
+      - texto: 🍖 Pedir comida
+        feedback: No. Dejaba entrar a todos, pero no dejaba salir a nadie.
+
+  - tipo: chat
+    titulo: Un héroe entre las estrellas
+    mensajes:
+      - de: valentina
+        texto: 'Heracles pidió permiso a Hades para llevarse a Cerbero. Hades aceptó, con una condición: tenía que atraparlo sin armas.'
+        dibujo: 🤝 🚫
+      - de: santiago
+        texto: 'Heracles lo agarró con los brazos, protegido por la piel del león, y no lo soltó.'
+        dibujo: 💪 🦁
+      - de: vega
+        texto: 'Euristeo, al ver al perro, se metió otra vez en su tinaja, y le pidió por favor que se lo llevara. Heracles lo devolvió al inframundo.'
+        dibujo: 🏺 🙏
+      - de: hugo
+        texto: '¡Por fin había terminado sus doce trabajos! Aún vivió muchas aventuras, como viajar con los argonautas.'
+        dibujo: 🎉 ⛵
+      - de: valentina
+        texto: 'Al final de su vida, Zeus lo subió al Olimpo y lo convirtió en dios. Hasta Hera hizo las paces con él, y le dio a su hija, Hebe, como esposa.'
+        dibujo: ⛰️ 🤝
+      - de: santiago
+        texto: 'Y en el cielo está la constelación de Hércules, de rodillas, con un pie encima de la cabeza de un dragón.'
+        dibujo: ⭐ 🐉
+
+  - tipo: elegir
+    enunciado: ¿Qué condición puso Hades a Heracles?
+    dibujo: 💀 🤝
+    correcta: 🚫 Atraparlo sin armas
+    incorrectas:
+      - texto: 🎵 Cantarle una canción
+        feedback: No. Tenía que atrapar a Cerbero sin armas.
+      - texto: 🦮 Sacarlo de paseo cada día
+        feedback: ¡Ja, ja! No. Tenía que atrapar a Cerbero sin armas.
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasó a Heracles al final de su vida?
+    dibujo: ⛰️
+    correcta: ⚡ Zeus lo convirtió en dios
+    incorrectas:
+      - texto: 🐕 Se convirtió en perro
+        feedback: No. Zeus lo subió al Olimpo y lo convirtió en dios.
+      - texto: 🏺 Se escondió en la tinaja
+        feedback: ¡Ese era Euristeo! A Heracles, Zeus lo convirtió en dios.
+
+  - tipo: ordenar
+    enunciado: Ordena los seis últimos trabajos de Heracles.
+    piezas: 🍎 Manzanas / 🐂 Toro / 🐕 Cerbero / 🎗️ Cinturón / 🐎 Yeguas / 🐄 Bueyes
+    solucion: 🐂 Toro 🐎 Yeguas 🎗️ Cinturón 🐄 Bueyes 🍎 Manzanas 🐕 Cerbero
+    explicacion: Primero el toro de Creta y las yeguas. Luego el cinturón y los bueyes de Gerión. Y al final las manzanas de oro y Cerbero.

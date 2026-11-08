@@ -1,0 +1,90 @@
+titulo: El viaje de los argonautas
+subtitulo: Harpías y rocas que chocan
+emoji: 🌊
+ejercicios:
+  - tipo: chat
+    titulo: El rey ciego y las Harpías
+    mensajes:
+      - de: vega
+        texto: 'El viaje fue larguísimo. En una isla, Heracles se quedó buscando a su amigo Hilas, que se había llevado una ninfa de una fuente. Y siguieron sin él.'
+        dibujo: 🏝️ 😢
+      - de: hugo
+        texto: 'Luego conocieron al rey Fineo, un adivino ciego. Los dioses lo habían castigado por contar demasiados secretos.'
+        dibujo: 👑 🔮
+      - de: valentina
+        texto: 'Cada vez que se sentaba a comer, bajaban volando las Harpías, monstruos con cuerpo de pájaro. Le quitaban la comida y le dejaban el resto apestoso.'
+        dibujo: 🦅 🤢
+      - de: santiago
+        texto: 'Dos argonautas tenían alas: Calais y Zetes, los hijos del viento del norte. Persiguieron a las Harpías por el cielo, y las echaron para siempre.'
+        dibujo: 🌬️ 🪶
+      - de: vega
+        texto: 'En agradecimiento, Fineo les explicó cómo pasar el siguiente peligro.'
+        dibujo: 🤝 💡
+
+  - tipo: elegir
+    enunciado: ¿Qué hacían las Harpías?
+    dibujo: 🦅
+    correcta: 🍗 Robar la comida del rey Fineo
+    incorrectas:
+      - texto: 🎵 Cantar nanas
+        feedback: No. Bajaban volando y le robaban la comida al rey Fineo.
+      - texto: 🧹 Limpiar el palacio
+        feedback: ¡Ja, ja! Al revés, lo dejaban todo apestoso. Le robaban la comida al rey.
+
+  - tipo: elegir
+    enunciado: ¿Quiénes echaron a las Harpías?
+    dibujo: 🦅 💨
+    correcta: 🌬️ Dos argonautas con alas
+    incorrectas:
+      - texto: 🦁 Heracles
+        feedback: Heracles ya se había quedado en otra isla. Fueron dos argonautas con alas, hijos del viento.
+      - texto: 🐕 Unos perros
+        feedback: No. Fueron dos argonautas con alas, hijos del viento del norte.
+
+  - tipo: chat
+    titulo: Las rocas que chocan
+    mensajes:
+      - de: hugo
+        texto: 'A la entrada del mar Negro había dos rocas enormes, las Simplégades. Se juntaban de golpe y aplastaban los barcos.'
+        dibujo: 🪨 💥 🪨
+      - de: valentina
+        texto: 'Fineo les dio un consejo: soltad una paloma. Si ella pasa, podréis pasar vosotros.'
+        dibujo: 🕊️
+      - de: santiago
+        texto: 'La paloma pasó volando, y las rocas solo le cortaron unas plumas de la cola.'
+        dibujo: 🕊️ 🪶
+      - de: vega
+        texto: 'Cuando las rocas se separaron otra vez, los argonautas remaron con todas sus fuerzas. Atenea empujó el barco. ¡Y pasaron, perdiendo solo un trocito de atrás!'
+        dibujo: 🚣 🦉
+      - de: hugo
+        texto: 'Desde entonces, las rocas se quedaron quietas para siempre.'
+        dibujo: 🪨 🪨
+      - de: valentina
+        texto: 'Después pasaron por la isla de las aves del lago Estínfalo, las que había espantado Heracles. Las asustaron golpeando sus escudos.'
+        dibujo: 🐦 🛡️
+
+  - tipo: elegir
+    enunciado: ¿Para qué soltaron una paloma?
+    dibujo: 🕊️ 🪨
+    correcta: 🕊️ Para ver si se podía pasar
+    incorrectas:
+      - texto: ✉️ Para mandar una carta
+        feedback: No. Si la paloma pasaba entre las rocas, ellos también podrían.
+      - texto: 🍞 Para darle de comer
+        feedback: No. Si la paloma pasaba entre las rocas, ellos también podrían.
+
+  - tipo: ordenar
+    enunciado: Ordena cómo pasaron las rocas que chocan.
+    piezas: 🚣 Reman con fuerza / ⛵ Pasan al otro lado / 🕊️ Sueltan la paloma / 🪨 Las rocas se cierran
+    solucion: 🕊️ Sueltan la paloma 🪨 Las rocas se cierran 🚣 Reman con fuerza ⛵ Pasan al otro lado
+    explicacion: Sueltan la paloma, y las rocas se cierran tras ella. Cuando se abren, reman con fuerza. Y pasan al otro lado.
+
+  - tipo: elegir
+    enunciado: ¿Qué les pasó a las rocas después?
+    dibujo: 🪨 🪨
+    correcta: 🪨 Se quedaron quietas para siempre
+    incorrectas:
+      - texto: 💃 Se pusieron a bailar
+        feedback: ¡Ja, ja! No. Desde entonces se quedaron quietas para siempre.
+      - texto: 💥 Siguieron chocando
+        feedback: No. Desde que pasó el Argo, se quedaron quietas para siempre.

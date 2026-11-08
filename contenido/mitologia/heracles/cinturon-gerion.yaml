@@ -1,0 +1,97 @@
+titulo: El cinturón y los bueyes
+subtitulo: El noveno y el décimo trabajo
+emoji: 🏛️
+ejercicios:
+  - tipo: chat
+    titulo: La reina de las amazonas
+    mensajes:
+      - de: hugo
+        texto: 'La hija de Euristeo quería un capricho: el cinturón de Hipólita, la reina de las amazonas.'
+        dibujo: 👑 🎗️
+      - de: valentina
+        texto: 'Las amazonas eran un pueblo de guerreras. Montaban a caballo y tiraban con arco mejor que nadie.'
+        dibujo: 🐎 🏹
+      - de: santiago
+        texto: 'El cinturón era mágico. Se lo había regalado a Hipólita su padre, Ares, el dios de la guerra.'
+        dibujo: ⚔️ ✨
+      - de: vega
+        texto: 'Heracles llegó en barco, e Hipólita lo recibió bien. ¡Le iba a regalar el cinturón!'
+        dibujo: ⛵ 🎁
+      - de: hugo
+        texto: 'Pero Hera se disfrazó de amazona, y fue diciendo a todas que Heracles venía a llevarse a su reina.'
+        dibujo: 🦚 🥸
+      - de: valentina
+        texto: 'Hubo una batalla, y Heracles tuvo que llevarse el cinturón luchando. Hera lo había estropeado todo.'
+        dibujo: ⚔️ 😞
+
+  - tipo: elegir
+    enunciado: ¿Quién era Hipólita?
+    dibujo: 🎗️
+    correcta: 👑 La reina de las amazonas
+    incorrectas:
+      - texto: 🦚 Una diosa del Olimpo
+        feedback: No. Hipólita era la reina de las amazonas, hija de Ares.
+      - texto: 🐎 Una yegua
+        feedback: ¡Ja, ja! No. Hipólita era la reina de las amazonas.
+
+  - tipo: elegir
+    enunciado: ¿Quién provocó la batalla con las amazonas?
+    dibujo: ⚔️
+    correcta: 🦚 Hera, disfrazada
+    incorrectas:
+      - texto: 👑 Hipólita
+        feedback: No. Hipólita le iba a regalar el cinturón. Lo estropeó Hera, disfrazada de amazona.
+      - texto: 🐦 Las aves del lago
+        feedback: No. Lo estropeó Hera, disfrazada de amazona.
+
+  - tipo: chat
+    titulo: Hasta el fin del mundo, en España
+    mensajes:
+      - de: santiago
+        texto: 'El décimo: robar los bueyes rojos de Gerión, un gigante con tres cuerpos unidos por la cintura.'
+        dibujo: 🐄 3️⃣
+      - de: vega
+        texto: 'Vivía en una isla del fin del mundo, que los griegos colocaban cerca de Cádiz, en España.'
+        dibujo: 🏝️ 🌅
+      - de: hugo
+        texto: 'Para llegar, Heracles pasó por donde se juntan Europa y África, y puso dos columnas, una a cada lado: las columnas de Hércules.'
+        dibujo: 🏛️ 🏛️
+      - de: valentina
+        texto: 'Esas columnas están dibujadas en el escudo de España, con dos palabras en latín, «Plus Ultra», que quieren decir más allá.'
+        dibujo: 🛡️ 🏛️
+      - de: santiago
+        texto: 'El Sol daba tanto calor, que Heracles le apuntó con una flecha. A Helios le hizo gracia su valentía, y le prestó su copa de oro para navegar.'
+        dibujo: ☀️ 🏆
+      - de: vega
+        texto: 'Venció a Ortro, un perro de dos cabezas que vigilaba los bueyes, y al gigante Gerión. Y volvió a Grecia con los bueyes.'
+        dibujo: 🐕 🐄
+
+  - tipo: elegir
+    enunciado: ¿Cerca de qué ciudad de España vivía el gigante Gerión?
+    dibujo: 🏝️
+    correcta: 🌊 Cádiz
+    incorrectas:
+      - texto: ⛰️ Madrid
+        feedback: No. Los griegos lo colocaban cerca de Cádiz, junto al mar.
+      - texto: 🏛️ Atenas
+        feedback: Atenas está en Grecia. Gerión vivía cerca de Cádiz, en España.
+
+  - tipo: elegir
+    enunciado: ¿Dónde están dibujadas las columnas de Hércules?
+    dibujo: 🏛️ 🏛️
+    correcta: 🛡️ En el escudo de España
+    incorrectas:
+      - texto: 🍫 En las chocolatinas
+        feedback: ¡Ja, ja! No. Están en el escudo de España, con las palabras «Plus Ultra».
+      - texto: 🚦 En los semáforos
+        feedback: No. Están en el escudo de España, con las palabras «Plus Ultra».
+
+  - tipo: elegir
+    enunciado: ¿Cuántos cuerpos tenía el gigante Gerión?
+    dibujo: 🐄
+    correcta: 3️⃣ Tres
+    incorrectas:
+      - texto: 1️⃣ Uno
+        feedback: Más. Tenía tres cuerpos unidos por la cintura.
+      - texto: 💯 Cien
+        feedback: Cien eran los brazos de otros gigantes. Gerión tenía tres cuerpos.

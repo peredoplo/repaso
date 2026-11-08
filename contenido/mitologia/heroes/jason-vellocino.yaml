@@ -1,0 +1,94 @@
+titulo: Medea y el vellocino de oro
+subtitulo: Toros de fuego y un dragón que no duerme
+emoji: 🐏
+ejercicios:
+  - tipo: chat
+    titulo: Pruebas imposibles
+    mensajes:
+      - de: valentina
+        texto: 'Por fin llegaron a la Cólquide. El rey Eetes no quería dar el vellocino, y le puso a Jasón pruebas imposibles.'
+        dibujo: 👑 😏
+      - de: santiago
+        texto: 'Primero, arar un campo con dos toros de bronce que echaban fuego por la boca. Arar es abrir surcos en la tierra para sembrar.'
+        dibujo: 🐂 🔥
+      - de: vega
+        texto: 'Después, sembrar en ese campo dientes de dragón. ¡Y de cada diente saldría un guerrero armado!'
+        dibujo: 🦷 ⚔️
+      - de: hugo
+        texto: 'Pero la hija del rey, Medea, era hechicera. Eros le disparó una flecha, y se enamoró de Jasón.'
+        dibujo: 💘 🧙
+      - de: valentina
+        texto: 'Le dio una crema mágica que lo protegía del fuego durante un día. Con ella, Jasón aró el campo sin quemarse.'
+        dibujo: 🧴 🛡️
+      - de: santiago
+        texto: 'Cuando salieron los guerreros, Jasón tiró una piedra en medio de ellos. Cada uno creyó que se la había tirado otro, ¡y se pelearon entre ellos!'
+        dibujo: 🪨 🤼
+
+  - tipo: elegir
+    enunciado: ¿Qué salía de los dientes de dragón?
+    dibujo: 🦷
+    correcta: ⚔️ Guerreros armados
+    incorrectas:
+      - texto: 🌱 Flores
+        feedback: No. De cada diente salía un guerrero armado.
+      - texto: 🪥 Cepillos de dientes
+        feedback: ¡Ja, ja! No. De cada diente salía un guerrero armado.
+
+  - tipo: elegir
+    enunciado: ¿Cómo hizo Jasón que los guerreros se pelearan entre ellos?
+    dibujo: ⚔️ ⚔️
+    correcta: 🪨 Tirándoles una piedra
+    incorrectas:
+      - texto: 🎵 Cantándoles
+        feedback: No. Les tiró una piedra, y cada uno creyó que había sido otro.
+      - texto: 🍕 Dándoles una pizza
+        feedback: ¡Ja, ja! No. Les tiró una piedra, y cada uno creyó que había sido otro.
+
+  - tipo: chat
+    titulo: El dragón que nunca dormía
+    mensajes:
+      - de: vega
+        texto: 'Aun así, el rey no cumplió su promesa. El vellocino colgaba de un árbol, en un bosque, vigilado por un dragón que nunca dormía.'
+        dibujo: 🐉 🌳
+      - de: hugo
+        texto: 'Medea cantó una canción mágica y le echó unas gotas en los ojos. Y el dragón, por primera vez, se durmió.'
+        dibujo: 🎶 😴
+      - de: valentina
+        texto: 'Jasón cogió el vellocino, que brillaba como un rayo de sol, y huyeron en el Argo.'
+        dibujo: ✨ ⛵
+      - de: santiago
+        texto: 'De vuelta, en Creta, les atacó Talos, el gigante de bronce de Hefesto. Tenía una sola vena, tapada con un clavo en el tobillo. Medea consiguió quitarle el clavo, y Talos se vino abajo.'
+        dibujo: 🗿 🦶
+      - de: vega
+        texto: 'Volvieron a Yolco con el vellocino. Y el carnero dorado está en el cielo: es la constelación de Aries.'
+        dibujo: 🐏 ⭐
+
+  - tipo: elegir
+    enunciado: ¿Cómo durmieron al dragón?
+    dibujo: 🐉
+    correcta: 🎶 Con una canción mágica
+    incorrectas:
+      - texto: 🥛 Con leche caliente
+        feedback: ¡Ja, ja! No. Medea le cantó una canción mágica.
+      - texto: 📖 Leyéndole un cuento
+        feedback: Casi. Medea le cantó una canción mágica.
+
+  - tipo: elegir
+    enunciado: ¿Dónde tenía Talos su punto débil?
+    dibujo: 🗿
+    correcta: 🦶 En el tobillo
+    incorrectas:
+      - texto: 🧠 En la cabeza
+        feedback: No. Su punto débil era un clavo en el tobillo.
+      - texto: 👃 En la nariz
+        feedback: ¡Ja, ja! No. Su punto débil era un clavo en el tobillo.
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación es el carnero del vellocino de oro?
+    dibujo: 🐏 ⭐
+    correcta: ♈ Aries
+    incorrectas:
+      - texto: ♌ Leo
+        feedback: Leo es el león de Nemea. El carnero es Aries.
+      - texto: 🦀 Cáncer
+        feedback: Cáncer es el cangrejo de la Hidra. El carnero es Aries.

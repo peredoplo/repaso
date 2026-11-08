@@ -1,0 +1,94 @@
+titulo: De vuelta en Ítaca
+subtitulo: El perro Argos y el tejido de Penélope
+emoji: 🐕
+ejercicios:
+  - tipo: chat
+    titulo: El truco de Penélope
+    mensajes:
+      - de: vega
+        texto: 'En Ítaca, Atenea se le apareció a Odiseo y lo disfrazó de mendigo viejo, para que nadie lo reconociera.'
+        dibujo: 🦉 🧓
+      - de: hugo
+        texto: 'En su palacio vivían más de cien pretendientes: hombres que querían casarse con Penélope y ser reyes. Se comían su comida y se portaban fatal.'
+        dibujo: 🍗 😠
+      - de: valentina
+        texto: 'Penélope no quería. Les dijo que elegiría a uno cuando acabara de tejer una tela para el padre de Odiseo.'
+        dibujo: 🧶 👴
+      - de: santiago
+        texto: 'De día tejía. Y de noche, en secreto, deshacía lo que había tejido. ¡Así estuvo tres años!'
+        dibujo: ☀️ 🌙
+      - de: vega
+        texto: 'Hasta que una criada contó el truco, y la descubrieron.'
+        dibujo: 🗣️ 😮
+
+  - tipo: elegir
+    enunciado: ¿Qué hacía Penélope por la noche?
+    dibujo: 🌙 🧶
+    correcta: 🧶 Deshacer lo que tejía de día
+    incorrectas:
+      - texto: 😴 Dormir mucho
+        feedback: No. Deshacía en secreto lo que había tejido de día.
+      - texto: 🎉 Hacer fiestas
+        feedback: No. Deshacía en secreto lo que había tejido de día.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Atenea disfrazó a Odiseo de mendigo?
+    dibujo: 🦉 🧓
+    correcta: 🥸 Para que nadie lo reconociera
+    incorrectas:
+      - texto: 🎭 Porque era carnaval
+        feedback: ¡Ja, ja! No. Para que nadie lo reconociera, y pudiera ver qué pasaba en su palacio.
+      - texto: 🥶 Para que no tuviera frío
+        feedback: No. Para que nadie lo reconociera, y pudiera ver qué pasaba en su palacio.
+
+  - tipo: chat
+    titulo: Los que lo reconocieron
+    mensajes:
+      - de: hugo
+        texto: 'Primero fue a casa del porquero, el que cuidaba los cerdos, que lo trató muy bien sin saber quién era. Allí apareció su hijo, Telémaco, ya mayor.'
+        dibujo: 🐷 🏡
+      - de: valentina
+        texto: 'Odiseo le dijo quién era. ¡Se abrazaron llorando!'
+        dibujo: 🤗 😭
+      - de: santiago
+        texto: 'Al llegar al palacio, tumbado junto a la puerta, estaba Argos, su perro. Ya era muy viejo.'
+        dibujo: 🐕 🚪
+      - de: vega
+        texto: 'Argos llevaba veinte años esperando. Reconoció a su amo enseguida, aunque iba disfrazado. Movió la cola y bajó las orejas.'
+        dibujo: 🐕 💛
+      - de: hugo
+        texto: 'Odiseo tuvo que disimular una lágrima. Y Argos, feliz por haberlo visto otra vez, cerró los ojos para siempre.'
+        dibujo: 😢 🐕
+      - de: valentina
+        texto: 'Su vieja niñera, al lavarle los pies, lo reconoció por una cicatriz en la pierna, de cuando le atacó un jabalí de joven. Odiseo le pidió que no dijera nada.'
+        dibujo: 🦵 🤫
+
+  - tipo: elegir
+    enunciado: ¿Quién reconoció a Odiseo a pesar del disfraz, nada más verlo?
+    dibujo: 🧓 🚪
+    correcta: 🐕 Su perro Argos
+    incorrectas:
+      - texto: 🐷 Los cerdos
+        feedback: No. Fue su perro Argos, que llevaba veinte años esperando.
+      - texto: 😠 Los pretendientes
+        feedback: No. Los pretendientes no se enteraron. Fue su perro Argos.
+
+  - tipo: elegir
+    enunciado: ¿Cómo lo reconoció la niñera?
+    dibujo: 👵
+    correcta: 🩹 Por una cicatriz en la pierna
+    incorrectas:
+      - texto: 👃 Por el olor
+        feedback: No. Al lavarle los pies vio una cicatriz que le hizo un jabalí.
+      - texto: 🎵 Porque cantó una canción
+        feedback: No. Al lavarle los pies vio una cicatriz que le hizo un jabalí.
+
+  - tipo: elegir
+    enunciado: ¿Cuántos años esperó el perro Argos?
+    dibujo: 🐕 ⏳
+    correcta: 📅 Veinte
+    incorrectas:
+      - texto: 2️⃣ Dos
+        feedback: Muchos más. Argos esperó veinte años.
+      - texto: 💯 Cien
+        feedback: No tantos. Argos esperó veinte años.

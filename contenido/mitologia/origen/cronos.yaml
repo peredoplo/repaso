@@ -1,0 +1,99 @@
+titulo: Cronos y el pequeño Zeus
+subtitulo: Una piedra envuelta en mantas
+emoji: 🪨
+ejercicios:
+  - tipo: chat
+    titulo: El rey que se tragaba a sus hijos
+    mensajes:
+      - de: santiago
+        texto: 'Cronos era el rey, pero le avisaron: uno de tus hijos te quitará el trono, igual que tú se lo quitaste a tu padre.'
+        dibujo: 👑 😨
+      - de: vega
+        texto: 'Cronos se casó con su hermana Rea. Y cada vez que nacía un bebé, ¡se lo tragaba entero! Así no podría crecer y quitarle el trono.'
+        dibujo: 👶 😮
+      - de: hugo
+        texto: 'Se tragó a cinco: Hestia, Deméter, Hera, Hades y Poseidón. Como eran dioses, no morían: seguían vivos en su tripa, creciendo.'
+        dibujo: 5️⃣ 😮
+      - de: valentina
+        texto: 'Rea estaba tristísima. Cuando iba a nacer el sexto, Zeus, se escondió en la isla de Creta.'
+        dibujo: 🏝️ 🤫
+      - de: santiago
+        texto: 'A Cronos le dio una piedra envuelta en mantas, como si fuera el bebé. Y Cronos se la tragó sin mirar.'
+        dibujo: 🪨 🧣
+      - de: vega
+        texto: 'Zeus creció escondido en una cueva. Lo cuidaban las ninfas, espíritus de la naturaleza, y una cabra, Amaltea, le daba su leche.'
+        dibujo: 🐐 🍼
+      - de: hugo
+        texto: 'Cuando el bebé lloraba, unos guerreros, los curetes, bailaban golpeando sus escudos, para que Cronos no lo oyera.'
+        dibujo: 🛡️ 🥁
+      - de: valentina
+        texto: 'Un día Zeus rompió sin querer un cuerno de la cabra. De ese cuerno salía toda la comida que quisieras: era el cuerno de la abundancia.'
+        dibujo: 🍇 🍎
+
+  - tipo: elegir
+    enunciado: ¿Qué se tragó Cronos en lugar del bebé Zeus?
+    dibujo: 👶 ❓
+    correcta: 🪨 Una piedra envuelta en mantas
+    incorrectas:
+      - texto: 🍰 Una tarta
+        feedback: ¡Ja, ja! No. Rea le dio una piedra envuelta en mantas, y se la tragó sin mirar.
+      - texto: 🐐 Una cabra
+        feedback: La cabra Amaltea le daba leche a Zeus. Cronos se tragó una piedra envuelta en mantas.
+
+  - tipo: elegir
+    enunciado: ¿Dónde se escondió Zeus de bebé?
+    dibujo: 🤫
+    correcta: 🏝️ En la isla de Creta
+    incorrectas:
+      - texto: 🌙 En la Luna
+        feedback: No. Se escondió en una cueva de la isla de Creta.
+      - texto: ⛰️ En el monte Olimpo
+        feedback: Al Olimpo llegó después, ya mayor. De bebé se escondió en la isla de Creta.
+
+  - tipo: chat
+    titulo: El rescate de los hermanos
+    mensajes:
+      - de: hugo
+        texto: 'Zeus creció fuerte y listo. Y pidió ayuda a Metis, una titán muy astuta.'
+        dibujo: 💪 🧠
+      - de: valentina
+        texto: 'Metis preparó una bebida que daba muchísimas ganas de vomitar. Y Zeus consiguió que Cronos se la bebiera.'
+        dibujo: 🥤 🤢
+      - de: santiago
+        texto: 'Cronos vomitó primero la piedra, y después a los cinco hermanos, ya mayores. ¡Qué asco, y qué alegría!'
+        dibujo: 🤮 🎉
+      - de: vega
+        texto: 'Zeus quería saber dónde estaba el centro del mundo. Soltó dos águilas, cada una desde un extremo, y se encontraron en Delfos, en Grecia.'
+        dibujo: 🦅 🦅
+      - de: hugo
+        texto: 'Allí puso la piedra que se había tragado Cronos. La llamaban el ómfalo, que quiere decir el ombligo del mundo.'
+        dibujo: 🪨 🌍
+      - de: valentina
+        texto: 'Ahora los seis hermanos estaban juntos. Y Cronos, furioso, llamó a los titanes a la guerra.'
+        dibujo: ⚔️ 😠
+
+  - tipo: ordenar
+    enunciado: Ordena la historia de Zeus.
+    piezas: 🤮 Cronos devuelve a los hermanos / 🪨 Cronos se traga la piedra / 🐐 Zeus crece en Creta
+    solucion: 🪨 Cronos se traga la piedra 🐐 Zeus crece en Creta 🤮 Cronos devuelve a los hermanos
+    explicacion: Primero Cronos se traga la piedra. Zeus crece escondido en Creta. Y al final Cronos devuelve a los hermanos.
+
+  - tipo: elegir
+    enunciado: ¿Qué era el ómfalo de Delfos?
+    dibujo: 🦅 🦅
+    correcta: 🪨 Una piedra, el ombligo del mundo
+    incorrectas:
+      - texto: 🍩 Un donut gigante
+        feedback: ¡Ja, ja! No. Era la piedra que se tragó Cronos, y la llamaban el ombligo del mundo.
+      - texto: 🏺 Una jarra
+        feedback: No. Era la piedra que se tragó Cronos, y la llamaban el ombligo del mundo.
+
+  - tipo: elegir
+    enunciado: ¿Qué salía del cuerno de la cabra Amaltea?
+    dibujo: 🐐
+    correcta: 🍇 Toda la comida que quisieras
+    incorrectas:
+      - texto: 🎺 Música
+        feedback: No era una trompeta. Era el cuerno de la abundancia, del que salía toda la comida que quisieras.
+      - texto: 💧 Solo agua
+        feedback: Mucho más. Del cuerno de la abundancia salía toda la comida que quisieras.

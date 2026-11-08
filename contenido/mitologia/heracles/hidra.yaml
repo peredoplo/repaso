@@ -1,0 +1,93 @@
+titulo: La Hidra de Lerna
+subtitulo: El segundo trabajo
+emoji: 🐍
+ejercicios:
+  - tipo: chat
+    titulo: Nueve cabezas que se multiplican
+    mensajes:
+      - de: vega
+        texto: 'La Hidra vivía en un pantano, en Lerna. Era una serpiente de agua con nueve cabezas, y una de ellas era inmortal.'
+        dibujo: 🐍 9️⃣
+      - de: hugo
+        texto: 'Su aliento era venenoso. Solo con respirarlo, podías caer al suelo.'
+        dibujo: 🤢 💨
+      - de: valentina
+        texto: 'Heracles fue con su sobrino Yolao, que conducía su carro. La hizo salir de su cueva disparándole flechas encendidas.'
+        dibujo: 🏹 🔥
+      - de: santiago
+        texto: 'Y empezó a cortarle cabezas. Pero cada vez que cortaba una, ¡le salían dos nuevas!'
+        dibujo: ⚔️ ✌️
+      - de: vega
+        texto: 'Además, Hera mandó un cangrejo gigante a pellizcarle el pie. Heracles lo aplastó de un pisotón.'
+        dibujo: 🦀 🦶
+      - de: hugo
+        texto: 'Hera lo puso en el cielo, y es la constelación de Cáncer, el cangrejo.'
+        dibujo: ⭐ 🦀
+
+  - tipo: elegir
+    enunciado: ¿Qué pasaba al cortarle una cabeza a la Hidra?
+    dibujo: 🐍 ⚔️
+    correcta: ✌️ Le salían dos nuevas
+    incorrectas:
+      - texto: 💤 Se dormía
+        feedback: No. Le salían dos cabezas nuevas. ¡Así no había manera!
+      - texto: 🎈 Salía volando
+        feedback: ¡Ja, ja! No. Le salían dos cabezas nuevas.
+
+  - tipo: elegir
+    enunciado: ¿Qué animal mandó Hera para molestar a Heracles?
+    dibujo: 🦚 😠
+    correcta: 🦀 Un cangrejo gigante
+    incorrectas:
+      - texto: 🐊 Un cocodrilo
+        feedback: No. Mandó un cangrejo gigante, que hoy es la constelación de Cáncer.
+      - texto: 🐝 Una abeja
+        feedback: No. Mandó un cangrejo gigante, que hoy es la constelación de Cáncer.
+
+  - tipo: chat
+    titulo: Fuego contra cabezas
+    mensajes:
+      - de: valentina
+        texto: 'Heracles pidió ayuda a Yolao. Cada vez que cortaba una cabeza, Yolao quemaba el cuello con una antorcha. Así ya no salían más.'
+        dibujo: 🔥 🐍
+      - de: santiago
+        texto: 'La cabeza inmortal la cortó y la enterró debajo de una roca enorme.'
+        dibujo: 🪨 ⬇️
+      - de: vega
+        texto: 'Heracles mojó sus flechas en el veneno de la Hidra. Desde entonces, sus flechas eran peligrosísimas.'
+        dibujo: 🏹 ☠️
+      - de: hugo
+        texto: 'Pero Euristeo dijo que este trabajo no valía, porque le había ayudado Yolao.'
+        dibujo: 👑 🚫
+      - de: valentina
+        texto: 'Hoy existe un animalito de verdad llamado hidra. Vive en el agua dulce y mide como mucho un centímetro. Si se corta en trozos, ¡cada trozo se convierte en otra hidra!'
+        dibujo: 🔬 💧
+      - de: santiago
+        texto: 'Y en el cielo está la constelación de la Hidra: es la más grande de todas.'
+        dibujo: ⭐ 🐍
+
+  - tipo: elegir
+    enunciado: ¿Cómo consiguieron que no salieran más cabezas?
+    dibujo: 🐍 ✌️
+    correcta: 🔥 Quemando los cuellos
+    incorrectas:
+      - texto: 💧 Echándoles agua
+        feedback: No. Yolao quemaba los cuellos con una antorcha.
+      - texto: 🧊 Congelándolas
+        feedback: No. Yolao quemaba los cuellos con una antorcha.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Euristeo dijo que este trabajo no valía?
+    dibujo: 👑 🚫
+    correcta: 🤝 Porque le ayudó Yolao
+    incorrectas:
+      - texto: 🐢 Porque tardó mucho
+        feedback: No. Dijo que no valía porque le había ayudado su sobrino Yolao.
+      - texto: 🦀 Porque perdió contra el cangrejo
+        feedback: No perdió, lo aplastó. No valía porque le había ayudado Yolao.
+
+  - tipo: ordenar
+    enunciado: Ordena cómo venció Heracles a la Hidra.
+    piezas: 🪨 Entierra la cabeza inmortal / 🏹 Flechas encendidas / 🔥 Yolao quema los cuellos / ⚔️ Corta las cabezas
+    solucion: 🏹 Flechas encendidas ⚔️ Corta las cabezas 🔥 Yolao quema los cuellos 🪨 Entierra la cabeza inmortal
+    explicacion: Con flechas encendidas la hace salir. Corta las cabezas, y Yolao quema los cuellos. Al final entierra la cabeza inmortal.

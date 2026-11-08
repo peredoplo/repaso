@@ -1,0 +1,96 @@
+titulo: Hermes, el mensajero
+subtitulo: El bebé más travieso
+emoji: 🪶
+ejercicios:
+  - tipo: chat
+    titulo: El primer día de Hermes
+    mensajes:
+      - de: hugo
+        texto: 'Hermes era hijo de Zeus y de Maya. Nació en una cueva, y el mismo día ya hizo travesuras.'
+        dibujo: 👶 😈
+      - de: valentina
+        texto: 'Por la mañana salió de la cuna, encontró una tortuga y, con su caparazón, inventó la lira.'
+        dibujo: 🐢 🎵
+      - de: santiago
+        texto: 'Por la tarde robó cincuenta vacas a su hermano Apolo.'
+        dibujo: 🐄 🐄 🐄
+      - de: vega
+        texto: 'Para que no siguieran sus huellas, hizo andar a las vacas hacia atrás. Y él se puso unas sandalias de ramitas para borrar sus pisadas.'
+        dibujo: 🔄 👣
+      - de: hugo
+        texto: 'Luego volvió a la cuna, como si nada, ¡haciéndose el bebé dormido!'
+        dibujo: 🛏️ 😴
+      - de: valentina
+        texto: 'Apolo lo descubrió y lo llevó ante Zeus. Hermes mentía tan bien, que Zeus se echó a reír.'
+        dibujo: ⚡ 😂
+      - de: santiago
+        texto: 'Para hacer las paces, Hermes le regaló a Apolo la lira. Y Apolo le dejó quedarse con las vacas.'
+        dibujo: 🎵 🤝
+
+  - tipo: elegir
+    enunciado: ¿Qué inventó Hermes el día que nació?
+    dibujo: 👶
+    correcta: 🎵 La lira
+    incorrectas:
+      - texto: 📱 El móvil
+        feedback: ¡Ja, ja! No. Inventó la lira, con un caparazón de tortuga.
+      - texto: 🚲 La bici
+        feedback: No. Inventó la lira, con un caparazón de tortuga.
+
+  - tipo: elegir
+    enunciado: ¿Cómo engañó Hermes a Apolo con las vacas?
+    dibujo: 🐄 👣
+    correcta: 🔄 Las hizo andar hacia atrás
+    incorrectas:
+      - texto: 🎨 Las pintó de azul
+        feedback: ¡Ja, ja! No. Las hizo andar hacia atrás, para confundir sus huellas.
+      - texto: 🎈 Las hizo volar
+        feedback: No. Las hizo andar hacia atrás, para confundir sus huellas.
+
+  - tipo: chat
+    titulo: El dios con alas en los pies
+    mensajes:
+      - de: vega
+        texto: 'Hermes fue el mensajero de los dioses, el más rápido de todos. Tenía sandalias con alas, y un sombrero con alas.'
+        dibujo: 🪶 🏃
+      - de: hugo
+        texto: 'Llevaba un bastón con dos serpientes enroscadas, el caduceo.'
+        dibujo: 🐍 🐍
+      - de: valentina
+        texto: 'Era el dios de los viajeros, de los comerciantes, de los ladrones y de los mentirosos. ¡Y de la buena suerte!'
+        dibujo: 🧳 🍀
+      - de: santiago
+        texto: 'También acompañaba a las almas de los muertos hasta el mundo de abajo, el de Hades.'
+        dibujo: 👻 ⬇️
+      - de: vega
+        texto: 'Los romanos lo llamaban Mercurio. Por eso el planeta más rápido alrededor del Sol se llama Mercurio.'
+        dibujo: ☀️ 💨
+      - de: hugo
+        texto: 'Y también un metal que es líquido y se mueve rapidísimo, el mercurio, que se usaba en los termómetros antiguos.'
+        dibujo: 🌡️ 💧
+
+  - tipo: elegir
+    enunciado: ¿Qué tenía Hermes en las sandalias?
+    dibujo: 🏃
+    correcta: 🪶 Alas
+    incorrectas:
+      - texto: 🛼 Ruedas
+        feedback: ¡Ja, ja! No. Tenía alas, por eso era el más rápido.
+      - texto: 💡 Luces
+        feedback: No. Tenía alas, por eso era el más rápido.
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta tiene el nombre romano de Hermes?
+    dibujo: 🪶 ☀️
+    correcta: 💨 Mercurio
+    incorrectas:
+      - texto: ✨ Venus
+        feedback: Venus es Afrodita. El de Hermes es Mercurio, el más rápido alrededor del Sol.
+      - texto: 🔴 Marte
+        feedback: Marte es Ares. El de Hermes es Mercurio, el más rápido alrededor del Sol.
+
+  - tipo: ordenar
+    enunciado: Ordena el primer día de Hermes.
+    piezas: 🐄 Roba las vacas / 🛏️ Vuelve a la cuna / 👶 Nace en una cueva / 🐢 Inventa la lira
+    solucion: 👶 Nace en una cueva 🐢 Inventa la lira 🐄 Roba las vacas 🛏️ Vuelve a la cuna
+    explicacion: Nace en una cueva. Por la mañana inventa la lira. Por la tarde roba las vacas. Y vuelve a la cuna, como si nada.

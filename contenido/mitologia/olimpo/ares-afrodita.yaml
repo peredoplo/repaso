@@ -1,0 +1,97 @@
+titulo: Ares y Afrodita
+subtitulo: La guerra y el amor
+emoji: 💘
+ejercicios:
+  - tipo: chat
+    titulo: Ares, el dios de la guerra
+    mensajes:
+      - de: valentina
+        texto: 'Ares era el dios de la guerra, pero de la guerra salvaje, la de los gritos y la furia. Atenea era la de los planes.'
+        dibujo: ⚔️ 💢
+      - de: hugo
+        texto: 'Por eso casi ningún dios lo quería mucho. Ni siquiera su padre, Zeus.'
+        dibujo: 😒 ⚡
+      - de: santiago
+        texto: 'Lo acompañaban sus hijos, Fobos, el miedo, y Deimos, el terror. De Fobos viene la palabra fobia, que es un miedo muy fuerte a algo.'
+        dibujo: 😱 😨
+      - de: vega
+        texto: 'Los romanos lo llamaban Marte, y lo querían mucho más. Decían que era el padre de Rómulo, el que fundó Roma.'
+        dibujo: 🏛️ 🐺
+      - de: valentina
+        texto: 'El planeta Marte es rojo, como la sangre de las batallas. Y sus dos lunas se llaman Fobos y Deimos, como sus hijos.'
+        dibujo: 🔴 🌙
+      - de: hugo
+        texto: 'Aunque era tan fiero, perdía muchas veces. Dos gigantes lo encerraron en una jarra de bronce durante trece meses, hasta que Hermes lo sacó.'
+        dibujo: 🏺 😖
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llaman las lunas de Marte?
+    dibujo: 🔴
+    correcta: 😱 Fobos y Deimos
+    incorrectas:
+      - texto: 🌙 Ío y Europa
+        feedback: Esas son lunas de Júpiter. Las de Marte son Fobos y Deimos, el miedo y el terror.
+      - texto: 🐚 Tritón y Caronte
+        feedback: Tritón es de Neptuno y Caronte, de Plutón. Las de Marte son Fobos y Deimos.
+
+  - tipo: elegir
+    enunciado: ¿Qué guerra le gustaba a Ares?
+    dibujo: ⚔️
+    correcta: 💢 La guerra salvaje y furiosa
+    incorrectas:
+      - texto: 🧠 La guerra con planes
+        feedback: Esa era la de Atenea. A Ares le gustaba la guerra salvaje y furiosa.
+      - texto: 🧸 Las peleas de almohadas
+        feedback: ¡Ja, ja! No. A Ares le gustaba la guerra salvaje y furiosa.
+
+  - tipo: chat
+    titulo: Afrodita y Eros
+    mensajes:
+      - de: santiago
+        texto: 'Afrodita era la diosa del amor y de la belleza. Nació de la espuma del mar, y llegó a la orilla sobre una concha.'
+        dibujo: 🌊 🐚
+      - de: vega
+        texto: 'Su nombre viene de la palabra espuma en griego.'
+        dibujo: 🌊
+      - de: hugo
+        texto: 'Su animal era la paloma, y sus flores, las rosas. Tenía un cinturón mágico: quien lo llevaba, enamoraba a todos.'
+        dibujo: 🕊️ 🌹
+      - de: valentina
+        texto: 'Estaba casada con Hefesto, el dios herrero. Pero ella prefería a Ares.'
+        dibujo: 🔨 ⚔️
+      - de: santiago
+        texto: 'Su hijo era Eros, un niño con alas, arco y flechas. Si te disparaba una flecha de oro, te enamorabas.'
+        dibujo: 💘 🏹
+      - de: vega
+        texto: 'Los romanos la llamaban Venus, y a Eros, Cupido. El planeta Venus es el más brillante del cielo, el lucero que se ve al amanecer y al atardecer.'
+        dibujo: ✨ 🌅
+
+  - tipo: elegir
+    enunciado: ¿De dónde nació Afrodita?
+    dibujo: 🐚
+    correcta: 🌊 De la espuma del mar
+    incorrectas:
+      - texto: 🧠 De la cabeza de Zeus
+        feedback: Esa fue Atenea. Afrodita nació de la espuma del mar.
+      - texto: 🍓 De una fresa
+        feedback: ¡Ja, ja! No. Afrodita nació de la espuma del mar.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacían las flechas de oro de Eros?
+    dibujo: 🏹
+    correcta: 💘 Enamorar
+    incorrectas:
+      - texto: 🤧 Dar estornudos
+        feedback: ¡Ja, ja! No. Las flechas de Eros hacían que te enamoraras.
+      - texto: 💤 Dormir
+        feedback: No. Las flechas de Eros hacían que te enamoraras.
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta tiene el nombre romano de Afrodita?
+    dibujo: 💘 🌹
+    correcta: ✨ Venus
+    incorrectas:
+      - texto: 🔴 Marte
+        feedback: Marte es Ares, el de la guerra. El de Afrodita es Venus, el más brillante.
+      - texto: 🟠 Júpiter
+        feedback: Júpiter es Zeus. El de Afrodita es Venus, el más brillante.

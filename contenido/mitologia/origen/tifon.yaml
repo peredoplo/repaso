@@ -1,0 +1,103 @@
+titulo: Tifón, el monstruo más terrible
+subtitulo: La última batalla de Zeus
+emoji: 🐉
+ejercicios:
+  - tipo: chat
+    titulo: El hijo más terrible de Gea
+    mensajes:
+      - de: santiago
+        texto: 'Gea estaba enfadada porque Zeus había encerrado a sus hijos, los titanes. Y tuvo un último hijo, el más terrible de todos: Tifón.'
+        dibujo: 🌍 😠
+      - de: vega
+        texto: 'Tifón era tan alto que su cabeza tocaba las estrellas. Con los brazos abiertos llegaba de un lado del mundo al otro.'
+        dibujo: 📏 ⭐
+      - de: hugo
+        texto: 'De sus hombros salían cien cabezas de dragón. Y de la cintura para abajo era como serpientes enormes enroscadas.'
+        dibujo: 🐉 🐍
+      - de: valentina
+        texto: 'Echaba fuego por los ojos. Y hacía todos los ruidos a la vez: silbaba, rugía como un león y mugía como un toro.'
+        dibujo: 🔥 🦁 🐂
+      - de: santiago
+        texto: 'Al verlo, casi todos los dioses del Olimpo huyeron a Egipto, disfrazados de animales.'
+        dibujo: 🐈 🐦 🐐
+      - de: vega
+        texto: 'Así explicaban los griegos por qué los dioses de Egipto tenían cabeza de animal. ¡Qué ingeniosos!'
+        dibujo: 🐊 🦅
+      - de: hugo
+        texto: 'Según algunos poetas, solo se quedaron a plantarle cara Zeus y su hija Atenea.'
+        dibujo: ⚡ 🦉
+
+  - tipo: elegir
+    enunciado: ¿Qué hicieron casi todos los dioses al ver a Tifón?
+    dibujo: 🐉 😱
+    correcta: 🐈 Huir disfrazados de animales
+    incorrectas:
+      - texto: 🥳 Hacerle una fiesta
+        feedback: ¡Ja, ja! No. Huyeron a Egipto disfrazados de animales.
+      - texto: ⚔️ Luchar todos juntos
+        feedback: No. Casi todos huyeron a Egipto disfrazados de animales. Solo se quedaron Zeus y Atenea.
+
+  - tipo: chat
+    titulo: Debajo de un volcán
+    mensajes:
+      - de: valentina
+        texto: 'La lucha fue terrible. Tifón atrapó a Zeus y le quitó los tendones, las cuerdas que mueven los músculos. Zeus no se podía mover.'
+        dibujo: 💪 ❌
+      - de: santiago
+        texto: 'Pero Hermes, el dios más rápido y más listo, los robó sin que Tifón se diera cuenta, y se los volvió a poner a Zeus.'
+        dibujo: 🏃 🤫
+      - de: vega
+        texto: 'Zeus volvió con sus rayos y persiguió a Tifón por todo el mundo.'
+        dibujo: ⚡ ⚡ ⚡
+      - de: hugo
+        texto: 'Al final le tiró encima una montaña entera: el monte Etna, en la isla de Sicilia, en Italia.'
+        dibujo: ⛰️ 💥
+      - de: valentina
+        texto: 'El Etna es un volcán de verdad, de los más activos del mundo. Los griegos decían que el fuego y el humo eran Tifón, que todavía se revuelve debajo.'
+        dibujo: 🌋 💨
+      - de: santiago
+        texto: 'Su nombre se parece a la palabra tifón, que es como llaman a los huracanes gigantes del océano Pacífico.'
+        dibujo: 🌀 🌊
+      - de: vega
+        texto: 'Tifón y su compañera Equidna, mitad mujer y mitad serpiente, tuvieron hijos monstruosos: el perro Cerbero, la Hidra, la Quimera. Los conocerás con los héroes.'
+        dibujo: 🐕 🐍 🦁
+
+  - tipo: elegir
+    enunciado: ¿Quién ayudó a Zeus a recuperar sus tendones?
+    dibujo: ⚡ 💪
+    correcta: 🏃 Hermes
+    incorrectas:
+      - texto: 🐐 La cabra Amaltea
+        feedback: Amaltea le dio leche de bebé. Los tendones se los devolvió Hermes.
+      - texto: 🌾 Cronos
+        feedback: Cronos estaba encerrado. Los tendones se los devolvió Hermes, el más rápido y listo.
+
+  - tipo: elegir
+    enunciado: ¿Dónde quedó atrapado Tifón?
+    dibujo: 🐉
+    correcta: 🌋 Debajo del volcán Etna
+    incorrectas:
+      - texto: 🌊 En el fondo del mar
+        feedback: No. Zeus le tiró encima el monte Etna, un volcán de Sicilia.
+      - texto: 🌙 En la Luna
+        feedback: No. Zeus le tiró encima el monte Etna, un volcán de Sicilia.
+
+  - tipo: elegir
+    enunciado: ¿Qué monstruo era hijo de Tifón?
+    dibujo: 🐉 👶
+    correcta: 🐕 Cerbero, el perro de tres cabezas
+    incorrectas:
+      - texto: 🐰 Un conejito
+        feedback: ¡Ja, ja! No. Sus hijos eran monstruos, como Cerbero, el perro de tres cabezas.
+      - texto: 🐬 Un delfín
+        feedback: No. Sus hijos eran monstruos, como Cerbero, el perro de tres cabezas.
+
+  - tipo: elegir
+    enunciado: ¿Qué hay, según el mito, debajo del Etna cuando echa humo?
+    dibujo: 🌋 💨
+    correcta: 🐉 Tifón, que se revuelve
+    incorrectas:
+      - texto: 🍳 Alguien cocinando
+        feedback: ¡Ja, ja! No. Los griegos decían que era Tifón, que se revuelve debajo.
+      - texto: 🐋 Una ballena
+        feedback: No. Los griegos decían que era Tifón, que se revuelve debajo.

@@ -1,0 +1,93 @@
+titulo: El gran diluvio
+subtitulo: Piedras que se convierten en personas
+emoji: 🌧️
+ejercicios:
+  - tipo: chat
+    titulo: Las edades de los humanos
+    mensajes:
+      - de: valentina
+        texto: 'Los griegos contaban que los humanos habían pasado por varias edades, cada una peor que la anterior. Les pusieron nombres de metales.'
+        dibujo: 🥇 🥈 🥉
+      - de: hugo
+        texto: 'En la edad de oro, cuando reinaba Cronos, nadie trabajaba ni enfermaba. La tierra daba comida sola, y siempre era primavera.'
+        dibujo: 🌾 🌸
+      - de: santiago
+        texto: 'Después vino la edad de plata, con gente menos sabia. Y luego la de bronce, con gente que solo quería pelear.'
+        dibujo: 🥈 ⚔️
+      - de: vega
+        texto: 'Más tarde llegó la edad de los héroes, la de Heracles y Aquiles. Y por último la de hierro, la nuestra, con mucho trabajo y problemas.'
+        dibujo: 🦸 🔩
+      - de: valentina
+        texto: 'Zeus, harto de lo mal que se portaba la gente de bronce, decidió acabar con ellos con un diluvio: una lluvia que no paraba nunca.'
+        dibujo: ⚡ 🌧️
+
+  - tipo: elegir
+    enunciado: ¿Cómo era la vida en la edad de oro?
+    dibujo: 🥇
+    correcta: 🌾 Nadie trabajaba ni enfermaba
+    incorrectas:
+      - texto: ⚔️ Todos peleaban
+        feedback: Eso pasaba en la edad de bronce. En la de oro nadie trabajaba ni enfermaba.
+      - texto: 🪙 Todo era de oro
+        feedback: No. Se llamaba de oro porque era la mejor. Nadie trabajaba ni enfermaba.
+
+  - tipo: chat
+    titulo: Deucalión y Pirra
+    mensajes:
+      - de: santiago
+        texto: 'Deucalión, el hijo de Prometeo, y su esposa Pirra eran buenas personas. Prometeo les avisó: construid un gran cofre de madera, como un barco, y llenadlo de comida.'
+        dibujo: 📦 ⛵
+      - de: vega
+        texto: 'Llovió durante nueve días y nueve noches. El agua lo cubrió casi todo, hasta las montañas.'
+        dibujo: 🌧️ 🌊
+      - de: hugo
+        texto: 'El cofre flotó y flotó, hasta quedarse en lo alto de un monte, el Parnaso.'
+        dibujo: ⛰️ 📦
+      - de: valentina
+        texto: 'Estaban solos en el mundo. Preguntaron a los dioses qué hacer, y la respuesta fue muy rara: tirad hacia atrás los huesos de vuestra madre.'
+        dibujo: 🤔 🦴
+      - de: santiago
+        texto: 'Lo pensaron mucho. La madre de todos es Gea, la Tierra. Y los huesos de la Tierra… ¡son las piedras!'
+        dibujo: 🌍 🪨
+      - de: vega
+        texto: 'Tiraron piedras por encima del hombro. De las de Deucalión salieron hombres, y de las de Pirra, mujeres. Así volvió a haber gente en el mundo.'
+        dibujo: 🪨 🧍
+      - de: hugo
+        texto: 'Muchos pueblos antiguos cuentan historias de un gran diluvio, como la del arca de Noé.'
+        dibujo: 🚢 🦒
+
+  - tipo: elegir
+    enunciado: ¿Qué eran los huesos de la madre Tierra?
+    dibujo: 🌍 🦴
+    correcta: 🪨 Las piedras
+    incorrectas:
+      - texto: 🦖 Huesos de dinosaurio
+        feedback: Buena idea, pero no. Los huesos de la Tierra eran las piedras.
+      - texto: 🌳 Los árboles
+        feedback: No. Los huesos de la Tierra eran las piedras, y de ellas salieron personas.
+
+  - tipo: elegir
+    enunciado: ¿Dónde se quedó el cofre de Deucalión y Pirra?
+    dibujo: 📦 🌊
+    correcta: ⛰️ En lo alto de un monte
+    incorrectas:
+      - texto: 🏝️ En una isla desierta
+        feedback: No. Se quedó en lo alto de un monte, el Parnaso.
+      - texto: 🐋 Dentro de una ballena
+        feedback: ¡Ja, ja! No. Se quedó en lo alto de un monte, el Parnaso.
+
+  - tipo: elegir
+    enunciado: ¿Por qué mandó Zeus el diluvio?
+    dibujo: ⚡ 🌧️
+    correcta: 😠 Porque la gente se portaba fatal
+    incorrectas:
+      - texto: 🌻 Para regar las plantas
+        feedback: ¡Ja, ja! No. La gente de la edad de bronce se portaba fatal, y Zeus se hartó.
+      - texto: 🏊 Para bañarse
+        feedback: No. La gente de la edad de bronce se portaba fatal, y Zeus se hartó.
+
+  - tipo: ordenar
+    enunciado: Ordena las edades de los humanos, de la mejor a la nuestra.
+    piezas: 🔩 Hierro / 🥉 Bronce / 🥇 Oro / 🦸 Héroes / 🥈 Plata
+    solucion: 🥇 Oro 🥈 Plata 🥉 Bronce 🦸 Héroes 🔩 Hierro
+    explicacion: Primero la de oro, luego la de plata y la de bronce. Después, la de los héroes. Y la última, la de hierro, que es la nuestra.

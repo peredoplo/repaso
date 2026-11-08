@@ -1,0 +1,100 @@
+titulo: Ártemis, la cazadora
+subtitulo: El bosque, los animales y la Luna
+emoji: 🏹
+ejercicios:
+  - tipo: chat
+    titulo: La diosa del bosque
+    mensajes:
+      - de: hugo
+        texto: 'Ártemis, la gemela de Apolo, era la diosa de la caza, de los bosques y de los animales salvajes.'
+        dibujo: 🏹 🌲
+      - de: valentina
+        texto: 'De pequeña, le pidió a Zeus muchos deseos: un arco con flechas, perros de caza, ninfas que la acompañaran, y no casarse nunca. Zeus se los concedió todos.'
+        dibujo: 🎁 🐕
+      - de: santiago
+        texto: 'Los cíclopes le fabricaron un arco de plata, y el dios Pan le regaló sus perros más rápidos.'
+        dibujo: 🏹 ✨
+      - de: vega
+        texto: 'Su animal era la cierva. Corría por los bosques con sus ninfas. Cazaba, pero también protegía a las crías de los animales.'
+        dibujo: 🦌 🐣
+      - de: hugo
+        texto: 'Dicen que nació un poco antes que Apolo, y que ayudó a su madre a que naciera su hermano. Por eso las madres le pedían ayuda.'
+        dibujo: 👶 🤝
+      - de: valentina
+        texto: 'Más tarde la relacionaron con la Luna, igual que a Apolo con el Sol. Los romanos la llamaban Diana.'
+        dibujo: 🌙 ☀️
+
+  - tipo: elegir
+    enunciado: ¿De qué era diosa Ártemis?
+    dibujo: 🏹
+    correcta: 🌲 De la caza y los bosques
+    incorrectas:
+      - texto: 🌊 Del mar
+        feedback: El mar era de Poseidón. Ártemis era la diosa de la caza y los bosques.
+      - texto: 🍳 De la cocina
+        feedback: ¡Ja, ja! No. Ártemis era la diosa de la caza y los bosques.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llamaban los romanos a Ártemis?
+    dibujo: 🏹 🌙
+    correcta: 🌙 Diana
+    incorrectas:
+      - texto: 🦉 Minerva
+        feedback: Minerva era Atenea. A Ártemis la llamaban Diana.
+      - texto: 👑 Juno
+        feedback: Juno era Hera. A Ártemis la llamaban Diana.
+
+  - tipo: chat
+    titulo: Orión y el escorpión
+    mensajes:
+      - de: santiago
+        texto: 'Orión era un cazador gigante, hijo de Poseidón. Dicen que podía caminar sobre el mar.'
+        dibujo: 🏹 🌊
+      - de: vega
+        texto: 'Se hizo amigo de Ártemis, y cazaban juntos.'
+        dibujo: 🤝 🌲
+      - de: hugo
+        texto: 'Pero Orión presumió de que podía cazar a todos los animales de la Tierra. A Gea no le gustó nada, y mandó un escorpión gigante.'
+        dibujo: 😏 🦂
+      - de: valentina
+        texto: 'El escorpión le picó en el talón, y Orión murió. Ártemis, muy triste, pidió a Zeus que lo pusiera en el cielo.'
+        dibujo: 😢 ⭐
+      - de: santiago
+        texto: 'Allí está la constelación de Orión, con su cinturón de tres estrellas en fila. El escorpión también está: es la constelación de Escorpio.'
+        dibujo: ⭐ ⭐ ⭐
+      - de: vega
+        texto: 'Pero nunca se ven juntos. Cuando Escorpio sale por un lado del cielo, Orión se esconde por el otro. ¡Todavía le tiene miedo!'
+        dibujo: 🏃 🦂
+      - de: hugo
+        texto: 'Y hoy, las misiones Artemis quieren llevar otra vez personas a la Luna. Les pusieron ese nombre porque Ártemis era la gemela de Apolo, el de las primeras misiones.'
+        dibujo: 🚀 🌙
+
+  - tipo: elegir
+    enunciado: ¿Quién le picó a Orión?
+    dibujo: 🏹 🦶
+    correcta: 🦂 Un escorpión gigante
+    incorrectas:
+      - texto: 🐝 Una abeja
+        feedback: No. Gea mandó un escorpión gigante, que hoy es la constelación de Escorpio.
+      - texto: 🦟 Un mosquito
+        feedback: ¡Ja, ja! No. Fue un escorpión gigante, que hoy es la constelación de Escorpio.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Orión y Escorpio nunca se ven juntos en el cielo?
+    dibujo: ⭐ 🦂
+    correcta: 🏃 Orión se esconde cuando sale Escorpio
+    incorrectas:
+      - texto: 😴 Porque Orión duerme de día
+        feedback: No es eso. Cuando Escorpio sale por un lado, Orión se esconde por el otro.
+      - texto: ☁️ Porque siempre hay nubes
+        feedback: No. Cuando Escorpio sale por un lado, Orión se esconde por el otro.
+
+  - tipo: elegir
+    enunciado: ¿Por qué las misiones a la Luna de ahora se llaman Artemis?
+    dibujo: 🚀 🌙
+    correcta: 👫 Porque era la gemela de Apolo
+    incorrectas:
+      - texto: 🏹 Porque los cohetes parecen flechas
+        feedback: No es por eso. Ártemis era la gemela de Apolo, el nombre de las primeras misiones a la Luna.
+      - texto: 🦌 Porque en la Luna hay ciervos
+        feedback: ¡Ja, ja! No. Ártemis era la gemela de Apolo, el nombre de las primeras misiones a la Luna.

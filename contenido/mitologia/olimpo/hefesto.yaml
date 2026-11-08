@@ -1,0 +1,97 @@
+titulo: Hefesto, el herrero
+subtitulo: Fuego, volcanes y robots de oro
+emoji: 🔨
+ejercicios:
+  - tipo: chat
+    titulo: El dios que se cayó del Olimpo
+    mensajes:
+      - de: vega
+        texto: 'Hefesto era el dios del fuego y de la fragua, el taller donde se golpea el metal al rojo vivo para darle forma.'
+        dibujo: 🔥 🔨
+      - de: hugo
+        texto: 'Era hijo de Hera. Nació cojo, y Hera, avergonzada, lo tiró del Olimpo. Cayó al mar, y lo criaron dos ninfas marinas.'
+        dibujo: 🌊 👶
+      - de: valentina
+        texto: 'Otro mito dice que lo tiró Zeus, y que estuvo cayendo un día entero hasta llegar a una isla, Lemnos.'
+        dibujo: ⬇️ 🏝️
+      - de: santiago
+        texto: 'Su taller estaba debajo de los volcanes, y los cíclopes le ayudaban. Cuando un volcán echaba humo, era Hefesto trabajando.'
+        dibujo: 🌋 👁️
+      - de: vega
+        texto: 'Los romanos lo llamaban Vulcano. ¡De ahí viene la palabra volcán!'
+        dibujo: 🌋
+      - de: hugo
+        texto: 'Para vengarse de su madre, le regaló un trono de oro. Al sentarse, Hera quedó atrapada por cadenas invisibles. Solo la soltó cuando le dejaron volver al Olimpo.'
+        dibujo: 🪑 ⛓️
+
+  - tipo: elegir
+    enunciado: ¿Qué palabra viene de Vulcano, el nombre romano de Hefesto?
+    dibujo: 🔨 🔥
+    correcta: 🌋 Volcán
+    incorrectas:
+      - texto: 🔥 Fuego
+        feedback: Hefesto era el dios del fuego, pero de Vulcano viene la palabra volcán.
+      - texto: 🔨 Martillo
+        feedback: No. De Vulcano viene la palabra volcán.
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasó a Hera en el trono de oro?
+    dibujo: 🪑 ✨
+    correcta: ⛓️ Quedó atrapada
+    incorrectas:
+      - texto: 🛸 Salió volando
+        feedback: ¡Ja, ja! No. Quedó atrapada por cadenas invisibles.
+      - texto: 💤 Se durmió
+        feedback: No. Quedó atrapada por cadenas invisibles.
+
+  - tipo: chat
+    titulo: Los inventos de Hefesto
+    mensajes:
+      - de: valentina
+        texto: 'Hefesto fabricaba maravillas: los palacios del Olimpo, el carro del Sol, y las flechas de Eros.'
+        dibujo: 🏰 ☀️
+      - de: santiago
+        texto: 'Hizo la armadura del héroe Aquiles, con un escudo donde se veía el mundo entero: el cielo, el mar, ciudades, fiestas y campos.'
+        dibujo: 🛡️ 🌍
+      - de: vega
+        texto: 'Se fabricó criadas de oro que se movían y pensaban solas, para ayudarle a andar. ¡Como robots, hace casi tres mil años!'
+        dibujo: 🤖 ✨
+      - de: hugo
+        texto: 'Y mesas con ruedas de oro que iban solas a las reuniones de los dioses y luego volvían.'
+        dibujo: ⚙️ 🍽️
+      - de: valentina
+        texto: 'También fabricó un gigante de bronce, Talos, que daba tres vueltas al día a la isla de Creta, lanzando piedras a los barcos enemigos.'
+        dibujo: 🗿 🏝️
+      - de: santiago
+        texto: 'Era el único dios que trabajaba con las manos, y por eso los artesanos lo querían mucho.'
+        dibujo: 🙌 🛠️
+
+  - tipo: elegir
+    enunciado: ¿Qué era Talos?
+    dibujo: 🏝️ 🛡️
+    correcta: 🗿 Un gigante de bronce
+    incorrectas:
+      - texto: 🦕 Un dinosaurio
+        feedback: ¡Ja, ja! No. Era un gigante de bronce que protegía Creta.
+      - texto: 🐉 Un dragón
+        feedback: No. Era un gigante de bronce que protegía Creta.
+
+  - tipo: elegir
+    enunciado: ¿Qué fabricó Hefesto para el héroe Aquiles?
+    dibujo: 🔨
+    correcta: 🛡️ Una armadura y un escudo
+    incorrectas:
+      - texto: 👟 Unas zapatillas
+        feedback: No. Le hizo una armadura con un escudo maravilloso.
+      - texto: 🚲 Una bici
+        feedback: ¡Ja, ja! No. Le hizo una armadura con un escudo maravilloso.
+
+  - tipo: elegir
+    enunciado: ¿Qué inventos de Hefesto se parecen a los robots?
+    dibujo: 🤖
+    correcta: ✨ Criadas de oro que se movían solas
+    incorrectas:
+      - texto: 📱 Un móvil
+        feedback: No había móviles. Pero sí criadas de oro que se movían y pensaban solas.
+      - texto: 🧸 Un oso de peluche
+        feedback: No. Hizo criadas de oro que se movían y pensaban solas.

@@ -1,0 +1,93 @@
+titulo: La caja de Pandora
+subtitulo: Y lo que quedó dentro
+emoji: 🏺
+ejercicios:
+  - tipo: chat
+    titulo: La de todos los regalos
+    mensajes:
+      - de: hugo
+        texto: 'Zeus seguía enfadado con los humanos por lo del fuego. Y preparó un castigo, una trampa.'
+        dibujo: ⚡ 😠
+      - de: valentina
+        texto: 'Pidió a Hefesto que hiciera de barro a la primera mujer, Pandora. Y cada dios le dio un regalo.'
+        dibujo: 🏺 🎁
+      - de: santiago
+        texto: 'Por eso su nombre quiere decir la de todos los regalos. Atenea le enseñó a tejer, Afrodita le dio belleza y Hermes, mucha curiosidad.'
+        dibujo: 🧶 🌹 🔍
+      - de: vega
+        texto: 'Zeus se la mandó a Epimeteo, el hermano despistado. Prometeo le había avisado: no aceptes ningún regalo de Zeus. Pero Epimeteo no le hizo caso.'
+        dibujo: 🙃 🎁
+      - de: hugo
+        texto: 'Pandora llevaba una jarra cerrada, y le dijeron que no la abriera nunca. ¡Nunca jamás!'
+        dibujo: 🏺 🚫
+      - de: valentina
+        texto: 'En los mitos era una jarra grande de barro, no una caja. Lo de la caja vino muchísimo después, por un error al traducir la historia a otro idioma.'
+        dibujo: 🏺 📦
+
+  - tipo: elegir
+    enunciado: ¿Qué era en realidad la caja de Pandora?
+    dibujo: 📦 ❓
+    correcta: 🏺 Una jarra grande de barro
+    incorrectas:
+      - texto: 📦 Una caja de cartón
+        feedback: En los mitos era una jarra grande de barro. Lo de la caja fue un error al traducir.
+      - texto: 🎁 Un regalo de cumpleaños
+        feedback: No. Era una jarra grande de barro, y no había que abrirla.
+
+  - tipo: elegir
+    enunciado: ¿Qué le dio Hermes a Pandora?
+    dibujo: 🏃 🎁
+    correcta: 🔍 Mucha curiosidad
+    incorrectas:
+      - texto: 🧶 Saber tejer
+        feedback: A tejer le enseñó Atenea. Hermes le dio mucha curiosidad.
+      - texto: 🚲 Una bici
+        feedback: ¡Ja, ja! No. Hermes le dio mucha curiosidad.
+
+  - tipo: chat
+    titulo: Todos los males del mundo
+    mensajes:
+      - de: santiago
+        texto: 'La curiosidad pudo con Pandora, y un día levantó la tapa de la jarra.'
+        dibujo: 🏺 👀
+      - de: vega
+        texto: 'De dentro salieron volando todos los males del mundo: las enfermedades, el cansancio, la tristeza y las peleas.'
+        dibujo: 🦠 😫 😢
+      - de: hugo
+        texto: 'Antes, los humanos vivían sin enfermar y sin cansarse tanto. Desde entonces, el mundo tiene problemas.'
+        dibujo: 🌍 😟
+      - de: valentina
+        texto: 'Pandora, asustada, cerró la jarra enseguida. Pero dentro se quedó una sola cosa: la esperanza.'
+        dibujo: 🏺 🌟
+      - de: santiago
+        texto: 'Por eso dicen que, aunque pasen cosas malas, siempre nos queda la esperanza.'
+        dibujo: 🌈 🙂
+      - de: vega
+        texto: 'Hoy, abrir la caja de Pandora es hacer algo que, sin querer, provoca un montón de problemas.'
+        dibujo: 📦 💥
+
+  - tipo: elegir
+    enunciado: ¿Qué salió de la jarra al abrirla?
+    dibujo: 🏺 💨
+    correcta: 🦠 Los males del mundo
+    incorrectas:
+      - texto: 🦋 Mariposas de colores
+        feedback: Ojalá. Salieron todos los males del mundo, como las enfermedades y las peleas.
+      - texto: 🍬 Caramelos
+        feedback: ¡Ja, ja! No. Salieron todos los males del mundo.
+
+  - tipo: elegir
+    enunciado: ¿Qué se quedó dentro de la jarra?
+    dibujo: 🏺
+    correcta: 🌟 La esperanza
+    incorrectas:
+      - texto: 🍪 Una galleta
+        feedback: ¡Ja, ja! No. Dentro se quedó la esperanza.
+      - texto: 🐍 Una serpiente
+        feedback: No. Dentro se quedó la esperanza.
+
+  - tipo: ordenar
+    enunciado: Ordena la historia de Pandora.
+    piezas: 🌟 Queda la esperanza / 🎁 Pandora recibe la jarra / 🦠 Salen los males
+    solucion: 🎁 Pandora recibe la jarra 🦠 Salen los males 🌟 Queda la esperanza
+    explicacion: Pandora recibe la jarra. La abre, y salen los males. Y dentro queda la esperanza.

@@ -1,0 +1,100 @@
+titulo: Atenea, la sabia
+subtitulo: Nació de la cabeza de Zeus
+emoji: 🦉
+ejercicios:
+  - tipo: chat
+    titulo: Un nacimiento muy raro
+    mensajes:
+      - de: santiago
+        texto: 'A Zeus le avisaron de que un hijo de Metis, la titán astuta, sería más poderoso que él. Así que Zeus la engañó y se la tragó.'
+        dibujo: 😮 😳
+      - de: vega
+        texto: 'Al tiempo, a Zeus le dio un dolor de cabeza terrible, el peor dolor del mundo.'
+        dibujo: 🤕 ⚡
+      - de: hugo
+        texto: 'Hefesto le dio un golpe en la cabeza con un hacha… ¡y salió Atenea, ya mayor, con armadura y lanza, y dando un grito de guerra!'
+        dibujo: 🪓 🛡️
+      - de: valentina
+        texto: 'Era la diosa de la sabiduría y de la inteligencia. También de la guerra, pero de la guerra pensada, con planes y estrategia, no con rabia.'
+        dibujo: 🧠 ♟️
+      - de: santiago
+        texto: 'Y de los oficios: enseñó a tejer, a hacer cerámica y a domar caballos. Dicen que inventó el arado, para trabajar el campo, y una flauta.'
+        dibujo: 🧶 🏺
+      - de: vega
+        texto: 'Su animal era la lechuza, que ve en la oscuridad. Por eso la lechuza es símbolo de saber.'
+        dibujo: 🦉 🌙
+      - de: hugo
+        texto: 'En su escudo llevaba la cabeza de Medusa, el monstruo con serpientes en el pelo. Se la regaló el héroe Perseo.'
+        dibujo: 🛡️ 🐍
+
+  - tipo: elegir
+    enunciado: ¿Cómo nació Atenea?
+    dibujo: 🦉 👶
+    correcta: 🧠 De la cabeza de Zeus
+    incorrectas:
+      - texto: 🥚 De un huevo
+        feedback: No. Salió de la cabeza de Zeus, ya mayor y con armadura.
+      - texto: 🌊 De la espuma del mar
+        feedback: Esa fue Afrodita. Atenea salió de la cabeza de Zeus.
+
+  - tipo: elegir
+    enunciado: ¿Cuál era el animal de Atenea?
+    dibujo: 🧠 🛡️
+    correcta: 🦉 La lechuza
+    incorrectas:
+      - texto: 🦚 El pavo real
+        feedback: El pavo real era de Hera. El de Atenea era la lechuza, que ve en la oscuridad.
+      - texto: 🐔 La gallina
+        feedback: ¡Ja, ja! No. El animal de Atenea era la lechuza.
+
+  - tipo: chat
+    titulo: Aracne, la tejedora
+    mensajes:
+      - de: valentina
+        texto: 'Aracne era una joven que tejía de maravilla. Tanto, que presumía de tejer mejor que la propia Atenea.'
+        dibujo: 🧶 😏
+      - de: santiago
+        texto: 'Atenea se disfrazó de anciana y le aconsejó no presumir. Pero Aracne la retó a un concurso.'
+        dibujo: 👵 🤺
+      - de: vega
+        texto: 'Atenea tejió a los dioses, majestuosos. Aracne tejió las travesuras de los dioses, burlándose de ellos. ¡Y su tela era perfecta!'
+        dibujo: 🖼️ 😂
+      - de: hugo
+        texto: 'Atenea se enfadó tanto que convirtió a Aracne en una araña, para que tejiera para siempre.'
+        dibujo: 🕷️ 🕸️
+      - de: valentina
+        texto: 'Por eso a las arañas y a sus parientes, como los escorpiones, se les llama arácnidos.'
+        dibujo: 🕷️ 🦂
+      - de: santiago
+        texto: 'Los romanos llamaban a Atenea Minerva. Protegía a los héroes más listos, como Odiseo y Perseo.'
+        dibujo: 🦉 🦸
+
+  - tipo: elegir
+    enunciado: ¿En qué convirtió Atenea a Aracne?
+    dibujo: 🧶
+    correcta: 🕷️ En una araña
+    incorrectas:
+      - texto: 🐛 En un gusano de seda
+        feedback: También hacen hilo, pero no. La convirtió en una araña.
+      - texto: 🦋 En una mariposa
+        feedback: No. La convirtió en una araña, para que tejiera para siempre.
+
+  - tipo: elegir
+    enunciado: ¿Qué guerra protegía Atenea?
+    dibujo: 🛡️
+    correcta: 🧠 La guerra con planes
+    incorrectas:
+      - texto: 💢 La guerra con rabia
+        feedback: Esa era la de Ares. Atenea era la de la guerra pensada, con planes.
+      - texto: 🍰 La guerra de tartas
+        feedback: ¡Ja, ja! No. Atenea era la de la guerra pensada, con planes.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llamaban los romanos a Atenea?
+    dibujo: 🦉
+    correcta: 🦉 Minerva
+    incorrectas:
+      - texto: 👑 Juno
+        feedback: Juno era Hera. A Atenea la llamaban Minerva.
+      - texto: 🌙 Diana
+        feedback: Diana era Ártemis. A Atenea la llamaban Minerva.

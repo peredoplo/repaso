@@ -1,0 +1,87 @@
+titulo: La prueba del arco
+subtitulo: El final de la Odisea
+emoji: 🏹
+ejercicios:
+  - tipo: chat
+    titulo: Doce hachas en fila
+    mensajes:
+      - de: valentina
+        texto: 'Penélope anunció una prueba. Elegiría a quien tensara el arco de Odiseo, y lanzara una flecha por los agujeros de doce hachas puestas en fila.'
+        dibujo: 🏹 🪓
+      - de: santiago
+        texto: 'El arco era durísimo. Uno tras otro, los pretendientes lo intentaron. Ninguno pudo ni ponerle la cuerda.'
+        dibujo: 😖 💪
+      - de: vega
+        texto: 'Entonces, el mendigo pidió probar. Los pretendientes se rieron de él.'
+        dibujo: 🧓 😂
+      - de: hugo
+        texto: 'Odiseo puso la cuerda sin esfuerzo, como un músico se la pone a su lira. Y lanzó la flecha por las doce hachas.'
+        dibujo: 🎵 🎯
+      - de: valentina
+        texto: 'Entonces se quitó los harapos, la ropa rota de mendigo. ¡Era Odiseo! Con Telémaco y dos criados fieles, venció a los pretendientes.'
+        dibujo: 👑 ⚔️
+
+  - tipo: elegir
+    enunciado: ¿Qué había que hacer en la prueba de Penélope?
+    dibujo: 🏹
+    correcta: 🎯 Pasar una flecha por doce hachas
+    incorrectas:
+      - texto: 🏃 Correr una carrera
+        feedback: No. Había que tensar el arco de Odiseo y pasar la flecha por doce hachas.
+      - texto: 🍝 Comer mucho
+        feedback: ¡Ja, ja! Eso ya lo hacían. Había que pasar una flecha por doce hachas.
+
+  - tipo: elegir
+    enunciado: ¿Por qué se reían los pretendientes?
+    dibujo: 😂
+    correcta: 🧓 Creían que era un mendigo
+    incorrectas:
+      - texto: 🤡 Odiseo contó un chiste
+        feedback: No. Creían que era un mendigo viejo, y que no podría con el arco.
+      - texto: 🪶 Les hacían cosquillas
+        feedback: ¡Ja, ja! No. Creían que era un mendigo viejo.
+
+  - tipo: chat
+    titulo: El secreto de la cama
+    mensajes:
+      - de: santiago
+        texto: 'Penélope no se lo creía del todo. ¿Y si era un dios disfrazado? Así que le preparó otra prueba.'
+        dibujo: 🤔 👸
+      - de: vega
+        texto: 'Le dijo a una criada que sacara la cama del dormitorio. Odiseo se enfadó: ¡esa cama no se puede mover!'
+        dibujo: 🛏️ 😠
+      - de: hugo
+        texto: 'Él mismo la había hecho sobre el tronco de un olivo que crecía dentro de la habitación. Solo ellos dos lo sabían.'
+        dibujo: 🫒 🛏️
+      - de: valentina
+        texto: 'Entonces Penélope supo que era él, y se abrazaron. Atenea alargó la noche, para que pudieran contárselo todo.'
+        dibujo: 🤗 🌙
+      - de: santiago
+        texto: 'Así acaba la Odisea. Tiene casi tres mil años, y todavía se lee en los colegios de todo el mundo.'
+        dibujo: 📜 🏫
+
+  - tipo: elegir
+    enunciado: ¿Por qué no se podía mover la cama de Odiseo?
+    dibujo: 🛏️
+    correcta: 🫒 Estaba hecha sobre un olivo
+    incorrectas:
+      - texto: 🪨 Era de piedra
+        feedback: No. Estaba hecha sobre el tronco de un olivo que crecía en la habitación.
+      - texto: 😴 Había alguien durmiendo
+        feedback: ¡Ja, ja! No. Estaba hecha sobre el tronco de un olivo.
+
+  - tipo: elegir
+    enunciado: ¿Qué poeta contó la Odisea?
+    dibujo: 📜
+    correcta: 📜 Homero
+    incorrectas:
+      - texto: 🎵 Orfeo
+        feedback: Orfeo era músico, y viajó con los argonautas. La Odisea la contó Homero.
+      - texto: 🧠 Odiseo
+        feedback: Odiseo es el protagonista. El poema lo contó Homero.
+
+  - tipo: ordenar
+    enunciado: Ordena el final de la Odisea.
+    piezas: 🏹 La prueba del arco / 🏝️ Calipso lo deja ir / 🐕 Argos lo reconoce / 🛏️ El secreto de la cama
+    solucion: 🏝️ Calipso lo deja ir 🐕 Argos lo reconoce 🏹 La prueba del arco 🛏️ El secreto de la cama
+    explicacion: Calipso lo deja ir. En Ítaca, Argos lo reconoce. Gana la prueba del arco. Y Penélope lo reconoce por el secreto de la cama.

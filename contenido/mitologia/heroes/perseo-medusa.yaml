@@ -1,0 +1,93 @@
+titulo: Perseo contra Medusa
+subtitulo: Mirar sin mirar
+emoji: 🐍
+ejercicios:
+  - tipo: chat
+    titulo: La cueva de las estatuas
+    mensajes:
+      - de: hugo
+        texto: 'Con las sandalias de alas, Perseo voló hasta el fin del mundo, donde vivían las Gorgonas.'
+        dibujo: 🪶 🌍
+      - de: valentina
+        texto: 'Había estatuas por todas partes. Eran personas y animales que habían mirado a Medusa.'
+        dibujo: 🗿 🗿
+      - de: santiago
+        texto: 'Medusa era la única de las tres Gorgonas que podía morir. Sus dos hermanas eran inmortales.'
+        dibujo: 🐍 1️⃣
+      - de: vega
+        texto: 'Un poeta cuenta que antes era una joven muy guapa, y que una diosa la convirtió en monstruo.'
+        dibujo: 👧 🐍
+      - de: hugo
+        texto: 'Perseo se acercó caminando hacia atrás, mirando solo el reflejo en su escudo brillante.'
+        dibujo: 🛡️ 🪞
+      - de: valentina
+        texto: 'Mientras Medusa dormía, la venció con la espada de Hermes, y metió la cabeza en la bolsa mágica, sin mirarla.'
+        dibujo: 🗡️ 👜
+
+  - tipo: elegir
+    enunciado: ¿Cómo miró Perseo a Medusa sin convertirse en piedra?
+    dibujo: 🐍 🗿
+    correcta: 🪞 En el reflejo del escudo
+    incorrectas:
+      - texto: 🕶️ Con gafas de sol
+        feedback: ¡Ja, ja! Buena idea, pero no. La miró en el reflejo de su escudo brillante.
+      - texto: 🔭 Con un telescopio
+        feedback: No. La miró en el reflejo de su escudo brillante.
+
+  - tipo: elegir
+    enunciado: ¿Cuál de las tres Gorgonas podía morir?
+    dibujo: 🐍 🐍 🐍
+    correcta: 🐍 Solo Medusa
+    incorrectas:
+      - texto: 🐍 Las tres
+        feedback: No. Sus dos hermanas eran inmortales. Solo Medusa podía morir.
+      - texto: 🚫 Ninguna
+        feedback: No. Solo Medusa podía morir. Sus hermanas eran inmortales.
+
+  - tipo: chat
+    titulo: Lo que nació de Medusa
+    mensajes:
+      - de: santiago
+        texto: 'De Medusa salieron dos hijos de Poseidón: Pegaso, el caballo con alas, y un gigante con espada de oro.'
+        dibujo: 🐎 ✨
+      - de: vega
+        texto: 'Las otras Gorgonas se despertaron y lo persiguieron. Pero Perseo se puso el casco de Hades, se volvió invisible, y escapó.'
+        dibujo: 🪖 👻
+      - de: hugo
+        texto: 'Un poeta romano cuenta que Perseo dejó la cabeza un momento sobre unas algas, y se volvieron piedra roja. Así explicaban de dónde sale el coral.'
+        dibujo: 🌿 🔴
+      - de: valentina
+        texto: 'Al volver a la isla, el rey Polidectes no se creía nada. Perseo sacó la cabeza de la bolsa… y lo convirtió en piedra. Así salvó a su madre.'
+        dibujo: 👑 🗿
+      - de: santiago
+        texto: 'Después, Perseo le regaló la cabeza a Atenea, que la puso en su escudo.'
+        dibujo: 🦉 🛡️
+      - de: vega
+        texto: '¿Y el abuelo Acrisio? Años después, en unos juegos, Perseo lanzó un disco que, sin querer, le dio a él. Lo que dijo el oráculo se cumplió.'
+        dibujo: 🥏 🔮
+
+  - tipo: elegir
+    enunciado: ¿Qué caballo nació de Medusa?
+    dibujo: 🐍
+    correcta: 🐎 Pegaso, el caballo con alas
+    incorrectas:
+      - texto: 🦄 Un unicornio
+        feedback: No. De Medusa nació Pegaso, el caballo con alas.
+      - texto: 🐴 Un caballito de mar
+        feedback: No. De Medusa nació Pegaso, el caballo con alas.
+
+  - tipo: elegir
+    enunciado: ¿Qué hizo Perseo con la cabeza de Medusa al final?
+    dibujo: 👜
+    correcta: 🛡️ Se la regaló a Atenea
+    incorrectas:
+      - texto: 🗑️ La tiró a la basura
+        feedback: ¡Ja, ja! No. Se la regaló a Atenea, que la puso en su escudo.
+      - texto: 🖼️ La colgó en la pared
+        feedback: No. Se la regaló a Atenea, que la puso en su escudo.
+
+  - tipo: ordenar
+    enunciado: Ordena la aventura de Perseo.
+    piezas: 🐍 Vence a Medusa / 👵 Visita a las Grayas / 🗿 Convierte al rey en piedra / 🧚 Recibe los regalos de las ninfas
+    solucion: 👵 Visita a las Grayas 🧚 Recibe los regalos de las ninfas 🐍 Vence a Medusa 🗿 Convierte al rey en piedra
+    explicacion: Primero las Grayas le dicen dónde están las ninfas. Las ninfas le dan sus regalos. Vence a Medusa. Y convierte al rey en piedra.

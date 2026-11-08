@@ -1,0 +1,15 @@
+asignatura: Mitología griega
+titulo: Los dioses del Olimpo
+descripcion: Quién es cada uno, sus símbolos y sus historias.
+sinLeer: true
+lecciones:
+  - zeus
+  - hera
+  - poseidon
+  - atenea
+  - apolo
+  - artemis
+  - ares-afrodita
+  - hefesto
+  - hermes
+  - demeter-dioniso

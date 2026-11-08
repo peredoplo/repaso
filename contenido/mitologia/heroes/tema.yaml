@@ -1,0 +1,14 @@
+asignatura: Mitología griega
+titulo: Perseo, Teseo y Jasón
+descripcion: Medusa, el Minotauro y el vellocino de oro.
+sinLeer: true
+lecciones:
+  - perseo-encargo
+  - perseo-medusa
+  - perseo-andromeda
+  - teseo-camino
+  - teseo-minotauro
+  - dedalo-icaro
+  - jason-argo
+  - jason-viaje
+  - jason-vellocino

@@ -1,0 +1,93 @@
+titulo: El monte Olimpo
+subtitulo: La casa de los dioses
+emoji: ⛰️
+ejercicios:
+  - tipo: chat
+    titulo: Por encima de las nubes
+    mensajes:
+      - de: hugo
+        texto: 'El Olimpo existe de verdad. Es la montaña más alta de Grecia, de casi tres mil metros.'
+        dibujo: ⛰️ 📏
+      - de: valentina
+        texto: 'Su cumbre suele estar entre nubes. Por eso los griegos pensaban que allí arriba, por encima de las nubes, vivían los dioses.'
+        dibujo: ☁️ 🏛️
+      - de: santiago
+        texto: 'La puerta del Olimpo era una nube, y la abrían y cerraban las Horas, las diosas de las estaciones.'
+        dibujo: ☁️ 🚪
+      - de: vega
+        texto: 'Dentro había palacios de oro y bronce, construidos por Hefesto, el dios herrero.'
+        dibujo: 🏰 ✨
+      - de: hugo
+        texto: 'Los dioses más importantes eran doce, los olímpicos. Se reunían en el gran salón de Zeus para decidir cosas.'
+        dibujo: 🔢 👑
+      - de: valentina
+        texto: 'Comían ambrosía y bebían néctar. Eso los mantenía siempre jóvenes. Eran inmortales: no se morían nunca.'
+        dibujo: 🍯 🥤
+      - de: santiago
+        texto: 'Por sus venas no corría sangre, sino un líquido dorado, el icor.'
+        dibujo: ✨ 💧
+      - de: vega
+        texto: 'Hoy llamamos néctar al jugo dulce de las flores, el que beben las abejas y las mariposas.'
+        dibujo: 🌸 🐝
+
+  - tipo: elegir
+    enunciado: ¿Qué comían los dioses para no hacerse viejos?
+    dibujo: ⛰️ 🍽️
+    correcta: 🍯 Ambrosía
+    incorrectas:
+      - texto: 🍔 Hamburguesas
+        feedback: ¡Ja, ja! No. Comían ambrosía y bebían néctar.
+      - texto: 🥦 Brócoli
+        feedback: Muy sano, pero no. Los dioses comían ambrosía y bebían néctar.
+
+  - tipo: elegir
+    enunciado: ¿Qué corría por las venas de los dioses?
+    dibujo: 🩸 ❓
+    correcta: ✨ Icor dorado
+    incorrectas:
+      - texto: 🩸 Sangre normal
+        feedback: Eso tenemos nosotros. Los dioses tenían icor, un líquido dorado.
+      - texto: 🧃 Zumo
+        feedback: ¡Ja, ja! No. Los dioses tenían icor, un líquido dorado.
+
+  - tipo: chat
+    titulo: Dioses que se parecen a nosotros
+    mensajes:
+      - de: valentina
+        texto: 'Los dioses griegos no eran perfectos. Se enfadaban, se ponían celosos, hacían trampas y se reían, igual que las personas.'
+        dibujo: 😠 😂
+      - de: hugo
+        texto: 'Cada uno se ocupaba de algo: el mar, la guerra, el amor, la caza.'
+        dibujo: 🌊 ⚔️ 🏹
+      - de: santiago
+        texto: 'Y cada uno tenía sus símbolos, para reconocerlo en las estatuas y en los dibujos. A Zeus, por ejemplo, se le reconoce por el rayo y el águila.'
+        dibujo: ⚡ 🦅
+      - de: vega
+        texto: 'Los griegos les construían templos. El más famoso es el Partenón, en Atenas, para la diosa Atenea. Sigue en pie, ¡y tiene casi dos mil quinientos años!'
+        dibujo: 🏛️
+      - de: valentina
+        texto: 'Los romanos conquistaron Grecia y adoptaron a sus dioses con otros nombres. Zeus era Júpiter; Hera, Juno; Poseidón, Neptuno.'
+        dibujo: 🛡️ 🔄
+      - de: hugo
+        texto: 'Por eso los planetas tienen nombres de dioses romanos. Lo verás en otra lección.'
+        dibujo: 🪐 ✨
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama el templo de Atenea en Atenas?
+    dibujo: 🏛️
+    correcta: 🏛️ El Partenón
+    incorrectas:
+      - texto: 🗼 La Torre Eiffel
+        feedback: Esa está en París, y es mucho más moderna. El templo de Atenea es el Partenón.
+      - texto: 🏰 Un castillo
+        feedback: Los castillos son de mucho después. El templo de Atenea es el Partenón.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llamaban los romanos a Zeus?
+    dibujo: ⚡ 👑
+    correcta: 🟠 Júpiter
+    incorrectas:
+      - texto: 🔴 Marte
+        feedback: Marte era Ares, el dios de la guerra. A Zeus lo llamaban Júpiter.
+      - texto: 🔵 Neptuno
+        feedback: Neptuno era Poseidón, el del mar. A Zeus lo llamaban Júpiter.

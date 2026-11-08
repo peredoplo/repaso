@@ -1,0 +1,83 @@
+titulo: Las manzanas de oro
+subtitulo: El undécimo trabajo
+emoji: 🍎
+ejercicios:
+  - tipo: chat
+    titulo: El jardín que nadie encuentra
+    mensajes:
+      - de: valentina
+        texto: 'Euristeo pidió las manzanas de oro del jardín de las Hespérides. Pero nadie sabía dónde estaba ese jardín.'
+        dibujo: 🍎 ✨
+      - de: hugo
+        texto: 'El manzano era un regalo de boda de Gea a Hera. Lo cuidaban unas ninfas, las Hespérides, y un dragón de cien cabezas, Ladón.'
+        dibujo: 🌳 🐉
+      - de: santiago
+        texto: 'Para saber el camino, Heracles atrapó a Nereo, el viejo del mar. Nereo se convertía en fuego, en agua y en serpiente para escaparse. ¡Pero Heracles no lo soltó!'
+        dibujo: 🔥 💧 🐍
+      - de: vega
+        texto: 'Por el camino, liberó a Prometeo, que llevaba muchísimos años encadenado a su roca.'
+        dibujo: ⛓️ 🔓
+      - de: valentina
+        texto: 'Y luchó con Anteo, un gigante que se hacía más fuerte cada vez que tocaba el suelo, porque su madre era Gea, la Tierra.'
+        dibujo: 🌍 💪
+      - de: hugo
+        texto: 'Heracles lo levantó en el aire, sin dejar que tocara el suelo, y así lo venció.'
+        dibujo: 🙌 🎈
+
+  - tipo: elegir
+    enunciado: ¿Quién vigilaba el árbol de las manzanas de oro?
+    dibujo: 🌳 🍎
+    correcta: 🐉 Un dragón de cien cabezas
+    incorrectas:
+      - texto: 🐕 Un perro
+        feedback: No. Lo vigilaban unas ninfas y un dragón de cien cabezas, Ladón.
+      - texto: 🐌 Un caracol
+        feedback: ¡Ja, ja! No. Lo vigilaba un dragón de cien cabezas, Ladón.
+
+  - tipo: elegir
+    enunciado: ¿Cómo venció Heracles al gigante Anteo?
+    dibujo: 🌍 💪
+    correcta: 🙌 Levantándolo del suelo
+    incorrectas:
+      - texto: 🏹 Con flechas
+        feedback: No. Anteo se hacía fuerte al tocar el suelo, así que Heracles lo levantó en el aire.
+      - texto: 😴 Esperando a que se durmiera
+        feedback: No. Anteo se hacía fuerte al tocar el suelo, así que Heracles lo levantó en el aire.
+
+  - tipo: chat
+    titulo: El truco de Atlas
+    mensajes:
+      - de: santiago
+        texto: 'Prometeo le aconsejó que no cogiera él las manzanas, sino que se lo pidiera a Atlas, el titán que sostiene el cielo.'
+        dibujo: 🗿 🌌
+      - de: vega
+        texto: 'Atlas aceptó, si Heracles le sujetaba el cielo mientras tanto. Heracles se lo puso sobre los hombros. ¡Qué peso!'
+        dibujo: 🏋️ 😖
+      - de: hugo
+        texto: 'Atlas volvió con las manzanas… y dijo que ya se las llevaba él a Euristeo. ¡No quería volver a cargar con el cielo!'
+        dibujo: 🍎 😏
+      - de: valentina
+        texto: 'Heracles fue muy listo. Le dijo que vale, pero que le sujetara el cielo un momento, para ponerse un cojín en los hombros.'
+        dibujo: 🛋️ 🤫
+      - de: santiago
+        texto: 'Atlas, inocente, cogió el cielo… y Heracles se fue con las manzanas. ¡Atlas se quedó otra vez cargando!'
+        dibujo: 🏃 🍎
+      - de: vega
+        texto: 'Al final, Atenea devolvió las manzanas al jardín, porque eran de los dioses.'
+        dibujo: 🦉 🌳
+
+  - tipo: elegir
+    enunciado: ¿Cómo engañó Heracles a Atlas?
+    dibujo: 🗿 🌌
+    correcta: 🛋️ Le pidió tiempo para ponerse un cojín
+    incorrectas:
+      - texto: 💤 Le cantó una nana
+        feedback: No. Le pidió que sujetara el cielo un momento, para ponerse un cojín en los hombros.
+      - texto: 🍎 Le dio una manzana podrida
+        feedback: No. Le pidió que sujetara el cielo un momento, para ponerse un cojín en los hombros.
+
+  - tipo: ordenar
+    enunciado: Ordena el truco de Atlas.
+    piezas: 🛋️ Heracles pide un cojín / 🌌 Heracles sujeta el cielo / 🏃 Heracles se va con las manzanas / 🍎 Atlas trae las manzanas
+    solucion: 🌌 Heracles sujeta el cielo 🍎 Atlas trae las manzanas 🛋️ Heracles pide un cojín 🏃 Heracles se va con las manzanas
+    explicacion: Heracles sujeta el cielo. Atlas trae las manzanas. Heracles le pide un momento para ponerse un cojín. Y se va con las manzanas.

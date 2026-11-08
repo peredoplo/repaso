@@ -1,0 +1,94 @@
+titulo: Aquiles y Héctor
+subtitulo: El talón del héroe
+emoji: 🛡️
+ejercicios:
+  - tipo: chat
+    titulo: El héroe casi invencible
+    mensajes:
+      - de: valentina
+        texto: 'El mejor guerrero de los griegos era Aquiles, el hijo de Tetis y Peleo, los de la boda.'
+        dibujo: 🛡️ 💪
+      - de: hugo
+        texto: 'Un mito más moderno cuenta que Tetis quería hacerlo inmortal. Lo bañó de bebé en la laguna Estigia, un río mágico del inframundo, sujetándolo por el talón.'
+        dibujo: 👶 💧
+      - de: santiago
+        texto: 'Todo su cuerpo se volvió invulnerable: ninguna arma podía herirlo. Menos el talón, por donde lo sujetaba su madre, que no se mojó.'
+        dibujo: 🦶 ❗
+      - de: vega
+        texto: 'Hoy, al tendón que tienes encima del talón lo llamamos tendón de Aquiles. Y talón de Aquiles es el punto débil de alguien.'
+        dibujo: 🦶 🎯
+      - de: valentina
+        texto: 'Lo educó el centauro Quirón. Y era rapidísimo: lo llamaban Aquiles, el de los pies ligeros.'
+        dibujo: 🐴 🏃
+
+  - tipo: elegir
+    enunciado: ¿Por dónde sujetó Tetis a Aquiles al bañarlo?
+    dibujo: 👶 💧
+    correcta: 🦶 Por el talón
+    incorrectas:
+      - texto: 👂 Por la oreja
+        feedback: ¡Ja, ja! No. Por el talón, y por eso era su único punto débil.
+      - texto: ✋ Por la mano
+        feedback: No. Por el talón, y por eso era su único punto débil.
+
+  - tipo: elegir
+    enunciado: ¿Qué es hoy el talón de Aquiles de alguien?
+    dibujo: 🦶
+    correcta: 🎯 Su punto débil
+    incorrectas:
+      - texto: 👟 Su zapatilla favorita
+        feedback: ¡Ja, ja! No. El talón de Aquiles es el punto débil de alguien.
+      - texto: 💪 Su punto fuerte
+        feedback: Al revés. El talón de Aquiles es el punto débil de alguien.
+
+  - tipo: chat
+    titulo: Aquiles contra Héctor
+    mensajes:
+      - de: santiago
+        texto: 'El mejor guerrero de Troya era Héctor, hijo del rey Príamo. Era valiente y bueno, y defendía a su ciudad y a su familia.'
+        dibujo: 🛡️ 🏰
+      - de: vega
+        texto: 'Aquiles se enfadó con el jefe de los griegos, Agamenón, y dejó de luchar. Sin él, los griegos perdían.'
+        dibujo: 😠 🏕️
+      - de: hugo
+        texto: 'Su mejor amigo, Patroclo, se puso la armadura de Aquiles para asustar a los troyanos. Pero Héctor lo venció.'
+        dibujo: 🛡️ 😢
+      - de: valentina
+        texto: 'Aquiles, tristísimo y furioso, volvió a la lucha con una armadura nueva que le hizo Hefesto. Y venció a Héctor.'
+        dibujo: 🔨 ⚔️
+      - de: santiago
+        texto: 'Por la noche, el viejo rey Príamo fue a la tienda de Aquiles a pedirle el cuerpo de su hijo. Aquiles, emocionado, se lo dio. Así acaba la Ilíada.'
+        dibujo: 👴 🤝
+      - de: vega
+        texto: 'Más tarde, Paris le disparó una flecha a Aquiles. Apolo la guio… justo hasta el talón.'
+        dibujo: 🏹 🦶
+
+  - tipo: elegir
+    enunciado: ¿Quién era Héctor?
+    dibujo: 🏰
+    correcta: 🛡️ El mejor guerrero de Troya
+    incorrectas:
+      - texto: 🐴 Un caballo
+        feedback: No. Héctor era el mejor guerrero de Troya, hijo del rey Príamo.
+      - texto: ⛵ Un marinero griego
+        feedback: No. Héctor era troyano, el mejor guerrero de Troya.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Patroclo se puso la armadura de Aquiles?
+    dibujo: 🛡️
+    correcta: 😱 Para asustar a los troyanos
+    incorrectas:
+      - texto: 🎭 Para un disfraz de carnaval
+        feedback: ¡Ja, ja! No. Para que los troyanos creyeran que Aquiles había vuelto, y se asustaran.
+      - texto: 🥶 Porque tenía frío
+        feedback: No. Para que los troyanos creyeran que Aquiles había vuelto, y se asustaran.
+
+  - tipo: elegir
+    enunciado: ¿Quién le hizo a Aquiles la armadura nueva?
+    dibujo: 🛡️ ✨
+    correcta: 🔨 Hefesto
+    incorrectas:
+      - texto: 🐴 Quirón
+        feedback: Quirón fue su maestro. La armadura se la hizo Hefesto, el dios herrero.
+      - texto: 🏃 Hermes
+        feedback: No. La armadura se la hizo Hefesto, el dios herrero.

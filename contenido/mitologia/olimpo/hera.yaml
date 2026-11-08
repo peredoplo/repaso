@@ -1,0 +1,97 @@
+titulo: Hera, la reina
+subtitulo: El pavo real y los cien ojos
+emoji: 🦚
+ejercicios:
+  - tipo: chat
+    titulo: La reina de los dioses
+    mensajes:
+      - de: valentina
+        texto: 'Hera era la esposa de Zeus y la reina de los dioses. Protegía las bodas, a las familias y a las madres cuando nacían sus bebés.'
+        dibujo: 👑 👪
+      - de: hugo
+        texto: 'Su animal era el pavo real, y su fruta, la granada. Llevaba corona y un cetro, un bastón de reina.'
+        dibujo: 🦚 👑
+      - de: santiago
+        texto: 'El poeta Homero decía que tenía ojos de vaca. ¡Y era un piropo! Quería decir que tenía los ojos grandes y bonitos.'
+        dibujo: 🐄 👀
+      - de: vega
+        texto: 'Estaba casi siempre enfadada con Zeus, porque se enamoraba de otras. Y se vengaba de ellas y de sus hijos.'
+        dibujo: 😤 ⚡
+      - de: valentina
+        texto: 'Su gran enemigo fue Heracles, un hijo de Zeus. Ya lo verás: le hizo la vida imposible.'
+        dibujo: 🦁 😠
+      - de: hugo
+        texto: 'Los romanos la llamaban Juno. Y el mes de junio, quizá, se llama así por ella.'
+        dibujo: 📅 ☀️
+
+  - tipo: elegir
+    enunciado: ¿Cuál era el animal de Hera?
+    dibujo: 👑
+    correcta: 🦚 El pavo real
+    incorrectas:
+      - texto: 🦅 El águila
+        feedback: El águila era de Zeus. El animal de Hera era el pavo real.
+      - texto: 🐷 El cerdo
+        feedback: ¡Ja, ja! No. El animal de Hera era el pavo real.
+
+  - tipo: chat
+    titulo: Argos, el de los cien ojos
+    mensajes:
+      - de: santiago
+        texto: 'Zeus se enamoró de una joven llamada Ío. Para que Hera no se enterara, la convirtió en una vaca blanca.'
+        dibujo: 🐄 🤫
+      - de: vega
+        texto: 'Pero Hera lo sospechó, y le pidió la vaca como regalo. Zeus no supo decirle que no.'
+        dibujo: 🎁 😬
+      - de: hugo
+        texto: 'Hera puso a vigilarla a Argos, un gigante con cien ojos. Unos dormían y otros estaban despiertos, así que siempre vigilaba.'
+        dibujo: 💯 👀
+      - de: valentina
+        texto: 'Zeus mandó a Hermes a rescatarla. Hermes tocó la flauta y contó historias aburridísimas, hasta que se cerraron los cien ojos.'
+        dibujo: 🎵 😴
+      - de: santiago
+        texto: 'Así Hermes venció a Argos. Hera, triste, puso sus cien ojos en la cola de su pavo real. ¡Por eso tiene esas manchas que parecen ojos!'
+        dibujo: 🦚 👁️
+      - de: vega
+        texto: 'Entonces Hera mandó un tábano, una mosca enorme, a picar a la vaca, que huyó por medio mundo. Un estrecho de mar, el Bósforo, quiere decir el paso de la vaca, por ella.'
+        dibujo: 🪰 🐄
+
+  - tipo: elegir
+    enunciado: ¿Cuántos ojos tenía el gigante Argos?
+    dibujo: 👀
+    correcta: 💯 Cien
+    incorrectas:
+      - texto: 1️⃣ Uno
+        feedback: Uno tenían los cíclopes. Argos tenía cien.
+      - texto: 2️⃣ Dos
+        feedback: Dos tenemos nosotros. Argos tenía cien.
+
+  - tipo: elegir
+    enunciado: ¿Cómo consiguió Hermes dormir a Argos?
+    dibujo: 😴
+    correcta: 🎵 Con música y cuentos aburridos
+    incorrectas:
+      - texto: 🥛 Con un vaso de leche
+        feedback: ¡Ja, ja! No. Tocó la flauta y contó historias aburridísimas.
+      - texto: 🔨 Con un martillazo
+        feedback: No. Tocó la flauta y contó historias aburridísimas, hasta que se cerraron los cien ojos.
+
+  - tipo: elegir
+    enunciado: ¿Dónde puso Hera los ojos de Argos?
+    dibujo: 👁️ ✨
+    correcta: 🦚 En la cola del pavo real
+    incorrectas:
+      - texto: 🌌 En el cielo, como estrellas
+        feedback: Bonita idea, pero no. Los puso en la cola del pavo real.
+      - texto: 🦋 En las alas de las mariposas
+        feedback: Algunas mariposas tienen manchas como ojos, pero el mito dice que Hera los puso en la cola del pavo real.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llamaban los romanos a Hera?
+    dibujo: 🦚 👑
+    correcta: 👑 Juno
+    incorrectas:
+      - texto: 🌙 Diana
+        feedback: Diana era Ártemis, la cazadora. A Hera la llamaban Juno.
+      - texto: ✨ Venus
+        feedback: Venus era Afrodita, la del amor. A Hera la llamaban Juno.

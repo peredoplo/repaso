@@ -1,0 +1,96 @@
+titulo: Al principio, el Caos
+subtitulo: La Tierra, el Cielo y los titanes
+emoji: 🌌
+ejercicios:
+  - tipo: chat
+    titulo: Antes de todo
+    mensajes:
+      - de: vega
+        texto: 'Hace casi tres mil años, los griegos se contaban historias para explicar el mundo: por qué hay rayos, por qué llega el invierno, de dónde sale el mar. Esas historias son los mitos.'
+        dibujo: 🏛️ 📜
+      - de: hugo
+        texto: 'Al principio de todo solo había Caos. Era un enorme vacío oscuro, sin arriba ni abajo. Su nombre quiere decir algo así como un gran bostezo, una boca abierta.'
+        dibujo: 🕳️ 🌑
+      - de: valentina
+        texto: 'Del Caos salieron Gea, la Tierra, con sus montañas, y también la Noche, oscura como una manta negra.'
+        dibujo: 🌍 🌃
+      - de: santiago
+        texto: 'Gea tuvo un hijo, Urano, el Cielo estrellado. Era tan grande que la cubría entera, como una tapa.'
+        dibujo: 🌌 🌍
+      - de: vega
+        texto: 'Gea y Urano tuvieron muchos hijos. Doce eran los titanes, unos gigantes poderosísimos.'
+        dibujo: 🗿 🗿 🗿
+      - de: hugo
+        texto: 'También tuvieron tres cíclopes, con un solo ojo en medio de la frente. Y tres gigantes con cien brazos y cincuenta cabezas cada uno.'
+        dibujo: 👁️ 💪
+      - de: valentina
+        texto: 'Urano les tenía miedo y los encerró a todos dentro de la Tierra. A Gea le dolía muchísimo, como si tuviera piedras en la tripa.'
+        dibujo: 🌍 😣
+      - de: santiago
+        texto: 'Gea pidió ayuda a los titanes. Solo el más joven, Cronos, se atrevió. Con una hoz, un cuchillo curvo de cortar trigo, venció a su padre y lo echó. Y Cronos se convirtió en el rey.'
+        dibujo: 🌾 👑
+
+  - tipo: elegir
+    enunciado: Según los griegos, ¿qué había al principio de todo?
+    dibujo: ❓
+    correcta: 🕳️ El Caos, un gran vacío
+    incorrectas:
+      - texto: 🍕 Una pizza gigante
+        feedback: ¡Ja, ja! No. Al principio solo había Caos, un enorme vacío oscuro.
+      - texto: 🏛️ Un templo
+        feedback: Los templos los hicieron las personas mucho después. Al principio solo había Caos.
+
+  - tipo: elegir
+    enunciado: ¿Cuántos ojos tenía un cíclope?
+    dibujo: 👁️
+    correcta: 1️⃣ Uno
+    incorrectas:
+      - texto: 2️⃣ Dos
+        feedback: Dos tenemos nosotros. Los cíclopes tenían uno solo, en medio de la frente.
+      - texto: 💯 Cien
+        feedback: Cien eran los brazos de sus hermanos gigantes. Los cíclopes tenían un solo ojo.
+
+  - tipo: chat
+    titulo: Los doce titanes
+    mensajes:
+      - de: valentina
+        texto: 'Los titanes eran doce: seis hermanos y seis hermanas. Algunos se llamaban Océano, Hiperión, Rea y Cronos.'
+        dibujo: 🗿 🗿
+      - de: hugo
+        texto: 'Océano era un río enorme que daba la vuelta a todo el mundo. De su nombre viene nuestra palabra océano.'
+        dibujo: 🌊 🔄
+      - de: santiago
+        texto: 'Hiperión era el titán de la luz. Sus hijos fueron Helios, el Sol, Selene, la Luna, y Eos, la Aurora, que abre las puertas del día.'
+        dibujo: ☀️ 🌙 🌅
+      - de: vega
+        texto: 'Helios cruzaba el cielo cada día en un carro de fuego tirado por caballos. Así explicaban los griegos por qué el Sol se mueve.'
+        dibujo: 🐎 🔥
+      - de: valentina
+        texto: '¿Te acuerdas de Saturno? Muchas de sus lunas llevan nombres de titanes: Titán, Rea, Hiperión, Japeto y Tetis.'
+        dibujo: 🪐 🌙
+
+  - tipo: elegir
+    enunciado: ¿Quién llevaba el Sol por el cielo en su carro?
+    dibujo: 🐎 ☀️
+    correcta: ☀️ Helios
+    incorrectas:
+      - texto: 🌊 Océano
+        feedback: Océano era el río que rodeaba el mundo. El carro del Sol lo llevaba Helios.
+      - texto: 🐢 Una tortuga
+        feedback: ¡Ja, ja! Iría muy despacio. El carro del Sol lo llevaba Helios.
+
+  - tipo: elegir
+    enunciado: ¿Qué titán se atrevió a vencer a su padre Urano?
+    dibujo: 🌌 ⚔️
+    correcta: 🌾 Cronos
+    incorrectas:
+      - texto: 🌊 Océano
+        feedback: Océano no se atrevió. Fue Cronos, el titán más joven.
+      - texto: 👁️ Un cíclope
+        feedback: Los cíclopes seguían encerrados. Fue Cronos, el titán más joven.
+
+  - tipo: ordenar
+    enunciado: Ordena desde el principio de todo.
+    piezas: 🌾 Cronos / 🕳️ Caos / 🌌 Urano / 🌍 Gea
+    solucion: 🕳️ Caos 🌍 Gea 🌌 Urano 🌾 Cronos
+    explicacion: Primero el Caos. De él salió Gea, la Tierra. Gea tuvo a Urano, el Cielo. Y su hijo Cronos se hizo rey.

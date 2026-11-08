@@ -1,0 +1,94 @@
+titulo: Jasón y el Argo
+subtitulo: Una sandalia y un barco que habla
+emoji: ⛵
+ejercicios:
+  - tipo: chat
+    titulo: El hombre de una sola sandalia
+    mensajes:
+      - de: hugo
+        texto: 'Jasón era hijo del rey de Yolco. Pero su tío, Pelias, le quitó el trono a su padre. Para protegerlo, criaron a Jasón lejos.'
+        dibujo: 👑 😠
+      - de: valentina
+        texto: 'Lo educó el centauro Quirón, el gran maestro, en una cueva de la montaña.'
+        dibujo: 🐴 📚
+      - de: santiago
+        texto: 'A Pelias le habían avisado: ten cuidado con un hombre que llegue con una sola sandalia.'
+        dibujo: 🔮 👡
+      - de: vega
+        texto: 'De camino a Yolco, Jasón ayudó a una anciana a cruzar un río, y perdió una sandalia en el barro. ¡La anciana era la diosa Hera, disfrazada! Desde entonces, lo protegió.'
+        dibujo: 👵 🦚
+      - de: hugo
+        texto: 'Pelias, al verlo con una sola sandalia, se asustó. Le prometió el trono, si le traía el vellocino de oro.'
+        dibujo: 😨 ✨
+      - de: valentina
+        texto: 'El vellocino era la piel de un carnero mágico, con lana de oro. Estaba muy lejos, en la Cólquide, junto al mar Negro.'
+        dibujo: 🐏 ✨
+
+  - tipo: elegir
+    enunciado: ¿Qué le faltaba a Jasón al llegar a Yolco?
+    dibujo: 🧍
+    correcta: 👡 Una sandalia
+    incorrectas:
+      - texto: 🧢 Una gorra
+        feedback: No. Le faltaba una sandalia, que perdió al cruzar el río.
+      - texto: 👃 La nariz
+        feedback: ¡Ja, ja! No. Le faltaba una sandalia, que perdió al cruzar el río.
+
+  - tipo: elegir
+    enunciado: ¿Quién era la anciana del río?
+    dibujo: 👵 🌊
+    correcta: 🦚 La diosa Hera, disfrazada
+    incorrectas:
+      - texto: 👵 La abuela de Jasón
+        feedback: No. Era la diosa Hera, disfrazada. Desde entonces, protegió a Jasón.
+      - texto: 🐍 Medusa
+        feedback: No. Era la diosa Hera, disfrazada. Desde entonces, protegió a Jasón.
+
+  - tipo: chat
+    titulo: Los argonautas
+    mensajes:
+      - de: santiago
+        texto: 'Para el viaje construyeron un barco, el Argo, con ayuda de Atenea. Por eso los viajeros se llamaron argonautas: los marineros del Argo.'
+        dibujo: ⛵ 🦉
+      - de: vega
+        texto: 'En la parte de delante pusieron un trozo de madera de un roble sagrado de Zeus. ¡Ese trozo hablaba y les daba consejos!'
+        dibujo: 🌳 🗣️
+      - de: hugo
+        texto: 'Se apuntaron los mayores héroes de Grecia: Heracles; Orfeo, el músico; los gemelos Cástor y Pólux; y Atalanta, una gran cazadora.'
+        dibujo: 🦁 🎵 🏹
+      - de: valentina
+        texto: 'Eran unos cincuenta remeros. ¡Un equipo de superhéroes!'
+        dibujo: 🚣 🦸
+      - de: santiago
+        texto: 'Hoy llamamos astronautas a los que viajan al espacio. La palabra se inventó copiando a los argonautas: quiere decir marineros de las estrellas.'
+        dibujo: 🧑‍🚀 ⭐
+
+  - tipo: elegir
+    enunciado: ¿Qué tenía de mágico el barco Argo?
+    dibujo: ⛵
+    correcta: 🗣️ Un trozo de madera que hablaba
+    incorrectas:
+      - texto: 🪶 Alas para volar
+        feedback: No. Tenía un trozo de madera de un roble de Zeus que hablaba y daba consejos.
+      - texto: 🍦 Una máquina de helados
+        feedback: ¡Ja, ja! No. Tenía un trozo de madera que hablaba y daba consejos.
+
+  - tipo: elegir
+    enunciado: ¿De qué palabra viene astronauta?
+    dibujo: 🧑‍🚀
+    correcta: ⛵ De argonauta
+    incorrectas:
+      - texto: 🪐 De asteroide
+        feedback: No. Viene de argonauta, los marineros del Argo. Astronauta quiere decir marinero de las estrellas.
+      - texto: 🐙 De pulpo
+        feedback: ¡Ja, ja! No. Viene de argonauta, marinero del Argo.
+
+  - tipo: elegir
+    enunciado: ¿Quién fue el maestro de Jasón?
+    dibujo: 📚
+    correcta: 🐴 El centauro Quirón
+    incorrectas:
+      - texto: 👑 El rey Pelias
+        feedback: Pelias era su tío malvado. Su maestro fue el centauro Quirón.
+      - texto: 🦁 Heracles
+        feedback: Heracles fue con él en el barco. Su maestro fue el centauro Quirón.

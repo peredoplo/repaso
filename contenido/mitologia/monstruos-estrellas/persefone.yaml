@@ -1,0 +1,100 @@
+titulo: Perséfone y las estaciones
+subtitulo: Unas semillas de granada
+emoji: 🌸
+ejercicios:
+  - tipo: chat
+    titulo: La hija que desapareció
+    mensajes:
+      - de: valentina
+        texto: 'Perséfone era la hija de Deméter, la diosa del trigo. Le encantaba coger flores en el campo.'
+        dibujo: 🌼 👧
+      - de: santiago
+        texto: 'Un día, la tierra se abrió y salió Hades en su carro de caballos negros. Se la llevó al inframundo, para casarse con ella.'
+        dibujo: 🐴 ⬇️
+      - de: vega
+        texto: 'Deméter la buscó por todo el mundo, de día y de noche, con antorchas. Nadie le decía nada.'
+        dibujo: 🔦 😢
+      - de: hugo
+        texto: 'Al final, Helios, el Sol, que lo ve todo desde el cielo, le contó lo que había pasado.'
+        dibujo: ☀️ 👀
+      - de: valentina
+        texto: 'Deméter se puso tan triste y tan enfadada que dejó de cuidar los campos. No crecía nada. Así llegó el primer invierno.'
+        dibujo: ❄️ 🥀
+      - de: santiago
+        texto: 'La gente pasaba hambre. Así que Zeus mandó a Hermes a buscar a Perséfone.'
+        dibujo: ⚡ 🏃
+
+  - tipo: elegir
+    enunciado: ¿Quién le contó a Deméter dónde estaba su hija?
+    dibujo: 🔦
+    correcta: ☀️ Helios, el Sol
+    incorrectas:
+      - texto: 🐕 Cerbero
+        feedback: No. Se lo contó Helios, el Sol, que lo ve todo desde el cielo.
+      - texto: 🌙 La Luna
+        feedback: No. Se lo contó Helios, el Sol, que lo ve todo desde el cielo.
+
+  - tipo: elegir
+    enunciado: ¿Qué pasó cuando Deméter se puso triste?
+    dibujo: 😢 🌾
+    correcta: ❄️ No crecía nada
+    incorrectas:
+      - texto: 🌈 Salió un arcoíris
+        feedback: No. Dejó de cuidar los campos, no crecía nada, y llegó el invierno.
+      - texto: 🍦 Llovieron helados
+        feedback: ¡Ja, ja! No. Dejó de cuidar los campos, no crecía nada, y llegó el invierno.
+
+  - tipo: chat
+    titulo: Medio año arriba y medio abajo
+    mensajes:
+      - de: vega
+        texto: 'Pero había una regla: quien comía algo en el inframundo, tenía que quedarse allí.'
+        dibujo: 🍽️ 🚫
+      - de: hugo
+        texto: 'Y Perséfone se había comido unas semillas de granada. Unos dicen que seis, y otros, que cuatro.'
+        dibujo: 🔴 🔴
+      - de: valentina
+        texto: 'Así que hicieron un trato. Pasaría una parte del año con Hades, y el resto con su madre.'
+        dibujo: 🤝 📅
+      - de: santiago
+        texto: 'Cuando Perséfone vuelve, Deméter se alegra, y llegan la primavera y el verano, con flores y cosechas.'
+        dibujo: 🌸 🌻
+      - de: vega
+        texto: 'Cuando se va al inframundo, Deméter se pone triste, y llegan el otoño y el invierno. Así explicaban los griegos las estaciones.'
+        dibujo: 🍂 ❄️
+      - de: hugo
+        texto: 'Hoy sabemos que hay estaciones porque la Tierra está inclinada mientras da vueltas al Sol. ¿Te acuerdas?'
+        dibujo: 🌍 ☀️
+      - de: valentina
+        texto: 'Perséfone se convirtió en la reina del inframundo, y gobernaba junto a Hades.'
+        dibujo: 👑 💀
+
+  - tipo: elegir
+    enunciado: ¿Qué se comió Perséfone en el inframundo?
+    dibujo: 🍽️
+    correcta: 🔴 Semillas de granada
+    incorrectas:
+      - texto: 🍕 Pizza
+        feedback: ¡Ja, ja! No. Se comió unas semillas de granada.
+      - texto: 🍫 Chocolate
+        feedback: No. Se comió unas semillas de granada.
+
+  - tipo: elegir
+    enunciado: ¿Qué estación llega cuando Perséfone vuelve con su madre?
+    dibujo: 👧 🤗
+    correcta: 🌸 La primavera
+    incorrectas:
+      - texto: ❄️ El invierno
+        feedback: Al revés. El invierno llega cuando se va. Cuando vuelve, llega la primavera.
+      - texto: 🍂 El otoño
+        feedback: No. El otoño llega cuando se va. Cuando vuelve, llega la primavera.
+
+  - tipo: elegir
+    enunciado: ¿Por qué hay estaciones de verdad?
+    dibujo: 🌍
+    correcta: 🌍 Porque la Tierra está inclinada
+    incorrectas:
+      - texto: 😢 Porque Deméter se pone triste
+        feedback: Eso pensaban los griegos. Hoy sabemos que es porque la Tierra está inclinada.
+      - texto: 💡 Porque el Sol se apaga
+        feedback: No. El Sol no se apaga. Es porque la Tierra está inclinada.

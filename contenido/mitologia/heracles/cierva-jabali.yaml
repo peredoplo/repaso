@@ -1,0 +1,97 @@
+titulo: La cierva y el jabalí
+subtitulo: El tercer y el cuarto trabajo
+emoji: 🦌
+ejercicios:
+  - tipo: chat
+    titulo: La cierva de los cuernos de oro
+    mensajes:
+      - de: hugo
+        texto: 'Para el tercer trabajo, Euristeo quería que Heracles fallara: tenía que traer viva a la cierva de Cerinea.'
+        dibujo: 🦌 👑
+      - de: valentina
+        texto: 'Tenía cuernos de oro y pezuñas de bronce. Y era sagrada para Ártemis: si le hacía daño, la diosa se enfadaría muchísimo.'
+        dibujo: ✨ 🏹
+      - de: santiago
+        texto: 'Corría tan rápido, que Heracles la persiguió durante un año entero.'
+        dibujo: 🏃 📅
+      - de: vega
+        texto: 'Al final la atrapó cuando se paró a beber en un río, cansada, y se la llevó sobre los hombros, sin hacerle daño.'
+        dibujo: 💧 🦌
+      - de: hugo
+        texto: 'Por el camino se encontró con Ártemis y Apolo. Heracles les explicó que era una orden de Euristeo, y Ártemis lo dejó marchar.'
+        dibujo: 🏹 🤝
+
+  - tipo: elegir
+    enunciado: ¿Qué tenía de especial la cierva de Cerinea?
+    dibujo: 🦌
+    correcta: ✨ Cuernos de oro
+    incorrectas:
+      - texto: 🌈 Rayas de colores
+        feedback: No. Tenía cuernos de oro y pezuñas de bronce.
+      - texto: 🐘 Una trompa
+        feedback: ¡Ja, ja! No. Tenía cuernos de oro y pezuñas de bronce.
+
+  - tipo: elegir
+    enunciado: ¿Cuánto tiempo persiguió Heracles a la cierva?
+    dibujo: 🏃 🦌
+    correcta: 📅 Un año entero
+    incorrectas:
+      - texto: ⏱️ Un minuto
+        feedback: Mucho más. Corría tanto que la persiguió un año entero.
+      - texto: 🌙 Una noche
+        feedback: Mucho más. Corría tanto que la persiguió un año entero.
+
+  - tipo: chat
+    titulo: El jabalí y la nieve
+    mensajes:
+      - de: valentina
+        texto: 'El cuarto: traer vivo al jabalí de Erimanto, un cerdo salvaje enorme, con colmillos, que destrozaba los campos.'
+        dibujo: 🐗 🌾
+      - de: santiago
+        texto: 'De camino, Heracles visitó a su amigo Folo, un centauro: mitad persona y mitad caballo.'
+        dibujo: 🐴 🤝
+      - de: vega
+        texto: 'Llegaron otros centauros, muy brutos, y se pelearon con él. Heracles los espantó con sus flechas, las del veneno de la Hidra.'
+        dibujo: 🏹 💨
+      - de: hugo
+        texto: 'Por desgracia, una flecha hirió sin querer a Quirón, el centauro más sabio. Como era inmortal, no se moría, pero le dolía siempre.'
+        dibujo: 😣 🐴
+      - de: valentina
+        texto: 'Al final, Quirón regaló su inmortalidad, y Zeus lo puso en el cielo. Es la constelación de Centauro. Allí está Alfa Centauri, el grupo de estrellas más cercano al Sol.'
+        dibujo: ⭐ 🐴
+      - de: santiago
+        texto: 'Para atrapar al jabalí, Heracles lo hizo correr hacia la montaña, hasta que se quedó atascado en la nieve. Allí lo ató.'
+        dibujo: ❄️ 🐗
+      - de: vega
+        texto: 'Cuando Euristeo lo vio llegar con el jabalí a hombros, se metió de un salto en su tinaja. ¡Hay vasijas griegas con ese dibujo!'
+        dibujo: 🏺 😱
+
+  - tipo: elegir
+    enunciado: ¿Cómo atrapó Heracles al jabalí?
+    dibujo: 🐗
+    correcta: ❄️ Lo atascó en la nieve
+    incorrectas:
+      - texto: 🍎 Con una manzana
+        feedback: No. Lo hizo correr hacia la montaña hasta que se atascó en la nieve.
+      - texto: 🕸️ Con una red de araña
+        feedback: No. Lo hizo correr hacia la montaña hasta que se atascó en la nieve.
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación es el centauro Quirón?
+    dibujo: ⭐ 🐴
+    correcta: 🐴 Centauro
+    incorrectas:
+      - texto: ♌ Leo
+        feedback: Leo es el león de Nemea. Quirón es la constelación de Centauro.
+      - texto: 🦀 Cáncer
+        feedback: Cáncer es el cangrejo de la Hidra. Quirón es la constelación de Centauro.
+
+  - tipo: elegir
+    enunciado: ¿Qué hizo Euristeo al ver el jabalí?
+    dibujo: 🐗 👑
+    correcta: 🏺 Esconderse en su tinaja
+    incorrectas:
+      - texto: 🍖 Comérselo
+        feedback: ¡Ja, ja! No. Se metió de un salto en su tinaja, muerto de miedo.
+      - texto: 🐶 Acariciarlo
+        feedback: ¡Qué va! Se metió de un salto en su tinaja, muerto de miedo.

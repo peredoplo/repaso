@@ -1,0 +1,100 @@
+titulo: Apolo, el dios de la luz
+subtitulo: Música, medicina y el oráculo de Delfos
+emoji: 🎵
+ejercicios:
+  - tipo: chat
+    titulo: Los gemelos de la isla flotante
+    mensajes:
+      - de: vega
+        texto: 'Apolo y Ártemis eran gemelos, hijos de Zeus y de Leto. Hera, celosa, prohibió a todas las tierras que dejaran nacer allí a los bebés.'
+        dibujo: 👶 👶
+      - de: hugo
+        texto: 'Pero había una isla que flotaba en el mar, Delos, que no era tierra firme. Allí nacieron. Después, la isla se quedó quieta para siempre.'
+        dibujo: 🏝️ 🌊
+      - de: valentina
+        texto: 'Apolo era el dios de la luz, la música, la poesía, la medicina y el tiro con arco. Más tarde lo confundieron con el Sol.'
+        dibujo: ☀️ 🏹
+      - de: santiago
+        texto: 'Tocaba la lira, un instrumento de cuerdas que se hacía con el caparazón de una tortuga.'
+        dibujo: 🐢 🎵
+      - de: vega
+        texto: 'Se enamoró de la ninfa Dafne, pero ella no quería, y huyó. Para escapar, se convirtió en un árbol, el laurel.'
+        dibujo: 🏃 🌿
+      - de: hugo
+        texto: 'Desde entonces el laurel era su árbol. A los ganadores de los concursos de poesía y deporte les ponían una corona de laurel.'
+        dibujo: 🌿 🏆
+      - de: valentina
+        texto: 'Su hijo Asclepio fue el dios de la medicina. Su bastón, con una serpiente enroscada, se ve todavía en muchas ambulancias.'
+        dibujo: 🐍 🚑
+
+  - tipo: elegir
+    enunciado: ¿Dónde nacieron Apolo y Ártemis?
+    dibujo: 👶 👶
+    correcta: 🏝️ En una isla que flotaba
+    incorrectas:
+      - texto: ⛰️ En el monte Olimpo
+        feedback: No. Hera no los dejaba nacer en tierra firme, y nacieron en Delos, una isla que flotaba.
+      - texto: 🏰 En un castillo
+        feedback: No. Nacieron en Delos, una isla que flotaba en el mar.
+
+  - tipo: elegir
+    enunciado: ¿Con qué se hacía la lira?
+    dibujo: 🎵
+    correcta: 🐢 Con un caparazón de tortuga
+    incorrectas:
+      - texto: 🥥 Con un coco
+        feedback: No. Se hacía con el caparazón de una tortuga, y cuerdas.
+      - texto: 👟 Con una caja de zapatos
+        feedback: ¡Ja, ja! No. Se hacía con el caparazón de una tortuga.
+
+  - tipo: chat
+    titulo: El oráculo de Delfos
+    mensajes:
+      - de: santiago
+        texto: 'En Delfos vivía una serpiente gigante, Pitón. Apolo, con solo cuatro días de vida, la venció con sus flechas.'
+        dibujo: 🐍 🏹
+      - de: vega
+        texto: 'Por ella, las serpientes pitón se llaman así.'
+        dibujo: 🐍
+      - de: hugo
+        texto: 'En Delfos construyó su templo más importante, con un oráculo: un lugar para preguntar el futuro.'
+        dibujo: 🏛️ 🔮
+      - de: valentina
+        texto: 'Una sacerdotisa, la Pitia, se sentaba en un taburete de tres patas y respondía en nombre de Apolo.'
+        dibujo: 🪑 🗣️
+      - de: santiago
+        texto: 'Sus respuestas eran muy liosas, como adivinanzas, y había que pensar mucho para entenderlas.'
+        dibujo: 🤔 ❓
+      - de: vega
+        texto: 'Un rey, Creso, preguntó si debía atacar a sus vecinos. La respuesta fue que, si atacaba, destruiría un gran imperio. Atacó… ¡y el imperio destruido fue el suyo!'
+        dibujo: 👑 💥
+
+  - tipo: elegir
+    enunciado: ¿Qué era el oráculo de Delfos?
+    dibujo: 🏛️
+    correcta: 🔮 Un sitio para preguntar el futuro
+    incorrectas:
+      - texto: 🏊 Una piscina
+        feedback: ¡Ja, ja! No. Era un sitio para preguntar el futuro a Apolo.
+      - texto: 🏥 Un hospital
+        feedback: No. Era un sitio para preguntar el futuro a Apolo.
+
+  - tipo: elegir
+    enunciado: ¿Qué imperio destruyó el rey Creso?
+    dibujo: 👑 🔮
+    correcta: 🤦 El suyo
+    incorrectas:
+      - texto: 🏰 El de sus vecinos
+        feedback: Eso creía él. Pero el oráculo era un lío, y el imperio destruido fue el suyo.
+      - texto: 🐜 El de las hormigas
+        feedback: ¡Ja, ja! No. El imperio destruido fue el suyo.
+
+  - tipo: elegir
+    enunciado: ¿Cuál era el árbol de Apolo?
+    dibujo: 🎵 ☀️
+    correcta: 🌿 El laurel
+    incorrectas:
+      - texto: 🌳 El roble
+        feedback: El roble era de Zeus. El de Apolo era el laurel, el árbol en que se convirtió Dafne.
+      - texto: 🫒 El olivo
+        feedback: El olivo era de Atenea. El de Apolo era el laurel.

@@ -1,0 +1,91 @@
+titulo: El león de Nemea
+subtitulo: El primer trabajo
+emoji: 🦁
+ejercicios:
+  - tipo: chat
+    titulo: Una piel que nada atraviesa
+    mensajes:
+      - de: santiago
+        texto: 'El primer trabajo: vencer al león de Nemea, que aterrorizaba a toda la región.'
+        dibujo: 🦁 😱
+      - de: vega
+        texto: 'Su piel era tan dura que ningún arma la atravesaba. Las flechas rebotaban, y las espadas se doblaban.'
+        dibujo: 🏹 🔙
+      - de: hugo
+        texto: 'Heracles se dio cuenta de que así no podía. El león vivía en una cueva con dos entradas, y Heracles tapó una con piedras.'
+        dibujo: 🕳️ 🪨
+      - de: valentina
+        texto: 'Entró por la otra y luchó con las manos, hasta vencerlo.'
+        dibujo: 💪 🦁
+      - de: santiago
+        texto: 'Después quiso quitarle la piel, pero ningún cuchillo la cortaba. ¿Sabes cómo lo hizo? ¡Con las propias garras del león!'
+        dibujo: 🔪 ❌
+      - de: vega
+        texto: 'Desde entonces llevó la piel del león como armadura, y la cabeza como casco. Así lo reconocerás en las estatuas.'
+        dibujo: 🦁 🛡️
+      - de: hugo
+        texto: 'Euristeo se asustó tanto al verlo llegar con el león, que mandó hacer una tinaja, una jarra enorme, enterrada en el suelo. ¡Y desde dentro le mandaba los trabajos!'
+        dibujo: 🏺 😨
+
+  - tipo: elegir
+    enunciado: ¿Por qué no podía vencer al león con armas?
+    dibujo: 🦁 🏹
+    correcta: 🛡️ Su piel era durísima
+    incorrectas:
+      - texto: 🏃 Porque corría mucho
+        feedback: No era eso. Su piel era tan dura que ningún arma la atravesaba.
+      - texto: 👻 Porque era invisible
+        feedback: No. Su piel era tan dura que ningún arma la atravesaba.
+
+  - tipo: elegir
+    enunciado: ¿Con qué cortó Heracles la piel del león?
+    dibujo: 🦁 🔪
+    correcta: 🐾 Con las garras del propio león
+    incorrectas:
+      - texto: ✂️ Con unas tijeras
+        feedback: ¡Ja, ja! No. Ningún cuchillo la cortaba. Usó las garras del propio león.
+      - texto: ⚔️ Con su espada
+        feedback: Las espadas se doblaban. Usó las garras del propio león.
+
+  - tipo: elegir
+    enunciado: ¿Dónde se escondía el rey Euristeo?
+    dibujo: 👑 😨
+    correcta: 🏺 En una tinaja enterrada
+    incorrectas:
+      - texto: 🛏️ Debajo de la cama
+        feedback: Casi. Se escondía en una tinaja, una jarra enorme enterrada en el suelo.
+      - texto: 🌳 En un árbol
+        feedback: No. Se escondía en una tinaja, una jarra enorme enterrada en el suelo.
+
+  - tipo: chat
+    titulo: El león en el cielo
+    mensajes:
+      - de: valentina
+        texto: 'Hera puso al león en el cielo. Es la constelación de Leo.'
+        dibujo: ⭐ 🦁
+      - de: santiago
+        texto: 'Su estrella más brillante se llama Régulo, que quiere decir el pequeño rey.'
+        dibujo: ⭐ 👑
+      - de: vega
+        texto: 'Heracles llevaba también una maza: un palo enorme de madera de olivo, que se hizo él mismo. Y su arco con flechas.'
+        dibujo: 🏏 🏹
+
+  - tipo: elegir
+    enunciado: ¿Qué constelación es el león de Nemea?
+    dibujo: ⭐ 🦁
+    correcta: ♌ Leo
+    incorrectas:
+      - texto: 🦂 Escorpio
+        feedback: Escorpio es el escorpión de Orión. El león de Nemea es Leo.
+      - texto: 🐻 La Osa Mayor
+        feedback: No. El león de Nemea es la constelación de Leo.
+
+  - tipo: elegir
+    enunciado: ¿Qué llevaba Heracles como casco?
+    dibujo: 💪
+    correcta: 🦁 La cabeza del león
+    incorrectas:
+      - texto: 🪖 Un casco de metal
+        feedback: No. Llevaba la cabeza del león de Nemea, y su piel como armadura.
+      - texto: 🧢 Una gorra
+        feedback: ¡Ja, ja! No. Llevaba la cabeza del león de Nemea.

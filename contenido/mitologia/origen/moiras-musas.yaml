@@ -1,0 +1,94 @@
+titulo: Las Moiras y las Musas
+subtitulo: El hilo del destino y las artes
+emoji: 🧵
+ejercicios:
+  - tipo: chat
+    titulo: El hilo del destino
+    mensajes:
+      - de: vega
+        texto: 'Había tres hermanas misteriosas, las Moiras, que decidían el destino de cada persona: lo que le iba a pasar en la vida.'
+        dibujo: 🧵 ✨
+      - de: hugo
+        texto: 'Lo hacían con un hilo. Cloto lo hilaba cuando alguien nacía. Láquesis lo medía, para saber cuánto iba a vivir.'
+        dibujo: 🧶 📏
+      - de: valentina
+        texto: 'Y Átropos lo cortaba con sus tijeras al final de la vida. Su nombre quiere decir la que no se puede cambiar.'
+        dibujo: ✂️
+      - de: santiago
+        texto: 'Según muchos mitos, ni siquiera Zeus podía cambiar lo que ellas decidían.'
+        dibujo: ⚡ 🚫
+      - de: vega
+        texto: 'Los romanos las llamaban las Parcas.'
+        dibujo: 🧵 🧵 🧵
+
+  - tipo: elegir
+    enunciado: ¿Qué usaban las Moiras para el destino de las personas?
+    dibujo: ✨
+    correcta: 🧵 Un hilo
+    incorrectas:
+      - texto: 🎲 Unos dados
+        feedback: No. Usaban un hilo, que hilaban, medían y cortaban.
+      - texto: 📺 Una tele
+        feedback: ¡Ja, ja! No había teles. Usaban un hilo.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacía Átropos con el hilo?
+    dibujo: 🧵
+    correcta: ✂️ Lo cortaba
+    incorrectas:
+      - texto: 🧶 Lo hilaba
+        feedback: Esa era Cloto. Átropos lo cortaba con sus tijeras.
+      - texto: 📏 Lo medía
+        feedback: Esa era Láquesis. Átropos lo cortaba con sus tijeras.
+
+  - tipo: chat
+    titulo: Nueve Musas y otras diosas
+    mensajes:
+      - de: hugo
+        texto: 'Zeus y la titán Mnemósine, que era la memoria, tuvieron nueve hijas: las Musas.'
+        dibujo: 9️⃣ 👑
+      - de: valentina
+        texto: 'Cada una se ocupaba de un arte: la música, la poesía, la historia, el baile o el teatro. Y una, Urania, de las estrellas.'
+        dibujo: 🎵 💃 🔭
+      - de: santiago
+        texto: 'Los poetas les pedían ayuda antes de contar una historia. La Odisea empieza así: «Háblame, Musa».'
+        dibujo: 📜 🙏
+      - de: vega
+        texto: 'De las Musas vienen las palabras música y museo, que era la casa de las Musas.'
+        dibujo: 🎶 🏛️
+      - de: hugo
+        texto: 'Había más diosas. Iris era la mensajera, y viajaba por el arcoíris. Por eso la parte de color de tu ojo se llama iris.'
+        dibujo: 🌈 👁️
+      - de: valentina
+        texto: 'Y Nike era la diosa de la victoria, con alas. Su nombre lo lleva hoy una marca de zapatillas.'
+        dibujo: 🏆 👟
+
+  - tipo: elegir
+    enunciado: ¿Cuántas Musas había?
+    dibujo: 🎵 💃
+    correcta: 9️⃣ Nueve
+    incorrectas:
+      - texto: 3️⃣ Tres
+        feedback: Tres eran las Moiras. Las Musas eran nueve.
+      - texto: 1️⃣ Una
+        feedback: Muchas más. Las Musas eran nueve.
+
+  - tipo: elegir
+    enunciado: ¿Qué Musa se ocupaba de las estrellas?
+    dibujo: 🔭 ⭐
+    correcta: 🔭 Urania
+    incorrectas:
+      - texto: 💃 Terpsícore
+        feedback: Terpsícore era la del baile. La de las estrellas era Urania.
+      - texto: 📜 Clío
+        feedback: Clío era la de la historia. La de las estrellas era Urania.
+
+  - tipo: elegir
+    enunciado: ¿Por qué la parte de color del ojo se llama iris?
+    dibujo: 👁️
+    correcta: 🌈 Por Iris, la diosa del arcoíris
+    incorrectas:
+      - texto: 🌸 Por una flor
+        feedback: Hay una flor que se llama así, pero el nombre viene de Iris, la diosa del arcoíris.
+      - texto: 🍦 Por un helado
+        feedback: ¡Ja, ja! No. Viene de Iris, la diosa del arcoíris.

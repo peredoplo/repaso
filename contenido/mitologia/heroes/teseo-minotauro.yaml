@@ -1,0 +1,93 @@
+titulo: Teseo y el Minotauro
+subtitulo: El hilo de Ariadna
+emoji: 🧶
+ejercicios:
+  - tipo: chat
+    titulo: El monstruo del laberinto
+    mensajes:
+      - de: santiago
+        texto: 'En la isla de Creta, el rey Minos tenía un monstruo: el Minotauro, con cuerpo de hombre y cabeza de toro.'
+        dibujo: 🐂 🏝️
+      - de: vega
+        texto: 'Lo encerró en el laberinto, un edificio lleno de pasillos y vueltas donde todos se perdían. Lo construyó el gran inventor Dédalo.'
+        dibujo: 🌀 🏛️
+      - de: hugo
+        texto: 'Atenas había perdido una guerra contra Creta. Y cada nueve años tenía que mandar a siete chicos y siete chicas para el Minotauro.'
+        dibujo: ⛵ 😢
+      - de: valentina
+        texto: 'Teseo se ofreció para ir, y vencer al monstruo.'
+        dibujo: 🦸 ✋
+      - de: santiago
+        texto: 'Su padre, Egeo, le pidió algo. El barco llevaba velas negras. Si volvía vivo, tenía que cambiarlas por velas blancas.'
+        dibujo: ⚫ ⚪
+
+  - tipo: elegir
+    enunciado: ¿Qué cabeza tenía el Minotauro?
+    dibujo: 🌀
+    correcta: 🐂 De toro
+    incorrectas:
+      - texto: 🦁 De león
+        feedback: No. El Minotauro tenía cabeza de toro.
+      - texto: 🐔 De gallina
+        feedback: ¡Ja, ja! No daría miedo. Tenía cabeza de toro.
+
+  - tipo: elegir
+    enunciado: ¿Quién construyó el laberinto?
+    dibujo: 🌀 🏛️
+    correcta: 🛠️ Dédalo, el inventor
+    incorrectas:
+      - texto: 🔨 Hefesto
+        feedback: Hefesto era el herrero de los dioses. El laberinto lo construyó Dédalo.
+      - texto: 🐂 El Minotauro
+        feedback: El Minotauro vivía encerrado dentro. Lo construyó Dédalo.
+
+  - tipo: chat
+    titulo: El hilo y las velas
+    mensajes:
+      - de: vega
+        texto: 'En Creta, la princesa Ariadna, hija del rey Minos, se enamoró de Teseo y quiso ayudarle.'
+        dibujo: 👸 💘
+      - de: hugo
+        texto: 'Le dio un ovillo de hilo. Teseo ató la punta a la entrada del laberinto, y fue soltando hilo por los pasillos.'
+        dibujo: 🧶 🌀
+      - de: valentina
+        texto: 'En el centro encontró al Minotauro, y lo venció. Después, siguiendo el hilo, ¡encontró la salida!'
+        dibujo: 💪 🚪
+      - de: santiago
+        texto: 'Escapó con Ariadna y con los chicos y chicas de Atenas. Ariadna se quedó en una isla, y se casó con el dios Dioniso, que lanzó su corona al cielo. Es la constelación de la Corona Boreal.'
+        dibujo: 👑 ⭐
+      - de: vega
+        texto: 'Pero al volver, contento, a Teseo se le olvidó cambiar las velas negras.'
+        dibujo: ⚫ ⛵
+      - de: hugo
+        texto: 'Egeo, que esperaba en lo alto de un acantilado, vio las velas negras. Pensó que su hijo había muerto, y de pena se tiró al mar.'
+        dibujo: 😢 🌊
+      - de: valentina
+        texto: 'Desde entonces, ese mar se llama mar Egeo. Y Teseo fue el nuevo rey de Atenas.'
+        dibujo: 🌊 👑
+
+  - tipo: elegir
+    enunciado: ¿Para qué le sirvió a Teseo el hilo de Ariadna?
+    dibujo: 🧶
+    correcta: 🚪 Para encontrar la salida
+    incorrectas:
+      - texto: 🧣 Para tejer una bufanda
+        feedback: ¡Ja, ja! No. Fue soltando hilo por los pasillos, y siguiéndolo encontró la salida.
+      - texto: 🐂 Para atar al Minotauro
+        feedback: No. Fue soltando hilo por los pasillos, y siguiéndolo encontró la salida.
+
+  - tipo: elegir
+    enunciado: ¿Por qué el mar Egeo se llama así?
+    dibujo: 🌊
+    correcta: 👑 Por Egeo, el padre de Teseo
+    incorrectas:
+      - texto: 🐂 Por el Minotauro
+        feedback: No. Se llama así por Egeo, el padre de Teseo.
+      - texto: 🧶 Por Ariadna
+        feedback: No. Se llama así por Egeo, el padre de Teseo.
+
+  - tipo: ordenar
+    enunciado: Ordena la aventura de Teseo en Creta.
+    piezas: 🐂 Vence al Minotauro / ⚫ Olvida cambiar las velas / ⛵ Viaja a Creta / 🧶 Ariadna le da el hilo
+    solucion: ⛵ Viaja a Creta 🧶 Ariadna le da el hilo 🐂 Vence al Minotauro ⚫ Olvida cambiar las velas
+    explicacion: Teseo viaja a Creta. Ariadna le da el hilo. Vence al Minotauro. Y al volver olvida cambiar las velas.

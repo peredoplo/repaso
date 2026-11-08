@@ -1,0 +1,97 @@
+titulo: Hades y su reino
+subtitulo: El barquero, el perro y los ríos
+emoji: 💀
+ejercicios:
+  - tipo: chat
+    titulo: El dios del mundo de abajo
+    mensajes:
+      - de: hugo
+        texto: 'Hades era el hermano de Zeus al que le tocó el mundo de abajo, el de los muertos. A su reino también lo llamaban Hades, o el inframundo.'
+        dibujo: ⬇️ 👑
+      - de: valentina
+        texto: 'No era malo. Era serio y justo, y cumplía las normas. Pero a la gente le daba miedo hasta decir su nombre.'
+        dibujo: 😐 ⚖️
+      - de: santiago
+        texto: 'Como de debajo de la tierra salen el oro y las piedras preciosas, también era el dios de las riquezas. Los romanos lo llamaban Plutón.'
+        dibujo: 💎 🪙
+      - de: vega
+        texto: 'Para entrar en su reino había que cruzar un río, la laguna Estigia, en la barca de Caronte, el barquero.'
+        dibujo: 🛶 🌊
+      - de: hugo
+        texto: 'Caronte cobraba una moneda por el viaje. Por eso, los griegos ponían una moneda en la boca de sus muertos.'
+        dibujo: 🪙 🛶
+      - de: valentina
+        texto: 'En la puerta estaba Cerbero, el perro de tres cabezas. Movía la cola a los que llegaban… pero no dejaba salir a nadie.'
+        dibujo: 🐕 🚪
+
+  - tipo: elegir
+    enunciado: ¿Quién llevaba a las almas en barca al otro lado del río?
+    dibujo: 🌊
+    correcta: 🛶 Caronte, el barquero
+    incorrectas:
+      - texto: 🐕 Cerbero
+        feedback: Cerbero vigilaba la puerta. El barquero era Caronte.
+      - texto: 🔱 Poseidón
+        feedback: Poseidón era el del mar. El barquero del inframundo era Caronte.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llamaban los romanos a Hades?
+    dibujo: 💀 👑
+    correcta: 🪐 Plutón
+    incorrectas:
+      - texto: 🔴 Marte
+        feedback: Marte era Ares. A Hades lo llamaban Plutón.
+      - texto: 💨 Mercurio
+        feedback: Mercurio era Hermes. A Hades lo llamaban Plutón.
+
+  - tipo: chat
+    titulo: Tres sitios bajo la tierra
+    mensajes:
+      - de: santiago
+        texto: 'Allí abajo, unos jueces decidían adónde iba cada alma. Casi todas vagaban por un prado gris y triste.'
+        dibujo: ⚖️ 🌫️
+      - de: vega
+        texto: 'Los héroes y los muy buenos iban a los Campos Elíseos, un lugar soleado y feliz. ¡Por ellos se llama así la avenida más famosa de París!'
+        dibujo: ☀️ 🌻
+      - de: hugo
+        texto: 'Los muy malos iban al Tártaro, lo más hondo. Allí estaba Sísifo, que tenía que subir una roca enorme hasta lo alto de un monte. Y al llegar arriba, siempre se le caía.'
+        dibujo: 🪨 ⛰️
+      - de: valentina
+        texto: 'Y Tántalo, con agua hasta la barbilla y frutas encima de la cabeza. Si se agachaba a beber, el agua bajaba. Si estiraba la mano, las ramas subían.'
+        dibujo: 💧 🍇
+      - de: santiago
+        texto: 'También había un río del olvido, el Leteo. Quien bebía de su agua se olvidaba de todo.'
+        dibujo: 💧 🤷
+      - de: vega
+        texto: 'Y en el espacio, Plutón, el planeta enano, tiene una luna que se llama Caronte. ¡Hasta allí están juntos!'
+        dibujo: 🪐 🌙
+
+  - tipo: elegir
+    enunciado: ¿Qué pasaba si bebías del río Leteo?
+    dibujo: 💧
+    correcta: 🤷 Te olvidabas de todo
+    incorrectas:
+      - texto: 💪 Te volvías fortísimo
+        feedback: No. El Leteo era el río del olvido. Te olvidabas de todo.
+      - texto: 🐸 Te convertías en rana
+        feedback: ¡Ja, ja! No. El Leteo era el río del olvido. Te olvidabas de todo.
+
+  - tipo: elegir
+    enunciado: ¿Qué castigo tenía Sísifo?
+    dibujo: ⛰️
+    correcta: 🪨 Subir una roca que siempre se caía
+    incorrectas:
+      - texto: 🧹 Barrer el inframundo
+        feedback: ¡Ja, ja! No. Tenía que subir una roca enorme, que siempre se le caía al llegar arriba.
+      - texto: 🐕 Bañar a Cerbero
+        feedback: No. Tenía que subir una roca enorme, que siempre se le caía al llegar arriba.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama la luna de Plutón?
+    dibujo: 🪐
+    correcta: 🛶 Caronte
+    incorrectas:
+      - texto: 🐕 Cerbero
+        feedback: No. La luna de Plutón se llama Caronte, como el barquero.
+      - texto: 🌙 Europa
+        feedback: Europa es una luna de Júpiter. La de Plutón se llama Caronte.

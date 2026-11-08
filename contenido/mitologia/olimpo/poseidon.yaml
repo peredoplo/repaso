@@ -1,0 +1,100 @@
+titulo: Poseidón, señor del mar
+subtitulo: El tridente y los caballos
+emoji: 🔱
+ejercicios:
+  - tipo: chat
+    titulo: El que sacude la tierra
+    mensajes:
+      - de: hugo
+        texto: 'Poseidón era el dios del mar, hermano de Zeus. Vivía en un palacio de oro en el fondo del mar.'
+        dibujo: 🌊 🏰
+      - de: valentina
+        texto: 'Su arma era el tridente. Al golpear con él, levantaba olas, tormentas y hasta terremotos. Por eso lo llamaban el que sacude la tierra.'
+        dibujo: 🔱 🌊
+      - de: santiago
+        texto: 'Viajaba en un carro tirado por hipocampos, caballos con cola de pez.'
+        dibujo: 🐴 🐟
+      - de: vega
+        texto: 'Hoy, al caballito de mar lo llaman hipocampo. Y también a una parte del cerebro que tiene esa forma y sirve para recordar.'
+        dibujo: 🧠 🌊
+      - de: hugo
+        texto: 'También era el dios de los caballos. Dicen que creó el primero. Los marineros le rezaban antes de viajar, para que el mar estuviera tranquilo.'
+        dibujo: 🐎 ⛵
+      - de: valentina
+        texto: 'Su hijo Tritón, mitad persona y mitad pez, soplaba una caracola para calmar las olas, o para levantarlas.'
+        dibujo: 🐚 🎺
+      - de: santiago
+        texto: 'Los romanos lo llamaban Neptuno, como el planeta azul. Y la luna más grande de Neptuno se llama Tritón, como su hijo.'
+        dibujo: 🔵 🌙
+
+  - tipo: elegir
+    enunciado: ¿Qué podía provocar Poseidón con su tridente?
+    dibujo: 🔱
+    correcta: 🌊 Olas, tormentas y terremotos
+    incorrectas:
+      - texto: 🌈 Arcoíris
+        feedback: No. Con el tridente levantaba olas, tormentas y terremotos.
+      - texto: ❄️ Nieve
+        feedback: No. Con el tridente levantaba olas, tormentas y terremotos.
+
+  - tipo: elegir
+    enunciado: ¿Qué era un hipocampo en los mitos?
+    dibujo: 🔱 🌊
+    correcta: 🐴 Un caballo con cola de pez
+    incorrectas:
+      - texto: 🦛 Un hipopótamo
+        feedback: Suena parecido, pero no. Era un caballo con cola de pez, que tiraba del carro de Poseidón.
+      - texto: 🐙 Un pulpo
+        feedback: No. Era un caballo con cola de pez, que tiraba del carro de Poseidón.
+
+  - tipo: chat
+    titulo: La pelea por Atenas
+    mensajes:
+      - de: vega
+        texto: 'Poseidón y Atenea querían proteger la misma ciudad de Grecia. Hicieron un concurso: ganaría quien diera el mejor regalo.'
+        dibujo: 🔱 🦉
+      - de: hugo
+        texto: 'Poseidón golpeó una roca con el tridente, y brotó un chorro de agua. Pero era salada, como la del mar.'
+        dibujo: 💧 🧂
+      - de: valentina
+        texto: 'Atenea plantó un olivo. Daba aceitunas, aceite para cocinar y para las lámparas, y buena madera.'
+        dibujo: 🫒 🪔
+      - de: santiago
+        texto: 'La gente eligió el olivo, y la ciudad se llamó Atenas, en honor de Atenea.'
+        dibujo: 🏛️ 🎉
+      - de: vega
+        texto: 'Poseidón se enfadó tanto que inundó parte de la tierra. Tenía muy mal genio.'
+        dibujo: 🌊 😠
+      - de: hugo
+        texto: 'Tuvo hijos muy raros, como el cíclope Polifemo, o Pegaso, el caballo con alas.'
+        dibujo: 👁️ 🐎
+
+  - tipo: elegir
+    enunciado: ¿Qué regaló Atenea a la ciudad?
+    dibujo: 🏛️ 🎁
+    correcta: 🫒 Un olivo
+    incorrectas:
+      - texto: 💧 Un chorro de agua salada
+        feedback: Ese fue el regalo de Poseidón, y no les gustó. Atenea regaló un olivo.
+      - texto: 🎠 Un tiovivo
+        feedback: ¡Ja, ja! No. Atenea regaló un olivo, y la ciudad se llamó Atenas.
+
+  - tipo: elegir
+    enunciado: ¿Cómo se llama la luna de Neptuno que tiene el nombre del hijo de Poseidón?
+    dibujo: 🔵 🌙
+    correcta: 🐚 Tritón
+    incorrectas:
+      - texto: 🌙 Europa
+        feedback: Europa es una luna de Júpiter. La de Neptuno es Tritón.
+      - texto: ☀️ Helios
+        feedback: Helios era el Sol. La luna de Neptuno es Tritón.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llamaban los romanos a Poseidón?
+    dibujo: 🔱
+    correcta: 🔵 Neptuno
+    incorrectas:
+      - texto: 🔴 Marte
+        feedback: Marte era Ares, el de la guerra. A Poseidón lo llamaban Neptuno.
+      - texto: 🟠 Júpiter
+        feedback: Júpiter era Zeus. A Poseidón lo llamaban Neptuno, como el planeta azul.

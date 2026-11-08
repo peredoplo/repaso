@@ -1,0 +1,94 @@
+titulo: Palabras que vienen de los mitos
+subtitulo: Y los primeros Juegos Olímpicos
+emoji: 🗣️
+ejercicios:
+  - tipo: chat
+    titulo: Hablas griego sin saberlo
+    mensajes:
+      - de: santiago
+        texto: 'Muchas palabras que dices cada día vienen de los mitos griegos. ¡Vamos a descubrirlas!'
+        dibujo: 🗣️ 🏛️
+      - de: vega
+        texto: 'Océano, del titán Océano. Música y museo, de las Musas. Cereal, de Ceres, que es Deméter.'
+        dibujo: 🌊 🎶 🥣
+      - de: hugo
+        texto: 'Pánico, del dios Pan. Eco, de la ninfa Eco. Volcán, de Vulcano, que es Hefesto.'
+        dibujo: 😱 📣 🌋
+      - de: valentina
+        texto: 'Atlas, el libro de mapas, del titán Atlas. Arácnido, de Aracne. Y Europa, de la princesa del toro.'
+        dibujo: 🗺️ 🕷️ 🌍
+      - de: santiago
+        texto: 'El dios del sueño era Hipnos, y de él viene hipnosis. Su hijo Morfeo traía los sueños. Por eso, cuando alguien duerme, decimos que está en brazos de Morfeo.'
+        dibujo: 😴 💭
+      - de: vega
+        texto: 'Y el hermano gemelo de Hipnos era Tánatos, la muerte, el que luchó contra Heracles.'
+        dibujo: 💀 🤼
+
+  - tipo: elegir
+    enunciado: ¿Qué quiere decir estar en brazos de Morfeo?
+    dibujo: 💭
+    correcta: 😴 Estar dormido
+    incorrectas:
+      - texto: 🤗 Estar abrazado
+        feedback: ¡Ja, ja! No. Morfeo traía los sueños. Quiere decir estar dormido.
+      - texto: 🏃 Estar corriendo
+        feedback: No. Morfeo traía los sueños. Quiere decir estar dormido.
+
+  - tipo: elegir
+    enunciado: ¿De qué titán viene la palabra océano?
+    dibujo: 🌊
+    correcta: 🌊 Océano
+    incorrectas:
+      - texto: 🗺️ Atlas
+        feedback: De Atlas viene el libro de mapas. Océano viene del titán Océano.
+      - texto: 🌾 Cronos
+        feedback: No. Océano viene del titán Océano, el río que rodeaba el mundo.
+
+  - tipo: chat
+    titulo: Los Juegos Olímpicos y el maratón
+    mensajes:
+      - de: hugo
+        texto: 'Los primeros Juegos Olímpicos se celebraron en Olimpia, en honor a Zeus, hace unos dos mil ochocientos años.'
+        dibujo: 🏅 ⚡
+      - de: valentina
+        texto: 'Al principio solo había una carrera, de un estadio: unos doscientos metros. De ahí viene la palabra estadio.'
+        dibujo: 🏃 🏟️
+      - de: santiago
+        texto: 'Los ganadores no recibían medallas, sino una corona de ramas de olivo.'
+        dibujo: 🫒 👑
+      - de: vega
+        texto: 'El maratón viene de una leyenda. Un mensajero corrió desde la ciudad de Maratón hasta Atenas, unos cuarenta kilómetros, para anunciar una victoria.'
+        dibujo: 🏃 📣
+      - de: hugo
+        texto: 'Los Juegos Olímpicos de ahora empezaron en 1896, en Atenas. Y la llama olímpica se sigue encendiendo en Olimpia, con un espejo que junta los rayos del Sol.'
+        dibujo: 🔥 ☀️
+
+  - tipo: elegir
+    enunciado: ¿Qué recibían los ganadores de los primeros Juegos Olímpicos?
+    dibujo: 🏅
+    correcta: 🫒 Una corona de olivo
+    incorrectas:
+      - texto: 🥇 Una medalla de oro
+        feedback: Eso es ahora. En la antigua Grecia recibían una corona de ramas de olivo.
+      - texto: 🎮 Una consola
+        feedback: ¡Ja, ja! No. Recibían una corona de ramas de olivo.
+
+  - tipo: elegir
+    enunciado: ¿En honor a qué dios eran los Juegos Olímpicos?
+    dibujo: 🏅 🏛️
+    correcta: ⚡ Zeus
+    incorrectas:
+      - texto: 🏃 Hermes
+        feedback: Hermes era rapidísimo, pero los juegos eran en honor a Zeus.
+      - texto: 🍇 Dioniso
+        feedback: Dioniso tenía sus fiestas de teatro. Los Juegos Olímpicos eran en honor a Zeus.
+
+  - tipo: elegir
+    enunciado: ¿Qué palabra viene de la primera carrera olímpica?
+    dibujo: 🏃
+    correcta: 🏟️ Estadio
+    incorrectas:
+      - texto: ⚽ Fútbol
+        feedback: No. La carrera se llamaba estadio, y de ahí viene la palabra.
+      - texto: 🚲 Bicicleta
+        feedback: ¡Ja, ja! No. La carrera se llamaba estadio, y de ahí viene la palabra.

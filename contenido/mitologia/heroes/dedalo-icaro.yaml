@@ -1,0 +1,87 @@
+titulo: Dédalo e Ícaro
+subtitulo: Volar demasiado cerca del Sol
+emoji: 🪶
+ejercicios:
+  - tipo: chat
+    titulo: Escapar por el cielo
+    mensajes:
+      - de: valentina
+        texto: 'Dédalo era el mejor inventor de Grecia. Hacía estatuas que parecían moverse, herramientas, y construyó el laberinto.'
+        dibujo: 🛠️ 🌀
+      - de: santiago
+        texto: 'El rey Minos se enfadó porque Teseo había escapado del laberinto gracias a la idea del hilo. Y encerró a Dédalo y a su hijo, Ícaro.'
+        dibujo: 👑 😠
+      - de: vega
+        texto: 'Minos vigilaba el mar y la tierra. Pero el cielo, no. Así que Dédalo pensó: escaparemos volando.'
+        dibujo: 🌊 ☁️
+      - de: hugo
+        texto: 'Recogió plumas de pájaros, y las unió con hilo y con cera de abeja, para hacer unas alas como las de las aves.'
+        dibujo: 🪶 🐝
+      - de: valentina
+        texto: 'Se las puso en los brazos, y probó a mover las alas. ¡Funcionaban!'
+        dibujo: 🕊️ 🎉
+
+  - tipo: elegir
+    enunciado: ¿Con qué hizo Dédalo las alas?
+    dibujo: 🕊️
+    correcta: 🪶 Con plumas y cera
+    incorrectas:
+      - texto: 📄 Con papel
+        feedback: No. Las hizo con plumas de pájaros, hilo y cera de abeja.
+      - texto: ☂️ Con paraguas
+        feedback: ¡Ja, ja! No. Las hizo con plumas de pájaros, hilo y cera de abeja.
+
+  - tipo: chat
+    titulo: Ni tan alto ni tan bajo
+    mensajes:
+      - de: santiago
+        texto: 'Antes de salir, Dédalo avisó a Ícaro: no vueles muy bajo, que el agua del mar mojará las plumas. Ni muy alto, que el Sol derretirá la cera.'
+        dibujo: 🌊 ☀️
+      - de: vega
+        texto: 'Salieron volando. Los pescadores que los veían pasar pensaban que eran dioses.'
+        dibujo: 🎣 😮
+      - de: hugo
+        texto: 'Pero Ícaro, emocionado, subió y subió, cada vez más cerca del Sol.'
+        dibujo: ⬆️ ☀️
+      - de: valentina
+        texto: 'El calor derritió la cera, las plumas se soltaron, e Ícaro cayó al mar.'
+        dibujo: 🪶 🌊
+      - de: santiago
+        texto: 'Ese mar y una isla de Grecia se llaman Icaria, por él. Dédalo llegó solo a Sicilia, muy triste.'
+        dibujo: 🏝️ 😢
+      - de: vega
+        texto: 'La historia enseña a escuchar los buenos consejos, y a no pasarse. ¡Ni tan alto, ni tan bajo!'
+        dibujo: ⚖️ 👂
+      - de: hugo
+        texto: 'De verdad, para volar no basta con alas en los brazos. Nuestros músculos no tienen fuerza suficiente. Por eso inventamos los aviones.'
+        dibujo: 💪 ✈️
+
+  - tipo: elegir
+    enunciado: ¿Qué le pasó a la cera cuando Ícaro voló muy alto?
+    dibujo: ☀️ 🪶
+    correcta: 🔥 Se derritió con el calor
+    incorrectas:
+      - texto: 🧊 Se congeló
+        feedback: Al revés. El Sol calentaba, y la cera se derritió.
+      - texto: 🌈 Se volvió de colores
+        feedback: No. El Sol calentaba, y la cera se derritió.
+
+  - tipo: elegir
+    enunciado: ¿Qué consejo le dio Dédalo a Ícaro?
+    dibujo: 👂
+    correcta: ⚖️ Ni muy alto ni muy bajo
+    incorrectas:
+      - texto: ⬆️ Lo más alto posible
+        feedback: ¡Justo eso no! Le dijo que no volara ni muy alto ni muy bajo.
+      - texto: ⬇️ Pegado al mar
+        feedback: No. El agua mojaría las plumas. Le dijo ni muy alto ni muy bajo.
+
+  - tipo: elegir
+    enunciado: ¿Por qué no podemos volar con unas alas en los brazos?
+    dibujo: 🕊️ 🧍
+    correcta: 💪 Nos falta fuerza en los músculos
+    incorrectas:
+      - texto: 🪶 Porque no hay plumas
+        feedback: Hay plumas de sobra. Lo que nos falta es fuerza en los músculos.
+      - texto: 🚫 Porque está prohibido
+        feedback: No es eso. Nos falta fuerza en los músculos. Por eso inventamos los aviones.

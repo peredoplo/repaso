@@ -1,0 +1,84 @@
+titulo: Teseo, camino de Atenas
+subtitulo: Bandidos en el camino
+emoji: ⚔️
+ejercicios:
+  - tipo: chat
+    titulo: La espada bajo la roca
+    mensajes:
+      - de: hugo
+        texto: 'Teseo era hijo de Egeo, el rey de Atenas. Pero creció lejos, con su madre, Etra.'
+        dibujo: 👑 👦
+      - de: valentina
+        texto: 'Antes de irse, Egeo escondió una espada y unas sandalias debajo de una roca enorme. Cuando su hijo pudiera levantarla, sería mayor para ir a buscarlo.'
+        dibujo: 🪨 ⚔️
+      - de: santiago
+        texto: 'Con unos dieciséis años, Teseo levantó la roca, y cogió la espada y las sandalias.'
+        dibujo: 💪 🪨
+      - de: vega
+        texto: 'Podía ir a Atenas por mar, que era más seguro. Pero eligió el camino por tierra, lleno de bandidos. Quería ser un héroe como Heracles.'
+        dibujo: 🛣️ 🦸
+
+  - tipo: elegir
+    enunciado: ¿Qué escondió Egeo debajo de la roca?
+    dibujo: 🪨
+    correcta: ⚔️ Una espada y unas sandalias
+    incorrectas:
+      - texto: 🪙 Un tesoro
+        feedback: No. Escondió una espada y unas sandalias para su hijo.
+      - texto: 🍪 Galletas
+        feedback: ¡Ja, ja! No. Escondió una espada y unas sandalias para su hijo.
+
+  - tipo: chat
+    titulo: Los bandidos del camino
+    mensajes:
+      - de: hugo
+        texto: 'El primer bandido golpeaba a los viajeros con una maza de hierro. Teseo se la quitó, y la llevó desde entonces.'
+        dibujo: 🔨 🦸
+      - de: valentina
+        texto: 'Otro, Sinis, doblaba pinos hasta el suelo, ataba a los viajeros y los soltaba. ¡Salían volando! Teseo le hizo lo mismo a él.'
+        dibujo: 🌲 🚀
+      - de: santiago
+        texto: 'Otro obligaba a los viajeros a lavarle los pies, y luego les daba una patada al mar, donde esperaba una tortuga gigante. Teseo lo tiró a él.'
+        dibujo: 🦶 🐢
+      - de: vega
+        texto: 'Y el peor, Procusto. Tenía una cama, y obligaba a los viajeros a tumbarse. A los altos los recortaba, y a los bajos los estiraba, para que cupieran justo.'
+        dibujo: 🛏️ 📏
+      - de: hugo
+        texto: 'Teseo le dio a probar su propia medicina: lo tumbó en su cama.'
+        dibujo: 🛏️ 😬
+      - de: valentina
+        texto: 'En Atenas, la hechicera Medea, que vivía con Egeo, quiso envenenar a Teseo. Pero Egeo reconoció su espada en el último momento, y tiró la copa al suelo.'
+        dibujo: 🍷 ⚔️
+      - de: santiago
+        texto: 'Después, Teseo atrapó al toro de Maratón, el mismo que Heracles había traído de Creta.'
+        dibujo: 🐂 💪
+
+  - tipo: elegir
+    enunciado: ¿Qué hacía el bandido Procusto?
+    dibujo: 🛏️
+    correcta: 📏 Estiraba o recortaba a los viajeros
+    incorrectas:
+      - texto: 😴 Les dejaba dormir gratis
+        feedback: ¡Qué va! Los estiraba o los recortaba para que cupieran justo en su cama.
+      - texto: 🧸 Les regalaba peluches
+        feedback: ¡Ja, ja! No. Los estiraba o los recortaba para que cupieran justo en su cama.
+
+  - tipo: elegir
+    enunciado: ¿Cómo reconoció Egeo a su hijo?
+    dibujo: 👑 👦
+    correcta: ⚔️ Por la espada
+    incorrectas:
+      - texto: 🧢 Por la gorra
+        feedback: ¡Ja, ja! No. Reconoció la espada que había escondido bajo la roca.
+      - texto: 📸 Por una foto
+        feedback: No había fotos. Reconoció la espada que había escondido bajo la roca.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Teseo fue a Atenas por tierra?
+    dibujo: 🛣️
+    correcta: 🦸 Para ser un héroe como Heracles
+    incorrectas:
+      - texto: 🤢 Porque se mareaba en barco
+        feedback: No. Quería vencer a los bandidos y ser un héroe como Heracles.
+      - texto: 🚗 Porque tenía coche
+        feedback: ¡Ja, ja! No. Quería ser un héroe como Heracles.

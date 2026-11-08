@@ -1,0 +1,100 @@
+titulo: Deméter, Hestia y Dioniso
+subtitulo: El trigo, el fuego de casa y la uva
+emoji: 🌾
+ejercicios:
+  - tipo: chat
+    titulo: Dos diosas tranquilas
+    mensajes:
+      - de: santiago
+        texto: 'Deméter era la diosa de la agricultura y de los cereales, como el trigo. Enseñó a las personas a sembrar y a hacer pan.'
+        dibujo: 🌾 🍞
+      - de: vega
+        texto: 'Los romanos la llamaban Ceres. ¡Por eso los cereales del desayuno se llaman así!'
+        dibujo: 🥣
+      - de: hugo
+        texto: 'Y Ceres es también el nombre de un planeta enano, en el cinturón de asteroides, entre Marte y Júpiter.'
+        dibujo: 🪨 🪐
+      - de: valentina
+        texto: 'Su historia más famosa es la de su hija, Perséfone, y explica por qué hay invierno. La conocerás cuando bajemos al mundo de Hades.'
+        dibujo: ❄️ 🌸
+      - de: santiago
+        texto: 'Hestia era la mayor de los hermanos de Zeus. Era la diosa del fuego de casa, el que había en cada hogar para calentarse y cocinar.'
+        dibujo: 🔥 🏠
+      - de: vega
+        texto: 'Era tranquila y buena, y no se metía en peleas. En las comidas, el primer bocado se le ofrecía a ella.'
+        dibujo: 🙂 🍽️
+      - de: hugo
+        texto: 'Dicen que dejó su sitio entre los doce olímpicos a Dioniso, para que no hubiera discusiones.'
+        dibujo: 🪑 🤝
+
+  - tipo: elegir
+    enunciado: ¿Qué palabra del desayuno viene de Ceres, el nombre romano de Deméter?
+    dibujo: 🌾
+    correcta: 🥣 Cereales
+    incorrectas:
+      - texto: 🥛 Leche
+        feedback: No. De Ceres vienen los cereales.
+      - texto: 🍞 Tostada
+        feedback: El pan se hace con trigo, pero de Ceres viene la palabra cereales.
+
+  - tipo: elegir
+    enunciado: ¿De qué era diosa Hestia?
+    dibujo: 🏠
+    correcta: 🔥 Del fuego de casa
+    incorrectas:
+      - texto: ⛈️ De las tormentas
+        feedback: Las tormentas eran de Zeus. Hestia era la diosa del fuego de casa.
+      - texto: 🎈 De los globos
+        feedback: ¡Ja, ja! No. Hestia era la diosa del fuego de casa.
+
+  - tipo: chat
+    titulo: Dioniso, el de las fiestas
+    mensajes:
+      - de: valentina
+        texto: 'Dioniso era el dios de las uvas y del vino, de las fiestas y del teatro. Fue el último en llegar al Olimpo.'
+        dibujo: 🍇 🎭
+      - de: santiago
+        texto: 'Su madre era una mortal, Sémele. Y nació de una forma rarísima: ¡del muslo de Zeus! Zeus lo guardó dentro de su pierna hasta que estuvo listo para nacer.'
+        dibujo: 🦵 👶
+      - de: vega
+        texto: 'Viajó por todo el mundo, hasta la India, enseñando a plantar viñas, las plantas de las uvas. Iba en un carro tirado por panteras.'
+        dibujo: 🐆 🍇
+      - de: hugo
+        texto: 'Una vez lo secuestraron unos piratas. Dioniso hizo crecer una parra por todo el barco, y se convirtió en león. Los piratas saltaron al mar… ¡y se convirtieron en delfines!'
+        dibujo: 🏴‍☠️ 🐬
+      - de: valentina
+        texto: 'En sus fiestas, en Atenas, nació el teatro: concursos de obras, con actores que llevaban máscaras. Las máscaras de reír y de llorar vienen de ahí.'
+        dibujo: 🎭
+      - de: santiago
+        texto: 'También le concedió un deseo al rey Midas: todo lo que tocara se volvería de oro. ¡Hasta la comida! Midas tuvo que pedirle que se lo quitara.'
+        dibujo: 👑 🪙
+
+  - tipo: elegir
+    enunciado: ¿En qué se convirtieron los piratas?
+    dibujo: 🏴‍☠️ 🌊
+    correcta: 🐬 En delfines
+    incorrectas:
+      - texto: 🐙 En pulpos
+        feedback: No. Al saltar al mar, se convirtieron en delfines.
+      - texto: 🦜 En loros
+        feedback: ¡Ja, ja! Muy de piratas, pero no. Se convirtieron en delfines.
+
+  - tipo: elegir
+    enunciado: ¿Qué nació en las fiestas de Dioniso?
+    dibujo: 🍇 🎉
+    correcta: 🎭 El teatro
+    incorrectas:
+      - texto: ⚽ El fútbol
+        feedback: ¡Ja, ja! No. En las fiestas de Dioniso nació el teatro.
+      - texto: 🎢 La montaña rusa
+        feedback: No. En las fiestas de Dioniso nació el teatro.
+
+  - tipo: elegir
+    enunciado: ¿Qué problema tuvo el rey Midas con su deseo?
+    dibujo: 👑 🪙
+    correcta: 🍞 Hasta la comida se volvía de oro
+    incorrectas:
+      - texto: 🧊 Todo se volvía de hielo
+        feedback: No. Todo se volvía de oro, ¡hasta la comida!
+      - texto: 🎈 Todo salía volando
+        feedback: No. Todo se volvía de oro, ¡hasta la comida!

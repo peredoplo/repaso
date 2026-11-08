@@ -1,0 +1,94 @@
+titulo: El toro y las yeguas
+subtitulo: El séptimo y el octavo trabajo
+emoji: 🐂
+ejercicios:
+  - tipo: chat
+    titulo: El toro de Creta
+    mensajes:
+      - de: vega
+        texto: 'Para el séptimo, Heracles viajó a la isla de Creta, a atrapar un toro salvaje.'
+        dibujo: 🏝️ 🐂
+      - de: hugo
+        texto: 'El rey de Creta, Minos, le había prometido ese toro a Poseidón. Pero era tan bonito que se lo quedó.'
+        dibujo: 👑 🐂
+      - de: valentina
+        texto: 'Poseidón, enfadado, volvió loco al toro, que destrozaba todo lo que encontraba.'
+        dibujo: 🔱 😠
+      - de: santiago
+        texto: 'Heracles lo agarró por los cuernos y lo dominó con las manos. Dicen que volvió a Grecia montado en él, ¡cruzando el mar a nado!'
+        dibujo: 💪 🌊
+      - de: vega
+        texto: 'Euristeo lo soltó, y el toro acabó en un lugar llamado Maratón. Allí lo atrapó más tarde otro héroe, Teseo.'
+        dibujo: 🐂 🦸
+      - de: hugo
+        texto: 'Y este toro fue el padre de un monstruo famoso: el Minotauro, mitad hombre y mitad toro.'
+        dibujo: 🐂 🧍
+
+  - tipo: elegir
+    enunciado: ¿Por qué se enfadó Poseidón con el rey Minos?
+    dibujo: 🔱 👑
+    correcta: 🐂 Se quedó el toro que le prometió
+    incorrectas:
+      - texto: 🐟 Se comió sus peces
+        feedback: No. Minos le prometió el toro a Poseidón, y se lo quedó.
+      - texto: 🧹 No barrió el mar
+        feedback: ¡Ja, ja! No. Minos le prometió el toro a Poseidón, y se lo quedó.
+
+  - tipo: elegir
+    enunciado: ¿Qué monstruo era hijo del toro de Creta?
+    dibujo: 🐂 👶
+    correcta: 🐂 El Minotauro
+    incorrectas:
+      - texto: 🐎 Pegaso
+        feedback: Pegaso era un caballo con alas. El hijo del toro fue el Minotauro.
+      - texto: 🐕 Cerbero
+        feedback: Cerbero era hijo de Tifón. El hijo del toro fue el Minotauro.
+
+  - tipo: chat
+    titulo: Las yeguas del rey cruel
+    mensajes:
+      - de: valentina
+        texto: 'El octavo: traer las yeguas del rey Diomedes, en un país del norte llamado Tracia.'
+        dibujo: 🐎 🐎
+      - de: santiago
+        texto: 'Eran cuatro yeguas salvajes que comían carne. Y el rey, que era muy cruel, ¡les daba de comer a los viajeros!'
+        dibujo: 🍖 😱
+      - de: vega
+        texto: 'Heracles venció al rey malvado, y se lo dio a sus propias yeguas. Después de esa comida, se volvieron mansas.'
+        dibujo: 👑 🐎
+      - de: hugo
+        texto: 'De camino, ayudó a su amigo, el rey Admeto. Su esposa, Alcestis, acababa de morir, y Heracles luchó contra la Muerte, que se llamaba Tánatos.'
+        dibujo: 🤼 💀
+      - de: valentina
+        texto: '¡Le ganó a la Muerte a la lucha, y le devolvió a Alcestis a su amigo!'
+        dibujo: 💪 🎉
+
+  - tipo: elegir
+    enunciado: ¿Qué comían las yeguas de Diomedes?
+    dibujo: 🐎
+    correcta: 🍖 Carne, ¡hasta de personas!
+    incorrectas:
+      - texto: 🌾 Hierba
+        feedback: Eso comen los caballos normales. Estas comían carne, ¡hasta de personas!
+      - texto: 🥕 Zanahorias
+        feedback: ¡Ja, ja! No. Estas comían carne, ¡hasta de personas!
+
+  - tipo: elegir
+    enunciado: ¿A quién le ganó Heracles a la lucha para rescatar a Alcestis?
+    dibujo: 🤼
+    correcta: 💀 A la Muerte
+    incorrectas:
+      - texto: 🐂 Al toro de Creta
+        feedback: Al toro lo dominó, pero para rescatar a Alcestis le ganó a la Muerte.
+      - texto: 🦁 Al león de Nemea
+        feedback: Ese fue el primer trabajo. Para rescatar a Alcestis le ganó a la Muerte.
+
+  - tipo: elegir
+    enunciado: ¿Cómo volvió Heracles de Creta con el toro, según dicen?
+    dibujo: 🐂 🏝️
+    correcta: 🌊 Montado en él, cruzando el mar
+    incorrectas:
+      - texto: ✈️ En avión
+        feedback: ¡Ja, ja! No había aviones. Dicen que volvió montado en el toro, cruzando el mar a nado.
+      - texto: 🚂 En tren
+        feedback: No había trenes. Dicen que volvió montado en el toro, cruzando el mar a nado.

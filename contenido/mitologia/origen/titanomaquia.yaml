@@ -1,0 +1,103 @@
+titulo: La guerra de los titanes
+subtitulo: Diez años de batalla
+emoji: ⚡
+ejercicios:
+  - tipo: chat
+    titulo: Dioses contra titanes
+    mensajes:
+      - de: valentina
+        texto: 'La guerra entre los dioses jóvenes y los titanes se llama titanomaquia, que quiere decir la batalla de los titanes.'
+        dibujo: ⚔️ 🗿
+      - de: santiago
+        texto: 'Los dioses luchaban desde el monte Olimpo, y los titanes desde otro monte, el Otris. La guerra duró diez años, y nadie ganaba.'
+        dibujo: ⛰️ ⛰️
+      - de: vega
+        texto: 'Entonces Gea le dio un consejo a Zeus: libera a los cíclopes y a los gigantes de cien brazos, que siguen encerrados bajo la tierra.'
+        dibujo: 🌍 💡
+      - de: hugo
+        texto: 'Estaban en el Tártaro, el lugar más profundo y oscuro que existe. Un yunque, un bloque de hierro, tardaría nueve días en caer hasta allí.'
+        dibujo: ⬇️ 🌑
+      - de: valentina
+        texto: 'Zeus bajó, venció al monstruo que los vigilaba y los liberó. Los cíclopes eran herreros geniales, y en agradecimiento fabricaron tres regalos.'
+        dibujo: 🔨 🎁
+      - de: santiago
+        texto: 'Para Zeus, el rayo. Para Poseidón, el tridente, como un tenedor gigante de tres puntas. Y para Hades, un casco que lo hacía invisible.'
+        dibujo: ⚡ 🔱 🪖
+      - de: vega
+        texto: 'Los gigantes de cien brazos lanzaban trescientas rocas a la vez. ¡Imagina esa lluvia de piedras!'
+        dibujo: 🪨 🪨 🪨
+      - de: hugo
+        texto: 'Zeus lanzaba rayos sin parar. El suelo temblaba y el mar hervía. Y por fin, los titanes perdieron.'
+        dibujo: ⚡ 🌋
+
+  - tipo: elegir
+    enunciado: ¿Qué le regalaron los cíclopes a Zeus?
+    dibujo: 👁️ 🎁
+    correcta: ⚡ El rayo
+    incorrectas:
+      - texto: 🔱 El tridente
+        feedback: El tridente fue para Poseidón. A Zeus le regalaron el rayo.
+      - texto: 🎩 Un sombrero mágico
+        feedback: No. A Zeus le regalaron el rayo, y a Hades, un casco que lo hacía invisible.
+
+  - tipo: elegir
+    enunciado: ¿Cuántas rocas lanzaban a la vez los gigantes de cien brazos?
+    dibujo: 💪 🪨
+    correcta: 🪨 Trescientas
+    incorrectas:
+      - texto: ☝️ Una
+        feedback: Muchas más. Con tantos brazos, lanzaban trescientas a la vez.
+      - texto: 🔟 Diez
+        feedback: Muchas más. Con tantos brazos, lanzaban trescientas a la vez.
+
+  - tipo: chat
+    titulo: El reparto del mundo
+    mensajes:
+      - de: santiago
+        texto: 'Los titanes vencidos fueron encerrados en el Tártaro, y los gigantes de cien brazos se quedaron de guardianes.'
+        dibujo: 🔒 💪
+      - de: vega
+        texto: 'Al titán Atlas le tocó un castigo especial: sostener el cielo sobre sus hombros, para siempre.'
+        dibujo: 🌌 🏋️
+      - de: hugo
+        texto: 'Por eso a un libro de mapas lo llamamos atlas. En muchos salía dibujado Atlas, cargando con el mundo.'
+        dibujo: 🗺️ 📖
+      - de: valentina
+        texto: 'Los tres hermanos echaron a suertes el mundo. A Zeus le tocó el cielo, a Poseidón el mar, y a Hades el mundo de abajo, el de los muertos.'
+        dibujo: ☁️ 🌊 💀
+      - de: santiago
+        texto: 'La Tierra y el monte Olimpo eran de todos. Y Zeus se convirtió en el rey de los dioses.'
+        dibujo: 👑 ⚡
+      - de: vega
+        texto: 'Algunos titanes no lucharon contra Zeus, y siguieron libres. Uno de ellos, Prometeo, será muy importante para los humanos.'
+        dibujo: 🔥 🙂
+
+  - tipo: elegir
+    enunciado: En el reparto del mundo, ¿qué le tocó a Poseidón?
+    dibujo: 🔱
+    correcta: 🌊 El mar
+    incorrectas:
+      - texto: ☁️ El cielo
+        feedback: El cielo le tocó a Zeus. A Poseidón le tocó el mar.
+      - texto: 💀 El mundo de los muertos
+        feedback: Ese le tocó a Hades. A Poseidón le tocó el mar.
+
+  - tipo: elegir
+    enunciado: ¿Qué castigo le tocó al titán Atlas?
+    dibujo: 🗿
+    correcta: 🌌 Sostener el cielo
+    incorrectas:
+      - texto: 🧹 Barrer el Olimpo
+        feedback: ¡Ja, ja! No. Tuvo que sostener el cielo sobre sus hombros, para siempre.
+      - texto: 🛏️ Dormir mil años
+        feedback: Eso habría sido un premio. Tuvo que sostener el cielo sobre sus hombros.
+
+  - tipo: elegir
+    enunciado: ¿Qué hacía el casco de Hades?
+    dibujo: 🪖
+    correcta: 👻 Lo volvía invisible
+    incorrectas:
+      - texto: 🔥 Echaba fuego
+        feedback: No. El casco que le hicieron los cíclopes lo volvía invisible.
+      - texto: 🎵 Tocaba música
+        feedback: No. El casco que le hicieron los cíclopes lo volvía invisible.

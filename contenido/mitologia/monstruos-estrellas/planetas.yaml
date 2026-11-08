@@ -1,0 +1,96 @@
+titulo: Dioses en el sistema solar
+subtitulo: Planetas, lunas y naves
+emoji: 🪐
+ejercicios:
+  - tipo: chat
+    titulo: Los vagabundos del cielo
+    mensajes:
+      - de: hugo
+        texto: 'Algunos puntos del cielo se mueven entre las estrellas. Los griegos los llamaron planetas, que quiere decir vagabundos, los que van de paseo.'
+        dibujo: 🚶 ✨
+      - de: valentina
+        texto: 'Les pusieron nombres de dioses, y los romanos los cambiaron por los suyos. Por eso hoy los llamamos con nombres romanos.'
+        dibujo: 🏛️ 🔄
+      - de: santiago
+        texto: 'Mercurio, el más rápido, es Hermes, el mensajero. Venus, el más brillante y bonito, es Afrodita.'
+        dibujo: 💨 ✨
+      - de: vega
+        texto: 'Marte, rojo como la sangre, es Ares, el de la guerra. Júpiter, el más grande, es Zeus, el rey.'
+        dibujo: 🔴 🟠
+      - de: hugo
+        texto: 'Saturno, el más lento de los que se ven a simple vista, es Cronos, el padre de Zeus. Por eso muchas de sus lunas tienen nombres de titanes.'
+        dibujo: 🪐 🌾
+      - de: valentina
+        texto: 'Urano y Neptuno se descubrieron con telescopio. Urano, el padre de Cronos, es el único con nombre griego. Neptuno, el planeta azul, es Poseidón.'
+        dibujo: 🔭 🔵
+      - de: santiago
+        texto: 'Y Plutón, lejano, frío y oscuro, es Hades. El nombre lo propuso una niña inglesa de once años, Venetia Burney, en 1930.'
+        dibujo: 🪐 👧
+
+  - tipo: ordenar
+    enunciado: Ordena a la familia de los planetas, del abuelo al nieto.
+    piezas: 🟠 Júpiter, que es Zeus / 🔵 Urano / 🪐 Saturno, que es Cronos
+    solucion: 🔵 Urano 🪐 Saturno, que es Cronos 🟠 Júpiter, que es Zeus
+    explicacion: Urano era el padre de Cronos, que es Saturno. Y Cronos era el padre de Zeus, que es Júpiter.
+
+  - tipo: elegir
+    enunciado: ¿Qué planeta es Ares, el dios de la guerra?
+    dibujo: ⚔️
+    correcta: 🔴 Marte
+    incorrectas:
+      - texto: ✨ Venus
+        feedback: Venus es Afrodita. Ares es Marte, el planeta rojo.
+      - texto: 🟠 Júpiter
+        feedback: Júpiter es Zeus. Ares es Marte, el planeta rojo.
+
+  - tipo: elegir
+    enunciado: ¿Qué quiere decir planeta?
+    dibujo: 🪐
+    correcta: 🚶 Vagabundo
+    incorrectas:
+      - texto: ⚽ Pelota
+        feedback: ¡Ja, ja! No. Quiere decir vagabundo, porque se mueven entre las estrellas.
+      - texto: 🔥 Fuego
+        feedback: No. Quiere decir vagabundo, porque se mueven entre las estrellas.
+
+  - tipo: chat
+    titulo: Lunas y naves con nombres de mitos
+    mensajes:
+      - de: vega
+        texto: 'Las lunas grandes de Júpiter llevan nombres de amores de Zeus: Ío, Europa, Ganímedes y Calisto.'
+        dibujo: 🟠 🌙
+      - de: hugo
+        texto: 'Las de Marte, Fobos y Deimos, son los hijos de Ares. Y la de Plutón, Caronte, el barquero.'
+        dibujo: 🔴 🛶
+      - de: valentina
+        texto: 'Dos lunitas de Saturno, Prometeo y Pandora, guían uno de sus anillos, como dos pastores con un rebaño.'
+        dibujo: 🪐 🐑
+      - de: santiago
+        texto: 'La nave Juno, que estudia Júpiter, se llama como la esposa de Júpiter. En el mito, ella veía a través de las nubes donde él se escondía. Y la nave ve a través de las nubes del planeta.'
+        dibujo: 🛰️ ☁️
+      - de: vega
+        texto: 'Las misiones Apolo llevaron personas a la Luna. Y las Artemis, que se llaman como su gemela, quieren volver. En 2026, Artemis dos le dio la vuelta con cuatro astronautas.'
+        dibujo: 🚀 🌙
+      - de: hugo
+        texto: 'Y el helio, el gas de los globos que flotan, se llama así por Helios, el Sol, porque se descubrió primero en la luz del Sol.'
+        dibujo: 🎈 ☀️
+
+  - tipo: elegir
+    enunciado: ¿Qué gas tiene el nombre de Helios, el Sol?
+    dibujo: ☀️
+    correcta: 🎈 El helio
+    incorrectas:
+      - texto: 💨 El aire
+        feedback: No. El helio, el gas de los globos que flotan, se llama así por Helios.
+      - texto: 🔥 El fuego
+        feedback: El fuego no es un gas con nombre de dios. El helio se llama así por Helios.
+
+  - tipo: elegir
+    enunciado: ¿Por qué la nave Juno se llama así?
+    dibujo: 🛰️ 🟠
+    correcta: ☁️ Juno veía a través de las nubes
+    incorrectas:
+      - texto: 📅 Porque salió en junio
+        feedback: No es por eso. En el mito, Juno veía a través de las nubes donde se escondía Júpiter.
+      - texto: 🦚 Porque lleva un pavo real
+        feedback: ¡Ja, ja! No. En el mito, Juno veía a través de las nubes donde se escondía Júpiter.

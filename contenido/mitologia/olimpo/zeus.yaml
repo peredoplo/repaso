@@ -1,0 +1,97 @@
+titulo: Zeus, el rey de los dioses
+subtitulo: Rayos, águilas y disfraces
+emoji: ⚡
+ejercicios:
+  - tipo: chat
+    titulo: El señor del cielo
+    mensajes:
+      - de: santiago
+        texto: 'Zeus era el rey de los dioses y de las personas. Era el dios del cielo, de las nubes y de las tormentas.'
+        dibujo: 👑 ⛈️
+      - de: vega
+        texto: 'Su arma era el rayo, que le fabricaron los cíclopes. Cuando se enfadaba, lo lanzaba desde el cielo.'
+        dibujo: ⚡ 😠
+      - de: hugo
+        texto: 'Su animal era el águila, la reina de las aves. Y su árbol, el roble, grande y fuerte.'
+        dibujo: 🦅 🌳
+      - de: valentina
+        texto: 'Tenía un escudo mágico, la égida. Dicen que estaba hecho con la piel de la cabra Amaltea, la que le dio leche de bebé. Al agitarlo, se formaban tormentas.'
+        dibujo: 🛡️ 🐐
+      - de: santiago
+        texto: 'Protegía a los viajeros y a los invitados. Tratar mal a alguien que venía a tu casa le enfadaba muchísimo.'
+        dibujo: 🧳 🏠
+      - de: vega
+        texto: 'Pero era muy enamoradizo, y tuvo muchísimos hijos con diosas y con mortales, que son las personas normales, las que se mueren. Hera, su esposa, se ponía celosísima.'
+        dibujo: 💘 😤
+
+  - tipo: elegir
+    enunciado: ¿Cuál era el animal de Zeus?
+    dibujo: ⚡ 👑
+    correcta: 🦅 El águila
+    incorrectas:
+      - texto: 🦚 El pavo real
+        feedback: El pavo real era de Hera, su esposa. El de Zeus era el águila.
+      - texto: 🦉 La lechuza
+        feedback: La lechuza era de Atenea. El animal de Zeus era el águila.
+
+  - tipo: elegir
+    enunciado: ¿De qué era dios Zeus?
+    dibujo: 👑
+    correcta: ⛈️ Del cielo y las tormentas
+    incorrectas:
+      - texto: 🌊 Del mar
+        feedback: El mar era de su hermano Poseidón. Zeus era el dios del cielo y las tormentas.
+      - texto: 🍕 De la pizza
+        feedback: ¡Ja, ja! No. Zeus era el dios del cielo y las tormentas.
+
+  - tipo: chat
+    titulo: El dios de los disfraces
+    mensajes:
+      - de: hugo
+        texto: 'Zeus podía transformarse en lo que quisiera: en animales, en lluvia, o en otra persona.'
+        dibujo: 🔄 ✨
+      - de: valentina
+        texto: 'Se convirtió en un toro blanco para llevarse a una princesa, Europa, hasta la isla de Creta. ¡Nuestro continente, Europa, se llama así por ella!'
+        dibujo: 🐂 🌍
+      - de: santiago
+        texto: 'En forma de águila se llevó al joven Ganímedes al Olimpo, para que sirviera el néctar a los dioses.'
+        dibujo: 🦅 🥤
+      - de: vega
+        texto: 'Europa y Ganímedes dan nombre a dos lunas de Júpiter, igual que Ío y Calisto, otros amores de Zeus. ¿Te acuerdas de ellas?'
+        dibujo: 🟠 🌙
+      - de: hugo
+        texto: 'En Olimpia celebraban cada cuatro años unos juegos en su honor: los Juegos Olímpicos. Durante los juegos se pedía parar las guerras, para que todos pudieran viajar sin peligro.'
+        dibujo: 🏅 🕊️
+      - de: valentina
+        texto: 'En Olimpia había una estatua de Zeus de oro y marfil, de unos doce metros, como un edificio de cuatro pisos. Era una de las siete maravillas del mundo antiguo.'
+        dibujo: 🗿 🏢
+
+  - tipo: elegir
+    enunciado: ¿En qué se convirtió Zeus para llevarse a la princesa Europa?
+    dibujo: 👸 🏝️
+    correcta: 🐂 En un toro blanco
+    incorrectas:
+      - texto: 🦢 En un cisne
+        feedback: Alguna vez se convirtió en cisne, pero para llevarse a Europa fue un toro blanco.
+      - texto: 🐟 En un pez
+        feedback: No. Se convirtió en un toro blanco y la llevó nadando hasta Creta.
+
+  - tipo: elegir
+    enunciado: ¿Qué continente se llama como la princesa que se llevó Zeus?
+    dibujo: 🐂 👸
+    correcta: 🌍 Europa
+    incorrectas:
+      - texto: 🌎 América
+        feedback: América se llama así por un explorador. El de la princesa es Europa.
+      - texto: 🌏 Asia
+        feedback: No. El de la princesa es Europa, nuestro continente.
+
+  - tipo: elegir
+    enunciado: ¿Cada cuánto se celebraban los Juegos Olímpicos?
+    dibujo: 🏅
+    correcta: 4️⃣ Cada cuatro años
+    incorrectas:
+      - texto: 📅 Cada semana
+        feedback: ¡Qué cansado! Se celebraban cada cuatro años, igual que ahora.
+      - texto: 🎂 Cada año
+        feedback: No. Se celebraban cada cuatro años, igual que ahora.

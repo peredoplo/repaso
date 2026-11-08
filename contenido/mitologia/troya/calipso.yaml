@@ -1,0 +1,97 @@
+titulo: Calipso y los feacios
+subtitulo: Siete años en una isla
+emoji: 🏝️
+ejercicios:
+  - tipo: chat
+    titulo: La ninfa que no lo dejaba ir
+    mensajes:
+      - de: santiago
+        texto: 'Odiseo llegó solo a la isla de la ninfa Calipso. Ella se enamoró de él, y no lo dejaba marcharse.'
+        dibujo: 🏝️ 💘
+      - de: vega
+        texto: 'Pasó allí siete años. Calipso le ofreció hacerse inmortal, vivir para siempre sin hacerse viejo, si se quedaba con ella.'
+        dibujo: 7️⃣ ♾️
+      - de: hugo
+        texto: 'Pero Odiseo echaba de menos su casa. Se sentaba en la playa, mirando al mar, y lloraba.'
+        dibujo: 🏖️ 😢
+      - de: valentina
+        texto: 'Atenea le pidió a Zeus que lo ayudara. Zeus mandó a Hermes: Calipso tenía que dejarlo marchar.'
+        dibujo: 🦉 🏃
+      - de: santiago
+        texto: 'Odiseo construyó una balsa, una barca hecha de troncos atados, y se fue.'
+        dibujo: 🪵 ⛵
+      - de: vega
+        texto: 'Una luna pequeñita de Saturno se llama Calipso, por ella.'
+        dibujo: 🪐 🌙
+
+  - tipo: elegir
+    enunciado: ¿Qué le ofreció Calipso a Odiseo?
+    dibujo: 🏝️
+    correcta: ♾️ Ser inmortal
+    incorrectas:
+      - texto: 🍦 Un helado gigante
+        feedback: ¡Ja, ja! No. Le ofreció ser inmortal, si se quedaba.
+      - texto: ⛵ Un barco nuevo
+        feedback: No. Le ofreció ser inmortal, si se quedaba con ella.
+
+  - tipo: elegir
+    enunciado: ¿Por qué Odiseo no quiso quedarse con Calipso?
+    dibujo: 🏝️ 😢
+    correcta: 🏠 Echaba de menos su casa
+    incorrectas:
+      - texto: 🏖️ No le gustaba la playa
+        feedback: No. Echaba de menos su casa, a su esposa y a su hijo.
+      - texto: 🦟 Había muchos mosquitos
+        feedback: ¡Ja, ja! No. Echaba de menos su casa, a su esposa y a su hijo.
+
+  - tipo: chat
+    titulo: La princesa Nausícaa
+    mensajes:
+      - de: hugo
+        texto: 'Poseidón vio la balsa y la rompió con una tormenta. Odiseo nadó durante dos días hasta la isla de los feacios.'
+        dibujo: 🌊 🏊
+      - de: valentina
+        texto: 'Allí lo encontró la princesa Nausícaa, que había ido a lavar la ropa al río con sus amigas, y jugaban a la pelota.'
+        dibujo: 👸 ⚽
+      - de: santiago
+        texto: 'El rey lo invitó a un banquete. Un cantor ciego cantó la guerra de Troya, y Odiseo se echó a llorar.'
+        dibujo: 🎶 😢
+      - de: vega
+        texto: 'Entonces dijo quién era, y contó todas sus aventuras: el cíclope, Circe, las sirenas.'
+        dibujo: 🗣️ 📜
+      - de: hugo
+        texto: 'Los feacios eran los mejores marineros del mundo. Lo llevaron a Ítaca en una sola noche, mientras dormía.'
+        dibujo: ⛵ 😴
+      - de: valentina
+        texto: '¡Después de veinte años fuera, Odiseo estaba en casa! Diez de guerra y diez de viaje.'
+        dibujo: 🏝️ 🎉
+
+  - tipo: elegir
+    enunciado: ¿Quién encontró a Odiseo en la isla de los feacios?
+    dibujo: 🏊
+    correcta: 👸 La princesa Nausícaa
+    incorrectas:
+      - texto: 🏝️ Calipso
+        feedback: De Calipso se acababa de ir. Lo encontró la princesa Nausícaa.
+      - texto: 🐬 Un delfín
+        feedback: No. Lo encontró la princesa Nausícaa, jugando a la pelota.
+
+  - tipo: elegir
+    enunciado: ¿Cuántos años estuvo Odiseo fuera de casa?
+    dibujo: 🏠 ⏳
+    correcta: 📅 Veinte
+    incorrectas:
+      - texto: 🔟 Diez
+        feedback: Diez duró la guerra. Con el viaje, fueron veinte años fuera.
+      - texto: 7️⃣ Siete
+        feedback: Siete pasó con Calipso. En total, fueron veinte años fuera.
+
+  - tipo: elegir
+    enunciado: ¿Cómo llegó Odiseo por fin a Ítaca?
+    dibujo: 🏝️
+    correcta: 😴 Dormido, en un barco
+    incorrectas:
+      - texto: 🏊 Nadando
+        feedback: No. Los feacios lo llevaron en su barco, mientras dormía.
+      - texto: 🐎 A caballo
+        feedback: ¡Ja, ja! Ítaca es una isla. Lo llevaron los feacios en barco, mientras dormía.
