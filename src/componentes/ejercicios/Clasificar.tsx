@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import type { ClasificarT } from '../../contenido/esquema';
 import { barajar } from '../../lib/barajar';
-import { partirOpcion, textoFicha } from '../../lib/frases';
+import { claveDicho, partirOpcion, textoFicha } from '../../lib/frases';
 import { sonar } from '../../lib/sonido';
 import { hablar } from '../../lib/voz';
 import { BotonVoz, Texto } from '../piezas';
@@ -11,7 +11,7 @@ import type { PropsEjercicio } from './tipos';
  * «Complete the table», como en la ficha: las fichas salen de una en una y se toca la columna donde van. Si está
  * bien, entra en su columna y sale la siguiente (y se oye); si no, tiembla y se ve por qué. Se corrige solo al acabar.
  */
-export default function Clasificar({ ejercicio: e, resultado, onResultado }: PropsEjercicio<ClasificarT>) {
+export default function Clasificar({ ejercicio: e, resultado, onResultado, espanol }: PropsEjercicio<ClasificarT>) {
   const fichas = useMemo(
     () => barajar(e.grupos.flatMap((g, grupo) => g.fichas.map((f) => ({ texto: textoFicha(f), feedback: typeof f === 'string' ? undefined : f.feedback, grupo })))),
     [e],
@@ -22,7 +22,9 @@ export default function Clasificar({ ejercicio: e, resultado, onResultado }: Pro
   const fallos = useRef(0);
   const actual = fichas[n];
 
-  const decir = (t: string) => partirOpcion(t).nombre;
+  // En inglés, «🚲 bicycle» se dice «bicycle»; en español (Matemáticas), la ficha entera, grabada por el narrador.
+  const decir = (t: string) => (espanol ? t : partirOpcion(t).nombre);
+  const voz = (t: string) => (espanol ? { clave: claveDicho(t), es: true } : {});
 
   const tocar = (grupo: number) => {
     if (resultado || !actual) return;
@@ -39,7 +41,7 @@ export default function Clasificar({ ejercicio: e, resultado, onResultado }: Pro
     const siguiente = n + 1;
     setN(siguiente);
     if (siguiente < fichas.length) {
-      hablar(decir(fichas[siguiente].texto), { auto: true, retraso: 250 });
+      hablar(decir(fichas[siguiente].texto), { auto: true, retraso: 250, ...voz(fichas[siguiente].texto) });
       return;
     }
     const k = fallos.current;
@@ -57,8 +59,8 @@ export default function Clasificar({ ejercicio: e, resultado, onResultado }: Pro
         {actual ? (
           <>
             <p className="clasificar__ficha" key={n}>
-              <BotonVoz texto={decir(actual.texto)} />
-              <span lang="en">{actual.texto}</span>
+              <BotonVoz texto={decir(actual.texto)} {...voz(actual.texto)} />
+              <span lang={espanol ? 'es' : 'en'}>{actual.texto}</span>
             </p>
             <span className="clasificar__cuantas">
               {n + 1} / {fichas.length}
@@ -82,9 +84,9 @@ export default function Clasificar({ ejercicio: e, resultado, onResultado }: Pro
                   {g.dibujo}
                 </span>
               )}
-              <span lang="en">{g.nombre}</span>
+              <span lang={espanol ? 'es' : 'en'}>{g.nombre}</span>
             </span>
-            <span className="clasificar__lista" lang="en">
+            <span className="clasificar__lista" lang={espanol ? 'es' : 'en'}>
               {puestas(i).map((f) => (
                 <span key={f.texto} className="clasificar__puesta">
                   {f.texto}

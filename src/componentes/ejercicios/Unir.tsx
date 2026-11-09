@@ -4,13 +4,14 @@ import { barajar } from '../../lib/barajar';
 import { seLee, tieneLetras } from '../../lib/normalizar';
 import { sonar } from '../../lib/sonido';
 import { hablar } from '../../lib/voz';
+import { claveDicho } from '../../lib/frases';
 import { Texto } from '../piezas';
 import type { PropsEjercicio } from './tipos';
 
 type Lado = 0 | 1;
 
 /** Se toca uno de cada columna. Si son pareja, se quedan en verde; si no, tiemblan. Se corrige solo al acabar. */
-export default function Unir({ ejercicio: e, resultado, onResultado }: PropsEjercicio<UnirT>) {
+export default function Unir({ ejercicio: e, resultado, onResultado, espanol }: PropsEjercicio<UnirT>) {
   const columnas = useMemo(() => [barajar(e.pares.map((_, i) => i)), barajar(e.pares.map((_, i) => i))] as const, [e]);
   const [elegido, setElegido] = useState<{ lado: Lado; i: number } | null>(null);
   const [hechas, setHechas] = useState<number[]>([]);
@@ -20,7 +21,9 @@ export default function Unir({ ejercicio: e, resultado, onResultado }: PropsEjer
   const tocar = (lado: Lado, i: number) => {
     if (resultado || hechas.includes(i)) return;
     const texto = e.pares[i][lado];
-    if (seLee(texto)) hablar(texto);
+    // En español (Matemáticas), la tarjeta la dice el narrador, grabada; en inglés, la voz de las frases.
+    if (espanol) hablar(texto, { clave: claveDicho(texto), es: true });
+    else if (seLee(texto)) hablar(texto);
     if (!elegido || elegido.lado === lado) {
       setElegido({ lado, i });
       return;
@@ -62,7 +65,7 @@ export default function Unir({ ejercicio: e, resultado, onResultado }: PropsEjer
               const texto = e.pares[i][lado];
               return (
                 <button key={i} type="button" className={clase(lado, i)} disabled={hechas.includes(i)} onClick={() => tocar(lado, i)}>
-                  <span className={tieneLetras(texto) ? '' : 'unir__emoji'} lang="en">
+                  <span className={tieneLetras(texto) ? '' : 'unir__emoji'} lang={espanol ? 'es' : 'en'}>
                     {texto}
                   </span>
                 </button>

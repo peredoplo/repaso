@@ -156,10 +156,31 @@ export function dichoSinLeer(e: ConTema): string[] {
   return [...toques.filter((t) => partirOpcion(t).nombre).map(claveOpcion), ...respuestas.map(claveRespuesta)];
 }
 
+/* ── Temas en español (Matemáticas) ── */
+
+/** Con qué se busca la grabación de una ficha o una tarjeta en español (la dice el narrador). */
+export const claveDicho = (t: string) => `dicho|${t.trim()}`;
+
+/**
+ * Lo que se oye al tocar o al salir una ficha en un tema en español: las de clasificar y las tarjetas de unir. Antes
+ * las leía la voz inglesa del navegador, porque no estaban grabadas (aviso del autor, 9 de noviembre de 2026).
+ */
+export function dichoEnEspanol(e: ConTema): string[] {
+  if (!e.espanol) return [];
+  const textos = e.tipo === 'clasificar' ? e.grupos.flatMap((g) => g.fichas.map(textoFicha)) : e.tipo === 'unir' ? e.pares.flat() : [];
+  return textos.filter((t) => /[\p{L}\p{N}]/u.test(t)).map(claveDicho);
+}
+
 /** Todo lo que se oye en un ejercicio, para precargarlo. */
 export const todoLoQueSeOye = (e: ConTema) => {
   const inicio = alEmpezar(e);
-  return [...frasesInglesas(e), ...mensajesHablados(e).map((m) => claveMensaje(m.de, m.texto)), ...(inicio ? [claveInicio(inicio)] : []), ...dichoSinLeer(e)];
+  return [
+    ...frasesInglesas(e),
+    ...mensajesHablados(e).map((m) => claveMensaje(m.de, m.texto)),
+    ...(inicio ? [claveInicio(inicio)] : []),
+    ...dichoSinLeer(e),
+    ...dichoEnEspanol(e),
+  ];
 };
 
 /** El texto tal como se dice: sin las marcas de la negrita y la cursiva. */

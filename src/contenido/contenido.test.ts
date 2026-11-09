@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { leerContenido } from '../../scripts/leer';
 import { cifras, columnasDe, leerOperacion, partirHueco } from '../lib/aritmetica';
 import { corregirCalcula, corregirCompletar, corregirCuenta, corregirElegir, corregirEscribir, corregirOrdenar } from '../lib/corregir';
-import { alEmpezar, claveInicio, dichoSinLeer, frasesInglesas, partirOpcion } from '../lib/frases';
+import { alEmpezar, claveInicio, dichoEnEspanol, dichoSinLeer, frasesInglesas, partirOpcion } from '../lib/frases';
 import voces from '../voces.json';
 import { esTeoria } from './esquema';
 import { partirPiezas } from '../lib/normalizar';
@@ -117,10 +117,14 @@ it('Social Sciences lleva los ejercicios de las dos fichas, y la teoría en el c
     const tema = c.temas.get('matematicas/unidades-1-2')!;
     expect(tema.idioma).toBe('es');
     const todos = tema.lecciones.flatMap((l) => l.ejercicios);
+    // Nada con la voz inglesa: las fichas de clasificar y las tarjetas de unir, grabadas por el narrador.
+    const grabado = new Set(Object.keys((voces as { sinLeer?: object }).sinLeer ?? {}));
     for (const e of todos) {
       expect(e.espanol, e.id).toBe(true);
       expect(frasesInglesas(e), e.id).toEqual([]);
+      for (const clave of dichoEnEspanol(e)) expect(grabado, clave).toContain(clave);
     }
+    expect(todos.flatMap(dichoEnEspanol)).toContain('dicho|Hoy han llegado 2 niños tarde a clase.');
     for (const l of tema.lecciones.filter((l) => !l.examen)) expect(l.ejercicios[0].tipo, l.ruta).toBe('chat');
     // Las sumas y restas de las páginas 24 y 25, y los problemas de las páginas 21, 25 y 35.
     const cuentas = todos.flatMap((e) => (e.tipo === 'cuenta' ? [e.operacion] : []));

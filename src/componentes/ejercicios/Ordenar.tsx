@@ -13,7 +13,7 @@ import type { PropsEjercicio } from './tipos';
  * Como en Duolingo: se tocan las fichas de abajo y suben a la frase; tocando una de arriba, vuelve a su sitio.
  * En el ordenador, la tecla de borrar quita la última. Sin leer (Miguel), al tocar una ficha se oye lo que dice.
  */
-export default function Ordenar({ ejercicio: e, resultado, registrar, sinLeer }: PropsEjercicio<OrdenarT>) {
+export default function Ordenar({ ejercicio: e, resultado, registrar, sinLeer, espanol }: PropsEjercicio<OrdenarT>) {
   const piezas = useMemo(() => {
     const todas = [...partirPiezas(e.piezas), ...(e.sobran ?? []).filter((s) => !partirPiezas(e.piezas).some((p) => normalizar(p) === normalizar(s)))];
     const conId = todas.map((texto, id) => ({ id, texto }));
@@ -54,22 +54,22 @@ export default function Ordenar({ ejercicio: e, resultado, registrar, sinLeer }:
       </h2>
       {e.tarjeta && <Tarjeta t={e.tarjeta} />}
       {e.dibujo && <Dibujo dibujo={e.dibujo} />}
-      {e.pregunta && (sinLeer ? <p className="pregunta">{e.pregunta}</p> : <Frase texto={e.pregunta} />)}
+      {e.pregunta && (sinLeer || espanol ? <p className="pregunta">{e.pregunta}</p> : <Frase texto={e.pregunta} />)}
       {e.escuchar && (
         <div className="escuchar">
           <BotonVoz texto={e.solucion} grande etiqueta="Escuchar otra vez" />
           <span className="escuchar__ayuda">Tócalo dos veces para oírlo más despacio</span>
         </div>
       )}
-      <div className={`linea-respuesta${sinLeer ? ' linea-respuesta--dibujos' : ''}${resultado ? (resultado.bien ? ' linea-respuesta--bien' : ' linea-respuesta--mal') : ''}`} aria-label="Tu frase" lang="en">
+      <div className={`linea-respuesta${sinLeer ? ' linea-respuesta--dibujos' : ''}${resultado ? (resultado.bien ? ' linea-respuesta--bien' : ' linea-respuesta--mal') : ''}`} aria-label="Tu frase" lang={sinLeer || espanol ? 'es' : 'en'}>
         {puestas.map((id) => (
           <button key={id} type="button" className="ficha ficha--puesta" disabled={!!resultado} onClick={() => quitar(id)}>
             {texto(id)}
           </button>
         ))}
       </div>
-      {e.debajo && (sinLeer ? <p className="pregunta">{e.debajo}</p> : <Frase texto={e.debajo} />)}
-      <div className={sinLeer ? 'banco banco--dibujos' : 'banco'} aria-label="Fichas" lang={sinLeer ? 'es' : 'en'}>
+      {e.debajo && (sinLeer || espanol ? <p className="pregunta">{e.debajo}</p> : <Frase texto={e.debajo} />)}
+      <div className={sinLeer ? 'banco banco--dibujos' : 'banco'} aria-label="Fichas" lang={sinLeer || espanol ? 'es' : 'en'}>
         {piezas.map((p) => {
           const usada = puestas.includes(p.id);
           return (

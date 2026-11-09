@@ -12,7 +12,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PERSONAJES } from '../src/contenido/esquema';
-import { alEmpezar, claveInicio, claveMensaje, dichoSinLeer, frasesInglesas, mensajesHablados, paraDecir, sinMarcas, type Inicio } from '../src/lib/frases';
+import { alEmpezar, claveInicio, claveMensaje, dichoEnEspanol, dichoSinLeer, frasesInglesas, mensajesHablados, paraDecir, sinMarcas, type Inicio } from '../src/lib/frases';
 import { HUECO } from '../src/lib/normalizar';
 import { leerContenido } from './leer';
 
@@ -198,8 +198,12 @@ async function main() {
   }
   const archivoInicio = (clave: string, v: { enIngles: boolean; sinLeer: boolean }) => `${hash(clave, firmaInicio(v.enIngles, v.sinLeer))}.mp3`;
   // Sin leer: «opcion|Marte» y «respuesta|¡Casi! …» → lo que va detrás de la primera «|».
-  const sinLeer = new Set([...c.ejercicios.values()].flatMap(dichoSinLeer));
-  const textoSinLeer = (clave: string) => clave.slice(clave.indexOf('|') + 1);
+  // Y en los temas en español, las fichas de clasificar y las tarjetas de unir: «dicho|7.950 €», con los signos en palabras.
+  const sinLeer = new Set([...c.ejercicios.values()].flatMap((e) => [...dichoSinLeer(e), ...dichoEnEspanol(e)]));
+  const textoSinLeer = (clave: string) => {
+    const texto = clave.slice(clave.indexOf('|') + 1);
+    return clave.startsWith('dicho|') ? paraDecir(sinMarcas(texto)) : texto;
+  };
   const archivoSinLeer = (clave: string) => `${hash(clave, FIRMA_SIN_LEER)}.mp3`;
 
   if (process.argv.includes('--lista')) {
