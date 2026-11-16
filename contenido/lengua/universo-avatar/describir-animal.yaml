@@ -1,0 +1,103 @@
+titulo: Describir un animal
+subtitulo: Cómo es y cómo se comporta
+emoji: 🐯
+ejercicios:
+  - tipo: chat
+    titulo: ¿Cómo es el tigre?
+    mensajes:
+      - de: valentina
+        texto: 'Para describir un animal hay que contar dos cosas: **cómo es físicamente** y **cómo se comporta**.'
+        dibujo: 🐯
+      - de: santiago
+        texto: 'Fácil: «El tigre es un animal». ¡Ya está!'
+        dibujo: 😎
+      - de: hugo
+        texto: 'Eso no describe nada: no sabemos cómo es. Hay que usar muchos adjetivos.'
+      - de: vega
+        texto: 'Físicamente, es lo que se ve: el tamaño, el color, el pelo y sus partes. El tigre es **grande**, tiene el pelo **naranja** con rayas **negras** y unas garras **afiladas**.'
+        dibujo: 🐅
+      - de: valentina
+        texto: 'Cómo se comporta es lo que hace: qué come, dónde vive, cómo se mueve. El tigre come carne, caza sobre todo de noche, vive solo y ¡le encanta nadar!'
+        dibujo: 🏊
+      - de: hugo
+        texto: 'Con la rana, igual. Es **pequeña** y **verde**, con la piel **húmeda** y las patas de atrás **largas**. Salta mucho, caza insectos con la lengua y vive cerca del agua.'
+        dibujo: 🐸
+
+  # 1. de la ficha: la tabla del tigre
+  - tipo: clasificar
+    enunciado: 'El tigre: ¿cómo es físicamente o cómo se comporta?'
+    grupos:
+      - nombre: Cómo es físicamente
+        dibujo: 👀
+        fichas:
+          - Es muy grande.
+          - Tiene rayas negras.
+          - texto: Tiene garras afiladas.
+            feedback: 'Las garras se ven: son una parte de su cuerpo. Va en **cómo es físicamente**.'
+      - nombre: Cómo se comporta
+        dibujo: 🏃
+        fichas:
+          - Come carne.
+          - Le encanta nadar.
+          - texto: Vive solo.
+            feedback: 'Vivir solo es algo que hace, no algo que se ve en su cuerpo. Va en **cómo se comporta**.'
+
+  # 1. de la ficha: la tabla de la rana
+  - tipo: clasificar
+    enunciado: 'La rana: ¿cómo es físicamente o cómo se comporta?'
+    grupos:
+      - nombre: Cómo es físicamente
+        dibujo: 👀
+        fichas:
+          - Es pequeña y verde.
+          - Tiene la piel húmeda.
+          - texto: Tiene las patas de atrás largas.
+            feedback: 'Las patas son una parte de su cuerpo: va en **cómo es físicamente**.'
+      - nombre: Cómo se comporta
+        dibujo: 🏃
+        fichas:
+          - Salta muy lejos.
+          - Vive cerca del agua.
+          - texto: Caza insectos con la lengua.
+            feedback: 'Cazar es algo que hace: va en **cómo se comporta**.'
+
+  - tipo: elegir
+    enunciado: ¿Qué frase cuenta cómo se comporta el tigre?
+    dibujo: 🐯
+    correcta: Caza sobre todo de noche.
+    incorrectas:
+      - texto: Tiene el pelo naranja.
+        feedback: 'El color del pelo se ve: es **cómo es físicamente**. Cómo se comporta es lo que hace: **caza de noche**.'
+      - texto: Es muy grande.
+        feedback: 'El tamaño se ve: es **cómo es físicamente**. Lo que hace es que **caza de noche**.'
+
+  - tipo: elegir
+    enunciado: ¿Qué frase cuenta cómo es físicamente la rana?
+    dibujo: 🐸
+    correcta: Tiene la piel verde y húmeda.
+    incorrectas:
+      - texto: Croa por la noche.
+        feedback: 'Croar es algo que hace: es **cómo se comporta**. Lo que se ve es su piel **verde y húmeda**.'
+      - texto: Vive cerca del agua.
+        feedback: 'Dónde vive es **cómo se comporta**. Físicamente, tiene la piel **verde y húmeda**.'
+
+  # 2. de la ficha: «Ahora, descríbelo»
+  - tipo: elegir
+    enunciado: ¿Cuál es la mejor descripción del tigre?
+    dibujo: 🐅
+    correcta: 'El tigre es grande y tiene el pelo naranja con rayas negras. Come carne y caza de noche.'
+    incorrectas:
+      - texto: 'El tigre es un animal que hay en el zoo.'
+        feedback: 'No dice cómo es ni cómo se comporta: le faltan adjetivos. La buena cuenta las dos cosas.'
+      - texto: 'El tigre es grande y tiene el pelo naranja con rayas negras.'
+        feedback: 'Dice cómo es físicamente, pero le falta cómo se comporta. La buena cuenta las dos cosas.'
+
+  - tipo: elegir
+    enunciado: ¿Qué animal es?
+    pregunta: 'Es pequeña y verde. Tiene la piel húmeda y las patas de atrás largas. Salta mucho y vive cerca del agua.'
+    correcta: 🐸 La rana
+    incorrectas:
+      - texto: 🐯 El tigre
+        feedback: 'El tigre es grande y naranja, no pequeño y verde. Es **la rana**.'
+      - texto: 🐢 La tortuga
+        feedback: 'La tortuga tiene caparazón y no salta. Pequeña, verde y saltarina: **la rana**.'

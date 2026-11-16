@@ -1,0 +1,88 @@
+titulo: El adjetivo
+subtitulo: La palabra que dice cómo es
+emoji: 🎨
+ejercicios:
+  - tipo: chat
+    titulo: ¿Qué es un adjetivo?
+    mensajes:
+      - de: vega
+        texto: 'Un **adjetivo** es una palabra que dice cómo es un nombre. En «robots metálicos», **metálicos** dice cómo son los robots.'
+        dibujo: 🤖
+      - de: hugo
+        texto: 'Va siempre junto a un nombre, delante o detrás: «unos inteligentes robots» o «unos robots inteligentes».'
+      - de: santiago
+        texto: 'Pues en «Ayer oímos hablar a unos robots», el adjetivo es **oímos**.'
+        dibujo: 😎
+      - de: valentina
+        texto: '¡No! **Oímos** dice lo que hacemos: es una acción. Y **ayer** dice cuándo. Ninguna de las dos dice cómo es algo.'
+      - de: vega
+        texto: 'El truco es preguntarle al nombre «¿cómo es?». ¿Cómo son los robots? Inteligentes y metálicos. ¡Esos son los adjetivos!'
+        dibujo: 🔍
+
+  # 1. de la ficha: «Subraya los adjetivos»
+  - tipo: elegir
+    enunciado: ¿Cuál es un adjetivo?
+    pregunta: Ayer oímos hablar a unos inteligentes robots metálicos.
+    dibujo: 🤖
+    correcta: inteligentes
+    incorrectas:
+      - texto: oímos
+        feedback: '**Oímos** es una acción, lo que hacemos. El adjetivo dice cómo son los robots: **inteligentes** (y también **metálicos**).'
+      - texto: robots
+        feedback: '**Robots** es el nombre. El adjetivo dice cómo son: **inteligentes** (y también **metálicos**).'
+      - texto: ayer
+        feedback: '**Ayer** dice cuándo, no cómo es algo. ¿Cómo son los robots? **Inteligentes** y **metálicos**.'
+
+  # 1. de la ficha: el otro adjetivo
+  - tipo: elegir
+    enunciado: En la misma frase hay otro adjetivo. ¿Cuál es?
+    pregunta: Ayer oímos hablar a unos inteligentes robots metálicos.
+    dibujo: 🔩
+    correcta: metálicos
+    incorrectas:
+      - texto: hablar
+        feedback: '**Hablar** es una acción. ¿Cómo son los robots? **Metálicos**: están hechos de metal.'
+      - texto: unos
+        feedback: '**Unos** va delante del nombre, pero no dice cómo es. El otro adjetivo es **metálicos**.'
+
+  - tipo: elegir
+    enunciado: ¿Cuál es el adjetivo?
+    pregunta: El perro pequeño ladra en el jardín.
+    dibujo: 🐶
+    correcta: pequeño
+    incorrectas:
+      - texto: ladra
+        feedback: '**Ladra** es lo que hace el perro, una acción. ¿Cómo es el perro? **Pequeño**.'
+      - texto: jardín
+        feedback: '**Jardín** es un nombre: dice dónde. ¿Cómo es el perro? **Pequeño**.'
+
+  - tipo: elegir
+    enunciado: ¿Cuál es el adjetivo?
+    pregunta: Mi abuela tiene un sofá blandito.
+    dibujo: 🛋️
+    correcta: blandito
+    incorrectas:
+      - texto: sofá
+        feedback: '**Sofá** es el nombre. ¿Cómo es el sofá? **Blandito**: ese es el adjetivo.'
+      - texto: tiene
+        feedback: '**Tiene** es una acción. ¿Cómo es el sofá? **Blandito**.'
+      - texto: abuela
+        feedback: '**Abuela** es un nombre: dice quién. ¿Cómo es el sofá? **Blandito**.'
+
+  - tipo: clasificar
+    enunciado: ¿Es un nombre o un adjetivo?
+    grupos:
+      - nombre: Nombre
+        dibujo: 🏷️
+        fichas:
+          - isla
+          - loro
+          - texto: cielo
+            feedback: '**Cielo** es una cosa, un nombre. Un adjetivo diría cómo es: azul, nublado.'
+      - nombre: Adjetivo
+        dibujo: 🎨
+        fichas:
+          - brillante
+          - sucia
+          - texto: alto
+            feedback: '**Alto** dice cómo es algo («un árbol alto»): es un adjetivo.'

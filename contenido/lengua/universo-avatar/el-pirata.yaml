@@ -1,0 +1,93 @@
+titulo: El pirata de la isla
+subtitulo: Completa el texto con adjetivos
+emoji: 🏴‍☠️
+# 3. de la ficha: «Observa la imagen y completa el texto con los adjetivos adecuados». En la ficha se escribe lo que
+# se quiera; aquí se elige, y las opciones incorrectas no van a juego con el nombre o no cuadran con el dibujo.
+ejercicios:
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: El pirata ___ llegó a la isla.
+    dibujo: 🏴‍☠️🧔
+    correcta: barbudo
+    incorrectas:
+      - texto: barbudos
+        feedback: 'Es un solo pirata (el pirata): **barbudo**, sin s.'
+      - texto: barbuda
+        feedback: 'Es **el** pirata: el adjetivo va a juego, **barbudo**.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: Llegó a la isla ___ por la tarde.
+    dibujo: 🏝️
+    correcta: tropical
+    incorrectas:
+      - texto: tropicales
+        feedback: 'Es una sola isla (la isla): **tropical**, en singular.'
+      - texto: nevada
+        feedback: 'Va a juego, pero en la isla hay palmeras y tucanes, no nieve. Es una isla **tropical**.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: Él estaba ___.
+    dibujo: 😊
+    correcta: contento
+    incorrectas:
+      - texto: contentos
+        feedback: 'Es él solo: **contento**, en singular.'
+      - texto: enfadado
+        feedback: 'Mira la cara: está sonriendo. Estaba **contento**.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: Su loro parecía ___.
+    dibujo: 🦜😴
+    correcta: cansado
+    incorrectas:
+      - texto: cansada
+        feedback: 'Es **el** loro: masculino. Parecía **cansado**.'
+      - texto: cansados
+        feedback: 'Es un solo loro: **cansado**, sin s.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: En la playa había unas palmeras ___.
+    dibujo: 🌴🌴
+    correcta: altas
+    incorrectas:
+      - texto: altos
+        feedback: '**Palmeras** es femenino (unas palmeras): **altas**.'
+      - texto: alta
+        feedback: 'Son varias palmeras, en plural: **altas**, con s.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: La arena era muy ___.
+    dibujo: 🏖️
+    correcta: fina
+    incorrectas:
+      - texto: fino
+        feedback: '**Arena** es femenino (la arena): muy **fina**.'
+      - texto: finas
+        feedback: 'Es **la** arena, en singular: muy **fina**.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: El cielo estaba ___.
+    dibujo: ☀️
+    correcta: azul
+    incorrectas:
+      - texto: azules
+        feedback: 'Es un solo cielo (el cielo): **azul**, en singular.'
+      - texto: lluvioso
+        feedback: 'Va a juego, pero hace sol: el cielo estaba **azul**.'
+
+  - tipo: elegir
+    enunciado: Completa con el adjetivo adecuado.
+    pregunta: 'De pronto, el pirata se sintió ___. ¿Cuándo volverá a hablar con alguien?'
+    dibujo: 😢
+    correcta: solo
+    incorrectas:
+      - texto: acompañado
+        feedback: 'Si se pregunta cuándo volverá a hablar con alguien, es que no tiene con quién hablar: se sintió **solo**.'
+      - texto: solos
+        feedback: 'Es un solo pirata: **solo**, sin s.'

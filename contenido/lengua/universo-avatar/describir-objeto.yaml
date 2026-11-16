@@ -1,0 +1,97 @@
+titulo: Describir un objeto
+subtitulo: Tamaño, forma, color, partes y para qué sirve
+emoji: 🛴
+ejercicios:
+  - tipo: chat
+    titulo: ¿Qué objeto es?
+    mensajes:
+      - de: vega
+        texto: 'Para describir un objeto, primero se recogen los datos: el **tamaño**, la **forma**, el **color**, de qué está hecho, sus **partes** y **para qué sirve**.'
+        dibujo: 📝
+      - de: hugo
+        texto: 'El patinete es **mediano** y **alargado**, de color **rosa**. Sus partes son el manillar, la barra, la plataforma y dos ruedas. Sirve para ir de un sitio a otro.'
+        dibujo: 🛴
+      - de: santiago
+        texto: 'La pelota de playa tiene una parte rosa, así que su forma es rosa.'
+        dibujo: 😎
+      - de: valentina
+        texto: '¡No! Rosa es un **color**. La **forma** de la pelota es **redonda**. Y es de muchos colores: azul, rosa, amarillo, verde…'
+        dibujo: 🏐
+      - de: vega
+        texto: 'Con una buena descripción, se adivina el objeto sin verlo. ¡A ver si adivinas el de la ficha!'
+
+  # 1. de la ficha: «Lee esta descripción y responde»
+  - tipo: elegir
+    enunciado: Lee la descripción. ¿Qué objeto es?
+    pregunta: 'Son pequeñas y caben en un bolsillo. Son planas y un poco alargadas. Están hechas de metal, por lo que son duras y brillantes. Al moverlas suenan como campanillas. Sirven para abrir las puertas, así que, si las pierdes, no puedes entrar.'
+    correcta: 🔑 Las llaves
+    incorrectas:
+      - texto: 🪙 Las monedas
+        feedback: 'Las monedas son de metal, pero son redondas y no abren puertas. Son **las llaves**.'
+      - texto: ✂️ Las tijeras
+        feedback: 'Las tijeras sirven para cortar, no para abrir puertas. Son **las llaves**.'
+
+  - tipo: elegir
+    enunciado: Según la descripción, ¿de qué están hechas las llaves?
+    dibujo: 🔑
+    correcta: de metal
+    incorrectas:
+      - texto: de plástico
+        feedback: 'La ficha dice «están hechas de **metal**, por lo que son duras y brillantes».'
+      - texto: de madera
+        feedback: 'La ficha dice «están hechas de **metal**», por eso suenan como campanillas.'
+
+  # 2. de la ficha: los datos de la pelota
+  - tipo: unir
+    enunciado: 'Los datos de la pelota de playa: une cada dato con lo que es.'
+    pares:
+      - [Tamaño, mediana]
+      - [Forma, redonda]
+      - [Color, de muchos colores]
+      - [¿Para qué sirve?, para jugar en la playa]
+
+  # 2. de la ficha: los datos del patinete
+  - tipo: elegir
+    enunciado: En la descripción del patinete, ¿cuáles son sus partes?
+    dibujo: 🛴
+    correcta: el manillar, la barra, la plataforma y las ruedas
+    incorrectas:
+      - texto: rosa y alargado
+        feedback: 'Eso son el **color** y la **forma**. Las partes son el manillar, la barra, la plataforma y las ruedas.'
+      - texto: para ir de un sitio a otro
+        feedback: 'Eso es **para qué sirve**. Las partes son el manillar, la barra, la plataforma y las ruedas.'
+
+  - tipo: clasificar
+    enunciado: ¿Qué dato es?
+    grupos:
+      - nombre: Forma
+        dibujo: 🔷
+        fichas:
+          - redonda
+          - alargada
+          - texto: plana
+            feedback: '**Plana** dice cómo es su figura, lisa y sin bultos: es la **forma**.'
+      - nombre: Color
+        dibujo: 🎨
+        fichas:
+          - rosa
+          - azul
+          - texto: plateado
+            feedback: '**Plateado** es el color de la plata, como el de las llaves: es un **color**.'
+      - nombre: Tamaño
+        dibujo: 📏
+        fichas:
+          - pequeño
+          - enorme
+          - texto: mediano
+            feedback: '**Mediano** dice si es grande o pequeño: es el **tamaño**.'
+
+  - tipo: elegir
+    enunciado: ¿Qué objeto es?
+    pregunta: 'Es pequeño y alargado. Es de madera y tiene una punta negra. Sirve para escribir y dibujar, y lo que hace se borra con la goma.'
+    correcta: ✏️ El lápiz
+    incorrectas:
+      - texto: 🖍️ La cera
+        feedback: 'La cera no es de madera, y lo que pinta no se borra bien con la goma. Es **el lápiz**.'
+      - texto: 📏 La regla
+        feedback: 'La regla sirve para medir y trazar líneas rectas, y no tiene punta. Es **el lápiz**.'

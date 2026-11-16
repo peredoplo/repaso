@@ -1,0 +1,87 @@
+titulo: Nombre y adjetivo, a juego
+subtitulo: El adjetivo se pone como su nombre
+emoji: 🧦
+ejercicios:
+  - tipo: chat
+    titulo: Van a juego
+    mensajes:
+      - de: hugo
+        texto: 'El adjetivo va a juego con su nombre, como dos calcetines: si el nombre es masculino o femenino, el adjetivo también.'
+        dibujo: 🧦🧦
+      - de: valentina
+        texto: 'Y si el nombre es uno (singular) o varios (plural), también: «una tijera nueva», «unas tijeras nuevas».'
+        dibujo: ✂️
+      - de: santiago
+        texto: 'En la playa había unas palmeras **alto**.'
+        dibujo: 🌴
+      - de: vega
+        texto: '¡Casi! Palmeras es femenino y plural: unas palmeras **altas**. El adjetivo tiene que ir igual.'
+      - de: hugo
+        texto: 'Algunos adjetivos valen para los dos: «un faro brillante», «una estrella brillante». Pero en plural, también cambian: «faros brillantes».'
+        dibujo: 💡
+
+  # 2. de la ficha: «Relaciona cada nombre con un adjetivo»
+  - tipo: unir
+    enunciado: Relaciona cada nombre con un adjetivo.
+    pares:
+      - [tijeras, nuevas]
+      - [faro, brillante]
+      - [servilleta, sucia]
+      - [pájaros, cantores]
+
+  - tipo: elegir
+    enunciado: ¿Qué adjetivo va con el nombre?
+    pregunta: unas tijeras ___
+    dibujo: ✂️
+    correcta: nuevas
+    incorrectas:
+      - texto: nuevo
+        feedback: '**Tijeras** es femenino y plural (unas tijeras): unas tijeras **nuevas**.'
+      - texto: nueva
+        feedback: 'Son unas tijeras, en plural: unas tijeras **nuevas**, con s.'
+
+  - tipo: elegir
+    enunciado: ¿Qué adjetivo va con el nombre?
+    pregunta: unos pájaros ___
+    dibujo: 🐦
+    correcta: cantores
+    incorrectas:
+      - texto: cantor
+        feedback: 'Son varios pájaros, en plural: unos pájaros **cantores**.'
+      - texto: cantoras
+        feedback: '**Pájaros** es masculino (unos pájaros): unos pájaros **cantores**.'
+
+  - tipo: elegir
+    enunciado: ¿Qué adjetivo va con el nombre?
+    pregunta: una servilleta ___
+    dibujo: 🧻
+    correcta: sucia
+    incorrectas:
+      - texto: sucio
+        feedback: '**Servilleta** es femenino (una servilleta): una servilleta **sucia**.'
+      - texto: sucias
+        feedback: 'Es una sola servilleta, en singular: una servilleta **sucia**, sin s.'
+
+  - tipo: elegir
+    enunciado: ¿Cuál está bien?
+    dibujo: 🏠
+    correcta: unas casas blancas
+    incorrectas:
+      - texto: unas casas blanco
+        feedback: '**Casas** es femenino y plural: el adjetivo también, **blancas**.'
+      - texto: unas casas blanca
+        feedback: 'Son varias casas: el adjetivo va en plural, **blancas**.'
+
+  - tipo: escribir
+    enunciado: Escribe el adjetivo a juego con el nombre.
+    pregunta: 'un gato negro → unas gatas ___'
+    dibujo: 🐈‍⬛
+    respuestas: [negras]
+    errores:
+      - igual: negro
+        feedback: '**Gatas** es femenino y plural: el adjetivo cambia igual, **negras**.'
+      - igual: negros
+        feedback: 'Está bien el plural, pero **gatas** es femenino: **negras**.'
+      - igual: negra
+        feedback: 'Está bien el femenino, pero son varias gatas: **negras**, con s.'
+    explicacion: 'Negro → negra (femenino) → negras (femenino y plural): unas gatas **negras**.'
